@@ -30,7 +30,7 @@ class DepartmentData(Shapefile):
 
 
         # Save the updated shapefile
-        output_path = 'data/UEMOA/departments_scores_alpha.shp'
+        output_path = 'Africa-money-map/data/CEMAC/cameroun_departments_scores_alpha.shp'
         shp_department.to_file(output_path)
 
         print(f'ISIBF values added and saved to {output_path}')

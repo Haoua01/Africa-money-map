@@ -31,7 +31,7 @@ class RegionData(Shapefile):
                 shp_region.loc[shp_region['ADM1_FR'] == region, 'ISIBF_base'] = normalized_score
 
         # Save the updated shapefile
-        output_path = 'data/UEMOA/regions_scores_alpha.shp'
+        output_path = 'data/Ghana/regions_scores_alpha.shp'
         shp_region.to_file(output_path)
 
         print(f'ISIBF values added and saved to {output_path}')
