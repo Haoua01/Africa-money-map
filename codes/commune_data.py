@@ -7,17 +7,17 @@ from geopy.distance import great_circle
 
 class CommuneData(Shapefile):
 
-    THRESHOLD = 50000 #tchad=100000
+    #THRESHOLD = 50000 #tchad=100000
     ALPHA = 1.0001 #same for all countries
 
-    def __init__(self, shp, alpha=ALPHA, threshold=THRESHOLD):
+    def __init__(self, shp, alpha=ALPHA):
         super().__init__(shp)
         self.shp = self.load_shapefile()
         self.alpha = alpha
-        self.threshold = threshold
         self.countries = self.data['Country'].unique()
         self.branch_counts = self.get_branch_count()
         #self.population = self.get_population()
+
 
         
     '''
@@ -41,11 +41,11 @@ class CommuneData(Shapefile):
                         if distance <= self.threshold:
                             neighbors[country][city1_name][city2_name] = distance
         self.neighbors = neighbors  # Store neighbors in self.neighbors
-        with open(f'data/Ghana/neighbors_threshold_{self.threshold}.json', 'w', encoding='utf-8') as f:
+        with open(f'data/{area}/neighbors_threshold_{self.threshold}.json', 'w', encoding='utf-8') as f:
             json.dump(neighbors, f, ensure_ascii=False, indent=4)
         return neighbors
 
-    '''
+
     def create_distance_dict(self,data):
         """
         Creates a nested dictionary where the key is city1 (InputID) and the value is 
@@ -68,32 +68,25 @@ class CommuneData(Shapefile):
         print(f"Distance dictionary created with {len(distance_dict)} entries.")
 
         return distance_dict
+            '''
     
-    def compute_scores(self, calculation_type):
+    def compute_scores(self, threshold, area, calculation_type, adm_type):
         isibf_values = {}
-        isibf_norm = {}
-
-        # Load neighbors from file if not computed
-        #try:
-            #with open(f'data/Ghana/neighbors_threshold_{self.threshold}.json', 'r', encoding='utf-8') as f:
-                #self.neighbors = json.load(f)
-        #except FileNotFoundError:
-            #print(f'Neighbors file not found. Computing neighbors with threshold {self.threshold} km.')
-            #self.compute_neighbors()
+        isibf = {}
 
         # Calculate ISIBF values for each country
         for country in self.countries:
             isibf_values[country] = {}
 
-            #with open(f'Africa-money-map/data/CEMAC/tchad_distance_matrix.json',  'r') as f:
+            #with open(f'Africa-money-map/data/{area}/{country}_distance_matrix.json',  'r') as f:
                 #neighbors_raw = [json.loads(line) for line in f if line.strip()]
 
             #neighbors = self.create_distance_dict(neighbors_raw)
 
-            #with open(f'Africa-money-map/data/CEMAC/tchad_distance_matrix_clean.json', 'w', encoding='utf-8') as f: 
+            #with open(f'Africa-money-map/data/{area}/{country}_distance_matrix_clean.json', 'w', encoding='utf-8') as f: 
                 #json.dump(neighbors, f, ensure_ascii=False, indent=4)
 
-            with open(f'Africa-money-map/data/CEMAC/tchad_distance_matrix_clean.json', 'r', encoding='utf-8') as f:
+            with open(f'Africa-money-map/data/{area}/{country}_distance_matrix_clean.json', 'r', encoding='utf-8') as f:
                 neighbors = json.load(f)
             
             # Filter the shapefile for the specific country
@@ -113,29 +106,32 @@ class CommuneData(Shapefile):
                     if calculation_type == 'base':
                         # Branch-based calculation only
                         for neighbor, distance in neighbors.get(city, {}).items():
-                            if distance <= self.threshold:
+                            if distance <= threshold[country]:
                                 neighbors_contributions += np.log2(self.branch_counts[neighbor] + 1) / self.alpha ** distance
                         own_contribution = np.log2(self.branch_counts[city] + 1)
 
                     isibf_values[country][city] = own_contribution + neighbors_contributions
                     #print(f"ISIBF value for {city} in {country}: {isibf_values[country][city]}")
 
-            # Apply normalization by country
-            isibf_norm[country] = format_scores(normalize_scores(isibf_values[country]))
-            print(f"ISIBF values for {country} normalized: {isibf_norm[country]}")
-            #isibf_norm[country] = isibf_values[country]
+            if adm_type == 'communes':
+                isibf[country] = format_scores(normalize_scores(isibf_values[country]))
+            elif adm_type == 'mean_communes':
+                isibf[country] = isibf_values[country]
 
         # Map ISIBF values to the shapefile
         for country in self.countries:
-            # Filter the shapefile for the specific country
             country_shp = self.shp[self.shp['Country'] == country]
-            
-            # Map ISIBF values to communes
-            self.shp.loc[self.shp['Country'] == country, f'ISIBF_{calculation_type}'] = country_shp['ADM3_FR'].map(isibf_norm[country])
+            self.shp.loc[self.shp['Country'] == country, f'ISIBF_{calculation_type}'] = country_shp['ADM3_FR'].map(isibf[country])
+        
+        #define the output path for the shapefile
+        if country=='cameroun':
+            output_path = f'Africa-money-map/data/results/{area}_scores_{adm_type}_{country}.shp'
+        elif country=='tchad':
+            output_path = f'Africa-money-map/data/results/{area}_scores_{adm_type}_{country}.shp'
+        else:
+            output_path = f'Africa-money-map/data/results/{area}_scores_{adm_type}.shp'
+        self.shp.to_file(output_path)
+        print('ISIBF values calculated and added to shapefile to', output_path)
 
-        # Save the updated shapefile
-        self.shp.to_file(f'/Users/haouabenaliabbo/Desktop/M2 IREN/ALTERNANCE/Africa Money Map/Africa-money-map/data/CEMAC/tchad_communes_scores_threshold_{self.threshold}_alpha_{self.alpha}.shp')
-        print('ISIBF values calculated and added to shapefile.')
+        return output_path
 
-
-    

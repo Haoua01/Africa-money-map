@@ -9,7 +9,7 @@ class DepartmentData(Shapefile):
         self.scores_mapping = self.get_department_mapping(calculation_type='base')
         self.countries = self.shp['Country'].unique()
 
-    def compute_mean_scores(self, shp_department):
+    def compute_mean_scores(self, shp_department, area):
         mean_scores = {}
         for country, departments in self.scores_mapping.items():
             mean_scores[country] = {}
@@ -30,8 +30,12 @@ class DepartmentData(Shapefile):
 
 
         # Save the updated shapefile
-        output_path = 'Africa-money-map/data/CEMAC/cameroun_departments_scores_alpha.shp'
+        if country == 'cameroun':
+            output_path = f'Africa-money-map/data/results/{area}_scores_departments_{country}.shp'
+        else:
+            output_path = f'Africa-money-map/data/results/{area}_scores_departments.shp'
         shp_department.to_file(output_path)
 
         print(f'ISIBF values added and saved to {output_path}')
+        return shp_department
 
