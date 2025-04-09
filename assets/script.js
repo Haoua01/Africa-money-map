@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     }).addTo(map);
 
     const sqlPromise = initSqlJs({ locateFile: file => `libs/sql-wasm.wasm` });
-    const dbPromise = fetch("https://africamoneymap.fr/data/cameroun_communes.sqlite")
+    const dbPromise = fetch("http://localhost:3000/data/communes_all.sqlite")
         .then(res => res.arrayBuffer())
         .then(buf => sqlPromise.then(SQL => new SQL.Database(new Uint8Array(buf))));
 
