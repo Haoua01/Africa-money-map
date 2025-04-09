@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     document.getElementById("communeDropdown").textContent = comm;
                     document.getElementById("departmentDropdown").textContent = "Default";
                     document.getElementById("regionDropdown").textContent = "Default";
+                    document.getElementById("countryDropdown").textContent = "Default";
                     selectedDepartment = "";
                     selectedRegion = "";
                     selectedCountry = "";
@@ -62,6 +63,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     document.getElementById("communeDropdown").textContent = "Default";
                     document.getElementById("departmentDropdown").textContent = dep;
                     document.getElementById("regionDropdown").textContent = "Default";
+                    document.getElementById("countryDropdown").textContent = "Default";
                     selectedRegion = "";
                     selectedCountry = "";
                     loadMapData(geoJsonData, "", "", dep, "", selectedEquipment);
@@ -79,6 +81,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     document.getElementById("communeDropdown").textContent = "Default";
                     document.getElementById("departmentDropdown").textContent = "Default";
                     document.getElementById("regionDropdown").textContent = reg;
+                    document.getElementById("countryDropdown").textContent = "Default";
                     selectedCommune = "";
                     selectedDepartment = "";
                     selectedCountry = "";
@@ -95,7 +98,8 @@ document.addEventListener("DOMContentLoaded", async function () {
                     selectedCountry = coun;
                     document.getElementById("communeDropdown").textContent = "Default";
                     document.getElementById("departmentDropdown").textContent = "Default";
-                    document.getElementById("regionDropdown").textContent = coun;
+                    document.getElementById("regionDropdown").textContent = "Default";
+                    document.getElementById("countryDropdown").textContent = coun;
                     selectedCommune = "";
                     selectedDepartment = "";
                     selectedRegion = "";
@@ -181,7 +185,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     function getColor(value, country) {
         // Color mapping based on country
-        if (['benin', 'burkina'].includes(country)) {
+        if (['benin', 'burkina', 'civ', 'guinee', 'mali', 'niger', 'senegal', 'togo'].includes(country)) {
             return value > 0.5 ? "#eff3ff" :
                    value > 0.1 ? "#bdd7e7" :
                    value > 0.01 ? "#6baed6" :
