@@ -1,3 +1,4 @@
+import wellknown from 'wellknown';
 document.addEventListener("DOMContentLoaded", async function () {
     const map = L.map("map").setView([14.5, 3.5], 5);
     
@@ -137,9 +138,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     
         // Get the correct column index based on selectedEquipment
         const equipmentIndex = equipmentColumnIndexes[selectedEquipment];
-    
-
-        const wellknown = require('wellknown'); // Import the wellknown library
 
         const geoJsonData = {
             type: "FeatureCollection",
