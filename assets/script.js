@@ -130,9 +130,11 @@ document.addEventListener("DOMContentLoaded", async function () {
         this.update();
         return this.div;
     };
+
+    // Updated hover info: show commune name and score from "isibf_base"
     info.update = function (props) {
         this.div.innerHTML = props
-            ? `<h6>${props.adm3_fr}</h6><br>Score of access to bank branches: ${props.isibf_base}`
+            ? `<h6>${props.adm3_fr}</h6><br>Score of access to bank branches: ${props.isibf_base}m`
             : "Hover over";
     };
     info.addTo(map);
@@ -166,8 +168,9 @@ document.addEventListener("DOMContentLoaded", async function () {
             },
             style: function (feature) {
                 const score = feature.properties[selectedEquipment] || 0;
+                const color = getColor(score, selectedCountry);
                 return {
-                    fillColor: getColor(score),
+                    fillColor: color,
                     weight: 0.5,
                     opacity: 0.4,
                     color: "lightgrey",
@@ -177,12 +180,29 @@ document.addEventListener("DOMContentLoaded", async function () {
         }).addTo(map);
     }
 
-    function getColor(value) {
-        return value > 0.5 ? "#eff3ff" :
-               value > 0.1 ? "#bdd7e7" :
-               value > 0.01 ? "#6baed6" :
-               value > 0.001 ? "#3182bd" :
-               "#08519c";
+    function getColor(value, country) {
+        // Color mapping based on country
+        if (['benin', 'burkina'].includes(country)) {
+            return value > 0.5 ? "#eff3ff" :
+                   value > 0.1 ? "#bdd7e7" :
+                   value > 0.01 ? "#6baed6" :
+                   value > 0.001 ? "#3182bd" :
+                   "#08519c";
+        } else if (country === 'ghana') {
+            return value > 0.5 ? "#fbb4b9" :
+                   value > 0.1 ? "#f768a1" :
+                   value > 0.01 ? "#d81b60" :
+                   value > 0.001 ? "#c2185b" :
+                   "#880e4f";
+        } else if (['cameroun', 'tchad'].includes(country)) {
+            return value > 0.5 ? "#e5f5e0" :
+                   value > 0.1 ? "#a1d99b" :
+                   value > 0.01 ? "#31a354" :
+                   value > 0.001 ? "#006d2c" :
+                   "#00441b";
+        } else {
+            return "#ffffff"; // Default color if no country matches
+        }
     }
 
     document.getElementById("map-btn").addEventListener("click", function() {
