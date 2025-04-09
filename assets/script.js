@@ -141,8 +141,6 @@ document.addEventListener("DOMContentLoaded", async function () {
         // Get the correct column index based on selectedEquipment
         const equipmentIndex = equipmentColumnIndexes[selectedEquipment];
 
-        const wkx = require('wkx'); // Import the wkx library to handle WKB data
-
         const geoJsonData = {
             type: "FeatureCollection",
             features: results.map(row => {
