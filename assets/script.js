@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             });
         });
 
-        const communes = db.exec("SELECT DISTINCT adm3_fr FROM communes ORDER BY adm0_fr ASC;")[0].values;
+        const communes = db.exec("SELECT DISTINCT adm3_fr FROM communes ORDER BY adm3_fr ASC;")[0].values;
         console.log("Communes:", communes); 
 
         const communeDropdown = document.getElementById("commune-select");
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
         );
 
-        const departments = db.exec("SELECT DISTINCT adm2_fr FROM communes ORDER BY adm0_fr ASC;")[0].values;
+        const departments = db.exec("SELECT DISTINCT adm2_fr FROM communes ORDER BY adm2_fr ASC;")[0].values;
         const departmentDropdown = document.getElementById("department-select");
         departments.forEach(dep => {
             const listItem = document.createElement("li");
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         });
     
         // Populate region dropdown
-        const regions = db.exec("SELECT DISTINCT adm1_fr FROM communes GROUP BY adm0_fr;")[0].values;
+        const regions = db.exec("SELECT DISTINCT adm1_fr FROM communes GROUP BY adm1_fr;")[0].values;
         const regionDropdown = document.getElementById("region-select");
         regions.forEach(reg => {
             const listItem = document.createElement("li");
@@ -139,18 +139,24 @@ document.addEventListener("DOMContentLoaded", async function () {
         const equipmentIndex = equipmentColumnIndexes[selectedEquipment];
     
 
+        const wellknown = require('wellknown'); // Import the wellknown library
+
         const geoJsonData = {
             type: "FeatureCollection",
             features: results.map(row => {
                 const score = row[equipmentIndex] || 0;
-
+        
+                // Convert the WKB BLOB (row[1]) to GeoJSON
+                const geometry = wellknown.parse(row[1]); // Parse WKB into GeoJSON
+        
                 return {
                     type: "Feature",
                     properties: {name: row[2], selectedEquipment: score},
-                    geometry: JSON.parse(row[1])
+                    geometry: geometry // Use the parsed GeoJSON geometry
                 };
             })
         };
+        
 
 
 
