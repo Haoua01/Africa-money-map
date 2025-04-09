@@ -6,6 +6,33 @@ document.addEventListener("DOMContentLoaded", async function () {
     }).addTo(map);
 
     const geoJsonFile = "http://localhost:3000/data/communes_all.geojson"; // Replace with the path to your GeoJSON file
+    const uemoaBordersFile = "http://localhost:3000/data/uemoa_countries_borders.geojson"; // Replace with the path to your UEMOA borders GeoJSON file
+    const cemacBordersFile = "http://localhost:3000/data/cemac_borders.geojson"; // Replace with the path to your CEMAC borders GeoJSON file
+
+
+    // Load UEMOA borders
+    fetch(uemoaBordersFile)
+        .then(response => response.json())
+        .then(data => {
+            L.geoJSON(data, {
+                style: function () {
+                    return { color: "#000", weight: 2, fillOpacity: 0 };
+                }
+            }).addTo(map);
+        })
+        .catch(error => console.error('Error loading UEMOA borders:', error));
+    // Load CEMAC borders
+    fetch(cemacBordersFile)
+        .then(response => response.json())
+        .then(data => {
+            L.geoJSON(data, {
+                style: function () {
+                    return { color: "#000", weight: 2, fillOpacity: 0 };
+                }
+            }).addTo(map);
+        })
+        .catch(error => console.error('Error loading CEMAC borders:', error));
+
 
     // Fetch GeoJSON data
     fetch(geoJsonFile)
@@ -148,15 +175,14 @@ document.addEventListener("DOMContentLoaded", async function () {
                 map.removeLayer(layer);
             }
         });
-    
+
         // Filter GeoJSON data based on the selected commune, department, or region
         const filteredData = geoJsonData.features.filter(feature => {
-            return (!country || feature.properties.adm0_fr === country) && 
-                   (!commune || feature.properties.adm3_fr === commune) &&
+            return (!country || feature.properties.adm0_fr === country) && (!commune || feature.properties.adm3_fr === commune) &&
                    (!department || feature.properties.adm2_fr === department) &&
                    (!region || feature.properties.adm1_fr === region);
         });
-    
+
         const geoJsonLayer = L.geoJSON({ type: "FeatureCollection", features: filteredData }, {
             onEachFeature: function (feature, layer) {
                 layer.on({
@@ -171,21 +197,19 @@ document.addEventListener("DOMContentLoaded", async function () {
                 });
             },
             style: function (feature) {
+                const coun = feature.properties.country;
                 const score = feature.properties[selectedEquipment] || 0;
-                const country = feature.properties.adm0_fr;  // Corrected reference to country property
-                const fillColor = getColor(score, country); 
-    
+                const color = getColor(score,coun); 
                 return {
-                    fillColor: fillColor,
-                    weight: 0.5,  // Thin border within countries
-                    opacity: 0.7,  // Border opacity
-                    color: (feature.properties.adm0_fr !== undefined) ? "#333333" : "transparent", // Dark border for country boundaries
+                    fillColor: color,
+                    weight: 0.5,
+                    opacity: 0.4,
+                    color: "lightgrey",
                     fillOpacity: 0.9
                 };
             }
         }).addTo(map);
     }
-    
 
     function getColor(value, country) {
         // Color mapping based on country
