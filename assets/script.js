@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     // Updated hover info: show commune name and score from "isibf_base"
     info.update = function (props) {
         this.div.innerHTML = props
-            ? `<h6>${props.adm3_fr}</h6><br>Score of access to bank branches: ${props.isibf_base}m`
+            ? `<h6>${props.adm3_fr}</h6><br>Score: ${props.isibf_base}`
             : "Hover over";
     };
     info.addTo(map);
@@ -187,23 +187,26 @@ document.addEventListener("DOMContentLoaded", async function () {
     function getColor(value, country) {
         // Color mapping based on country
         if (['benin', 'burkina', 'civ', 'guinee', 'mali', 'niger', 'senegal', 'togo'].includes(country)) {
-            return value > 0.5 ? "#eff3ff" :
-                   value > 0.1 ? "#bdd7e7" :
-                   value > 0.01 ? "#6baed6" :
-                   value > 0.001 ? "#3182bd" :
-                   "#08519c";
+            return value > 0.5 ? "#08519c" :  // Darkest
+            value > 0.1 ? "#3182bd" :
+            value > 0.01 ? "#6baed6" :
+            value > 0.001 ? "#bdd7e7" :  // Lightest
+            "#eff3ff";  // Lightest
+     
         } else if (country === 'ghana') {
-            return value > 0.5 ? "#fbb4b9" :
-                   value > 0.1 ? "#f768a1" :
-                   value > 0.01 ? "#d81b60" :
-                   value > 0.001 ? "#c2185b" :
-                   "#880e4f";
+            return value > 0.5 ? "#880e4f" :  // Darkest
+            value > 0.1 ? "#c2185b" :
+            value > 0.01 ? "#d81b60" :
+            value > 0.001 ? "#f768a1" :  // Lightest
+            "#fbb4b9";  // Lightest
+     
         } else if (['cameroun', 'tchad'].includes(country)) {
-            return value > 0.5 ? "#e5f5e0" :
-                   value > 0.1 ? "#a1d99b" :
-                   value > 0.01 ? "#31a354" :
-                   value > 0.001 ? "#006d2c" :
-                   "#00441b";
+            return value > 0.5 ? "#00441b" :  // Darkest
+            value > 0.1 ? "#006d2c" :
+            value > 0.01 ? "#31a354" :
+            value > 0.001 ? "#a1d99b" :  // Lightest
+            "#e5f5e0";  // Lightest
+     
         } else {
             return "#ffffff"; // Default color if no country matches
         }
