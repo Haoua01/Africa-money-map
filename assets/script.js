@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     dbPromise.then(db => {
 
-        let selectedEquipment = "ISIBF_base";
+        let selectedEquipment = "isibf_base";
         let selectedCommune = "";
         let selectedDepartment = "";
         let selectedRegion = "";
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             });
         });
 
-        const communes = db.exec("SELECT DISTINCT ADM3_FR FROM cemac_scores_communes_cameroun ORDER BY ADM0_FR ASC;")[0].values;
+        const communes = db.exec("SELECT DISTINCT adm3_fr FROM cemac_scores_communes_cameroun ORDER BY adm0_fr ASC;")[0].values;
         console.log("Communes:", communes); 
 
         const communeDropdown = document.getElementById("commune-select");
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
         );
 
-        const departments = db.exec("SELECT DISTINCT ADM2_FR FROM cemac_scores_communes_cameroun ORDER BY ADM0_FR ASC;")[0].values;
+        const departments = db.exec("SELECT DISTINCT adm2_fr FROM cemac_scores_communes_cameroun ORDER BY adm0_fr ASC;")[0].values;
         const departmentDropdown = document.getElementById("department-select");
         departments.forEach(dep => {
             const listItem = document.createElement("li");
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         });
     
         // Populate region dropdown
-        const regions = db.exec("SELECT DISTINCT ADM1_FR FROM cemac_scores_communes_cameroun GROUP BY ADM0_FR;")[0].values;
+        const regions = db.exec("SELECT DISTINCT adm1_fr FROM cemac_scores_communes_cameroun GROUP BY adm0_fr;")[0].values;
         const regionDropdown = document.getElementById("region-select");
         regions.forEach(reg => {
             const listItem = document.createElement("li");
@@ -125,14 +125,14 @@ document.addEventListener("DOMContentLoaded", async function () {
         });
 
         let query = "SELECT * FROM fusionn WHERE 1=1";
-        if (commune) query += ` AND ADM3_FR = '${commune}'`;
-        if (department) query += ` AND ADM2_FR = '${department}'`;
-        if (region) query += ` AND ADM1_FR = '${region}'`;
+        if (commune) query += ` AND adm3_fr = '${commune}'`;
+        if (department) query += ` AND adm2_fr = '${department}'`;
+        if (region) query += ` AND adm1_fr = '${region}'`;
 
         const results = db.exec(query)[0]?.values || [];
 
         const equipmentColumnIndexes = {
-            "ISIBF_base": 8,
+            "isibf_base": 8,
         };
     
         // Get the correct column index based on selectedEquipment
