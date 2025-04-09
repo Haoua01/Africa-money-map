@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 regionDropdown.appendChild(listItem);
             });
 
-            const countryDropdown = document.getElementById("region-select");
+            const countryDropdown = document.getElementById("country-select");
             regions.forEach(coun => {
                 const listItem = document.createElement("li");
                 listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${coun}">${coun}</a>`;
