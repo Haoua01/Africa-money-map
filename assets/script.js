@@ -180,10 +180,10 @@ document.addEventListener("DOMContentLoaded", async function () {
     
                 return {
                     fillColor: fillColor, 
-                    weight: 1,  // Default border weight
-                    opacity: 0.7, // Border opacity
+                    weight: 0.5,  // Default border weight
+                    opacity: 0.6, // Border opacity
                     color: (feature.properties.adm0_fr !== undefined) ? "#333333" : "transparent", // Darker border for country boundaries
-                    fillOpacity: 0.8  // Make sure the polygons are opaque enough
+                    fillOpacity: 0.9  // Make sure the polygons are opaque enough
                 };
             }
         }).addTo(map);
@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             .then(data => {
                 L.geoJSON(data, {
                     style: function () {
-                        return { color: "#000", weight: 2, fillOpacity: 0, zIndex: 10 }; // Border style for UEMOA
+                        return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for UEMOA
                     }
                 }).addTo(map);
             })
