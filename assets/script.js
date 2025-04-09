@@ -1,6 +1,8 @@
 
 document.addEventListener("DOMContentLoaded", async function () {
     const map = L.map("map").setView([14.5, 3.5], 5);
+
+    
     
     L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
         attribution: "&copy; OpenStreetMap contributors &copy; CartoDB",
@@ -139,24 +141,18 @@ document.addEventListener("DOMContentLoaded", async function () {
         // Get the correct column index based on selectedEquipment
         const equipmentIndex = equipmentColumnIndexes[selectedEquipment];
 
-        const wellknown = require('wellknown'); // Import the wellknown library
-
         const geoJsonData = {
             type: "FeatureCollection",
             features: results.map(row => {
                 const score = row[equipmentIndex] || 0;
-        
-                // Convert the WKB BLOB (row[1]) to GeoJSON
-                const geometry = wellknown.parse(row[1]); // Parse WKB into GeoJSON
-        
+
                 return {
                     type: "Feature",
-                    properties: {name: row[2], selectedEquipment: score},
-                    geometry: geometry // Use the parsed GeoJSON geometry
+                    properties: { name: row[4], selectedEquipment: score},
+                    geometry: JSON.parse(row[1])
                 };
             })
         };
-        
         
 
 
