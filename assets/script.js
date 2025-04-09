@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     selectedRegion = "";
                     loadMapData(geoJsonData,"", "", "", reg, selectedEquipment);
                 });
-                regionDropdown.appendChild(listItem);
+                countryDropdown.appendChild(listItem);
             });
 
             // Reset button event
