@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             .then(data => {
                 L.geoJSON(data, {
                     style: function () {
-                        return { color: "#000", weight: 2, fillOpacity: 0, zIndex: 10 }; // Border style for CEMAC
+                        return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for CEMAC
                     }
                 }).addTo(map);
             })
