@@ -1,108 +1,102 @@
-
 document.addEventListener("DOMContentLoaded", async function () {
     const map = L.map("map").setView([14.5, 3.5], 5);
 
-    
-    
     L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
         attribution: "&copy; OpenStreetMap contributors &copy; CartoDB",
     }).addTo(map);
 
-    const sqlPromise = initSqlJs({ locateFile: file => `libs/sql-wasm.wasm` });
-    const dbPromise = fetch("http://localhost:3000/data/cameroun.sqlite")
-        .then(res => res.arrayBuffer())
-        .then(buf => sqlPromise.then(SQL => new SQL.Database(new Uint8Array(buf))));
+    const geoJsonFile = "data/communes2.geojson"; // Replace with the path to your GeoJSON file
 
+    // Fetch GeoJSON data
+    fetch(geoJsonFile)
+        .then(response => response.json())
+        .then(geoJsonData => {
+            let selectedEquipment = "isibf_base";
+            let selectedCommune = "";
+            let selectedDepartment = "";
+            let selectedRegion = "";
 
+            const equipmentDropdown = document.getElementById("equipment-select");
 
-    dbPromise.then(db => {
-
-        let selectedEquipment = "isibf_base";
-        let selectedCommune = "";
-        let selectedDepartment = "";
-        let selectedRegion = "";
-
-        const equipmentDropdown = document.getElementById("equipment-select");
-
-        equipmentDropdown.querySelectorAll(".dropdown-item").forEach(item => {
-            item.addEventListener("click", function () {
-                selectedEquipment = this.getAttribute("data-value");
-                document.getElementById("equipmentDropdown").textContent = this.textContent;
-                loadMapData(db, selectedCommune, selectedDepartment, selectedRegion, selectedEquipment);
+            equipmentDropdown.querySelectorAll(".dropdown-item").forEach(item => {
+                item.addEventListener("click", function () {
+                    selectedEquipment = this.getAttribute("data-value");
+                    document.getElementById("equipmentDropdown").textContent = this.textContent;
+                    loadMapData(geoJsonData, selectedCommune, selectedDepartment, selectedRegion, selectedEquipment);
+                });
             });
-        });
 
-        const communes = db.exec("SELECT DISTINCT adm3_fr FROM communes ORDER BY adm3_fr ASC;")[0].values;
-        console.log("Communes:", communes); 
+            // Extract unique communes, departments, and regions from the GeoJSON data
+            const communes = [...new Set(geoJsonData.features.map(f => f.properties.adm3_fr))];
+            const departments = [...new Set(geoJsonData.features.map(f => f.properties.adm2_fr))];
+            const regions = [...new Set(geoJsonData.features.map(f => f.properties.adm1_fr))];
 
-        const communeDropdown = document.getElementById("commune-select");
-        communes.forEach(comm => {
-            const listItem = document.createElement("li");
-            listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${comm}">${comm}</a>`;
-            listItem.addEventListener("click", () => {
-                selectedCommune = comm;
-                document.getElementById("communeDropdown").textContent = comm;
+            // Populate commune dropdown
+            const communeDropdown = document.getElementById("commune-select");
+            communes.forEach(comm => {
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${comm}">${comm}</a>`;
+                listItem.addEventListener("click", () => {
+                    selectedCommune = comm;
+                    document.getElementById("communeDropdown").textContent = comm;
+                    document.getElementById("departmentDropdown").textContent = "Default";
+                    document.getElementById("regionDropdown").textContent = "Default";
+                    selectedDepartment = "";
+                    selectedRegion = "";
+                    loadMapData(geoJsonData, comm, "", "", selectedEquipment);
+                });
+                communeDropdown.appendChild(listItem);
+            });
+
+            // Populate department dropdown
+            const departmentDropdown = document.getElementById("department-select");
+            departments.forEach(dep => {
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${dep}">${dep}</a>`;
+                listItem.addEventListener("click", () => {
+                    selectedCommune = "";
+                    selectedDepartment = dep;
+                    document.getElementById("communeDropdown").textContent = "Default";
+                    document.getElementById("departmentDropdown").textContent = dep;
+                    document.getElementById("regionDropdown").textContent = "Default";
+                    selectedRegion = "";
+                    loadMapData(geoJsonData, "", dep, "", selectedEquipment);
+                });
+                departmentDropdown.appendChild(listItem);
+            });
+
+            // Populate region dropdown
+            const regionDropdown = document.getElementById("region-select");
+            regions.forEach(reg => {
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${reg}">${reg}</a>`;
+                listItem.addEventListener("click", () => {
+                    selectedRegion = reg;
+                    document.getElementById("communeDropdown").textContent = "Default";
+                    document.getElementById("departmentDropdown").textContent = "Default";
+                    document.getElementById("regionDropdown").textContent = reg;
+                    selectedCommune = "";
+                    selectedDepartment = "";
+                    loadMapData(geoJsonData, "", "", reg, selectedEquipment);
+                });
+                regionDropdown.appendChild(listItem);
+            });
+
+            // Reset button event
+            document.getElementById("resetButton").addEventListener("click", function() {
+                loadMapData(geoJsonData, "", "", "", selectedEquipment);
+                document.getElementById("communeDropdown").textContent = "Default";
                 document.getElementById("departmentDropdown").textContent = "Default";
                 document.getElementById("regionDropdown").textContent = "Default";
-                selectedDepartment = "";
-                selectedRegion = "";
-                loadMapData(db, comm, "", "", selectedEquipment);
-            });
-            communeDropdown.appendChild(listItem);
-        }
-        );
-
-        const departments = db.exec("SELECT DISTINCT adm2_fr FROM communes ORDER BY adm2_fr ASC;")[0].values;
-        const departmentDropdown = document.getElementById("department-select");
-        departments.forEach(dep => {
-            const listItem = document.createElement("li");
-            listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${dep}">${dep}</a>`;
-            listItem.addEventListener("click", () => {
-                selectedCommune = "";
-                selectedDepartment = dep;
-                document.getElementById("communeDropdown").textContent = "Default";
-                document.getElementById("departmentDropdown").textContent = dep;
-                document.getElementById("regionDropdown").textContent = "Default";
-                selectedRegion = "";
-                loadMapData(db, "", dep, "", selectedEquipment);
-            });
-            departmentDropdown.appendChild(listItem);
-        });
-    
-        // Populate region dropdown
-        const regions = db.exec("SELECT DISTINCT adm1_fr FROM communes GROUP BY adm1_fr;")[0].values;
-        const regionDropdown = document.getElementById("region-select");
-        regions.forEach(reg => {
-            const listItem = document.createElement("li");
-            listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${reg}">${reg}</a>`;
-            listItem.addEventListener("click", () => {
-                selectedRegion = reg;
-                document.getElementById("communeDropdown").textContent = "Default";
-                document.getElementById("departmentDropdown").textContent = "Default";
-                document.getElementById("regionDropdown").textContent = reg;
                 selectedCommune = "";
                 selectedDepartment = "";
-                loadMapData(db, "", "", reg, selectedEquipment);
+                selectedRegion = "";
             });
-            regionDropdown.appendChild(listItem);
-        });
 
-
-        document.getElementById("resetButton").addEventListener("click", function() {
-            loadMapData(db, "", "", "", selectedEquipment);
-            document.getElementById("communeDropdown").textContent = "Default";
-            document.getElementById("departmentDropdown").textContent = "Default";
-            document.getElementById("regionDropdown").textContent =  "Default";
-            selectedCommune = "";
-            selectedDepartment = "";
-            selectedRegion = "";
-        });
-        
-
-        loadMapData(db, "", "", "", selectedEquipment);
-    });
-
-
+            // Initial load
+            loadMapData(geoJsonData, "", "", "", selectedEquipment);
+        })
+        .catch(error => console.error('Error loading GeoJSON:', error));
 
     // Info Control
     const info = L.control();
@@ -113,68 +107,26 @@ document.addEventListener("DOMContentLoaded", async function () {
     };
     info.update = function (props) {
         this.div.innerHTML = props
-            ? `<h6>${props.name}</h6>
-            <br>Score of access to bank branches: ${props.selectedEquipment}m`
+            ? `<h6>${props.name}</h6><br>Score of access to bank branches: ${props.selectedEquipment}m`
             : "Hover over";
     };
     info.addTo(map);
 
-
-    function loadMapData(db, commune, department, region, selectedEquipment) {
+    function loadMapData(geoJsonData, commune, department, region, selectedEquipment) {
         map.eachLayer(layer => {
             if (layer instanceof L.GeoJSON) {
                 map.removeLayer(layer);
             }
         });
 
-        let query = "SELECT * FROM communes WHERE 1=1";
-        if (commune) query += ` AND adm3_fr = '${commune}'`;
-        if (department) query += ` AND adm2_fr = '${department}'`;
-        if (region) query += ` AND adm1_fr = '${region}'`;
+        // Filter GeoJSON data based on the selected commune, department, or region
+        const filteredData = geoJsonData.features.filter(feature => {
+            return (!commune || feature.properties.adm3_fr === commune) &&
+                   (!department || feature.properties.adm2_fr === department) &&
+                   (!region || feature.properties.adm1_fr === region);
+        });
 
-        const results = db.exec(query)[0]?.values || [];
-
-        const equipmentColumnIndexes = {
-            "isibf_base": 8,
-        };
-    
-        // Get the correct column index based on selectedEquipment
-        const equipmentIndex = equipmentColumnIndexes[selectedEquipment];
-
-
-
-        const geoJsonData = {
-            type: "FeatureCollection",
-            features: results.map(row => {
-                const score = row[equipmentIndex] || 0;
-                // Step 1: Convert hex string to a Uint8Array (byte array)
-                let byteArray = new Uint8Array(row[1].match(/.{1,2}/g).map(byte => parseInt(byte, 16)));
-
-                // Step 2: Convert the byte array to a string
-                let text = new TextDecoder().decode(byteArray);
-
-                // Step 3: Parse the string into JSON
-                let jsonObject;
-                try {
-                    jsonObject = JSON.parse(text);
-                    console.log(jsonObject);  // You now have the parsed JSON object
-                } catch (e) {
-                    console.error("Invalid JSON:", e);
-                }
-                return {
-                    type: "Feature",
-                    properties: { name: row[4], selectedEquipment: score},
-                    geometry: jsonObject
-                };
-            })
-        };
-        
-
-
-
-        const geoJsonLayer = L.geoJSON(geoJsonData, {
-            // layer.bindTooltip(`<strong>${feature.properties.name}</strong>: ${feature.properties.selectedEquipment}m`);
-
+        const geoJsonLayer = L.geoJSON({ type: "FeatureCollection", features: filteredData }, {
             onEachFeature: function (feature, layer) {
                 layer.on({
                     mouseover: function (e) {
@@ -185,14 +137,12 @@ document.addEventListener("DOMContentLoaded", async function () {
                         geoJsonLayer.resetStyle(e.target);
                         info.update();
                     }
-                    // click: function (e) {
-                    //     map.fitBounds(e.target.getBounds());
-                    // }
                 });
             },
             style: function (feature) {
+                const score = feature.properties[selectedEquipment] || 0;
                 return {
-                    fillColor: getColor(feature.properties.selectedEquipment),
+                    fillColor: getColor(score),
                     weight: 0.5,
                     opacity: 0.4,
                     color: "lightgrey",
@@ -201,7 +151,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             }
         }).addTo(map);
     }
-
 
     function getColor(value) {
         return value > 0.5 ? "#eff3ff" :
@@ -214,26 +163,9 @@ document.addEventListener("DOMContentLoaded", async function () {
     document.getElementById("map-btn").addEventListener("click", function() {
         showContent("map-content");
     });
-    
-    
+
     function showContent(contentId) {
         document.getElementById("map-content").style.display = "none";
         document.getElementById(contentId).style.display = "flex";
     }
-
-
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
