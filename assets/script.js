@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 const score = row[equipmentIndex] || 0;
         
                 // Assuming row[1] contains the binary data (e.g., WKB)
-                const buffer = Buffer.from(row[1], 'binary'); // Convert the binary data into a buffer
+                const buffer = new Uint8Array(row[1]); // Convert the binary data into a buffer
                 const geometry = wkx.Geometry.parse(buffer).toGeoJSON(); // Convert the WKB to GeoJSON
         
                 return {
@@ -159,6 +159,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 };
             })
         };
+        
         
         
 
