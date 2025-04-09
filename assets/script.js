@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         attribution: "&copy; OpenStreetMap contributors &copy; CartoDB",
     }).addTo(map);
 
-    const geoJsonFile = "data/communes2.geojson"; // Replace with the path to your GeoJSON file
+    const geoJsonFile = "http://localhost:3000/data/communes2.geojson"; // Replace with the path to your GeoJSON file
 
     // Fetch GeoJSON data
     fetch(geoJsonFile)
