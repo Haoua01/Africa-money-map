@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     }).addTo(map);
 
     const sqlPromise = initSqlJs({ locateFile: file => `libs/sql-wasm.wasm` });
-    const dbPromise = fetch("http://localhost:3000/data/communes_all.sqlite")
+    const dbPromise = fetch("http://localhost:3000/data/cameroun.sqlite")
         .then(res => res.arrayBuffer())
         .then(buf => sqlPromise.then(SQL => new SQL.Database(new Uint8Array(buf))));
 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             });
         });
 
-        const communes = db.exec("SELECT DISTINCT adm3_fr FROM cemac_scores_communes_cameroun ORDER BY adm0_fr ASC;")[0].values;
+        const communes = db.exec("SELECT DISTINCT adm3_fr FROM communes ORDER BY adm0_fr ASC;")[0].values;
         console.log("Communes:", communes); 
 
         const communeDropdown = document.getElementById("commune-select");
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
         );
 
-        const departments = db.exec("SELECT DISTINCT adm2_fr FROM cemac_scores_communes_cameroun ORDER BY adm0_fr ASC;")[0].values;
+        const departments = db.exec("SELECT DISTINCT adm2_fr FROM communes ORDER BY adm0_fr ASC;")[0].values;
         const departmentDropdown = document.getElementById("department-select");
         departments.forEach(dep => {
             const listItem = document.createElement("li");
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         });
     
         // Populate region dropdown
-        const regions = db.exec("SELECT DISTINCT adm1_fr FROM cemac_scores_communes_cameroun GROUP BY adm0_fr;")[0].values;
+        const regions = db.exec("SELECT DISTINCT adm1_fr FROM communes GROUP BY adm0_fr;")[0].values;
         const regionDropdown = document.getElementById("region-select");
         regions.forEach(reg => {
             const listItem = document.createElement("li");
