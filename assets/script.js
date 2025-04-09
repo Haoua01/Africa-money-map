@@ -151,14 +151,15 @@ document.addEventListener("DOMContentLoaded", async function () {
                 map.removeLayer(layer);
             }
         });
-
+    
         // Filter GeoJSON data based on the selected commune, department, or region
         const filteredData = geoJsonData.features.filter(feature => {
-            return (!country || feature.properties.adm0_fr === country) && (!commune || feature.properties.adm3_fr === commune) &&
+            return (!country || feature.properties.adm0_fr === country) && 
+                   (!commune || feature.properties.adm3_fr === commune) &&
                    (!department || feature.properties.adm2_fr === department) &&
                    (!region || feature.properties.adm1_fr === region);
         });
-
+    
         const geoJsonLayer = L.geoJSON({ type: "FeatureCollection", features: filteredData }, {
             onEachFeature: function (feature, layer) {
                 layer.on({
@@ -173,19 +174,45 @@ document.addEventListener("DOMContentLoaded", async function () {
                 });
             },
             style: function (feature) {
-                const coun = feature.properties.country;
                 const score = feature.properties[selectedEquipment] || 0;
-                const color = getColor(score,coun); 
+                const country = feature.properties.adm0_fr;  // Corrected reference to country property
+                const fillColor = getColor(score, country);
+    
                 return {
-                    fillColor: color,
-                    weight: 0.5,
-                    opacity: 0.4,
-                    color: "lightgrey",
-                    fillOpacity: 0.9
+                    fillColor: fillColor, 
+                    weight: 1,  // Default border weight
+                    opacity: 0.7, // Border opacity
+                    color: (feature.properties.adm0_fr !== undefined) ? "#333333" : "transparent", // Darker border for country boundaries
+                    fillOpacity: 0.8  // Make sure the polygons are opaque enough
                 };
             }
         }).addTo(map);
+    
+        // Load UEMOA borders (and ensure they're on top of the polygons)
+        fetch(uemoaBordersFile)
+            .then(response => response.json())
+            .then(data => {
+                L.geoJSON(data, {
+                    style: function () {
+                        return { color: "#000", weight: 2, fillOpacity: 0, zIndex: 10 }; // Border style for UEMOA
+                    }
+                }).addTo(map);
+            })
+            .catch(error => console.error('Error loading UEMOA borders:', error));
+    
+        // Load CEMAC borders (and ensure they're on top of the polygons)
+        fetch(cemacBordersFile)
+            .then(response => response.json())
+            .then(data => {
+                L.geoJSON(data, {
+                    style: function () {
+                        return { color: "#000", weight: 2, fillOpacity: 0, zIndex: 10 }; // Border style for CEMAC
+                    }
+                }).addTo(map);
+            })
+            .catch(error => console.error('Error loading CEMAC borders:', error));
     }
+    
 
     function getColor(value, country) {
         // Color mapping based on country
@@ -224,27 +251,6 @@ document.addEventListener("DOMContentLoaded", async function () {
         document.getElementById(contentId).style.display = "flex";
     }
 
-    fetch(uemoaBordersFile)
-        .then(response => response.json())
-        .then(data => {
-            L.geoJSON(data, {
-                style: function () {
-                    return { color: "#000", weight: 2, fillOpacity: 0, zIndex: 10 }; // Border style for UEMOA
-                }
-            }).addTo(map);
-        })
-        .catch(error => console.error('Error loading UEMOA borders:', error));
 
-    // Load CEMAC borders (and ensure they're on top of the polygons)
-    fetch(cemacBordersFile)
-        .then(response => response.json())
-        .then(data => {
-            L.geoJSON(data, {
-                style: function () {
-                    return { color: "#000", weight: 2, fillOpacity: 0, zIndex: 10 }; // Border style for CEMAC
-                }
-            }).addTo(map);
-        })
-        .catch(error => console.error('Error loading CEMAC borders:', error));
 
 });
