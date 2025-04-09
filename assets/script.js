@@ -141,14 +141,30 @@ document.addEventListener("DOMContentLoaded", async function () {
         // Get the correct column index based on selectedEquipment
         const equipmentIndex = equipmentColumnIndexes[selectedEquipment];
 
+
+
         const geoJsonData = {
             type: "FeatureCollection",
             features: results.map(row => {
                 const score = row[equipmentIndex] || 0;
+                // Step 1: Convert hex string to a Uint8Array (byte array)
+                let byteArray = new Uint8Array(row[1].match(/.{1,2}/g).map(byte => parseInt(byte, 16)));
+
+                // Step 2: Convert the byte array to a string
+                let text = new TextDecoder().decode(byteArray);
+
+                // Step 3: Parse the string into JSON
+                let jsonObject;
+                try {
+                    jsonObject = JSON.parse(text);
+                    console.log(jsonObject);  // You now have the parsed JSON object
+                } catch (e) {
+                    console.error("Invalid JSON:", e);
+                }
                 return {
                     type: "Feature",
                     properties: { name: row[4], selectedEquipment: score},
-                    geometry: JSON.parse(row[1].text())
+                    geometry: jsonObject
                 };
             })
         };
