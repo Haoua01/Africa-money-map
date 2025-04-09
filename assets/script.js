@@ -141,18 +141,25 @@ document.addEventListener("DOMContentLoaded", async function () {
         // Get the correct column index based on selectedEquipment
         const equipmentIndex = equipmentColumnIndexes[selectedEquipment];
 
+        const wkx = require('wkx'); // Import the wkx library to handle WKB data
+
         const geoJsonData = {
             type: "FeatureCollection",
             features: results.map(row => {
                 const score = row[equipmentIndex] || 0;
-
+        
+                // Assuming row[1] contains the binary data (e.g., WKB)
+                const buffer = Buffer.from(row[1], 'binary'); // Convert the binary data into a buffer
+                const geometry = wkx.Geometry.parse(buffer).toGeoJSON(); // Convert the WKB to GeoJSON
+        
                 return {
                     type: "Feature",
-                    properties: { name: row[4], selectedEquipment: score},
-                    geometry: JSON.parse(row[1])
+                    properties: { name: row[4], selectedEquipment: score },
+                    geometry: geometry // Use the parsed GeoJSON geometry
                 };
             })
         };
+        
         
 
 
