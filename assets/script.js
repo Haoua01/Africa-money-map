@@ -224,26 +224,27 @@ document.addEventListener("DOMContentLoaded", async function () {
         document.getElementById(contentId).style.display = "flex";
     }
 
-    // Load UEMOA borders
     fetch(uemoaBordersFile)
         .then(response => response.json())
         .then(data => {
             L.geoJSON(data, {
                 style: function () {
-                    return { color: "#000", weight: 2, fillOpacity: 0 };
+                    return { color: "#000", weight: 2, fillOpacity: 0, zIndex: 10 }; // Border style for UEMOA
                 }
             }).addTo(map);
         })
         .catch(error => console.error('Error loading UEMOA borders:', error));
-    // Load CEMAC borders
+
+    // Load CEMAC borders (and ensure they're on top of the polygons)
     fetch(cemacBordersFile)
         .then(response => response.json())
         .then(data => {
             L.geoJSON(data, {
                 style: function () {
-                    return { color: "#000", weight: 2, fillOpacity: 0 };
+                    return { color: "#000", weight: 2, fillOpacity: 0, zIndex: 10 }; // Border style for CEMAC
                 }
             }).addTo(map);
         })
         .catch(error => console.error('Error loading CEMAC borders:', error));
+
 });
