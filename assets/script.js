@@ -175,15 +175,15 @@ document.addEventListener("DOMContentLoaded", async function () {
             },
             style: function (feature) {
                 const score = feature.properties[selectedEquipment] || 0;
-                const country = feature.properties.adm0_fr;  // Corrected reference to country property
+                const country = feature.properties.country;  // Corrected reference to country property
                 const fillColor = getColor(score, country);
     
                 return {
                     fillColor: fillColor, 
-                    weight: 0.8,  // Default border weight
+                    weight: 1,  // Default border weight
                     opacity: 0.7, // Border opacity
-                    color: "lightgrey",
-                    fillOpacity: 0.9  // Make sure the polygons are opaque enough
+                    color: (feature.properties.adm0_fr !== undefined) ? "#333333" : "transparent", // Darker border for country boundaries
+                    fillOpacity: 0.8  // Make sure the polygons are opaque enough
                 };
             }
         }).addTo(map);
