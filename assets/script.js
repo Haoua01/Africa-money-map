@@ -170,8 +170,9 @@ document.addEventListener("DOMContentLoaded", async function () {
                 });
             },
             style: function (feature) {
+                const coun = feature.properties.country;
                 const score = feature.properties[selectedEquipment] || 0;
-                const color = getColor(score, selectedCountry);
+                const color = getColor(score,coun); 
                 return {
                     fillColor: color,
                     weight: 0.5,
