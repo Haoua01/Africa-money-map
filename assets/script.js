@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     selectedCommune = "";
                     selectedDepartment = "";
                     selectedRegion = "";
-                    loadMapData(geoJsonData,"", "", "", reg, selectedEquipment);
+                    loadMapData(geoJsonData,cou, "", "", "", selectedEquipment);
                 });
                 countryDropdown.appendChild(listItem);
             });
