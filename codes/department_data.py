@@ -31,9 +31,9 @@ class DepartmentData(Shapefile):
 
         # Save the updated shapefile
         if country == 'cameroun':
-            output_path = f'Africa-money-map/data/results/{area}_scores_departments_{country}.shp'
+            output_path = f'Africa-money-map/data/results/scores/{area}_scores_departments_{country}.shp'
         else:
-            output_path = f'Africa-money-map/data/results/{area}_scores_departments.shp'
+            output_path = f'Africa-money-map/data/results/scores/{area}_scores_departments.shp'
         shp_department.to_file(output_path)
 
         print(f'ISIBF values added and saved to {output_path}')

@@ -69,7 +69,7 @@ def main():
                     shp_communes=shp_files_country['adm3']
                     shp_departments=gpd.read_file(shp_files_country['adm2'])
                     commune_data = CommuneData(shp=shp_communes)
-                    #shp_communes_scores = commune_data.compute_scores(threshold=threshold_CEMAC, area=area, calculation_type='base', adm_type='communes')
+                    shp_communes_scores = commune_data.compute_scores(threshold=threshold_CEMAC, area=area, calculation_type='base', adm_type='communes')
                     path_shp_communes = commune_data.compute_scores(threshold=threshold_CEMAC, area=area, calculation_type='base', adm_type='mean_communes')
                     department_data = DepartmentData(shp=path_shp_communes)
                     shp_departments_scores = department_data.compute_mean_scores(shp_departments, area=area)

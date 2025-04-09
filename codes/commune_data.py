@@ -124,12 +124,14 @@ class CommuneData(Shapefile):
             self.shp.loc[self.shp['Country'] == country, f'ISIBF_{calculation_type}'] = country_shp['ADM3_FR'].map(isibf[country])
         
         #define the output path for the shapefile
-        if country=='cameroun':
-            output_path = f'Africa-money-map/data/results/{area}_scores_{adm_type}_{country}.shp'
+        if country=='cameroun' and adm_type=='communes':
+            output_path = f'Africa-money-map/data/results/scores/{area}_scores_{adm_type}_{country}.shp'
+        elif country=='cameroun' and adm_type=='mean_communes':
+            output_path = f'Africa-money-map/data/results/scores/{area}_scores_{adm_type}_{country}.shp'
         elif country=='tchad':
-            output_path = f'Africa-money-map/data/results/{area}_scores_{adm_type}_{country}.shp'
+            output_path = f'Africa-money-map/data/results/scores/{area}_scores_{adm_type}_{country}.shp'
         else:
-            output_path = f'Africa-money-map/data/results/{area}_scores_{adm_type}.shp'
+            output_path = f'Africa-money-map/data/results/scores/{area}_scores_{adm_type}.shp'
         self.shp.to_file(output_path)
         print('ISIBF values calculated and added to shapefile to', output_path)
 
