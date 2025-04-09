@@ -145,20 +145,13 @@ document.addEventListener("DOMContentLoaded", async function () {
             type: "FeatureCollection",
             features: results.map(row => {
                 const score = row[equipmentIndex] || 0;
-        
-                // Assuming row[1] contains the binary data (e.g., WKB)
-                const buffer = new Uint8Array(row[1]); // Convert the binary data into a buffer
-                const geometry = wkx.Geometry.parse(buffer).toGeoJSON(); // Convert the WKB to GeoJSON
-        
                 return {
                     type: "Feature",
-                    properties: { name: row[4], selectedEquipment: score },
-                    geometry: geometry // Use the parsed GeoJSON geometry
+                    properties: { name: row[4], selectedEquipment: score},
+                    geometry: JSON.parse(row[1].text())
                 };
             })
         };
-        
-        
         
 
 
