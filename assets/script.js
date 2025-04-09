@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     }).addTo(map);
 
     const sqlPromise = initSqlJs({ locateFile: file => `libs/sql-wasm.wasm` });
-    const dbPromise = fetch("https://github.com/Haoua01/Africa-money-map/blob/main/sqlite_data/communes_all.sqlite")
+    const dbPromise = fetch("https://africamoneymap.fr/data/cameroun_communes.sqlite")
         .then(res => res.arrayBuffer())
         .then(buf => sqlPromise.then(SQL => new SQL.Database(new Uint8Array(buf))));
 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             });
         });
 
-        const communes = db.exec("SELECT DISTINCT ADM3_FR FROM fusionn ORDER BY ADM0_FR ASC;")[0].values;
+        const communes = db.exec("SELECT DISTINCT ADM3_FR FROM cemac_scores_communes_cameroun ORDER BY ADM0_FR ASC;")[0].values;
         console.log("Communes:", communes); 
 
         const communeDropdown = document.getElementById("commune-select");
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
         );
 
-        const departments = db.exec("SELECT DISTINCT ADM2_FR FROM fusionn ORDER BY ADM0_FR ASC;")[0].values;
+        const departments = db.exec("SELECT DISTINCT ADM2_FR FROM cemac_scores_communes_cameroun ORDER BY ADM0_FR ASC;")[0].values;
         const departmentDropdown = document.getElementById("department-select");
         departments.forEach(dep => {
             const listItem = document.createElement("li");
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         });
     
         // Populate region dropdown
-        const regions = db.exec("SELECT DISTINCT ADM1_FR FROM fusionn GROUP BY ADM0_FR;")[0].values;
+        const regions = db.exec("SELECT DISTINCT ADM1_FR FROM cemac_scores_communes_cameroun GROUP BY ADM0_FR;")[0].values;
         const regionDropdown = document.getElementById("region-select");
         regions.forEach(reg => {
             const listItem = document.createElement("li");
