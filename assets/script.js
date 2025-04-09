@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             });
 
             const countryDropdown = document.getElementById("country-select");
-            regions.forEach(coun => {
+            countries.forEach(coun => {
                 const listItem = document.createElement("li");
                 listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${coun}">${coun}</a>`;
                 listItem.addEventListener("click", () => {
