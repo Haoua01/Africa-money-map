@@ -10,30 +10,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     const cemacBordersFile = "http://localhost:3000/data/cemac_borders.geojson"; // Replace with the path to your CEMAC borders GeoJSON file
 
 
-    // Load UEMOA borders
-    fetch(uemoaBordersFile)
-        .then(response => response.json())
-        .then(data => {
-            L.geoJSON(data, {
-                style: function () {
-                    return { color: "#000", weight: 2, fillOpacity: 0 };
-                }
-            }).addTo(map);
-        })
-        .catch(error => console.error('Error loading UEMOA borders:', error));
-    // Load CEMAC borders
-    fetch(cemacBordersFile)
-        .then(response => response.json())
-        .then(data => {
-            L.geoJSON(data, {
-                style: function () {
-                    return { color: "#000", weight: 2, fillOpacity: 0 };
-                }
-            }).addTo(map);
-        })
-        .catch(error => console.error('Error loading CEMAC borders:', error));
-
-
     // Fetch GeoJSON data
     fetch(geoJsonFile)
         .then(response => response.json())
@@ -247,4 +223,27 @@ document.addEventListener("DOMContentLoaded", async function () {
         document.getElementById("map-content").style.display = "none";
         document.getElementById(contentId).style.display = "flex";
     }
+
+    // Load UEMOA borders
+    fetch(uemoaBordersFile)
+        .then(response => response.json())
+        .then(data => {
+            L.geoJSON(data, {
+                style: function () {
+                    return { color: "#000", weight: 2, fillOpacity: 0 };
+                }
+            }).addTo(map);
+        })
+        .catch(error => console.error('Error loading UEMOA borders:', error));
+    // Load CEMAC borders
+    fetch(cemacBordersFile)
+        .then(response => response.json())
+        .then(data => {
+            L.geoJSON(data, {
+                style: function () {
+                    return { color: "#000", weight: 2, fillOpacity: 0 };
+                }
+            }).addTo(map);
+        })
+        .catch(error => console.error('Error loading CEMAC borders:', error));
 });
