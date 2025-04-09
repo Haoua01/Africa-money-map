@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             }
         });
 
-        let query = "SELECT * FROM fusionn WHERE 1=1";
+        let query = "SELECT * FROM communes WHERE 1=1";
         if (commune) query += ` AND adm3_fr = '${commune}'`;
         if (department) query += ` AND adm2_fr = '${department}'`;
         if (region) query += ` AND adm1_fr = '${region}'`;
