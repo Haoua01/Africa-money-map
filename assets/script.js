@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", async function () {
         attribution: "&copy; OpenStreetMap contributors &copy; CartoDB",
     }).addTo(map);
 
-    const geoJsonFile = "http://localhost:3000/data/communes_all.geojson"; // Replace with the path to your GeoJSON file
-    const uemoaBordersFile = "http://localhost:3000/data/uemoa_borders.geojson"; // Replace with the path to your UEMOA borders GeoJSON file
-    const cemacBordersFile = "http://localhost:3000/data/cemac_borders.geojson"; // Replace with the path to your CEMAC borders GeoJSON file
+    const geoJsonFile = "web_data/communes_all.geojson"; 
+    const uemoaBordersFile = "web_data/uemoa_borders.geojson"; 
+    const cemacBordersFile = "web_data/cemac_borders.geojson"; 
 
 
     // Fetch GeoJSON data
