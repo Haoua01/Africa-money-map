@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             },
             style: function (feature) {
                 const score = feature.properties[selectedEquipment] || 0;
-                const country = feature.properties.Country;  // Corrected reference to country property
+                const country = feature.properties.ADM0_EN;  // Corrected reference to country property
                 const fillColor = getColor(score, country);
     
                 return {
@@ -279,7 +279,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             legend = L.control({ position: "bottomright" });
             legend.onAdd = function () {
                 const div = L.DomUtil.create("div", "legend"),
-                    grades = [1, 0.5, 0.1, 0.01, 0.001];  // Adjust grades as per your needs
+                    grades = [1, 0.5, 0.1, 0.01, 0.001];  
     
                 div.innerHTML += "<strong>Bank Branch Access Score</strong><br>";
                 for (let i = 0; i < grades.length; i++) {
@@ -295,21 +295,21 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     function getColor(value, country) {
         // Color mapping based on country
-        if (['benin', 'burkina', 'civ', 'guinee', 'mali', 'niger', 'senegal', 'togo'].includes(country)) {
+        if (['Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'].includes(country)) {
             return value > 0.5 ? "#08519c" :  // Darkest
             value > 0.1 ? "#3182bd" :
             value > 0.01 ? "#6baed6" :
             value > 0.001 ? "#bdd7e7" :  // Lightest
             "#eff3ff";  // Lightest
      
-        } else if (country === 'ghana') {
+        } else if (country === 'Ghana') {
             return value > 0.5 ? "#880e4f" :  // Darkest
             value > 0.1 ? "#c2185b" :
             value > 0.01 ? "#d81b60" :
             value > 0.001 ? "#f768a1" :  // Lightest
             "#fbb4b9";  // Lightest
      
-        } else if (['cameroun', 'tchad'].includes(country)) {
+        } else if (['Cameroun', 'Chad'].includes(country)) {
             return value > 0.5 ? "#00441b" :  // Darkest
             value > 0.1 ? "#006d2c" :
             value > 0.01 ? "#31a354" :
