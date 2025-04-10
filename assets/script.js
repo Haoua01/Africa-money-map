@@ -107,13 +107,13 @@ document.addEventListener("DOMContentLoaded", async function () {
                 "tchad": { lat: 15.3, lng: 18, zoom: 6 }
             };
             
-
-           // Country selection event
+            // Country selection event (modified)
             const countryDropdown = document.getElementById("country-select");
             countries.forEach(coun => {
                 const listItem = document.createElement("li");
                 listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${coun}">${coun}</a>`;
                 listItem.addEventListener("click", () => {
+                    isDefaultView = false;  // Change the flag to false when a country is selected
                     selectedCountry = coun;
                     document.getElementById("communeDropdown").textContent = "Default";
                     document.getElementById("departmentDropdown").textContent = "Default";
@@ -136,6 +136,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             
             // Reset button event
             document.getElementById("resetButton").addEventListener("click", function() {
+                isDefaultView = true; 
                 loadMapData(geoJsonData, "", "", "", selectedEquipment);
                 document.getElementById("countryDropdown").textContent = "Default";
                 document.getElementById("communeDropdown").textContent = "Default";
@@ -168,6 +169,8 @@ document.addEventListener("DOMContentLoaded", async function () {
     };
     info.addTo(map);
 
+    let isDefaultView = true; 
+    
     function loadMapData(geoJsonData, country, commune, department, region, selectedEquipment) {
         map.eachLayer(layer => {
             if (layer instanceof L.GeoJSON) {
@@ -210,30 +213,32 @@ document.addEventListener("DOMContentLoaded", async function () {
                 };
             }
         }).addTo(map);
+
+        if (isDefaultView) {
+            // Load UEMOA borders
+            fetch(uemoaBordersFile)
+                .then(response => response.json())
+                .then(data => {
+                    L.geoJSON(data, {
+                        style: function () {
+                            return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for UEMOA
+                        }
+                    }).addTo(map);
+                })
+                .catch(error => console.error('Error loading UEMOA borders:', error));
     
-        // Load UEMOA borders (and ensure they're on top of the polygons)
-        fetch(uemoaBordersFile)
-            .then(response => response.json())
-            .then(data => {
-                L.geoJSON(data, {
-                    style: function () {
-                        return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for UEMOA
-                    }
-                }).addTo(map);
-            })
-            .catch(error => console.error('Error loading UEMOA borders:', error));
-    
-        // Load CEMAC borders (and ensure they're on top of the polygons)
-        fetch(cemacBordersFile)
-            .then(response => response.json())
-            .then(data => {
-                L.geoJSON(data, {
-                    style: function () {
-                        return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for CEMAC
-                    }
-                }).addTo(map);
-            })
-            .catch(error => console.error('Error loading CEMAC borders:', error));
+            // Load CEMAC borders
+            fetch(cemacBordersFile)
+                .then(response => response.json())
+                .then(data => {
+                    L.geoJSON(data, {
+                        style: function () {
+                            return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for CEMAC
+                        }
+                    }).addTo(map);
+                })
+                .catch(error => console.error('Error loading CEMAC borders:', error));
+        }
     }
     
 
