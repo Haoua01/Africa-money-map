@@ -115,9 +115,15 @@ document.addEventListener("DOMContentLoaded", async function () {
                 "Cameroon": { lat: 6.5, lng: 13, zoom: 6 },
                 "Chad": { lat: 15.5, lng: 18, zoom: 6 }
             };
-            
+
+
+        
             // Country Dropdown
             const countryDropdown = document.getElementById("country-select");
+            countryDropdown.addEventListener("change", function () {
+                const selectedCountry = this.value;
+                loadMapData(geoJsonData, selectedCountry, "", "", "", selectedEquipment);  // Update the map and legend
+            });
             countries.forEach(coun => {
                 const listItem = document.createElement("li");
                 listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${coun}">${coun}</a>`;
@@ -231,6 +237,8 @@ document.addEventListener("DOMContentLoaded", async function () {
             }
         }).addTo(map);
 
+        updateLegend(country);
+
         if (isDefaultView) {
             // Load UEMOA borders
             fetch(uemoaBordersFile)
@@ -257,14 +265,24 @@ document.addEventListener("DOMContentLoaded", async function () {
                 .catch(error => console.error('Error loading CEMAC borders:', error));
         }
 
-        // Add the legend only when a country is selected
-        if (country && !legend) {
-            const legend = L.control({ position: "bottomright" });
+
+    }
+    
+
+    function updateLegend(country) {
+        // Remove the old legend if it exists
+        if (legend) {
+            legend.remove();
+        }
+    
+        if (country) {
+            // Add the new legend when a country is selected
+            legend = L.control({ position: "bottomright" });
             legend.onAdd = function () {
                 const div = L.DomUtil.create("div", "legend"),
-                    grades = [1, 0.5, 0.1, 0.01, 0.01];
-        
-                div.innerHTML += "<strong>Travel Distance</strong><br>";
+                    grades = [1, 0.5, 0.1, 0.01, 0.001];  // Adjust grades as per your needs
+    
+                div.innerHTML += "<strong>Bank Branch Access Score</strong><br>";
                 for (let i = 0; i < grades.length; i++) {
                     div.innerHTML += `<i style="background:${getColor(grades[i] + 1)}"></i> ${
                         grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "-0"}<br>`;
@@ -272,14 +290,9 @@ document.addEventListener("DOMContentLoaded", async function () {
                 return div;
             };
             legend.addTo(map);
-            
-        } else if (!country && legend) {
-            // Remove the legend if no country is selected
-            legend.remove();
-            legend = null;  // Reset the legend variable
         }
     }
-    
+
 
     function getColor(value, country) {
         // Color mapping based on country
