@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 "Tchad": { lat: 15.5, lng: 18, zoom: 6 }
             };
             
-            // Country selection event (modified)
+            // Country Dropdown
             const countryDropdown = document.getElementById("country-select");
             countries.forEach(coun => {
                 const listItem = document.createElement("li");
@@ -124,8 +124,8 @@ document.addEventListener("DOMContentLoaded", async function () {
                     selectedRegion = "";
 
                     // Set map view to the selected country
-                    if (countryCenters[coun]) {
-                        const { lat, lng, zoom } = countryCenters[coun];
+                    if (countryCenters[coun.toLowerCase()]) {
+                        const { lat, lng, zoom } = countryCenters[coun.toLowerCase()];
                         map.setView([lat, lng], zoom);
                     }
 
@@ -170,6 +170,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     info.addTo(map);
 
     let isDefaultView = true; 
+    let legend;
     
     function loadMapData(geoJsonData, country, commune, department, region, selectedEquipment) {
         map.eachLayer(layer => {
@@ -238,6 +239,27 @@ document.addEventListener("DOMContentLoaded", async function () {
                     }).addTo(map);
                 })
                 .catch(error => console.error('Error loading CEMAC borders:', error));
+        }
+
+        // Add the legend only when a country is selected
+        if (country && !legend) {
+            legend = L.control({ position: "bottomright" });
+            legend.onAdd = function () {
+                const div = L.DomUtil.create("div", "legend"),
+                    grades = [0, 0.001, 0.01, 0.1, 0.5, 1];
+
+                div.innerHTML += "<strong>Travel Distance</strong><br>";
+                for (let i = 0; i < grades.length; i++) {
+                    div.innerHTML += `<i style="background:${getColor(grades[i] + 1)}"></i> ${
+                        grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "+"}<br>`;
+                }
+                return div;
+            };
+            legend.addTo(map);
+        } else if (!country && legend) {
+            // Remove the legend if no country is selected
+            legend.remove();
+            legend = null;  // Reset the legend variable
         }
     }
     
