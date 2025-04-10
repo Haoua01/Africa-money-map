@@ -122,6 +122,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             const countryDropdown = document.getElementById("country-select");
             countries.forEach(coun => {
                 const listItem = document.createElement("li");
+                const legend = L.control({ position: "bottomright" });
                 listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${coun}">${coun}</a>`;
                 listItem.addEventListener("click", () => {
                     isDefaultView = false;  // Change the flag to false when a country is selected
@@ -142,7 +143,22 @@ document.addEventListener("DOMContentLoaded", async function () {
                     loadMapData(geoJsonData, coun, "", "", "", selectedEquipment);
                 });
                 countryDropdown.appendChild(listItem);
+                legend.onAdd = function () {
+                    const div = L.DomUtil.create("div", "legend"),
+                    grades = [1, 0.5, 0.1, 0.01, 0.001];  
+            
+                    div.innerHTML += "<strong>Bank Branch Score Access</strong><br>";
+                    for (let i = 0; i < grades.length; i++) {
+                        div.innerHTML += `<i style="background:${getColor(grades[i] + 1)}"></i> ${
+                            grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "+"}<br>`;
+                    }
+                    return div;
+                };
+                legend.addTo(map);
             });
+
+           
+        
             
             // Reset button event
             document.getElementById("resetButton").addEventListener("click", function() {
@@ -259,21 +275,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 
     }
-
-    const legend = L.control({ position: "bottomright" });
-    legend.onAdd = function () {
-        const div = L.DomUtil.create("div", "legend"),
-        grades = [1, 0.5, 0.1, 0.01, 0.001];  
-
-        div.innerHTML += "<strong>Travel Distance</strong><br>";
-        for (let i = 0; i < grades.length; i++) {
-            div.innerHTML += `<i style="background:${getColor(grades[i] + 1)}"></i> ${
-                grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "+"}<br>`;
-        }
-        return div;
-    };
-    legend.addTo(map);
-
 
     function getColor(value, country) {
         // Color mapping based on country
