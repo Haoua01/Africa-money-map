@@ -161,8 +161,13 @@ document.addEventListener("DOMContentLoaded", async function () {
             // Initial load
             loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
         })
-        .catch(error => console.error('Error loading GeoJSON:', error));
-        document.body.removeChild(loadingSpinner); 
+        .catch(error => {
+            console.error('Error loading GeoJSON:', error);
+            // Remove spinner in case of error, if it exists
+            if (document.body.contains(loadingSpinner)) {
+                document.body.removeChild(loadingSpinner);
+            }
+        });
 
     // Info Control
     const info = L.control();
