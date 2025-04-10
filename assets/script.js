@@ -243,23 +243,20 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         // Add the legend only when a country is selected
         if (country && !legend) {
-            legend = L.control({ position: "bottomright" });
+            // Legend Control
+            const legend = L.control({ position: "bottomright" });
             legend.onAdd = function () {
                 const div = L.DomUtil.create("div", "legend"),
                     grades = [0, 0.001, 0.01, 0.1, 0.5, 1];
-            
-                div.innerHTML += "<strong>Score of access:</strong><br>";
-            
-                // Loop through grades up to the second-to-last element
-                for (let i = 0; i < grades.length - 2; i++) {
+
+                div.innerHTML += "<strong>Bank branch access score</strong><br>";
+                for (let i = 0; i < grades.length-1; i++) {
                     div.innerHTML += `<i style="background:${getColor(grades[i] + 1)}"></i> ${
-                        grades[i]}–${grades[i + 1]}<br>`;
+                        grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "+"}<br>`;
                 }
-            
                 // For the last item, just display 0.5–1 without any "+", no extra range
                 div.innerHTML += `<i style="background:${getColor(grades[grades.length - 2] + 1)}"></i> ${
                     grades[grades.length - 2]}–${grades[grades.length - 1]}<br>`;
-            
                 return div;
             };
             legend.addTo(map);
