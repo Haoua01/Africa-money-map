@@ -95,14 +95,14 @@ document.addEventListener("DOMContentLoaded", async function () {
 
             const countryCenters = {
                 "Bénin": { lat: 9.5, lng: 2.5, zoom: 7 },
-                "Burkina Faso": { lat: 12.4, lng: -1.5, zoom: 6 },
-                "Côte d\'Ivoire": { lat: 7.5, lng: -5.5, zoom: 6 },
-                "Guinée-Bissau": { lat: 9.5, lng: -13.7, zoom: 6 },
-                "Mali": { lat: 12.6, lng: -8, zoom: 6 },
+                "Burkina Faso": { lat: 12.4, lng: -1.5, zoom: 7 },
+                "Côte d\'Ivoire": { lat: 7.5, lng: -5.5, zoom: 7 },
+                "Guinée-Bissau": { lat: 11.5, lng: -12.7, zoom: 9 },
+                "Mali": { lat: 13.6, lng: -8, zoom: 6 },
                 "Niger": { lat: 17.6, lng: 8, zoom: 6 },
                 "Sénégal": { lat: 14.5, lng: -14, zoom: 7 },
                 "Togo": { lat: 8.2, lng: 1.3, zoom: 7 },
-                "Ghana": { lat: 7.5, lng: -0.5, zoom: 6 },
+                "Ghana": { lat: 7.5, lng: -0.5, zoom: 7 },
                 "Cameroun": { lat: 6.5, lng: 13, zoom: 6 },
                 "Tchad": { lat: 15.3, lng: 18, zoom: 6 }
             };
