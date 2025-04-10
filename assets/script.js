@@ -192,7 +192,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     info.addTo(map);
 
     let isDefaultView = true; 
-    let legend;
     
     function loadMapData(geoJsonData, country, commune, department, region, selectedEquipment) {
         map.eachLayer(layer => {
@@ -270,6 +269,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     
 
     function updateLegend(country) {
+        const legend = L.control({ position: "bottomright" });
         // Remove the old legend if it exists
         if (legend) {
             legend.remove();
