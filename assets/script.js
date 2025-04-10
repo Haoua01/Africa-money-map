@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             //});
 
             // Extract unique communes, departments, and regions from the GeoJSON data
-            const communes = [...new Set(geoJsonData.features.map(f => f.properties.adm3_fr))];
+            const communes = [...new Set(geoJsonData.features.map(f => f.properties.adm3_en))];
             const departments = [...new Set(geoJsonData.features.map(f => f.properties.adm2_fr))];
             const regions = [...new Set(geoJsonData.features.map(f => f.properties.adm1_fr))];
             const countries = [...new Set(geoJsonData.features.map(f => f.properties.adm0_fr))];
@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     // Updated hover info: show commune name and score from "isibf_base"
     info.update = function (props) {
         this.div.innerHTML = props
-            ? `<h6>${props.adm3_fr}</h6><br>Score: ${props.isibf_base}`
+            ? `<h6>${props.adm3_en}</h6><br>Score: ${props.isibf_base}`
             : "Hover over";
     };
     info.addTo(map);
@@ -182,7 +182,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         // Filter GeoJSON data based on the selected commune, department, or region
         const filteredData = geoJsonData.features.filter(feature => {
             return (!country || feature.properties.adm0_fr === country) && 
-                   (!commune || feature.properties.adm3_fr === commune) &&
+                   (!commune || feature.properties.adm3_en === commune) &&
                    (!department || feature.properties.adm2_fr === department) &&
                    (!region || feature.properties.adm1_fr === region);
         });
