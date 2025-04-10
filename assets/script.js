@@ -94,17 +94,17 @@ document.addEventListener("DOMContentLoaded", async function () {
             });
 
             const countryCenters = {
-                "benin": { lat: 9.5, lng: 2.5, zoom: 6 },
-                "burkina": { lat: 12.4, lng: -1.5, zoom: 6 },
-                "civ": { lat: 7.5, lng: -5.5, zoom: 6 },
-                "guinee": { lat: 9.5, lng: -13.7, zoom: 6 },
-                "mali": { lat: 12.6, lng: -8, zoom: 6 },
-                "niger": { lat: 17.6, lng: 8, zoom: 6 },
-                "senegal": { lat: 14.5, lng: -14, zoom: 6 },
-                "togo": { lat: 8.2, lng: 1.3, zoom: 6 },
-                "ghana": { lat: 7.5, lng: -0.5, zoom: 6 },
-                "cameroun": { lat: 4.5, lng: 13, zoom: 6 },
-                "tchad": { lat: 15.3, lng: 18, zoom: 6 }
+                "benin": { lat: 9.5 + 0.05, lng: 2.5, zoom: 6 },
+                "burkina": { lat: 12.4 + 0.05, lng: -1.5, zoom: 6 },
+                "civ": { lat: 7.5 + 0.05, lng: -5.5, zoom: 6 },
+                "guinee": { lat: 9.5 + 0.05, lng: -13.7, zoom: 6 },
+                "mali": { lat: 12.6 + 0.05, lng: -8, zoom: 6 },
+                "niger": { lat: 17.6 + 0.05, lng: 8, zoom: 6 },
+                "senegal": { lat: 14.5 + 0.05, lng: -14, zoom: 6 },
+                "togo": { lat: 8.2 + 0.05, lng: 1.3, zoom: 6 },
+                "ghana": { lat: 7.5 + 0.05, lng: -0.5, zoom: 6 },
+                "cameroun": { lat: 4.5 + 0.05, lng: 13, zoom: 6 },
+                "tchad": { lat: 15.3 + 0.05, lng: 18, zoom: 6 }
             };
             
 
@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 });
                 countryDropdown.appendChild(listItem);
             });
-            
+
             // Reset button event
             document.getElementById("resetButton").addEventListener("click", function() {
                 loadMapData(geoJsonData, "", "", "", selectedEquipment);
