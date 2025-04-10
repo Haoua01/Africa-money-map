@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     fetch(geoJsonFile)
         .then(response => response.json())
         .then(geoJsonData => {
-            document.body.removeChild(loadingSpinner);
             let selectedEquipment = "ISIBF_base";
             let selectedCommune = "";
             let selectedDepartment = "";
@@ -160,6 +159,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
             // Initial load
             loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
+            document.body.removeChild(loadingSpinner);
         })
         .catch(error => {
             console.error('Error loading GeoJSON:', error);
