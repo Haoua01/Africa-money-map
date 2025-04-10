@@ -9,11 +9,21 @@ document.addEventListener("DOMContentLoaded", async function () {
     const uemoaBordersFile = "web_data/uemoa_borders.geojson"; 
     const cemacBordersFile = "web_data/cemac_borders.geojson"; 
 
+    const loadingSpinner = document.createElement("div");
+    loadingSpinner.className = "loading-spinner"; // Set class for styling
+    loadingSpinner.innerHTML = `
+        <div class="spinner"></div>
+        <span>Loading...</span>
+    `;
+    document.body.appendChild(loadingSpinner); // Append the spinner to the body or map container
+
+
 
     // Fetch GeoJSON data
     fetch(geoJsonFile)
         .then(response => response.json())
         .then(geoJsonData => {
+            document.body.removeChild(loadingSpinner);
             let selectedEquipment = "ISIBF_base";
             let selectedCommune = "";
             let selectedDepartment = "";
@@ -152,6 +162,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
         })
         .catch(error => console.error('Error loading GeoJSON:', error));
+        document.body.removeChild(loadingSpinner); 
 
     // Info Control
     const info = L.control();
