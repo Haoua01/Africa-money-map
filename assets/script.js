@@ -251,7 +251,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 div.innerHTML += "<strong>Score of access:</strong><br>";
             
                 // Loop through grades up to the second-to-last element
-                for (let i = 0; i < grades.length - 1; i++) {
+                for (let i = 0; i < grades.length - 2; i++) {
                     div.innerHTML += `<i style="background:${getColor(grades[i] + 1)}"></i> ${
                         grades[i]}–${grades[i + 1]}<br>`;
                 }
