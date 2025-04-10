@@ -309,7 +309,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             value > 0.001 ? "#f768a1" :  // Lightest
             "#fbb4b9";  // Lightest
      
-        } else if (['Cameroun', 'Chad'].includes(country)) {
+        } else if (['Cameroon', 'Chad'].includes(country)) {
             return value > 0.5 ? "#00441b" :  // Darkest
             value > 0.1 ? "#006d2c" :
             value > 0.01 ? "#31a354" :
