@@ -263,12 +263,12 @@ document.addEventListener("DOMContentLoaded", async function () {
             legend = L.control({ position: "bottomright" });
             legend.onAdd = function () {
                 const div = L.DomUtil.create("div", "legend"),
-                    grades = [0, 0.001, 0.01, 0.1, 0.5, 1];
+                    grades = [1, 0.5, 0.1, 0.01, 0.001, 0];
             
                 div.innerHTML += "<strong>Score of access to bank branches</strong><br>";
             
                 // Loop through grades up to the second-to-last element
-                for (let i = 0; i < grades.length - 1; i++) {
+                for (let i = 0; i < grades.length - 2; i++) {
                     // Dynamically get color for the grade
                     div.innerHTML += `
                         <div>
