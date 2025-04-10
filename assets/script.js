@@ -247,12 +247,16 @@ document.addEventListener("DOMContentLoaded", async function () {
             legend.onAdd = function () {
                 const div = L.DomUtil.create("div", "legend"),
                     grades = [0, 0.001, 0.01, 0.1, 0.5, 1];
-
-                div.innerHTML += "<strong>Travel Distance</strong><br>";
-                for (let i = 0; i < grades.length; i++) {
+            
+                div.innerHTML += "<strong>Score of access to bank branches</strong><br>";
+                for (let i = 0; i < grades.length - 1; i++) {  // Loop up to the second-to-last grade
                     div.innerHTML += `<i style="background:${getColor(grades[i] + 1)}"></i> ${
-                        grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "+"}<br>`;
+                        grades[i]}–${grades[i + 1]}<br>`;
                 }
+                // Handle the last grade separately
+                div.innerHTML += `<i style="background:${getColor(grades[grades.length - 2] + 1)}"></i> ${
+                    grades[grades.length - 2]}–${grades[grades.length - 1]}<br>`;
+                
                 return div;
             };
             legend.addTo(map);
