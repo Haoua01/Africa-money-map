@@ -267,9 +267,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     }
     
-
+    const legend = L.control({ position: "bottomright" });
     function updateLegend(country) {
-        const legend = L.control({ position: "bottomright" });
         // Remove the old legend if it exists
         if (legend) {
             legend.remove();
