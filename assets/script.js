@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     fetch(geoJsonFile)
         .then(response => response.json())
         .then(geoJsonData => {
-            let selectedEquipment = "isibf_base";
+            let selectedEquipment = "ISIBF_base";
             let selectedCommune = "";
             let selectedDepartment = "";
             let selectedRegion = "";
@@ -31,10 +31,10 @@ document.addEventListener("DOMContentLoaded", async function () {
             //});
 
             // Extract unique communes, departments, and regions from the GeoJSON data
-            const communes = [...new Set(geoJsonData.features.map(f => f.properties.adm3_fr))];
-            const departments = [...new Set(geoJsonData.features.map(f => f.properties.adm2_fr))];
-            const regions = [...new Set(geoJsonData.features.map(f => f.properties.adm1_fr))];
-            const countries = [...new Set(geoJsonData.features.map(f => f.properties.adm0_en))];
+            const communes = [...new Set(geoJsonData.features.map(f => f.properties.ADM3_FR))];
+            const departments = [...new Set(geoJsonData.features.map(f => f.properties.ADM2_FR))];
+            const regions = [...new Set(geoJsonData.features.map(f => f.properties.ADM1_FR))];
+            const countries = [...new Set(geoJsonData.features.map(f => f.properties.ADM0_EN))];
 
             // Populate commune dropdown
             const communeDropdown = document.getElementById("commune-select");
@@ -161,10 +161,10 @@ document.addEventListener("DOMContentLoaded", async function () {
         return this.div;
     };
 
-    // Updated hover info: show commune name and score from "isibf_base"
+    // Updated hover info: show commune name and score from "ISIBF_base"
     info.update = function (props) {
         this.div.innerHTML = props
-            ? `<h6>${props.adm3_fr}</h6><br>Score: ${props.isibf_base}`
+            ? `<h6>${props.ADM3_FR}</h6><br>Score: ${props.ISIBF_base}`
             : "Hover over";
     };
     info.addTo(map);
@@ -181,10 +181,10 @@ document.addEventListener("DOMContentLoaded", async function () {
     
         // Filter GeoJSON data based on the selected commune, department, or region
         const filteredData = geoJsonData.features.filter(feature => {
-            return (!country || feature.properties.adm0_en === country) && 
-                   (!commune || feature.properties.adm3_fr === commune) &&
-                   (!department || feature.properties.adm2_fr === department) &&
-                   (!region || feature.properties.adm1_fr === region);
+            return (!country || feature.properties.ADM0_EN === country) && 
+                   (!commune || feature.properties.ADM3_FR === commune) &&
+                   (!department || feature.properties.ADM2_FR === department) &&
+                   (!region || feature.properties.ADM1_FR === region);
         });
     
         const geoJsonLayer = L.geoJSON({ type: "FeatureCollection", features: filteredData }, {
@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     fillColor: fillColor, 
                     weight: 0.3,  // Default border weight
                     opacity: 0.3, // Border opacity
-                    color: (feature.properties.adm0_en !== undefined) ? "#333333" : "transparent", // Darker border for country boundaries
+                    color: (feature.properties.ADM0_EN !== undefined) ? "#333333" : "transparent", // Darker border for country boundaries
                     fillOpacity: 0.9  // Make sure the polygons are opaque enough
                 };
             }
