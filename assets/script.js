@@ -94,17 +94,17 @@ document.addEventListener("DOMContentLoaded", async function () {
             });
 
             const countryCenters = {
-                "benin": { lat: 9.5, lng: 2.5, zoom: 7 },
-                "burkina": { lat: 12.4, lng: -1.5, zoom: 6 },
-                "civ": { lat: 7.5, lng: -5.5, zoom: 6 },
-                "guinee": { lat: 9.5, lng: -13.7, zoom: 6 },
-                "mali": { lat: 12.6, lng: -8, zoom: 6 },
-                "niger": { lat: 17.6, lng: 8, zoom: 6 },
-                "senegal": { lat: 14.5, lng: -14, zoom: 7 },
-                "togo": { lat: 8.2, lng: 1.3, zoom: 7 },
-                "ghana": { lat: 7.5, lng: -0.5, zoom: 6 },
-                "cameroun": { lat: 6.5, lng: 13, zoom: 6 },
-                "tchad": { lat: 15.3, lng: 18, zoom: 6 }
+                "Bénin": { lat: 9.5, lng: 2.5, zoom: 7 },
+                "Burkina Faso": { lat: 12.4, lng: -1.5, zoom: 6 },
+                "Côte d\'Ivoire": { lat: 7.5, lng: -5.5, zoom: 6 },
+                "Guinée-Bissau": { lat: 9.5, lng: -13.7, zoom: 6 },
+                "Mali": { lat: 12.6, lng: -8, zoom: 6 },
+                "Niger": { lat: 17.6, lng: 8, zoom: 6 },
+                "Sénégal": { lat: 14.5, lng: -14, zoom: 7 },
+                "Togo": { lat: 8.2, lng: 1.3, zoom: 7 },
+                "Ghana": { lat: 7.5, lng: -0.5, zoom: 6 },
+                "Cameroun": { lat: 6.5, lng: 13, zoom: 6 },
+                "Tchad": { lat: 15.3, lng: 18, zoom: 6 }
             };
             
             // Country selection event (modified)
@@ -124,8 +124,8 @@ document.addEventListener("DOMContentLoaded", async function () {
                     selectedRegion = "";
 
                     // Set map view to the selected country
-                    if (countryCenters[coun.toLowerCase()]) {
-                        const { lat, lng, zoom } = countryCenters[coun.toLowerCase()];
+                    if (countryCenters[coun]) {
+                        const { lat, lng, zoom } = countryCenters[coun];
                         map.setView([lat, lng], zoom);
                     }
 
