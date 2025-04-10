@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
             // Initial load
             loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
-            document.body.removeChild(loadingSpinner);
+            // document.body.removeChild(loadingSpinner);
         })
         .catch(error => {
             console.error('Error loading GeoJSON:', error);
