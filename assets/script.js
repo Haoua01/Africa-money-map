@@ -124,8 +124,8 @@ document.addEventListener("DOMContentLoaded", async function () {
                     selectedRegion = "";
 
                     // Set map view to the selected country
-                    if (countryCenters[coun.toLowerCase()]) {
-                        const { lat, lng, zoom } = countryCenters[coun.toLowerCase()];
+                    if (countryCenters[coun]) {
+                        const { lat, lng, zoom } = countryCenters[coun];
                         map.setView([lat, lng], zoom);
                     }
 
