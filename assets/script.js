@@ -20,15 +20,15 @@ document.addEventListener("DOMContentLoaded", async function () {
             let selectedRegion = "";
             let selectedCountry = "";
 
-            const equipmentDropdown = document.getElementById("equipment-select");
+            // const equipmentDropdown = document.getElementById("equipment-select");
 
-            equipmentDropdown.querySelectorAll(".dropdown-item").forEach(item => {
-                item.addEventListener("click", function () {
-                    selectedEquipment = this.getAttribute("data-value");
-                    document.getElementById("equipmentDropdown").textContent = this.textContent;
-                    loadMapData(geoJsonData, selectedCommune, selectedDepartment, selectedRegion, selectedCountry, selectedEquipment);
-                });
-            });
+            //equipmentDropdown.querySelectorAll(".dropdown-item").forEach(item => {
+                //item.addEventListener("click", function () {
+                    //selectedEquipment = this.getAttribute("data-value");
+                    //document.getElementById("equipmentDropdown").textContent = this.textContent;
+                    //loadMapData(geoJsonData, selectedCommune, selectedDepartment, selectedRegion, selectedCountry, selectedEquipment);
+                //});
+            //});
 
             // Extract unique communes, departments, and regions from the GeoJSON data
             const communes = [...new Set(geoJsonData.features.map(f => f.properties.adm3_fr))];
