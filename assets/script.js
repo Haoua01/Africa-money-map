@@ -301,8 +301,8 @@ document.addEventListener("DOMContentLoaded", async function () {
     
                 div.innerHTML += "<strong>Bank Branch Score Access</strong><br>";
                 for (let i = 0; i < grades.length; i++) {
-                    div.innerHTML += `<i style="background:${getColor(grades[i] + 1, country)}"></i> ${
-                        grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "-0"}<br>`;
+                    div.innerHTML += `<i style="background:${getColor(grades[i], country)}"></i> ${
+                        grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "+"}<br>`;
                 }
     
                 return div;
