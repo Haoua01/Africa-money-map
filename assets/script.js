@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         const { lat, lng, zoom } = countryCenters[coun];
                         map.setView([lat, lng], zoom);
                     }
-
+                    updateLegend(coun);
                     loadMapData(geoJsonData, coun, "", "", "", selectedEquipment);
                 });
                 countryDropdown.appendChild(listItem);
@@ -235,8 +235,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                 };
             }
         }).addTo(map);
-
-        updateLegend(country);
 
         if (isDefaultView) {
             // Load UEMOA borders
