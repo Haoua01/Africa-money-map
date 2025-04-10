@@ -120,10 +120,6 @@ document.addEventListener("DOMContentLoaded", async function () {
         
             // Country Dropdown
             const countryDropdown = document.getElementById("country-select");
-            countryDropdown.addEventListener("change", function () {
-                const selectedCountry = this.value;
-                loadMapData(geoJsonData, selectedCountry, "", "", "", selectedEquipment);  // Update the map and legend
-            });
             countries.forEach(coun => {
                 const listItem = document.createElement("li");
                 listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${coun}">${coun}</a>`;
@@ -263,7 +259,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 
     }
-    
+
     const legend = L.control({ position: "bottomright" });
     legend.onAdd = function () {
         const div = L.DomUtil.create("div", "legend"),
