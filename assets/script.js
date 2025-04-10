@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 "Benin": { lat: 9.5, lng: 2.5, zoom: 7 },
                 "Burkina Faso": { lat: 12.4, lng: -1.5, zoom: 7 },
                 "Ivory Coast": { lat: 7.5, lng: -5.5, zoom: 7 },
-                "Guinea-Bissau": { lat: 9.5, lng: -13.7, zoom: 8 },
+                "Guinea-Bissau": { lat: 10.5, lng: -13.7, zoom: 8 },
                 "Mali": { lat: 12.6, lng: -8, zoom: 6 },
                 "Niger": { lat: 17.6, lng: 8, zoom: 6 },
                 "Senegal": { lat: 14.5, lng: -14, zoom: 7 },
@@ -143,7 +143,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                         const { lat, lng, zoom } = countryCenters[coun];
                         map.setView([lat, lng], zoom);
                     }
-                    updateLegend(coun);
                     loadMapData(geoJsonData, coun, "", "", "", selectedEquipment);
                 });
                 countryDropdown.appendChild(listItem);
@@ -265,30 +264,19 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     }
     
-    let legend = L.control({ position: "bottomright" });
-    function updateLegend(country) {
-        // Remove the old legend if it exists
-        if (legend) {
-            legend.remove();
+    const legend = L.control({ position: "bottomright" });
+    legend.onAdd = function () {
+        const div = L.DomUtil.create("div", "legend"),
+        grades = [1, 0.5, 0.1, 0.01, 0.001];  
+
+        div.innerHTML += "<strong>Travel Distance</strong><br>";
+        for (let i = 0; i < grades.length; i++) {
+            div.innerHTML += `<i style="background:${getColor(grades[i] + 1)}"></i> ${
+                grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "+"}<br>`;
         }
-    
-        if (country) {
-            // Add the new legend when a country is selected
-            legend = L.control({ position: "bottomright" });
-            legend.onAdd = function () {
-                const div = L.DomUtil.create("div", "legend"),
-                    grades = [1, 0.5, 0.1, 0.01, 0.001];  
-    
-                div.innerHTML += "<strong>Bank Branch Access Score</strong><br>";
-                for (let i = 0; i < grades.length; i++) {
-                    div.innerHTML += `<i style="background:${getColor(grades[i] + 1)}"></i> ${
-                        grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "-0"}<br>`;
-                }
-                return div;
-            };
-            legend.addTo(map);
-        }
-    }
+        return div;
+    };
+    legend.addTo(map);
 
 
     function getColor(value, country) {
