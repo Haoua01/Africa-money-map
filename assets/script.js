@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             },
             style: function (feature) {
                 const score = feature.properties[selectedEquipment] || 0;
-                const country = feature.properties.country;  // Corrected reference to country property
+                const country = feature.properties.Country;  // Corrected reference to country property
                 const fillColor = getColor(score, country);
     
                 return {
