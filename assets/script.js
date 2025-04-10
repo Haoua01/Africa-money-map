@@ -93,6 +93,22 @@ document.addEventListener("DOMContentLoaded", async function () {
                 regionDropdown.appendChild(listItem);
             });
 
+            const countryCenters = {
+                "benin": { lat: 9.5, lng: 2.5, zoom: 6 },
+                "burkina": { lat: 12.4, lng: -1.5, zoom: 6 },
+                "civ": { lat: 7.5, lng: -5.5, zoom: 6 },
+                "guinee": { lat: 9.5, lng: -13.7, zoom: 6 },
+                "mali": { lat: 12.6, lng: -8, zoom: 6 },
+                "niger": { lat: 17.6, lng: 8, zoom: 6 },
+                "senegal": { lat: 14.5, lng: -14, zoom: 6 },
+                "togo": { lat: 8.2, lng: 1.3, zoom: 6 },
+                "ghana": { lat: 7.5, lng: -0.5, zoom: 6 },
+                "cameroun": { lat: 4.5, lng: 13, zoom: 6 },
+                "tchad": { lat: 15.3, lng: 18, zoom: 6 }
+            };
+            
+
+           // Country selection event
             const countryDropdown = document.getElementById("country-select");
             countries.forEach(coun => {
                 const listItem = document.createElement("li");
@@ -106,11 +122,18 @@ document.addEventListener("DOMContentLoaded", async function () {
                     selectedCommune = "";
                     selectedDepartment = "";
                     selectedRegion = "";
-                    loadMapData(geoJsonData,coun, "", "", "", selectedEquipment);
+
+                    // Set map view to the selected country
+                    if (countryCenters[coun.toLowerCase()]) {
+                        const { lat, lng, zoom } = countryCenters[coun.toLowerCase()];
+                        map.setView([lat, lng], zoom);
+                    }
+
+                    loadMapData(geoJsonData, coun, "", "", "", selectedEquipment);
                 });
                 countryDropdown.appendChild(listItem);
             });
-
+            
             // Reset button event
             document.getElementById("resetButton").addEventListener("click", function() {
                 loadMapData(geoJsonData, "", "", "", selectedEquipment);
