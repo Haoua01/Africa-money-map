@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 "Togo": { lat: 8.2, lng: 1.3, zoom: 7 },
                 "Ghana": { lat: 7.5, lng: -0.5, zoom: 7 },
                 "Cameroun": { lat: 6.5, lng: 13, zoom: 6 },
-                "Tchad": { lat: 15.3, lng: 18, zoom: 6 }
+                "Tchad": { lat: 15.5, lng: 18, zoom: 6 }
             };
             
             // Country selection event (modified)
