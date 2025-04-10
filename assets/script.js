@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 "Burkina Faso": { lat: 12.4, lng: -1.5, zoom: 7 },
                 "Côte d\'Ivoire": { lat: 7.5, lng: -5.5, zoom: 7 },
                 "Guinée-Bissau": { lat: 11.5, lng: -10.7, zoom: 8 },
-                "Mali": { lat: 13.6, lng: -8, zoom: 6 },
+                "Mali": { lat: 15.6, lng: -8, zoom: 6 },
                 "Niger": { lat: 17.6, lng: 8, zoom: 6 },
                 "Sénégal": { lat: 14.5, lng: -14, zoom: 7 },
                 "Togo": { lat: 8.2, lng: 1.3, zoom: 7 },
