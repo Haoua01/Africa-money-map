@@ -59,10 +59,11 @@ document.addEventListener("DOMContentLoaded", async function () {
                     selectedDepartment = "";
                     selectedRegion = "";
                     selectedCountry = "";
-                    loadMapData(geoJsonData, "", comm, "", "", selectedEquipment);
+                    loadMapData(geoJsonData, "", "", "", comm, selectedEquipment);
                 });
                 communeDropdown.appendChild(listItem);
             });
+            
 
             // Populate department dropdown
             const departmentDropdown = document.getElementById("department-select");
@@ -97,7 +98,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     selectedCommune = "";
                     selectedDepartment = "";
                     selectedCountry = "";
-                    loadMapData(geoJsonData,"", "", "", reg, selectedEquipment);
+                    loadMapData(geoJsonData,"",reg, "", "", selectedEquipment);
                 });
                 regionDropdown.appendChild(listItem);
             });
@@ -163,7 +164,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             // Reset button event
             document.getElementById("resetButton").addEventListener("click", function() {
                 isDefaultView = true; 
-                loadMapData(geoJsonData, "", "", "", selectedEquipment);
+                loadMapData(geoJsonData, "", "", "", "",selectedEquipment);
                 document.getElementById("countryDropdown").textContent = "Default";
                 document.getElementById("communeDropdown").textContent = "Default";
                 document.getElementById("departmentDropdown").textContent = "Default";
@@ -204,7 +205,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     let isDefaultView = true; 
     
-    function loadMapData(geoJsonData, country, commune, department, region, selectedEquipment) {
+    function loadMapData(geoJsonData, country, region, department, commune, selectedEquipment) {
         map.eachLayer(layer => {
             if (layer instanceof L.GeoJSON) {
                 map.removeLayer(layer);
