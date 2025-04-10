@@ -250,7 +250,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     grades = [0, 0.001, 0.01, 0.1, 0.5, 1];
 
                 div.innerHTML += "<strong>Bank branch access score</strong><br>";
-                for (let i = 0; i < grades.length-1; i++) {
+                for (let i = 0; i < grades.length-2; i++) {
                     div.innerHTML += `<i style="background:${getColor(grades[i] + 1)}"></i> ${
                         grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "+"}<br>`;
                 }
