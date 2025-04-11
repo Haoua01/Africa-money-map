@@ -102,6 +102,9 @@ document.addEventListener("DOMContentLoaded", async function () {
                     selectedRegion = "";
                     
                     document.getElementById("countryDropdown").textContent = coun;
+                    document.getElementById("regionDropdown").textContent = "";
+                    document.getElementById("departmentDropdown").textContent = "";
+                    document.getElementById("communeDropdown").textContent = "";
 
 
 
