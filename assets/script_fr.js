@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", async function () {
     const map = L.map("map").setView([14.5, 3.5], 5);
 
+    let isDefaultView = true;
+
     const loadingSpinner = document.createElement("div");
     loadingSpinner.className = "loading-spinner"; // Set class for styling
     loadingSpinner.innerHTML = `
@@ -222,8 +224,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             : "Hover over";
     };
     info.addTo(map);
-
-    let isDefaultView = true;
 
     function loadMapData(geoJsonData, country, region, department, commune, selectedEquipment) {
         map.eachLayer(layer => {
