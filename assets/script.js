@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
             // Extract unique countries from the GeoJSON data
             const countries = [...new Set(geoJsonData.features.map(f => f.properties.ADM0_EN))];
+            countries.sort((a, b) => a.localeCompare(b));
 
             const countryCenters = {
                 "Benin": { lat: 9.3, lng: 2.5, zoom: 7 },
@@ -127,6 +128,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             // Populate region dropdown based on the selected country
             function populateRegionDropdown(filteredCountryData, country) {
                 const regions = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === country).map(f => f.properties.ADM1_FR))];
+                regions.sort((a, b) => a.localeCompare(b));
                 const regionDropdown = document.getElementById("region-select");
 
 
@@ -150,6 +152,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             // Populate department dropdown based on the selected region and country
             function populateDepartmentDropdown(filteredCountryData, country) {
                 const departments = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === country).map(f => f.properties.ADM2_FR))];
+                departments.sort((a, b) => a.localeCompare(b));
                 const departmentDropdown = document.getElementById("department-select");
 
                 departments.forEach(dep => {
@@ -177,6 +180,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             // Populate commune dropdown based on the selected department, region, and country
             function populateCommuneDropdown(filteredCountryData, country) {
                 const communes = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === country).map(f => f.properties.ADM3_FR))];
+                communes.sort((a, b) => a.localeCompare(b));
                 const communeDropdown = document.getElementById("commune-select");
 
                 communes.forEach(comm => {
