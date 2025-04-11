@@ -50,9 +50,12 @@ document.addEventListener("DOMContentLoaded", async function () {
             //});
 
     // Fetch GeoJSON data
-    fetch(geoJsonFile)
-        .then(response => response.json())
-        .then(geoJsonData => {
+    try {
+        const [geoJsonData, uemoaData, cemacData] = await Promise.all([
+            fetch(geoJsonFile).then(response => response.json()),
+            fetch(uemoaBordersFile).then(response => response.json()),
+            fetch(cemacBordersFile).then(response => response.json())
+        ]);
             let selectedEquipment = "ISIBF_base";
             let selectedCommune = "";
             let selectedDepartment = "";
@@ -181,15 +184,29 @@ document.addEventListener("DOMContentLoaded", async function () {
             // Initial load
             loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
             // document.body.removeChild(loadingSpinner);
-            })
+
+            // Add UEMOA and CEMAC borders
+            L.geoJSON(uemoaData, {
+                style: function () {
+                    return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for UEMOA
+                }
+            }).addTo(map);
+
+            L.geoJSON(cemacData, {
+                style: function () {
+                    return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for CEMAC
+                }
+            }).addTo(map);
             
-        .catch(error => {
+        } catch (error) {
             console.error('Error loading GeoJSON:', error);
             // Remove spinner in case of error, if it exists
             if (document.body.contains(loadingSpinner)) {
                 document.body.removeChild(loadingSpinner);
             }
-        });
+        }
+
+
 
     // Info Control
     const info = L.control();
