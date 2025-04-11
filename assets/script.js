@@ -268,8 +268,6 @@ document.addEventListener("DOMContentLoaded", async function () {
         }).addTo(map);
 
         updateLegend(country);
-        if (['Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'].includes(country)) {
-            updateStats(filteredData, geoJsonData.features, country)}; 
 
         if (isDefaultView) {
             // Load UEMOA borders
@@ -296,6 +294,8 @@ document.addEventListener("DOMContentLoaded", async function () {
                 })
                 .catch(error => console.error('Error loading CEMAC borders:', error));
         }
+
+        updateStats(filteredData, geoJsonData.features, country); 
     }
 
     let legend;  // Declare legend outside of the event listener
@@ -384,21 +384,23 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     // Function to update statistics dynamically based on filtered data
     function updateStats(filteredData, totalData, country) {
-        const municipalityLabel = municipalities[country] || "Municipalities"; // Default fallback to "Municipalities"
-        const totalCommunes = filteredData.length;
-        const totalBranches = filteredData.reduce((sum, feature) => sum + (feature.properties.Total_bran || 0), 0);
-        const totalPopulation = filteredData.reduce((sum, feature) => sum + (feature.properties.Population || 0), 0);
-        const totalArea = filteredData.reduce((sum, feature) => sum + (feature.properties.Area || 0), 0);
-        const totalCountryPopulation = totalData.reduce((sum, feature) => sum + (feature.properties.Population || 0), 0);
-        const totalCountryArea = totalData.reduce((sum, feature) => sum + (feature.properties.Area || 0), 0);
-        const populationPercentage = totalCountryPopulation > 0 ? ((totalPopulation / totalCountryPopulation) * 100).toFixed(2) : 0;
-        const areaPercentage = totalCountryArea > 0 ? ((totalArea / totalCountryArea) * 100).toFixed(2) : 0;
+        if (['Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'].includes(country)) {
+            const municipalityLabel = municipalities[country] || "Municipalities"; // Default fallback to "Municipalities"
+            const totalCommunes = filteredData.length;
+            const totalBranches = filteredData.reduce((sum, feature) => sum + (feature.properties.Total_bran || 0), 0);
+            const totalPopulation = filteredData.reduce((sum, feature) => sum + (feature.properties.Population || 0), 0);
+            const totalArea = filteredData.reduce((sum, feature) => sum + (feature.properties.Area || 0), 0);
+            const totalCountryPopulation = totalData.reduce((sum, feature) => sum + (feature.properties.Population || 0), 0);
+            const totalCountryArea = totalData.reduce((sum, feature) => sum + (feature.properties.Area || 0), 0);
+            const populationPercentage = totalCountryPopulation > 0 ? ((totalPopulation / totalCountryPopulation) * 100).toFixed(2) : 0;
+            const areaPercentage = totalCountryArea > 0 ? ((totalArea / totalCountryArea) * 100).toFixed(2) : 0;
 
-        // Update the statistics in the HTML
-        document.getElementById("num-municipalities").textContent = `${municipalityLabel}: ${totalCommunes}`;
-        document.getElementById("total-bran").textContent = `Branches: ${totalBranches}`;
-        document.getElementById("percent-pop").textContent = `Population: ${populationPercentage}%`;
-        document.getElementById("percent-area").textContent = `Area: ${areaPercentage}%`;
+            // Update the statistics in the HTML
+            document.getElementById("num-municipalities").textContent = `${municipalityLabel}: ${totalCommunes}`;
+            document.getElementById("total-bran").textContent = `Branches: ${totalBranches}`;
+            document.getElementById("percent-pop").textContent = `Population: ${populationPercentage}%`;
+            document.getElementById("percent-area").textContent = `Area: ${areaPercentage}%`;
+        }
     }
 
 
