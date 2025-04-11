@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     document.getElementById("region-select").innerHTML = "";
 
                     // Update the dropdowns based on selected country
-                    populateRegionDropdown(coun);
+                    populateRegionDropdown(filteredCountryData, coun);
 
                     // Set map view to the selected country
                     if (countryCenters[coun]) {
@@ -113,14 +113,14 @@ document.addEventListener("DOMContentLoaded", async function () {
 
                     // Load map data
                     loadMapData(geoJsonData, coun, "", "", "", selectedEquipment);
-                    updateStats(filteredCountryData, coun);
+                    updateStats(filteredCountryData,filteredCountryData, coun);
                 });
 
                 countryDropdown.appendChild(listItem);
             });
 
             // Populate region dropdown based on the selected country
-            function populateRegionDropdown(country) {
+            function populateRegionDropdown(filteredCountryData, country) {
                 const regions = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === country).map(f => f.properties.ADM1_FR))];
                 const regionDropdown = document.getElementById("region-select");
 
@@ -133,9 +133,9 @@ document.addEventListener("DOMContentLoaded", async function () {
                     regionItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${reg}">${reg}</a>`;
                     regionItem.addEventListener("click", () => {
                         selectedRegion = reg;
-                        populateDepartmentDropdown(country, reg);
+                        populateDepartmentDropdown(filteredCountryData, country, reg);
                         document.getElementById("regionDropdown").textContent = reg;
-                        updateStats(filteredRegionData, country);
+                        updateStats(filteredCountryData, filteredRegionData, country);
                         loadMapData(geoJsonData, country, reg, "", "", selectedEquipment);
                     });
                     regionDropdown.appendChild(regionItem);
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             }
 
             // Populate department dropdown based on the selected region and country
-            function populateDepartmentDropdown(country, region) {
+            function populateDepartmentDropdown(filteredCountryData, country, region) {
                 const departments = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === country && f.properties.ADM1_FR === region).map(f => f.properties.ADM2_FR))];
                 const departmentDropdown = document.getElementById("department-select");
 
@@ -157,9 +157,9 @@ document.addEventListener("DOMContentLoaded", async function () {
                     departmentItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${dep}">${dep}</a>`;
                     departmentItem.addEventListener("click", () => {
                         selectedDepartment = dep;
-                        populateCommuneDropdown(country, region, dep);
+                        populateCommuneDropdown(filteredCountryData, country, region, dep);
                         document.getElementById("departmentDropdown").textContent = dep;
-                        updateStats(filteredDepartmentData, country);
+                        updateStats(filteredCountryData, filteredDepartmentData, country);
                         loadMapData(geoJsonData, country, region, dep, "", selectedEquipment);
                     });
                     departmentDropdown.appendChild(departmentItem);
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             }
 
             // Populate commune dropdown based on the selected department, region, and country
-            function populateCommuneDropdown(country, region, department) {
+            function populateCommuneDropdown(filteredCountryData, country, region, department) {
                 const communes = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === country && f.properties.ADM1_FR === region && f.properties.ADM2_FR === department).map(f => f.properties.ADM3_FR))];
                 const communeDropdown = document.getElementById("commune-select");
 
@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     communeItem.addEventListener("click", () => {
                         selectedCommune = comm;
                         document.getElementById("communeDropdown").textContent = comm;
-                        updateStats(filteredCommuneData, country);
+                        updateStats(filteredCountryData, filteredCommuneData, country);
                         loadMapData(geoJsonData, country, region, department, comm, selectedEquipment);
                     });
                     communeDropdown.appendChild(communeItem);
@@ -410,7 +410,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     };
 
     // Function to update statistics dynamically based on filtered data
-    function updateStats(filteredData, country) {
+    function updateStats(filteredDataCountry, filteredData, country) {
         const uemoaCountries = ['Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'];
         if (uemoaCountries.includes(country)) {
             const municipalityLabel = municipalities[country] || "Municipalities"; // Default fallback to "Municipalities"
@@ -422,8 +422,8 @@ document.addEventListener("DOMContentLoaded", async function () {
             const totalArea = filteredData.reduce((sum, feature) => sum + (feature.properties.Area || 0), 0);
     
             // Calculate total population and area for the entire country
-            const totalCountryPopulation = filteredData.reduce((sum, feature) => sum + (feature.properties.Population || 0), 0);
-            const totalCountryArea = filteredData.reduce((sum, feature) => sum + (feature.properties.Area || 0), 0);
+            const totalCountryPopulation = filteredDataCountry.reduce((sum, feature) => sum + (feature.properties.Population || 0), 0);
+            const totalCountryArea = filteredDataCountry.reduce((sum, feature) => sum + (feature.properties.Area || 0), 0);
     
             // Calculate the percentage of population and area for the filtered region
             const populationPercentage = totalCountryPopulation > 0 ? ((totalPopulation / totalCountryPopulation) * 100).toFixed(2) : 0;
