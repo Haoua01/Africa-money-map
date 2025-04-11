@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
                 regions.forEach(reg => {
                     const filteredRegionData = geoJsonData.features.filter(feature => {
-                        return (!coun || feature.properties.ADM0_EN === coun) && (!reg || feature.properties.ADM1_FR === reg)
+                        return (!country || feature.properties.ADM0_EN === country) && (!reg || feature.properties.ADM1_FR === reg)
                     }); 
                     const regionItem = document.createElement("li");
                     regionItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${reg}">${reg}</a>`;
