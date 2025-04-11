@@ -1,101 +1,211 @@
 document.addEventListener("DOMContentLoaded", async function () {
-    const map = L.map("map").setView([46.3566, 2.3522], 6);
-    
+    const map = L.map("map").setView([14.5, 3.5], 5);
+
+    const loadingSpinner = document.createElement("div");
+    loadingSpinner.className = "loading-spinner"; // Set class for styling
+    loadingSpinner.innerHTML = `
+        <div class="spinner"></div>
+        <span>Loading...</span>
+    `;
+    document.body.appendChild(loadingSpinner);
+
     L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
         attribution: "&copy; OpenStreetMap contributors &copy; CartoDB",
     }).addTo(map);
 
-    const sqlPromise = initSqlJs({ locateFile: file => `libs/sql-wasm.wasm` });
-    const dbPromise = fetch("data/communes_2024.sqlite")
-        .then(res => res.arrayBuffer())
-        .then(buf => sqlPromise.then(SQL => new SQL.Database(new Uint8Array(buf))));
-    let totalPopulationFrance = 0;
+    const geoJsonFile = "web_data/communes_all.geojson";
+    const uemoaBordersFile = "web_data/uemoa_borders.geojson";
+    const cemacBordersFile = "web_data/cemac_borders.geojson";
 
 
-    dbPromise.then(db => {
-        totalPopulationFrance = db.exec("SELECT SUM(total_population) FROM communes;")[0].values[0][0];
+    let layersAdded = 0;  // Counter for added layers
+
+    // Function to check if all layers are loaded
+    function checkAllLayersAdded() {
+        if (layersAdded >= 4) { // because base layer + 3 GeoJSON layers are added
+            if (document.body.contains(loadingSpinner)) {
+                document.body.removeChild(loadingSpinner); // Remove the spinner
+            }
+        }
+    }
+
+    // Track when each layer is added
+    map.on('layeradd', function () {
+        layersAdded++;
+        checkAllLayersAdded();  // Check after every layer is added
+    });
+
+    // Fetch GeoJSON data
+    try {
+        const [geoJsonData, uemoaData, cemacData] = await Promise.all([
+            fetch(geoJsonFile).then(response => response.json()),
+            fetch(uemoaBordersFile).then(response => response.json()),
+            fetch(cemacBordersFile).then(response => response.json())
+        ]);
+
+        let selectedEquipment = "ISIBF_base";
+        let selectedCommune = "";
+        let selectedDepartment = "";
+        let selectedRegion = "";
+        let selectedCountry = "";
+
+        // Extract unique communes, departments, and regions from the GeoJSON data
+        const communes = [...new Set(geoJsonData.features.map(f => f.properties.ADM3_FR))];
+        const departments = [...new Set(geoJsonData.features.map(f => f.properties.ADM2_FR))];
+        const regions = [...new Set(geoJsonData.features.map(f => f.properties.ADM1_FR))];
+        const countries = [...new Set(geoJsonData.features.map(f => f.properties.ADM0_EN))];
+
+        // Populate commune dropdown
+        const communeDropdown = document.getElementById("commune-select");
+        communes.forEach(comm => {
+            const listItem = document.createElement("li");
+            listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${comm}">${comm}</a>`;
+            listItem.addEventListener("click", () => {
+                selectedCommune = comm;
+                document.getElementById("communeDropdown").textContent = comm;
+                document.getElementById("departmentDropdown").textContent = "Default";
+                document.getElementById("regionDropdown").textContent = "Default";
+                document.getElementById("countryDropdown").textContent = "Default";
+                selectedDepartment = "";
+                selectedRegion = "";
+                selectedCountry = "";
+                loadMapData(geoJsonData, "", "", "", comm, selectedEquipment);
+            });
+            communeDropdown.appendChild(listItem);
+        });
+
         // Populate department dropdown
-        const departments = db.exec("SELECT DISTINCT INSEE_DEP, DEP_NOM FROM communes ORDER BY DEP_NOM;")[0].values;
         const departmentDropdown = document.getElementById("department-select");
         departments.forEach(dep => {
             const listItem = document.createElement("li");
-            listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${dep[0]}">${dep[1]}</a>`;
+            listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${dep}">${dep}</a>`;
             listItem.addEventListener("click", () => {
-                document.getElementById("departmentDropdown").textContent = dep[1];
+                selectedCommune = "";
+                selectedDepartment = dep;
+                document.getElementById("communeDropdown").textContent = "Default";
+                document.getElementById("departmentDropdown").textContent = dep;
                 document.getElementById("regionDropdown").textContent = "Default";
-                document.getElementById("libdensDropdown").textContent = "Default";
-                loadMapData(db, dep[0], "", "");
-                loadFigure1(db, dep[0], "", "");
-                loadFigure2(db, dep[0], "", "");
+                document.getElementById("countryDropdown").textContent = "Default";
+                selectedRegion = "";
+                selectedCountry = "";
+                loadMapData(geoJsonData, "", "", dep, "", selectedEquipment);
             });
             departmentDropdown.appendChild(listItem);
         });
-    
+
         // Populate region dropdown
-        const regions = db.exec("SELECT DISTINCT INSEE_REG, REG_NOM FROM communes ORDER BY REG_NOM;")[0].values;
         const regionDropdown = document.getElementById("region-select");
         regions.forEach(reg => {
             const listItem = document.createElement("li");
-            listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${reg[0]}">${reg[1]}</a>`;
+            listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${reg}">${reg}</a>`;
             listItem.addEventListener("click", () => {
+                selectedRegion = reg;
+                document.getElementById("communeDropdown").textContent = "Default";
                 document.getElementById("departmentDropdown").textContent = "Default";
-                document.getElementById("regionDropdown").textContent = reg[1];
-                document.getElementById("libdensDropdown").textContent = "Default";
-                loadMapData(db, "", reg[0], "");
-                loadFigure1(db, "", reg[0], "");
-                loadFigure2(db, "", reg[0], "");
+                document.getElementById("regionDropdown").textContent = reg;
+                document.getElementById("countryDropdown").textContent = "Default";
+                selectedCommune = "";
+                selectedDepartment = "";
+                selectedCountry = "";
+                loadMapData(geoJsonData, "", reg, "", "", selectedEquipment);
             });
             regionDropdown.appendChild(listItem);
         });
 
-        const order = [
-            "Cities",
-            "Dense towns",
-            "Semi-dense towns",
-            "Suburban areas",
-            "Villages",
-            "Dispersed rural areas",
-            "Mostly unhabitated areas"
-        ];
-    
-        // Populate LIBDENS dropdown
-        const libdensValues = db.exec(`
-            SELECT DISTINCT libdens 
-            FROM communes 
-            ORDER BY CASE 
-                WHEN libdens = 'Cities' THEN 1
-                WHEN libdens = 'Dense towns' THEN 2
-                WHEN libdens = 'Semi-dense towns' THEN 3
-                WHEN libdens = 'Suburban areas' THEN 4
-                WHEN libdens = 'Villages' THEN 5
-                WHEN libdens = 'Dispersed rural areas' THEN 6
-                WHEN libdens = 'Mostly unhabitated areas' THEN 7
-                ELSE 8 -- Default fallback
-            END;
-        `)[0].values;        
-        libdensValues.sort((a, b) => order.indexOf(a) - order.indexOf(b));
-        console.log(libdensValues);
-        const libdensDropdown = document.getElementById("libdens-select");
-        libdensValues.forEach(ld => {
+        const countryCenters = {
+            "Benin": { lat: 9.5, lng: 2.5, zoom: 7 },
+            "Burkina Faso": { lat: 12.4, lng: -1.5, zoom: 7 },
+            "Ivory Coast": { lat: 7.5, lng: -5.5, zoom: 7 },
+            "Guinea-Bissau": { lat: 11.5, lng: -15.7, zoom: 8 },
+            "Mali": { lat: 12.6, lng: -8, zoom: 6 },
+            "Niger": { lat: 17.6, lng: 8, zoom: 6 },
+            "Senegal": { lat: 14.5, lng: -14, zoom: 7 },
+            "Togo": { lat: 8.2, lng: 1.3, zoom: 7 },
+            "Ghana": { lat: 7.5, lng: -0.5, zoom: 7 },
+            "Cameroon": { lat: 6.5, lng: 13, zoom: 6 },
+            "Chad": { lat: 15.5, lng: 18, zoom: 6 }
+        };
+
+        // Country Dropdown
+        const countryDropdown = document.getElementById("country-select");
+
+        countries.forEach(coun => {
             const listItem = document.createElement("li");
-            listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${ld[0]}">${ld[0]}</a>`;
+            const legend = L.control({ position: "bottomright" });
+            listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${coun}">${coun}</a>`;
             listItem.addEventListener("click", () => {
+                isDefaultView = false;  // Change the flag to false when a country is selected
+                selectedCountry = coun;
+                document.getElementById("communeDropdown").textContent = "Default";
                 document.getElementById("departmentDropdown").textContent = "Default";
-                document.getElementById("regionDropdown").textContent =  "Default";
-                document.getElementById("libdensDropdown").textContent = ld[0];
-                loadMapData(db, "", "", ld[0]);
-                loadFigure1(db, "", "", ld[0]);
-                loadFigure2(db, "", "", ld[0]);
+                document.getElementById("regionDropdown").textContent = "Default";
+                document.getElementById("countryDropdown").textContent = coun;
+                selectedCommune = "";
+                selectedDepartment = "";
+                selectedRegion = "";
+
+                // Set map view to the selected country
+                if (countryCenters[coun]) {
+                    const { lat, lng, zoom } = countryCenters[coun];
+                    map.setView([lat, lng], zoom);
+                }
+                loadMapData(geoJsonData, coun, "", "", "", selectedEquipment);
             });
-            libdensDropdown.appendChild(listItem);
+            countryDropdown.appendChild(listItem);
+            legend.onAdd = function () {
+                const div = L.DomUtil.create("div", "legend"),
+                grades = [1, 0.5, 0.1, 0.01, 0.001];
+
+                div.innerHTML += "<strong>Bank Branch Score Access</strong><br>";
+                for (let i = 0; i < grades.length; i++) {
+                    div.innerHTML += `<i style="background:${getColor(grades[i] + 1)}"></i> ${
+                        grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "+"}<br>`;
+                }
+                return div;
+            };
+        });
+        countryDropdown.addEventListener("change", function () {
+            const selectedCountry = this.value;
+            loadMapData(geoJsonData, selectedCountry, "", "", "", selectedEquipment);  // Update the map and legend
         });
 
-        loadMapData(db, "", "", "");
-        loadFigure1(db, "", "", "");
-        loadFigure2(db, "", "", "");
-    });
+        // Reset button event
+        document.getElementById("resetButton").addEventListener("click", function() {
+            isDefaultView = true;
+            loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
+            document.getElementById("countryDropdown").textContent = "Default";
+            document.getElementById("communeDropdown").textContent = "Default";
+            document.getElementById("departmentDropdown").textContent = "Default";
+            document.getElementById("regionDropdown").textContent = "Default";
+            selectedCountry = "";
+            selectedCommune = "";
+            selectedDepartment = "";
+            selectedRegion = "";
+        });
 
+        // Initial load
+        loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
 
+        // Add UEMOA and CEMAC borders
+        L.geoJSON(uemoaData, {
+            style: function () {
+                return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for UEMOA
+            }
+        }).addTo(map);
+
+        L.geoJSON(cemacData, {
+            style: function () {
+                return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for CEMAC
+            }
+        }).addTo(map);
+
+    } catch (error) {
+        console.error('Error loading GeoJSON:', error);
+        // Remove spinner in case of error, if it exists
+        if (document.body.contains(loadingSpinner)) {
+            document.body.removeChild(loadingSpinner);
+        }
+    }
 
     // Info Control
     const info = L.control();
@@ -104,75 +214,33 @@ document.addEventListener("DOMContentLoaded", async function () {
         this.update();
         return this.div;
     };
+
+    // Updated hover info: show commune name and score from "ISIBF_base"
     info.update = function (props) {
         this.div.innerHTML = props
-            ? `<h6>${props.name}</h6>
-            <br>Average distance to
-            nearest ATM: ${props.nearest_ATM}m`
-            // <br>Population: ${props.total_population}
-            : "Hover over a commune";
+            ? `<h6>${props.ADM3_FR}</h6><br>Score: ${props.ISIBF_base}`
+            : "Hover over";
     };
     info.addTo(map);
 
-    // Legend Control
-    const legend = L.control({ position: "bottomright" });
-    legend.onAdd = function () {
-        const div = L.DomUtil.create("div", "legend"),
-              grades = [0, 500, 1000, 2000, 5000];
+    let isDefaultView = true;
 
-        div.innerHTML += "<strong>Travel Distance</strong><br>";
-        for (let i = 0; i < grades.length; i++) {
-            div.innerHTML += `<i style="background:${getColor(grades[i] + 1)}"></i> ${
-                grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "+"}<br>`;
-        }
-        return div;
-    };
-    legend.addTo(map);
-
-
-    function loadMapData(db, department, region, libdens) {
+    function loadMapData(geoJsonData, country, region, department, commune, selectedEquipment) {
         map.eachLayer(layer => {
             if (layer instanceof L.GeoJSON) {
                 map.removeLayer(layer);
             }
         });
 
-        let query = "SELECT * FROM communes WHERE 1=1";
-        if (department) query += ` AND INSEE_DEP = '${department}'`;
-        if (region) query += ` AND INSEE_REG = '${region}'`;
-        if (libdens) query += ` AND libdens = '${libdens}'`;
+        // Filter GeoJSON data based on the selected commune, department, or region
+        const filteredData = geoJsonData.features.filter(feature => {
+            return (!country || feature.properties.ADM0_EN === country) &&
+                   (!commune || feature.properties.ADM3_FR === commune) &&
+                   (!department || feature.properties.ADM2_FR === department) &&
+                   (!region || feature.properties.ADM1_FR === region);
+        });
 
-        const results = db.exec(query)[0]?.values || [];
-
-        let totalPopulation = 0;
-        let weightedDistanceSum = 0;
-        let totalHouseholds5km = 0;
-
-        const geoJsonData = {
-            type: "FeatureCollection",
-            features: results.map(row => {
-                const population = row[9] || 0;
-                const distance = row[8] || 0;
-
-                totalPopulation += population;
-                weightedDistanceSum += population * distance;
-                if (distance <= 5000) {
-                    totalHouseholds5km += population;
-                }
-
-                return {
-                    type: "Feature",
-                    properties: { name: row[1], nearest_ATM: distance, total_population: population },
-                    geometry: JSON.parse(row[4])
-                };
-            })
-        };
-
-        updateStatistics(results.length, totalPopulation, weightedDistanceSum, totalHouseholds5km);
-
-        const geoJsonLayer = L.geoJSON(geoJsonData, {
-            // layer.bindTooltip(`<strong>${feature.properties.name}</strong>: ${feature.properties.nearest_ATM}m`);
-
+        const geoJsonLayer = L.geoJSON({ type: "FeatureCollection", features: filteredData }, {
             onEachFeature: function (feature, layer) {
                 layer.on({
                     mouseover: function (e) {
@@ -183,274 +251,119 @@ document.addEventListener("DOMContentLoaded", async function () {
                         geoJsonLayer.resetStyle(e.target);
                         info.update();
                     }
-                    // click: function (e) {
-                    //     map.fitBounds(e.target.getBounds());
-                    // }
                 });
             },
             style: function (feature) {
+                const score = feature.properties[selectedEquipment] || 0;
+                const country = feature.properties.ADM0_EN;  // Corrected reference to country property
+                const fillColor = getColor(score, country);
+
                 return {
-                    fillColor: getColor(feature.properties.nearest_ATM),
-                    weight: 0.5,
-                    opacity: 0.4,
-                    color: "lightgrey",
-                    fillOpacity: 0.9
+                    fillColor: fillColor,
+                    weight: 0.3,  // Default border weight
+                    opacity: 0.3, // Border opacity
+                    color: (feature.properties.ADM0_EN !== undefined) ? "#333333" : "transparent", // Darker border for country boundaries
+                    fillOpacity: 0.9  // Make sure the polygons are opaque enough
                 };
             }
         }).addTo(map);
+
+        updateLegend(country);
+
+        if (isDefaultView) {
+            // Load UEMOA borders
+            fetch(uemoaBordersFile)
+                .then(response => response.json())
+                .then(data => {
+                    L.geoJSON(data, {
+                        style: function () {
+                            return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for UEMOA
+                        }
+                    }).addTo(map);
+                })
+                .catch(error => console.error('Error loading UEMOA borders:', error));
+
+            // Load CEMAC borders
+            fetch(cemacBordersFile)
+                .then(response => response.json())
+                .then(data => {
+                    L.geoJSON(data, {
+                        style: function () {
+                            return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for CEMAC
+                        }
+                    }).addTo(map);
+                })
+                .catch(error => console.error('Error loading CEMAC borders:', error));
+        }
     }
 
-    
-    function updateStatistics(municipalityCount, totalPopulation, weightedDistanceSum, totalHouseholds5km) {
-        document.getElementById("num-municipalities").innerHTML = `<span style="font-size: 30px;">${municipalityCount}</span>municipalities`;
-        document.getElementById("percentage-households").innerHTML = `<span style="font-size: 30px;">${(totalPopulationFrance > 0 ? ((totalPopulation / totalPopulationFrance) * 100).toFixed(1) : 0)}%</span>of France's population`;
-        document.getElementById("avg-distance").innerHTML = `<span style="font-size: 30px;">${(totalPopulation > 0 ? (weightedDistanceSum / totalPopulation).toFixed(0) : 0)}m</span>on average to nearest ATM`;
-        document.getElementById("households-5km").innerHTML = `<span style="font-size: 30px;">${(totalPopulation > 0 ? ((totalHouseholds5km / totalPopulation) * 100).toFixed(0) : 0)}%</span>of population within 5 km of an ATM`;
+    let legend;  // Declare legend outside of the event listener
+
+    function updateLegend(country) {
+        if (legend) {
+            legend.remove();  // Remove previous legend before adding a new one
+        }
+
+        if (country) {
+            legend = L.control({ position: "bottomright" });
+
+            const grades = [1, 0.5, 0.1, 0.01, 0.001];
+
+            legend.onAdd = function () {
+                const div = L.DomUtil.create("div", "legend");
+
+                div.innerHTML += "<strong>Bank Branch Score Access</strong><br>";
+                for (let i = 0; i < grades.length; i++) {
+                    div.innerHTML += `<i style="background:${getColor(grades[i], country)}"></i> ${
+                        grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "-0"}<br>`;
+                }
+
+                return div;
+            };
+
+            legend.addTo(map);  // Add the new legend
+
+            layersAdded++; // Increment layer counter for GeoJSON layer
+
+            checkAllLayersAdded(); // Check if all layers are added
+        }
     }
 
-    function getColor(value) {
-        return value > 5000 ? "#eff3ff" :
-               value > 2000 ? "#bdd7e7" :
-               value > 1000 ? "#6baed6" :
-               value > 500 ? "#3182bd" :
-               "#08519c";
+    function getColor(value, country) {
+        // Color mapping based on country
+        if (['Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'].includes(country)) {
+            return value > 0.5 ? "#08519c" :  // Darkest
+            value > 0.1 ? "#3182bd" :
+            value > 0.01 ? "#6baed6" :
+            value > 0.001 ? "#bdd7e7" :  // Lightest
+            "#eff3ff";  // Lightest
+
+        } else if (country === 'Ghana') {
+            return value > 0.5 ? "#880e4f" :  // Darkest
+            value > 0.1 ? "#c2185b" :
+            value > 0.01 ? "#d81b60" :
+            value > 0.001 ? "#f768a1" :  // Lightest
+            "#fbb4b9";  // Lightest
+
+        } else if (['Cameroon', 'Chad'].includes(country)) {
+            return value > 0.5 ? "#00441b" :  // Darkest
+            value > 0.1 ? "#006d2c" :
+            value > 0.01 ? "#31a354" :
+            value > 0.001 ? "#a1d99b" :  // Lightest
+            "#e5f5e0";  // Lightest
+
+        } else {
+            return "#ffffff"; // Default color if no country matches
+        }
     }
 
     document.getElementById("map-btn").addEventListener("click", function() {
         showContent("map-content");
     });
-    
-    document.getElementById("summary-btn").addEventListener("click", function() {
-        showContent("summary-content");
-    });
-    
-    document.getElementById("conclusion-btn").addEventListener("click", function() {
-        showContent("conclusion-content");
-    });
-    
+
     function showContent(contentId) {
         document.getElementById("map-content").style.display = "none";
-        document.getElementById("summary-content").style.display = "none";
-        document.getElementById("conclusion-content").style.display = "none";
-    
         document.getElementById(contentId).style.display = "flex";
     }
-    
-
-    function loadFigure1(db, department, region, libdens) {
-        const totalPopulationFrance = db.exec("SELECT SUM(total_population) FROM communes;")[0].values[0][0];
-    
-        const totalSelectionQuery = `
-            SELECT SUM(total_population) FROM communes WHERE 1=1
-            ${department ? ` AND INSEE_DEP = '${department}'` : ""}
-            ${region ? ` AND INSEE_REG = '${region}'` : ""}
-            ${libdens ? ` AND libdens = '${libdens}'` : ""}
-        `;
-        const totalPopulationSelection = db.exec(totalSelectionQuery)[0].values[0][0] || 1; // Avoid division by 0
-    
-        const bins = [];
-        for (let i = 0; i < 10000; i += 500) {
-            bins.push(`${i}-${i + 500}`);
-        }
-    
-        const customXTicks = {
-            "1500-2000": "1500-2000",
-            "3500-4000": "3500-4000",
-            "5500-6000": "5500-6000",
-            "7500-8000": "7500-8000",
-            "9500-10000": "9500-10000"
-        };
-    
-        function getCategory(distance) {
-            if (distance > 10000) return "10000m+";
-            return `${Math.floor(distance / 500) * 500}-${Math.floor(distance / 500) * 500 + 500}`;
-        }
-    
-        const query = `
-            SELECT 
-                SUM(total_population) AS population, 
-                CASE 
-                    ${bins.map((range, i) => `WHEN nearest_ATM BETWEEN ${i * 500} AND ${(i + 1) * 500} THEN '${range}'`).join("\n")}
-                    ELSE '10000m+'
-                END AS distance_category
-            FROM communes 
-            GROUP BY distance_category
-            ORDER BY distance_category;
-        `;
-    
-        const franceData = db.exec(query)[0].values.reduce((acc, row) => {
-            acc[row[1]] = (row[0] / totalPopulationFrance) * 100;
-            return acc;
-        }, {});
-
-
-    
-        let selectionQuery = `
-            SELECT 
-                SUM(total_population) AS population, 
-                CASE 
-                    WHEN nearest_ATM BETWEEN 0 AND 500 THEN '0-500'
-                    WHEN nearest_ATM BETWEEN 500 AND 1000 THEN '500-1000'
-                    WHEN nearest_ATM BETWEEN 1000 AND 1500 THEN '1000-1500'
-                    WHEN nearest_ATM BETWEEN 1500 AND 2000 THEN '1500-2000'
-                    WHEN nearest_ATM BETWEEN 2000 AND 2500 THEN '2000-2500'
-                    WHEN nearest_ATM BETWEEN 2500 AND 3000 THEN '2500-3000'
-                    WHEN nearest_ATM BETWEEN 3000 AND 3500 THEN '3000-3500'
-                    WHEN nearest_ATM BETWEEN 3500 AND 4000 THEN '3500-4000'
-                    WHEN nearest_ATM BETWEEN 4000 AND 4500 THEN '4000-4500'
-                    WHEN nearest_ATM BETWEEN 4500 AND 5000 THEN '4500-5000'
-                    WHEN nearest_ATM BETWEEN 5000 AND 5500 THEN '5000-5500'
-                    WHEN nearest_ATM BETWEEN 5500 AND 6000 THEN '5500-6000'
-                    WHEN nearest_ATM BETWEEN 6000 AND 6500 THEN '6000-6500'
-                    WHEN nearest_ATM BETWEEN 6500 AND 7000 THEN '6500-7000'
-                    WHEN nearest_ATM BETWEEN 7000 AND 7500 THEN '7000-7500'
-                    WHEN nearest_ATM BETWEEN 7500 AND 8000 THEN '7500-8000'
-                    WHEN nearest_ATM BETWEEN 8000 AND 8500 THEN '8000-8500'
-                    WHEN nearest_ATM BETWEEN 8500 AND 9000 THEN '8500-9000'
-                    WHEN nearest_ATM BETWEEN 9000 AND 9500 THEN '9000-9500'
-                    WHEN nearest_ATM BETWEEN 9500 AND 10000 THEN '9500-10000'
-                    ELSE '10000m+'
-                END AS distance_category
-            FROM communes 
-            WHERE 1=1 `;  // Base condition to append more filters dynamically
-
-        // Dynamically append filters
-        if (department) selectionQuery += ` AND INSEE_DEP = '${department}'`;
-        if (region) selectionQuery += ` AND INSEE_REG = '${region}'`;
-        if (libdens) selectionQuery += ` AND libdens = '${libdens}'`;
-
-        // Add GROUP BY and ORDER BY at the end
-        selectionQuery += ` GROUP BY distance_category ORDER BY distance_category;`;
-
-        const selectionData = db.exec(selectionQuery)[0].values.reduce((acc, row) => {
-            acc[row[1]] = (row[0] / totalPopulationSelection) * 100;
-            return acc;
-        }, {});
-    
-        const categories = bins.concat(["10000m+"]);
-        const francePercentages = categories.map(cat => (franceData[cat] || 0));
-        const selectionPercentages = categories.map(cat => (selectionData[cat] || 0));
-
-    
-        const traceFrance = {
-            x: categories.map(cat => customXTicks[cat] !== undefined ? customXTicks[cat] : cat), // Apply custom x-ticks
-            y: francePercentages,
-            name: "France",
-            type: "bar",
-            marker: { color: "#08519c" },
-            hovertemplate: "%{y:.1f}%" // Custom hover format
-        };
-
-        const traceSelection = {
-            x: categories.map(cat => customXTicks[cat] !== undefined ? customXTicks[cat] : cat),
-            y: selectionPercentages,
-            name: "Selection",
-            type: "bar",
-            marker: { color: "#bdd7e7" },
-            hovertemplate: "%{y:.1f}%"
-        };
-    
-        const layout = {
-            margin: { l: 40, r: 20, t: 20, b: 40 }, // Minimize margin
-            // title: "Share of Households by Travel Distance to Nearest ATM (in m)",
-            xaxis: { title: "Distance (m)", tickvals: Object.values(customXTicks), ticktext: Object.values(customXTicks) },
-            yaxis: { title: "% de la population", dtick: 10 }, // Show only multiples of 10
-            barmode: "group",
-            width: 600,  // Max figure size
-            height: 400,
-            hovermode: "x unified", // Custom hover mode
-            showlegend: true,
-            legend: { x: 1, y: 1, xanchor: "right", yanchor: "top" } // Legend inside plot (upper right)
-        };
-    
-        Plotly.newPlot("fig1", [traceFrance], layout, { displayModeBar: false }); // Remove default actions
-    }
-    
-
-
-    function loadFigure2(db, department, region, libdens) {
-        const totalPopulationFrance = db.exec("SELECT SUM(total_population) FROM communes;")[0].values[0][0];
-    
-        const orderEnglish = [
-            "Cities",
-            "Dense towns",
-            "Semi-dense towns",
-            "Suburban areas",
-            "Villages",
-            "Dispersed rural areas",
-            "Mostly unhabitated areas"
-        ];
-    
-        const orderFrench = [
-            "Grands centres urbains",
-            "Centres urbains intermédiaires",
-            "Ceintures urbaines",
-            "Petites villes",
-            "Bourgs ruraux",
-            "Rural à habitat dispersé",
-            "Rural à habitat très dispersé"
-        ];
-    
-        let query = `
-            SELECT 
-                libdens, 
-                SUM(CASE WHEN nearest_ATM <= 500 THEN total_population ELSE 0 END) AS "0-500m",
-                SUM(CASE WHEN nearest_ATM > 500 AND nearest_ATM <= 1000 THEN total_population ELSE 0 END) AS "500-1000m",
-                SUM(CASE WHEN nearest_ATM > 1000 AND nearest_ATM <= 2000 THEN total_population ELSE 0 END) AS "1000-2000m",
-                SUM(CASE WHEN nearest_ATM > 2000 AND nearest_ATM <= 5000 THEN total_population ELSE 0 END) AS "2000-5000m",
-                SUM(CASE WHEN nearest_ATM > 5000 THEN total_population ELSE 0 END) AS "5000m+",
-                SUM(total_population) AS total_population
-            FROM communes WHERE 1=1
-            ${department ? ` AND INSEE_DEP = '${department}'` : ""}
-            ${region ? ` AND INSEE_REG = '${region}'` : ""}
-            ${libdens ? ` AND libdens = '${libdens}'` : ""}
-            GROUP BY libdens
-        `;
-    
-        const result = db.exec(query)[0].values;
-    
-        const labelsEnglish = orderEnglish.filter(label => result.some(row => row[0] === label));
-        const labelsFrench = labelsEnglish.map(label => orderFrench[orderEnglish.indexOf(label)]);
-        
-        const categories = ["0-500m", "500-1000m", "1000-2000m", "2000-5000m", "5000m+"];
-    
-        const values = categories.map((_, i) => labelsEnglish.map(label => 
-            (result.find(row => row[0] === label)[i + 1] / result.find(row => row[0] === label)[6]) * 100
-        ));
-    
-        const customColors = ["#08519c", "#3182bd", "#6baed6", "#bdd7e7", "#eff3ff"];
-    
-        const traces = categories.map((category, i) => ({
-            x: values[i],
-            y: labelsFrench,
-            name: category,
-            type: "bar",
-            orientation: "h",
-            marker: { color: customColors[i] },
-            width: 0.5 // Set max bar width
-        }));
-    
-        const layout = {
-            xaxis: { title: "% de la population", range: [0, 100], tickformat: ".1f%" },
-            yaxis: { 
-                categoryorder: "array", 
-                categoryarray: orderFrench,
-                automargin: true 
-            },
-            legend: {
-                x: -0.1, y: -0.2,
-                xanchor: "left", yanchor: "top",
-                orientation: "h",
-                font: { size: 10 }
-            },
-            barmode: "stack",
-            width: 600,
-            height: 400,
-            margin: { l: 40, r: 20, t: 20, b: 40 },
-        };
-    
-        Plotly.newPlot("fig2", traces, layout, { displayModeBar: false });
-    }
-    
 
 });
