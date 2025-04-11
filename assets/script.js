@@ -238,8 +238,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                    (!department || feature.properties.ADM2_FR === department) &&
                    (!region || feature.properties.ADM1_FR === region);
         });
-        
-        updateStats(filteredData, geoJsonData.features, country); 
 
         const geoJsonLayer = L.geoJSON({ type: "FeatureCollection", features: filteredData }, {
             onEachFeature: function (feature, layer) {
@@ -270,6 +268,8 @@ document.addEventListener("DOMContentLoaded", async function () {
         }).addTo(map);
 
         updateLegend(country);
+        if (['Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'].includes(country)) {
+            updateStats(filteredData, geoJsonData.features, country)}; 
 
         if (isDefaultView) {
             // Load UEMOA borders
@@ -367,45 +367,30 @@ document.addEventListener("DOMContentLoaded", async function () {
         document.getElementById(contentId).style.display = "flex";
     }
 
-// Define the countries and their respective labels for municipalities
-const countries = {
-    "Benin": "Communes",
-    "Burkina Faso": "Communes",
-    "Mali": "Communes",
-    "Niger": "Communes",
-    "Ivory Coast": "Sub-Prefectures",
-    "Guinea-Bissau": "Sectors",
-    "Senegal": "Arrondissements",
-    "Togo": "Communes",
-    "Ghana": "Districts",
-    "Cameroon": "Arrondissements",
-    "Chad": "Provinces",
-};
+    // Define the countries and their respective labels for municipalities
+    const municipalities = {
+        "Benin": "Communes",
+        "Burkina Faso": "Communes",
+        "Mali": "Communes",
+        "Niger": "Communes",
+        "Ivory Coast": "Sub-Prefectures",
+        "Guinea-Bissau": "Sectors",
+        "Senegal": "Arrondissements",
+        "Togo": "Communes",
+        "Ghana": "Districts",
+        "Cameroon": "Arrondissements",
+        "Chad": "Provinces",
+    };
 
     // Function to update statistics dynamically based on filtered data
     function updateStats(filteredData, totalData, country) {
-        // Get the correct label for municipalities based on the country
-        const municipalityLabel = countries[country.toLowerCase()] || "Municipalities"; // Default fallback to "Municipalities"
-
-        // Calculate total number of communes or equivalent based on country
+        const municipalityLabel = municipalities[country] || "Municipalities"; // Default fallback to "Municipalities"
         const totalCommunes = filteredData.length;
-
-        // Calculate the total number of branches
         const totalBranches = filteredData.reduce((sum, feature) => sum + (feature.properties.Total_bran || 0), 0);
-
-        // Calculate the total population for the filtered region
         const totalPopulation = filteredData.reduce((sum, feature) => sum + (feature.properties.Population || 0), 0);
-
-        // Calculate the total area for the filtered region
         const totalArea = filteredData.reduce((sum, feature) => sum + (feature.properties.Area || 0), 0);
-
-        // Calculate total population for the entire country
         const totalCountryPopulation = totalData.reduce((sum, feature) => sum + (feature.properties.Population || 0), 0);
-
-        // Calculate total area for the entire country
         const totalCountryArea = totalData.reduce((sum, feature) => sum + (feature.properties.Area || 0), 0);
-
-        // Calculate the percentage of the filtered region's population and area
         const populationPercentage = totalCountryPopulation > 0 ? ((totalPopulation / totalCountryPopulation) * 100).toFixed(2) : 0;
         const areaPercentage = totalCountryArea > 0 ? ((totalArea / totalCountryArea) * 100).toFixed(2) : 0;
 
