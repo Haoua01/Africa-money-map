@@ -273,6 +273,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         }).addTo(map);
 
         updateLegend(country);
+        updateStats(filteredData, country); // Update stats based on filtered data
 
         if (isDefaultView) {
             // Load UEMOA borders
