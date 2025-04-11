@@ -105,11 +105,9 @@ document.addEventListener("DOMContentLoaded", async function () {
                     document.getElementById("region-select").innerHTML = "";
 
                     // Update the dropdowns based on selected country
-                    document.getElementById("resetButton").addEventListener("click", function() {
-                        populateRegionDropdown(filteredCountryData, coun);
-                        populateDepartmentDropdown(filteredCountryData, coun);
-                        populateCommuneDropdown(filteredCountryData, coun);
-                    });
+                    populateRegionDropdown(filteredCountryData, coun);
+                    populateDepartmentDropdown(filteredCountryData, coun);
+                    populateCommuneDropdown(filteredCountryData, coun);
                     
 
                     // Set map view to the selected country
@@ -208,6 +206,20 @@ document.addEventListener("DOMContentLoaded", async function () {
             document.getElementById("resetButton").addEventListener("click", function() {
                 isDefaultView = true; 
                 loadMapData(geoJsonData, "", "", "", "",selectedEquipment);
+                document.getElementById("countryDropdown").textContent = "Default";
+                document.getElementById("communeDropdown").textContent = "Default";
+                document.getElementById("departmentDropdown").textContent = "Default";
+                document.getElementById("regionDropdown").textContent = "Default";
+                selectedCountry = "";
+                selectedCommune = "";
+                selectedDepartment = "";
+                selectedRegion = "";
+            });
+
+            // Reset button event
+            document.getElementById("resetButton").addEventListener("click", function() {
+                isDefaultView = true;
+                loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
                 document.getElementById("countryDropdown").textContent = "Default";
                 document.getElementById("communeDropdown").textContent = "Default";
                 document.getElementById("departmentDropdown").textContent = "Default";
