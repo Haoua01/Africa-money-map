@@ -59,9 +59,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             //});
 
             // Extract unique communes, departments, and regions from the GeoJSON data
-            const communes = [...new Set(geoJsonData.features.map(f => f.properties.ADM3_FR))];
-            const departments = [...new Set(geoJsonData.features.map(f => f.properties.ADM2_FR))];
-            const regions = [...new Set(geoJsonData.features.map(f => f.properties.ADM1_FR))];
             const countries = [...new Set(geoJsonData.features.map(f => f.properties.ADM0_EN))];
 
 
@@ -86,47 +83,8 @@ document.addEventListener("DOMContentLoaded", async function () {
             
             countries.forEach(coun => {
 
-                // Create a list item for each country
-                            // Populate commune dropdown
-                const communeDropdown = document.getElementById("commune-select");
-                communes.forEach(comm => {
-                    const listItem = document.createElement("li");
-                    listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${comm}">${comm}</a>`;
-                    listItem.addEventListener("click", () => {
-                        selectedCommune = comm;
-                        document.getElementById("communeDropdown").textContent = comm;
-                        document.getElementById("departmentDropdown").textContent = "Default";
-                        document.getElementById("regionDropdown").textContent = "Default";
-                        document.getElementById("countryDropdown").textContent = coun;
-                        selectedDepartment = "";
-                        selectedRegion = "";
-                        selectedCountry = "";
-                        loadMapData(geoJsonData, coun, "", "", comm, selectedEquipment);
-                    });
-                    communeDropdown.appendChild(listItem);
-                });
-                
-
-                // Populate department dropdown
-                const departmentDropdown = document.getElementById("department-select");
-                departments.forEach(dep => {
-                    const listItem = document.createElement("li");
-                    listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${dep}">${dep}</a>`;
-                    listItem.addEventListener("click", () => {
-                        selectedCommune = "";
-                        selectedDepartment = dep;
-                        document.getElementById("communeDropdown").textContent = "Default";
-                        document.getElementById("departmentDropdown").textContent = dep;
-                        document.getElementById("regionDropdown").textContent = "Default";
-                        document.getElementById("countryDropdown").textContent = coun;
-                        selectedRegion = "";
-                        selectedCountry = "";
-                        loadMapData(geoJsonData, coun, "", dep, "", selectedEquipment);
-                    });
-                    departmentDropdown.appendChild(listItem);
-                });
-
                 // Populate region dropdown
+                const regions = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === coun).map(f => f.properties.ADM1_FR))];
                 const regionDropdown = document.getElementById("region-select");
                 regions.forEach(reg => {
                     const listItem = document.createElement("li");
@@ -143,6 +101,47 @@ document.addEventListener("DOMContentLoaded", async function () {
                         loadMapData(geoJsonData,coun,reg, "", "", selectedEquipment);
                     });
                     regionDropdown.appendChild(listItem);
+
+                    // Populate department dropdown
+                    const departments = [...new Set(geoJsonData.features.filter(f => f.properties.ADM1_FR === reg && f.properties.ADM0_EN === coun).map(f => f.properties.ADM2_FR))];
+                    const departmentDropdown = document.getElementById("department-select");
+                    departments.forEach(dep => {
+                        const listItem = document.createElement("li");
+                        listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${dep}">${dep}</a>`;
+                        listItem.addEventListener("click", () => {
+                            selectedCommune = "";
+                            selectedDepartment = dep;
+                            document.getElementById("communeDropdown").textContent = "Default";
+                            document.getElementById("departmentDropdown").textContent = dep;
+                            document.getElementById("regionDropdown").textContent = reg;
+                            document.getElementById("countryDropdown").textContent = coun;
+                            selectedRegion = "";
+                            selectedCountry = "";
+                            loadMapData(geoJsonData, coun, reg, dep, "", selectedEquipment);
+                        });
+                        departmentDropdown.appendChild(listItem);
+
+                        // Populate commune dropdown
+                        const communes = [...new Set(geoJsonData.features.filter(f => f.properties.ADM2_FR === dep && f.properties.ADM1_FR === reg && f.properties.ADM0_EN === coun).map(f => f.properties.ADM3_FR))];
+                        const communeDropdown = document.getElementById("commune-select");
+                        communes.forEach(comm => {
+                            const listItem = document.createElement("li");
+                            listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${comm}">${comm}</a>`;
+                            listItem.addEventListener("click", () => {
+                                selectedCommune = comm;
+                                document.getElementById("communeDropdown").textContent = comm;
+                                document.getElementById("departmentDropdown").textContent = dep;
+                                document.getElementById("regionDropdown").textContent = reg;
+                                document.getElementById("countryDropdown").textContent = coun;
+                                selectedDepartment = "";
+                                selectedRegion = "";
+                                selectedCountry = "";
+                                loadMapData(geoJsonData, coun, reg, dep, comm, selectedEquipment);
+                            });
+                            communeDropdown.appendChild(listItem);
+                        });
+                
+                    });
                 });
 
 
