@@ -83,8 +83,12 @@ document.addEventListener("DOMContentLoaded", async function () {
             const countryDropdown = document.getElementById("country-select");
 
             countries.forEach(coun => {
-                isDefaultView = false; 
-                const listItem = document.createElement("li");
+                isDefaultView = false;
+                // Filter GeoJSON data based on the selected commune, department, or region
+                const filteredCountryData = geoJsonData.features.filter(feature => {
+                    return (!coun || feature.properties.ADM0_EN === coun)
+                }); 
+                        const listItem = document.createElement("li");
                 listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${coun}">${coun}</a>`;
                 listItem.addEventListener("click", () => {
                     // Reset selected values
@@ -109,6 +113,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
                     // Load map data
                     loadMapData(geoJsonData, coun, "", "", "", selectedEquipment);
+                    updateStats(filteredCountryData, coun);
                 });
 
                 countryDropdown.appendChild(listItem);
@@ -119,13 +124,18 @@ document.addEventListener("DOMContentLoaded", async function () {
                 const regions = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === country).map(f => f.properties.ADM1_FR))];
                 const regionDropdown = document.getElementById("region-select");
 
+
                 regions.forEach(reg => {
+                    const filteredRegionData = geoJsonData.features.filter(feature => {
+                        return (!coun || feature.properties.ADM0_EN === coun) && (!reg || feature.properties.ADM1_FR === reg)
+                    }); 
                     const regionItem = document.createElement("li");
                     regionItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${reg}">${reg}</a>`;
                     regionItem.addEventListener("click", () => {
                         selectedRegion = reg;
                         populateDepartmentDropdown(country, reg);
                         document.getElementById("regionDropdown").textContent = reg;
+                        updateStats(filteredRegionData, country);
                         loadMapData(geoJsonData, country, reg, "", "", selectedEquipment);
                     });
                     regionDropdown.appendChild(regionItem);
@@ -138,12 +148,18 @@ document.addEventListener("DOMContentLoaded", async function () {
                 const departmentDropdown = document.getElementById("department-select");
 
                 departments.forEach(dep => {
+                    const filteredDepartmentData = geoJsonData.features.filter(feature => {
+                        return (!country || feature.properties.ADM0_EN === country) && 
+                        (!region || feature.properties.ADM1_FR === region) && 
+                        (!dep || feature.properties.ADM2_FR === dep)
+                    });
                     const departmentItem = document.createElement("li");
                     departmentItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${dep}">${dep}</a>`;
                     departmentItem.addEventListener("click", () => {
                         selectedDepartment = dep;
                         populateCommuneDropdown(country, region, dep);
                         document.getElementById("departmentDropdown").textContent = dep;
+                        updateStats(filteredDepartmentData, country);
                         loadMapData(geoJsonData, country, region, dep, "", selectedEquipment);
                     });
                     departmentDropdown.appendChild(departmentItem);
@@ -156,11 +172,18 @@ document.addEventListener("DOMContentLoaded", async function () {
                 const communeDropdown = document.getElementById("commune-select");
 
                 communes.forEach(comm => {
+                    const filteredCommuneData = geoJsonData.features.filter(feature => {
+                        return (!country || feature.properties.ADM0_EN === country) &&
+                        (!region || feature.properties.ADM1_FR === region) &&
+                        (!department || feature.properties.ADM2_FR === department) &&
+                        (!comm || feature.properties.ADM3_FR === comm)
+                    });
                     const communeItem = document.createElement("li");
                     communeItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${comm}">${comm}</a>`;
                     communeItem.addEventListener("click", () => {
                         selectedCommune = comm;
                         document.getElementById("communeDropdown").textContent = comm;
+                        updateStats(filteredCommuneData, country);
                         loadMapData(geoJsonData, country, region, department, comm, selectedEquipment);
                     });
                     communeDropdown.appendChild(communeItem);
@@ -270,7 +293,6 @@ document.addEventListener("DOMContentLoaded", async function () {
         }).addTo(map);
 
         updateLegend(country);
-        updateStats(filteredData, country); // Update stats based on filtered data
 
         if (isDefaultView) {
             // Load UEMOA borders

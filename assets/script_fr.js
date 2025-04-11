@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", async function () {
     const map = L.map("map").setView([14.5, 3.5], 5);
 
+    let isDefaultView = true;
+
     const loadingSpinner = document.createElement("div");
     loadingSpinner.className = "loading-spinner"; // Set class for styling
     loadingSpinner.innerHTML = `
@@ -13,23 +15,15 @@ document.addEventListener("DOMContentLoaded", async function () {
         attribution: "&copy; OpenStreetMap contributors &copy; CartoDB",
     }).addTo(map);
 
-    
+    const geoJsonFile = "web_data/communes_all.geojson";
     const uemoaBordersFile = "web_data/uemoa_borders.geojson";
     const cemacBordersFile = "web_data/cemac_borders.geojson";
 
-    const loadingSpinner = document.createElement("div");
-    loadingSpinner.className = "loading-spinner"; // Set class for styling
-    loadingSpinner.innerHTML = `
-        <div class="spinner"></div>
-        <span>Loading...</span>
-    `;
-    document.body.appendChild(loadingSpinner); // Append the spinner to the body or map container
 
     let layersAdded = 0;  // Counter for added layers
 
     // Function to check if all layers are loaded
     function checkAllLayersAdded() {
-        if (layersAdded >= 3) { // 3 because base layer + 2 GeoJSON layers are added
         if (layersAdded >= 4) { // because base layer + 3 GeoJSON layers are added
             if (document.body.contains(loadingSpinner)) {
                 document.body.removeChild(loadingSpinner); // Remove the spinner
@@ -230,8 +224,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             : "Hover over";
     };
     info.addTo(map);
-
-    let isDefaultView = true;
 
     function loadMapData(geoJsonData, country, region, department, commune, selectedEquipment) {
         map.eachLayer(layer => {
