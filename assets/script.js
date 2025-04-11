@@ -106,6 +106,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 
                     // Update the dropdowns based on selected country
                     populateRegionDropdown(filteredCountryData, coun);
+                    populateDepartmentDropdown(filteredCountryData, coun);
+                    populateCommuneDropdown(filteredCountryData, coun);
                     
 
                     // Set map view to the selected country
