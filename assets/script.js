@@ -106,6 +106,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         const { lat, lng, zoom } = countryCenters[coun];
                         map.setView([lat, lng], zoom);
                     }
+                    updateStats(coun, "", "", "");
 
                     // Load map data
                     loadMapData(geoJsonData, coun, "", "", "", selectedEquipment);
@@ -126,6 +127,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         selectedRegion = reg;
                         populateDepartmentDropdown(country, reg);
                         document.getElementById("regionDropdown").textContent = reg;
+                        updateStats(country, reg, "", "");
                         loadMapData(geoJsonData, country, reg, "", "", selectedEquipment);
                     });
                     regionDropdown.appendChild(regionItem);
@@ -144,6 +146,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         selectedDepartment = dep;
                         populateCommuneDropdown(country, region, dep);
                         document.getElementById("departmentDropdown").textContent = dep;
+                        updateStats(country, region, dep, "");
                         loadMapData(geoJsonData, country, region, dep, "", selectedEquipment);
                     });
                     departmentDropdown.appendChild(departmentItem);
@@ -161,6 +164,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     communeItem.addEventListener("click", () => {
                         selectedCommune = comm;
                         document.getElementById("communeDropdown").textContent = comm;
+                        updateStats(country, region, department, comm);
                         loadMapData(geoJsonData, country, region, department, comm, selectedEquipment);
                     });
                     communeDropdown.appendChild(communeItem);
