@@ -403,10 +403,11 @@ document.addEventListener("DOMContentLoaded", async function () {
             const areaPercentage = totalCountryArea > 0 ? ((totalArea / totalCountryArea) * 100).toFixed(2) : 0;
     
             // Update the statistics in the HTML
-            document.getElementById("num-municipalities").textContent = `${municipalityLabel}: ${totalCommunes}`;
-            document.getElementById("total-bran").textContent = `Branches: ${totalBranches}`;
-            document.getElementById("percent-pop").textContent = `Population: ${populationPercentage}%`;
-            document.getElementById("percent-area").textContent = `Area: ${areaPercentage}%`;
+            document.getElementById("num-municipalities").innerHTML = `<span style="font-size: 30px;">${totalCommunes}</span>${municipalityLabel}`;
+            document.getElementById("total-bran").innerHTML = `<span style="font-size: 30px;">${totalBranches}</span>Branches`;
+            document.getElementById("percent-pop").innerHTML = `<span style="font-size: 30px;">${populationPercentage}%</span>of ${country}'s population`;
+            document.getElementById("percent-area").innerHTML = `<span style="font-size: 30px;">${areaPercentage}%</span>of ${country}'s area`;
+        
         } else {
             // If the country is not in the UEMOA group, don't update stats
             console.log(`No stats update for ${country}.`);
