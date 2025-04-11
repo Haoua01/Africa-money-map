@@ -81,6 +81,9 @@ document.addEventListener("DOMContentLoaded", async function () {
 
             // Country Dropdown
             const countryDropdown = document.getElementById("country-select");
+            document.getElementById("commune-select").innerHTML = "";
+            document.getElementById("department-select").innerHTML = "";
+            document.getElementById("region-select").innerHTML = "";
 
             countries.forEach(coun => {
                 isDefaultView = false;
@@ -99,10 +102,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     
                     document.getElementById("countryDropdown").textContent = coun;
 
-                    // Clear previous dropdowns
-                    document.getElementById("commune-select").innerHTML = "";
-                    document.getElementById("department-select").innerHTML = "";
-                    document.getElementById("region-select").innerHTML = "";
+
 
                     // Update the dropdowns based on selected country
                     populateRegionDropdown(filteredCountryData, coun);
@@ -201,20 +201,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                     communeDropdown.appendChild(communeItem);
                 });
             }
-
-            // Reset button event
-            document.getElementById("resetButton").addEventListener("click", function() {
-                isDefaultView = true; 
-                loadMapData(geoJsonData, "", "", "", "",selectedEquipment);
-                document.getElementById("countryDropdown").textContent = "Default";
-                document.getElementById("communeDropdown").textContent = "Default";
-                document.getElementById("departmentDropdown").textContent = "Default";
-                document.getElementById("regionDropdown").textContent = "Default";
-                selectedCountry = "";
-                selectedCommune = "";
-                selectedDepartment = "";
-                selectedRegion = "";
-            });
 
             // Reset button event
             document.getElementById("resetButton").addEventListener("click", function() {
