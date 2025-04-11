@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         attribution: "&copy; OpenStreetMap contributors &copy; CartoDB",
     }).addTo(map);
 
-
+    const geoJsonFile = "web_data/communes_all.geojson";
     const uemoaBordersFile = "web_data/uemoa_borders.geojson";
     const cemacBordersFile = "web_data/cemac_borders.geojson";
 
