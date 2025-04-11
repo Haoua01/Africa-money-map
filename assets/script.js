@@ -13,9 +13,10 @@ document.addEventListener("DOMContentLoaded", async function () {
         attribution: "&copy; OpenStreetMap contributors &copy; CartoDB",
     }).addTo(map);
 
-    const geoJsonFile = "web_data/communes_all.geojson";
+
     const uemoaBordersFile = "web_data/uemoa_borders.geojson";
     const cemacBordersFile = "web_data/cemac_borders.geojson";
+
 
     let layersAdded = 0;  // Counter for added layers
 
@@ -294,8 +295,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                 })
                 .catch(error => console.error('Error loading CEMAC borders:', error));
         }
-
-        updateStats(filteredData, country); 
     }
 
     let legend;  // Declare legend outside of the event listener
