@@ -1,14 +1,6 @@
 document.addEventListener("DOMContentLoaded", async function () {
     const map = L.map("map").setView([14.5, 3.5], 5);
 
-    const loadingSpinner = document.createElement("div");
-    loadingSpinner.className = "loading-spinner"; // Set class for styling
-    loadingSpinner.innerHTML = `
-        <div class="spinner"></div>
-        <span>Loading...</span>
-    `;
-    document.body.appendChild(loadingSpinner);
-
     L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
         attribution: "&copy; OpenStreetMap contributors &copy; CartoDB",
     }).addTo(map);
@@ -17,12 +9,19 @@ document.addEventListener("DOMContentLoaded", async function () {
     const uemoaBordersFile = "web_data/uemoa_borders.geojson";
     const cemacBordersFile = "web_data/cemac_borders.geojson";
 
+    const loadingSpinner = document.createElement("div");
+    loadingSpinner.className = "loading-spinner"; // Set class for styling
+    loadingSpinner.innerHTML = `
+        <div class="spinner"></div>
+        <span>Loading...</span>
+    `;
+    document.body.appendChild(loadingSpinner); // Append the spinner to the body or map container
 
     let layersAdded = 0;  // Counter for added layers
 
     // Function to check if all layers are loaded
     function checkAllLayersAdded() {
-        if (layersAdded >= 4) { // because base layer + 3 GeoJSON layers are added
+        if (layersAdded >= 3) { // 3 because base layer + 2 GeoJSON layers are added
             if (document.body.contains(loadingSpinner)) {
                 document.body.removeChild(loadingSpinner); // Remove the spinner
             }
@@ -116,7 +115,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             "Benin": { lat: 9.5, lng: 2.5, zoom: 7 },
             "Burkina Faso": { lat: 12.4, lng: -1.5, zoom: 7 },
             "Ivory Coast": { lat: 7.5, lng: -5.5, zoom: 7 },
-            "Guinea-Bissau": { lat: 11.5, lng: -15.7, zoom: 8 },
+            "Guinea-Bissau": { lat: 10.5, lng: -13.7, zoom: 8 },
             "Mali": { lat: 12.6, lng: -8, zoom: 6 },
             "Niger": { lat: 17.6, lng: 8, zoom: 6 },
             "Senegal": { lat: 14.5, lng: -14, zoom: 7 },
