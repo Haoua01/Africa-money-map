@@ -419,6 +419,11 @@ document.addEventListener("DOMContentLoaded", async function () {
         } else {
             // If the country is not in the UEMOA group, don't update stats
             console.log(`No stats update for ${country}.`);
+            // Clear the contents of the statistics divs
+            document.getElementById("num-municipalities").innerHTML = '';
+            document.getElementById("total-bran").innerHTML = '';
+            document.getElementById("percent-pop").innerHTML = '';
+            document.getElementById("percent-area").innerHTML = '';
         }
     }
 
