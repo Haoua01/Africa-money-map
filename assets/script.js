@@ -295,7 +295,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 .catch(error => console.error('Error loading CEMAC borders:', error));
         }
 
-        updateStats(filteredData, geoJsonData.features, country); 
+        updateStats(filteredData, country); 
     }
 
     let legend;  // Declare legend outside of the event listener
@@ -383,23 +383,33 @@ document.addEventListener("DOMContentLoaded", async function () {
     };
 
     // Function to update statistics dynamically based on filtered data
-    function updateStats(filteredData, totalData, country) {
-        if (['Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'].includes(country)) {
+    function updateStats(filteredData, country) {
+        const uemoaCountries = ['Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'];
+        if (uemoaCountries.includes(country)) {
             const municipalityLabel = municipalities[country] || "Municipalities"; // Default fallback to "Municipalities"
+    
+            // Calculate the total number of communes, branches, population, and area
             const totalCommunes = filteredData.length;
             const totalBranches = filteredData.reduce((sum, feature) => sum + (feature.properties.Total_bran || 0), 0);
             const totalPopulation = filteredData.reduce((sum, feature) => sum + (feature.properties.Population || 0), 0);
             const totalArea = filteredData.reduce((sum, feature) => sum + (feature.properties.Area || 0), 0);
-            const totalCountryPopulation = totalData.reduce((sum, feature) => sum + (feature.properties.Population || 0), 0);
-            const totalCountryArea = totalData.reduce((sum, feature) => sum + (feature.properties.Area || 0), 0);
+    
+            // Calculate total population and area for the entire country
+            const totalCountryPopulation = filteredData.reduce((sum, feature) => sum + (feature.properties.Population || 0), 0);
+            const totalCountryArea = filteredData.reduce((sum, feature) => sum + (feature.properties.Area || 0), 0);
+    
+            // Calculate the percentage of population and area for the filtered region
             const populationPercentage = totalCountryPopulation > 0 ? ((totalPopulation / totalCountryPopulation) * 100).toFixed(2) : 0;
             const areaPercentage = totalCountryArea > 0 ? ((totalArea / totalCountryArea) * 100).toFixed(2) : 0;
-
+    
             // Update the statistics in the HTML
             document.getElementById("num-municipalities").textContent = `${municipalityLabel}: ${totalCommunes}`;
             document.getElementById("total-bran").textContent = `Branches: ${totalBranches}`;
             document.getElementById("percent-pop").textContent = `Population: ${populationPercentage}%`;
             document.getElementById("percent-area").textContent = `Area: ${areaPercentage}%`;
+        } else {
+            // If the country is not in the UEMOA group, don't update stats
+            console.log(`No stats update for ${country}.`);
         }
     }
 
