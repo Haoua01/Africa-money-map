@@ -83,6 +83,29 @@ document.addEventListener("DOMContentLoaded", async function () {
             
             countries.forEach(coun => {
 
+                const listItem = document.createElement("li");
+                const legend = L.control({ position: "bottomright" });
+                listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${coun}">${coun}</a>`;
+                listItem.addEventListener("click", () => {
+                    isDefaultView = false;  // Change the flag to false when a country is selected
+                    selectedCountry = coun;
+                    document.getElementById("communeDropdown").textContent = "Default";
+                    document.getElementById("departmentDropdown").textContent = "Default";
+                    document.getElementById("regionDropdown").textContent = "Default";
+                    document.getElementById("countryDropdown").textContent = coun;
+                    selectedCommune = "";
+                    selectedDepartment = "";
+                    selectedRegion = "";
+
+                    // Set map view to the selected country
+                    if (countryCenters[coun]) {
+                        const { lat, lng, zoom } = countryCenters[coun];
+                        map.setView([lat, lng], zoom);
+                    }
+                    loadMapData(geoJsonData, coun, "", "", "", selectedEquipment);
+                });
+                
+
                 // Populate region dropdown
                 const regions = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === coun).map(f => f.properties.ADM1_FR))];
                 const regionDropdown = document.getElementById("region-select");
@@ -115,8 +138,8 @@ document.addEventListener("DOMContentLoaded", async function () {
                             document.getElementById("departmentDropdown").textContent = dep;
                             document.getElementById("regionDropdown").textContent = reg;
                             document.getElementById("countryDropdown").textContent = coun;
-                            selectedRegion = "";
-                            selectedCountry = "";
+                            selectedRegion = reg;
+                            selectedCountry = coun;
                             loadMapData(geoJsonData, coun, reg, dep, "", selectedEquipment);
                         });
                         departmentDropdown.appendChild(listItem);
@@ -133,42 +156,17 @@ document.addEventListener("DOMContentLoaded", async function () {
                                 document.getElementById("departmentDropdown").textContent = dep;
                                 document.getElementById("regionDropdown").textContent = reg;
                                 document.getElementById("countryDropdown").textContent = coun;
-                                selectedDepartment = "";
-                                selectedRegion = "";
-                                selectedCountry = "";
+                                selectedDepartment = dep;
+                                selectedRegion = reg;
+                                selectedCountry = coun;
                                 loadMapData(geoJsonData, coun, reg, dep, comm, selectedEquipment);
                             });
                             communeDropdown.appendChild(listItem);
                         });
-                
                     });
                 });
-
-
-
-
-                const listItem = document.createElement("li");
-                const legend = L.control({ position: "bottomright" });
-                listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${coun}">${coun}</a>`;
-                listItem.addEventListener("click", () => {
-                    isDefaultView = false;  // Change the flag to false when a country is selected
-                    selectedCountry = coun;
-                    document.getElementById("communeDropdown").textContent = "Default";
-                    document.getElementById("departmentDropdown").textContent = "Default";
-                    document.getElementById("regionDropdown").textContent = "Default";
-                    document.getElementById("countryDropdown").textContent = coun;
-                    selectedCommune = "";
-                    selectedDepartment = "";
-                    selectedRegion = "";
-
-                    // Set map view to the selected country
-                    if (countryCenters[coun]) {
-                        const { lat, lng, zoom } = countryCenters[coun];
-                        map.setView([lat, lng], zoom);
-                    }
-                    loadMapData(geoJsonData, coun, "", "", "", selectedEquipment);
-                });
                 countryDropdown.appendChild(listItem);
+
                 legend.onAdd = function () {
                     const div = L.DomUtil.create("div", "legend"),
                     grades = [1, 0.5, 0.1, 0.01, 0.001];  
@@ -181,6 +179,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     return div;
                 };
             });
+
             countryDropdown.addEventListener("change", function () {
                 const selectedCountry = this.value;
                 loadMapData(geoJsonData, selectedCountry, "", "", "", selectedEquipment);  // Update the map and legend
