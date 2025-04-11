@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             "Benin": { lat: 9.5, lng: 2.5, zoom: 7 },
             "Burkina Faso": { lat: 12.4, lng: -1.5, zoom: 7 },
             "Ivory Coast": { lat: 7.5, lng: -5.5, zoom: 7 },
-            "Guinea-Bissau": { lat: 10.5, lng: -13.7, zoom: 8 },
+            "Guinea-Bissau": { lat: 11.5, lng: -15.7, zoom: 8 },
             "Mali": { lat: 12.6, lng: -8, zoom: 6 },
             "Niger": { lat: 17.6, lng: 8, zoom: 6 },
             "Senegal": { lat: 14.5, lng: -14, zoom: 7 },
