@@ -142,6 +142,8 @@ document.addEventListener("DOMContentLoaded", async function () {
                         selectedRegion = reg;
                         populateDepartmentDropdown(filteredCountryData, country, reg);
                         document.getElementById("regionDropdown").textContent = reg;
+                        document.getElementById("departmentDropdown").textContent = "";
+                        document.getElementById("communeDropdown").textContent = "";
                         updateStats(filteredCountryData, filteredRegionData, country);
                         loadMapData(geoJsonData, country, reg, "", "", selectedEquipment);
                     });
@@ -170,6 +172,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         populateCommuneDropdown(filteredCountryData, country, region, dep);
                         document.getElementById("departmentDropdown").textContent = dep;
                         document.getElementById("regionDropdown").textContent = region;
+                        document.getElementById("communeDropdown").textContent = "";
                         updateStats(filteredCountryData, filteredDepartmentData, country);
                         loadMapData(geoJsonData, country, region, dep, "", selectedEquipment);
                     });
