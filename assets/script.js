@@ -106,6 +106,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
                     // Update the dropdowns based on selected country
                     populateRegionDropdown(filteredCountryData, coun);
+                    
 
                     // Set map view to the selected country
                     if (countryCenters[coun]) {
@@ -145,11 +146,13 @@ document.addEventListener("DOMContentLoaded", async function () {
             }
 
             // Populate department dropdown based on the selected region and country
-            function populateDepartmentDropdown(filteredCountryData, country, region) {
-                const departments = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === country && f.properties.ADM1_FR === region).map(f => f.properties.ADM2_FR))];
+            function populateDepartmentDropdown(filteredCountryData, country) {
+                const departments = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === country).map(f => f.properties.ADM2_FR))];
                 const departmentDropdown = document.getElementById("department-select");
 
                 departments.forEach(dep => {
+                    //extract the corresponding region for the department
+                    const region = geoJsonData.features.find(feature => feature.properties.ADM2_FR === dep && feature.properties.ADM0_EN === country).properties.ADM1_FR;
                     const filteredDepartmentData = geoJsonData.features.filter(feature => {
                         return (!country || feature.properties.ADM0_EN === country) && 
                         (!region || feature.properties.ADM1_FR === region) && 
@@ -161,6 +164,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         selectedDepartment = dep;
                         populateCommuneDropdown(filteredCountryData, country, region, dep);
                         document.getElementById("departmentDropdown").textContent = dep;
+                        document.getElementById("regionDropdown").textContent = region;
                         updateStats(filteredCountryData, filteredDepartmentData, country);
                         loadMapData(geoJsonData, country, region, dep, "", selectedEquipment);
                     });
@@ -169,11 +173,13 @@ document.addEventListener("DOMContentLoaded", async function () {
             }
 
             // Populate commune dropdown based on the selected department, region, and country
-            function populateCommuneDropdown(filteredCountryData, country, region, department) {
+            function populateCommuneDropdown(filteredCountryData, country) {
                 const communes = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === country).map(f => f.properties.ADM3_FR))];
                 const communeDropdown = document.getElementById("commune-select");
 
                 communes.forEach(comm => {
+                    const region = geoJsonData.features.find(feature => feature.properties.ADM3_FR === comm && feature.properties.ADM0_EN === country).properties.ADM1_FR;
+                    const department = geoJsonData.features.find(feature => feature.properties.ADM3_FR === comm && feature.properties.ADM0_EN === country).properties.ADM2_FR;
                     const filteredCommuneData = geoJsonData.features.filter(feature => {
                         return (!country || feature.properties.ADM0_EN === country) &&
                         (!region || feature.properties.ADM1_FR === region) &&
@@ -185,6 +191,8 @@ document.addEventListener("DOMContentLoaded", async function () {
                     communeItem.addEventListener("click", () => {
                         selectedCommune = comm;
                         document.getElementById("communeDropdown").textContent = comm;
+                        document.getElementById("departmentDropdown").textContent = department;
+                        document.getElementById("regionDropdown").textContent = region;
                         updateStats(filteredCountryData, filteredCommuneData, country);
                         loadMapData(geoJsonData, country, region, department, comm, selectedEquipment);
                     });
