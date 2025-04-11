@@ -429,9 +429,9 @@ document.addEventListener("DOMContentLoaded", async function () {
             const totalCountryBranches = filteredDataCountry.reduce((sum, feature) => sum + (feature.properties.Total_bran || 0), 0);
     
             // Calculate the percentage of population and area for the filtered region
-            const populationPercentage = totalCountryPopulation > 0 ? ((totalPopulation / totalCountryPopulation) * 100).toFixed(2) : 0;
-            const areaPercentage = totalCountryArea > 0 ? ((totalArea / totalCountryArea) * 100).toFixed(2) : 0;
-            const branchPercentage = totalCountryBranches > 0 ? ((totalBranches / totalCountryBranches) * 100).toFixed(2) : 0;
+            const populationPercentage = totalCountryPopulation > 0 ? ((totalPopulation / totalCountryPopulation) * 100).toFixed(1) : 0;
+            const areaPercentage = totalCountryArea > 0 ? ((totalArea / totalCountryArea) * 100).toFixed(1) : 0;
+            const branchPercentage = totalCountryBranches > 0 ? ((totalBranches / totalCountryBranches) * 100).toFixed(1) : 0;
     
             // Update the statistics in the HTML
             document.getElementById("num-municipalities").innerHTML = `<span style="font-size: 30px;">${totalCommunes}</span>${municipalityLabel}`;
