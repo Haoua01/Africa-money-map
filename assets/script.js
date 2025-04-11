@@ -1,6 +1,14 @@
 document.addEventListener("DOMContentLoaded", async function () {
     const map = L.map("map").setView([14.5, 3.5], 5);
 
+    const loadingSpinner = document.createElement("div");
+    loadingSpinner.className = "loading-spinner"; // Set class for styling
+    loadingSpinner.innerHTML = `
+        <div class="spinner"></div>
+        <span>Loading...</span>
+    `;
+    document.body.appendChild(loadingSpinner);
+
     L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
         attribution: "&copy; OpenStreetMap contributors &copy; CartoDB",
     }).addTo(map);
@@ -9,19 +17,11 @@ document.addEventListener("DOMContentLoaded", async function () {
     const uemoaBordersFile = "web_data/uemoa_borders.geojson";
     const cemacBordersFile = "web_data/cemac_borders.geojson";
 
-    const loadingSpinner = document.createElement("div");
-    loadingSpinner.className = "loading-spinner"; // Set class for styling
-    loadingSpinner.innerHTML = `
-        <div class="spinner"></div>
-        <span>Loading...</span>
-    `;
-    document.body.appendChild(loadingSpinner); // Append the spinner to the body or map container
-
     let layersAdded = 0;  // Counter for added layers
 
     // Function to check if all layers are loaded
     function checkAllLayersAdded() {
-        if (layersAdded >= 3) { // 3 because base layer + 2 GeoJSON layers are added
+        if (layersAdded >= 4) { // because base layer + 3 GeoJSON layers are added
             if (document.body.contains(loadingSpinner)) {
                 document.body.removeChild(loadingSpinner); // Remove the spinner
             }
