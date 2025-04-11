@@ -50,12 +50,12 @@ document.addEventListener("DOMContentLoaded", async function () {
             //});
 
     // Fetch GeoJSON data
-    try {
-        const [geoJsonData, uemoaData, cemacData] = await Promise.all([
-            fetch(geoJsonFile).then(response => response.json()),
-            fetch(uemoaBordersFile).then(response => response.json()),
-            fetch(cemacBordersFile).then(response => response.json())
-        ]);
+    // Fetch UEMOA and CEMAC borders
+    const uemoaData = await fetch(uemoaBordersFile).then(response => response.json());
+    const cemacData = await fetch(cemacBordersFile).then(response => response.json());
+    fetch(geoJsonFile)
+        .then(response => response.json())
+        .then(geoJsonData => {
             let selectedEquipment = "ISIBF_base";
             let selectedCommune = "";
             let selectedDepartment = "";
@@ -106,7 +106,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                         const { lat, lng, zoom } = countryCenters[coun];
                         map.setView([lat, lng], zoom);
                     }
-                    updateStats(coun, "", "", "");
 
                     // Load map data
                     loadMapData(geoJsonData, coun, "", "", "", selectedEquipment);
@@ -127,7 +126,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                         selectedRegion = reg;
                         populateDepartmentDropdown(country, reg);
                         document.getElementById("regionDropdown").textContent = reg;
-                        updateStats(country, reg, "", "");
                         loadMapData(geoJsonData, country, reg, "", "", selectedEquipment);
                     });
                     regionDropdown.appendChild(regionItem);
@@ -146,7 +144,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                         selectedDepartment = dep;
                         populateCommuneDropdown(country, region, dep);
                         document.getElementById("departmentDropdown").textContent = dep;
-                        updateStats(country, region, dep, "");
                         loadMapData(geoJsonData, country, region, dep, "", selectedEquipment);
                     });
                     departmentDropdown.appendChild(departmentItem);
@@ -164,7 +161,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                     communeItem.addEventListener("click", () => {
                         selectedCommune = comm;
                         document.getElementById("communeDropdown").textContent = comm;
-                        updateStats(country, region, department, comm);
                         loadMapData(geoJsonData, country, region, department, comm, selectedEquipment);
                     });
                     communeDropdown.appendChild(communeItem);
@@ -187,7 +183,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
             // Initial load
             loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
-            // document.body.removeChild(loadingSpinner);
 
             // Add UEMOA and CEMAC borders
             L.geoJSON(uemoaData, {
@@ -195,22 +190,22 @@ document.addEventListener("DOMContentLoaded", async function () {
                     return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for UEMOA
                 }
             }).addTo(map);
-
+    
             L.geoJSON(cemacData, {
                 style: function () {
                     return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for CEMAC
                 }
             }).addTo(map);
+            })
             
-        } catch (error) {
+        .catch(error => {
             console.error('Error loading GeoJSON:', error);
             // Remove spinner in case of error, if it exists
             if (document.body.contains(loadingSpinner)) {
                 document.body.removeChild(loadingSpinner);
             }
-        }
-
-
+        });
+        
 
     // Info Control
     const info = L.control();
