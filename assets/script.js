@@ -24,6 +24,23 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
     });
 
+    let layersAdded = 0;  // Counter for added layers
+
+    // Function to check if all layers are loaded
+    function checkAllLayersAdded() {
+        if (layersAdded >= 2) { // 2 because base layer is already added
+            if (document.body.contains(loadingSpinner)) {
+                document.body.removeChild(loadingSpinner); // Remove the spinner
+            }
+        }
+    }
+
+    // Track when each layer is added
+    map.on('layeradd', function () {
+        layersAdded++;
+        checkAllLayersAdded();  // Check after every layer is added
+    });
+
 
 
     // Fetch GeoJSON data
@@ -316,6 +333,10 @@ document.addEventListener("DOMContentLoaded", async function () {
             };
     
             legend.addTo(map);  // Add the new legend
+
+            layersAdded++; // Increment layer counter for GeoJSON layer
+
+            checkAllLayersAdded(); // Check if all layers are added
         }
     }
 
