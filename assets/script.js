@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
             // Populate commune dropdown based on the selected department, region, and country
             function populateCommuneDropdown(filteredCountryData, country, region, department) {
-                const communes = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === country && f.properties.ADM1_FR === region && f.properties.ADM2_FR === department).map(f => f.properties.ADM3_FR))];
+                const communes = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === country).map(f => f.properties.ADM3_FR))];
                 const communeDropdown = document.getElementById("commune-select");
 
                 communes.forEach(comm => {
