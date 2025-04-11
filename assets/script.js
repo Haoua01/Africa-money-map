@@ -180,10 +180,10 @@ document.addEventListener("DOMContentLoaded", async function () {
                 };
             });
 
-            countryDropdown.addEventListener("change", function () {
-                const selectedCountry = this.value;
-                loadMapData(geoJsonData, selectedCountry, "", "", "", selectedEquipment);  // Update the map and legend
-            });
+            //countryDropdown.addEventListener("change", function () {
+                //const selectedCountry = this.value;
+                //loadMapData(geoJsonData, selectedCountry, "", "", "", selectedEquipment);  // Update the map and legend
+            //});
 
            
         
