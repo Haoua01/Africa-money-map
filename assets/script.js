@@ -426,16 +426,18 @@ document.addEventListener("DOMContentLoaded", async function () {
             // Calculate total population and area for the entire country
             const totalCountryPopulation = filteredDataCountry.reduce((sum, feature) => sum + (feature.properties.Population || 0), 0);
             const totalCountryArea = filteredDataCountry.reduce((sum, feature) => sum + (feature.properties.Area || 0), 0);
+            const totalCountryBranches = filteredDataCountry.reduce((sum, feature) => sum + (feature.properties.Total_bran || 0), 0);
     
             // Calculate the percentage of population and area for the filtered region
             const populationPercentage = totalCountryPopulation > 0 ? ((totalPopulation / totalCountryPopulation) * 100).toFixed(2) : 0;
             const areaPercentage = totalCountryArea > 0 ? ((totalArea / totalCountryArea) * 100).toFixed(2) : 0;
+            const branchPercentage = totalCountryBranches > 0 ? ((totalBranches / totalCountryBranches) * 100).toFixed(2) : 0;
     
             // Update the statistics in the HTML
             document.getElementById("num-municipalities").innerHTML = `<span style="font-size: 30px;">${totalCommunes}</span>${municipalityLabel}`;
-            document.getElementById("total-bran").innerHTML = `<span style="font-size: 30px;">${totalBranches}</span>Bank Branches`;
-            document.getElementById("percent-pop").innerHTML = `<span style="font-size: 30px;">${populationPercentage}%</span>of ${country}'s population`;
-            document.getElementById("percent-area").innerHTML = `<span style="font-size: 30px;">${areaPercentage}%</span>of ${country}'s area`;
+            document.getElementById("total-bran").innerHTML = `<span style="font-size: 30px;">${branchPercentage}%</span>Bank Branches`;
+            document.getElementById("percent-pop").innerHTML = `<span style="font-size: 30px;">${populationPercentage}%</span>Population`;
+            document.getElementById("percent-area").innerHTML = `<span style="font-size: 30px;">${areaPercentage}%</span>Area`;
         
         } else {
             // If the country is not in the UEMOA group, don't update stats
