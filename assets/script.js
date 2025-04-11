@@ -96,6 +96,8 @@ document.addEventListener("DOMContentLoaded", async function () {
                     selectedCommune = "";
                     selectedDepartment = "";
                     selectedRegion = "";
+                    
+                    document.getElementById("countryDropdown").textContent = coun;
 
                     // Clear previous dropdowns
                     document.getElementById("commune-select").innerHTML = "";
