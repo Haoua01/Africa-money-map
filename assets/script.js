@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         attribution: "&copy; OpenStreetMap contributors &copy; CartoDB",
     }).addTo(map);
 
-    const geoJsonFile = "web_data/communes_all.geojson"; 
+    const geoJsonFile = "web_data/communes_all_pop.geojson"; 
     const uemoaBordersFile = "web_data/uemoa_borders.geojson"; 
     const cemacBordersFile = "web_data/cemac_borders.geojson"; 
 
@@ -430,8 +430,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     // Function to update statistics dynamically based on filtered data
     function updateStats(filteredDataCountry, filteredData, country) {
-        const uemoaCountries = ['Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'];
-        if (uemoaCountries.includes(country)) {
+        const popCountries = ['Cameroon', 'Ghana', 'Chad', 'Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'];
+        if (popCountries.includes(country)) {
             const municipalityLabel = municipalities[country] || "Municipalities"; // Default fallback to "Municipalities"
     
             // Calculate the total number of communes, branches, population, and area
