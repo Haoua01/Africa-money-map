@@ -17,6 +17,13 @@ document.addEventListener("DOMContentLoaded", async function () {
     `;
     document.body.appendChild(loadingSpinner); // Append the spinner to the body or map container
 
+    // Set up the loading event listener
+    map.on('load', function () {
+        if (document.body.contains(loadingSpinner)) {
+            document.body.removeChild(loadingSpinner); // Remove the spinner when the map is fully loaded
+        }
+    });
+
 
 
     // Fetch GeoJSON data
