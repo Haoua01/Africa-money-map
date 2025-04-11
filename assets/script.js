@@ -182,7 +182,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
             // document.body.removeChild(loadingSpinner);
             })
-        })  
             
         .catch(error => {
             console.error('Error loading GeoJSON:', error);
@@ -394,7 +393,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     
             // Update the statistics in the HTML
             document.getElementById("num-municipalities").innerHTML = `<span style="font-size: 30px;">${totalCommunes}</span>${municipalityLabel}`;
-            document.getElementById("total-bran").innerHTML = `<span style="font-size: 30px;">${totalBranches}</span>Branches`;
+            document.getElementById("total-bran").innerHTML = `<span style="font-size: 30px;">${totalBranches}</span>Bank Branches`;
             document.getElementById("percent-pop").innerHTML = `<span style="font-size: 30px;">${populationPercentage}%</span>of ${country}'s population`;
             document.getElementById("percent-area").innerHTML = `<span style="font-size: 30px;">${areaPercentage}%</span>of ${country}'s area`;
         
