@@ -381,6 +381,7 @@ label {
     display: flex;
     flex-direction: column; /* Stack the spinner and the text vertically */
     align-items: center; /* Center horizontally within the flex container */
+    z-index: 9999; /* Ensure it appears above other elements */
 }
 
 /* Spinner animation */
