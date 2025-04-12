@@ -126,6 +126,10 @@ document.addEventListener("DOMContentLoaded", async function () {
                 });
 
                 countryDropdown.appendChild(listItem);
+                document.getElementById("countryDropdown").textContent = coun;
+                document.getElementById("regionDropdown").textContent = "";
+                document.getElementById("departmentDropdown").textContent = "";
+                document.getElementById("communeDropdown").textContent = "";
             });
 
             // Populate region dropdown based on the selected country
