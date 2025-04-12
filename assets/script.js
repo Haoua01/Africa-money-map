@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     const geoJsonFile = "web_data/communes_all_pop.geojson"; 
     const uemoaBordersFile = "web_data/uemoa_borders.geojson"; 
     const cemacBordersFile = "web_data/cemac_borders.geojson"; 
+    const ghanaBordersFile = "web_data/ghana_borders.geojson";
 
     const loadingSpinner = document.createElement("div");
     loadingSpinner.className = "loading-spinner"; // Set class for styling
@@ -29,12 +30,6 @@ document.addEventListener("DOMContentLoaded", async function () {
         }
     }
 
-    // Track when each layer is added
-    map.on('layeradd', function () {
-        layersAdded++;
-        checkAllLayersAdded();  // Check after every layer is added
-    });
-
 
 
 
@@ -53,6 +48,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     // Fetch UEMOA and CEMAC borders
     const uemoaData = await fetch(uemoaBordersFile).then(response => response.json());
     const cemacData = await fetch(cemacBordersFile).then(response => response.json());
+    const ghanaData = await fetch(ghanaBordersFile).then(response => response.json());
     fetch(geoJsonFile)
         .then(response => response.json())
         .then(geoJsonData => {
@@ -234,6 +230,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
             // Initial load
             loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
+            layersAdded++; // Increment layer counter for initial load
 
             // Add UEMOA and CEMAC borders
             L.geoJSON(uemoaData, {
@@ -241,12 +238,23 @@ document.addEventListener("DOMContentLoaded", async function () {
                     return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for UEMOA
                 }
             }).addTo(map);
+            layersAdded++; // Increment layer counter for UEMOA
     
             L.geoJSON(cemacData, {
                 style: function () {
                     return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for CEMAC
                 }
             }).addTo(map);
+            layersAdded++; // Increment layer counter for CEMAC
+
+            L.geoJSON(ghanaData, {
+                style: function () {
+                    return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for Ghana
+                }
+            }).addTo(map);
+            layersAdded++; // Increment layer counter for Ghana
+
+            checkAllLayersAdded(); // Check if all layers are added
             })
             
         .catch(error => {
