@@ -10,26 +10,27 @@ document.addEventListener("DOMContentLoaded", async function () {
     const cemacBordersFile = "web_data/cemac_borders.geojson"; 
     const ghanaBordersFile = "web_data/ghana_borders.geojson";
 
+    // Create a loading spinner
     const loadingSpinner = document.createElement("div");
     loadingSpinner.className = "loading-spinner"; // Set class for styling
     loadingSpinner.innerHTML = `
         <div class="spinner"></div>
         <span>Loading...</span>
     `;
-    document.body.appendChild(loadingSpinner); // Append the spinner to the body or map container
-
-
-    let layersAdded = 0;  // Counter for added layers
-
+    document.body.appendChild(loadingSpinner);
+    
+    let layersAdded = 0;
+    let totalLayers = 4; // Set the total number of layers expected
+    
     // Function to check if all layers are loaded
     function checkAllLayersAdded() {
-        if (layersAdded >= 4) { // 2 because base layer is already added
+        if (layersAdded >= totalLayers) {
             if (document.body.contains(loadingSpinner)) {
-                document.body.removeChild(loadingSpinner); // Remove the spinner
+                document.body.removeChild(loadingSpinner); // Remove spinner when all layers are added
             }
         }
     }
-
+    
 
 
 
@@ -228,34 +229,37 @@ document.addEventListener("DOMContentLoaded", async function () {
                 selectedRegion = "";
             });
 
-            // Initial load
             loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
             layersAdded++; // Increment layer counter for initial load
-
+            
             // Add UEMOA and CEMAC borders
             L.geoJSON(uemoaData, {
                 style: function () {
                     return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for UEMOA
                 }
-            }).addTo(map);
-            layersAdded++; // Increment layer counter for UEMOA
-    
+            }).addTo(map).on("layeradd", () => {
+                layersAdded++; // Increment layer counter for UEMOA
+                checkAllLayersAdded(); // Check if all layers are added
+            });
+            
             L.geoJSON(cemacData, {
                 style: function () {
                     return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for CEMAC
                 }
-            }).addTo(map);
-            layersAdded++; // Increment layer counter for CEMAC
-
+            }).addTo(map).on("layeradd", () => {
+                layersAdded++; // Increment layer counter for CEMAC
+                checkAllLayersAdded(); // Check if all layers are added
+            });
+            
             L.geoJSON(ghanaData, {
                 style: function () {
                     return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for Ghana
                 }
-            }).addTo(map);
-            layersAdded++; // Increment layer counter for Ghana
-
-            checkAllLayersAdded(); // Check if all layers are added
-            })
+            }).addTo(map).on("layeradd", () => {
+                layersAdded++; // Increment layer counter for Ghana
+                checkAllLayersAdded(); // Check if all layers are added
+            });
+        })
             
         .catch(error => {
             console.error('Error loading GeoJSON:', error);
