@@ -22,14 +22,17 @@ document.addEventListener("DOMContentLoaded", async function () {
     let layersAdded = 0;
     let totalLayers = 4; // Set the total number of layers expected
     
-    // Function to check if all layers are loaded
     function checkAllLayersAdded() {
         if (layersAdded >= totalLayers) {
-            if (document.body.contains(loadingSpinner)) {
-                document.body.removeChild(loadingSpinner); // Remove spinner when all layers are added
-            }
+            // Set a 4-second delay before removing the spinner
+            setTimeout(() => {
+                if (document.body.contains(loadingSpinner)) {
+                    document.body.removeChild(loadingSpinner); // Remove spinner after delay
+                }
+            }, 360);
         }
     }
+    
     
 
 
