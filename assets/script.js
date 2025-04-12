@@ -92,6 +92,12 @@ document.addEventListener("DOMContentLoaded", async function () {
                     selectedDepartment = "";
                     selectedRegion = "";
 
+                    // Clear the contents of the statistics divs
+                    document.getElementById("num-municipalities").innerHTML = '';
+                    document.getElementById("total-bran").innerHTML = '';
+                    document.getElementById("percent-pop").innerHTML = '';
+                    document.getElementById("percent-area").innerHTML = '';
+
                     // Clear the dropdowns before populating them with new data
                     document.getElementById("region-select").innerHTML = "";
                     document.getElementById("department-select").innerHTML = "";
