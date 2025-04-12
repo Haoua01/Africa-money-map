@@ -19,20 +19,11 @@ document.addEventListener("DOMContentLoaded", async function () {
     `;
     document.body.appendChild(loadingSpinner);
     
-    let layersAdded = 0;
-    let totalLayers = 4; // Set the total number of layers expected
-    
-    function checkAllLayersAdded() {
-        if (layersAdded >= totalLayers) {
-            // Set a 4-second delay before removing the spinner
-            setTimeout(() => {
-                if (document.body.contains(loadingSpinner)) {
-                    document.body.removeChild(loadingSpinner); // Remove spinner after delay
-                }
-            }, 4000);
+    setTimeout(() => {
+        if (document.body.contains(loadingSpinner)) {
+            document.body.removeChild(loadingSpinner); // Remove spinner after delay
         }
-    }
-    
+    }, 4000);
     
 
 
@@ -233,35 +224,25 @@ document.addEventListener("DOMContentLoaded", async function () {
             });
 
             loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
-            layersAdded++; // Increment layer counter for initial load
             
             // Add UEMOA and CEMAC borders
             L.geoJSON(uemoaData, {
                 style: function () {
                     return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for UEMOA
                 }
-            }).addTo(map).on("layeradd", () => {
-                layersAdded++; // Increment layer counter for UEMOA
-                checkAllLayersAdded(); // Check if all layers are added
-            });
+            }).addTo(map)
             
             L.geoJSON(cemacData, {
                 style: function () {
                     return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for CEMAC
                 }
-            }).addTo(map).on("layeradd", () => {
-                layersAdded++; // Increment layer counter for CEMAC
-                checkAllLayersAdded(); // Check if all layers are added
-            });
+            }).addTo(map)
             
             L.geoJSON(ghanaData, {
                 style: function () {
                     return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for Ghana
                 }
-            }).addTo(map).on("layeradd", () => {
-                layersAdded++; // Increment layer counter for Ghana
-                checkAllLayersAdded(); // Check if all layers are added
-            });
+            }).addTo(map)
         })
             
         .catch(error => {
