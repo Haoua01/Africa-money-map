@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     // Function to check if all layers are loaded
     function checkAllLayersAdded() {
-        if (layersAdded >= 2) { // 2 because base layer is already added
+        if (layersAdded >= 4) { // 2 because base layer is already added
             if (document.body.contains(loadingSpinner)) {
                 document.body.removeChild(loadingSpinner); // Remove the spinner
             }
@@ -100,6 +100,12 @@ document.addEventListener("DOMContentLoaded", async function () {
                     selectedCommune = "";
                     selectedDepartment = "";
                     selectedRegion = "";
+
+                    // Clear the dropdowns before populating them with new data
+                    document.getElementById("region-select").innerHTML = "";
+                    document.getElementById("department-select").innerHTML = "";
+                    document.getElementById("commune-select").innerHTML = "";
+
                     
                     document.getElementById("countryDropdown").textContent = coun;
                     document.getElementById("regionDropdown").textContent = "";
@@ -126,10 +132,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                 });
 
                 countryDropdown.appendChild(listItem);
-                document.getElementById("countryDropdown").textContent = coun;
-                document.getElementById("regionDropdown").textContent = "";
-                document.getElementById("departmentDropdown").textContent = "";
-                document.getElementById("communeDropdown").textContent = "";
             });
 
             // Populate region dropdown based on the selected country
