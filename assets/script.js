@@ -378,10 +378,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             };
     
             legend.addTo(map);  // Add the new legend
-
-            layersAdded++; // Increment layer counter for GeoJSON layer
-
-            checkAllLayersAdded(); // Check if all layers are added
         }
     }
 
