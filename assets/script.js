@@ -76,12 +76,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             document.getElementById("commune-select").innerHTML = "";
             document.getElementById("department-select").innerHTML = "";
             document.getElementById("region-select").innerHTML = "";
-            
-            // Clear the contents of the statistics divs
-            document.getElementById("num-municipalities").innerHTML = '';
-            document.getElementById("total-bran").innerHTML = '';
-            document.getElementById("percent-pop").innerHTML = '';
-            document.getElementById("percent-area").innerHTML = '';
 
             countries.forEach(coun => {
                 isDefaultView = false;
@@ -441,6 +435,12 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     // Function to update statistics dynamically based on filtered data
     function updateStats(filteredDataCountry, filteredData, country) {
+
+        document.getElementById("num-municipalities").innerHTML = '';
+        document.getElementById("total-bran").innerHTML = '';
+        document.getElementById("percent-pop").innerHTML = '';
+        document.getElementById("percent-area").innerHTML = '';
+
         const popCountries = ['Cameroon', 'Ghana', 'Chad', 'Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'];
         if (popCountries.includes(country)) {
             const municipalityLabel = municipalities[country] || "Municipalities"; // Default fallback to "Municipalities"
