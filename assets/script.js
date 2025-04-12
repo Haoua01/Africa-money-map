@@ -117,6 +117,12 @@ document.addEventListener("DOMContentLoaded", async function () {
                         map.setView([lat, lng], zoom);
                     }
 
+
+                    document.getElementById("num-municipalities").innerHTML = '';
+                    document.getElementById("total-bran").innerHTML = '';
+                    document.getElementById("percent-pop").innerHTML = '';
+                    document.getElementById("percent-area").innerHTML = '';
+
                     // Load map data
                     loadMapData(geoJsonData, coun, "", "", "", selectedEquipment);
                     updateStats(filteredCountryData,filteredCountryData, coun);
@@ -435,11 +441,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     // Function to update statistics dynamically based on filtered data
     function updateStats(filteredDataCountry, filteredData, country) {
-
-        document.getElementById("num-municipalities").innerHTML = '';
-        document.getElementById("total-bran").innerHTML = '';
-        document.getElementById("percent-pop").innerHTML = '';
-        document.getElementById("percent-area").innerHTML = '';
 
         const popCountries = ['Cameroon', 'Ghana', 'Chad', 'Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'];
         if (popCountries.includes(country)) {
