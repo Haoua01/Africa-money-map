@@ -227,6 +227,12 @@ document.addEventListener("DOMContentLoaded", async function () {
                 selectedCommune = "";
                 selectedDepartment = "";
                 selectedRegion = "";
+                map.setView([14.5, 3.5], 5);
+
+                document.getElementById("num-municipalities").innerHTML = '';
+                document.getElementById("total-bran").innerHTML = '';
+                document.getElementById("percent-pop").innerHTML = '';
+                document.getElementById("percent-area").innerHTML = '';
             });
 
             loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
