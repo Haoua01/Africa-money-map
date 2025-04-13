@@ -107,8 +107,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
                     // Update the dropdowns based on selected country
                     populateRegionDropdown(filteredCountryData, coun);
-                    populateDepartmentDropdown(filteredCountryData, coun);
-                    populateCommuneDropdown(filteredCountryData, coun);
                     
 
                     // Set map view to the selected country
@@ -158,15 +156,14 @@ document.addEventListener("DOMContentLoaded", async function () {
             }
 
             // Populate department dropdown based on the selected region and country
-            function populateDepartmentDropdown(filteredCountryData, country) {
-                const departments = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === country).map(f => f.properties.ADM2_FR))];
+            function populateDepartmentDropdown(filteredCountryData, country, region) {
+                const departments = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === country && f.properties.ADM1_FR === region).map(f => f.properties.ADM2_FR))];
                 departments.sort((a, b) => a.localeCompare(b));
                 const departmentDropdown = document.getElementById("department-select");
 
                 departments.forEach(dep => {
                     //extract the corresponding region for the department
-                    const region = geoJsonData.features.find(feature => feature.properties.ADM2_FR === dep && feature.properties.ADM0_EN === country).properties.ADM1_FR;
-                    const filteredDepartmentData = geoJsonData.features.filter(feature => {
+                        const filteredDepartmentData = geoJsonData.features.filter(feature => {
                         return (!country || feature.properties.ADM0_EN === country) && 
                         (!region || feature.properties.ADM1_FR === region) && 
                         (!dep || feature.properties.ADM2_FR === dep)
@@ -187,14 +184,12 @@ document.addEventListener("DOMContentLoaded", async function () {
             }
 
             // Populate commune dropdown based on the selected department, region, and country
-            function populateCommuneDropdown(filteredCountryData, country) {
-                const communes = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === country).map(f => f.properties.ADM3_FR))];
+            function populateCommuneDropdown(filteredCountryData, country, region, department) {
+                const communes = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === country && f.properties.ADM1_FR === region && f.properties.ADM2_FR === department).map(f => f.properties.ADM3_FR))];
                 communes.sort((a, b) => a.localeCompare(b));
                 const communeDropdown = document.getElementById("commune-select");
 
                 communes.forEach(comm => {
-                    const region = geoJsonData.features.find(feature => feature.properties.ADM3_FR === comm && feature.properties.ADM0_EN === country).properties.ADM1_FR;
-                    const department = geoJsonData.features.find(feature => feature.properties.ADM3_FR === comm && feature.properties.ADM0_EN === country).properties.ADM2_FR;
                     const filteredCommuneData = geoJsonData.features.filter(feature => {
                         return (!country || feature.properties.ADM0_EN === country) &&
                         (!region || feature.properties.ADM1_FR === region) &&
