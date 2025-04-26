@@ -474,11 +474,13 @@ document.addEventListener("DOMContentLoaded", async function () {
             // Calculate the total number of communes, branches, population, and area
             const totalCommunes = filteredData.length;
             const totalBranches = filteredData.reduce((sum, feature) => sum + (feature.properties.Total_bran || 0), 0);
-            const totalPopulation = filteredData.reduce((sum, feature) => sum + (feature.properties.Population || 0), 0);
+
+            const totalPopulation = filteredData.reduce((sum, feature) => sum + (Number(feature.properties.Population) || 0), 0);
+
             const totalArea = filteredData.reduce((sum, feature) => sum + (feature.properties.Area || 0), 0);
     
             // Calculate total population and area for the entire country
-            const totalCountryPopulation = filteredDataCountry.reduce((sum, feature) => sum + (feature.properties.Population || 0), 0);
+            const totalCountryPopulation = filteredDataCountry.reduce((sum, feature) => sum + (Number(feature.properties.Population) || 0), 0);
             const totalCountryArea = filteredDataCountry.reduce((sum, feature) => sum + (feature.properties.Area || 0), 0);
             const totalCountryBranches = filteredDataCountry.reduce((sum, feature) => sum + (feature.properties.Total_bran || 0), 0);
     
