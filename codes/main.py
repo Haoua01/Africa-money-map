@@ -25,6 +25,10 @@ threshold_ghana = {
     "ghana":50000
 }
 
+threshold_nigeria = {
+    "nigeria":50000
+}
+
 shp_area = {
         'CEMAC':{
         'tchad':
@@ -37,19 +41,22 @@ shp_area = {
             'adm2':'Africa-money-map/data/CEMAC/cameroun_departments.shp',
         }
     },
-        'Ghana': 
-        {
-            'adm2':'Africa-money-map/data/Ghana/ghana_communes.shp'
+    'Ghana': {
+        'adm2':'Africa-money-map/data/Ghana/ghana_communes.shp'
         },
     'UEMOA': {
         'adm3':'Africa-money-map/data/UEMOA/communes_with_id.shp',
         'adm2':'Africa-money-map/data/UEMOA/departments.shp'
+    },
+    'Nigeria': {
+        'adm2':'data/Nigeria/branch_pop_data.shp'
     }
 }
 
 def main():
     for area, shp_files in shp_area.items():
         print(area)
+        '''
         if area == 'UEMOA':
             shp_communes=shp_files['adm3']
             shp_departments=gpd.read_file(shp_files['adm2'])
@@ -77,6 +84,12 @@ def main():
             shp_communes = shp_files['adm2']
             commune_data = CommuneData(shp=shp_communes)
             shp_communes_scores = commune_data.compute_scores(threshold=threshold_ghana, area=area, calculation_type='base', adm_type='communes')
+        
+        '''
+        if area == 'Nigeria':
+            shp_communes = shp_files['adm2']
+            commune_data = CommuneData(shp=shp_communes)
+            shp_communes_scores = commune_data.compute_scores(threshold=threshold_nigeria, area=area, calculation_type='base', adm_type='communes')
 
 
     #commune_data = CommuneData(shp='Africa-money-map/data/Ghana/ghana_communes.shp')

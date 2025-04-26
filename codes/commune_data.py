@@ -44,7 +44,7 @@ class CommuneData(Shapefile):
         with open(f'data/{area}/neighbors_threshold_{self.threshold}.json', 'w', encoding='utf-8') as f:
             json.dump(neighbors, f, ensure_ascii=False, indent=4)
         return neighbors
-
+    '''
 
     def create_distance_dict(self,data):
         """
@@ -68,7 +68,7 @@ class CommuneData(Shapefile):
         print(f"Distance dictionary created with {len(distance_dict)} entries.")
 
         return distance_dict
-            '''
+
     
     def compute_scores(self, threshold, area, calculation_type, adm_type):
         isibf_values = {}
@@ -78,15 +78,15 @@ class CommuneData(Shapefile):
         for country in self.countries:
             isibf_values[country] = {}
 
-            #with open(f'Africa-money-map/data/{area}/{country}_distance_matrix.json',  'r') as f:
+            #with open(f'data/{area}/{country}_distance_matrix.json',  'r') as f:
                 #neighbors_raw = [json.loads(line) for line in f if line.strip()]
 
             #neighbors = self.create_distance_dict(neighbors_raw)
 
-            #with open(f'Africa-money-map/data/{area}/{country}_distance_matrix_clean.json', 'w', encoding='utf-8') as f: 
+            #with open(f'data/{area}/{country}_distance_matrix_clean.json', 'w', encoding='utf-8') as f: 
                 #json.dump(neighbors, f, ensure_ascii=False, indent=4)
 
-            with open(f'Africa-money-map/data/{area}/{country}_distance_matrix_clean.json', 'r', encoding='utf-8') as f:
+            with open(f'data/{area}/{country}_distance_matrix_clean.json', 'r', encoding='utf-8') as f:
                 neighbors = json.load(f)
             
             # Filter the shapefile for the specific country
@@ -125,13 +125,13 @@ class CommuneData(Shapefile):
         
         #define the output path for the shapefile
         if country=='cameroun' and adm_type=='communes':
-            output_path = f'Africa-money-map/data/results/scores/{area}_scores_{adm_type}_{country}.shp'
+            output_path = f'data/{area}/scores_{adm_type}_{country}.shp'
         elif country=='cameroun' and adm_type=='mean_communes':
-            output_path = f'Africa-money-map/data/results/scores/{area}_scores_{adm_type}_{country}.shp'
+            output_path = f'data/{area}/scores_{adm_type}_{country}.shp'
         elif country=='tchad':
-            output_path = f'Africa-money-map/data/results/scores/{area}_scores_{adm_type}_{country}.shp'
+            output_path = f'data/{area}/scores_{adm_type}_{country}.shp'
         else:
-            output_path = f'Africa-money-map/data/results/scores/{area}_scores_{adm_type}.shp'
+            output_path = f'data/{area}/scores_{adm_type}.shp'
         self.shp.to_file(output_path)
         print('ISIBF values calculated and added to shapefile to', output_path)
 
