@@ -391,7 +391,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         } else if (['Ghana', 'Nigeria'].includes(country)) {
             legend = L.control({ position: "bottomright" });
     
-            const grades = [1, 0.5, 0.1, 0.01, 0.001];
+            const grades = [1, 0.5, 0.2, 0.1, 0.01];
     
             legend.onAdd = function () {
                 const div = L.DomUtil.create("div", "legend");
