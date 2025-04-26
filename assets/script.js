@@ -404,7 +404,8 @@ document.addEventListener("DOMContentLoaded", async function () {
     
                 return div;
             }
-        } 
+        }
+    } 
 
 
 
@@ -501,6 +502,5 @@ document.addEventListener("DOMContentLoaded", async function () {
             document.getElementById("percent-area").innerHTML = '';
             }
     }
-
 
 });
