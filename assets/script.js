@@ -403,7 +403,8 @@ document.addEventListener("DOMContentLoaded", async function () {
                 }
     
                 return div;
-            }
+            };
+            legend.addTo(map);  // Add the new legend
         }
     } 
 
