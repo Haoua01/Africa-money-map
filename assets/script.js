@@ -419,11 +419,11 @@ document.addEventListener("DOMContentLoaded", async function () {
             "#eff3ff";  // Lightest
      
         } else if (['Ghana', 'Nigeria'].includes(country)) {
-            return value > 0.5 ? "#99000d" :  // Darkest
-            value > 0.2 ? "#cb1818" :
-            value > 0.1 ? "#ef3b2c" :
-            value > 0.01 ? "#fb6a4a" :  // Lightest
-            "#fcbba1";  // Lightest
+            return value > 0.5 ? "#880e4f" :  // Darkest
+            value > 0.2 ? "#c2185b" :
+            value > 0.1 ? "#d81b60" :
+            value > 0.01 ? "#f768a1" :  // Lightest
+            "#fbb4b9";  // Lightest
      
         } else if (['Cameroon', 'Chad'].includes(country)) {
             return value > 0.5 ? "#00441b" :  // Darkest
