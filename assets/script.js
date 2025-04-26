@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 "Ghana": { lat: 7.5, lng: -0.5, zoom: 7 },
                 "Cameroon": { lat: 6.5, lng: 13, zoom: 6 },
                 "Chad": { lat: 15.5, lng: 18, zoom: 5 }, 
-                "Nigeria": { lat: 9.1, lng: 8.5, zoom: 7 },
+                "Nigeria": { lat: 9.1, lng: 8.5, zoom: 6 },
             };
 
             // Country Dropdown
