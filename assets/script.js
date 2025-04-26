@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     const uemoaData = await fetch(uemoaBordersFile).then(response => response.json());
     const cemacData = await fetch(cemacBordersFile).then(response => response.json());
     const ghanaData = await fetch(ghanaBordersFile).then(response => response.json());
+    const nigeriaData = await fetch(nigeriaBordersFile).then(response => response.json());
     fetch(geoJsonFile)
         .then(response => response.json())
         .then(geoJsonData => {
@@ -70,7 +71,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 "Ghana": { lat: 7.5, lng: -0.5, zoom: 7 },
                 "Cameroon": { lat: 6.5, lng: 13, zoom: 6 },
                 "Chad": { lat: 15.5, lng: 18, zoom: 5 }, 
-                "Nigeria": { lat: 9.1, lng: 8.5, zoom: 5 },
+                "Nigeria": { lat: 9.1, lng: 8.5, zoom: 6 },
             };
 
             // Country Dropdown
@@ -248,6 +249,12 @@ document.addEventListener("DOMContentLoaded", async function () {
             }).addTo(map)
             
             L.geoJSON(ghanaData, {
+                style: function () {
+                    return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for Ghana
+                }
+            }).addTo(map)
+
+            L.geoJSON(nigeriaData, {
                 style: function () {
                     return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for Ghana
                 }
