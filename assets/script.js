@@ -5,10 +5,11 @@ document.addEventListener("DOMContentLoaded", async function () {
         attribution: "&copy; OpenStreetMap contributors &copy; CartoDB",
     }).addTo(map);
 
-    const geoJsonFile = "web_data/communes_all_pop.geojson"; 
+    const geoJsonFile = "web_data/communes_all_pop_v2.geojson"; 
     const uemoaBordersFile = "web_data/uemoa_borders.geojson"; 
     const cemacBordersFile = "web_data/cemac_borders.geojson"; 
     const ghanaBordersFile = "web_data/ghana_borders.geojson";
+    const nigeriaBordersFile = "web_data/nigeria_borders.geojson";
 
     // Create a loading spinner
     const loadingSpinner = document.createElement("div");
@@ -68,7 +69,8 @@ document.addEventListener("DOMContentLoaded", async function () {
                 "Togo": { lat: 8.2, lng: 1.3, zoom: 7 },
                 "Ghana": { lat: 7.5, lng: -0.5, zoom: 7 },
                 "Cameroon": { lat: 6.5, lng: 13, zoom: 6 },
-                "Chad": { lat: 15.5, lng: 18, zoom: 5 }
+                "Chad": { lat: 15.5, lng: 18, zoom: 5 }, 
+                "Nigeria": { lat: 9.1, lng: 8.5, zoom: 5 },
             };
 
             // Country Dropdown
@@ -392,7 +394,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             value > 0.001 ? "#bdd7e7" :  // Lightest
             "#eff3ff";  // Lightest
      
-        } else if (country === 'Ghana') {
+        } else if (['Ghana', 'Nigeria'].includes(country)) {
             return value > 0.5 ? "#880e4f" :  // Darkest
             value > 0.1 ? "#c2185b" :
             value > 0.01 ? "#d81b60" :
@@ -434,12 +436,13 @@ document.addEventListener("DOMContentLoaded", async function () {
         "Ghana": "Districts",
         "Cameroon": "Arrondissements",
         "Chad": "Provinces",
+        "Nigeria": "Local Government Areas"
     };
 
     // Function to update statistics dynamically based on filtered data
     function updateStats(filteredDataCountry, filteredData, country) {
 
-        const popCountries = ['Cameroon', 'Ghana', 'Chad', 'Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'];
+        const popCountries = ['Nigeria', 'Cameroon', 'Ghana', 'Chad', 'Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'];
         if (popCountries.includes(country)) {
             const municipalityLabel = municipalities[country] || "Municipalities"; // Default fallback to "Municipalities"
     
