@@ -424,14 +424,14 @@ document.addEventListener("DOMContentLoaded", async function () {
             value > 0.2 ? "#c2185b" :
             value > 0.1 ? "#d81b60" :
             value > 0.01 ? "#f768a1" :  // Lightest
-            "#eff3ff";  // Lightest
+            "#ffeff3";  // Lightest
      
         } else if (['Cameroon', 'Chad'].includes(country)) {
             return value > 0.5 ? "#00441b" :  // Darkest
             value > 0.1 ? "#006d2c" :
             value > 0.01 ? "#31a354" :
             value > 0.001 ? "#a1d99b" :  // Lightest
-            "#eff3ff";  // Lightest
+            "#f3ffef";  // Lightest
      
         } else {
             return "#ffffff"; // Default color if no country matches
