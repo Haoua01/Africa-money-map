@@ -5,7 +5,15 @@ document.addEventListener("DOMContentLoaded", async function () {
         attribution: "&copy; OpenStreetMap contributors &copy; CartoDB",
     }).addTo(map);
 
-    L.control.Fullscreen().addTo(map);
+    L.control.fullscreen({
+		position: 'topleft', // change the position of the button can be topleft, topright, bottomright or bottomleft, default topleft
+		title: 'Show me the fullscreen !', // change the title of the button, default Full Screen
+		titleCancel: 'Exit fullscreen mode', // change the title of the button when fullscreen is on, default Exit Full Screen
+		content: null, // change the content of the button, can be HTML, default null
+		forceSeparateButton: true, // force separate button to detach from zoom buttons, default false
+		forcePseudoFullscreen: true, // force use of pseudo full screen even if full screen API is available, default false
+		fullscreenElement: false // Dom element to render in full screen, false by default, fallback to map._container
+	}).addTo(map);
 
     const geoJsonFile = "web_data/communes_all_pop_v2.geojson"; 
     const uemoaBordersFile = "web_data/uemoa_borders.geojson"; 
