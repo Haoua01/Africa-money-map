@@ -458,6 +458,29 @@ label {
         font-size: 1rem;
     }
 
+    .stat-box {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 10px 5px; /* Reduce padding to save space */
+    }
+    /* Adjust sidebar width */
+    .sidebar {
+        width: 150px; /* Smaller sidebar */
+    }
+    /* Adjust main content font size */
+    .main-content {
+        font-size: 14px; /* Smaller font size */
+        padding: 10px; /* Add some padding */
+    }
+    /* Adjust map content font size */
+    #map-content {
+        font-size: 14px; /* Smaller font size */
+        padding: 10px; /* Add some padding */
+    }
+    /* Adjust map height */
+    #map {
+        height: 60vh; /* Make map smaller */
+    }
+
     /* Reset button font size */
     #resetButton {
         font-size: 12px;
@@ -511,12 +534,15 @@ label {
         font-size: 20px; /* Smaller font size */
     }
     
-    /* Adjust layout for the statistics container */
+    /* Adjust layout for the statistics container to take less space */
     .stats-container {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%; /* Ensure stats container takes full width */
+        padding: 5px; /* Reduce padding */
+        margin: 0; /* Remove margin */
+        width: 100%; /* Ensure it takes full width */
+        height: auto; /* Allow it to adjust based on content */
     }
 
     /* Make stat-boxes more compact */
