@@ -400,3 +400,93 @@ label {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    /* Adjust sidebar width */
+    .sidebar {
+        width: 200px;
+    }
+
+    /* Stack the main content vertically */
+    .main-content {
+        flex-direction: column;
+    }
+
+    /* Adjust font size for better readability */
+    .main-content h1 {
+        font-size: 24px;
+    }
+
+    /* Adjust map and summary content */
+    #map-content, #summary-content {
+        flex-direction: column;
+    }
+
+    /* Adjust stats container */
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-box {
+        width: 80%; /* Make stat boxes more flexible on small screens */
+        margin-bottom: 10px;
+    }
+
+    /* Modify figure container for responsiveness */
+    #fig-container {
+        grid-template-columns: 1fr; /* Stack figures vertically */
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust header font size */
+    header {
+        font-size: 18px;
+    }
+
+    /* Sidebar button font size */
+    .sidebar-btn {
+        font-size: 16px;
+    }
+
+    /* Dropdown font size */
+    .dropdown-toggle {
+        font-size: 1rem;
+    }
+
+    /* Reset button font size */
+    #resetButton {
+        font-size: 12px;
+    }
+
+    /* Main content font size */
+    .main-content h1 {
+        font-size: 20px;
+    }
+
+    /* Adjust map content heading */
+    #map-content h1 {
+        font-size: 24px;
+    }
+}
+
+/* For very small screens (mobile devices in portrait) */
+@media (max-width: 320px) {
+    .sidebar {
+        width: 100px; /* Even smaller sidebar */
+    }
+
+    .stat-box {
+        width: 100%; /* Stat boxes take full width */
+    }
+
+    /* Adjust margins and padding for smaller screens */
+    .main-content, #map-content {
+        padding: 5px;
+        margin: 0;
+    }
+}
