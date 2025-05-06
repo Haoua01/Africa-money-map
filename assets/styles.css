@@ -435,11 +435,11 @@ label {
         margin-bottom: 10px;
     }
 
-    /* Modify figure container for responsiveness */
+    /* Modify figure container for responsiveness 
     #fig-container {
-        grid-template-columns: 1fr; /* Stack figures vertically */
+        grid-template-columns: 1fr; Stack figures vertically 
         margin-left: 10px;
-    }
+    }*/
 }
 
 @media (max-width: 480px) {

@@ -5,8 +5,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         attribution: "&copy; OpenStreetMap contributors &copy; CartoDB",
     }).addTo(map);
 
-    // Add the full screen control to the map using addTo
-    L.control.fullscreen().addTo(map);
+    L.control.Fullscreen().addTo(map);
 
     const geoJsonFile = "web_data/communes_all_pop_v2.geojson"; 
     const uemoaBordersFile = "web_data/uemoa_borders.geojson"; 
