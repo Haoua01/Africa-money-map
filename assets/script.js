@@ -500,10 +500,10 @@ document.addEventListener("DOMContentLoaded", async function () {
             const branchPercentage = totalCountryBranches > 0 ? ((totalBranches / totalCountryBranches) * 100).toFixed(1) : 0;
     
             // Update the statistics in the HTML
-            document.getElementById("num-municipalities").innerHTML = `<span style="font-size: 30px;">${totalCommunes}</span>${municipalityLabel}`;
-            document.getElementById("total-bran").innerHTML = `<span style="font-size: 30px;">${branchPercentage}%</span>Bank Branches`;
-            document.getElementById("percent-pop").innerHTML = `<span style="font-size: 30px;">${populationPercentage}%</span>Population`;
-            document.getElementById("percent-area").innerHTML = `<span style="font-size: 30px;">${areaPercentage}%</span>Area`;
+            document.getElementById("num-municipalities").innerHTML = `<span>${totalCommunes}</span>${municipalityLabel}`;
+            document.getElementById("total-bran").innerHTML = `<span>${branchPercentage}%</span>Bank Branches`;
+            document.getElementById("percent-pop").innerHTML = `<span>${populationPercentage}%</span>Population`;
+            document.getElementById("percent-area").innerHTML = `<span>${areaPercentage}%</span>Area`;
         
         } else {
             // If the country is not in the UEMOA group, don't update stats

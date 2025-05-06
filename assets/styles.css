@@ -495,6 +495,13 @@ label {
     #map-content h1 {
         font-size: 24px;
     }
+
+    .stat-box span {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        line-height: 16px;
+    }
 }
 
 /* For very small screens (mobile devices in portrait) */
@@ -545,10 +552,10 @@ label {
     }
 
     .stat-box span {
-        font-size: 12px;
+        font-size: 16px;
         font-weight: bold;
         margin-bottom: 0px;
-        line-height: 12px;
+        line-height: 16px;
     }
     
 }
