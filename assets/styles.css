@@ -547,7 +547,7 @@ label {
 
     /* Make stat-boxes more compact */
     .stat-box {
-        width: 100%; /* Ensure they don't exceed container width */
+        width: 25%; /* Ensure they don't exceed container width */
         margin-bottom: 5px; /* Space out the boxes */
     }
 
