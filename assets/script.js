@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         if (document.body.contains(loadingSpinner)) {
             document.body.removeChild(loadingSpinner); // Remove spinner after delay
         }
-    }, 2500);
+    }, 3500);
     
 
 
