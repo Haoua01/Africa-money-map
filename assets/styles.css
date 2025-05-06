@@ -504,13 +504,6 @@ label {
         width: 80px; /* Even smaller sidebar */
     }
 
-    /* Make stat boxes more compact */
-    .stat-box {
-        width: 100%; /* Stat boxes take full width */
-        font-size: 14px; /* Adjust font size for smaller screens */
-        padding: 10px 5px; /* Reduce padding to save space */
-    }
-
     /* Adjust the map content to take more space */
     #map-content {
         padding: 0;
@@ -548,6 +541,14 @@ label {
     /* Make stat-boxes more compact */
     .stat-box {
         width: 100%; /* Ensure they don't exceed container width */
-        margin-bottom: 10px; /* Space out the boxes */
+        margin-bottom: 5px; /* Space out the boxes */
     }
+
+    .stat-box span {
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        line-height: 12px;
+    }
+    
 }
