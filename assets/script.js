@@ -5,6 +5,13 @@ document.addEventListener("DOMContentLoaded", async function () {
         attribution: "&copy; OpenStreetMap contributors &copy; CartoDB",
     }).addTo(map);
 
+        // Add fullscreen control to the map
+    map.addControl(new L.Control.Fullscreen({
+        position: 'topright', // Position of the fullscreen button
+        title: 'Show fullscreen', // Title for fullscreen button
+        titleCancel: 'Exit fullscreen' // Title for exiting fullscreen
+    }));
+
     const geoJsonFile = "web_data/communes_all_pop_v2.geojson"; 
     const uemoaBordersFile = "web_data/uemoa_borders.geojson"; 
     const cemacBordersFile = "web_data/cemac_borders.geojson"; 
