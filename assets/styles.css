@@ -476,17 +476,52 @@ label {
 
 /* For very small screens (mobile devices in portrait) */
 @media (max-width: 320px) {
+    /* Adjust sidebar width */
     .sidebar {
-        width: 100px; /* Even smaller sidebar */
+        width: 80px; /* Even smaller sidebar */
     }
 
+    /* Make stat boxes more compact */
     .stat-box {
         width: 100%; /* Stat boxes take full width */
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 10px 5px; /* Reduce padding to save space */
     }
 
-    /* Adjust margins and padding for smaller screens */
-    .main-content, #map-content {
+    /* Adjust the map content to take more space */
+    #map-content {
+        padding: 0;
+        margin: 0;
+        height: 80vh; /* Make map larger, use 80% of the vertical screen */
+    }
+
+    /* Ensure the main content still has some space */
+    .main-content {
         padding: 5px;
         margin: 0;
+    }
+
+    /* Adjust main content heading font size */
+    .main-content h1 {
+        font-size: 18px; /* Smaller font size */
+    }
+
+    /* Adjust map content heading */
+    #map-content h1 {
+        font-size: 20px; /* Smaller font size */
+    }
+    
+    /* Adjust layout for the statistics container */
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%; /* Ensure stats container takes full width */
+    }
+
+    /* Make stat-boxes more compact */
+    .stat-box {
+        width: 100%; /* Ensure they don't exceed container width */
+        margin-bottom: 10px; /* Space out the boxes */
     }
 }
