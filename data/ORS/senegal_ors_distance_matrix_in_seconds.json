@@ -1,0 +1,1059 @@
+{
+    "Almadies": {
+        "Grand Dakar": 1054.24,
+        "Parcelles Assainies": 667.7,
+        "Thiaroye": 1365.68,
+        "Pikine Dagoudane": 891.75,
+        "Dakar Plateau": 863.241707679855,
+        "Gu\u00e9diawaye": 977.78,
+        "Diamniadio": 2195.12,
+        "N/A": 2279.83,
+        "Sangalkam": 2989.34,
+        "Rufisque-Est": 1691.17,
+        "Yeumbeul": 1297.72,
+        "Jaxaay": 1524.35,
+        "Malika": 1514.64
+    },
+    "Grand Dakar": {
+        "Keur Moussa": 2778.74,
+        "Parcelles Assainies": 676.05,
+        "Almadies": 1060.82,
+        "Thiaroye": 1250.47,
+        "Pikine Dagoudane": 774.0,
+        "Dakar Plateau": 458.4617802068984,
+        "Gu\u00e9diawaye": 903.42,
+        "Diamniadio": 2067.04,
+        "N/A": 2151.75,
+        "Sangalkam": 2861.26,
+        "Rufisque-Est": 1563.09,
+        "Yeumbeul": 1227.23,
+        "Jaxaay": 1396.27,
+        "Malika": 1493.91
+    },
+    "Parcelles Assainies": {
+        "Keur Moussa": 2551.53,
+        "Grand Dakar": 698.95,
+        "Almadies": 574.82,
+        "Thiaroye": 1004.67,
+        "Pikine Dagoudane": 530.74,
+        "Dakar Plateau": 887.9244149900894,
+        "Gu\u00e9diawaye": 537.09,
+        "Diamniadio": 1839.83,
+        "N/A": 1924.54,
+        "Sangalkam": 2634.05,
+        "Rufisque-Est": 1335.88,
+        "Yeumbeul": 937.23,
+        "Jaxaay": 1169.06,
+        "Malika": 1154.15
+    },
+    "Dakar Plateau": {
+        "Keur Moussa": 5833.000346546042,
+        "Grand Dakar": 458.4617802068984,
+        "Parcelles Assainies": 887.9244149900894,
+        "Almadies": 863.241707679855,
+        "Thiaroye": 1703.3508565573272,
+        "Pikine Dagoudane": 1159.4483125576878,
+        "Gu\u00e9diawaye": 1432.0034204714586,
+        "Diamniadio": 3794.981455336968,
+        "N/A": 3128.189160868842,
+        "Sangalkam": 3431.319098924017,
+        "Rufisque-Est": 2372.7410526079784,
+        "Yeumbeul": 1789.619556953298,
+        "Jaxaay": 2291.5890237517106,
+        "Malika": 2247.879347141192
+    },
+    "Gu\u00e9diawaye": {
+        "Keur Moussa": 2493.03,
+        "Grand Dakar": 923.55,
+        "Parcelles Assainies": 565.77,
+        "Almadies": 897.24,
+        "Thiaroye": 909.76,
+        "Pikine Dagoudane": 290.18,
+        "Dakar Plateau": 1432.0034204714586,
+        "Diamniadio": 1781.33,
+        "N/A": 1866.05,
+        "Sangalkam": 2575.55,
+        "Rufisque-Est": 1277.38,
+        "Yeumbeul": 569.12,
+        "Jaxaay": 1042.84,
+        "Malika": 786.03
+    },
+    "Thiaroye": {
+        "Keur Moussa": 2592.8,
+        "Sindia": 3222.03,
+        "Grand Dakar": 1279.07,
+        "Parcelles Assainies": 929.16,
+        "Almadies": 1313.94,
+        "Pikine Dagoudane": 715.98,
+        "Dakar Plateau": 1703.3508565573272,
+        "Gu\u00e9diawaye": 902.62,
+        "Diamniadio": 1813.16,
+        "N/A": 1846.29,
+        "Sangalkam": 2483.28,
+        "Rufisque-Est": 1108.22,
+        "Yeumbeul": 775.23,
+        "Jaxaay": 881.25,
+        "Malika": 978.88
+    },
+    "Pikine Dagoudane": {
+        "Keur Moussa": 2373.0,
+        "Grand Dakar": 797.03,
+        "Parcelles Assainies": 450.33,
+        "Almadies": 835.1,
+        "Thiaroye": 716.21,
+        "Dakar Plateau": 1159.4483125576878,
+        "Gu\u00e9diawaye": 290.42,
+        "Diamniadio": 1661.3,
+        "N/A": 1746.02,
+        "Sangalkam": 2455.52,
+        "Rufisque-Est": 1157.36,
+        "Yeumbeul": 564.96,
+        "Jaxaay": 990.54,
+        "Malika": 959.46
+    },
+    "Sangalkam": {
+        "Keur Moussa": 1487.66,
+        "Sindia": 2865.08,
+        "Grand Dakar": 2871.25,
+        "Parcelles Assainies": 2557.32,
+        "Almadies": 2942.09,
+        "Thiaroye": 2492.89,
+        "Pikine Dagoudane": 2424.98,
+        "Dakar Plateau": 3431.319098924017,
+        "Gu\u00e9diawaye": 2481.27,
+        "Diamniadio": 1393.02,
+        "N/A": 2096.63,
+        "Rufisque-Est": 2074.7,
+        "Yeumbeul": 2317.08,
+        "Jaxaay": 1872.54,
+        "Malika": 2143.26,
+        "Pambal": 3378.42,
+        "Noto": 3150.95
+    },
+    "Rufisque-Est": {
+        "Keur Moussa": 2110.86,
+        "Sindia": 2805.42,
+        "Grand Dakar": 1691.84,
+        "Parcelles Assainies": 1377.91,
+        "Almadies": 1762.68,
+        "Thiaroye": 1119.98,
+        "Pikine Dagoudane": 1232.09,
+        "Dakar Plateau": 2372.7410526079784,
+        "Gu\u00e9diawaye": 1301.86,
+        "Diamniadio": 1198.99,
+        "N/A": 1210.51,
+        "Sangalkam": 2077.03,
+        "Yeumbeul": 1291.34,
+        "Jaxaay": 758.29,
+        "Malika": 1188.12,
+        "Pambal": 4001.62,
+        "Noto": 3774.15
+    },
+    "Diamniadio": {
+        "Keur Moussa": 1310.0,
+        "Sindia": 1769.1,
+        "Grand Dakar": 2095.05,
+        "Parcelles Assainies": 1781.12,
+        "Almadies": 2165.89,
+        "Thiaroye": 1820.59,
+        "Pikine Dagoudane": 1648.78,
+        "Dakar Plateau": 3794.981455336968,
+        "Gu\u00e9diawaye": 1705.07,
+        "N/A": 1105.77,
+        "Sangalkam": 1392.52,
+        "Rufisque-Est": 1196.39,
+        "Yeumbeul": 1789.85,
+        "Jaxaay": 1240.44,
+        "Malika": 1670.28,
+        "Pambal": 3200.76,
+        "Thi\u00e9naba": 2720.79,
+        "Noto": 2973.29
+    },
+    "N/A": {
+        "Keur Moussa": 2020.55,
+        "Sindia": 2770.26,
+        "Grand Dakar": 2273.29,
+        "Parcelles Assainies": 1959.36,
+        "Almadies": 2344.13,
+        "Thiaroye": 1851.09,
+        "Pikine Dagoudane": 1827.02,
+        "Dakar Plateau": 3128.189160868842,
+        "Gu\u00e9diawaye": 1883.31,
+        "Diamniadio": 1108.68,
+        "Sangalkam": 2103.07,
+        "Rufisque-Est": 1212.53,
+        "Yeumbeul": 1968.1,
+        "Jaxaay": 1418.68,
+        "Malika": 1848.52,
+        "Pambal": 3911.31,
+        "Noto": 3683.84
+    },
+    "Jaxaay": {
+        "Keur Moussa": 2030.4,
+        "Sindia": 2659.63,
+        "Grand Dakar": 1396.28,
+        "Parcelles Assainies": 1082.36,
+        "Almadies": 1467.13,
+        "Thiaroye": 898.21,
+        "Pikine Dagoudane": 950.02,
+        "Dakar Plateau": 2291.5890237517106,
+        "Gu\u00e9diawaye": 1006.31,
+        "Diamniadio": 1318.7,
+        "N/A": 1403.41,
+        "Sangalkam": 1872.24,
+        "Rufisque-Est": 761.86,
+        "Yeumbeul": 753.47,
+        "Malika": 633.89,
+        "Pambal": 3905.53,
+        "Noto": 3630.11
+    },
+    "Malika": {
+        "Keur Moussa": 2466.57,
+        "Sindia": 3095.8,
+        "Grand Dakar": 1492.82,
+        "Parcelles Assainies": 1140.24,
+        "Almadies": 1434.91,
+        "Thiaroye": 985.28,
+        "Pikine Dagoudane": 946.58,
+        "Dakar Plateau": 2247.879347141192,
+        "Gu\u00e9diawaye": 814.66,
+        "Diamniadio": 1754.87,
+        "N/A": 1839.58,
+        "Sangalkam": 2143.26,
+        "Rufisque-Est": 1198.03,
+        "Yeumbeul": 498.74,
+        "Jaxaay": 645.91,
+        "Pambal": 4341.7
+    },
+    "Yeumbeul": {
+        "Keur Moussa": 2561.6,
+        "Sindia": 3190.84,
+        "Grand Dakar": 1240.58,
+        "Parcelles Assainies": 890.67,
+        "Almadies": 1221.08,
+        "Thiaroye": 816.93,
+        "Pikine Dagoudane": 552.74,
+        "Dakar Plateau": 1789.619556953298,
+        "Gu\u00e9diawaye": 557.14,
+        "Diamniadio": 1849.9,
+        "N/A": 1934.62,
+        "Sangalkam": 2318.02,
+        "Rufisque-Est": 1308.33,
+        "Jaxaay": 756.21,
+        "Malika": 499.4
+    },
+    "Lambaye": {
+        "Fissel": 4676.75,
+        "Ndoulo": 3117.24,
+        "Ndindy": 3474.93,
+        "Ngoye": 1603.8,
+        "Baba Garage": 2667.55,
+        "Niakhar": 3195.55,
+        "Tataguine": 4903.54,
+        "Niakh\u00e8ne": 5715.26,
+        "Pambal": 4801.8,
+        "Thi\u00e9naba": 2663.9,
+        "Noto": 4148.7,
+        "M\u00e9ouane": 5803.75,
+        "M\u00e9rina Dakhar": 5531.58
+    },
+    "Ngoye": {
+        "Fissel": 3619.76,
+        "Ndoulo": 1694.79,
+        "Ndindy": 2977.16,
+        "Baba Garage": 3637.15,
+        "Ndiob": 3580.51,
+        "Niakhar": 1605.41,
+        "Tataguine": 3313.4,
+        "Ouadiour": 2975.6,
+        "Lambaye": 1603.17,
+        "Thi\u00e9naba": 1768.16,
+        "Noto": 3763.92,
+        "M\u00e9rina Dakhar": 5404.73
+    },
+    "Baba Garage": {
+        "Fissel": 5982.47,
+        "Ndoulo": 5108.68,
+        "Ndindy": 3483.49,
+        "Ngoye": 3595.25,
+        "Lambaye": 2667.55,
+        "Niakh\u00e8ne": 4200.62,
+        "Pambal": 4645.77,
+        "Thi\u00e9naba": 2803.81,
+        "M\u00e9ouane": 5585.07,
+        "M\u00e9rina Dakhar": 4005.63
+    },
+    "Ndoulo": {
+        "Ndindy": 3336.15,
+        "Ngoye": 1676.68,
+        "Baba Garage": 5132.48,
+        "Ka\u00e8l": 3585.78,
+        "Ndiob": 2784.56,
+        "Ndame": 2139.56,
+        "Niakhar": 3198.69,
+        "Tataguine": 3904.48,
+        "Ouadiour": 1833.22,
+        "Lambaye": 3098.5,
+        "Ngu\u00e9lou": 4447.6,
+        "Ngothie": 4356.95
+    },
+    "Ndindy": {
+        "Ndoulo": 3340.53,
+        "Ngoye": 2977.16,
+        "Baba Garage": 3483.49,
+        "Ka\u00e8l": 5681.35,
+        "Ndame": 4065.42,
+        "Niakhar": 4568.91,
+        "Lambaye": 3474.93,
+        "Darou Mousty": 5312.53,
+        "Niakh\u00e8ne": 4707.93,
+        "M\u00e9rina Dakhar": 4847.8
+    },
+    "Ndame": {
+        "Ndoulo": 2137.02,
+        "Ndindy": 4053.01,
+        "Ka\u00e8l": 2615.4,
+        "Ta\u00eff": 3226.0,
+        "Colobane": 3260.55,
+        "Ouadiour": 3764.7,
+        "Darou Mousty": 2635.32,
+        "Sagata Diolof": 2697.06
+    },
+    "Ta\u00eff": {
+        "Ka\u00e8l": 3452.22,
+        "Ndame": 3226.48,
+        "Colobane": 2128.98,
+        "Gnibi": 4360.97,
+        "Darou Minam 2": 6444.55,
+        "Sagata Diolof": 4804.67
+    },
+    "Ka\u00e8l": {
+        "Ndoulo": 3582.46,
+        "Ndindy": 5774.24,
+        "Ndame": 2610.28,
+        "Ta\u00eff": 3452.22,
+        "Colobane": 2615.47,
+        "Ouadiour": 3536.97,
+        "Ngu\u00e9lou": 4962.09,
+        "Mbadakhoune": 5024.35
+    },
+    "Ndiob": {
+        "Fissel": 5696.67,
+        "Ndoulo": 2778.46,
+        "Ngoye": 3580.51,
+        "Niakhar": 2715.59,
+        "Djilor": 5267.83,
+        "Fimla": 5371.22,
+        "Tataguine": 2735.52,
+        "Ouadiour": 2853.22,
+        "Ngu\u00e9lou": 5254.62,
+        "Ngothie": 2904.41,
+        "Mbadakhoune": 4945.67,
+        "Ndi\u00e9di\u00e9ng": 5440.45
+    },
+    "Fimla": {
+        "Fissel": 4964.42,
+        "S\u00e9ss\u00e8ne": 3548.68,
+        "Ndiob": 5371.33,
+        "Niakhar": 5084.18,
+        "Djilor": 7613.87,
+        "Tataguine": 3630.27,
+        "Niodior": 3382.8665006282718,
+        "Ngothie": 5726.03
+    },
+    "Tataguine": {
+        "Fissel": 3955.72,
+        "S\u00e9ss\u00e8ne": 3132.94,
+        "Ndoulo": 3898.5,
+        "Ngoye": 3313.4,
+        "Ndiob": 2735.63,
+        "Niakhar": 2448.48,
+        "Djilor": 4978.17,
+        "Fimla": 3630.27,
+        "Lambaye": 4902.92,
+        "Ngothie": 3090.33,
+        "Thi\u00e9naba": 4926.09,
+        "Noto": 5342.43
+    },
+    "Niakhar": {
+        "Fissel": 4448.43,
+        "S\u00e9ss\u00e8ne": 4586.86,
+        "Ndoulo": 3196.63,
+        "Ndindy": 4568.91,
+        "Ngoye": 1605.41,
+        "Ndiob": 2715.59,
+        "Fimla": 5084.18,
+        "Tataguine": 2448.48,
+        "Ouadiour": 4127.42,
+        "Lambaye": 3194.92,
+        "Ngothie": 3202.57,
+        "Thi\u00e9naba": 3359.91
+    },
+    "Djilor": {
+        "Ndiob": 5268.13,
+        "Fimla": 7614.06,
+        "Tataguine": 4978.36,
+        "Toubakouta": 3819.3935171646353,
+        "Niodior": 3588.6095621485256,
+        "Ngothie": 5622.82,
+        "Wak Ngouna": 4866.07,
+        "Koumbal": 5535.9,
+        "Ndi\u00e9di\u00e9ng": 3149.63
+    },
+    "Toubakouta": {
+        "Djilor": 3819.3935171646353,
+        "Niodior": 3831.996522152763,
+        "Wak Ngouna": 4242.0356490374415,
+        "Ndi\u00e9di\u00e9ng": 4925.728844659815
+    },
+    "Niodior": {
+        "S\u00e9ss\u00e8ne": 5998.268880188168,
+        "Djilor": 3588.6095621485256,
+        "Fimla": 3382.8665006282718,
+        "Toubakouta": 3831.996522152763
+    },
+    "Colobane": {
+        "Ka\u00e8l": 2615.47,
+        "Ndame": 3255.43,
+        "Ta\u00eff": 2128.98,
+        "Ouadiour": 2955.22,
+        "Gnibi": 2575.45,
+        "Keur Mboucki": 5644.82,
+        "Ngu\u00e9lou": 3532.95,
+        "Mbadakhoune": 4442.6
+    },
+    "Ouadiour": {
+        "Ndoulo": 1824.69,
+        "Ngoye": 2972.98,
+        "Ka\u00e8l": 3536.97,
+        "Ndiob": 2853.22,
+        "Ndame": 3758.71,
+        "Niakhar": 4127.42,
+        "Colobane": 2955.22,
+        "Keur Mboucki": 5969.94,
+        "Ngu\u00e9lou": 3469.25,
+        "Ngothie": 4808.57,
+        "Mbadakhoune": 3436.81
+    },
+    "Mabo": {
+        "M\u00e9dina Sabakh": 4396.61,
+        "Gnibi": 4018.39,
+        "Katakel": 5005.0,
+        "Keur Mboucki": 3717.0,
+        "Sagna": 5016.93,
+        "Mbadakhoune": 5334.58,
+        "Paoscoto": 3828.63,
+        "Koumbal": 4518.39
+    },
+    "Keur Mboucki": {
+        "Colobane": 5644.82,
+        "Ouadiour": 5967.06,
+        "Gnibi": 3365.02,
+        "Mabo": 3717.0,
+        "Ngu\u00e9lou": 4523.55,
+        "Mbadakhoune": 3182.01,
+        "Paoscoto": 5690.82,
+        "Koumbal": 3431.94,
+        "Ndi\u00e9di\u00e9ng": 4682.54
+    },
+    "Gnibi": {
+        "Ta\u00eff": 4360.97,
+        "Colobane": 2575.45,
+        "Mabo": 3998.09,
+        "Keur Mboucki": 3344.72,
+        "Darou Minam 2": 7306.57,
+        "Ngu\u00e9lou": 5213.09,
+        "Sagna": 4044.39,
+        "Mbadakhoune": 4962.3
+    },
+    "Katakel": {
+        "M\u00e9dina Sabakh": 4822.11,
+        "Mabo": 5005.0,
+        "Sagna": 4022.24
+    },
+    "Missira Wad\u00e8ne": {
+        "Lour Escale": 3162.1293003323303,
+        "Darou Minam 2": 4381.482314807433,
+        "Ida Mouride": 4934.34643531454,
+        "Sagna": 4336.281347641552
+    },
+    "Ida Mouride": {
+        "Lour Escale": 6694.36,
+        "Missira Wad\u00e8ne": 4934.34643531454,
+        "Bamba Tial\u00e8ne": 3882.9
+    },
+    "Lour Escale": {
+        "Missira Wad\u00e8ne": 3162.1293003323303,
+        "Ida Mouride": 6694.36,
+        "Koutiaba Wolof": 10781.69
+    },
+    "Darou Minam 2": {
+        "Ta\u00eff": 6444.55,
+        "Gnibi": 7306.57,
+        "Missira Wad\u00e8ne": 4381.482314807433,
+        "Sagna": 5836.21
+    },
+    "Sagna": {
+        "Gnibi": 4046.9,
+        "Katakel": 4024.57,
+        "Mabo": 5015.42,
+        "Darou Minam 2": 5836.21,
+        "Missira Wad\u00e8ne": 4336.281347641552
+    },
+    "Mbadakhoune": {
+        "Ka\u00e8l": 5024.35,
+        "Ndiob": 4945.67,
+        "Colobane": 4442.6,
+        "Ouadiour": 3436.81,
+        "Gnibi": 4982.6,
+        "Mabo": 5334.58,
+        "Keur Mboucki": 3182.01,
+        "Ngu\u00e9lou": 1794.63,
+        "Ngothie": 3830.22,
+        "Koumbal": 4155.47,
+        "Ndi\u00e9di\u00e9ng": 4008.95
+    },
+    "Ngu\u00e9lou": {
+        "Ndoulo": 4439.06,
+        "Ka\u00e8l": 4962.09,
+        "Ndiob": 5254.62,
+        "Colobane": 3532.95,
+        "Ouadiour": 3469.25,
+        "Gnibi": 5213.09,
+        "Keur Mboucki": 4523.55,
+        "Ngothie": 4940.53,
+        "Mbadakhoune": 1794.63,
+        "Koumbal": 5515.8,
+        "Ndi\u00e9di\u00e9ng": 5399.06
+    },
+    "Ngothie": {
+        "Ndoulo": 4346.49,
+        "Ndiob": 2904.41,
+        "Niakhar": 3202.49,
+        "Djilor": 5622.56,
+        "Fimla": 5725.94,
+        "Tataguine": 3090.24,
+        "Ouadiour": 4808.57,
+        "Ngu\u00e9lou": 4940.53,
+        "Mbadakhoune": 3828.92,
+        "Koumbal": 4146.35,
+        "Ndi\u00e9di\u00e9ng": 3986.74
+    },
+    "Koumbal": {
+        "Djilor": 5535.9,
+        "Mabo": 4518.39,
+        "Keur Mboucki": 3431.94,
+        "Ngu\u00e9lou": 5515.8,
+        "Ngothie": 4147.42,
+        "Mbadakhoune": 4155.47,
+        "Paoscoto": 3115.38,
+        "Wak Ngouna": 3876.12,
+        "Ndi\u00e9di\u00e9ng": 3176.34
+    },
+    "Ndi\u00e9di\u00e9ng": {
+        "Ndiob": 5441.52,
+        "Djilor": 3149.63,
+        "Toubakouta": 4925.728844659815,
+        "Keur Mboucki": 4682.3,
+        "Ngu\u00e9lou": 5395.08,
+        "Ngothie": 3987.81,
+        "Mbadakhoune": 4008.71,
+        "Paoscoto": 4025.02,
+        "Wak Ngouna": 3036.84,
+        "Koumbal": 3176.34
+    },
+    "Paoscoto": {
+        "M\u00e9dina Sabakh": 2613.25,
+        "Mabo": 3828.63,
+        "Keur Mboucki": 5690.59,
+        "Wak Ngouna": 2443.79,
+        "Koumbal": 3115.38,
+        "Ndi\u00e9di\u00e9ng": 4025.02
+    },
+    "Wak Ngouna": {
+        "Djilor": 4866.07,
+        "Toubakouta": 4242.0356490374415,
+        "Paoscoto": 2443.79,
+        "Koumbal": 3876.12,
+        "Ndi\u00e9di\u00e9ng": 3036.84
+    },
+    "M\u00e9dina Sabakh": {
+        "Katakel": 4822.11,
+        "Mabo": 4396.61,
+        "Paoscoto": 2613.25,
+        "Bogal": 4064.06
+    },
+    "Bandafassi": {
+        "Dar Salam": 5259.1775624063375,
+        "Dakat\u00e9li": 4091.747392418638
+    },
+    "Fongolembi": {
+        "Bembou": 4572.234669274402
+    },
+    "Dar Salam": {
+        "Bandafassi": 5259.1775624063375,
+        "Dakat\u00e9li": 4721.67
+    },
+    "Dakat\u00e9li": {
+        "Dar Salam": 4721.67,
+        "Bandafassi": 4091.747392418638
+    },
+    "Sabodala": {},
+    "Bembou": {
+        "Fongolembi": 4572.234669274402
+    },
+    "Mampatim": {
+        "Sar\u00e9 Coly Sall\u00e9": 5850.1,
+        "Fafacourou": 4554.4
+    },
+    "Sar\u00e9 Bidji": {
+        "Ndorna": 2714.83,
+        "Niaming": 6917.49,
+        "Dioulacolon": 2378.58,
+        "Simbandi Brassou": 4616.85,
+        "Karantaba": 5605.6,
+        "Diend\u00e9": 4588.45
+    },
+    "Dioulacolon": {
+        "Ndorna": 4847.21,
+        "Sar\u00e9 Bidji": 2380.57,
+        "Simbandi Brassou": 4277.44,
+        "Karantaba": 6112.56
+    },
+    "Ndorna": {
+        "Niaming": 4762.11,
+        "Sar\u00e9 Bidji": 2714.83,
+        "Dioulacolon": 4845.21
+    },
+    "Niaming": {
+        "Ndorna": 4762.11,
+        "Sar\u00e9 Bidji": 6917.49,
+        "Fafacourou": 6684.25
+    },
+    "Fafacourou": {
+        "Mampatim": 4554.4,
+        "Niaming": 6684.25,
+        "Sar\u00e9 Coly Sall\u00e9": 6148.34
+    },
+    "Bonconto": {
+        "Pakour": 5629.71,
+        "Sar\u00e9 Coly Sall\u00e9": 5282.58
+    },
+    "Pakour": {
+        "Sar\u00e9 Coly Sall\u00e9": 6590.38,
+        "Bonconto": 5631.12
+    },
+    "Sar\u00e9 Coly Sall\u00e9": {
+        "Mampatim": 5850.1,
+        "Pakour": 6590.38,
+        "Fafacourou": 6148.34,
+        "Bonconto": 5282.58
+    },
+    "Ndande": {
+        "Sagata Geth": 3974.04,
+        "Sakal": 5544.21,
+        "Mb\u00e9di\u00e8ne": 4964.06,
+        "Niakh\u00e8ne": 6363.4,
+        "M\u00e9ouane": 5286.52,
+        "M\u00e9rina Dakhar": 4764.26
+    },
+    "Darou Mousty": {
+        "Ndindy": 5314.75,
+        "Ndame": 2635.32,
+        "Sagata Geth": 3201.93,
+        "Sagata Diolof": 4628.48,
+        "Koki": 4538.51,
+        "Niakh\u00e8ne": 5006.34
+    },
+    "Sagata Geth": {
+        "Ndande": 3974.04,
+        "Darou Mousty": 3201.95,
+        "Sakal": 4600.98,
+        "Koki": 3930.41,
+        "Mb\u00e9di\u00e8ne": 4020.83,
+        "Niakh\u00e8ne": 4192.58,
+        "M\u00e9rina Dakhar": 3821.03
+    },
+    "Yang-Yang": {
+        "Dodji": 7485.17
+    },
+    "Sagata Diolof": {
+        "Ndame": 2698.38,
+        "Ta\u00eff": 4819.27,
+        "Darou Mousty": 4626.04
+    },
+    "Bark\u00e9dji": {},
+    "Dodji": {
+        "Yang-Yang": 7485.17
+    },
+    "Keur Momar Sarr": {
+        "Koki": 4844.192392311967,
+        "Mb\u00e9di\u00e8ne": 5700.701936079547
+    },
+    "Koki": {
+        "Sagata Geth": 3930.39,
+        "Darou Mousty": 4538.51,
+        "Keur Momar Sarr": 4844.192392311967,
+        "Sakal": 3680.97,
+        "Mb\u00e9di\u00e8ne": 2717.97
+    },
+    "Mb\u00e9di\u00e8ne": {
+        "Rao": 3485.3,
+        "Sagata Geth": 4020.88,
+        "Ndande": 4964.11,
+        "Keur Momar Sarr": 5700.701936079547,
+        "Sakal": 2408.93,
+        "Koki": 2718.27
+    },
+    "Sakal": {
+        "Rao": 2396.48,
+        "Sagata Geth": 4600.98,
+        "Ndande": 5544.21,
+        "Koki": 3682.97,
+        "Mb\u00e9di\u00e8ne": 2410.62
+    },
+    "Ouro Sidi": {
+        "Orkadi\u00e9r\u00e9": 6529.71
+    },
+    "Orkadi\u00e9r\u00e9": {
+        "Ouro Sidi": 6529.71,
+        "Moud\u00e9ri": 4342.67
+    },
+    "Ogo": {
+        "Agnam Civol": 3938.0619517750797
+    },
+    "Agnam Civol": {
+        "Sald\u00e9": 5163.904317493176,
+        "Ogo": 3938.0619517750797
+    },
+    "V\u00e9lingara": {},
+    "Ndiaye Ng\u00e8nt": {
+        "Rao": 4383.8
+    },
+    "Mbane": {
+        "Thill\u00e9 Boubakar": 9459.37
+    },
+    "Gamadji Sarr\u00e9": {
+        "Thill\u00e9 Boubakar": 8592.89,
+        "Cas Cas": 6645.1
+    },
+    "Thill\u00e9 Boubakar": {
+        "Gamadji Sarr\u00e9": 8592.89,
+        "Mbane": 9459.37
+    },
+    "Sald\u00e9": {
+        "Cas Cas": 4564.3029024472535,
+        "Agnam Civol": 5163.904317493176
+    },
+    "Cas Cas": {
+        "Gamadji Sarr\u00e9": 6645.1,
+        "Sald\u00e9": 4564.3029024472535
+    },
+    "Rao": {
+        "Ndiaye Ng\u00e8nt": 4374.4,
+        "Sakal": 2396.48,
+        "Mb\u00e9di\u00e8ne": 3486.99
+    },
+    "Bona": {
+        "Bogal": 3697.63,
+        "Diaroum\u00e9": 4699.71,
+        "Djibabouya": 3561.8819799172875,
+        "Djir\u00e9dji": 7192.84,
+        "Diend\u00e9": 5124.57,
+        "Sindian": 4963.2
+    },
+    "Bogal": {
+        "M\u00e9dina Sabakh": 4061.8,
+        "Bona": 3697.63,
+        "Diaroum\u00e9": 3238.2,
+        "Diend\u00e9": 4056.84
+    },
+    "Diaroum\u00e9": {
+        "Bona": 4699.71,
+        "Simbandi Brassou": 7572.93,
+        "Bogal": 3238.2,
+        "Djibabouya": 5839.807733657774,
+        "Djir\u00e9dji": 6929.86,
+        "Karantaba": 6637.66,
+        "Diend\u00e9": 3008.81
+    },
+    "Simbandi Brassou": {
+        "Sar\u00e9 Bidji": 4618.84,
+        "Dioulacolon": 4277.44,
+        "Djibanar": 5261.02,
+        "Diaroum\u00e9": 7572.93,
+        "Djir\u00e9dji": 6761.08,
+        "Karantaba": 3451.1,
+        "Diend\u00e9": 5066.18
+    },
+    "Djibanar": {
+        "Simbandi Brassou": 5264.21,
+        "Djibabouya": 4294.676744054894,
+        "Djir\u00e9dji": 4987.44,
+        "Karantaba": 7917.61,
+        "Niaguis": 5112.110313360242
+    },
+    "Karantaba": {
+        "Sar\u00e9 Bidji": 5605.6,
+        "Dioulacolon": 6112.56,
+        "Simbandi Brassou": 3451.1,
+        "Djibanar": 7914.42,
+        "Diaroum\u00e9": 6637.66,
+        "Djir\u00e9dji": 7408.57,
+        "Diend\u00e9": 4130.9
+    },
+    "Diend\u00e9": {
+        "Sar\u00e9 Bidji": 4588.45,
+        "Bona": 5125.78,
+        "Simbandi Brassou": 5066.18,
+        "Bogal": 4055.22,
+        "Diaroum\u00e9": 3008.81,
+        "Djir\u00e9dji": 4430.35,
+        "Karantaba": 4130.9
+    },
+    "Djibabouya": {
+        "Bona": 3561.8819799172875,
+        "Djibanar": 4294.676744054894,
+        "Diaroum\u00e9": 5839.807733657774,
+        "Djir\u00e9dji": 2775.611345577497,
+        "Tanghori": 3950.7567585805214,
+        "Sindian": 4576.642291729273,
+        "Niaguis": 4675.109056632771
+    },
+    "Djir\u00e9dji": {
+        "Bona": 7194.05,
+        "Simbandi Brassou": 6761.08,
+        "Djibanar": 4987.44,
+        "Diaroum\u00e9": 6929.86,
+        "Djibabouya": 2775.611345577497,
+        "Karantaba": 7408.75,
+        "Diend\u00e9": 4430.53,
+        "Tanghori": 6532.74,
+        "Niaguis": 5188.608660410314
+    },
+    "K\u00e9ni\u00e9ba": {},
+    "Moud\u00e9ri": {
+        "Orkadi\u00e9r\u00e9": 4345.64,
+        "Bell\u00e9": 4927.24
+    },
+    "Bell\u00e9": {
+        "Moud\u00e9ri": 4932.72
+    },
+    "Diank\u00e9 Makan": {
+        "Bouinguel Bamba": 5184.082202665271
+    },
+    "Koular": {},
+    "Bala": {},
+    "Bouinguel Bamba": {
+        "Diank\u00e9 Makan": 5184.082202665271
+    },
+    "Koutiaba Wolof": {
+        "Lour Escale": 10781.69
+    },
+    "Bamba Tial\u00e8ne": {
+        "Ida Mouride": 3882.9
+    },
+    "Missira": {},
+    "Makacoutibantang": {},
+    "Koussanar": {},
+    "S\u00e9ss\u00e8ne": {
+        "Fissel": 3759.66,
+        "Sindia": 3153.57,
+        "Niakhar": 4586.86,
+        "Fimla": 3548.68,
+        "Tataguine": 3132.94,
+        "Niodior": 5998.268880188168,
+        "Thi\u00e9naba": 4983.11,
+        "Noto": 4848.27
+    },
+    "Sindia": {
+        "Fissel": 3704.29,
+        "Keur Moussa": 2725.63,
+        "S\u00e9ss\u00e8ne": 3213.23,
+        "Thiaroye": 3221.27,
+        "Diamniadio": 1769.14,
+        "N/A": 2741.96,
+        "Sangalkam": 2808.15,
+        "Rufisque-Est": 2832.58,
+        "Yeumbeul": 3102.6,
+        "Jaxaay": 2553.19,
+        "Malika": 2983.03,
+        "Pambal": 3602.9,
+        "Thi\u00e9naba": 3013.34,
+        "Noto": 2848.44
+    },
+    "Fissel": {
+        "Keur Moussa": 5510.39,
+        "S\u00e9ss\u00e8ne": 3759.66,
+        "Sindia": 3675.47,
+        "Ngoye": 3619.76,
+        "Baba Garage": 5980.4,
+        "Ndiob": 5696.79,
+        "Niakhar": 4448.43,
+        "Fimla": 4964.42,
+        "Tataguine": 3955.72,
+        "Lambaye": 4676.75,
+        "Pambal": 6387.66,
+        "Thi\u00e9naba": 3992.54,
+        "Noto": 3921.77
+    },
+    "Keur Moussa": {
+        "Fissel": 5495.42,
+        "Sindia": 2782.56,
+        "Grand Dakar": 2788.73,
+        "Parcelles Assainies": 2474.8,
+        "Thiaroye": 2602.2,
+        "Pikine Dagoudane": 2342.46,
+        "Dakar Plateau": 5833.000346546042,
+        "Gu\u00e9diawaye": 2398.75,
+        "Diamniadio": 1310.5,
+        "N/A": 2014.11,
+        "Sangalkam": 1487.66,
+        "Rufisque-Est": 2104.73,
+        "Yeumbeul": 2483.53,
+        "Jaxaay": 1934.12,
+        "Malika": 2363.96,
+        "Pambal": 2521.09,
+        "Thi\u00e9naba": 2618.04,
+        "Noto": 2417.71,
+        "M\u00e9ouane": 4230.44
+    },
+    "Thi\u00e9naba": {
+        "Fissel": 3992.54,
+        "Keur Moussa": 2615.33,
+        "S\u00e9ss\u00e8ne": 4983.11,
+        "Sindia": 3034.06,
+        "Ngoye": 1768.16,
+        "Baba Garage": 2801.73,
+        "Niakhar": 3359.91,
+        "Tataguine": 4926.09,
+        "Diamniadio": 2627.83,
+        "Lambaye": 2742.54,
+        "Pambal": 3020.28,
+        "Noto": 2367.18,
+        "M\u00e9ouane": 4589.43,
+        "M\u00e9rina Dakhar": 4637.42
+    },
+    "Noto": {
+        "Fissel": 3921.77,
+        "Keur Moussa": 2414.73,
+        "S\u00e9ss\u00e8ne": 4848.27,
+        "Sindia": 2848.44,
+        "Ngoye": 3763.92,
+        "Tataguine": 5342.43,
+        "Diamniadio": 2954.31,
+        "N/A": 3657.91,
+        "Sangalkam": 3147.98,
+        "Rufisque-Est": 3748.53,
+        "Lambaye": 4286.28,
+        "Jaxaay": 3469.15,
+        "Pambal": 2854.9,
+        "Thi\u00e9naba": 2367.18
+    },
+    "Niakh\u00e8ne": {
+        "Ndindy": 4707.93,
+        "Baba Garage": 4200.62,
+        "Lambaye": 5715.26,
+        "Sagata Geth": 4192.58,
+        "Ndande": 6363.4,
+        "Darou Mousty": 5004.11,
+        "M\u00e9ouane": 5983.13,
+        "M\u00e9rina Dakhar": 2329.69
+    },
+    "Pambal": {
+        "Fissel": 6351.51,
+        "Keur Moussa": 2515.73,
+        "Sindia": 3638.65,
+        "Baba Garage": 4646.98,
+        "Diamniadio": 3203.87,
+        "N/A": 3907.47,
+        "Sangalkam": 3381.02,
+        "Rufisque-Est": 3998.09,
+        "Lambaye": 4928.49,
+        "Jaxaay": 3747.26,
+        "Malika": 4177.09,
+        "Thi\u00e9naba": 3030.71,
+        "Noto": 2867.3,
+        "M\u00e9ouane": 3261.81,
+        "M\u00e9rina Dakhar": 3383.02
+    },
+    "M\u00e9ouane": {
+        "Keur Moussa": 4225.08,
+        "Baba Garage": 5591.27,
+        "Lambaye": 5872.78,
+        "Ndande": 5284.04,
+        "Niakh\u00e8ne": 5983.13,
+        "Pambal": 3261.81,
+        "Thi\u00e9naba": 4589.8,
+        "M\u00e9rina Dakhar": 4299.77
+    },
+    "M\u00e9rina Dakhar": {
+        "Ndindy": 4847.8,
+        "Ngoye": 5404.73,
+        "Baba Garage": 4005.63,
+        "Lambaye": 5531.58,
+        "Sagata Geth": 3821.03,
+        "Ndande": 4764.26,
+        "Niakh\u00e8ne": 2329.69,
+        "Pambal": 3383.02,
+        "Thi\u00e9naba": 4634.47,
+        "M\u00e9ouane": 4299.77
+    },
+    "Kataba 1": {
+        "Tanghori": 5961.675363077863,
+        "Loudia Wolof": 5510.142147832631,
+        "Tendouck": 3016.09627107007,
+        "Sindian": 5995.266099412972
+    },
+    "Tanghori": {
+        "Djibabouya": 3950.7567585805214,
+        "Djir\u00e9dji": 6531.52,
+        "Kataba 1": 5961.675363077863,
+        "Tendouck": 4252.02,
+        "Sindian": 3512.94,
+        "Niaguis": 2864.286925916437,
+        "Niassia": 3723.77
+    },
+    "Tendouck": {
+        "Kataba 1": 3016.09627107007,
+        "Tanghori": 4253.69,
+        "Loudia Wolof": 7594.25,
+        "Cabrousse": 7717.98,
+        "Sindian": 5542.14,
+        "Niaguis": 5281.878992808423,
+        "Niassia": 5912.84
+    },
+    "Sindian": {
+        "Bona": 4963.2,
+        "Djibabouya": 4576.642291729273,
+        "Kataba 1": 5995.266099412972,
+        "Tanghori": 3518.39,
+        "Tendouck": 5541.06
+    },
+    "Loudia Wolof": {
+        "Kataba 1": 5510.142147832631,
+        "Cabrousse": 1189.81,
+        "Tendouck": 7600.57,
+        "Niassia": 1681.35
+    },
+    "Cabrousse": {
+        "Loudia Wolof": 1189.81,
+        "Tendouck": 7723.11,
+        "Niassia": 1803.89
+    },
+    "Niaguis": {
+        "Djibanar": 5112.110313360242,
+        "Djibabouya": 4675.109056632771,
+        "Djir\u00e9dji": 5188.608660410314,
+        "Tanghori": 2864.286925916437,
+        "Tendouck": 5281.878992808423,
+        "Niassia": 3664.900467642096
+    },
+    "Niassia": {
+        "Tanghori": 3730.14,
+        "Loudia Wolof": 1681.41,
+        "Cabrousse": 1805.13,
+        "Tendouck": 5919.22,
+        "Niaguis": 3664.900467642096
+    }
+}

@@ -1,0 +1,320 @@
+{
+    "Bambadinca": {
+        "Gamamudo/Ganadu": 4432.1,
+        "Mansaba": 6889.88,
+        "Fulacunda": 10300.05,
+        "Mansoa": 4336.35,
+        "Xitole": 4370.411101383656,
+        "Buba": 6240.62,
+        "Galomaro/Cosse": 4632.01,
+        "Bafata": 3063.9
+    },
+    "Bedanda": {
+        "Quebo": 9183.37,
+        "Catio": 16918.23,
+        "Buba": 10103.25,
+        "Cacine": 8598.08,
+        "Empada": 4447.77001242313,
+        "Komo": 3775.012506595326
+    },
+    "Bigene": {
+        "Safim": 3919.45,
+        "Bissora": 4925.02,
+        "Bula": 3188.46,
+        "Cacheu/Calequisse": 6645.59,
+        "Canchungo": 5350.06
+    },
+    "Sector Autonomo de Bissau": {
+        "Mansoa": 4450.02,
+        "Nhacra": 2314.43,
+        "Quinhamel": 3140.01,
+        "Safim": 1530.44,
+        "Prabis": 1504.48,
+        "Bissora": 6121.58,
+        "Bula": 3841.3,
+        "Canchungo": 6002.91,
+        "Tite": 19748.88,
+        "Bolama": 19477.24
+    },
+    "Bissora": {
+        "Mansaba": 3423.76,
+        "Mansoa": 5596.19,
+        "Nhacra": 5566.61,
+        "Quinhamel": 8067.14,
+        "Safim": 5306.94,
+        "Prabis": 6978.67,
+        "Bigene": 4925.02,
+        "Sector Autonomo de Bissau": 6155.5,
+        "Bula": 4575.95
+    },
+    "Boe": {
+        "Gabu": 4652.195853332469
+    },
+    "Buba": {
+        "Fulacunda": 4059.45,
+        "Quebo": 2052.38,
+        "Xitole": 4326.874228306195,
+        "Catio": 7233.52,
+        "Bedanda": 10103.25,
+        "Bambadinca": 6240.62,
+        "Empada": 4326.006497189607,
+        "Tite": 7846.45
+    },
+    "Bula": {
+        "Nhacra": 3592.06,
+        "Quinhamel": 5769.5,
+        "Safim": 3009.3,
+        "Prabis": 4681.02,
+        "Bigene": 3171.09,
+        "Sector Autonomo de Bissau": 3857.86,
+        "Bissora": 4558.58,
+        "Caio": 5755.127256150033,
+        "Cacheu/Calequisse": 4856.54,
+        "Canchungo": 3561.01
+    },
+    "Cacheu/Calequisse": {
+        "Quinhamel": 9226.63,
+        "Sao Domingos": 3086.968306988699,
+        "Bigene": 6628.22,
+        "Caio": 3592.772493032342,
+        "Bula": 4856.54,
+        "Canchungo": 3725.52
+    },
+    "Cacine": {
+        "Catio": 15583.78,
+        "Bedanda": 8598.08,
+        "Komo": 4684.712398974765
+    },
+    "Caio": {
+        "Quinhamel": 4236.889117555561,
+        "Prabis": 5486.277311261811,
+        "Sao Domingos": 5992.648484188176,
+        "Bula": 5755.127256150033,
+        "Cacheu/Calequisse": 3592.772493032342,
+        "Canchungo": 2786.755068162209,
+        "Caravela": 5213.0589649519325
+    },
+    "Canchungo": {
+        "Quinhamel": 7927.18,
+        "Safim": 5166.98,
+        "Prabis": 6838.7,
+        "Sao Domingos": 5648.4496474014095,
+        "Bigene": 5328.77,
+        "Sector Autonomo de Bissau": 6015.54,
+        "Caio": 2786.755068162209,
+        "Bula": 3557.08,
+        "Cacheu/Calequisse": 3721.59
+    },
+    "Contuboel": {
+        "Gamamudo/Ganadu": 4993.44,
+        "Sonaco": 4867.48,
+        "Bafata": 5908.74
+    },
+    "Empada": {
+        "Fulacunda": 4448.215844694499,
+        "Catio": 2079.8968903441823,
+        "Bedanda": 4447.77001242313,
+        "Buba": 4326.006497189607,
+        "Tite": 3819.406766043932,
+        "Komo": 4018.060791699225,
+        "Bolama": 2948.5310784806134
+    },
+    "Farim": {
+        "Gamamudo/Ganadu": 6141.0,
+        "Mansaba": 3417.01
+    },
+    "Fulacunda": {
+        "Mansoa": 12859.74,
+        "Nhacra": 14264.28,
+        "Xitole": 5728.041847974215,
+        "Bambadinca": 10300.05,
+        "Buba": 4059.45,
+        "Empada": 4448.215844694499,
+        "Tite": 4988.09,
+        "Bolama": 4716.45
+    },
+    "Gabu": {
+        "Sonaco": 5792.86,
+        "Boe": 4652.195853332469,
+        "Galomaro/Cosse": 10482.73,
+        "Bafata": 6691.77
+    },
+    "Gamamudo/Ganadu": {
+        "Mansaba": 3340.83,
+        "Mansoa": 5838.93,
+        "Sonaco": 6656.23,
+        "Bambadinca": 4432.1,
+        "Farim": 6141.0,
+        "Contuboel": 4993.44,
+        "Galomaro/Cosse": 5602.79,
+        "Bafata": 2364.81
+    },
+    "Mansaba": {
+        "Gamamudo/Ganadu": 3340.83,
+        "Mansoa": 3912.75,
+        "Bambadinca": 6901.23,
+        "Bissora": 3415.75,
+        "Farim": 3417.01
+    },
+    "Mansoa": {
+        "Gamamudo/Ganadu": 5838.93,
+        "Mansaba": 3901.4,
+        "Fulacunda": 12859.74,
+        "Nhacra": 2752.41,
+        "Bambadinca": 4336.35,
+        "Sector Autonomo de Bissau": 4473.06,
+        "Bissora": 5584.84,
+        "Tite": 16646.74
+    },
+    "Nhacra": {
+        "Fulacunda": 14257.79,
+        "Mansoa": 2745.92,
+        "Quinhamel": 4242.62,
+        "Safim": 1482.43,
+        "Prabis": 3154.15,
+        "Sector Autonomo de Bissau": 2330.99,
+        "Bissora": 5572.6,
+        "Bula": 3592.06,
+        "Tite": 18044.79,
+        "Bolama": 17773.15
+    },
+    "Pirada": {
+        "Pitche": 6803.38,
+        "Sonaco": 5096.31
+    },
+    "Pitche": {
+        "Pirada": 6803.38
+    },
+    "Prabis": {
+        "Nhacra": 3142.3,
+        "Quinhamel": 3967.88,
+        "Safim": 2358.3,
+        "Sector Autonomo de Bissau": 1504.41,
+        "Bissora": 6949.45,
+        "Caio": 5486.277311261811,
+        "Bula": 4669.17,
+        "Canchungo": 6830.78,
+        "Tite": 20576.75,
+        "Bolama": 20305.11
+    },
+    "Quebo": {
+        "Xitole": 3133.1316753054894,
+        "Bedanda": 9183.37,
+        "Buba": 2052.38,
+        "Galomaro/Cosse": 6495.17
+    },
+    "Quinhamel": {
+        "Nhacra": 4244.83,
+        "Safim": 3460.84,
+        "Prabis": 3951.29,
+        "Sector Autonomo de Bissau": 3128.13,
+        "Bissora": 8051.98,
+        "Caio": 4236.889117555561,
+        "Bula": 5771.71,
+        "Cacheu/Calequisse": 9228.84,
+        "Canchungo": 7933.32,
+        "Tite": 21679.29
+    },
+    "Safim": {
+        "Nhacra": 1482.43,
+        "Quinhamel": 3458.63,
+        "Prabis": 2370.16,
+        "Bigene": 3902.08,
+        "Sector Autonomo de Bissau": 1546.99,
+        "Bissora": 5289.58,
+        "Bula": 3009.3,
+        "Canchungo": 5170.91,
+        "Tite": 18916.88,
+        "Bolama": 18645.24
+    },
+    "Sao Domingos": {
+        "Caio": 5992.648484188176,
+        "Cacheu/Calequisse": 3086.968306988699,
+        "Canchungo": 5648.4496474014095
+    },
+    "Sonaco": {
+        "Gamamudo/Ganadu": 6656.23,
+        "Gabu": 5792.86,
+        "Pirada": 5096.31,
+        "Contuboel": 4867.48,
+        "Bafata": 4753.79
+    },
+    "Xitole": {
+        "Fulacunda": 5728.041847974215,
+        "Quebo": 3133.1316753054894,
+        "Bambadinca": 4370.411101383656,
+        "Buba": 4326.874228306195,
+        "Galomaro/Cosse": 2918.2229120120196,
+        "Bafata": 5525.140774995642
+    },
+    "Catio": {
+        "Bedanda": 16918.23,
+        "Buba": 7233.52,
+        "Cacine": 15583.78,
+        "Empada": 2079.8968903441823,
+        "Tite": 15079.95,
+        "Komo": 2178.643784123402,
+        "Bolama": 14808.31
+    },
+    "Komo": {
+        "Catio": 2178.643784123402,
+        "Bedanda": 3775.012506595326,
+        "Cacine": 4684.712398974765,
+        "Empada": 4018.060791699225,
+        "Bolama": 5615.167886965688
+    },
+    "Bafata": {
+        "Gamamudo/Ganadu": 2364.81,
+        "Gabu": 6691.77,
+        "Xitole": 5525.140774995642,
+        "Sonaco": 4753.79,
+        "Bambadinca": 3063.9,
+        "Contuboel": 5908.74,
+        "Galomaro/Cosse": 4234.59
+    },
+    "Galomaro/Cosse": {
+        "Gamamudo/Ganadu": 5602.79,
+        "Gabu": 10482.73,
+        "Quebo": 6495.17,
+        "Xitole": 2918.2229120120196,
+        "Bambadinca": 4632.01,
+        "Bafata": 4234.59
+    },
+    "Tite": {
+        "Fulacunda": 4988.09,
+        "Mansoa": 16646.74,
+        "Nhacra": 18051.28,
+        "Quinhamel": 21683.57,
+        "Safim": 18923.37,
+        "Prabis": 20595.09,
+        "Catio": 15079.95,
+        "Buba": 7846.45,
+        "Sector Autonomo de Bissau": 19771.93,
+        "Empada": 3819.406766043932,
+        "Bolama": 2113.29
+    },
+    "Caravela": {
+        "Caio": 5213.0589649519325,
+        "Bubaque": 5505.6181336039745,
+        "Uno": 4249.0682035701175
+    },
+    "Uno": {
+        "Bubaque": 3875.3534591727507,
+        "Caravela": 4249.0682035701175
+    },
+    "Bubaque": {
+        "Caravela": 5505.6181336039745,
+        "Uno": 3875.3534591727507
+    },
+    "Bolama": {
+        "Fulacunda": 4716.45,
+        "Nhacra": 17779.64,
+        "Safim": 18651.73,
+        "Prabis": 20323.45,
+        "Catio": 14808.31,
+        "Sector Autonomo de Bissau": 19500.29,
+        "Empada": 2948.5310784806134,
+        "Tite": 2113.29,
+        "Komo": 5615.167886965688
+    }
+}
