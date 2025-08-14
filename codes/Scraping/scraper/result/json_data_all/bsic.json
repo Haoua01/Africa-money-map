@@ -111,52 +111,68 @@
         "Longitude": -6.248298399999999,
         "geocoded": 1
     },
-    {
+        {
         "bank": "bsic",
         "country": "benin",
-        "address": "BSIC - AGENCE CENTRALE - PK 0 centre ville - Benin",
-        "Latitude": 9.30769,
-        "Longitude": 2.315834,
+        "address": "PK 0 centre ville",
+        "Latitude": 6.3562425,
+        "Longitude": 2.4277995,
         "geocoded": 1
     },
     {
         "bank": "bsic",
         "country": "benin",
-        "address": "BSIC - BOGANDA - Avenue Barthélemy BOGANDA - Benin",
-        "Latitude": 9.30769,
-        "Longitude": 2.315834,
+        "address": "Avenue KOUDOUKOU",
+        "Latitude": 6.3562425,
+        "Longitude": 2.4277995,
         "geocoded": 1
     },
     {
         "bank": "bsic",
         "country": "benin",
-        "address": "BSIC - AEROPORT - Avenue des Martyrs - Benin",
-        "Latitude": 9.30769,
-        "Longitude": 2.315834,
+        "address": "Avenue Barthélemy BOGANDA",
+        "Latitude": 6.3562425,
+        "Longitude": 2.4277995,
         "geocoded": 1
     },
     {
         "bank": "bsic",
         "country": "benin",
-        "address": "BSIC - LEDGER - Avenue de l’Indépendance - Benin",
-        "Latitude": 9.30769,
-        "Longitude": 2.315834,
+        "address": "Avenue des Martyrs",
+        "Latitude": 6.3562425,
+        "Longitude": 2.4277995,
         "geocoded": 1
     },
     {
         "bank": "bsic",
         "country": "benin",
-        "address": "BSIC - BOUAR - Centre ville - Benin",
-        "Latitude": 9.30769,
-        "Longitude": 2.315834,
+        "address": "Avenue Barthélemy BOGANDA",
+        "Latitude": 6.3562425,
+        "Longitude": 2.4277995,
         "geocoded": 1
     },
     {
         "bank": "bsic",
         "country": "benin",
-        "address": "BSIC - ESPACE PRESTIGE-BSIC - Avenue MOBUTU Centre ville - Benin",
-        "Latitude": 9.30769,
-        "Longitude": 2.315834,
+        "address": "Avenue de l’Indépendance",
+        "Latitude": 6.3562425,
+        "Longitude": 2.4277995,
+        "geocoded": 1
+    },
+    {
+        "bank": "bsic",
+        "country": "benin",
+        "address": "Centre ville",
+        "Latitude": 6.3562425,
+        "Longitude": 2.4277995,
+        "geocoded": 1
+    },
+    {
+        "bank": "bsic",
+        "country": "benin",
+        "address": "Avenue MOBUTU Centre ville",
+        "Latitude": 6.3562425,
+        "Longitude": 2.4277995,
         "geocoded": 1
     },
     {

@@ -1,42 +1,66 @@
 [
     {
-        "agence": "BSIC - AGENCE CENTRALE - PK 0 centre ville - Benin",
-        "Latitude": "",
-        "Longitude": ""
+        "bank": "bsic",
+        "country": "benin",
+        "address": "PK 0 centre ville",
+        "Latitude": 6.3562425,
+        "Longitude": 2.4277995,
+        "geocoded": 1
     },
     {
-        "agence": "BSIC - KM 5 - Avenue KOUDOUKOU - Benin",
-        "Latitude": "",
-        "Longitude": ""
+        "bank": "bsic",
+        "country": "benin",
+        "address": "Avenue KOUDOUKOU",
+        "Latitude": 6.3562425,
+        "Longitude": 2.4277995,
+        "geocoded": 1
     },
     {
-        "agence": "BSIC - BOGANDA - Avenue Barthélemy BOGANDA - Benin",
-        "Latitude": "",
-        "Longitude": ""
+        "bank": "bsic",
+        "country": "benin",
+        "address": "Avenue Barthélemy BOGANDA",
+        "Latitude": 6.3562425,
+        "Longitude": 2.4277995,
+        "geocoded": 1
     },
     {
-        "agence": "BSIC - AEROPORT - Avenue des Martyrs - Benin",
-        "Latitude": "",
-        "Longitude": ""
+        "bank": "bsic",
+        "country": "benin",
+        "address": "Avenue des Martyrs",
+        "Latitude": 6.3562425,
+        "Longitude": 2.4277995,
+        "geocoded": 1
     },
     {
-        "agence": "BSIC - LAKOUANGA - Avenue Barthélemy BOGANDA - Benin",
-        "Latitude": "",
-        "Longitude": ""
+        "bank": "bsic",
+        "country": "benin",
+        "address": "Avenue Barthélemy BOGANDA",
+        "Latitude": 6.3562425,
+        "Longitude": 2.4277995,
+        "geocoded": 1
     },
     {
-        "agence": "BSIC - LEDGER - Avenue de l’Indépendance - Benin",
-        "Latitude": "",
-        "Longitude": ""
+        "bank": "bsic",
+        "country": "benin",
+        "address": "Avenue de l’Indépendance",
+        "Latitude": 6.3562425,
+        "Longitude": 2.4277995,
+        "geocoded": 1
     },
     {
-        "agence": "BSIC - BOUAR - Centre ville - Benin",
-        "Latitude": "",
-        "Longitude": ""
+        "bank": "bsic",
+        "country": "benin",
+        "address": "Centre ville",
+        "Latitude": 6.3562425,
+        "Longitude": 2.4277995,
+        "geocoded": 1
     },
     {
-        "agence": "BSIC - ESPACE PRESTIGE-BSIC - Avenue MOBUTU Centre ville - Benin",
-        "Latitude": "",
-        "Longitude": ""
+        "bank": "bsic",
+        "country": "benin",
+        "address": "Avenue MOBUTU Centre ville",
+        "Latitude": 6.3562425,
+        "Longitude": 2.4277995,
+        "geocoded": 1
     }
 ]

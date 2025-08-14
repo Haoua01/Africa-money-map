@@ -2,7 +2,7 @@ import json
 import os
 
 # Path to your folder with JSON files
-folder_path = "/workspaces/Africa-money-map/codes/Scraping/json_data_all"
+folder_path = "/workspaces/Africa-money-map/codes/Scraping/scraper/result/json_data_all"
 
 combined_data = []
 

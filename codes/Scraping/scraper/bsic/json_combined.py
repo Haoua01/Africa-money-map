@@ -76,15 +76,26 @@ import pandas as pd
 data = []
 
 for country, country_info in all_data.items():
-    for branch in country_info:
-        data.append({
-            "bank": "bsic",
-            "country": country,
-            "address": branch["agence"][:80],
-            "Latitude": branch["Latitude"],
-            "Longitude": branch["Longitude"],
-            "geocoded": 1
-        })
+    if country=="benin":
+        for branch in country_info:
+            data.append({
+                "bank": "bsic",
+                "country": "benin",
+                "address": branch["address"][:80],
+                "Latitude": branch["Latitude"],
+                "Longitude": branch["Longitude"],
+                "geocoded": 1
+            })
+    else:
+        for branch in country_info:
+            data.append({
+                "bank": "bsic",
+                "country": country,
+                "address": branch["agence"][:80],
+                "Latitude": branch["Latitude"],
+                "Longitude": branch["Longitude"],
+                "geocoded": 1
+            })
 
 df = pd.DataFrame(data)
 with open('result/json_data_all/bsic.json', 'w', encoding='utf-8') as f:
