@@ -1,0 +1,221 @@
+{
+    "Senegal": [
+        {
+            "Name": "Agence Principale",
+            "Address": "Boulevard Général De Gaulle",
+            "Phone": "Téléphone: +221 33 839 33 33",
+            "Latitude": 14.6928497,
+            "Longitude": -17.4476463
+        },
+        {
+            "Name": "Agence des Sénégalais de l'Extérieur",
+            "Address": "Boulevard Général De Gaulle",
+            "Phone": "Téléphone: +221 33 839 09 98",
+            "Latitude": 14.6928497,
+            "Longitude": -17.4476463
+        },
+        {
+            "Name": "Agence Parcelles Assainies",
+            "Address": "U.14 N° 349 – route des Niayes",
+            "Phone": "Téléphone: +221 33 855 03 00 / 03",
+            "Latitude": 14.7548364,
+            "Longitude": -17.4319071
+        },
+        {
+            "Name": "Agence Harlem",
+            "Address": "2092 8th Avenue, NY 10026",
+            "Phone": "Téléphone: +1 212 447-1200",
+            "Latitude": 40.8025362,
+            "Longitude": -73.9563743
+        },
+        {
+            "Name": "Agence Bourguiba",
+            "Address": "Avenue Bourguiba - Liberté 1",
+            "Phone": "Téléphone: +221 33 839 38 50",
+            "Latitude": 14.7089554,
+            "Longitude": -17.458503
+        },
+        {
+            "Name": "Agence Brooklyn",
+            "Address": "1186 Fulton Street",
+            "Phone": "Téléphone: +1 718 789-1007",
+            "Latitude": 40.6805417,
+            "Longitude": -73.9537072
+        },
+        {
+            "Name": "Agence Zénith",
+            "Address": "VDN Pyrotechnie",
+            "Phone": "Téléphone: +221 33 864 99 99",
+            "Latitude": 14.7098978,
+            "Longitude": -17.47115
+        },
+        {
+            "Name": "Agence Columbus",
+            "Address": "4224 Eastland Square Drive",
+            "Phone": "Téléphone: +1 614 576-9075",
+            "Latitude": 39.9138145,
+            "Longitude": -82.8835469
+        },
+        {
+            "Name": "Espace Immobilier et Conseils",
+            "Address": "Avenue Bourguiba - Liberté 1",
+            "Phone": "Téléphone: +221 33 839 38 50",
+            "Latitude": 14.7089554,
+            "Longitude": -17.458503
+        },
+        {
+            "Name": "Philadelphia",
+            "Address": "535 South 52ND Street, Philadelphia, PA 19143",
+            "Phone": "Téléphone: +1 215 863 8002",
+            "Latitude": 39.9508222,
+            "Longitude": -75.22663539999999
+        },
+        {
+            "Name": "Agence Rufisque",
+            "Address": "Route des HLM ex Camp Lelong",
+            "Phone": "Téléphone: +221 33 836 46 64",
+            "Latitude": 14.71554,
+            "Longitude": -17.270929
+        },
+        {
+            "Name": "Agence Hôpital Principal de Dakar",
+            "Address": "1, avenue Nelson Mandela",
+            "Phone": "Téléphone: +221 33 839 02 90",
+            "Latitude": 14.6623058,
+            "Longitude": -17.4351994
+        },
+        {
+            "Name": "Agence Thiès",
+            "Address": "Av. L. Sédar Senghor",
+            "Phone": "Téléphone: +221 33 951 79 00/ 01",
+            "Latitude": 14.7910052,
+            "Longitude": -16.9358604
+        },
+        {
+            "Name": "Agence Cheikh Anta Diop",
+            "Address": "Avenue Cheikh Anta Diop, Face police 4ème arrondissement",
+            "Phone": "Téléphone: +221 33 821 02 73",
+            "Latitude": 14.716677,
+            "Longitude": -17.4676861
+        },
+        {
+            "Name": "Agence Mbour",
+            "Address": "Grand Mbour, Face gare routière",
+            "Phone": "Téléphone: +221 33 939 71 91/ 92",
+            "Latitude": 14.4259422,
+            "Longitude": -16.9720901
+        },
+        {
+            "Name": "Agence Pikine",
+            "Address": "Route des Niayes en face du Lycée ‘’Canada’’",
+            "Phone": "Téléphone: +221 33 839 38 64 / 66",
+            "Latitude": 14.716677,
+            "Longitude": -17.4676861
+        },
+        {
+            "Name": "BHS Kaolack",
+            "Address": "Croisement Médina Baye, Quartier Leona lot 48",
+            "Phone": "Téléphone: 33 938 47 00/ 01/ 02",
+            "Latitude": 14.1652083,
+            "Longitude": -16.0757749
+        },
+        {
+            "Name": "Agence BHS Louga",
+            "Address": "Avenue de la gare, en face de la Police",
+            "Phone": "Téléphone: +221 33 967 12 33",
+            "Latitude": 15.6141768,
+            "Longitude": -16.22868
+        },
+        {
+            "Name": "Agence Touba",
+            "Address": "Touba Khaïra, Rte de la Mosquée",
+            "Phone": "Téléphone: +221 33 978 33 65/ 64",
+            "Latitude": 14.8489209,
+            "Longitude": -15.8732441
+        },
+        {
+            "Name": "Agence BHS Sédhiou",
+            "Address": "Quartier Escale, derrière Pharmacie le Pakao",
+            "Phone": "Téléphone: +221 33 995 10 40",
+            "Latitude": 12.7088876,
+            "Longitude": -15.5518471
+        },
+        {
+            "Name": "Fatick",
+            "Address": "Boulevard Macky SALL",
+            "Phone": "Téléphone: +221 33 949 23 30",
+            "Latitude": 14.3390167,
+            "Longitude": -16.4111425
+        },
+        {
+            "Name": "Agence Kaffrine",
+            "Address": "Quartier Escale, lot 49/D - Marché Central",
+            "Phone": "Téléphone: +221 33 937 98 00",
+            "Latitude": 14.1043968,
+            "Longitude": -15.5498756
+        },
+        {
+            "Name": "Agence de Richard Toll",
+            "Address": "Route nationale immeuble Souleymane TIRERA",
+            "Phone": "Téléphone: +221 33 938 29 50",
+            "Latitude": 16.4588779,
+            "Longitude": -15.6940454
+        },
+        {
+            "Name": "Agence Matam",
+            "Address": "Quartier Tantadji, Immeuble Mamadou Mory Diaw",
+            "Phone": "Téléphone: 33 966 31 66",
+            "Latitude": 15.6576383,
+            "Longitude": -13.2571138
+        },
+        {
+            "Name": "Agence Saint-Louis",
+            "Address": "Darou Sor - Route de Khor",
+            "Phone": "Téléphone: +221 33 961 61 61/ 62",
+            "Latitude": 16.0326307,
+            "Longitude": -16.4818167
+        },
+        {
+            "Name": "Agence Ourossogui",
+            "Address": "Route Nationale N°2, Quartier Moderne - Station SHELL",
+            "Phone": "Téléphone: 33 938 27 30",
+            "Latitude": 15.6091968,
+            "Longitude": -13.3198402
+        },
+        {
+            "Name": "Agence Ziguinchor",
+            "Address": "449, rue du Capitaine Javelier",
+            "Phone": "Téléphone: +221 33 991 18 51/ 53",
+            "Latitude": 12.5641479,
+            "Longitude": -16.2639825
+        },
+        {
+            "Name": "Agence Linguère",
+            "Address": "Quartier Escale",
+            "Phone": "Téléphone: 33 968 12 92",
+            "Latitude": 15.3958701,
+            "Longitude": -15.1109574
+        },
+        {
+            "Name": "BHS Baltimore",
+            "Address": "5814 York Rd,  Baltimore, MD 21212",
+            "Phone": "Téléphone: +1 410 387-2276",
+            "Latitude": 39.3614639,
+            "Longitude": -76.610098
+        },
+        {
+            "Name": "Agence Kermel",
+            "Address": "13, Rue Dagorne x Thann",
+            "Phone": "Téléphone: +221 33 839 43 31",
+            "Latitude": 14.716677,
+            "Longitude": -17.4676861
+        },
+        {
+            "Name": "Agence Paris",
+            "Address": "37, Boulevard de Strasbourg 75010 Paris",
+            "Phone": "Téléphone: + 33 1 40 37 02 16",
+            "Latitude": 48.87163049999999,
+            "Longitude": 2.3552183
+        }
+    ]
+}

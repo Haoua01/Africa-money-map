@@ -1,0 +1,59 @@
+{
+    "Togo": [
+        {
+            "Branch": "Succursale des particuliers et des professionnels",
+            "Latitude": 6.125159,
+            "Longitude": 1.2242336
+        },
+        {
+            "Branch": "Agence de BE",
+            "Latitude": 6.140467,
+            "Longitude": 1.2398909
+        },
+        {
+            "Branch": "Agence Zongo",
+            "Latitude": 6.135653,
+            "Longitude": 1.2227566
+        },
+        {
+            "Branch": "Agence de Tokoin",
+            "Latitude": 6.1299652,
+            "Longitude": 1.2241548
+        },
+        {
+            "Branch": "Agence Hedjranawoe",
+            "Latitude": 6.1829723,
+            "Longitude": 1.2409192
+        },
+        {
+            "Branch": "Agence de Baguida",
+            "Latitude": 6.1778508,
+            "Longitude": 1.3418187
+        },
+        {
+            "Branch": "Agence d'Aristos",
+            "Latitude": 6.1260249,
+            "Longitude": 1.2235066
+        },
+        {
+            "Branch": "Agence d'Adidogomé",
+            "Latitude": 6.1813732,
+            "Longitude": 1.1706303
+        },
+        {
+            "Branch": "Agence de Baguida",
+            "Latitude": 6.1778508,
+            "Longitude": 1.3418187
+        },
+        {
+            "Branch": "Agence de KARA",
+            "Latitude": 9.5486112,
+            "Longitude": 1.1977158
+        },
+        {
+            "Branch": "Angle Rue des Alliés n°1043 et Rue Comme n°1108Atakpamé - Togo(+228) 24 40 01 92Fax",
+            "Latitude": null,
+            "Longitude": null
+        }
+    ]
+}

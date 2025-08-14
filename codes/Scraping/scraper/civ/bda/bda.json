@@ -1,0 +1,149 @@
+{
+    "cotedivoire": [
+        {
+            "name": "PLATEAU SIEGE",
+            "Longitude": -4.0212127,
+            "Latitude": 5.3242205
+        },
+        {
+            "name": "PLATEAU PRINCIPALE",
+            "Longitude": -4.0212127,
+            "Latitude": 5.3242205
+        },
+        {
+            "name": "ABOBO CIT\u00c9 UNIVERSITAIRE",
+            "Longitude": -5.6383598,
+            "Latitude": 6.5101633
+        },
+        {
+            "name": "YOPOUGON SIPOREX",
+            "Longitude": -4.0763086,
+            "Latitude": 5.3520068
+        },
+        {
+            "name": "RIVIERA CASINO",
+            "Longitude": -4.0212127,
+            "Latitude": 5.3242205
+        },
+        {
+            "name": "KOUMASSI",
+            "Longitude": -3.9715894,
+            "Latitude": 5.2903896
+        },
+        {
+            "name": "TREICHVILLE MOSQU\u00c9E",
+            "Longitude": -4.0160904,
+            "Latitude": 5.3065493
+        },
+        {
+            "name": "PORT-BOU\u00cbT",
+            "Longitude": -3.9667939,
+            "Latitude": 5.2589375
+        },
+        {
+            "name": "COCODY CIT\u00c9 ROUGE",
+            "Longitude": -4.0067717,
+            "Latitude": 5.3393583
+        },
+        {
+            "name": "MARCORY",
+            "Longitude": -3.9901698,
+            "Latitude": 5.3073689
+        },
+        {
+            "name": "TREICHVILLE - SOLIBRA",
+            "Longitude": -3.9982892,
+            "Latitude": 5.3009313
+        },
+        {
+            "name": "ADJAM\u00c9 220 LOGEMENTS",
+            "Longitude": -4.0171505,
+            "Latitude": 5.3492833
+        },
+        {
+            "name": "GRAND BASSAM",
+            "Longitude": -3.7384844,
+            "Latitude": 5.2073711
+        },
+        {
+            "name": "BINGERVILLE",
+            "Longitude": -3.8914082,
+            "Latitude": 5.3573663
+        },
+        {
+            "name": "ABOBO MAIRIE",
+            "Longitude": -4.0191082,
+            "Latitude": 5.4210852
+        },
+        {
+            "name": "YOPOUGON NIANGON",
+            "Longitude": -4.0941606,
+            "Latitude": 5.3266594
+        },
+        {
+            "name": "ATT\u00c9COUB\u00c9",
+            "Longitude": -4.042612,
+            "Latitude": 5.3361908
+        },
+        {
+            "name": "ANYAMA",
+            "Longitude": -4.0535589,
+            "Latitude": 5.4950326
+        },
+        {
+            "name": "COCODY VALLON",
+            "Longitude": -4.0229478,
+            "Latitude": 5.3394722
+        },
+        {
+            "name": "ABOBO GARE",
+            "Longitude": -4.017462,
+            "Latitude": 5.4224283
+        },
+        {
+            "name": "RIVIERA CASINO",
+            "Longitude": -3.9785813,
+            "Latitude": 5.3394429
+        },
+        {
+            "name": "ZONE 4",
+            "Longitude": -3.9785136,
+            "Latitude": 5.2813482
+        },
+        {
+            "name": "YAMOUSSOUKRO",
+            "Longitude": -5.269025,
+            "Latitude": 6.8137143
+        },
+        {
+            "name": "BOUAK\u00c9",
+            "Longitude": -5.6399762,
+            "Latitude": 6.5212673
+        },
+        {
+            "name": "DALOA",
+            "Longitude": -6.452727,
+            "Latitude": 6.8857871
+        },
+        {
+            "name": "SAN PEDRO",
+            "Longitude": -6.6335288,
+            "Latitude": 4.7464777
+        },
+        {
+            "name": "SOUBRE",
+            "Longitude": -6.607325,
+            "Latitude": 5.7830278
+        },
+        {
+            "name": "KORHOGO",
+            "Longitude": -5.6330889,
+            "Latitude": 9.4546297
+        },
+        {
+            "name": "ABENGOUROU",
+            "Longitude": -3.4875902,
+            "Latitude": 6.7303171
+        }
+    ]
+}

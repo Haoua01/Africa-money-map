@@ -1,0 +1,151 @@
+{
+    "benin": [
+        {
+            "agency_name": "Si\u00e8ge",
+            "address": "Rue 308 du R\u00e9v\u00e9rend P\u00e8re Colineau \u2013 Ganhi, Cotonou, Benin",
+            "maps_link": "https://maps.google.com/?q=6.356294\u00b0,2.437337\u00b0",
+            "Latitude": 6.356294,
+            "Longitude": 2.437337
+        },
+        {
+            "agency_name": "Agence Akpakpa",
+            "address": "LOT : 2210 Parcelle \"K \"Sacr\u00e9-C\u0153ur, Cotonou, Benin",
+            "maps_link": "https://maps.google.com/?q=6.371641\u00b0,2.447834\u00b0",
+            "Latitude": 6.371641,
+            "Longitude": 2.447834
+        },
+        {
+            "agency_name": "Agence Bohicon",
+            "address": "Qtier Gankou Ponsa,  Rte de la Gare, Maison Avononmad\u00e9gb\u00e9 Dominique, Bohicon, Benin",
+            "maps_link": "https://maps.google.com/?q=6.358452\u00b0,2.437913\u00b0",
+            "Latitude": 6.358452,
+            "Longitude": 2.437913
+        },
+        {
+            "agency_name": "Agence Calavi",
+            "address": "Parcelle M, Lot N\u00b0151, Dangb\u00e9dja Arrondissement de Calavi, Calavi, Benin",
+            "maps_link": "https://maps.google.com/?q=6.457743\u00b0,2.356625\u00b0",
+            "Latitude": 6.457743,
+            "Longitude": 2.356625
+        },
+        {
+            "agency_name": "Agence Cocotiers",
+            "address": "LOT \"G \"00629 Route de l\u2019A\u00e9roport, Face Minist\u00e8re des Finances et de l\u2019Economie, Cotonou, Benin",
+            "maps_link": "https://maps.google.com/?q=6.354130\u00b0,2.392955\u00b0",
+            "Latitude": 6.35413,
+            "Longitude": 2.392955
+        },
+        {
+            "agency_name": "Agence Cocotomey",
+            "address": "Cocotomey, Parcelle J du lot \u2018\u201961\u2019\u2019 EL 14231 du Lotissement de Godomey, Calavi, Benin",
+            "maps_link": null,
+            "Latitude": 6.3866697,
+            "Longitude": 2.2975183
+        },
+        {
+            "agency_name": "Agence Fidjross\u00e8",
+            "address": "Carr\u00e9 1665 Adjaha Fidjross\u00e8 Avenue de la Francophonie, Cotonou, Benin",
+            "maps_link": "https://maps.google.com/?q=6.361144\u00b0,2.375934\u00b0",
+            "Latitude": 6.361144,
+            "Longitude": 2.375934
+        },
+        {
+            "agency_name": "Agence Ganhi",
+            "address": "Zone Commerciale Ganhi, face Librairie SONAEC Lot 526 - Quartier Placodji-Kpodji, Cotonou, Benin",
+            "maps_link": "https://maps.google.com/?q=6.354190\u00b0,2.436568\u00b0",
+            "Latitude": 6.35419,
+            "Longitude": 2.436568
+        },
+        {
+            "agency_name": "Agence Habitat",
+            "address": "Maison TOI, Quartier OHE Akpakpa Lot N\u00b0 59 (Rond-point N\u00e8gre Akpakpa), Cotonou, Benin",
+            "maps_link": "https://maps.google.com/?q=6.363382\u00b0,2.446169\u00b0",
+            "Latitude": 6.363382,
+            "Longitude": 2.446169
+        },
+        {
+            "agency_name": "Agence Hilacondji",
+            "address": "Lot 35, Parcelle \u00ab a, b, c \u00bb, Grand-Popo, Benin",
+            "maps_link": null,
+            "Latitude": 6.2639324,
+            "Longitude": 1.7417143
+        },
+        {
+            "agency_name": "Agence Houdegbe",
+            "address": "PK10, HOUDEGBE, Route de Porto-Novo, Route de Porto-Novo, Benin",
+            "maps_link": "https://maps.google.com/?q=6.366832\u00b0,2.521421\u00b0",
+            "Latitude": 6.366832,
+            "Longitude": 2.521421
+        },
+        {
+            "agency_name": "Agence Kindonnou",
+            "address": "Carr\u00e9 AM 3514 KINDONOU, Cotonou, Cotonou, Benin",
+            "maps_link": "https://maps.google.com/?q=6.388279\u00b0,2.364179\u00b0",
+            "Latitude": 6.388279,
+            "Longitude": 2.364179
+        },
+        {
+            "agency_name": "Agence Missebo",
+            "address": "Parcelle D, Lot 178, Missebo, Cotonou, Benin",
+            "maps_link": "https://maps.google.com/?q=6.366112\u00b0,2.433468\u00b0",
+            "Latitude": 6.366112,
+            "Longitude": 2.433468
+        },
+        {
+            "agency_name": "Agence Ouando",
+            "address": "Avenue du cinquantenaire Parcelle \"K \", Lot 4-485, Quartier Ouando, Porto-Novo, Benin",
+            "maps_link": null,
+            "Latitude": 6.478623799999999,
+            "Longitude": 2.6203212
+        },
+        {
+            "agency_name": "Agence Parakou",
+            "address": "LOT : 179 Parcelle \"A \"Quartier BAKINKOURA, Parakou, Benin",
+            "maps_link": "https://maps.google.com/?q=6.357738\u00b0,2.434244\u00b0",
+            "Latitude": 6.357738,
+            "Longitude": 2.434244
+        },
+        {
+            "agency_name": "Agence Porto-Novo",
+            "address": "Quartier Avakpa Arrondissement de Djassin, Porto-Novo, Benin",
+            "maps_link": "https://maps.google.com/?q=6.482048\u00b0,2.610982\u00b0",
+            "Latitude": 6.482048,
+            "Longitude": 2.610982
+        },
+        {
+            "agency_name": "Agence St Michel",
+            "address": "Parcelle \"h \"Lot 557 Qtier St MICHEL, Cotonou, Cotonou, Benin",
+            "maps_link": "https://maps.google.com/?q=6.368397\u00b0,2.428553\u00b0",
+            "Latitude": 6.368397,
+            "Longitude": 2.428553
+        },
+        {
+            "agency_name": "Agence Ste Rita",
+            "address": "Ilot 1073 Parcelle O Quartier Agbondj\u00e8do 8\u00e8 arrondissement, Cotonou, Benin",
+            "maps_link": "https://maps.google.com/?q=6.375196\u00b0,2.413155\u00b0",
+            "Latitude": 6.375196,
+            "Longitude": 2.413155
+        },
+        {
+            "agency_name": "Agence Steinmetz",
+            "address": "Quartier Atinkanmey, Parcelle C Lot 119, Cotonou, Benin",
+            "maps_link": "https://maps.google.com/?q=6.359997\u00b0,2.435216\u00b0",
+            "Latitude": 6.359997,
+            "Longitude": 2.435216
+        },
+        {
+            "agency_name": "Agence UNAFRICA",
+            "address": "Quartier Mifongou, Zongo lot 417 Parcelle \u00ab P \u00bb 1400 Boulevard St Michel &756 Avenue Olory Togbe, Cotonou, Benin",
+            "maps_link": "https://maps.google.com/?q=6.357653\u00b0,2.423944\u00b0",
+            "Latitude": 6.357653,
+            "Longitude": 2.423944
+        },
+        {
+            "agency_name": "Agence Vedoko",
+            "address": "Quartier Tonato lot 1303 Parcelle \u00ab R \u00bb, Cotonou, Benin",
+            "maps_link": "https://maps.google.com/?q=6.377149\u00b0,2.395382\u00b0",
+            "Latitude": 6.377149,
+            "Longitude": 2.395382
+        }
+    ]
+}

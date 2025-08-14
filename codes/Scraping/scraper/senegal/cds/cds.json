@@ -1,0 +1,39 @@
+{
+    "senegal": [
+        {
+            "agence": "Agence Léopold S.Senghor: Avenue Léopold S.Senghor",
+            "Latitude": 14.716677,
+            "Longitude": -17.4676861
+        },
+        {
+            "agence": "Agence Zone industrielle: Km3 Bvd du centenaire de",
+            "Latitude": 14.6995099,
+            "Longitude": -17.4351532
+        },
+        {
+            "agence": "Agence Grand YofLiberté VI extension x route de ga",
+            "Latitude": 14.7471263,
+            "Longitude": -17.4902556
+        },
+        {
+            "agence": "Agence Mermoz: AV Cheikh Anta Diop cote Ste le Mer",
+            "Latitude": 14.7034173,
+            "Longitude": -17.4746142
+        },
+        {
+            "agence": "Agence Bourguiba: Sicap Baobap Villa N528, Avenue ",
+            "Latitude": 14.7078265,
+            "Longitude": -17.463989
+        },
+        {
+            "agence": "Agence Parcelles Assainies: Cite N'guinté BA, N 6/",
+            "Latitude": 14.7609131,
+            "Longitude": -17.441068
+        },
+        {
+            "agence": "Agence VDN Foire: Villa N 147 Ouest Foire x VDN Da",
+            "Latitude": 14.7506311,
+            "Longitude": -17.4708861
+        }
+    ]
+}

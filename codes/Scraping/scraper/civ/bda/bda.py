@@ -1,0 +1,60 @@
+import json
+from pathlib import Path
+
+# Path of the current .py file
+current_file = Path(__file__).resolve()
+current_dir = current_file.parent
+
+"""
+
+# Your JSON data (the implantationsList)
+implantationsList = [{"placeName":"PLATEAU SIEGE","full_address":"Plateau place de la Replublique","telephone":"+225 27 20 31 70 70","LatLng":{"lat":"5.3242205","lng":"-4.0212127"}},{"placeName":"PLATEAU PRINCIPALE","full_address":"Plateau place de la Replublique","telephone":"+225 27 20 31 70 70","LatLng":{"lat":"5.3242205","lng":"-4.0212127"}},{"placeName":"ABOBO CIT\u00c9 UNIVERSITAIRE","full_address":"En face de la cit\u00e9 universitaire","telephone":"+225 27 20 31 69 31","LatLng":{"lat":"6.5101633","lng":"-5.6383598"}},{"placeName":"YOPOUGON SIPOREX","full_address":"Avenue 8, 2\u00e8me arrondissement, non loin de la mosqu\u00e9e","telephone":"+225 27 20 31 69 65","LatLng":{"lat":"5.3520068","lng":"-4.0763086"}},{"placeName":"RIVIERA CASINO","full_address":"Ex centre commercial leader price","telephone":"+225 27 20 31 69 32","LatLng":{"lat":"5.3242205","lng":"-4.0212127"}},{"placeName":"KOUMASSI","full_address":"Face 6\u00e8me arrondissement,\r\nderri\u00e8re la mairie de Koumassi","telephone":"+225 27 20 31 69 37","LatLng":{"lat":"5.2903896","lng":"-3.9715894"}},{"placeName":"TREICHVILLE MOSQU\u00c9E","full_address":"Avenue 8, 2\u00e8me arrondissement, non loin de la mosqu\u00e9e","telephone":"+225 27 20 31 70 63","LatLng":{"lat":"5.3065493","lng":"-4.0160904"}},{"placeName":"PORT-BOU\u00cbT","full_address":"Face au grand march\u00e9 de Port-Bou\u00ebt","telephone":"+225 27 20 31 69 39","LatLng":{"lat":"5.2589375","lng":"-3.9667939"}},{"placeName":"COCODY CIT\u00c9 ROUGE","full_address":"Cit\u00e9 rouge non loin de C\u00f4te d\u2019Ivoire T\u00e9l\u00e9com","telephone":"+225 27 20 31 69 35","LatLng":{"lat":"5.3393583","lng":"-4.0067717"}},{"placeName":"MARCORY","full_address":"Pr\u00e8s de la mosqu\u00e9e non loin du 9 \u00e8me arrondissement","telephone":"+225 27 20 31 69 38","LatLng":{"lat":"5.3073689","lng":"-3.9901698"}},{"placeName":"TREICHVILLE - SOLIBRA","full_address":"En face de la solibra","telephone":"+225 27 20 31 70 64","LatLng":{"lat":"5.3009313","lng":"-3.9982892"}},{"placeName":"ADJAM\u00c9 220 LOGEMENTS","full_address":"Adjam\u00e9 220 logements, face Edipress route Fraternit\u00e9 Matin, Abidjan","telephone":"+225 27 20 31 69 33","LatLng":{"lat":"5.3492833","lng":"-4.0171505"}},{"placeName":"GRAND BASSAM","full_address":"Apr\u00e8s le commissariat et C\u00f4te d\u2019Ivoire Telecom","telephone":"+225 27 20 31 69 33","LatLng":{"lat":"5.2073711","lng":"-3.7384844"}},{"placeName":"BINGERVILLE","full_address":"Pr\u00e8s de la Mairie de Bingerville","telephone":"+225 27 20 31 70 68","LatLng":{"lat":"5.3573663","lng":"-3.8914082"}},{"placeName":"ABOBO MAIRIE","full_address":"Derriere la Mairied abobo","telephone":"+225 27 20 31 69 31","LatLng":{"lat":"5.4210852","lng":"-4.0191082"}},{"placeName":"YOPOUGON NIANGON","full_address":"A c\u00f4t\u00e9 de la petite Mairie, non loin de la station Texaco","telephone":"+225 27 20 31 69 65","LatLng":{"lat":"5.3266594","lng":"-4.0941606"}},{"placeName":"ATT\u00c9COUB\u00c9","full_address":"Derri\u00e8re le march\u00e9 d\u2019Att\u00e9coub\u00e9","telephone":"+225 27 20 31 69 34","LatLng":{"lat":"5.3361908","lng":"-4.042612"}},{"placeName":"ANYAMA","full_address":"Entr\u00e9e du centre-ville en face de la pharmaciedu march\u00e9","telephone":"+225 27 20 31 70 67","LatLng":{"lat":"5.4950326","lng":"-4.0535589"}},{"placeName":"COCODY VALLON","full_address":"Avenue Bogadougou Immeuble Yoomee","telephone":"+225 27 20 31 70 67","LatLng":{"lat":"5.3394722","lng":"-4.0229478"}},{"placeName":"ABOBO GARE","full_address":"Derri\u00e8re la Mairie d\u2019Abobo","telephone":"+225 27 20 31 69 31","LatLng":{"lat":"5.4224283","lng":"-4.017462"}},{"placeName":"RIVIERA CASINO","full_address":"Ex centre commercial leader price","telephone":"+225 27 20 31 69 36","LatLng":{"lat":"5.3394429","lng":"-3.9785813"}},{"placeName":"ZONE 4","full_address":"Rue du 7 d\u00e9cembre, pr\u00e8s de la pharmacie Perusia","telephone":"+225 27 20 31 70 75","LatLng":{"lat":"5.2813482","lng":"-3.9785136"}},{"placeName":"YAMOUSSOUKRO","full_address":"Grande gare routi\u00e8re face \u00e0 la gendarmerie nationale","telephone":"+225 27 20 31 70 75","LatLng":{"lat":"6.8137143","lng":"-5.269025"}},{"placeName":"BOUAK\u00c9","full_address":"Quartier commerce de Bouak\u00e9, non loin de RAN H\u00f4tel","telephone":"+225 27 20 31 70 79","LatLng":{"lat":"6.5212673","lng":"-5.6399762"}},{"placeName":"DALOA","full_address":"Quartier commerce pr\u00e8s de la CNE de Daloa","telephone":"+225 27 20 31 70 81","LatLng":{"lat":"6.8857871","lng":"-6.452727"}},{"placeName":"SAN PEDRO","full_address":"Non loin du March\u00e9 de la cit\u00e9 de San-Pedro","telephone":"+225 27 20 31 70 76","LatLng":{"lat":"4.7464777","lng":"-6.6335288"}},{"placeName":"SOUBRE","full_address":"C\u00f4te dIvoire, Soubr\u00e9, Rue des banques, entre la CDCI et de lEglise  Catholique Saint  Martyrs, Soubr\u00e9","telephone":"+225 27 20 31 70 83","LatLng":{"lat":"5.7830278","lng":"-6.607325"}},{"placeName":"KORHOGO","full_address":"A c\u00f4t\u00e9 de la CIE de Korhogo","telephone":"+225 27 20 31 70 85","LatLng":{"lat":"9.4546297","lng":"-5.6330889"}},{"placeName":"ABENGOUROU","full_address":"Derri\u00e8re la mairie d\u2019Abengourou","telephone":"+225 27 20 31 70 73","LatLng":{"lat":"6.7303171","lng":"-3.4875902"}}]
+
+country_data={}
+# Extracting Latitude and Longitude for each agency
+coordinates = []
+
+for agency in implantationsList:
+    name = agency['placeName']
+    coord_x = float(agency['LatLng']['lat'])
+    coord_y = float(agency['LatLng']['lng'])
+    coordinates.append({'name': name, 'Longitude': coord_y, 'Latitude': coord_x})
+
+# Printing out the results
+for coord in coordinates:
+    print(f"Agency: {coord['name']}, Latitude: {coord['Latitude']}, Longitude: {coord['Longitude']}")
+
+country_data['cotedivoire'] = coordinates
+
+with open('/Users/haouabenaliabbo/Desktop/M2 IREN/ALTERNANCE/GitHub/Scrapping-banks/civ/bda/bda.json', 'w', encoding='utf-8') as f:
+    json.dump(country_data, f, indent=4)
+"""
+with open('civ/bda/bda.json', 'r', encoding='utf-8') as f:
+    data = json.load(f)
+
+civ_data = []
+for branch in data['cotedivoire']:
+    civ_data.append({
+        "bank": "bda",
+        "country": "civ",
+        "address": branch["name"][:80],
+        "Latitude": branch["Latitude"],
+        "Longitude": branch["Longitude"],
+        "geocoded": 1
+    })
+
+with open('result/json_data_all/bda.json', 'w', encoding='utf-8') as f:
+    json.dump(civ_data, f, ensure_ascii=False, indent=4)
+"""
+import pandas as pd
+
+df = pd.DataFrame(data['cotedivoire'])
+
+
+import geopandas as gpd
+from shapely.geometry import Point
+
+geometry = [Point(xy) for xy in zip(df["Longitude"], df["Latitude"])]
+gdf = gpd.GeoDataFrame(df, geometry=geometry)
+
+gdf.to_file('/Users/haouabenaliabbo/Desktop/M2 IREN/ALTERNANCE/GitHub/Scrapping-banks/civ/bda/bda.shp')"""

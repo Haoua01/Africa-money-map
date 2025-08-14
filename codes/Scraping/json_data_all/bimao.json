@@ -1,0 +1,26 @@
+[
+    {
+        "bank": "bimao",
+        "country": "senegal",
+        "address": "AGENCE DE KAOLACK",
+        "Latitude": 13.963176,
+        "Longitude": -15.788883,
+        "geocoded": 0
+    },
+    {
+        "bank": "bimao",
+        "country": "senegal",
+        "address": "AGENCE PRINCIPALE",
+        "Latitude": 14.693425,
+        "Longitude": -17.447938,
+        "geocoded": 0
+    },
+    {
+        "bank": "bimao",
+        "country": "senegal",
+        "address": "AGENCE DE ZIGUINCHOR",
+        "Latitude": 12.563493,
+        "Longitude": -16.272461,
+        "geocoded": 0
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "bank": "bao",
+        "country": "guinee",
+        "address": "Av Domingos Ramos N\u00b0 33 \u2013 Bissau, Guin\u00e9e-Bissau",
+        "Latitude": 11.8629392,
+        "Longitude": -15.5856944,
+        "geocoded": 1
+    },
+    {
+        "bank": "bao",
+        "country": "guinee",
+        "address": "Central \u2013 Bissau, Guin\u00e9e-Bissau",
+        "Latitude": 11.8632196,
+        "Longitude": -15.5843227,
+        "geocoded": 1
+    },
+    {
+        "bank": "bao",
+        "country": "guinee",
+        "address": "Che Guevara \u2013 Bissau, Guin\u00e9e-Bissau",
+        "Latitude": 11.8632196,
+        "Longitude": -15.5843227,
+        "geocoded": 1
+    },
+    {
+        "bank": "bao",
+        "country": "guinee",
+        "address": "CMB \u2013 Bissau, Guin\u00e9e-Bissau",
+        "Latitude": 11.8632196,
+        "Longitude": -15.5843227,
+        "geocoded": 1
+    },
+    {
+        "bank": "bao",
+        "country": "guinee",
+        "address": "Luanda, Guin\u00e9e-Bissau",
+        "Latitude": 11.8785782,
+        "Longitude": -15.5987365,
+        "geocoded": 1
+    },
+    {
+        "bank": "bao",
+        "country": "guinee",
+        "address": "Sao Paulo, Bissau, Guin\u00e9e-Bissau",
+        "Latitude": 11.8839261,
+        "Longitude": -15.6265908,
+        "geocoded": 1
+    },
+    {
+        "bank": "bao",
+        "country": "guinee",
+        "address": "Bra, Bissau, Guin\u00e9e-Bissau",
+        "Latitude": 11.8687948,
+        "Longitude": -15.6251246,
+        "geocoded": 1
+    },
+    {
+        "bank": "bao",
+        "country": "guinee",
+        "address": "Av. Combatentes Liberdade da P\u00e1tria \u2013 Bissau, Guin\u00e9e-Bissau",
+        "Latitude": 11.8632196,
+        "Longitude": -15.5843227,
+        "geocoded": 1
+    },
+    {
+        "bank": "bao",
+        "country": "guinee",
+        "address": "Gabu, Guin\u00e9e-Bissau",
+        "Latitude": 12.2836137,
+        "Longitude": -14.2251939,
+        "geocoded": 1
+    },
+    {
+        "bank": "bao",
+        "country": "guinee",
+        "address": "Bafata, Guin\u00e9e-Bissau",
+        "Latitude": 12.1720266,
+        "Longitude": -14.6568929,
+        "geocoded": 1
+    },
+    {
+        "bank": "bao",
+        "country": "guinee",
+        "address": "Canchungo, Guin\u00e9e-Bissau",
+        "Latitude": 12.073469,
+        "Longitude": -16.0346285,
+        "geocoded": 1
+    },
+    {
+        "bank": "bao",
+        "country": "guinee",
+        "address": "Buba, Guin\u00e9e-Bissau",
+        "Latitude": 11.5920466,
+        "Longitude": -14.9943814,
+        "geocoded": 1
+    },
+    {
+        "bank": "bao",
+        "country": "guinee",
+        "address": "Safim, Guin\u00e9e-Bissau",
+        "Latitude": 11.9438068,
+        "Longitude": -15.6441852,
+        "geocoded": 1
+    },
+    {
+        "bank": "bao",
+        "country": "guinee",
+        "address": "Sao Domingos, Guin\u00e9e-Bissau",
+        "Latitude": 12.4100993,
+        "Longitude": -16.1963248,
+        "geocoded": 1
+    },
+    {
+        "bank": "bao",
+        "country": "guinee",
+        "address": "Bantandjan, Guin\u00e9e-Bissau",
+        "Latitude": 11.803749,
+        "Longitude": -15.180413,
+        "geocoded": 1
+    }
+]

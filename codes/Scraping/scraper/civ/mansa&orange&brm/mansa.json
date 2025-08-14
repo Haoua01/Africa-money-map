@@ -1,0 +1,23 @@
+{
+    "mansa_bank": [
+        {
+            "name": "Siège Abidjan",
+            "Latitude": 5.342378721534325, 
+            "Longitude": -3.959882803728949
+        }
+    ],
+    "orange_bank": [
+        {
+            "name": "Siège Abidjan",
+            "Latitude": 5.296949906048859, 
+            "Longitude": -3.985332390236978
+        }
+    ],
+    "brm": [
+        {
+            "name": "Siège Abidjan",
+            "Latitude": 5.327428127015216, 
+            "Longitude": -4.019891703728985
+        }
+    ]
+}

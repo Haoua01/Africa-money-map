@@ -1,0 +1,42 @@
+[
+    {
+        "bank": "fbn",
+        "country": "senegal",
+        "address": "Zone 15 rond point Ngor Almadies - Dakar, Sénégal",
+        "Latitude": 14.7582562,
+        "Longitude": -17.4788734,
+        "geocoded": 1
+    },
+    {
+        "bank": "fbn",
+        "country": "senegal",
+        "address": "Lot 2 Mermoz pyrotechnie - Dakar, Sénégal",
+        "Latitude": 14.7089286,
+        "Longitude": -17.4755637,
+        "geocoded": 1
+    },
+    {
+        "bank": "fbn",
+        "country": "senegal",
+        "address": "18 avenue de la République - Dakar, Sénégal",
+        "Latitude": 14.716677,
+        "Longitude": -17.4676861,
+        "geocoded": 1
+    },
+    {
+        "bank": "fbn",
+        "country": "senegal",
+        "address": "Villa numéro 224 HLM Ouagou Niayes - Dakar, Sénégal",
+        "Latitude": 14.7070533,
+        "Longitude": -17.4479581,
+        "geocoded": 1
+    },
+    {
+        "bank": "fbn",
+        "country": "senegal",
+        "address": "Km 1,  2 400 route de Rufisque en face de la Poste - Dakar, Sénégal",
+        "Latitude": 14.7300041,
+        "Longitude": -17.4252275,
+        "geocoded": 1
+    }
+]

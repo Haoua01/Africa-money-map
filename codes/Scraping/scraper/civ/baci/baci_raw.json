@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Plateau, Immeuble AMCI",
+    "address": "Plateau, Immeuble AMCI, Plateau, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Plateau, Rue des banques",
+    "address": "Plateau, Rue des banques, Plateau, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Plateau, Immeuble Atlantique",
+    "address": "Plateau, Immeuble Atlantique, Plateau, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Plateau, Boulevard de la République",
+    "address": "Plateau, Boulevard de la République, Plateau, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Plateau, Finances",
+    "address": "Plateau, Finances, Plateau, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Cocody Rue des Jardins",
+    "address": "Cocody Rue des Jardins, Cocody, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Cocody, Saint Jean",
+    "address": "Cocody, Saint Jean, Cocody, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Cocody, Corniche",
+    "address": "Cocody, Corniche, Cocody, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Cocody Abatta",
+    "address": "Cocody Abatta, Cocody, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Cocody Angré 8ème tranche",
+    "address": "Cocody Angré 8ème tranche, Cocody, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Cocody Latrille",
+    "address": "Cocody Latrille, Cocody, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "II Plateaux, ENA",
+    "address": "II Plateaux, ENA, Cocody, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Cocody Sococé",
+    "address": "Cocody Sococé, Cocody, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "ENA",
+    "address": "ENA, Cocody, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Cocody – II plateaux les perles",
+    "address": "Cocody – II plateaux les perles, Cocody, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Riviera III",
+    "address": "Riviera III, Cocody, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Abidjan Mall",
+    "address": "Abidjan Mall, Cocody, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Yopougon, Zone Industrielle",
+    "address": "Yopougon, Zone Industrielle, Yopougon, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Poste, Yopougon Toit Rouge",
+    "address": "Poste, Yopougon Toit Rouge, Yopougon, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Yopougon, Maroc",
+    "address": "Yopougon, Maroc, Yopougon, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Yopougon, Bel Air",
+    "address": "Yopougon, Bel Air, Yopougon, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Yopougon, Siporex face COSMOS",
+    "address": "Yopougon, Siporex face COSMOS, Yopougon, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Aéroport, Hall d’arrivée",
+    "address": "Aéroport, Hall d’arrivée, Port-Bouet, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Poste, Port-Bouët Marché",
+    "address": "Poste, Port-Bouët Marché, Port-Bouet, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Boulevard de Marseille Zone 3",
+    "address": "Boulevard de Marseille Zone 3, Marcory, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Agence VGE",
+    "address": "Agence VGE, Marcory, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Zone 4, Paul Langevin",
+    "address": "Zone 4, Paul Langevin, Marcory, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Marcory Résidentiel",
+    "address": "Marcory Résidentiel, Marcory, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Marcory Trigone",
+    "address": "Marcory Trigone, Marcory, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Attécoubé",
+    "address": "Attécoubé, Adjamé, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Williams-ville",
+    "address": "Williams-ville, Adjamé, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Adjamé Marché Gouro",
+    "address": "Adjamé Marché Gouro, Adjamé, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Adjamé Nangui Abrogoua",
+    "address": "Adjamé Nangui Abrogoua, Adjamé, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Abobo poste",
+    "address": "Abobo poste, Abobo, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Dokui, Immeuble Adama Sanogo",
+    "address": "Dokui, Immeuble Adama Sanogo, Abobo, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Abobo, Rond point de la brigade de Gendarmerie",
+    "address": "Abobo, Rond point de la brigade de Gendarmerie, Abobo, Abidjan, Côte d'Ivoire"
+  },
+  {
+    "name": "Abengourou",
+    "address": "Abengourou, Côte d'Ivoire"
+  },
+  {
+    "name": "Aboisso",
+    "address": "Aboisso, Côte d'Ivoire"
+  },
+  {
+    "name": "Adzopé",
+    "address": "Adzopé, Côte d'Ivoire"
+  },
+  {
+    "name": "Agboville",
+    "address": "Agboville, Côte d'Ivoire"
+  },
+  {
+    "name": "Agnibilékrou",
+    "address": "Agnibilékrou, Côte d'Ivoire"
+  },
+  {
+    "name": "Anyama",
+    "address": "Anyama, Côte d'Ivoire"
+  },
+  {
+    "name": "Bondoukou",
+    "address": "Bondoukou, Côte d'Ivoire"
+  },
+  {
+    "name": "Bouaflé",
+    "address": "Bouaflé, Côte d'Ivoire"
+  },
+  {
+    "name": "Bouaké commerce",
+    "address": "Bouaké, Côte d'Ivoire"
+  },
+  {
+    "name": "Bouaké Marché",
+    "address": "Bouaké, Côte d'Ivoire"
+  },
+  {
+    "name": "Boundiali",
+    "address": "Boundiali, Côte d'Ivoire"
+  },
+  {
+    "name": "Dabou",
+    "address": "Dabou, Côte d'Ivoire"
+  },
+  {
+    "name": "Daloa",
+    "address": "Daloa, Côte d'Ivoire"
+  },
+  {
+    "name": "Dimbokro",
+    "address": "Dimbokro, Côte d'Ivoire"
+  },
+  {
+    "name": "Divo",
+    "address": "Divo, Côte d'Ivoire"
+  },
+  {
+    "name": "Duékoué",
+    "address": "Duékoué, Côte d'Ivoire"
+  },
+  {
+    "name": "Ferké",
+    "address": "Ferké, Côte d'Ivoire"
+  },
+  {
+    "name": "Gagnoa",
+    "address": "Gagnoa, Côte d'Ivoire"
+  },
+  {
+    "name": "Grand-Bassam",
+    "address": "Grand-Bassam, Côte d'Ivoire"
+  },
+  {
+    "name": "Guiglo",
+    "address": "Guiglo, Côte d'Ivoire"
+  },
+  {
+    "name": "Issia",
+    "address": "Issia, Côte d'Ivoire"
+  },
+  {
+    "name": "Korhogo",
+    "address": "Korhogo, Côte d'Ivoire"
+  },
+  {
+    "name": "Kouto",
+    "address": "Kouto, Côte d'Ivoire"
+  },
+  {
+    "name": "Lakota",
+    "address": "Lakota, Côte d'Ivoire"
+  },
+  {
+    "name": "Man",
+    "address": "Man, Côte d'Ivoire"
+  },
+  {
+    "name": "Méagui",
+    "address": "Méagui, Côte d'Ivoire"
+  },
+  {
+    "name": "Odienné",
+    "address": "Odienné, Côte d'Ivoire"
+  },
+  {
+    "name": "San-Pedro Bardot",
+    "address": "San-Pedro, Côte d'Ivoire"
+  },
+  {
+    "name": "San-Pedro Rue des banques",
+    "address": "San-Pedro, Côte d'Ivoire"
+  },
+  {
+    "name": "Sikensi",
+    "address": "Sikensi, Côte d'Ivoire"
+  },
+  {
+    "name": "Sinfra",
+    "address": "Sinfra, Côte d'Ivoire"
+  },
+  {
+    "name": "Soubré",
+    "address": "Soubré, Côte d'Ivoire"
+  },
+  {
+    "name": "Yamoussoukro Marché",
+    "address": "Yamoussoukro, Côte d'Ivoire"
+  },
+  {
+    "name": "Yamoussoukro Rue des banques",
+    "address": "Yamoussoukro, Côte d'Ivoire"
+  }
+]

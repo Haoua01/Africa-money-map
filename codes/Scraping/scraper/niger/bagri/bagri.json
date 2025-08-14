@@ -1,0 +1,148 @@
+{
+    "niger": [
+        {
+            "name": "Agence principale",
+            "address": "Niamey, Niamey, Niger",
+            "Latitude": 13.5115963,
+            "Longitude": 2.1253854
+        },
+        {
+            "name": "Agence de Maradi",
+            "address": "Maradi, Maradi, Niger",
+            "Latitude": 13.5009779,
+            "Longitude": 7.103639599999999
+        },
+        {
+            "name": "Agence de Dosso",
+            "address": "Dosso, Dosso, Niger",
+            "Latitude": 13.0504833,
+            "Longitude": 3.2080991
+        },
+        {
+            "name": "Agence de Magaria",
+            "address": "Magaria, Zinder, Niger",
+            "Latitude": 13.0034658,
+            "Longitude": 8.907978199999999
+        },
+        {
+            "name": "Agence de T\u00e9ra",
+            "address": "T\u00e9ra, Tillab\u00e9ri, Niger",
+            "Latitude": 14.0031627,
+            "Longitude": 0.7556575
+        },
+        {
+            "name": "Agence de Doutchi",
+            "address": "Doutchi, Dosso, Niger",
+            "Latitude": 13.6441828,
+            "Longitude": 4.0337846
+        },
+        {
+            "name": "Agence de Tahoua",
+            "address": "Tahoua, Tahoua, Niger",
+            "Latitude": 14.8904575,
+            "Longitude": 5.2579968
+        },
+        {
+            "name": "Agence de Dakoro",
+            "address": "Dakoro, Maradi, Niger",
+            "Latitude": 14.5089177,
+            "Longitude": 6.7654595
+        },
+        {
+            "name": "Agence de Tessaoua",
+            "address": "Tessaoua, Zinder, Niger",
+            "Latitude": 13.8018124,
+            "Longitude": 8.98527
+        },
+        {
+            "name": "Agence de Agadez",
+            "address": "Agadez, Agadez, Niger",
+            "Latitude": 16.9741689,
+            "Longitude": 7.986535
+        },
+        {
+            "name": "Agence de Zinder",
+            "address": "Zinder, Zinder, Niger",
+            "Latitude": 13.8018124,
+            "Longitude": 8.98527
+        },
+        {
+            "name": "Agence de Tillaberi",
+            "address": "Tillab\u00e9ri, Tillab\u00e9ri, Niger",
+            "Latitude": 14.2061141,
+            "Longitude": 1.4579696
+        },
+        {
+            "name": "Agence de Konni",
+            "address": "Konni, Tahoua, Niger",
+            "Latitude": 13.7946714,
+            "Longitude": 5.2527741
+        },
+        {
+            "name": "Agence de Madaoua",
+            "address": "Madaoua, Tahoua, Niger",
+            "Latitude": 14.0790439,
+            "Longitude": 5.956824999999999
+        },
+        {
+            "name": "Agence de Diffa",
+            "address": "Diffa, Diffa, Niger",
+            "Latitude": 13.3132472,
+            "Longitude": 12.6158803
+        },
+        {
+            "name": "Agence de Matamey",
+            "address": "Matamey, Tillab\u00e9ri, Niger",
+            "Latitude": 13.4211757,
+            "Longitude": 8.4760154
+        },
+        {
+            "name": "Agence de Gaya",
+            "address": "Gaya, Tillab\u00e9ri, Niger",
+            "Latitude": 14.733333,
+            "Longitude": 0.683333
+        },
+        {
+            "name": "Agence Pl\u00e2teau",
+            "address": "Plateau, Niamey, Niger",
+            "Latitude": 13.5306386,
+            "Longitude": 2.0947166
+        },
+        {
+            "name": "Agence Francophonie",
+            "address": "Francophonie, Niamey, Niger",
+            "Latitude": 13.5710063,
+            "Longitude": 2.1069816
+        },
+        {
+            "name": "Agence Campus",
+            "address": "Campus, Niamey, Niger",
+            "Latitude": 13.5115963,
+            "Longitude": 2.1253854
+        },
+        {
+            "name": "Agence Saga",
+            "address": "Saga, Niamey, Niger",
+            "Latitude": 13.4655784,
+            "Longitude": 2.1472535
+        },
+        {
+            "name": "Agence Maourey",
+            "address": "Maourey, Niamey, Niger",
+            "Latitude": 13.5155182,
+            "Longitude": 2.1124813
+        },
+        {
+            "name": "Agence Rond point Bar\u00e9",
+            "address": "Rond Point Bar\u00e9, Niamey, Niger",
+            "Latitude": 13.5501526,
+            "Longitude": 2.1291321
+        },
+        {
+            "name": "Agence Wadata",
+            "address": "Wadata, Niamey, Niger",
+            "Latitude": 13.5137871,
+            "Longitude": 2.1439503
+        }
+    ]
+}

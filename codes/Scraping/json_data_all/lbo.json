@@ -1,0 +1,18 @@
+[
+    {
+        "bank": "lbo",
+        "country": "senegal",
+        "address": "Siège Sénégal",
+        "Latitude": 14.665395838860917,
+        "Longitude": -17.435378695572393,
+        "geocoded": 0
+    },
+    {
+        "bank": "lbo",
+        "country": "senegal",
+        "address": "Agence Touba",
+        "Latitude": 14.85467575059969,
+        "Longitude": -15.88000217482441,
+        "geocoded": 0
+    }
+]

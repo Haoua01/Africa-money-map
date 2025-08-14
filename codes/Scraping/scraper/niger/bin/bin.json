@@ -1,0 +1,88 @@
+{
+    "niger": [
+        {
+            "name": "Agence Principale Si\u00e8ge",
+            "address": "Niamey-Bas, Immeuble BIN, rue de Gaw\u00e8ye \u2013NB 31, Niamey",
+            "Latitude": 13.5115963,
+            "Longitude": 2.1253854
+        },
+        {
+            "name": "Agence de Yantala",
+            "address": "Calao, Niamey",
+            "Latitude": 13.5115963,
+            "Longitude": 2.1253854
+        },
+        {
+            "name": "Agence Boukoki",
+            "address": "Face Rimbo, Niamey",
+            "Latitude": 13.5115963,
+            "Longitude": 2.1253854
+        },
+        {
+            "name": "Agence Grand march\u00e9",
+            "address": "March\u00e9 Rue du Kalley, Niamey",
+            "Latitude": 13.5115963,
+            "Longitude": 2.1253854
+        },
+        {
+            "name": "Agence Wadata",
+            "address": "Avenue de l\u2019Entente, Niamey",
+            "Latitude": 13.507643,
+            "Longitude": 2.1355532
+        },
+        {
+            "name": "Agence DAR ES SALAM",
+            "address": "Boulevard Mahamadou Bouhari, Niamey",
+            "Latitude": 13.5115963,
+            "Longitude": 2.1253854
+        },
+        {
+            "name": "Agence Balafon",
+            "address": "Poste balafon, Niamey",
+            "Latitude": 13.5174536,
+            "Longitude": 2.1226869
+        },
+        {
+            "name": "Agence principale Maradi",
+            "address": "Quartier Sabon Gari, Maradi",
+            "Latitude": 13.5009779,
+            "Longitude": 7.103639599999999
+        },
+        {
+            "name": "Agence Tessaoua",
+            "address": "Gare Centrale, Tessaoua",
+            "Latitude": 13.7558622,
+            "Longitude": 7.986535
+        },
+        {
+            "name": "Agence Dakoro",
+            "address": "Pharmacie Centrale, Dakoro",
+            "Latitude": 14.5089177,
+            "Longitude": 6.7654595
+        },
+        {
+            "name": "Agence Principale Zinder",
+            "address": "Rue du commissariat central, Zinder",
+            "Latitude": 13.8018124,
+            "Longitude": 8.98527
+        },
+        {
+            "name": "Agence Agadez",
+            "address": "March\u00e9 toles, Agadez",
+            "Latitude": 16.9741689,
+            "Longitude": 7.986535
+        },
+        {
+            "name": "Agence Tahoua",
+            "address": "Maboya Amar\u00e9, Tahoua",
+            "Latitude": 14.8986694,
+            "Longitude": 5.278662799999999
+        },
+        {
+            "name": "Agence Diffa",
+            "address": "Quartier Afnori, Diffa",
+            "Latitude": 13.3132472,
+            "Longitude": 12.6158803
+        }
+    ]
+}

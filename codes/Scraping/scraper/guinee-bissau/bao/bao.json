@@ -1,0 +1,94 @@
+{
+    "guinee": [
+        {
+            "name": "Agence Principale",
+            "address": "Av Domingos Ramos N\u00b0 33 \u2013 Bissau, Guin\u00e9e-Bissau",
+            "Latitude": 11.8629392,
+            "Longitude": -15.5856944
+        },
+        {
+            "name": "Agence Bissau 2",
+            "address": "Central \u2013 Bissau, Guin\u00e9e-Bissau",
+            "Latitude": 11.8632196,
+            "Longitude": -15.5843227
+        },
+        {
+            "name": "Agence Bissau 3",
+            "address": "Che Guevara \u2013 Bissau, Guin\u00e9e-Bissau",
+            "Latitude": 11.8632196,
+            "Longitude": -15.5843227
+        },
+        {
+            "name": "Agence Bissau 4",
+            "address": "CMB \u2013 Bissau, Guin\u00e9e-Bissau",
+            "Latitude": 11.8632196,
+            "Longitude": -15.5843227
+        },
+        {
+            "name": "Agence Bissau 5",
+            "address": "Luanda, Guin\u00e9e-Bissau",
+            "Latitude": 11.8785782,
+            "Longitude": -15.5987365
+        },
+        {
+            "name": "Agence Bissau 6",
+            "address": "Sao Paulo, Bissau, Guin\u00e9e-Bissau",
+            "Latitude": 11.8839261,
+            "Longitude": -15.6265908
+        },
+        {
+            "name": "Agence Bissau 7",
+            "address": "Bra, Bissau, Guin\u00e9e-Bissau",
+            "Latitude": 11.8687948,
+            "Longitude": -15.6251246
+        },
+        {
+            "name": "Agence Bandim",
+            "address": "Av. Combatentes Liberdade da P\u00e1tria \u2013 Bissau, Guin\u00e9e-Bissau",
+            "Latitude": 11.8632196,
+            "Longitude": -15.5843227
+        },
+        {
+            "name": "Agence Gabu",
+            "address": "Gabu, Guin\u00e9e-Bissau",
+            "Latitude": 12.2836137,
+            "Longitude": -14.2251939
+        },
+        {
+            "name": "Agence Bafata",
+            "address": "Bafata, Guin\u00e9e-Bissau",
+            "Latitude": 12.1720266,
+            "Longitude": -14.6568929
+        },
+        {
+            "name": "Agence Canchungo",
+            "address": "Canchungo, Guin\u00e9e-Bissau",
+            "Latitude": 12.073469,
+            "Longitude": -16.0346285
+        },
+        {
+            "name": "Agence Buba",
+            "address": "Buba, Guin\u00e9e-Bissau",
+            "Latitude": 11.5920466,
+            "Longitude": -14.9943814
+        },
+        {
+            "name": "Agence Safim",
+            "address": "Safim, Guin\u00e9e-Bissau",
+            "Latitude": 11.9438068,
+            "Longitude": -15.6441852
+        },
+        {
+            "name": "Agence Sao Domingos",
+            "address": "Sao Domingos, Guin\u00e9e-Bissau",
+            "Latitude": 12.4100993,
+            "Longitude": -16.1963248
+        },
+        {
+            "name": "Agence Bantandjan",
+            "address": "Bantandjan, Guin\u00e9e-Bissau",
+            "Latitude": 11.803749,
+            "Longitude": -15.180413
+        }
+    ]
+}

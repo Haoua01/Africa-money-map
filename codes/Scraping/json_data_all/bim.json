@@ -1,0 +1,538 @@
+[
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble Hamidou Niare Fana face RN6, Fana - Mali",
+        "Latitude": 12.7851079,
+        "Longitude": -6.9480641,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble'Yaya Hanne Ségou Face RN6, Segou - Mali",
+        "Latitude": 13.4297866,
+        "Longitude": -6.2657343,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble Mamadou Haidara Marché Niono, Niono - Mali",
+        "Latitude": 14.2261156,
+        "Longitude": -5.9753267,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble Hamala Diallo Centre commercial Markala, Markala - Mali",
+        "Latitude": 13.6683306,
+        "Longitude": -6.0659012,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble Kassim Santara Traoré près CMDT, San - Mali",
+        "Latitude": 13.2944016,
+        "Longitude": -4.8987523,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble Balakoye Traoré Centre Commercial Djénné, Djénné - Mali",
+        "Latitude": 13.9053952,
+        "Longitude": -4.5559954,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble Jean Bignat Sévaré face RN6, Sévaré - Mali",
+        "Latitude": 14.5307056,
+        "Longitude": -4.0910409,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble SOMAYAF près COMANAV Mopti, Mopti - Mali",
+        "Latitude": 14.490149,
+        "Longitude": -4.1924713,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Ex Immeuble SOMIEX centre commercial Douentza, Douentza - Mali",
+        "Latitude": 15.0045218,
+        "Longitude": -2.9550619,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble Guindo et Frères Centre Commercial GAO, Gao - Mali",
+        "Latitude": 16.2776418,
+        "Longitude": -0.0486485,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble Timi Al Bakaye Quartier sans fil face AMMS, Tombouctou - Mali",
+        "Latitude": 16.7665887,
+        "Longitude": -3.0025615,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Grand Marché Immeuble SNF, Sikasso - Mali",
+        "Latitude": 11.3158551,
+        "Longitude": -5.667824,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble Issa DIAWARRA, Sikasso Marché - Mali",
+        "Latitude": 11.3154237,
+        "Longitude": -5.6675081,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble SNF 2e quartier, Koutiala - Mali",
+        "Latitude": 12.3895,
+        "Longitude": -5.4639267,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Marché Médine, Bougouni - Mali",
+        "Latitude": 11.419473,
+        "Longitude": -7.4843305,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble SIDIBE Gouanabougou, Yanfolila - Mali",
+        "Latitude": 11.1780136,
+        "Longitude": -8.1529749,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Legal segou face à la DRS près du marché/Kayes, Kayes NDI - Mali",
+        "Latitude": 14.4483186,
+        "Longitude": -11.4419982,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Lafiabougou face à la station Bah & Fils, Kéniéba - Mali",
+        "Latitude": 12.6351525,
+        "Longitude": -8.0437909,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Bafoulabe/Allahina près de la poste, Bafoulabé - Mali",
+        "Latitude": 13.8087708,
+        "Longitude": -10.8308258,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Mahina 1 près du marché /Immeuble uble Abdoul Bah, Mahina - Mali",
+        "Latitude": 13.7568727,
+        "Longitude": -10.8481998,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "FALEME sur la route de Dakar en face du marché de Kayes, Diboli - Mali",
+        "Latitude": 14.4571562,
+        "Longitude": -12.1999536,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Soukara Kounda face à la tribune/Nioro, Nioro du Sahel - Mali",
+        "Latitude": 15.2323839,
+        "Longitude": -9.590751400000002,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Bd. de l'Indépendance, Bolibana - Mali",
+        "Latitude": 12.6460665,
+        "Longitude": -8.012430799999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Av. Mohamed V, Bagadadji - Mali",
+        "Latitude": 12.6496519,
+        "Longitude": -7.9878977,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble'Bany Kanté, Banankabougou - Mali",
+        "Latitude": 12.6794795,
+        "Longitude": -7.1486126,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "200m Tours d'Afrique, Faladié - Mali",
+        "Latitude": 12.5846752,
+        "Longitude": -7.9431974,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Côté mosquée Bleue, Magnabougou - Mali",
+        "Latitude": 12.5722981,
+        "Longitude": -7.982761599999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Route de Ségou, Yirimadio - Mali",
+        "Latitude": 12.6165984,
+        "Longitude": -7.902097699999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Station Sodies, Torokorobougou - Mali",
+        "Latitude": 12.5784134,
+        "Longitude": -7.9481202,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Côté Mess des Officiers, Badala-Est - Mali",
+        "Latitude": 12.9743086,
+        "Longitude": -9.7421188,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Hôtel Komoguel Banankabougou, Komoguel - Mali",
+        "Latitude": 12.5997953,
+        "Longitude": -7.955860800000001,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble Sobato, Avenue de l'OUA, Sobato - Mali",
+        "Latitude": 12.603926,
+        "Longitude": -7.9456706,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Côté du Marché, Bako Djikoroni, Bamako - Mali",
+        "Latitude": 12.5904084,
+        "Longitude": -8.0165205,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Pharmacie du 2e Pont, Badala, Bamako - Mali",
+        "Latitude": 12.6142115,
+        "Longitude": -7.9983795,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Quartier du fleuve, Tempo - Mali",
+        "Latitude": 12.6530823,
+        "Longitude": -8.0216479,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Badialan III face à la Mairie, Badialan - Mali",
+        "Latitude": 12.6514357,
+        "Longitude": -8.023337099999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble Coulera SYLLA, Route de Koulikoro, Djélibougou, Bamako - Mali",
+        "Latitude": 12.6392316,
+        "Longitude": -8.0028892,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Route de Koulikoro en face champ hippique, BIM Expansion - Mali",
+        "Latitude": 12.6583587,
+        "Longitude": -7.978473500000001,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Medina Coura Avenue Al QUODS, Gabriel TOURE - Mali",
+        "Latitude": 12.6510767,
+        "Longitude": -7.996899999999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Moribabougou Immeuble MAFA HAIDARA face marché, Moribabougou - Mali",
+        "Latitude": 12.6952291,
+        "Longitude": -7.844954899999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Niamakoro 30 mètres, Niamakoro - Mali",
+        "Latitude": 12.5863409,
+        "Longitude": -7.9620107,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Niarela Rue 376 Avenue de la marne face au marché, N'Golonina, Bamako - Mali",
+        "Latitude": 12.6419394,
+        "Longitude": -7.9734777,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Station Oryx à Bougouba, Sotuba - Mali",
+        "Latitude": 12.869998,
+        "Longitude": -7.25288,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Banconi Razel, rue 4902, porte 1393, Razel - Mali",
+        "Latitude": 12.7149563,
+        "Longitude": -7.9836287,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Sation shell omnisport bamako, Shell Omnisport - Mali",
+        "Latitude": 12.6590244,
+        "Longitude": -7.987865200000001,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Kalaban coura ACI près de l'église catholique, Kalaban - Mali",
+        "Latitude": 12.5511427,
+        "Longitude": -7.991386599999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Magnabougou face ASACOMA, Magnambougou I - Mali",
+        "Latitude": 12.6102875,
+        "Longitude": -7.9562784,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Bako Djikoroni en face station Niento, Baco Djikoroni, Bamako - Mali",
+        "Latitude": 12.5904084,
+        "Longitude": -8.0165205,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Kati coura face commissariat de police, Kati - Mali",
+        "Latitude": 12.761188,
+        "Longitude": -8.0728265,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Kalaban Coura Carrefour Route de l'Aeroport et 30 mètres, Kalaban Coura - Mali",
+        "Latitude": 12.5846559,
+        "Longitude": -7.9917584,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Kalaban Coro marché, Kalaban Coro - Mali",
+        "Latitude": 12.5757646,
+        "Longitude": -8.030154399999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Rond point Place Can Hamdallaye ACI 2000, Place CAN - Mali",
+        "Latitude": 12.6299491,
+        "Longitude": -8.027427399999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Garantiguibougou pharmacie, Garantiguibougou, Bamako - Mali",
+        "Latitude": 12.5575625,
+        "Longitude": -8.0056875,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble Nimaga près de l'auto gare, Sogoniko - Mali",
+        "Latitude": 12.6420151,
+        "Longitude": -7.996159699999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Flabougou, Banconi, Bamako - Mali",
+        "Latitude": 12.6683519,
+        "Longitude": -7.9635586,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Face ASACODEK près du Marché, Sébénikoro - Mali",
+        "Latitude": 12.58849,
+        "Longitude": -8.0609047,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble Dupe Marché DIBIDA, Dibida, Bamako - Mali",
+        "Latitude": 12.6391699,
+        "Longitude": -8.0025475,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Missira Rue RDH, Marché Médine - Mali",
+        "Latitude": 12.6555133,
+        "Longitude": -7.982447099999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble Modibo Keita, Grand Marché, Bamako - Mali",
+        "Latitude": 12.6306751,
+        "Longitude": -8.0091934,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "2e Quartier face Marché, Kangaba - Mali",
+        "Latitude": 11.9427677,
+        "Longitude": -8.4156809,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble Galerie Djigué Rue du 18 juin, Djigué - Mali",
+        "Latitude": 14.4192206,
+        "Longitude": -7.9439172,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Bagadadji Avenue Mohamed V, Paul Sicard - Mali",
+        "Latitude": 12.6496519,
+        "Longitude": -7.9878977,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Station Shell Djikoroni Para, Bamako - Mali",
+        "Latitude": 12.6174279,
+        "Longitude": -8.0307313,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Rue Nelsosn Mandela Alimentation SEME SUGU, Guichet Hippodrome - Mali",
+        "Latitude": 12.6657714,
+        "Longitude": -7.9729094,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Kati près du Marché, Guichet Kati - Mali",
+        "Latitude": 12.7453724,
+        "Longitude": -8.0738001,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Immeuble Azar Libre Service route de koulikoro, Guichet Shell Alqoods - Mali",
+        "Latitude": 12.6392515,
+        "Longitude": -8.002862,
+        "geocoded": 1
+    },
+    {
+        "bank": "bim",
+        "country": "mali",
+        "address": "Avenue de l'OUA Shell Badala, Guichet Shell Badala - Mali",
+        "Latitude": 12.603926,
+        "Longitude": -7.9456706,
+        "geocoded": 1
+    }
+]

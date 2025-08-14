@@ -1,0 +1,84 @@
+{
+    "cotedivoire": [
+        {
+            "name": "Agence principale",
+            "Latitude": "5.318976",
+            "Longitude": "-4.013154"
+        },
+        {
+            "name": "Agence zone 4, rue du Dr Blanchard",
+            "Latitude": "5.29116934",
+            "Longitude": "-3.98134024"
+        },
+        {
+            "name": "Agence Treichville Nanan Yamousso",
+            "Latitude": "5.3088684",
+            "Longitude": "-4.0054579"
+        },
+        {
+            "name": "Agence 2 Plateaux, rue des Jardins",
+            "Latitude": "5.359360989626228",
+            "Longitude": "-3.9895207630093124"
+        },
+        {
+            "name": "Agence 2 Plateaux, Boulevard Latrille",
+            "Latitude": "5.38814211",
+            "Longitude": "-3.99247068"
+        },
+        {
+            "name": "Agence d'Adjam\u00e9 Saint Michel",
+            "Latitude": "5.34654809",
+            "Longitude": "-4.02291762"
+        },
+        {
+            "name": "Agence Cocody Riviera 3, Route du Lyc\u00e9e fran\u00e7ais",
+            "Latitude": "5.3537794",
+            "Longitude": "-3.95737779"
+        },
+        {
+            "name": "Agence Cocody",
+            "Latitude": "5.338089",
+            "Longitude": "-4.003533"
+        },
+        {
+            "name": "Agence Riviera Golf",
+            "Latitude": "5.33991667",
+            "Longitude": "-3.97719444"
+        },
+        {
+            "name": "Agence Marcory R\u00e9sidentiel",
+            "Latitude": "5.308045",
+            "Longitude": "-3.992371"
+        },
+        {
+            "name": "Agence Treichville, Zone 3",
+            "Latitude": "5.298122",
+            "Longitude": "-3.996454"
+        },
+        {
+            "name": "Agence Plateau, Seen Hotel",
+            "Latitude": "5.31916667",
+            "Longitude": "-4.01891667"
+        },
+        {
+            "name": "Agence 2 Plateaux, 8\u00e8me Tranche",
+            "Latitude": "5.39521785414503",
+            "Longitude": "-3.9769895955472743"
+        },
+        {
+            "name": "Agence Abatta",
+            "Latitude": "5.37386369",
+            "Longitude": "-3.92593479"
+        },
+        {
+            "name": "Agence de Bouak\u00e9",
+            "Latitude": "7.681349483342573",
+            "Longitude": "-5.027831619063537"
+        },
+        {
+            "name": "Agence San P\u00e9dro",
+            "Latitude": "4.744022",
+            "Longitude": "-6.631915"
+        }
+    ]
+}

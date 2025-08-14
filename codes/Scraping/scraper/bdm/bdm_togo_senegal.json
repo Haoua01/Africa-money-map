@@ -1,0 +1,16 @@
+{
+    "Togo": [
+        {
+            "agence": "BDM succursale Togo",
+            "Latitude": 6.1339328,
+            "Longitude": 1.2156878
+        }
+    ],
+    "Senegal": [
+        {
+            "Branch": "Siège Sénégal",
+            "Latitude": 14.706100623018907, 
+            "Longitude": -17.460699898148114
+        }
+    ]
+}

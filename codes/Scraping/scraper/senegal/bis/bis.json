@@ -1,0 +1,274 @@
+{
+    "senegal": [
+        {
+            "Name": "Blaise Diagne",
+            "Address": "115 Avenue Blaise Diagne",
+            "Latitude": 14.6807519,
+            "Longitude": -17.4494977
+        },
+        {
+            "Name": "Bopp",
+            "Address": "HLM BOPP Rue 9 Bopp, Villa N°11",
+            "Latitude": 14.677027,
+            "Longitude": -17.4503234
+        },
+        {
+            "Name": "Bourguiba",
+            "Address": "Bourguiba en face impot et domaine",
+            "Latitude": 14.497401,
+            "Longitude": -14.452362
+        },
+        {
+            "Name": "Centenaire",
+            "Address": "Rue 34 Angle Boulevard du Général De Gaulle",
+            "Latitude": 14.497401,
+            "Longitude": -14.452362
+        },
+        {
+            "Name": "Fass",
+            "Address": "Immeuble Adja Mame NDIAYE, Rond Point Canal IV, Fass Paillote",
+            "Latitude": 14.69016,
+            "Longitude": -17.4586105
+        },
+        {
+            "Name": "Front de Terre",
+            "Address": "Immeuble Adja SENEBA Avenue Fahd Ben Abdel Aziz X Autoroute",
+            "Latitude": 14.497401,
+            "Longitude": -14.452362
+        },
+        {
+            "Name": "Guédiawaye",
+            "Address": "Golf, Cités des enseignants lot n°5",
+            "Latitude": 14.7766958,
+            "Longitude": -17.4052118
+        },
+        {
+            "Name": "Indépendance",
+            "Address": "4 Avenue Léopold Sédar Senghor",
+            "Latitude": 14.497401,
+            "Longitude": -14.452362
+        },
+        {
+            "Name": "Keur Gorgui",
+            "Address": "Immeuble Amine, Rond Point Keur Gorgui",
+            "Latitude": 14.7130833,
+            "Longitude": -17.47175
+        },
+        {
+            "Name": "Keur Massar",
+            "Address": "",
+            "Latitude": 14.786368,
+            "Longitude": -17.311941
+        },
+        {
+            "Name": "Lamine Gueye",
+            "Address": "98 Avenue du Président Lamine GUEYE X Grasland",
+            "Latitude": 14.6715491,
+            "Longitude": -17.4373888
+        },
+        {
+            "Name": "Liberté 6",
+            "Address": "Rond Point Liberté VI en face Station TOTAL",
+            "Latitude": 14.497401,
+            "Longitude": -14.452362
+        },
+        {
+            "Name": "Médina",
+            "Address": "Rue 6 X 15 Médina",
+            "Latitude": 14.6855683,
+            "Longitude": -17.449743
+        },
+        {
+            "Name": "Ngor Almadies",
+            "Address": "Rond Point Ngor – Almadies",
+            "Latitude": 14.7439892,
+            "Longitude": -17.5115168
+        },
+        {
+            "Name": "Ouagou Niayes",
+            "Address": "Immeuble Cheikh Mayacine Lot 145 COPPE",
+            "Latitude": 14.497401,
+            "Longitude": -14.452362
+        },
+        {
+            "Name": "Ouakam",
+            "Address": "Route de Ouakam Contigu à l’Hôpital HMO",
+            "Latitude": 14.715202,
+            "Longitude": -17.4821687
+        },
+        {
+            "Name": "Parcelles",
+            "Address": "Cité SOPRIM Route des Niayes, Patte d’oie",
+            "Latitude": 14.7522665,
+            "Longitude": -17.4373484
+        },
+        {
+            "Name": "Pikine",
+            "Address": "Rond Point Dominique",
+            "Latitude": 14.497401,
+            "Longitude": -14.452362
+        },
+        {
+            "Name": "Rufisque",
+            "Address": "Lot  n°3  ilot 67 Keury Kao 115 Rufisque EST près de l’agence Senelec",
+            "Latitude": 14.7166267,
+            "Longitude": -17.2709983
+        },
+        {
+            "Name": "Sacré Coeur III – Mamoune",
+            "Address": "Rond Point Sacré Coeur III",
+            "Latitude": 14.7226019,
+            "Longitude": -17.4728622
+        },
+        {
+            "Name": "Sarrault",
+            "Address": "7 Avenue Hassan Il X Rue Mage Immeuble Résidence Excellence",
+            "Latitude": 14.497401,
+            "Longitude": -14.452362
+        },
+        {
+            "Name": "Siège",
+            "Address": "Almadies, niveau Rond-Point, face route King FAHD",
+            "Latitude": 14.7417774,
+            "Longitude": -17.5186477
+        },
+        {
+            "Name": "Thiaroye",
+            "Address": "Km 12,5 Rond Point Poste Thiaroye",
+            "Latitude": 14.7457666,
+            "Longitude": -17.3778233
+        },
+        {
+            "Name": "VDN",
+            "Address": "Cité Teylium prés Hypermaché Exclusive",
+            "Latitude": 14.7390526,
+            "Longitude": -17.4725849
+        },
+        {
+            "Name": "Yoff",
+            "Address": "Villa N° 14/20 Ouest Foire Cité Alie Diene Dakar",
+            "Latitude": 14.7506311,
+            "Longitude": -17.4708861
+        },
+        {
+            "Name": "Zone Industrielle",
+            "Address": "Immeuble CCBM Km3 Route de Rufisque",
+            "Latitude": 14.731362,
+            "Longitude": -17.4230141
+        },
+        {
+            "Name": "",
+            "Address": "",
+            "Latitude": 14.497401,
+            "Longitude": -14.452362
+        },
+        {
+            "Name": "AIBD",
+            "Address": "Aéroport Internation Blaise Diagne",
+            "Latitude": 14.497401,
+            "Longitude": -14.452362
+        },
+        {
+            "Name": "Ciments du Sahel",
+            "Address": "Quartier Kirene, Ciments du Sahel, commune de DIAS",
+            "Latitude": 14.65542,
+            "Longitude": -17.034245
+        },
+        {
+            "Name": "Fatick",
+            "Address": "Lot N° V2 abord Boulevard Commune de Fatick",
+            "Latitude": 14.3390167,
+            "Longitude": -16.4111425
+        },
+        {
+            "Name": "Kaolack",
+            "Address": "Quartier Léona",
+            "Latitude": 16.0168242,
+            "Longitude": -16.4928616
+        },
+        {
+            "Name": "Mboro",
+            "Address": "Quartier Serigne Mansour, Extension Sud",
+            "Latitude": 14.497401,
+            "Longitude": -14.452362
+        },
+        {
+            "Name": "Mbour",
+            "Address": "Route Nationale Quartier Diamaguène I",
+            "Latitude": 14.42073,
+            "Longitude": -16.9716071
+        },
+        {
+            "Name": "Médina Gounass",
+            "Address": "Quartier Neré en face de la Gendarmerie Nationale",
+            "Latitude": 14.497401,
+            "Longitude": -14.452362
+        },
+        {
+            "Name": "Ngaparou",
+            "Address": "Rond Point NGAPAROU",
+            "Latitude": 14.4651653,
+            "Longitude": -17.0583726
+        },
+        {
+            "Name": "Saint Louis",
+            "Address": "Hôtel Rogniat Nord, Place Faidherbe",
+            "Latitude": 16.0258475,
+            "Longitude": -16.505334
+        },
+        {
+            "Name": "Saint Louis Sor",
+            "Address": "424, Quartier Sor route de Khor",
+            "Latitude": 16.0326307,
+            "Longitude": -16.4818167
+        },
+        {
+            "Name": "Tambacounda",
+            "Address": "RN1,  face Caserne  Sapeurs-Pompiers  Tambacounda, quartier Liberté",
+            "Latitude": 13.7725888,
+            "Longitude": -13.6710059
+        },
+        {
+            "Name": "Thiès",
+            "Address": "Place de France",
+            "Latitude": 14.7871856,
+            "Longitude": -16.9324748
+        },
+        {
+            "Name": "Thiès – Point Banque",
+            "Address": "Quartier Nguinth en face brigade de la Gendarmerie Bp 3073",
+            "Latitude": 14.8072868,
+            "Longitude": -16.925531
+        },
+        {
+            "Name": "Tivaouane",
+            "Address": "Quartier Djiddah, Route Nationale",
+            "Latitude": 14.9463041,
+            "Longitude": -16.8226577
+        },
+        {
+            "Name": "Touba",
+            "Address": "Quartier Touba Khaira",
+            "Latitude": 14.8665572,
+            "Longitude": -15.8994956
+        },
+        {
+            "Name": "Touba Darou Khoudoss",
+            "Address": "Quartier Darou Khoudoss",
+            "Latitude": 15.110346,
+            "Longitude": -16.841974
+        },
+        {
+            "Name": "Touba Lekku Fi",
+            "Address": "Centre Commercial Lekku Fi, Avenue Ndiouga Kébé",
+            "Latitude": 14.8665572,
+            "Longitude": -15.8994956
+        },
+        {
+            "Name": "Ziguinchor",
+            "Address": "Place Jean Paul II",
+            "Latitude": 14.497401,
+            "Longitude": -14.452362
+        }
+    ]
+}

@@ -1,0 +1,1018 @@
+{
+    "benin": {
+        "benin": [
+            {
+                "agency_name": "Siège",
+                "address": "Rue 308 du Révérend Père Colineau – Ganhi, Cotonou, Benin",
+                "maps_link": "https://maps.google.com/?q=6.356294°,2.437337°",
+                "Latitude": 6.356294,
+                "Longitude": 2.437337
+            },
+            {
+                "agency_name": "Agence Akpakpa",
+                "address": "LOT : 2210 Parcelle \"K \"Sacré-Cœur, Cotonou, Benin",
+                "maps_link": "https://maps.google.com/?q=6.371641°,2.447834°",
+                "Latitude": 6.371641,
+                "Longitude": 2.447834
+            },
+            {
+                "agency_name": "Agence Bohicon",
+                "address": "Qtier Gankou Ponsa,  Rte de la Gare, Maison Avononmadégbé Dominique, Bohicon, Benin",
+                "maps_link": "https://maps.google.com/?q=6.358452°,2.437913°",
+                "Latitude": 6.358452,
+                "Longitude": 2.437913
+            },
+            {
+                "agency_name": "Agence Calavi",
+                "address": "Parcelle M, Lot N°151, Dangbédja Arrondissement de Calavi, Calavi, Benin",
+                "maps_link": "https://maps.google.com/?q=6.457743°,2.356625°",
+                "Latitude": 6.457743,
+                "Longitude": 2.356625
+            },
+            {
+                "agency_name": "Agence Cocotiers",
+                "address": "LOT \"G \"00629 Route de l’Aéroport, Face Ministère des Finances et de l’Economie, Cotonou, Benin",
+                "maps_link": "https://maps.google.com/?q=6.354130°,2.392955°",
+                "Latitude": 6.35413,
+                "Longitude": 2.392955
+            },
+            {
+                "agency_name": "Agence Cocotomey",
+                "address": "Cocotomey, Parcelle J du lot ‘’61’’ EL 14231 du Lotissement de Godomey, Calavi, Benin",
+                "maps_link": null,
+                "Latitude": 6.3866697,
+                "Longitude": 2.2975183
+            },
+            {
+                "agency_name": "Agence Fidjrossè",
+                "address": "Carré 1665 Adjaha Fidjrossè Avenue de la Francophonie, Cotonou, Benin",
+                "maps_link": "https://maps.google.com/?q=6.361144°,2.375934°",
+                "Latitude": 6.361144,
+                "Longitude": 2.375934
+            },
+            {
+                "agency_name": "Agence Ganhi",
+                "address": "Zone Commerciale Ganhi, face Librairie SONAEC Lot 526 - Quartier Placodji-Kpodji, Cotonou, Benin",
+                "maps_link": "https://maps.google.com/?q=6.354190°,2.436568°",
+                "Latitude": 6.35419,
+                "Longitude": 2.436568
+            },
+            {
+                "agency_name": "Agence Habitat",
+                "address": "Maison TOI, Quartier OHE Akpakpa Lot N° 59 (Rond-point Nègre Akpakpa), Cotonou, Benin",
+                "maps_link": "https://maps.google.com/?q=6.363382°,2.446169°",
+                "Latitude": 6.363382,
+                "Longitude": 2.446169
+            },
+            {
+                "agency_name": "Agence Hilacondji",
+                "address": "Lot 35, Parcelle « a, b, c », Grand-Popo, Benin",
+                "maps_link": null,
+                "Latitude": 6.2639324,
+                "Longitude": 1.7417143
+            },
+            {
+                "agency_name": "Agence Houdegbe",
+                "address": "PK10, HOUDEGBE, Route de Porto-Novo, Route de Porto-Novo, Benin",
+                "maps_link": "https://maps.google.com/?q=6.366832°,2.521421°",
+                "Latitude": 6.366832,
+                "Longitude": 2.521421
+            },
+            {
+                "agency_name": "Agence Kindonnou",
+                "address": "Carré AM 3514 KINDONOU, Cotonou, Cotonou, Benin",
+                "maps_link": "https://maps.google.com/?q=6.388279°,2.364179°",
+                "Latitude": 6.388279,
+                "Longitude": 2.364179
+            },
+            {
+                "agency_name": "Agence Missebo",
+                "address": "Parcelle D, Lot 178, Missebo, Cotonou, Benin",
+                "maps_link": "https://maps.google.com/?q=6.366112°,2.433468°",
+                "Latitude": 6.366112,
+                "Longitude": 2.433468
+            },
+            {
+                "agency_name": "Agence Ouando",
+                "address": "Avenue du cinquantenaire Parcelle \"K \", Lot 4-485, Quartier Ouando, Porto-Novo, Benin",
+                "maps_link": null,
+                "Latitude": 6.478623799999999,
+                "Longitude": 2.6203212
+            },
+            {
+                "agency_name": "Agence Parakou",
+                "address": "LOT : 179 Parcelle \"A \"Quartier BAKINKOURA, Parakou, Benin",
+                "maps_link": "https://maps.google.com/?q=6.357738°,2.434244°",
+                "Latitude": 6.357738,
+                "Longitude": 2.434244
+            },
+            {
+                "agency_name": "Agence Porto-Novo",
+                "address": "Quartier Avakpa Arrondissement de Djassin, Porto-Novo, Benin",
+                "maps_link": "https://maps.google.com/?q=6.482048°,2.610982°",
+                "Latitude": 6.482048,
+                "Longitude": 2.610982
+            },
+            {
+                "agency_name": "Agence St Michel",
+                "address": "Parcelle \"h \"Lot 557 Qtier St MICHEL, Cotonou, Cotonou, Benin",
+                "maps_link": "https://maps.google.com/?q=6.368397°,2.428553°",
+                "Latitude": 6.368397,
+                "Longitude": 2.428553
+            },
+            {
+                "agency_name": "Agence Ste Rita",
+                "address": "Ilot 1073 Parcelle O Quartier Agbondjèdo 8è arrondissement, Cotonou, Benin",
+                "maps_link": "https://maps.google.com/?q=6.375196°,2.413155°",
+                "Latitude": 6.375196,
+                "Longitude": 2.413155
+            },
+            {
+                "agency_name": "Agence Steinmetz",
+                "address": "Quartier Atinkanmey, Parcelle C Lot 119, Cotonou, Benin",
+                "maps_link": "https://maps.google.com/?q=6.359997°,2.435216°",
+                "Latitude": 6.359997,
+                "Longitude": 2.435216
+            },
+            {
+                "agency_name": "Agence UNAFRICA",
+                "address": "Quartier Mifongou, Zongo lot 417 Parcelle « P » 1400 Boulevard St Michel &756 Avenue Olory Togbe, Cotonou, Benin",
+                "maps_link": "https://maps.google.com/?q=6.357653°,2.423944°",
+                "Latitude": 6.357653,
+                "Longitude": 2.423944
+            },
+            {
+                "agency_name": "Agence Vedoko",
+                "address": "Quartier Tonato lot 1303 Parcelle « R », Cotonou, Benin",
+                "maps_link": "https://maps.google.com/?q=6.377149°,2.395382°",
+                "Latitude": 6.377149,
+                "Longitude": 2.395382
+            }
+        ]
+    },
+    "cotedivoire": [
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE ABATTA",
+                "description": "Blvd Mitterand, au carrefour du quartier ABATTA  \n\nLundi : 09H00 - 15H00 Mardi au Vendredi : 08H30 - 15H00 Samedi : 09H00 - 12H00\n\nOpérations courantes / Transfert d'argent / DAB /Rechargement Carte Abidjan.net\n\n\n27 20 33 08 25",
+                "": "",
+                "name": "AGENCE ABATTA - COCODY"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "g3MDU",
+            "Latitude": -3.930859,
+            "Longitude": 5.371938
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE ABIDJAN SUD",
+                "description": "Blvd de Marseille non loin de l'agence LONACI \n\nLundi : 09H00 - 15H00\nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n\nTéléphone :  27 20 25 91 12",
+                "": "",
+                "name": "AGENCE ABIDJAN SUD"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "YyMjc",
+            "Latitude": -3.989307,
+            "Longitude": 5.289414
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE ABOBO",
+                "description": "Entre le marché et le Lycée Moderne d'Abobo \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n \n\nTéléphone : 27 20 30 67 15",
+                "": "",
+                "name": "AGENCE ABOBO"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "M4MTI",
+            "Latitude": -4.014686,
+            "Longitude": 5.427605
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE ABOBO MAIRIE",
+                "description": "Située non loin du rond point d'Abobo\n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n \n\nTéléphone : 27 20 33 08 02",
+                "": "",
+                "name": "AGENCE ABOBO MAIRIE"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "g1ODE",
+            "Latitude": -4.017611,
+            "Longitude": 5.4185
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE ADJAME MIRADOR",
+                "description": "Adjamé 220 Logements, en face de Chez Hassan 220 Logements\n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n\n\nTéléphone :  27 20 33 08 45",
+                "": "",
+                "name": "AGENCE ADJAMÉ LIBERTÉ"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "E5MjQ",
+            "Latitude": -4.016997,
+            "Longitude": 5.353612
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE ADJAME MARCHE",
+                "description": "Blvd Nangui Abrogoua, au Forum des marchés \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n\n\nTéléphone : 27 20 30 67 98",
+                "": "",
+                "name": "AGENCE ADJAMÉ MARCHÉ",
+                "_umap_options": {
+                    "color": "DarkBlue"
+                }
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "I4OTg",
+            "Latitude": -4.026178,
+            "Longitude": 5.342698
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE ADJAME MOSQUEE",
+                "description": "Blvd Nangui Abrogoua, en face de la grande mosquée d'Adjamé \n\nFermée Temporairement pour travaux \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n\n\nTéléphone : 27 20 25 96 33",
+                "": "",
+                "name": "AGENCE ADJAMÉ MOSQUÉE"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "QwNjI",
+            "Latitude": -4.025331,
+            "Longitude": 5.352795
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE ANOMA",
+                "description": "Siège, Rue des banques (8-10 avenue Joseph Anoma) \n\nLundi au Vendredi : 08H00 - 15H00\n\nOpérations courantes / Transfert d'argent / Personnalisation carte Crystal / DAB/Rechargement Carte Abidjan.net\n\n\nTéléphone : 27 20 20 07 20",
+                "": "",
+                "name": "AGENCE ANOMA - PLATEAU"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "YxNzQ",
+            "Latitude": -4.018065,
+            "Longitude": 5.320173
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE ANYAMA",
+                "description": "Sur la grande voie centrale à 25m la pharmacie Anyama \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H000 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net  \n\nTélélphone : 27 20 25 91 16",
+                "": "",
+                "name": "AGENCE ANYAMA",
+                "_umap_options": {
+                    "color": "Navy",
+                    "iconUrl": "/uploads/pictogram/commercial-24_1.png"
+                }
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "QzNzc",
+            "Latitude": -4.051167,
+            "Longitude": 5.498056
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE ATTECOUBE",
+                "description": "Non loin de la Marie d'Attécoubé \n\nLundi au Vendredi : 08H00 - 15H00 \nSamedi : Fermé\n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net \n\nTéléphone :  27 20 33 08 22",
+                "": "",
+                "name": "AGENCE ATTECOUBE"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "A0MDc",
+            "Latitude": -4.034205,
+            "Longitude": 5.348076
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE BELLEVILLE",
+                "description": "Avenue 21, en face du marché de Belleville, près de la station Pétro Ivoire  \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net  \n\nTéléphone : 27 20 25 96 08",
+                "": "",
+                "name": "AGENCE BELLEVILLE - TREICHVILLE"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "k1NDA",
+            "Latitude": -3.998852,
+            "Longitude": 5.305279
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE BIETRY",
+                "description": "Blvd de Marseille à côté du collège Notre Dame d'Afrique \n\nLundi : 09H00 - 15H00\nMardi au Vendredi : 08H30 - 15H00 \namedi : 09H00 - 12H00\n\nOpérations courantes / Transfert d'argent / GAB/Rechargement Carte Abidjan.net  \n\nTéléphone : 27 20 25 96 36",
+                "": "",
+                "name": "AGENCE BIETRY"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "EzNzE",
+            "Latitude": -3.976985,
+            "Longitude": 5.273358
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE BINGERVILLE",
+                "description": "Sur la voie principale, à 50m de la Mairie, en face de la \"Maison des Jeunes\" \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n\n\nTéléphone : 27 20 25 96 14",
+                "": "",
+                "name": "AGENCE BINGERVILLE"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "g1OTk",
+            "Latitude": -3.888602,
+            "Longitude": 5.357239
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE BLVD DE LA REPUBLIQUE (EX CCIA)",
+                "description": "À 50 mètres du commissariat de police du 1er arrondissement au sein de l'immeuble faisant face à l'hôtel TIAMA \n\nLundi : 12h30 - 15H30\nMardi au Vendredi : 08H00 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n \n\nTéléphone : 27 20 30 67 78",
+                "": "",
+                "name": "AGENCE BLVD DE LA REPUBLIQUE (EX CCIA) - PLATEAU",
+                "_umap_options": {
+                    "color": "DarkBlue"
+                }
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "UyMTk",
+            "Latitude": -4.019538,
+            "Longitude": 5.3257
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE BONOUMIN",
+                "description": "Axe principal menant à Bonoumin, au Centre Commercial Abidjan Mall \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00\n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n\n\nTéléphone : 27 20 33 08 34",
+                "": "",
+                "name": "AGENCE BONOUMIN - COCODY"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "U2Mzk",
+            "Latitude": -3.96605,
+            "Longitude": 5.361447
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE CITE DES ARTS",
+                "description": "Sur la voie perpendiculaire à l'école de Gendarmerie, menant à l'INSAAC \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net/Rechargement Carte Abidjan.net\n\n\n\nTéléphone : 27 20 30 48 86",
+                "": "",
+                "name": "AGENCE CITE DES ARTS - COCODY"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "A2NDI",
+            "Latitude": -3.997431,
+            "Longitude": 5.346313
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE COCODY 8eme TRANCHE",
+                "description": "Sur la voie de la 8eme Tranche, en face de la Cité Soleil 3 \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n\n\nTéléphone : 27 22 33 08 40",
+                "": "",
+                "name": "AGENCE COCODY 8eme TRANCHE"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "g3NzI",
+            "Latitude": -3.975994,
+            "Longitude": 5.392079
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE COCODY DANGA",
+                "description": "À 50 mètres de la Pharmacie du lycée Technique dans le sens Plateau/Cocody \n\nLundi au Vendredi : 08H00 - 15H00 \nSamedi : Fermé\n\nOpérations courantes / Transfert d'argent / GAB/Rechargement Carte Abidjan.net\n \n\nTéléphone : 27 20 20 83 80",
+                "": "",
+                "name": "AGENCE COCODY DANGA"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "E5OTc",
+            "Latitude": -4.010544,
+            "Longitude": 5.344496
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE COMMERCE",
+                "description": "Plateau, Rue du Commerce, près du Novotel  \n\nLundi au Vendredi : 08H00 - 15H00 \nSamedi : Fermé\n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n \n\nTéléphone :27  20 30 67 80",
+                "": "",
+                "name": "AGENCE COMMERCE - PLATEAU",
+                "_umap_options": {
+                    "color": "DarkBlue"
+                }
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "U5MjA",
+            "Latitude": -4.016026,
+            "Longitude": 5.316436
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE YOPOUGON ZI",
+                "description": "Sur la première rue à droite après le carrefour de la Zone industrielle \n\nLundi au Vendredi : 08H00 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net  \n\nTélélphone : 27 20 25 91 90",
+                "": "",
+                "name": "AGENCE ENTREPRISES YOPOUGON ZI"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "c5NjM",
+            "Latitude": -4.081324,
+            "Longitude": 5.370236
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE GRAND BASSAM",
+                "description": "Au carrefour Jeunesse \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net  \n\nTéléphone : 27 20 25 91 98",
+                "": "",
+                "name": "AGENCE GRAND BASSAM"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "cxOTA",
+            "Latitude": -3.735642,
+            "Longitude": 5.204856
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE KOUMASSI",
+                "description": "**RELOCALISATION AU CARREFOUR GELTI EN FACE DE L'ÉCOLE PRIMAIRE DU CENTRE SOCIAL À COMPTER DU 17 FÉVRIER 2022, 15H**",
+                "": "",
+                "name": "AGENCE KOUMASSI",
+                "_umap_options": {
+                    "color": "DarkRed"
+                }
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "AxMzc",
+            "Latitude": -3.968489,
+            "Longitude": 5.288732
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "AGENCE KOUMASSI MARCHÉ",
+                "description": "Carrefour GELTI en face de l’école primaire du Centre social\n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00\n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net "
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "YxMjY",
+            "Latitude": -3.96553,
+            "Longitude": 5.289421
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "description": "Au sein de la Galerie Nord-Est du quartier Pangolin \n\nLundi au Vendredi : 08H00 - 15H00 \nSamedi : 09H00 - 12H00\n\nOpérations courantes / Transfert d’argent / DAB/Rechargement Carte Abidjan.net \n\n27 20 30 67 94",
+                "name": "AGENCE KOUMASSI NORD-EST"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "U3MTQ",
+            "Latitude": -3.946394,
+            "Longitude": 5.303149
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE LATRILLE",
+                "description": "En face de l'Hypermarché Sococé \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n \n\nTéléphone : 27 20 25 91 77",
+                "": "",
+                "name": "AGENCE LATRILLE - COCODY"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "IzMDc",
+            "Latitude": -3.998158,
+            "Longitude": 5.374109
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE COCODY LES VALLONS",
+                "description": "Située sur la Rue des Jardins, non loin du carrefour Dauphins \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n\n\nTélélphone : 27 20 30 48 65",
+                "": "",
+                "name": "AGENCE LES VALLONS - COCODY"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "ExOTM",
+            "Latitude": -3.989656,
+            "Longitude": 5.369245
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "AGENCE MARCORY RÉSIDENTIEL",
+                "description": "Quartier Résidentiel, à 300m de l'immeuble Samaritain, non loin de la station Corlay\n\nLundi au Vendredi: 08H00 - 15H00\nSamedi : Fermé\n\nOpérations courantes / Transfert d’argent / GAB/Rechargement Carte Abidjan.net \n\n27 20 25 96 05"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "c4MzI",
+            "Latitude": -3.990886,
+            "Longitude": 5.308356
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE MARCORY VGE",
+                "description": "Boulevard Valery Giscard d'Estaing, non loin du grand carrefour de Marcory \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00\nSamedi : 09H00 -12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net   \n\nTéléphone : 27 20 30 67 29",
+                "": "",
+                "name": "AGENCE MARCORY VGE"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "Y3Nzk",
+            "Latitude": -3.988765,
+            "Longitude": 5.300415
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE PALM CLUB",
+                "description": "Boulevard Latrille à l'intérieur de l'Hôtel Palm Club \n\nLundi : 12h30- 17h00 \nMardi au Vendredi : 09h00 - 12h30 / 14h00 - 17h00 Samedi : 12h00 - 17h00 \n\nOpérations courantes / Transfert d'argent / GAB/Rechargement Carte Abidjan.net\n \n\nTéléphone : 27 20 25 96 28",
+                "": "",
+                "name": "AGENCE PALM CLUB - COCODY",
+                "_umap_options": {
+                    "color": "DarkBlue"
+                }
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "Q2NDM",
+            "Latitude": -4.002521,
+            "Longitude": 5.353041
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "AGENCE PARTICULIERS YOPOUGON ZI",
+                "description": "Au Grand Carrefour de Yopougon Zone Industrielle, à proximité de la station Africa Petroleum \n\nLundi au Vendredi : 08h00 - 15h00\nSamedi : Fermé"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "g2NzI",
+            "Latitude": -4.079486,
+            "Longitude": 5.368596
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "AGENCE PERLES GRISES - COCODY",
+                "description": "Située à Angré, carrefour \"Les Oscars\"\n\nLundi au Vendredi : 08H00 - 15H00\nSamedi : Fermé\n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n\n\nTéléphone : 27 20 25 96 30"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "cxNjg",
+            "Latitude": -3.991898,
+            "Longitude": 5.394534
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE PLATEAU THOMASSET",
+                "description": "Au sein de l'immeuble Saint Augustin à 30 mètres de l'Hôtel Ibis Plateau  \n\nLundi au Vendredi : 08H00 - 15H00 \nSamedi : Fermé\n\nOpérations courantes / Transfert d'argent / GAB/Rechargement Carte Abidjan.net\n \n\nTéléphone : 27 20 30 48 80",
+                "": "",
+                "name": "AGENCE PLATEAU THOMASSET",
+                "_umap_options": {
+                    "color": "DarkBlue"
+                }
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "M1NTc",
+            "Latitude": -4.022398,
+            "Longitude": 5.32647
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE PRESTIGE IMMEUBLE CNPS",
+                "description": "Rue du Commerce, dans l'immeuble CNPS, face à l'hôtel Novotel  \n\nLundi au Vendredi : 08H00 - 15H00 \nSamedi : Fermé\n\nOpérations courantes / Transfert d'argent / GAB/Rechargement Carte Abidjan.net\n\n\nTéléphone : 27 20 25 96 24",
+                "": "",
+                "name": "AGENCE PRESTIGE IMMEUBLE CNPS - PLATEAU",
+                "_umap_options": {
+                    "color": "DarkBlue"
+                }
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "Q3NjM",
+            "Latitude": -4.016538,
+            "Longitude": 5.316807
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE RIVIERA 2",
+                "description": "Sur la voie principale menant à ANONO, en face de la station-service FIRST PETROLEUM  \n\nLundi au Vendredi : 08H00 - 15H00 \nSamedi : Fermé\n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n\n\nTéléphone : 27 20 30 48 88",
+                "": "",
+                "name": "AGENCE RIVIERA 2 - COCODY"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "YzNTM",
+            "Latitude": -3.976584,
+            "Longitude": 5.351322
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE RIVIERA 3",
+                "description": "Riviéra 3 non loin de la pharmacie St Pierre des Rosiers, face à la CIE \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / GAB/Rechargement Carte Abidjan.net\n\n\nTéléphone : 27 20 25 96 42",
+                "": "",
+                "name": "AGENCE RIVIERA 3 - COCODY"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "k5MjM",
+            "Latitude": -3.957146,
+            "Longitude": 5.354056
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE LEADER PRICE",
+                "description": "Riviéra Golf au sein de la Galerie Casino Mandarine (ex Galerie Leader Price)\n\nLundi au Samedi : 09h00 - 18h00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n\n\nTéléphone : 27 20 30 67 68",
+                "": "",
+                "name": "AGENCE RIVIERA GOLF - COCODY"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "E3NTg",
+            "Latitude": -3.975651,
+            "Longitude": 5.339202
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE RUE DES JARDINS",
+                "description": "II Plateaux Rue des Jardins en face de la boulangerie-pâtisserie Paul \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n \n\nTéléphone : 27 20 30 67 74",
+                "": "",
+                "name": "AGENCE RUE DES JARDINS - COCODY"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "Y4NDI",
+            "Latitude": -3.989865,
+            "Longitude": 5.36204
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE Ste MARIE",
+                "description": "À coté de la maison du PDCI-RDA \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00\n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n \n\nTéléphone : 27 20 30 67 65",
+                "": "",
+                "name": "AGENCE Ste MARIE - COCODY"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "k2MDk",
+            "Latitude": -3.997843,
+            "Longitude": 5.335024
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE TREICHVILLE",
+                "description": "Sur le VGE, à la station Total près du Palais des Sports  \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00\n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net  \n\nTéléphone : 27 20 30 67 60",
+                "": "",
+                "name": "AGENCE TREICHVILLE"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "I5ODY",
+            "Latitude": -4.003439,
+            "Longitude": 5.297954
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE TREICHVILLE MARCHE",
+                "description": "En face de la maire de Treichville  \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n \n\nTéléphone : 27 20 30 67 35",
+                "": "",
+                "name": "AGENCE TREICHVILLE MARCHE"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "Y2ODA",
+            "Latitude": -4.013434,
+            "Longitude": 5.310167
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE VRIDI",
+                "description": "À proximité du Centre de Tri de Vridi, dans la station Total \n\nLundi  au Vendredi : 08H00 - 15H00 \nSamedi : Fermé\n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net \n\nTéléphone :  27 20 30 67 40",
+                "": "",
+                "name": "AGENCE VRIDI"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "c0NjI",
+            "Latitude": -4.003504,
+            "Longitude": 5.268521
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE YOPOUGON BEL AIR",
+                "description": "Carrefour Bel Air, face à la Pharmacie Bel Air\n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00\n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n\n\nTéléphone : 27 20 25 96 39",
+                "": "",
+                "name": "AGENCE YOPOUGON BEL AIR"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "kwMTE",
+            "Latitude": -4.063565,
+            "Longitude": 5.347748
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE YOPOUGON FICGAYO",
+                "description": "Situé après la place Ficgayo, en face du centre commercial Cosmos\n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00\n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n\n\nTéléphone : 27 20 30 67 57",
+                "": "",
+                "name": "AGENCE YOPOUGON FICGAYO"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "U3NjQ",
+            "Latitude": -4.073336,
+            "Longitude": 5.349104
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE YOPOUGON MAROC",
+                "description": "Quartier Maroc, carrefour antenne, face chawarma \"Chez Hassan\"  \n\nLundi : 09H00 - 15H00\nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n \n\nTéléphone : 27 20 25 96 12",
+                "": "",
+                "name": "AGENCE YOPOUGON MAROC"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "Q5MTc",
+            "Latitude": -4.100603,
+            "Longitude": 5.341318
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE YOPOUGON TOITS ROUGES",
+                "description": "Non loin de la pharmacie Gandhi  \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00\n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net\n \n\n27 20 30 48 94",
+                "": "",
+                "name": "AGENCE YOPOUGON TOITS ROUGES"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "cwOTk",
+            "Latitude": -4.05927,
+            "Longitude": 5.323994
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "nom": "AGENCE ZONE 4",
+                "description": "Rue Pierre et Marie Curie, en face du Concessionnaire Mercedes \n\nLundi : 09H00 - 15H00 \nMardi au Vendredi : 08H30 - 15H00 \nSamedi : 09H00 - 12H00 \n\nOpérations courantes / Transfert d'argent / DAB/Rechargement Carte Abidjan.net \n\nTéléphone : 27 20 30 48 83",
+                "": "",
+                "name": "AGENCE ZONE 4"
+            },
+            "geometry": {
+                "type": "Point"
+            },
+            "id": "E0ODM",
+            "Latitude": -3.982435,
+            "Longitude": 5.289895
+        }
+    ],
+    "senegal": {
+        "senegal": [
+            {
+                "agency_name": "NSIA Banque VDN",
+                "address": "NSIA Bank,Dakar,Sénégal",
+                "Latitude": 14.6976032,
+                "Longitude": -17.4372027
+            },
+            {
+                "agency_name": "NSIA Banque Yoff",
+                "address": "Diamond Bank Agence Db Yoff, Route de l Aéroport, Dakar, Sénégal",
+                "Latitude": 14.7527587,
+                "Longitude": -17.4936582
+            },
+            {
+                "agency_name": "NSIA Hôpital Principal",
+                "address": "12 Avenue Nelson Mandela,Dakar,Sénégal",
+                "Latitude": 14.662619,
+                "Longitude": -17.4351679
+            },
+            {
+                "agency_name": "NSIA Banque Saly",
+                "address": "Diamond Bank Saly,Route de Saly,Mbour,Sénégal",
+                "Latitude": 14.443124,
+                "Longitude": -17.0127804
+            },
+            {
+                "agency_name": "NSIA Banque Thiès",
+                "address": "Agence Diamond Bank Thiès,Thiès,Sénégal",
+                "Latitude": 14.7816184,
+                "Longitude": -16.9487596
+            },
+            {
+                "agency_name": "NSIA Banque Touba",
+                "address": "N3,Touba,Sénégal",
+                "Latitude": 14.8680351,
+                "Longitude": -15.8537626
+            },
+            {
+                "agency_name": "NSIA Banque AIBD Arrivée",
+                "address": "Accès Aéroport,Sénégal",
+                "Latitude": 14.6715627,
+                "Longitude": -17.0647432
+            },
+            {
+                "agency_name": "NSIA Banque AIBD Départ",
+                "address": "Accès Aéroport,Sénégal",
+                "Latitude": 14.6715627,
+                "Longitude": -17.0647432
+            },
+            {
+                "agency_name": "NSIA Banque Bourguiba",
+                "address": "Boulevard du President Habib Bourguiba,Dakar,Sénégal",
+                "Latitude": 14.7060127,
+                "Longitude": -17.4611215
+            },
+            {
+                "agency_name": "NSIA Banque Carnot",
+                "address": "Rue Carnot,Dakar,Sénégal",
+                "Latitude": 14.6677122,
+                "Longitude": -17.435815
+            },
+            {
+                "agency_name": "NSIA Banque Carnot 2",
+                "address": "76 Rue Carnot,Dakar,Sénégal",
+                "Latitude": 14.66772,
+                "Longitude": -17.4379123
+            },
+            {
+                "agency_name": "NSIA Banque Colobane",
+                "address": "Marche de Colobane,Dakar,Sénégal",
+                "Latitude": 14.6987499,
+                "Longitude": -17.4427315
+            },
+            {
+                "agency_name": "NSIA Banque Ngaparou",
+                "address": "Route Ngaparou Somone,Sénégal",
+                "Latitude": 14.4781276,
+                "Longitude": -17.0734298
+            },
+            {
+                "agency_name": "NSIA Banque Parcelles Unité 8",
+                "address": "Agence Diamond Banque,Dakar,Sénégal",
+                "Latitude": 14.7534583,
+                "Longitude": -17.4346079
+            },
+            {
+                "agency_name": "NSIA Almadies",
+                "address": "Route de King Fahd,Dakar,Sénégal",
+                "Latitude": 14.7417774,
+                "Longitude": -17.5186477
+            }
+        ]
+    },
+    "togo": {
+        "Togo": [
+            {
+                "agence": "NSIA - Agence rue du commerce - Avenue Sylvanus Olympio (ex Rue du Commerce) Lomé - Togo",
+                "Latitude": 6.1242692,
+                "Longitude": 1.2261057
+            },
+            {
+                "agence": "NSIA - Agence Atikpodji - 367 Rue Lac Atikpodji Lomé - Togo",
+                "Latitude": 6.1296024,
+                "Longitude": 1.2326092
+            },
+            {
+                "agence": "NSIA - Agence Akodessewa - Rue 64 BE-HEDJI (Station Cerveau MAWOUENA) Akodésséwa Lomé - Togo",
+                "Latitude": 6.180450599999999,
+                "Longitude": 1.2400133
+            },
+            {
+                "agence": "NSIA - Agence Hedzranawoe - Rue 107, Boulevard HAHO (Face marché HEDZRANAWOE) Lomé - Togo",
+                "Latitude": 6.181600299999999,
+                "Longitude": 1.2404605
+            },
+            {
+                "agence": "NSIA - Agence Adidogome - Route Kpalimé-ADIDOGOME Adidogomé - BP 3925 Lomé - Togo",
+                "Latitude": 6.9097671,
+                "Longitude": 0.6298922
+            },
+            {
+                "agence": "NSIA - Agence AGOE - Route d'Atakpamé face station Total AGOE Lomé - Togo",
+                "Latitude": 6.129557699999999,
+                "Longitude": 1.2196502
+            },
+            {
+                "agence": "NSIA - Agence Avepozo - Route d'Aného, en face de la pharmacie VERSEAU Lomé - Togo",
+                "Latitude": 6.1668203,
+                "Longitude": 1.3344925
+            },
+            {
+                "agence": "NSIA - Point banque agbalepedo - 2495 Avenue de la Chance (en face du siège de la LONATO) Agbalépédo Lomé - Togo",
+                "Latitude": 6.1892751,
+                "Longitude": 1.2079945
+            },
+            {
+                "agence": "NSIA - Point banque aéroport - Hall arrivé de l'aérogare GNASSINGBE EYADEMA Lomé - Togo",
+                "Latitude": 6.129557699999999,
+                "Longitude": 1.2196502
+            },
+            {
+                "agence": "NSIA - Point banque LCT - Zone portuaire dans l'immeuble de LCT Lomé - Togo",
+                "Latitude": 6.129557699999999,
+                "Longitude": 1.2196502
+            },
+            {
+                "agence": "NSIA - Agence KARA - Carrefour BCEAO Police-Mairie Kara - Togo",
+                "Latitude": 9.5519965,
+                "Longitude": 1.1876988
+            },
+            {
+                "agence": "NSIA - Agence CINKASSE - Route Nationale N°1(Station SUN, PETRO AFRICA) Cinkassé - Togo",
+                "Latitude": 11.1059574,
+                "Longitude": 0.014598
+            }
+        ]
+    }
+}

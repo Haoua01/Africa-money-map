@@ -1,0 +1,104 @@
+{
+    "mali": [
+        {
+            "name": "Si\u00e8ge",
+            "Latitude": 17.570692,
+            "Longitude": -3.996166
+        },
+        {
+            "name": "Agence Grand March\u00e9 (Bamako)",
+            "Latitude": 12.6461525,
+            "Longitude": -8.001654799999999
+        },
+        {
+            "name": "Agence de Sogoniko (Bamako)",
+            "Latitude": 12.6039461,
+            "Longitude": -7.964157299999999
+        },
+        {
+            "name": "Agence de Bacodjikoroni (Bamako)",
+            "Latitude": 12.5985498,
+            "Longitude": -8.0149555
+        },
+        {
+            "name": "Bureau de Faso Kanu (Bamako)",
+            "Latitude": 12.6391699,
+            "Longitude": -8.0025475
+        },
+        {
+            "name": "Agence de Djikoroni Para (Bamako)",
+            "Latitude": 12.6174279,
+            "Longitude": -8.0307313
+        },
+        {
+            "name": "Bureau de Dj\u00e9libougou (Bamako)",
+            "Latitude": 12.6392316,
+            "Longitude": -8.0028892
+        },
+        {
+            "name": "Agence de Niamana (Bamako)",
+            "Latitude": 14.4729863,
+            "Longitude": -7.472076799999999
+        },
+        {
+            "name": "Bureau de Hamdallaye (Bamako)",
+            "Latitude": 12.651671,
+            "Longitude": -8.034529299999999
+        },
+        {
+            "name": "Bureau de l\u2019Hippodrome (Bamako)",
+            "Latitude": 24.4672132,
+            "Longitude": 39.6024496
+        },
+        {
+            "name": "Agence S\u00e9gou",
+            "Latitude": 13.4953857,
+            "Longitude": -6.1703331
+        },
+        {
+            "name": "Agence de Sikasso",
+            "Latitude": 12.6448998,
+            "Longitude": -7.9949057
+        },
+        {
+            "name": "Agences de Koutiala (Sikasso)",
+            "Latitude": 12.3774106,
+            "Longitude": -5.472538399999999
+        },
+        {
+            "name": "Bureau Bougouni",
+            "Latitude": 11.1780136,
+            "Longitude": -8.1529749
+        },
+        {
+            "name": "Agence de Kati (Koulikoro)",
+            "Latitude": 12.7453724,
+            "Longitude": -8.0738001
+        },
+        {
+            "name": "Agence de Mopti",
+            "Latitude": 14.490149,
+            "Longitude": -4.1924713
+        },
+        {
+            "name": "Bureau de Sevar\u00e9 (Mopti)",
+            "Latitude": 14.5241022,
+            "Longitude": -4.0951038
+        },
+        {
+            "name": "Agence de Kayes",
+            "Latitude": 14.4502323,
+            "Longitude": -11.4356171
+        },
+        {
+            "name": "Bureau de Kayes N\u2019di",
+            "Latitude": 14.4579381,
+            "Longitude": -11.4279672
+        },
+        {
+            "name": "Bureau de Keni\u00e9ba (Kayes)",
+            "Latitude": 12.846903,
+            "Longitude": -11.2359116
+        }
+    ]
+}

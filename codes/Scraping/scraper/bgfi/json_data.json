@@ -1,0 +1,122 @@
+{
+    "benin": [
+        {
+            "agence": "Agence de Wlacodji-Kpodji: Lot 4153, Rue St Michel Wlacodji - 01 BP 4270 Cotonou - Bénin",
+            "Latitude": 6.3528033,
+            "Longitude": 2.4369316
+        },
+        {
+            "agence": "Agence Persée: Akpakpa 01 BP 4270 Cotonou - Bénin",
+            "Latitude": 6.389927699999999,
+            "Longitude": 2.4566817
+        },
+        {
+            "agence": "Agence Phoenix: Ganhi 01 BP 4270 Cotonou - Bénin",
+            "Latitude": 6.3562425,
+            "Longitude": 2.4277995
+        },
+        {
+            "agence": "Agence Pégase: Au Carefour Vodjè 01 BP 4270 Cotonou - Bénin",
+            "Latitude": 6.3729171,
+            "Longitude": 2.3986432
+        },
+        {
+            "agence": "Agence Orion: sur l’Avenue Steinmetz 01 BP 4270 Cotonou - Bénin",
+            "Latitude": 6.3593889,
+            "Longitude": 2.4361208
+        },
+        {
+            "agence": "Agence Capella 01 BP 4270 Porto-Novo - Bénin",
+            "Latitude": 6.478623799999999,
+            "Longitude": 2.6203212
+        },
+        {
+            "agence": "Agence Apus à Calavi 01 BP 4270 Abomey-Calavi - Bénin",
+            "Latitude": 6.4503024,
+            "Longitude": 2.3468195
+        },
+        {
+            "agence": "Agence Centaurus: Carré N°38, Rue Dako Donou Guinkomey Cotonou - Bénin",
+            "Latitude": 6.3612233,
+            "Longitude": 2.4380843
+        },
+        {
+            "agence": "Agence Nova: sur l’Esplanade du Stade de l’Amitié 01 BP 4270 Cotonou - Bénin",
+            "Latitude": 6.3859642,
+            "Longitude": 2.3794872
+        }
+    ],
+    "cotedivoire": [
+        {
+            "agence": "ABIDJAN NORD : Centre d’Affaires Ivoire : Bd Hassan II, au sein de la galerie Ivoire Trade Center Cocody Abidjan - Côte d’Ivoire",
+            "Latitude": 5.3268524,
+            "Longitude": -4.0019554
+        },
+        {
+            "agence": "ABIDJAN NORD : Agence LOXIA : Roxy Adjamé Abidjan - Côte d’Ivoire",
+            "Latitude": 5.3496047,
+            "Longitude": -4.025201500000001
+        },
+        {
+            "agence": "ABIDJAN NORD : Centre d’Affaires Etoile:  Rue Alphonse Daudet, RDC Im. Delafosse Plateau Abidjan - Côte d’Ivoire",
+            "Latitude": 5.3201469,
+            "Longitude": -4.0166113
+        },
+        {
+            "agence": "ABIDJAN NORD : Centre d’Affaires Athéna: Zone Industrielle Yopougon Abidjan - Côte d’Ivoire",
+            "Latitude": 5.317666099999999,
+            "Longitude": -4.0899911
+        },
+        {
+            "agence": "ABIDJAN NORD : Centre d’Affaires Mercure: II Plateaux, Rue des jardins Cocody Abidjan - Côte d’Ivoire",
+            "Latitude": 5.3617282,
+            "Longitude": -3.9896738
+        },
+        {
+            "agence": "ABIDJAN SUD : Centre d’Affaires Cassiopée:  Boulevard Valery Giscard d’Estaing Marcory Abidjan - Côte d’Ivoire",
+            "Latitude": 5.3002875,
+            "Longitude": -3.9965489
+        },
+        {
+            "agence": "ABIDJAN SUD : Agence Hermès: Au sein du Radisson Blu Abidjan Airport Port-Bouet Abidjan - Côte d’Ivoire",
+            "Latitude": 5.258726999999999,
+            "Longitude": -3.936645999999999
+        },
+        {
+            "agence": "ABIDJAN SUD : Agence Véga: Rue du 7 décembre Koumassi Abidjan - Côte d’Ivoire",
+            "Latitude": 5.2848301,
+            "Longitude": -3.9742108
+        },
+        {
+            "agence": "Centre d’Affaires Gaïa: Avenue de l’Indépendance San-Pédro - Côte d’Ivoire",
+            "Latitude": 4.757896775911388, 
+            "Longitude": -6.644708760133209
+        }
+    ],
+    "senegal": [
+        {
+            "agency_name": "BGFI Bank Select Rond point Ngor",
+            "address": "Shell,Route de la Corniche Ouest,Dakar,Senegal",
+            "Latitude": 14.6789808,
+            "Longitude": -17.4594542
+        },
+        {
+            "agency_name": "BGFI Bank KFC",
+            "address": "KFC SENEGAL,Rue de l 'Universite,Dakar,Senegal",
+            "Latitude": 14.6875376,
+            "Longitude": -17.4649716
+        },
+        {
+            "agency_name": "BGFI Bank Mermoz",
+            "address": "Rue MZ 83,Dakar,Senegal",
+            "Latitude": 14.7069578,
+            "Longitude": -17.4733406
+        },
+        {
+            "agency_name": "BGFI Bank Plateau",
+            "address": "BGFI Bank Senegal,Dakar,Senegal",
+            "Latitude": 14.6668965,
+            "Longitude": -17.4401999
+        }
+    ]
+}

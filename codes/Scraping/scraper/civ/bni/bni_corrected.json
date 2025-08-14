@@ -1,0 +1,184 @@
+{
+    "cotedivoire": [
+        {
+            "name": "ABENGOUROU",
+            "Latitude": "6.730453",
+            "Longitude": "-3.487329"
+        },
+        {
+            "name": "ABOBO",
+            "Latitude": "5.423586",
+            "Longitude": "-4.015669"
+        },
+        {
+            "name": "ADJAME BANFORA",
+            "Latitude": "5.348504",
+            "Longitude": "-4.024789"
+        },
+        {
+            "name": "ADJAME ST-MICHEL",
+            "Latitude": "5.348980",
+            "Longitude": "-4.023106"
+        },
+        {
+            "name": "ANYAMA",
+            "Latitude": "5.500326",
+            "Longitude": "-4.051922"
+        },
+        {
+            "name": "COCOCY ANGRE CHU",
+            "Latitude": "5.398677",
+            "Longitude": "-3.956594"
+        },
+        {
+            "name": "COCODY 9\u00e8me TRANCHE",
+            "Latitude": "5.383731",
+            "Longitude": "-3.973258"
+        },
+        {
+            "name": "COCODY DANGA",
+            "Latitude": "5.33774",
+            "Longitude": "-4.005023"
+        },
+        {
+            "name": "COCODY II PLATEAUX AGBAN",
+            "Latitude": "5.368401",
+            "Longitude": "-4.000335"
+        },
+        {
+            "name": "COCODY II PLATEAUX LATRILLE",
+            "Latitude": "5.377640",
+            "Longitude": "-3.997371"
+        },
+        {
+            "name": "COCODY RIVIERA M'POUTO",
+            "Latitude": "5.328371",
+            "Longitude": "-3.948175"
+        },
+        {
+            "name": "COCODY RIVIERA PALMERAIE",
+            "Latitude": "5.369861",
+            "Longitude": "-3.958836"
+        },
+        {
+            "name": "KOUMASSI MAIRIE",
+            "Latitude": "5.290571",
+            "Longitude": "-3.969805"
+        },
+        {
+            "name": "MARCORY ZONE 4",
+            "Latitude": "5.291463",
+            "Longitude": "-3.982505"
+        },
+        {
+            "name": "PLATEAU ALLIANCE",
+            "Latitude": "5.325895",
+            "Longitude": "-4.017922"
+        },
+        {
+            "name": "PLATEAU REPUBLIQUE",
+            "Latitude": "5.318434",
+            "Longitude": "-4.019727"
+        },
+        {
+            "name": "RIVIERA ABATTA",
+            "Latitude": "5.345541",
+            "Longitude": "-3.979014"
+        },
+        {
+            "name": "TREICHVILLE MARCH\u00c9",
+            "Latitude": "5.309464",
+            "Longitude": "-4.014052"
+        },
+        {
+            "name": "YOPOUGON KENEYA",
+            "Latitude": "5.347487",
+            "Longitude": "-4.073131"
+        },
+        {
+            "name": "YOPOUGON MAROC",
+            "Latitude": "5.330211",
+            "Longitude": "-4.103809"
+        },
+        {
+            "name": "ABOISSO EHANIA",
+            "Latitude": "5.285542",
+            "Longitude": "-3.053246"
+        },
+        {
+            "name": "BONOUA",
+            "Latitude": "5.268620",
+            "Longitude": "-3.597406"
+        },
+        {
+            "name": "BOUAKE COMMERCE",
+            "Latitude": "7.682638",
+            "Longitude": "-5.028895"
+        },
+        {
+            "name": "BOUAKE MARCHE DE GROS",
+            "Latitude": "7.697940",
+            "Longitude": "-5.022602"
+        },
+        {
+            "name": "BOUNDIALI",
+            "Latitude": "9.522925",
+            "Longitude": "-6.484987"
+        },
+        {
+            "name": "DALOA",
+            "Latitude": "6.8845990",
+            "Longitude": "-6.4594770"
+        },
+        {
+            "name": "FERKESSEDOUGOU",
+            "Latitude": "9.592457",
+            "Longitude": "-5.197731"
+        },
+        {
+            "name": "GAGNOA",
+            "Latitude": "6.1306740",
+            "Longitude": "-5.9458390"
+        },
+        {
+            "name": "GRAND-LAHOU IROBO",
+            "Latitude": "5.2973700",
+            "Longitude": "-4.7958980"
+        },
+        {
+            "name": "KORHOGO",
+            "Latitude": "9.457337",
+            "Longitude": "-5.631852"
+        },
+        {
+            "name": "KORHOGO TONGON",
+            "Latitude": "9.901097",
+            "Longitude": "-5.730662"
+        },
+        {
+            "name": "MAN",
+            "Latitude": "7.412676",
+            "Longitude": "-7.545198"
+        },
+        {
+            "name": "MEAGUI",
+            "Latitude": "5.410757",
+            "Longitude": "-6.558391"
+        },
+        {
+            "name": "SAN-PEDRO CITE",
+            "Latitude": "4.7477510",
+            "Longitude": "-6.6347400"
+        },
+        {
+            "name": "SAN-PEDRO IBOKE",
+            "Latitude": "4.6823450",
+            "Longitude": "-7.4071810"
+        },
+        {
+            "name": "YAMOUSSOUKRO",
+            "Latitude": "6.821579",
+            "Longitude": "-5.279204"
+        }
+    ]
+}

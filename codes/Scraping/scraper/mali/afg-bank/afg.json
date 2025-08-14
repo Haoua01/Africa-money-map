@@ -1,0 +1,76 @@
+{
+    "mali": [
+        {
+            "name": "Agence Yirimadio",
+            "address": "RN6 non loin du rond-point de Wara, Bamako, Mali",
+            "Latitude": 12.6096653,
+            "Longitude": -7.9097224
+        },
+        {
+            "name": "SIEGE",
+            "address": "Hamdalaye ACI 2000, rue 286 IMM M1, Bamako, Mali",
+            "Latitude": 12.6299491,
+            "Longitude": -8.027427399999999
+        },
+        {
+            "name": "ZONE INDUSTRIELLE",
+            "address": "Zone Industrielle Route de Sotuba, immeuble Baniamey en face de Malilait SA, Bamako, Mali",
+            "Latitude": 12.6503113,
+            "Longitude": -7.9646282
+        },
+        {
+            "name": "SUGUBA",
+            "address": "Grand march\u00e9, En face de l\u2019ancienne Poste Nationale, Bamako, Mali",
+            "Latitude": 12.6391699,
+            "Longitude": -8.0025475
+        },
+        {
+            "name": "DABANANI",
+            "address": "March\u00e9 Dabanani, Rue Caron, Bamako, Mali",
+            "Latitude": 12.642966,
+            "Longitude": -7.9958904
+        },
+        {
+            "name": "KAYES",
+            "address": "Quartier Libert\u00e9, Immeuble Boubacar Doucour\u00e9, Kayes, Mali",
+            "Latitude": 14.4393538,
+            "Longitude": -11.4467369
+        },
+        {
+            "name": "AGENCE PRESTIGE",
+            "address": "AGENCE PRESTIGE, Avenue du Mali Immeuble Soya Bathily en face de Huawey, Bamako, Mali",
+            "Latitude": 12.5731283,
+            "Longitude": -8.0007532
+        },
+        {
+            "name": "BADALABOUGOU",
+            "address": "Avenue de L\u2019OUA, Bamako, Mali",
+            "Latitude": 12.603926,
+            "Longitude": -7.9456706
+        },
+        {
+            "name": "MARCHE MEDINE",
+            "address": "Station Shell M\u00e9dine march\u00e9, pr\u00e8s du stade Omnisport, Bamako, Mali",
+            "Latitude": 12.6391699,
+            "Longitude": -8.0025475
+        },
+        {
+            "name": "DJELIBOUGOU",
+            "address": "Route de Koulikoro, station Total Dj\u00e9libougou, Bamako, Mali",
+            "Latitude": 12.6392316,
+            "Longitude": -8.0028892
+        },
+        {
+            "name": "MISSABOUGOU",
+            "address": "Route de Missabougou, Station Total Missagougou, Bamako, Mali",
+            "Latitude": 12.61677,
+            "Longitude": -7.919559
+        },
+        {
+            "name": "SEBENICORO",
+            "address": "Secteur 1, RN5, Station Total Sebenicoro, Bamako, Mali",
+            "Latitude": 12.5302245,
+            "Longitude": -8.030154399999999
+        }
+    ]
+}

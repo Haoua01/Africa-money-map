@@ -1,0 +1,166 @@
+{
+    "burkina": [
+        {
+            "name": "Agence NATION",
+            "address": "800, Avenue de la nation, Ouagadougou, Burkina Faso",
+            "Latitude": 12.3703801,
+            "Longitude": -1.5232071
+        },
+        {
+            "name": "Agence Kwam\u00e9 N'Krumah",
+            "address": "1226, Avenue du Dr Kwam\u00e9 N'Krumah, Ouagadougou, Burkina Faso",
+            "Latitude": 12.3714277,
+            "Longitude": -1.5196603
+        },
+        {
+            "name": "Agence Wayalghin",
+            "address": "Route de Fada, face SONACOF, Ouagadougou, Burkina Faso",
+            "Latitude": 12.4133421,
+            "Longitude": -1.4146733
+        },
+        {
+            "name": "Agence Wemtenga",
+            "address": "RUE 29.13 WEMTNGA, Ouagadougou, Burkina Faso",
+            "Latitude": 12.3712028,
+            "Longitude": -1.4885488
+        },
+        {
+            "name": "Agence Si\u00e8ge",
+            "address": "653, Avenue du Dr Kwam\u00e9 N'Krumah 800, Avenue de la nation Ouagadougou, Burkina Faso",
+            "Latitude": 12.3703801,
+            "Longitude": -1.5232071
+        },
+        {
+            "name": "Agence Pissy",
+            "address": "Route de Bobo, Face \u00e0 la Mairie de Boulmiougou, Ouagadougou, Burkina Faso",
+            "Latitude": 12.3429865,
+            "Longitude": -1.5783058
+        },
+        {
+            "name": "Agence patte d'Oie",
+            "address": "Face Ouaga inter, Ouagadougou, Burkina Faso",
+            "Latitude": 12.3350754,
+            "Longitude": -1.5099705
+        },
+        {
+            "name": "Guichet Grand March\u00e9",
+            "address": "Face au restaurant Eau Vive, Ouagadougou, Burkina Faso",
+            "Latitude": 12.3694853,
+            "Longitude": -1.5242289
+        },
+        {
+            "name": "Agence Tampouy",
+            "address": "Route de Ouahigouya, 400m apr\u00e8s les rails, Ouagadougou, Burkina Faso",
+            "Latitude": 12.3714277,
+            "Longitude": -1.5196603
+        },
+        {
+            "name": "Agence de Belle Ville",
+            "address": "Rue NEZIEN BEDEMBIE, Ouagadougou, Burkina Faso",
+            "Latitude": 12.3714277,
+            "Longitude": -1.5196603
+        },
+        {
+            "name": "Agence Balkuy",
+            "address": "Balkuy, Ouagadougou, Burkina Faso",
+            "Latitude": 12.2969565,
+            "Longitude": -1.4718237
+        },
+        {
+            "name": "Agence Kossoghin",
+            "address": "Kossoghin, Ouagadougou, Burkina Faso",
+            "Latitude": 12.4008728,
+            "Longitude": -1.5546992
+        },
+        {
+            "name": "Agence TENKODOGO",
+            "address": "C\u00f4t\u00e9 Est du grand march\u00e9, B\u00e2timent de Faso yaar, Tenkodogo, Burkina Faso",
+            "Latitude": 11.7863324,
+            "Longitude": -0.3654204
+        },
+        {
+            "name": "Agence BOBO-DIOULASSO",
+            "address": "Avenue Guillaume Ouedraogo, Bobo-Dioulasso, Burkina Faso",
+            "Latitude": 11.1749643,
+            "Longitude": -4.3006117
+        },
+        {
+            "name": "Agence GARANGO",
+            "address": "A l'entr\u00e9e du grand march\u00e9, Garango, Burkina Faso",
+            "Latitude": 11.8088575,
+            "Longitude": -0.5352355999999999
+        },
+        {
+            "name": "Agence DORI",
+            "address": "A 20 m\u00e8tres du Monument Hama Arba DIALLO, Dori, Burkina Faso",
+            "Latitude": 14.0246473,
+            "Longitude": -0.0233208
+        },
+        {
+            "name": "Agence KOUDOUGOU",
+            "address": "Avenue Dreux, Koudougou, Burkina Faso",
+            "Latitude": 12.2562183,
+            "Longitude": -2.3517526
+        },
+        {
+            "name": "Agence KAYA",
+            "address": "Kaya, Burkina Faso",
+            "Latitude": 13.0910405,
+            "Longitude": -1.0873551
+        },
+        {
+            "name": "Agence PO",
+            "address": "Po, Burkina Faso",
+            "Latitude": 11.1652432,
+            "Longitude": -1.1400998
+        },
+        {
+            "name": "Agence GAOUA",
+            "address": "Route de la grande gare, Gaoua, Burkina Faso",
+            "Latitude": 10.3231036,
+            "Longitude": -3.1679257
+        },
+        {
+            "name": "Agence ORODARA",
+            "address": "Face au march\u00e9 central Orodara, Burkina Faso",
+            "Latitude": 10.9808313,
+            "Longitude": -4.909132899999999
+        },
+        {
+            "name": "Guichet BOBO MARCHE",
+            "address": "Enceinte du march\u00e9 de Bobo, Bobo-Dioulasso, Burkina Faso",
+            "Latitude": 11.1580045,
+            "Longitude": -4.270194500000001
+        },
+        {
+            "name": "Agence Boromo",
+            "address": "Boromo, Burkina Faso",
+            "Latitude": 11.7459813,
+            "Longitude": -2.930081
+        },
+        {
+            "name": "Agence OUAHIGOUYA",
+            "address": "01 BP Avenue de Banfora, Ouahigouya, Burkina Faso",
+            "Latitude": 13.5668258,
+            "Longitude": -2.4109908
+        },
+        {
+            "name": "Agence ZINIARE",
+            "address": "Ziniare, Burkina Faso",
+            "Latitude": 12.5840501,
+            "Longitude": -1.2987349
+        },
+        {
+            "name": "Agence KUA BOBO2",
+            "address": "Bobo-Dioulasso, Burkina Faso",
+            "Latitude": 11.1649219,
+            "Longitude": -4.3051542
+        },
+        {
+            "name": "Agence KOUDOUGOU2",
+            "address": "Koudougou, Burkina Faso",
+            "Latitude": 12.2562183,
+            "Longitude": -2.3517526
+        }
+    ]
+}

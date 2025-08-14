@@ -1,0 +1,479 @@
+{
+    "togo": [
+        {
+            "agence": "Imm. de Souza, Marché Hédzranawoé   - Togo",
+            "Latitude": 8.619543,
+            "Longitude": 0.824782
+        },
+        {
+            "agence": "Bd. du 30 Août, Imm. Golden Suite, Adidogomé   - Togo",
+            "Latitude": 6.1805706,
+            "Longitude": 1.1441558
+        },
+        {
+            "agence": "Rond Point du Port, Imm. Ecomarine, Zone Portuaire   - Togo",
+            "Latitude": 8.619543,
+            "Longitude": 0.824782
+        },
+        {
+            "agence": "Bretelle de Bè Klikamé, en face de GTAC2A, Agbalépédo   - Togo",
+            "Latitude": 6.1911559,
+            "Longitude": 1.2091713
+        },
+        {
+            "agence": "Imm. DE MASS, Qt Ahadji Kpota   - Togo",
+            "Latitude": 8.619543,
+            "Longitude": 0.824782
+        },
+        {
+            "agence": "Non loin de la Station Service Oando, Pharmacie Améssiamé, Bè   - Togo",
+            "Latitude": 6.1361035,
+            "Longitude": 1.2341975
+        },
+        {
+            "agence": "Av. des Hydrocarbures, Tokoin Soted   - Togo",
+            "Latitude": 6.142058599999999,
+            "Longitude": 1.2109306
+        },
+        {
+            "agence": "Imm. Taba, Palm Beach   - Togo",
+            "Latitude": 8.619543,
+            "Longitude": 0.824782
+        },
+        {
+            "agence": "Bd. Eyadema, Centre de Loisir FIL O PARC   - Togo",
+            "Latitude": 6.2338062,
+            "Longitude": 1.2095062
+        },
+        {
+            "agence": "En face de la Librairie Bon Pasteur, Assiganto   - Togo",
+            "Latitude": 6.1244036,
+            "Longitude": 1.2259197
+        },
+        {
+            "agence": "Tabligbo   Tabligbo - Togo",
+            "Latitude": 6.602774399999999,
+            "Longitude": 1.5063405
+        },
+        {
+            "agence": "Non loin du Marché Atakpamé   Atakpamé - Togo",
+            "Latitude": 7.5286908,
+            "Longitude": 1.1305049
+        },
+        {
+            "agence": "Kara,   Kara Kara - Togo",
+            "Latitude": 9.5486112,
+            "Longitude": 1.1977158
+        },
+        {
+            "agence": "Dapaong,   Dapaong - Togo",
+            "Latitude": 10.8733058,
+            "Longitude": 0.2010233
+        },
+        {
+            "agence": "Cinkassé,   Cinkassé - Togo",
+            "Latitude": 11.1059574,
+            "Longitude": 0.014598
+        },
+        {
+            "agence": "Bd. de la Kara, Doumasséssé   - Togo",
+            "Latitude": 6.1623605,
+            "Longitude": 1.2122188
+        },
+        {
+            "agence": "Bd. du 13 Janvier, Imm. Me Wilson, Dekon   - Togo",
+            "Latitude": 6.1339328,
+            "Longitude": 1.2156878
+        },
+        {
+            "agence": "Hall Aéroport International Gnassingbé Eyadema, Assigamé   - Togo",
+            "Latitude": 6.1704244,
+            "Longitude": 1.2529823
+        }
+    ],
+    "benin": [
+        {
+            "agence": "Agence Dantokpa: Immeuble AL HAMMOUD, Carré 591C Cotonou - Bénin",
+            "Latitude": 6.3740912,
+            "Longitude": 2.4319894
+        },
+        {
+            "agence": "Agence Stade de l'Amitié: Esplanade du Stade de l’Amitié, Kourounou  Cotonou - Bénin",
+            "Latitude": 6.3859642,
+            "Longitude": 2.3794872
+        },
+        {
+            "agence": "Agence Sacré Cœur: Quartier Ayelawadje Cotonou - Bénin",
+            "Latitude": 6.372307999999999,
+            "Longitude": 2.4462866
+        },
+        {
+            "agence": "Agence Cocotomey: Quartier Aglouza Cotonou - Bénin",
+            "Latitude": 6.380153700000001,
+            "Longitude": 2.280322
+        },
+        {
+            "agence": "Agence Etoile Rouge: Rond Point Bd. Canada, Imm. SETON Cotonou - Bénin",
+            "Latitude": 6.3562425,
+            "Longitude": 2.4277995
+        },
+        {
+            "agence": "Agence Calavi: Carrefour Kpota, Agori-Kpota Cotonou - Bénin",
+            "Latitude": 6.4503024,
+            "Longitude": 2.3468195
+        },
+        {
+            "agence": "Agence Sainte Rita: Imm. Ste Rose, Quartier Gbedagba Cotonou - Bénin",
+            "Latitude": 6.3835523,
+            "Longitude": 2.3986432
+        },
+        {
+            "agence": "Agence Steinmetz: Quartier Atinkanmey Cotonou - Bénin",
+            "Latitude": 6.3617782,
+            "Longitude": 2.4346255
+        },
+        {
+            "agence": "Agence Xwlacodji: Rue opposée au restaurant le Berlin, Xwlacodji Cotonou - Bénin",
+            "Latitude": 6.3569577,
+            "Longitude": 2.4409802
+        },
+        {
+            "agence": "Agence Porto-Novo: Rue Lagunaire, Quartier Avakpa Porto-Novo - Bénin",
+            "Latitude": 6.4888552,
+            "Longitude": 2.6179336
+        },
+        {
+            "agence": "Agence Parakou: Cine Le BORGOU, Quartier Ladjifarani Parakou - Bénin",
+            "Latitude": 9.343746699999999,
+            "Longitude": 2.6313339
+        },
+        {
+            "agence": "Agence Bohicon: Quartier Gankon Kponsa Bohicon - Bénin",
+            "Latitude": 7.179768399999999,
+            "Longitude": 2.0714223
+        },
+        {
+            "agence": "Agence PK6: Carrefour Abattoir Cotonou - Bénin",
+            "Latitude": 6.3689013,
+            "Longitude": 2.4850814
+        },
+        {
+            "agence": "Agence Fidjrosse: Carrefour HOUENOUSSOU Cotonou - Bénin",
+            "Latitude": 6.357872599999999,
+            "Longitude": 2.3721562
+        }
+    ],
+    "burkina": [
+        {
+            "agence": "Avenue de la République, Immeuble Bouro  Bobo-Dioulasso - Burkina Faso",
+            "Latitude": 11.1771525,
+            "Longitude": -4.2991778
+        },
+        {
+            "agence": "Route du Ghana, Face à la Douane de Dakola BP 60 Pô Dakola - Burkina Faso",
+            "Latitude": 11.00622272573202, 
+            "Longitude": -1.1154750289764779
+        },
+        {
+            "agence": "Immeuble de l’Evêché Ouahigouya, Face OCADES Ouahigouya BP 80 Ouahigouya - Burkina Faso",
+            "Latitude": 13.5668258,
+            "Longitude": -2.4109908
+        },
+        {
+            "agence": "BP 57 Pouytenga - Burkina Faso",
+            "Latitude": 12.2487403,
+            "Longitude": -0.4266584
+        }
+    ],
+    "mali": [
+        {
+            "agence": "Agence IHEM : ACI 2000 immeuble ihem Bamako - Mali",
+            "Latitude": 12.6284995,
+            "Longitude": -8.033687
+        },
+        {
+            "agence": "Agence SAHEL VERT; immeuble sahel vert, Grand Marché Bamako - Mali",
+            "Latitude": 12.6459803,
+            "Longitude": -7.9975926
+        },
+        {
+            "agence": "Agence DJIGUE ; En Face de la Gare, Grand Marché Bamako - Mali",
+            "Latitude": 12.6429283,
+            "Longitude": -7.998181000000001
+        },
+        {
+            "agence": "Agence PMU immeuble PMU Bamako - Mali",
+            "Latitude": 12.6455344,
+            "Longitude": -8.000602599999999
+        },
+        {
+            "agence": "Agence IBIZA; Route de Koulikoro Bamako - Mali",
+            "Latitude": 12.6631013,
+            "Longitude": -7.9504182
+        },
+        {
+            "agence": "Agence TOUR D'AFRIQUE; Faladie (Pres De La Tour De L'afrique) Bamako - Mali",
+            "Latitude": 12.5846752,
+            "Longitude": -7.9431974
+        },
+        {
+            "agence": "Agence SANKE; Faladie (Avenue OUA) Bamako - Mali",
+            "Latitude": 12.6039133,
+            "Longitude": -7.945665899999999
+        },
+        {
+            "agence": "Agence AMANDINE; Badalabougou Avenue de l'OUA Bamako - Mali",
+            "Latitude": 12.603926,
+            "Longitude": -7.9456706
+        },
+        {
+            "agence": "Agence BACO-DJICORONI; Immeuble Yara Bamako - Mali",
+            "Latitude": 12.5844233,
+            "Longitude": -8.0095522
+        },
+        {
+            "agence": "Agence DIELIBOUGOU; Immeuble Kodonso Bamako - Mali",
+            "Latitude": 12.6639915,
+            "Longitude": -7.9413933
+        },
+        {
+            "agence": "Agence KALABAN CORO Marché Bamako - Mali",
+            "Latitude": 12.5757646,
+            "Longitude": -8.030154399999999
+        },
+        {
+            "agence": "Agence ROUTE AEROPORT Kalaban Coura Bamako - Mali",
+            "Latitude": 12.5846559,
+            "Longitude": -7.9917584
+        },
+        {
+            "agence": "Agence BITTAR Avenue de l'OUA Bamako - Mali",
+            "Latitude": 12.603926,
+            "Longitude": -7.9456706
+        },
+        {
+            "agence": "Agence BOZOLA; Rue Gouraud Bamako - Mali",
+            "Latitude": 12.6422752,
+            "Longitude": -7.9950479
+        },
+        {
+            "agence": "Agence GDCM Grand Marché, Immeuble GDCM Bamako - Mali",
+            "Latitude": 12.6426417,
+            "Longitude": -7.9838083
+        },
+        {
+            "agence": "Agence GDCM Grand Marché, Immeuble GDCM Bamako - Mali",
+            "Latitude": 12.6426417,
+            "Longitude": -7.9838083
+        },
+        {
+            "agence": "Immeuble Oumar N'diaye, Centre Commercial Sikasso - Mali",
+            "Latitude": 11.3158514,
+            "Longitude": -5.6707756
+        },
+        {
+            "agence": "Marche Central de Kayes Kayes - Mali",
+            "Latitude": 14.4393538,
+            "Longitude": -11.4467369
+        },
+        {
+            "agence": "Centre Commercial - Immeuble Kaarta Mopti - Mali",
+            "Latitude": 14.490149,
+            "Longitude": -4.1924713
+        },
+        {
+            "agence": "Immeuble Sonef, Centre Ville Gao - Mali",
+            "Latitude": 16.2772125,
+            "Longitude": -0.05045310000000001
+        },
+        {
+            "agence": "Darsalam Face Hopital Nianankoro Fomba Segou - Mali",
+            "Latitude": 13.4459334,
+            "Longitude": -6.2610912
+        },
+        {
+            "agence": "Centre Commercial Immeuble Seydou N'diaye Koutiala - Mali",
+            "Latitude": 12.3774106,
+            "Longitude": -5.472538399999999
+        },
+        {
+            "agence": "Cmine d'or de Tabakoto Tabakoto - Mali",
+            "Latitude": 13.0672715,
+            "Longitude": -11.059314
+        }
+    ],
+    "niger": [
+        {
+            "agence": "Agence Petit Marché: Avenue de la Mairie Niamey - Niger",
+            "Latitude": 13.512743,
+            "Longitude": 2.111943000000001
+        },
+        {
+            "agence": "Agence Balafon: Rond point Pain Doré Niamey - Niger",
+            "Latitude": 13.5192932,
+            "Longitude": 2.1206906
+        },
+        {
+            "agence": "Agence Katako: Rue Rond point Lako Niamey - Niger",
+            "Latitude": 13.5115963,
+            "Longitude": 2.1253854
+        },
+        {
+            "agence": "Agence Fleuve: Rond point Rive droite Niamey - Niger",
+            "Latitude": 13.4921432,
+            "Longitude": 2.0963448
+        },
+        {
+            "agence": "Agence Nouveau Marché: Face Marché Nouveau Marché Niamey - Niger",
+            "Latitude": 13.5129687,
+            "Longitude": 2.1339765
+        },
+        {
+            "agence": "Agence As Salam: Marché As Salam Niamey - Niger",
+            "Latitude": 13.5138779,
+            "Longitude": 2.1335159
+        },
+        {
+            "agence": "Agence Yantala: Face Gendarmerie, route Tillabéry Niamey - Niger",
+            "Latitude": 13.5267311,
+            "Longitude": 2.0854976
+        },
+        {
+            "agence": "Agence Kalley Est: Route de la Grande Mosquée Niamey - Niger",
+            "Latitude": 13.5164002,
+            "Longitude": 2.1332768
+        },
+        {
+            "agence": "Agence Torodi: Route de l'Autogare Torodi - Niger",
+            "Latitude": 17.607789,
+            "Longitude": 8.081666
+        },
+        {
+            "agence": "Agence Gaya: Quartier Plateau Gaya - Niger",
+            "Latitude": 11.8860635,
+            "Longitude": 3.4535071
+        },
+        {
+            "agence": "Agence Dosso: Rue du Gouvernorat Dosso - Niger",
+            "Latitude": 13.0504833,
+            "Longitude": 3.2080991
+        },
+        {
+            "agence": "Agence Maradi: Quartier Sabongari Maradi - Niger",
+            "Latitude": 13.5009779,
+            "Longitude": 7.103639599999999
+        },
+        {
+            "agence": "Agence Tahoua: Quartier Toudou Moré Tahoua - Niger",
+            "Latitude": 14.8904575,
+            "Longitude": 5.2579968
+        },
+        {
+            "agence": "Agence Zinder: Quartier Zongo Zinder - Niger",
+            "Latitude": 13.8018124,
+            "Longitude": 8.98527
+        },
+        {
+            "agence": "Agence Agadez: Route de laéroport Agadez - Niger",
+            "Latitude": 16.97551331262441, 
+            "Longitude": 7.986164027950223
+        },
+        {
+            "agence": "Angle Boulevard de la Liberté et Rue des Bâtisseurs BP 13804 Niamey - Niger",
+            "Latitude": 13.5080864,
+            "Longitude": 2.1232194
+        }
+    ],
+    "senegal": [
+        {
+            "agence": "Agence Diaspora: 45 boulevards du centenaire de la Commune de Dakar Dakar - Sénégal",
+            "Latitude": 14.6891774,
+            "Longitude": -17.4375734
+        },
+        {
+            "agence": "Agence AKB: 54 Rue Abdou Karim BOURGI Dakar - Sénégal",
+            "Latitude": 14.6716488,
+            "Longitude": -17.4369979
+        },
+        {
+            "agence": "Agence Campus: Université Cheikh Anta DIOP Dakar  Im. Cyber Dakar - Sénégal",
+            "Latitude": 14.6941411,
+            "Longitude": -17.4712464
+        },
+        {
+            "agence": "Agence VDN: Immeuble Mariama angle Sacré Coeur 3 Dakar - Sénégal",
+            "Latitude": 14.7302386,
+            "Longitude": -17.4726702
+        },
+        {
+            "agence": "Agence HLM: Rue 9 Bopp , Route Béne Tally, en face Mosquée « Toucouleurs » Dakar - Sénégal",
+            "Latitude": 14.7052509,
+            "Longitude": -17.4477091
+        },
+        {
+            "agence": "Agence Parcelles Assainies: 30 Unité 20 Croisement Ecole Dior Dakar - Sénégal",
+            "Latitude": 14.7592626,
+            "Longitude": -17.4476298
+        },
+        {
+            "agence": "Agence Thiaroye: Km 12,5 Route de Rufisque, en face de la Poste de Thiaroye Dakar - Sénégal",
+            "Latitude": 14.7387229,
+            "Longitude": -17.3965083
+        },
+        {
+            "agence": "Agence Zone Industrielle: 4,5 boulevards du centenaire de la Commune de Dakar Dakar - Sénégal",
+            "Latitude": 14.6904805,
+            "Longitude": -17.4380413
+        },
+        {
+            "agence": "Agence Pikine: PikineTali bou Mak, face Hôtel de Ville Pikine Pikine - Sénégal",
+            "Latitude": 14.7500072,
+            "Longitude": -17.3972984
+        },
+        {
+            "agence": "Agence Touba Oil 1 KM18: Km 18, Route de Rufique Touba - Sénégal",
+            "Latitude": 14.8665572,
+            "Longitude": -15.8994956
+        },
+        {
+            "agence": "Agence Touba Oil 2 KM 20: Km 20, Route de Rufisque Touba - Sénégal",
+            "Latitude": 14.8665572,
+            "Longitude": -15.8994956
+        },
+        {
+            "agence": "Agence Ziguinchor: 48, Avenue du Dr Carvalho Dakar - Sénégal",
+            "Latitude": 14.716677,
+            "Longitude": -17.4676861
+        },
+        {
+            "agence": "Agence Thiès: Randoulène Nord, Face Stade Maniang Soumaré Thiès - Sénégal",
+            "Latitude": 14.7885413,
+            "Longitude": -16.9317855
+        },
+        {
+            "agence": "Agence M'bour: En face carrefour de la route nationale de Kaolack M'bour - Sénégal",
+            "Latitude": 14.42073,
+            "Longitude": -16.9716071
+        },
+        {
+            "agence": "Agence Kaolack: Lot n° 93 Immeuble Serigne Bassirou Mbacké, Avenue J.F.K Kaolack - Sénégal",
+            "Latitude": 14.1652083,
+            "Longitude": -16.0757749
+        },
+        {
+            "agence": "Immeuble de la Prévoyance Assurances Bâtiment A Saint-Louis - Sénégal",
+            "Latitude": 16.0244342,
+            "Longitude": -16.4951055
+        },
+        {
+            "agence": "Agence Louga: 147, Avenue Lamine Gueye Louga - Sénégal",
+            "Latitude": 15.6141768,
+            "Longitude": -16.22868
+        },
+        {
+            "agence": "Agence Touba: Principale Ndam Touba - Sénégal",
+            "Latitude": 14.8227726,
+            "Longitude": -15.8965099
+        }
+    ]
+}

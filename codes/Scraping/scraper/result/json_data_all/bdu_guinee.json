@@ -1,0 +1,42 @@
+[
+    {
+        "bank": "bdu",
+        "country": "guinee",
+        "address": "Av Domingos Ramos N\u00b0 33 \u2013 Bissau, Guin\u00e9e-Bissau",
+        "Latitude": 11.8629392,
+        "Longitude": -15.5856944,
+        "geocoded": 1
+    },
+    {
+        "bank": "bdu",
+        "country": "guinee",
+        "address": "Av. Combatentes Liberdade da P\u00e1tria \u2013 Bissau, Guin\u00e9e-Bissau",
+        "Latitude": 11.8632196,
+        "Longitude": -15.5843227,
+        "geocoded": 1
+    },
+    {
+        "bank": "bdu",
+        "country": "guinee",
+        "address": "Rua algod\u00e3o, Gabu, Guin\u00e9e-Bissau",
+        "Latitude": 12.2836137,
+        "Longitude": -14.2251939,
+        "geocoded": 1
+    },
+    {
+        "bank": "bdu",
+        "country": "guinee",
+        "address": "Bairro 4, Bafata, Guin\u00e9e-Bissau",
+        "Latitude": 12.1720266,
+        "Longitude": -14.6568929,
+        "geocoded": 1
+    },
+    {
+        "bank": "bdu",
+        "country": "guinee",
+        "address": "Av. Titina Sila, Canchungo, Guin\u00e9e-Bissau",
+        "Latitude": 12.0644059,
+        "Longitude": -16.027821,
+        "geocoded": 1
+    }
+]

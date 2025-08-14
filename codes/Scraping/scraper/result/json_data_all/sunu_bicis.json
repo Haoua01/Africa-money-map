@@ -1,0 +1,298 @@
+[
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Route de l'Aéroport Yoff - Lot N°6 (en face de la ",
+        "Latitude": "14.7501625",
+        "Longitude": "-17.4917031",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Bâtiment administratif, Plateforme Industrielle In",
+        "Latitude": "14.7297375",
+        "Longitude": "-17.2245781",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Avenue Bourguiba – Sicap Amitié 1 N° 3079 BP 392 D",
+        "Latitude": "14.7060625",
+        "Longitude": "-17.4607031",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Km3 Bd du Centenaire de la Commune de Dakar BP 392",
+        "Latitude": "14.6951625",
+        "Longitude": "-17.4373594",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Face du lycée Cheikh Ahmadou Bamba Diourbel",
+        "Latitude": "14.6503125",
+        "Longitude": "-16.2505625",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Quartier Ndouck 1 près de la Place Les Berges du S",
+        "Latitude": "14.3314375",
+        "Longitude": "-16.4023906",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Cité Hamo 1 N° 021 Golf SudBP 392 Dakar",
+        "Latitude": "14.7666625",
+        "Longitude": "-17.4143281",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Hann Maristes 2 - Lot 110/ABP 392 Dakar",
+        "Latitude": "14.7347125",
+        "Longitude": "-17.4335469",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "309 Avenue Cheikh Ibra Fall x Rue Maréchal Bugeau ",
+        "Latitude": "14.1382125",
+        "Longitude": "-16.0730156",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Rond-point Sicap Liberté II Immeuble DBP 392 Dakar",
+        "Latitude": "14.7447963",
+        "Longitude": "-17.4681945",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Avenue Lamine GuèyeLouga",
+        "Latitude": "15.6225625",
+        "Longitude": "-16.2234375",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Avenue Malick Sy (en face de Polyclinique) BP 392 ",
+        "Latitude": "14.6773125",
+        "Longitude": "-17.4454531",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Angle Rue El Hadji Malick Sy et D SenghorBP 87 Mbo",
+        "Latitude": "14.4276375",
+        "Longitude": "-16.9732031",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Almadies - Route de la Corniche Ouest BP 392 Dakar",
+        "Latitude": "14.7348875",
+        "Longitude": "-17.5086406",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Route de Saint-Louis Ourossogui",
+        "Latitude": "15.6114875",
+        "Longitude": "-13.3210156",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Parcelles Assainies Unité 16 N°442 BP 392 Dakar",
+        "Latitude": "14.7603875",
+        "Longitude": "-17.4412344",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Compagnie Sucriére Sénégalaise Richard-Toll",
+        "Latitude": "16.468934",
+        "Longitude": "-15.7138829",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Dalifort Dakar",
+        "Latitude": "14.7406998",
+        "Longitude": "-17.4114955",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "King Fahd Palace Dakar",
+        "Latitude": "14.7450099",
+        "Longitude": "-17.5238321",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Station Mobil Relais Route de Ouakam Dakar",
+        "Latitude": "14.7237121",
+        "Longitude": "-17.4942333",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Tally Icotaf Pikine Dakar",
+        "Latitude": "14.7539273",
+        "Longitude": "-17.3915318",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Hotel Sea Plazza Dakar",
+        "Latitude": "14.6934852",
+        "Longitude": "-17.4745259",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Allées Seydou Nourou Tall Rue 9 x F - Point E BP 3",
+        "Latitude": "14.6978625",
+        "Longitude": "-17.4576406",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Avenue Lamine Guèye x rue Carnot BP 392 Dakar",
+        "Latitude": "14.6675375",
+        "Longitude": "-17.4370156",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Croisement Rue Carnot et Rue Saint-MichelBP 392 Da",
+        "Latitude": "14.6679875",
+        "Longitude": "-17.4331094",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Route de MatamRichard-Toll",
+        "Latitude": "16.4659375",
+        "Longitude": "-15.6971406",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Angle Bd Maurice Guèye et Pelot BP 392 Dakar",
+        "Latitude": "14.7132375",
+        "Longitude": "-17.2697969",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Galerie Marchande Casino, 19 Avenue Cheikh Anta Di",
+        "Latitude": "14.6855625",
+        "Longitude": "-17.4539375",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Angle Rue de France et Rue Blanchot BP 250 Saint-L",
+        "Latitude": "16.0272625",
+        "Longitude": "-16.5052969",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Station touristique Saly Portudal BP 87 Mbour",
+        "Latitude": "14.4430125",
+        "Longitude": "-17.0133281",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "57 avenue Lamine Guèye x rue Grasland BP 392 Dakar",
+        "Latitude": "14.6732375",
+        "Longitude": "-17.4373281",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "2 avenue Léopold Sédar SenghorBP 392 Dakar",
+        "Latitude": "14.6684375",
+        "Longitude": "-17.4324375",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Fann Mermoz - Avenue Cheikh Anta Diop BP 392 Dakar",
+        "Latitude": "14.7037125",
+        "Longitude": "-17.4741406",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Boulevard Demba Diop Quartier Liberté Touba",
+        "Latitude": "13.7749625",
+        "Longitude": "-13.6752344",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Place de France BP 57 Thiès",
+        "Latitude": "14.7922875",
+        "Longitude": "-16.9262344",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Route de la Mosquée en face Keur Serigne Thierno D",
+        "Latitude": "14.8540625",
+        "Longitude": "-15.8800625",
+        "geocoded": 0
+    },
+    {
+        "bank": "sunu_bicis",
+        "country": "senegal",
+        "address": "Sacré-Cœur 3 - Lot B - VDN angle Ancienne Piste BP",
+        "Latitude": "14.7149625",
+        "Longitude": "-17.4709219",
+        "geocoded": 0
+    }
+]

@@ -1,0 +1,106 @@
+[
+    {
+        "bank": "bci",
+        "country": "mali",
+        "address": "Agence Grand March\u00e9, Bamako",
+        "Latitude": 12.641251555057059,
+        "Longitude": -7.997984405844216,
+        "geocoded": 0
+    },
+    {
+        "bank": "bci",
+        "country": "mali",
+        "address": "Agence Dant\u00e9, Bamako",
+        "Latitude": 12.648676554641227,
+        "Longitude": -8.008546905844035,
+        "geocoded": 0
+    },
+    {
+        "bank": "bci",
+        "country": "mali",
+        "address": "Agence Niarela, Bamako",
+        "Latitude": 12.644454826325312,
+        "Longitude": -7.992265605844169,
+        "geocoded": 0
+    },
+    {
+        "bank": "bci",
+        "country": "mali",
+        "address": "Agence du si\u00e8ge, Bamako",
+        "Latitude": 12.642167668428613,
+        "Longitude": -8.020324259843289,
+        "geocoded": 0
+    },
+    {
+        "bank": "bci",
+        "country": "mali",
+        "address": "Agence Sogoniko, Bamako",
+        "Latitude": 12.607651556935522,
+        "Longitude": -7.97448507639705,
+        "geocoded": 0
+    },
+    {
+        "bank": "bci",
+        "country": "mali",
+        "address": "Agence Woyowowanko, Bamako",
+        "Latitude": 12.613427210981833,
+        "Longitude": -8.044860746949167,
+        "geocoded": 0
+    },
+    {
+        "bank": "bci",
+        "country": "mali",
+        "address": "Agence Djelibougou, Bamako",
+        "Latitude": 12.664677862219758,
+        "Longitude": -7.937703776396009,
+        "geocoded": 0
+    },
+    {
+        "bank": "bci",
+        "country": "mali",
+        "address": "Agence Kalaban, Bamako",
+        "Latitude": 12.571202213444508,
+        "Longitude": -7.983516946949927,
+        "geocoded": 0
+    },
+    {
+        "bank": "bci",
+        "country": "mali",
+        "address": "Agence \u00a0\u00bb Balanzan\u00a0\u00bb, Segou",
+        "Latitude": 13.446900204233604,
+        "Longitude": -6.266953105828929,
+        "geocoded": 0
+    },
+    {
+        "bank": "bci",
+        "country": "mali",
+        "address": "Agence koule Djanka, Koutiala",
+        "Latitude": 12.388328091886452,
+        "Longitude": -5.466546183018926,
+        "geocoded": 0
+    },
+    {
+        "bank": "bci",
+        "country": "mali",
+        "address": "Agence Kenedougou, Sikasso",
+        "Latitude": 11.314777940587897,
+        "Longitude": -5.685922576419111,
+        "geocoded": 0
+    },
+    {
+        "bank": "bci",
+        "country": "mali",
+        "address": "Agence  \u00ab\u00a0Khasso\u00a0\u00bb, Kayes",
+        "Latitude": 14.449190407747423,
+        "Longitude": -11.4486094058083,
+        "geocoded": 0
+    },
+    {
+        "bank": "bci",
+        "country": "mali",
+        "address": "Agence Suduba-Baba, Mopti",
+        "Latitude": 14.497452742213188,
+        "Longitude": -4.199422576359479,
+        "geocoded": 0
+    }
+]

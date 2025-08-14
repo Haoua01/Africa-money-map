@@ -1,0 +1,339 @@
+{
+    "mali": [
+        {
+            "agence": "Immeuble Hamidou Niare Fana face RN6, Fana - Mali",
+            "Latitude": 12.7851079,
+            "Longitude": -6.9480641
+        },
+        {
+            "agence": "Immeuble'Yaya Hanne S\u00e9gou Face RN6, Segou - Mali",
+            "Latitude": 13.4297866,
+            "Longitude": -6.2657343
+        },
+        {
+            "agence": "Immeuble Mamadou Haidara March\u00e9 Niono, Niono - Mali",
+            "Latitude": 14.2261156,
+            "Longitude": -5.9753267
+        },
+        {
+            "agence": "Immeuble Hamala Diallo Centre commercial Markala, Markala - Mali",
+            "Latitude": 13.6683306,
+            "Longitude": -6.0659012
+        },
+        {
+            "agence": "Immeuble Kassim Santara Traor\u00e9 pr\u00e8s CMDT, San - Mali",
+            "Latitude": 13.2944016,
+            "Longitude": -4.8987523
+        },
+        {
+            "agence": "Immeuble Balakoye Traor\u00e9 Centre Commercial Dj\u00e9nn\u00e9, Dj\u00e9nn\u00e9 - Mali",
+            "Latitude": 13.9053952,
+            "Longitude": -4.5559954
+        },
+        {
+            "agence": "Immeuble Jean Bignat S\u00e9var\u00e9 face RN6, S\u00e9var\u00e9 - Mali",
+            "Latitude": 14.5307056,
+            "Longitude": -4.0910409
+        },
+        {
+            "agence": "Immeuble SOMAYAF pr\u00e8s COMANAV Mopti, Mopti - Mali",
+            "Latitude": 14.490149,
+            "Longitude": -4.1924713
+        },
+        {
+            "agence": "Ex Immeuble SOMIEX centre commercial Douentza, Douentza - Mali",
+            "Latitude": 15.0045218,
+            "Longitude": -2.9550619
+        },
+        {
+            "agence": "Immeuble Guindo et Fr\u00e8res Centre Commercial GAO, Gao - Mali",
+            "Latitude": 16.2776418,
+            "Longitude": -0.0486485
+        },
+        {
+            "agence": "Immeuble Timi Al Bakaye Quartier sans fil face AMMS, Tombouctou - Mali",
+            "Latitude": 16.7665887,
+            "Longitude": -3.0025615
+        },
+        {
+            "agence": "Grand March\u00e9 Immeuble SNF, Sikasso - Mali",
+            "Latitude": 11.3158551,
+            "Longitude": -5.667824
+        },
+        {
+            "agence": "Immeuble Issa DIAWARRA, Sikasso March\u00e9 - Mali",
+            "Latitude": 11.3154237,
+            "Longitude": -5.6675081
+        },
+        {
+            "agence": "Immeuble SNF 2e quartier, Koutiala - Mali",
+            "Latitude": 12.3895,
+            "Longitude": -5.4639267
+        },
+        {
+            "agence": "March\u00e9 M\u00e9dine, Bougouni - Mali",
+            "Latitude": 11.419473,
+            "Longitude": -7.4843305
+        },
+        {
+            "agence": "Immeuble SIDIBE Gouanabougou, Yanfolila - Mali",
+            "Latitude": 11.1780136,
+            "Longitude": -8.1529749
+        },
+        {
+            "agence": "Legal segou face \u00e0 la DRS pr\u00e8s du march\u00e9/Kayes, Kayes NDI - Mali",
+            "Latitude": 14.4483186,
+            "Longitude": -11.4419982
+        },
+        {
+            "agence": "Lafiabougou face \u00e0 la station Bah & Fils, K\u00e9ni\u00e9ba - Mali",
+            "Latitude": 12.6351525,
+            "Longitude": -8.0437909
+        },
+        {
+            "agence": "Bafoulabe/Allahina pr\u00e8s de la poste, Bafoulab\u00e9 - Mali",
+            "Latitude": 13.8087708,
+            "Longitude": -10.8308258
+        },
+        {
+            "agence": "Mahina 1 pr\u00e8s du march\u00e9 /Immeuble uble Abdoul Bah, Mahina - Mali",
+            "Latitude": 13.7568727,
+            "Longitude": -10.8481998
+        },
+        {
+            "agence": "FALEME sur la route de Dakar en face du march\u00e9 de Kayes, Diboli - Mali",
+            "Latitude": 14.4571562,
+            "Longitude": -12.1999536
+        },
+        {
+            "agence": "Soukara Kounda face \u00e0 la tribune/Nioro, Nioro du Sahel - Mali",
+            "Latitude": 15.2323839,
+            "Longitude": -9.590751400000002
+        },
+        {
+            "agence": "Bd. de l'Ind\u00e9pendance, Bolibana - Mali",
+            "Latitude": 12.6460665,
+            "Longitude": -8.012430799999999
+        },
+        {
+            "agence": "Av. Mohamed V, Bagadadji - Mali",
+            "Latitude": 12.6496519,
+            "Longitude": -7.9878977
+        },
+        {
+            "agence": "Immeuble'Bany Kant\u00e9, Banankabougou - Mali",
+            "Latitude": 12.6794795,
+            "Longitude": -7.1486126
+        },
+        {
+            "agence": "200m Tours d'Afrique, Faladi\u00e9 - Mali",
+            "Latitude": 12.5846752,
+            "Longitude": -7.9431974
+        },
+        {
+            "agence": "C\u00f4t\u00e9 mosqu\u00e9e Bleue, Magnabougou - Mali",
+            "Latitude": 12.5722981,
+            "Longitude": -7.982761599999999
+        },
+        {
+            "agence": "Route de S\u00e9gou, Yirimadio - Mali",
+            "Latitude": 12.6165984,
+            "Longitude": -7.902097699999999
+        },
+        {
+            "agence": "Station Sodies, Torokorobougou - Mali",
+            "Latitude": 12.5784134,
+            "Longitude": -7.9481202
+        },
+        {
+            "agence": "C\u00f4t\u00e9 Mess des Officiers, Badala-Est - Mali",
+            "Latitude": 12.9743086,
+            "Longitude": -9.7421188
+        },
+        {
+            "agence": "H\u00f4tel Komoguel Banankabougou, Komoguel - Mali",
+            "Latitude": 12.5997953,
+            "Longitude": -7.955860800000001
+        },
+        {
+            "agence": "Immeuble Sobato, Avenue de l'OUA, Sobato - Mali",
+            "Latitude": 12.603926,
+            "Longitude": -7.9456706
+        },
+        {
+            "agence": "C\u00f4t\u00e9 du March\u00e9, Bako Djikoroni, Bamako - Mali",
+            "Latitude": 12.5904084,
+            "Longitude": -8.0165205
+        },
+        {
+            "agence": "Pharmacie du 2e Pont, Badala, Bamako - Mali",
+            "Latitude": 12.6142115,
+            "Longitude": -7.9983795
+        },
+        {
+            "agence": "Quartier du fleuve, Tempo - Mali",
+            "Latitude": 12.6530823,
+            "Longitude": -8.0216479
+        },
+        {
+            "agence": "Badialan III face \u00e0 la Mairie, Badialan - Mali",
+            "Latitude": 12.6514357,
+            "Longitude": -8.023337099999999
+        },
+        {
+            "agence": "Immeuble Coulera SYLLA, Route de Koulikoro, Dj\u00e9libougou, Bamako - Mali",
+            "Latitude": 12.6392316,
+            "Longitude": -8.0028892
+        },
+        {
+            "agence": "Route de Koulikoro en face champ hippique, BIM Expansion - Mali",
+            "Latitude": 12.6583587,
+            "Longitude": -7.978473500000001
+        },
+        {
+            "agence": "Medina Coura Avenue Al QUODS, Gabriel TOURE - Mali",
+            "Latitude": 12.6510767,
+            "Longitude": -7.996899999999999
+        },
+        {
+            "agence": "Moribabougou Immeuble MAFA HAIDARA face march\u00e9, Moribabougou - Mali",
+            "Latitude": 12.6952291,
+            "Longitude": -7.844954899999999
+        },
+        {
+            "agence": "Niamakoro 30 m\u00e8tres, Niamakoro - Mali",
+            "Latitude": 12.5863409,
+            "Longitude": -7.9620107
+        },
+        {
+            "agence": "Niarela Rue 376 Avenue de la marne face au march\u00e9, N'Golonina, Bamako - Mali",
+            "Latitude": 12.6419394,
+            "Longitude": -7.9734777
+        },
+        {
+            "agence": "Station Oryx \u00e0 Bougouba, Sotuba - Mali",
+            "Latitude": 12.869998,
+            "Longitude": -7.25288
+        },
+        {
+            "agence": "Banconi Razel, rue 4902, porte 1393, Razel - Mali",
+            "Latitude": 12.7149563,
+            "Longitude": -7.9836287
+        },
+        {
+            "agence": "Sation shell omnisport bamako, Shell Omnisport - Mali",
+            "Latitude": 12.6590244,
+            "Longitude": -7.987865200000001
+        },
+        {
+            "agence": "Kalaban coura ACI pr\u00e8s de l'\u00e9glise catholique, Kalaban - Mali",
+            "Latitude": 12.5511427,
+            "Longitude": -7.991386599999999
+        },
+        {
+            "agence": "Magnabougou face ASACOMA, Magnambougou I - Mali",
+            "Latitude": 12.6102875,
+            "Longitude": -7.9562784
+        },
+        {
+            "agence": "Bako Djikoroni en face station Niento, Baco Djikoroni, Bamako - Mali",
+            "Latitude": 12.5904084,
+            "Longitude": -8.0165205
+        },
+        {
+            "agence": "Kati coura face commissariat de police, Kati - Mali",
+            "Latitude": 12.761188,
+            "Longitude": -8.0728265
+        },
+        {
+            "agence": "Kalaban Coura Carrefour Route de l'Aeroport et 30 m\u00e8tres, Kalaban Coura - Mali",
+            "Latitude": 12.5846559,
+            "Longitude": -7.9917584
+        },
+        {
+            "agence": "Kalaban Coro march\u00e9, Kalaban Coro - Mali",
+            "Latitude": 12.5757646,
+            "Longitude": -8.030154399999999
+        },
+        {
+            "agence": "Rond point Place Can Hamdallaye ACI 2000, Place CAN - Mali",
+            "Latitude": 12.6299491,
+            "Longitude": -8.027427399999999
+        },
+        {
+            "agence": "Garantiguibougou pharmacie, Garantiguibougou, Bamako - Mali",
+            "Latitude": 12.5575625,
+            "Longitude": -8.0056875
+        },
+        {
+            "agence": "Immeuble Nimaga pr\u00e8s de l'auto gare, Sogoniko - Mali",
+            "Latitude": 12.6420151,
+            "Longitude": -7.996159699999999
+        },
+        {
+            "agence": "Flabougou, Banconi, Bamako - Mali",
+            "Latitude": 12.6683519,
+            "Longitude": -7.9635586
+        },
+        {
+            "agence": "Face ASACODEK pr\u00e8s du March\u00e9, S\u00e9b\u00e9nikoro - Mali",
+            "Latitude": 12.58849,
+            "Longitude": -8.0609047
+        },
+        {
+            "agence": "Immeuble Dupe March\u00e9 DIBIDA, Dibida, Bamako - Mali",
+            "Latitude": 12.6391699,
+            "Longitude": -8.0025475
+        },
+        {
+            "agence": "Missira Rue RDH, March\u00e9 M\u00e9dine - Mali",
+            "Latitude": 12.6555133,
+            "Longitude": -7.982447099999999
+        },
+        {
+            "agence": "Immeuble Modibo Keita, Grand March\u00e9, Bamako - Mali",
+            "Latitude": 12.6306751,
+            "Longitude": -8.0091934
+        },
+        {
+            "agence": "2e Quartier face March\u00e9, Kangaba - Mali",
+            "Latitude": 11.9427677,
+            "Longitude": -8.4156809
+        },
+        {
+            "agence": "Immeuble Galerie Djigu\u00e9 Rue du 18 juin, Djigu\u00e9 - Mali",
+            "Latitude": 14.4192206,
+            "Longitude": -7.9439172
+        },
+        {
+            "agence": "Bagadadji Avenue Mohamed V, Paul Sicard - Mali",
+            "Latitude": 12.6496519,
+            "Longitude": -7.9878977
+        },
+        {
+            "agence": "Station Shell Djikoroni Para, Bamako - Mali",
+            "Latitude": 12.6174279,
+            "Longitude": -8.0307313
+        },
+        {
+            "agence": "Rue Nelsosn Mandela Alimentation SEME SUGU, Guichet Hippodrome - Mali",
+            "Latitude": 12.6657714,
+            "Longitude": -7.9729094
+        },
+        {
+            "agence": "Kati pr\u00e8s du March\u00e9, Guichet Kati - Mali",
+            "Latitude": 12.7453724,
+            "Longitude": -8.0738001
+        },
+        {
+            "agence": "Immeuble Azar Libre Service route de koulikoro, Guichet Shell Alqoods - Mali",
+            "Latitude": 12.6392515,
+            "Longitude": -8.002862
+        },
+        {
+            "agence": "Avenue de l'OUA Shell Badala, Guichet Shell Badala - Mali",
+            "Latitude": 12.603926,
+            "Longitude": -7.9456706
+        }
+    ]
+}

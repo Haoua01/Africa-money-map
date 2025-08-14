@@ -1,0 +1,100 @@
+{
+    "burkina": [
+        {
+            "name": "Si\u00e8ge social",
+            "address": "Avenue Tansoba Goalma, Ouagadougou, Burkina Faso",
+            "Latitude": 12.3714277,
+            "Longitude": -1.5196603
+        },
+        {
+            "name": "Agence 10 Yaar",
+            "address": "March\u00e9 du secteur N\u00b0 10, Ouagadougou, Burkina Faso",
+            "Latitude": 12.3714277,
+            "Longitude": -1.5196603
+        },
+        {
+            "name": "AGENCE BOBO MARCHE",
+            "address": "Rue Guillaume Ou\u00e9draogo, Bobo-Dioulasso, Burkina F",
+            "Latitude": 11.1749643,
+            "Longitude": -4.3006117
+        },
+        {
+            "name": "Agence Boulevard",
+            "address": "Boulevard Felix Houphet Boigny, Bobo-Dioulasso, Bu",
+            "Latitude": 11.1811728,
+            "Longitude": -4.2764954
+        },
+        {
+            "name": "Agence de D\u00e9dougou",
+            "address": "March\u00e9 Central, D\u00e9dougou, Burkina Faso",
+            "Latitude": 12.4600514,
+            "Longitude": -3.4586005
+        },
+        {
+            "name": "Agence Kamboinsin",
+            "address": "Kamboinsin, Ouagadougou, Burkina Faso",
+            "Latitude": 12.4274954,
+            "Longitude": -1.5506618
+        },
+        {
+            "name": "Agence Kilwin",
+            "address": "Avenue du Yatenga, Kilwin, Ouagadougou, Burkina Fa",
+            "Latitude": 12.3901555,
+            "Longitude": -1.5832194
+        },
+        {
+            "name": "Agence Kua",
+            "address": "Kua, Bobo-Dioulasso, Burkina Faso",
+            "Latitude": 11.2116371,
+            "Longitude": -4.2250578
+        },
+        {
+            "name": "Agence Kwam\u00e9 N\u2019Krumah",
+            "address": "Avenue Kwam\u00e9 N\u2019Krumah, Ouagadougou, Burkina Faso",
+            "Latitude": 12.3627356,
+            "Longitude": -1.5179939
+        },
+        {
+            "name": "Agence Patte d\u2019oie",
+            "address": "Avenue France Afrique, Ouagadougou, Burkina Faso",
+            "Latitude": 12.3193779,
+            "Longitude": -1.5284796
+        },
+        {
+            "name": "Agence Pissy",
+            "address": "Rue du March\u00e9, Ouagadougou, Burkina Faso",
+            "Latitude": 12.3714277,
+            "Longitude": -1.5196603
+        },
+        {
+            "name": "Agence Prestige",
+            "address": "Rue de l\u2019h\u00f4tel de ville, Ouagadougou, Burkina Faso",
+            "Latitude": 12.3714277,
+            "Longitude": -1.5196603
+        },
+        {
+            "name": "Agence Zogona",
+            "address": "Avenue Charles de Gaulle, Ouagadougou, Burkina Fas",
+            "Latitude": 12.3761205,
+            "Longitude": -1.4937236
+        },
+        {
+            "name": "Koudougou",
+            "address": "Zone commerciale - March\u00e9 Central (RN 14 en face d",
+            "Latitude": 12.2562183,
+            "Longitude": -2.3517526
+        },
+        {
+            "name": "Ouahigouya",
+            "address": "Avenue de Mopti BP 358 Ouahigouya, Ouahigouya, Bur",
+            "Latitude": 13.5668258,
+            "Longitude": -2.4109908
+        },
+        {
+            "name": "Tenkodogo",
+            "address": "RN.16 01 BP 99 Tenkodogo, Tenkodogo, Burkina Faso",
+            "Latitude": 11.7941097,
+            "Longitude": -0.3728152
+        }
+    ]
+}

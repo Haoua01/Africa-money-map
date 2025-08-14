@@ -1,0 +1,90 @@
+[
+    {
+        "bank": "bia",
+        "country": "togo",
+        "address": "Succursale des particuliers et des professionnels",
+        "Latitude": 6.1937843,
+        "Longitude": 1.2109826,
+        "geocoded": 0
+    },
+    {
+        "bank": "bia",
+        "country": "togo",
+        "address": "Agence de BE",
+        "Latitude": 6.140467,
+        "Longitude": 1.2398909,
+        "geocoded": 0
+    },
+    {
+        "bank": "bia",
+        "country": "togo",
+        "address": "Agence Zongo",
+        "Latitude": 6.1355685,
+        "Longitude": 1.2233257,
+        "geocoded": 0
+    },
+    {
+        "bank": "bia",
+        "country": "togo",
+        "address": "Agence de Tokoin",
+        "Latitude": 6.1299652,
+        "Longitude": 1.2241548,
+        "geocoded": 0
+    },
+    {
+        "bank": "bia",
+        "country": "togo",
+        "address": "Agence Hedjranawoe",
+        "Latitude": 6.1829723,
+        "Longitude": 1.2409192,
+        "geocoded": 0
+    },
+    {
+        "bank": "bia",
+        "country": "togo",
+        "address": "Agence de Baguida",
+        "Latitude": 6.127804,
+        "Longitude": 1.237757,
+        "geocoded": 0
+    },
+    {
+        "bank": "bia",
+        "country": "togo",
+        "address": "Agence d'Aristos",
+        "Latitude": 6.1260249,
+        "Longitude": 1.2235066,
+        "geocoded": 0
+    },
+    {
+        "bank": "bia",
+        "country": "togo",
+        "address": "Agence d'Adidogomé",
+        "Latitude": 6.1813732,
+        "Longitude": 1.1706303,
+        "geocoded": 0
+    },
+    {
+        "bank": "bia",
+        "country": "togo",
+        "address": "Agence de Baguida",
+        "Latitude": 6.127804,
+        "Longitude": 1.237757,
+        "geocoded": 0
+    },
+    {
+        "bank": "bia",
+        "country": "togo",
+        "address": "Agence de KARA",
+        "Latitude": 9.5486112,
+        "Longitude": 1.1977158,
+        "geocoded": 0
+    },
+    {
+        "bank": "bia",
+        "country": "togo",
+        "address": "Rue des Alliés et Rue Comme",
+        "Latitude": 7.532317005526332,
+        "Longitude": 1.12194254341396,
+        "geocoded": 0
+    }
+]

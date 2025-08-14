@@ -1,0 +1,18 @@
+[
+    {
+        "bank": "credit_international",
+        "country": "senegal",
+        "address": "Siège Sénégal",
+        "Latitude": 14.673092343559818,
+        "Longitude": -17.43263144413887,
+        "geocoded": 0
+    },
+    {
+        "bank": "credit_international",
+        "country": "senegal",
+        "address": "Succursale Dakar",
+        "Latitude": 14.696514527934923,
+        "Longitude": -17.43706472440525,
+        "geocoded": 0
+    }
+]

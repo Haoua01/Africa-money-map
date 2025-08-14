@@ -1,0 +1,422 @@
+[
+    {
+        "name": "Plateau, Immeuble AMCI",
+        "address": "Plateau, Immeuble AMCI, Plateau, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3207583,
+        "Longitude": -4.016883200000001
+    },
+    {
+        "name": "Plateau, Rue des banques",
+        "address": "Plateau, Rue des banques, Plateau, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.320641,
+        "Longitude": -4.0167239
+    },
+    {
+        "name": "Plateau, Immeuble Atlantique",
+        "address": "Plateau, Immeuble Atlantique, Plateau, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.332547099999999,
+        "Longitude": -4.023868999999999
+    },
+    {
+        "name": "Plateau, Boulevard de la R\u00e9publique",
+        "address": "Plateau, Boulevard de la R\u00e9publique, Plateau, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3208984,
+        "Longitude": -4.0196089
+    },
+    {
+        "name": "Plateau, Finances",
+        "address": "Plateau, Finances, Plateau, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.332547099999999,
+        "Longitude": -4.023868999999999
+    },
+    {
+        "name": "Cocody Rue des Jardins",
+        "address": "Cocody Rue des Jardins, Cocody, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3617282,
+        "Longitude": -3.9896738
+    },
+    {
+        "name": "Cocody, Saint Jean",
+        "address": "Cocody, Saint Jean, Cocody, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3354327,
+        "Longitude": -4.0037019
+    },
+    {
+        "name": "Cocody, Corniche",
+        "address": "Cocody, Corniche, Cocody, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3286458,
+        "Longitude": -4.0072315
+    },
+    {
+        "name": "Cocody Abatta",
+        "address": "Cocody Abatta, Cocody, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3575796,
+        "Longitude": -3.9252058
+    },
+    {
+        "name": "Cocody Angr\u00e9 8\u00e8me tranche",
+        "address": "Cocody Angr\u00e9 8\u00e8me tranche, Cocody, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3981949,
+        "Longitude": -3.9720233
+    },
+    {
+        "name": "Cocody Latrille",
+        "address": "Cocody Latrille, Cocody, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3662991,
+        "Longitude": -3.9976417
+    },
+    {
+        "name": "II Plateaux, ENA",
+        "address": "II Plateaux, ENA, Cocody, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3611675,
+        "Longitude": -3.9969321
+    },
+    {
+        "name": "Cocody Sococ\u00e9",
+        "address": "Cocody Sococ\u00e9, Cocody, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3734003,
+        "Longitude": -3.9990127
+    },
+    {
+        "name": "ENA",
+        "address": "ENA, Cocody, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3611675,
+        "Longitude": -3.9969321
+    },
+    {
+        "name": "Cocody \u2013 II plateaux les perles",
+        "address": "Cocody \u2013 II plateaux les perles, Cocody, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3548697,
+        "Longitude": -3.9831474
+    },
+    {
+        "name": "Riviera III",
+        "address": "Riviera III, Cocody, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3457524,
+        "Longitude": -3.9807261
+    },
+    {
+        "name": "Abidjan Mall",
+        "address": "Abidjan Mall, Cocody, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3616158,
+        "Longitude": -3.9670612
+    },
+    {
+        "name": "Yopougon, Zone Industrielle",
+        "address": "Yopougon, Zone Industrielle, Yopougon, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3636605,
+        "Longitude": -4.0901367
+    },
+    {
+        "name": "Poste, Yopougon Toit Rouge",
+        "address": "Poste, Yopougon Toit Rouge, Yopougon, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3268662,
+        "Longitude": -4.0916687
+    },
+    {
+        "name": "Yopougon, Maroc",
+        "address": "Yopougon, Maroc, Yopougon, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3176705,
+        "Longitude": -4.0899759
+    },
+    {
+        "name": "Yopougon, Bel Air",
+        "address": "Yopougon, Bel Air, Yopougon, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.346766,
+        "Longitude": -4.0502246
+    },
+    {
+        "name": "Yopougon, Siporex face COSMOS",
+        "address": "Yopougon, Siporex face COSMOS, Yopougon, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3555379,
+        "Longitude": -4.0744102
+    },
+    {
+        "name": "A\u00e9roport, Hall d\u2019arriv\u00e9e",
+        "address": "A\u00e9roport, Hall d\u2019arriv\u00e9e, Port-Bouet, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.2374652,
+        "Longitude": -3.884118099999999
+    },
+    {
+        "name": "Poste, Port-Bou\u00ebt March\u00e9",
+        "address": "Poste, Port-Bou\u00ebt March\u00e9, Port-Bouet, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.2589901,
+        "Longitude": -3.9646065
+    },
+    {
+        "name": "Boulevard de Marseille Zone 3",
+        "address": "Boulevard de Marseille Zone 3, Marcory, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.2951019,
+        "Longitude": -3.9873485
+    },
+    {
+        "name": "Agence VGE",
+        "address": "Agence VGE, Marcory, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.356008999999999,
+        "Longitude": -4.0946611
+    },
+    {
+        "name": "Zone 4, Paul Langevin",
+        "address": "Zone 4, Paul Langevin, Marcory, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.2854255,
+        "Longitude": -3.9764143
+    },
+    {
+        "name": "Marcory R\u00e9sidentiel",
+        "address": "Marcory R\u00e9sidentiel, Marcory, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.311785899999999,
+        "Longitude": -3.9916696
+    },
+    {
+        "name": "Marcory Trigone",
+        "address": "Marcory Trigone, Marcory, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.300303899999999,
+        "Longitude": -3.989962099999999
+    },
+    {
+        "name": "Att\u00e9coub\u00e9",
+        "address": "Att\u00e9coub\u00e9, Adjam\u00e9, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3451743,
+        "Longitude": -4.028980199999999
+    },
+    {
+        "name": "Williams-ville",
+        "address": "Williams-ville, Adjam\u00e9, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.372601,
+        "Longitude": -4.0203386
+    },
+    {
+        "name": "Adjam\u00e9 March\u00e9 Gouro",
+        "address": "Adjam\u00e9 March\u00e9 Gouro, Adjam\u00e9, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3476444,
+        "Longitude": -4.0233416
+    },
+    {
+        "name": "Adjam\u00e9 Nangui Abrogoua",
+        "address": "Adjam\u00e9 Nangui Abrogoua, Adjam\u00e9, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.3892554,
+        "Longitude": -4.0191043
+    },
+    {
+        "name": "Abobo poste",
+        "address": "Abobo poste, Abobo, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.432887099999999,
+        "Longitude": -4.0388918
+    },
+    {
+        "name": "Dokui, Immeuble Adama Sanogo",
+        "address": "Dokui, Immeuble Adama Sanogo, Abobo, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.4008823,
+        "Longitude": -4.006256
+    },
+    {
+        "name": "Abobo, Rond point de la brigade de Gendarmerie",
+        "address": "Abobo, Rond point de la brigade de Gendarmerie, Abobo, Abidjan, C\u00f4te d'Ivoire",
+        "Latitude": 5.4495059,
+        "Longitude": -4.0650029
+    },
+    {
+        "name": "Abengourou",
+        "address": "Abengourou, C\u00f4te d'Ivoire",
+        "Latitude": 6.7269355,
+        "Longitude": -3.4978707
+    },
+    {
+        "name": "Aboisso",
+        "address": "Aboisso, C\u00f4te d'Ivoire",
+        "Latitude": 5.474510599999999,
+        "Longitude": -3.2030756
+    },
+    {
+        "name": "Adzop\u00e9",
+        "address": "Adzop\u00e9, C\u00f4te d'Ivoire",
+        "Latitude": 6.107145699999999,
+        "Longitude": -3.8553507
+    },
+    {
+        "name": "Agboville",
+        "address": "Agboville, C\u00f4te d'Ivoire",
+        "Latitude": 5.935496300000001,
+        "Longitude": -4.2230836
+    },
+    {
+        "name": "Agnibil\u00e9krou",
+        "address": "Agnibil\u00e9krou, C\u00f4te d'Ivoire",
+        "Latitude": 7.1302807,
+        "Longitude": -3.2030756
+    },
+    {
+        "name": "Anyama",
+        "address": "Anyama, C\u00f4te d'Ivoire",
+        "Latitude": 5.4877137,
+        "Longitude": -4.0516619
+    },
+    {
+        "name": "Bondoukou",
+        "address": "Bondoukou, C\u00f4te d'Ivoire",
+        "Latitude": 8.0478831,
+        "Longitude": -2.807864
+    },
+    {
+        "name": "Bouafl\u00e9",
+        "address": "Bouafl\u00e9, C\u00f4te d'Ivoire",
+        "Latitude": 6.982743699999999,
+        "Longitude": -5.7405139
+    },
+    {
+        "name": "Bouak\u00e9 commerce",
+        "address": "Bouak\u00e9, C\u00f4te d'Ivoire",
+        "Latitude": 7.690466,
+        "Longitude": -5.0390536
+    },
+    {
+        "name": "Bouak\u00e9 March\u00e9",
+        "address": "Bouak\u00e9, C\u00f4te d'Ivoire",
+        "Latitude": 7.690466,
+        "Longitude": -5.0390536
+    },
+    {
+        "name": "Boundiali",
+        "address": "Boundiali, C\u00f4te d'Ivoire",
+        "Latitude": 9.5183617,
+        "Longitude": -6.482317999999999
+    },
+    {
+        "name": "Dabou",
+        "address": "Dabou, C\u00f4te d'Ivoire",
+        "Latitude": 5.3228076,
+        "Longitude": -4.3769652
+    },
+    {
+        "name": "Daloa",
+        "address": "Daloa, C\u00f4te d'Ivoire",
+        "Latitude": 6.8883341,
+        "Longitude": -6.4396888
+    },
+    {
+        "name": "Dimbokro",
+        "address": "Dimbokro, C\u00f4te d'Ivoire",
+        "Latitude": 6.657475199999999,
+        "Longitude": -4.7122337
+    },
+    {
+        "name": "Divo",
+        "address": "Divo, C\u00f4te d'Ivoire",
+        "Latitude": 5.8415399,
+        "Longitude": -5.3625516
+    },
+    {
+        "name": "Du\u00e9kou\u00e9",
+        "address": "Du\u00e9kou\u00e9, C\u00f4te d'Ivoire",
+        "Latitude": 6.7473801,
+        "Longitude": -7.362459800000001
+    },
+    {
+        "name": "Ferk\u00e9",
+        "address": "Ferk\u00e9, C\u00f4te d'Ivoire",
+        "Latitude": 9.584201199999999,
+        "Longitude": -5.1953554
+    },
+    {
+        "name": "Gagnoa",
+        "address": "Gagnoa, C\u00f4te d'Ivoire",
+        "Latitude": 6.151442299999999,
+        "Longitude": -5.951539899999999
+    },
+    {
+        "name": "Grand-Bassam",
+        "address": "Grand-Bassam, C\u00f4te d'Ivoire",
+        "Latitude": 5.2103072,
+        "Longitude": -3.7549648
+    },
+    {
+        "name": "Guiglo",
+        "address": "Guiglo, C\u00f4te d'Ivoire",
+        "Latitude": 6.5490578,
+        "Longitude": -7.4976536
+    },
+    {
+        "name": "Issia",
+        "address": "Issia, C\u00f4te d'Ivoire",
+        "Latitude": 6.487614199999999,
+        "Longitude": -6.5836774
+    },
+    {
+        "name": "Korhogo",
+        "address": "Korhogo, C\u00f4te d'Ivoire",
+        "Latitude": 9.4669337,
+        "Longitude": -5.6142558
+    },
+    {
+        "name": "Kouto",
+        "address": "Kouto, C\u00f4te d'Ivoire",
+        "Latitude": 9.8938829,
+        "Longitude": -6.4103979
+    },
+    {
+        "name": "Lakota",
+        "address": "Lakota, C\u00f4te d'Ivoire",
+        "Latitude": 5.786275799999999,
+        "Longitude": -5.6457951
+    },
+    {
+        "name": "Man",
+        "address": "Man, C\u00f4te d'Ivoire",
+        "Latitude": 7.406427499999999,
+        "Longitude": -7.557223100000001
+    },
+    {
+        "name": "M\u00e9agui",
+        "address": "M\u00e9agui, C\u00f4te d'Ivoire",
+        "Latitude": 7.539988999999999,
+        "Longitude": -5.547079999999999
+    },
+    {
+        "name": "Odienn\u00e9",
+        "address": "Odienn\u00e9, C\u00f4te d'Ivoire",
+        "Latitude": 9.518875399999999,
+        "Longitude": -7.557223100000001
+    },
+    {
+        "name": "San-Pedro Bardot",
+        "address": "San-Pedro, C\u00f4te d'Ivoire",
+        "Latitude": 4.7483699,
+        "Longitude": -6.635777800000001
+    },
+    {
+        "name": "San-Pedro Rue des banques",
+        "address": "San-Pedro, C\u00f4te d'Ivoire",
+        "Latitude": 4.7483699,
+        "Longitude": -6.635777800000001
+    },
+    {
+        "name": "Sikensi",
+        "address": "Sikensi, C\u00f4te d'Ivoire",
+        "Latitude": 5.6646011,
+        "Longitude": -4.5779191
+    },
+    {
+        "name": "Sinfra",
+        "address": "Sinfra, C\u00f4te d'Ivoire",
+        "Latitude": 6.6233371,
+        "Longitude": -5.9145568
+    },
+    {
+        "name": "Soubr\u00e9",
+        "address": "Soubr\u00e9, C\u00f4te d'Ivoire",
+        "Latitude": 5.7866228,
+        "Longitude": -6.5890166
+    },
+    {
+        "name": "Yamoussoukro March\u00e9",
+        "address": "Yamoussoukro, C\u00f4te d'Ivoire",
+        "Latitude": 6.816274099999999,
+        "Longitude": -5.274362900000001
+    },
+    {
+        "name": "Yamoussoukro Rue des banques",
+        "address": "Yamoussoukro, C\u00f4te d'Ivoire",
+        "Latitude": 6.816274099999999,
+        "Longitude": -5.274362900000001
+    }
+]

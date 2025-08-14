@@ -1,0 +1,266 @@
+[
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "01 BP 1298 Avenue Franchet d'Espérey, Plateau",
+        "Latitude": 5.321947,
+        "Longitude": -4.0187264,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "BP 1298 Centre commercial Cfao carrefour boulevard VGE, Marcory",
+        "Latitude": 5.2896376,
+        "Longitude": -3.9825723,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "BP 1298 Rue principale, Yopougon",
+        "Latitude": 5.317666099999999,
+        "Longitude": -4.0899911,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "BP 97 Route d'Abidjan, Yamoussoukro",
+        "Latitude": 6.8063096,
+        "Longitude": -5.2553985,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Rue des Pétroliers Zone industrielle, Vridi",
+        "Latitude": 5.2651819,
+        "Longitude": -4.0114883,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Rue 12, Treichville",
+        "Latitude": 5.304176,
+        "Longitude": -4.0112873,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "BP 252 Avenue principale, carrefour Dobois, Soubré",
+        "Latitude": 5.7866256,
+        "Longitude": -6.5889494,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Centre commercial Cap Nord cocody Rivièra-Allabra, Cocody",
+        "Latitude": 5.355961799999999,
+        "Longitude": -3.9665628,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Avenue de l'Océan, Port-Bouet",
+        "Latitude": 5.254403,
+        "Longitude": -3.9686157,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Zone 4 - Rdc immeuble Marie Curie, Marcory",
+        "Latitude": 5.3027149,
+        "Longitude": -3.982740499999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "BP 0722 Face Commisariat Angré Rdc Imm SIL 07, Cocody",
+        "Latitude": 5.3862285,
+        "Longitude": -3.982740499999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Bd du 7 décembre, Koumassi",
+        "Latitude": 5.2896341,
+        "Longitude": -3.9640602,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "BP 66 korhogo Rue Principale, Korhogo",
+        "Latitude": 9.4669337,
+        "Longitude": -5.6142558,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Bp 587 Rue du commerce, Gagnoa",
+        "Latitude": 6.151442299999999,
+        "Longitude": -5.951539899999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Carrefour Nelson Mandela, Cocody",
+        "Latitude": 5.3602164,
+        "Longitude": -3.9674371,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Avenue Nogues Résidence Nabil, Plateau",
+        "Latitude": 5.318570100000001,
+        "Longitude": -4.0152411,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "1298 Rue des Jardins II Plateaux vallons face Super Hayat, Cocody",
+        "Latitude": 5.3580025,
+        "Longitude": -3.9900632,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "20/22 Bd Clozel Résidence Les Acacias, Plateau",
+        "Latitude": 5.324999,
+        "Longitude": -4.020635899999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Cocody Cité des Arts, Cocody",
+        "Latitude": 5.3465773,
+        "Longitude": -4.000185099999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "89 Bd de Marseille, Marcory",
+        "Latitude": 5.2924959,
+        "Longitude": -3.9980347,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "BP 583 Bd de la Mairie Quartier de commerce, Bouaké",
+        "Latitude": 7.690466,
+        "Longitude": -5.0390536,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Avenue Laurent Pierre Clouzet, Treichville",
+        "Latitude": 5.2920877,
+        "Longitude": -4.013361,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Bd Nagui Abrogoua, Adjamé",
+        "Latitude": 5.3469695,
+        "Longitude": -4.0257492,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Quatier Amakébou face CI Télécom, Abobo",
+        "Latitude": 5.432887099999999,
+        "Longitude": -4.0388918,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "01 BP 1298 Avenue Franchet d'Espérey, Plateau",
+        "Latitude": 5.321947,
+        "Longitude": -4.0187264,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "BP 139 Abengourou- Place du marché, Abengourou",
+        "Latitude": 6.715698199999999,
+        "Longitude": -3.4801349,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Niangon base CIE, carrefour menuisierie, Yopougon",
+        "Latitude": 5.332646599999999,
+        "Longitude": -4.0893321,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Zone indistruelle, Yopougon",
+        "Latitude": 5.3782623,
+        "Longitude": -4.0758102,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Quartier remblais (marché marcory), Marcory",
+        "Latitude": 5.3002211,
+        "Longitude": -3.964887,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Quartier cafop II- route de Moossou, Grand-Bassam",
+        "Latitude": 5.227411699999999,
+        "Longitude": -3.7244696,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Centre commercial SICOGI, Yopougon",
+        "Latitude": 5.317666099999999,
+        "Longitude": -4.0899911,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Bp 335 Bd de la République Quartier cité San Pedro, San-Pédro",
+        "Latitude": 4.7578686,
+        "Longitude": -6.642433,
+        "geocoded": 1
+    },
+    {
+        "bank": "bicici",
+        "country": "civ",
+        "address": "Yamoussoukro, Yamoussoukro",
+        "Latitude": 6.816274099999999,
+        "Longitude": -5.274362900000001,
+        "geocoded": 1
+    }
+]

@@ -1,0 +1,14 @@
+{
+    "senegal": [
+        {
+            "Branch": "Siège Sénégal",
+            "Latitude": 14.665395838860917, 
+            "Longitude": -17.435378695572393
+        },
+        {
+            "Branch": "Agence Touba",
+            "Latitude": 14.85467575059969, 
+            "Longitude": -15.88000217482441
+        }
+    ]
+}

@@ -1,0 +1,407 @@
+{
+    "mali": [
+        {
+            "agence": "BSIC - AGENCE PRINCIPALE - Quartier du Fleuve \u2013 Bamako (Mali) - Mali",
+            "Latitude": 12.6530823,
+            "Longitude": -8.0216479
+        },
+        {
+            "agence": "BSIC - AGENCE KALABAN CORO - Face March\u00e9 Kalaban Coro - Bamako - Mali",
+            "Latitude": 12.5959333,
+            "Longitude": -8.0031593
+        },
+        {
+            "agence": "BSIC - AGENCE MODIBO YARANANGORE - Immeuble Modibo YARANANGORE - Sogoniko - BAMAKO - Mali",
+            "Latitude": 12.5688149,
+            "Longitude": -7.989630900000001
+        },
+        {
+            "agence": "BSIC - AGENCE DE SIKASSO - Centre Commercial - Imm. SNF - Mali",
+            "Latitude": 11.3154237,
+            "Longitude": -5.6675081
+        },
+        {
+            "agence": "BSIC - AGENCE DJELIBOUGOU - Immeuble SYLLA - Route de Koulikoro - Bamako - Mali",
+            "Latitude": 12.5895018,
+            "Longitude": -8.0209187
+        },
+        {
+            "agence": "BSIC - AGENCE KAYES - Quartier l\u00e9gal S\u00e9gou - Mali",
+            "Latitude": 14.4483186,
+            "Longitude": -11.4419982
+        },
+        {
+            "agence": "BSIC - AGENCE MOPTI - Centre commercial - Imm. Kaarta - Mali",
+            "Latitude": 14.490149,
+            "Longitude": -4.1924713
+        },
+        {
+            "agence": "BSIC - AGENCE DE KOUTIALA - Centre commercial - Imm. Mahamadi Traor\u00e9 - Mali",
+            "Latitude": 12.3886864,
+            "Longitude": -5.4664214
+        },
+        {
+            "agence": "BSIC - GRAND MARCH\u00c9 - Imm. Nioro du Sahel pr\u00e8s de la Direction Commerciale - Mali",
+            "Latitude": 15.2323839,
+            "Longitude": -9.590751400000002
+        },
+        {
+            "agence": "BSIC - HAMDALAYE ACI 2000 - Imm. Lassana Diame pr\u00e8s Pressing Lam - Mali",
+            "Latitude": 12.6299491,
+            "Longitude": -8.027427399999999
+        },
+        {
+            "agence": "BSIC - CENTRE COMMERCIAL - Imm. Aboubacar Koita face Tr\u00e9sor Public - Mali",
+            "Latitude": 17.570692,
+            "Longitude": -3.996166
+        },
+        {
+            "agence": "BSIC - ROUTE DE L\u2019A\u00c9ROPORT - Imm. Bangouna Demb\u00e9l\u00e9 \u2013 Kalaban Coura - Mali",
+            "Latitude": 12.5846559,
+            "Longitude": -7.9917584
+        },
+        {
+            "agence": "BSIC - AGENCE FALADI\u00c9 - Imm. Masseda pr\u00e8s de l\u2019Espace Culturel Blonba - Mali",
+            "Latitude": 12.6039133,
+            "Longitude": -7.945665899999999
+        },
+        {
+            "agence": "BSIC - AGENCE DE S\u00c9GOU - Immeuble Beydi N'DAOU HAMDALLAYE SEGOU FACE RN6 - Mali",
+            "Latitude": 13.4317097,
+            "Longitude": -6.248298399999999
+        }
+    ],
+    "benin": [
+        {
+            "agence": "BSIC - AGENCE CENTRALE - PK 0 centre ville - Benin",
+            "Latitude": 9.30769,
+            "Longitude": 2.315834
+        },
+        {
+            "agence": "BSIC - KM 5 - Avenue KOUDOUKOU - Benin",
+            "Latitude": 6.3203329,
+            "Longitude": 5.6170885
+        },
+        {
+            "agence": "BSIC - BOGANDA - Avenue Barth\u00e9lemy BOGANDA - Benin",
+            "Latitude": 9.30769,
+            "Longitude": 2.315834
+        },
+        {
+            "agence": "BSIC - AEROPORT - Avenue des Martyrs - Benin",
+            "Latitude": 9.30769,
+            "Longitude": 2.315834
+        },
+        {
+            "agence": "BSIC - LAKOUANGA - Avenue Barth\u00e9lemy BOGANDA - Benin",
+            "Latitude": 4.3613472,
+            "Longitude": 18.5685794
+        },
+        {
+            "agence": "BSIC - LEDGER - Avenue de l\u2019Ind\u00e9pendance - Benin",
+            "Latitude": 9.30769,
+            "Longitude": 2.315834
+        },
+        {
+            "agence": "BSIC - BOUAR - Centre ville - Benin",
+            "Latitude": 9.30769,
+            "Longitude": 2.315834
+        },
+        {
+            "agence": "BSIC - ESPACE PRESTIGE-BSIC - Avenue MOBUTU Centre ville - Benin",
+            "Latitude": 9.30769,
+            "Longitude": 2.315834
+        }
+    ],
+    "burkina": [
+        {
+            "agence": "BSIC - Agence principale (si\u00e8ge) - Rue David DAPOUGUI KERE  \n10 BP 13701 Ouagadougou - Burkina Faso",
+            "Latitude": 12.3714277,
+            "Longitude": -1.5196603
+        },
+        {
+            "agence": "BSIC - Agence  d\u2019OUAGA 2 000 - Avenue Pascal ZAGRE 10 BP 13 701 Ouagadougou 10 - Burkina Faso",
+            "Latitude": 12.3058051,
+            "Longitude": -1.5157649
+        },
+        {
+            "agence": "BSIC - Agence  de Charles  de Gaulle - Boulevard Charles De Gaulle\n10 BP 13701 OUAGADOUGOU 10 - Burkina Faso",
+            "Latitude": 12.3760974,
+            "Longitude": -1.493109
+        },
+        {
+            "agence": "BSIC - Agence  de  Tampouy - 21 AVENUE YATENGA 10 BP 13701- OUAGA 10 - Burkina Faso",
+            "Latitude": 12.3782396,
+            "Longitude": -1.5461997
+        },
+        {
+            "agence": "BSIC - Agence de  Gounghin - Avenue Moogho Naba - Burkina Faso",
+            "Latitude": 12.238333,
+            "Longitude": -1.561593
+        },
+        {
+            "agence": "BSIC - Agence de Pyssi - Avenue  Tidiane Coulibaly - Burkina Faso",
+            "Latitude": 12.3448105,
+            "Longitude": -1.5672698
+        },
+        {
+            "agence": "BSIC - Agence  de Larl\u00e9 - Avenue du Yatenga - Burkina Faso",
+            "Latitude": 12.3728099,
+            "Longitude": -1.5456821
+        },
+        {
+            "agence": "BSIC - Agence de  Samandin - Avenue Bassawarga - Burkina Faso",
+            "Latitude": 12.3462397,
+            "Longitude": -1.5265442
+        },
+        {
+            "agence": "BSIC - Agence de Kamboinssin - RN n\u00b0 22  \n T\u00e9l\u00e9phone:  (+226) 25 32 84 64 - Burkina Faso",
+            "Latitude": 12.238333,
+            "Longitude": -1.561593
+        },
+        {
+            "agence": "BSIC - Agence March\u00e9 Central - Immeuble Ilboudo L Ousmane  March\u00e9 central  \n\nT\u00e9l\u00e9phone:  (+226) 25 32 84 76 - Burkina Faso",
+            "Latitude": 12.3655264,
+            "Longitude": -1.5220707
+        },
+        {
+            "agence": "BSIC - Agence de Bobo Dioulasso 1 - Avenue du Gouverneur William PONTY \nBP: 2806 Bobo Dioulasso- Burkina Faso - Burkina Faso",
+            "Latitude": 11.1792663,
+            "Longitude": -4.300928499999999
+        },
+        {
+            "agence": "BSIC - Agence de Koudougou - ROUTE  NATIONALE  N\u00b0 14 KOUDOUGOU - Burkina Faso",
+            "Latitude": 12.2220808,
+            "Longitude": -2.4710385
+        },
+        {
+            "agence": "BSIC - Agence de Ouahigouya - AVENUE MOPTI ; BP 158 - Burkina Faso",
+            "Latitude": 13.5668258,
+            "Longitude": -2.4109908
+        },
+        {
+            "agence": "BSIC - Agence de Pouytenga - BP 168 Pouytenga - Burkina Faso",
+            "Latitude": 12.2487403,
+            "Longitude": -0.4266584
+        },
+        {
+            "agence": "BSIC - Agence Bobo 2 - Avenue de l\u2019Union Europ\u00e9enne - Burkina Faso",
+            "Latitude": 12.238333,
+            "Longitude": -1.561593
+        },
+        {
+            "agence": "BSIC - Agence de D\u00e9dougou - Rue du grand march\u00e9 - Burkina Faso",
+            "Latitude": 12.4600514,
+            "Longitude": -3.4586005
+        },
+        {
+            "agence": "BSIC - Agence de Banfora - RN no 7. - Burkina Faso",
+            "Latitude": 10.6475014,
+            "Longitude": -4.751633099999999
+        },
+        {
+            "agence": "BSIC - Agence de Tenkodogo - RN 16 - Burkina Faso",
+            "Latitude": 11.7941097,
+            "Longitude": -0.3728152
+        },
+        {
+            "agence": "BSIC - GAB MAISON DU PEUPLE - AVENUE DE LA NATION - Burkina Faso",
+            "Latitude": 12.3719787,
+            "Longitude": -1.5235724
+        },
+        {
+            "agence": "BSIC - GAB STATION SHELL NAGGRIN - AVENUE NORBERT ZONGO - Burkina Faso",
+            "Latitude": 12.238333,
+            "Longitude": -1.561593
+        },
+        {
+            "agence": "BSIC - GAB BENDOGO - CITEE DE L\u2019AVENIR / SONABEL WAYALGHIN - Burkina Faso",
+            "Latitude": 12.4016929,
+            "Longitude": -1.4724732
+        },
+        {
+            "agence": "BSIC - GAB STATION OTAM BALKUY - AVENUE SOTIGUI KOUYATE - Burkina Faso",
+            "Latitude": 12.238333,
+            "Longitude": -1.561593
+        },
+        {
+            "agence": "BSIC - GAB STATION OTAM BONHEUR VILLE - ROND POINT DE LA TRANSITION - Burkina Faso",
+            "Latitude": 12.238333,
+            "Longitude": -1.561593
+        },
+        {
+            "agence": "BSIC - GAB STATION PETROFA TANGHIN - CHEMIN DE TOUDOUBWEOGO / GRAND ROND POINT DE TANGHIN - Burkina Faso",
+            "Latitude": 12.39709,
+            "Longitude": -1.5154253
+        },
+        {
+            "agence": "BSIC - GAB  STATION TOTAL  REO - VOIE PRINCIPALE DE REO NON LOIN DU MARCHE ET DE LA SALLE DE CINEMA - Burkina Faso",
+            "Latitude": 12.3182369,
+            "Longitude": -2.4699303
+        }
+    ],
+    "togo": [
+        {
+            "agence": "BSIC - AGENCE TOKOIN ATIKPA - \u00c0 c\u00f4t\u00e9 du Supermarch\u00e9 le Champion Tokoin Atikpa Lom\u00e9 - Togo",
+            "Latitude": 6.161618199999999,
+            "Longitude": 1.2021497
+        },
+        {
+            "agence": "BSIC - AGENCE ROND-POINT PORT - National N\u00b02 Lom\u00e9 - Togo",
+            "Latitude": 6.142362899999999,
+            "Longitude": 1.274929
+        },
+        {
+            "agence": "BSIC - AGENCE JEAN PAUL II - 1820, Bd Jean Paul II Lom\u00e9 - Togo",
+            "Latitude": 6.174354399999999,
+            "Longitude": 1.2344546
+        },
+        {
+            "agence": "BSIC - AGENCE AGOENYIVE - Nationale N\u00b0 1, face commissariat d\u2019Ago\u00e8 Ago\u00e8nyiv\u00e9 Lom\u00e9 - Togo",
+            "Latitude": 6.2304026,
+            "Longitude": 1.2104027
+        },
+        {
+            "agence": "BSIC - AGENCE KLIKAME - 1535, Bretelle de Klikam\u00e9 Lom\u00e9 - Togo",
+            "Latitude": 6.201403099999999,
+            "Longitude": 1.1484277
+        },
+        {
+            "agence": "BSIC - AGENCE ADIDOGOME - Bd du 30 aout (\u00e0 c\u00f4t\u00e9 du camp RI d\u2019Adidogom\u00e9) Adidogom\u00e9 Lom\u00e9 - Togo",
+            "Latitude": 6.201403099999999,
+            "Longitude": 1.1484277
+        },
+        {
+            "agence": "BSIC - ADIDOGOME ASSIYEYE - Route de Kpalim\u00e9, nationale N\u00b02 Kpalim\u00e9 - Togo",
+            "Latitude": 6.9097671,
+            "Longitude": 0.6298922
+        },
+        {
+            "agence": "BSIC - AGENCE ATIKPODJI - Rue 100, Sylvanus Olympio Atikpodji Lom\u00e9 - Togo",
+            "Latitude": 6.201403099999999,
+            "Longitude": 1.1484277
+        },
+        {
+            "agence": "BSIC - AGENCE ADAWLATO - Bd de la r\u00e9publique, Angle avenue de la lib\u00e9ration, immeuble MEREDA Adawlato Lom\u00e9 - Togo",
+            "Latitude": 6.125159,
+            "Longitude": 1.2242336
+        },
+        {
+            "agence": "BSIC - AGENCE KARA - Immeuble MOUZDALIFA, face station Rakieta Kara - Togo",
+            "Latitude": 9.5483926,
+            "Longitude": 1.1918557
+        },
+        {
+            "agence": "BSIC - AGENCE CINKASSE - Nationale N\u00b01, 100 m\u00e8tre du march\u00e9 Cinkass\u00e9 - Togo",
+            "Latitude": 8.534255,
+            "Longitude": 0.9619904
+        },
+        {
+            "agence": "BSIC - AGENCE KPALIME - Nationale N\u00b0 5 Lom\u00e9 - Togo",
+            "Latitude": 6.9097671,
+            "Longitude": 0.6298922
+        },
+        {
+            "agence": "BSIC - SOKODE - Nationale N\u00b01 Sokod\u00e9 - Togo",
+            "Latitude": 8.9904549,
+            "Longitude": 1.1378746
+        },
+        {
+            "agence": "BSIC - AGENCE DAPAONG - Nationale N\u00b01, rond-point Nassabl\u00e9 Dapaong - Togo",
+            "Latitude": 10.8631194,
+            "Longitude": 0.2036525
+        },
+        {
+            "agence": "BSIC - POINT DE VENTE TP3 - Face parc auto TP3 Zone Portuaire Lom\u00e9 - Togo",
+            "Latitude": 6.129557699999999,
+            "Longitude": 1.2196502
+        },
+        {
+            "agence": "BSIC - POINT DE VENTE ATIKOUME - Immeuble galerie MBR, en face de ESTAO Atikoum\u00e9 Lom\u00e9 - Togo",
+            "Latitude": 6.1687717,
+            "Longitude": 1.2025952
+        },
+        {
+            "agence": "BSIC - AGENCE DEKON - 3802, Bd du 13 Janvier D\u00e9kon Lom\u00e9 - Togo",
+            "Latitude": 6.136465900000001,
+            "Longitude": 1.2205981
+        }
+    ],
+    "cotedivoire": [
+        {
+            "agence": "BSIC - Bd. de Marseille, Face Polyclinique H\u00f4tel Dieu Treichville Abidjan - C\u00f4te d\u2019Ivoire",
+            "Latitude": 5.3012546,
+            "Longitude": -4.013400799999999
+        },
+        {
+            "agence": "BSIC - Av. Saint Michel Adjam\u00e9 Abidjan - C\u00f4te d\u2019Ivoire",
+            "Latitude": 5.3445323,
+            "Longitude": -4.021338
+        },
+        {
+            "agence": "BSIC - Rue des Jardins, Centre Commercial Louis Panis - Deux-plateaux - Vallon Cocody Abidjan - C\u00f4te d\u2019Ivoire",
+            "Latitude": 5.363229599999999,
+            "Longitude": -3.9894258
+        },
+        {
+            "agence": "BSIC - Agence Nanan Yamousso: Av. 5 Treichville Abidjan - C\u00f4te d\u2019Ivoire",
+            "Latitude": 5.3080983,
+            "Longitude": -4.0051529
+        },
+        {
+            "agence": "BSIC - Agence Port de p\u00eache: au sein de la station IDC, face COOPEC Treichville Abidjan - C\u00f4te d\u2019Ivoire",
+            "Latitude": 5.288330699999999,
+            "Longitude": -4.012657799999999
+        },
+        {
+            "agence": "BSIC - Agence Pierre et Marie Curie: Angle Versus Bank, Mercedes - Zone 4 C Marcory Abidjan - C\u00f4te d\u2019Ivoire",
+            "Latitude": 5.2891005,
+            "Longitude": -3.9824937
+        },
+        {
+            "agence": "BSIC - Agence SAN-PEDRO: Cit\u00e9, Face \u00e0 la pharmacie Denise San-P\u00e9dro - C\u00f4te d\u2019Ivoire",
+            "Latitude": 4.7463814,
+            "Longitude": -6.6343654
+        },
+        {
+            "agence": "BSIC - Rue du commerce, face \u00e0 Orange C\u00f4te d'ivoire 01 BP 10323 Abidjan 01 Gagnoa - C\u00f4te d\u2019Ivoire",
+            "Latitude": 5.3252258,
+            "Longitude": -4.019603
+        },
+        {
+            "agence": "BSIC - Agence Abobo: Rond-point Mairie - Gare Abobo Abidjan - C\u00f4te d\u2019Ivoire",
+            "Latitude": 5.3999784,
+            "Longitude": -4.0202944
+        },
+        {
+            "agence": "BSIC - Rue du commerce en face de la quincaillerie G\u00e9ant Rouge 01 BP 10323 Abidjan 01 Daloa - C\u00f4te d\u2019Ivoire",
+            "Latitude": 5.3252258,
+            "Longitude": -4.019603
+        },
+        {
+            "agence": "BSIC - Domaine SIPEFCI, Bolo 01 BP 10323 Abidjan 01 Sassandra - C\u00f4te d\u2019Ivoire",
+            "Latitude": 5.3252258,
+            "Longitude": -4.019603
+        },
+        {
+            "agence": "BSIC - Agence Ste Bernadette Face \u00e0 l\u2019Eglise Ste Bernadette - Remblais Koumassi Abidjan - C\u00f4te d\u2019Ivoire",
+            "Latitude": 5.2981114,
+            "Longitude": -3.972396799999999
+        },
+        {
+            "agence": "BSIC - 9 Kilos, \u00e0 c\u00f4t\u00e9 de l\u2019agence Orange C\u00f4te d'ivoire - Riviera 3 Cocody Abidjan - C\u00f4te d\u2019Ivoire",
+            "Latitude": 5.3578689,
+            "Longitude": -3.9645426
+        },
+        {
+            "agence": "BSIC - Agence Bouak\u00e9: Av. Gabriel, Qrtier commerce Bouak\u00e9 - C\u00f4te d\u2019Ivoire",
+            "Latitude": 7.690466,
+            "Longitude": -5.0390536
+        },
+        {
+            "agence": "BSIC - Non loin de la Nouvelle Pharmacie de la Me - Gare Abobo - 01 BP 10323 Abidjan 01 Abidjan - C\u00f4te d\u2019Ivoire",
+            "Latitude": 5.4231703,
+            "Longitude": -4.0184502
+        }
+    ]
+}

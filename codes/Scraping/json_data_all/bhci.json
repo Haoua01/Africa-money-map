@@ -1,0 +1,90 @@
+[
+    {
+        "bank": "bhci",
+        "country": "civ",
+        "address": "Agence BHCI Yopougon sicogi",
+        "Latitude": 5.3406227,
+        "Longitude": -4.0731415,
+        "geocoded": 0
+    },
+    {
+        "bank": "bhci",
+        "country": "civ",
+        "address": "Agence BHCI Cocody Angré",
+        "Latitude": 5.396279626462458,
+        "Longitude": -3.9915413674938205,
+        "geocoded": 0
+    },
+    {
+        "bank": "bhci",
+        "country": "civ",
+        "address": "Agence BHCI Treichville",
+        "Latitude": 5.30847103075586,
+        "Longitude": -4.0141623197082925,
+        "geocoded": 0
+    },
+    {
+        "bank": "bhci",
+        "country": "civ",
+        "address": "Agence BHCI Adjamé",
+        "Latitude": 5.348106,
+        "Longitude": -4.02378,
+        "geocoded": 0
+    },
+    {
+        "bank": "bhci",
+        "country": "civ",
+        "address": "Agence BHCI Cocody",
+        "Latitude": 5.396137,
+        "Longitude": -3.977306,
+        "geocoded": 0
+    },
+    {
+        "bank": "bhci",
+        "country": "civ",
+        "address": "Agence BHCI Bouaké",
+        "Latitude": 7.681515,
+        "Longitude": -5.028125,
+        "geocoded": 0
+    },
+    {
+        "bank": "bhci",
+        "country": "civ",
+        "address": "Agence BHCI Korhogo",
+        "Latitude": 9.458908,
+        "Longitude": -5.632316,
+        "geocoded": 0
+    },
+    {
+        "bank": "bhci",
+        "country": "civ",
+        "address": "Agence régionale BHCI Daloa",
+        "Latitude": 6.882096,
+        "Longitude": -6.45422,
+        "geocoded": 0
+    },
+    {
+        "bank": "bhci",
+        "country": "civ",
+        "address": "agence principale",
+        "Latitude": 5.320693789130595,
+        "Longitude": -4.01582919507179,
+        "geocoded": 0
+    },
+    {
+        "bank": "bhci",
+        "country": "civ",
+        "address": "Agence BHCI Abobo",
+        "Latitude": 5.396487338997281,
+        "Longitude": -3.9915659190727935,
+        "geocoded": 0
+    },
+    {
+        "bank": "bhci",
+        "country": "civ",
+        "address": "Agence  Cosmos yopougon",
+        "Latitude": 5.349735801842802,
+        "Longitude": -4.074670225044026,
+        "geocoded": 0
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "bank": "siab",
+        "country": "togo",
+        "address": "14 Avenue Sylvanus Olympio, Grand Marché – Assigamé, Lomé, Togo",
+        "Latitude": 6.126082299999999,
+        "Longitude": 1.2258821,
+        "geocoded": 1
+    },
+    {
+        "bank": "siab",
+        "country": "togo",
+        "address": "station Sanol, Carrefour Bodjona, Adidoadin, Togo",
+        "Latitude": 6.2056195,
+        "Longitude": 1.1902034,
+        "geocoded": 1
+    },
+    {
+        "bank": "siab",
+        "country": "togo",
+        "address": "Ahadji Kpota (Port), Lomé, Togo",
+        "Latitude": 6.1628596,
+        "Longitude": 1.2833619,
+        "geocoded": 1
+    }
+]

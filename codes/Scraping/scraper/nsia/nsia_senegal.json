@@ -1,0 +1,94 @@
+{
+    "senegal": [
+        {
+            "agency_name": "NSIA Banque VDN",
+            "address": "NSIA Bank,Dakar,S\u00e9n\u00e9gal",
+            "Latitude": 14.6976032,
+            "Longitude": -17.4372027
+        },
+        {
+            "agency_name": "NSIA Banque Yoff",
+            "address": "Diamond Bank Agence Db Yoff, Route de l A\u00e9roport, Dakar, S\u00e9n\u00e9gal",
+            "Latitude": 14.7527587,
+            "Longitude": -17.4936582
+        },
+        {
+            "agency_name": "NSIA H\u00f4pital Principal",
+            "address": "12 Avenue Nelson Mandela,Dakar,S\u00e9n\u00e9gal",
+            "Latitude": 14.662619,
+            "Longitude": -17.4351679
+        },
+        {
+            "agency_name": "NSIA Banque Saly",
+            "address": "Diamond Bank Saly,Route de Saly,Mbour,S\u00e9n\u00e9gal",
+            "Latitude": 14.443124,
+            "Longitude": -17.0127804
+        },
+        {
+            "agency_name": "NSIA Banque Thi\u00e8s",
+            "address": "Agence Diamond Bank Thi\u00e8s,Thi\u00e8s,S\u00e9n\u00e9gal",
+            "Latitude": 14.7816184,
+            "Longitude": -16.9487596
+        },
+        {
+            "agency_name": "NSIA Banque Touba",
+            "address": "N3,Touba,S\u00e9n\u00e9gal",
+            "Latitude": 14.8680351,
+            "Longitude": -15.8537626
+        },
+        {
+            "agency_name": "NSIA Banque AIBD Arriv\u00e9e",
+            "address": "Acc\u00e8s A\u00e9roport,S\u00e9n\u00e9gal",
+            "Latitude": 14.6715627,
+            "Longitude": -17.0647432
+        },
+        {
+            "agency_name": "NSIA Banque AIBD D\u00e9part",
+            "address": "Acc\u00e8s A\u00e9roport,S\u00e9n\u00e9gal",
+            "Latitude": 14.6715627,
+            "Longitude": -17.0647432
+        },
+        {
+            "agency_name": "NSIA Banque Bourguiba",
+            "address": "Boulevard du President Habib Bourguiba,Dakar,S\u00e9n\u00e9gal",
+            "Latitude": 14.7060127,
+            "Longitude": -17.4611215
+        },
+        {
+            "agency_name": "NSIA Banque Carnot",
+            "address": "Rue Carnot,Dakar,S\u00e9n\u00e9gal",
+            "Latitude": 14.6677122,
+            "Longitude": -17.435815
+        },
+        {
+            "agency_name": "NSIA Banque Carnot 2",
+            "address": "76 Rue Carnot,Dakar,S\u00e9n\u00e9gal",
+            "Latitude": 14.66772,
+            "Longitude": -17.4379123
+        },
+        {
+            "agency_name": "NSIA Banque Colobane",
+            "address": "Marche de Colobane,Dakar,S\u00e9n\u00e9gal",
+            "Latitude": 14.6987499,
+            "Longitude": -17.4427315
+        },
+        {
+            "agency_name": "NSIA Banque Ngaparou",
+            "address": "Route Ngaparou Somone,S\u00e9n\u00e9gal",
+            "Latitude": 14.4781276,
+            "Longitude": -17.0734298
+        },
+        {
+            "agency_name": "NSIA Banque Parcelles Unit\u00e9 8",
+            "address": "Agence Diamond Banque,Dakar,S\u00e9n\u00e9gal",
+            "Latitude": 14.7534583,
+            "Longitude": -17.4346079
+        },
+        {
+            "agency_name": "NSIA Almadies",
+            "address": "Route de King Fahd,Dakar,S\u00e9n\u00e9gal",
+            "Latitude": 14.7417774,
+            "Longitude": -17.5186477
+        }
+    ]
+}

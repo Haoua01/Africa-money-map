@@ -1,0 +1,18 @@
+{
+    "bcn": [
+        {
+            "name": "Agence principale",
+            "address": "Niamey, Niamey, Niger",
+            "Latitude": 13.513997657310583, 
+            "Longitude": 2.110510828832935
+        }
+    ],
+    "brm": [
+        {
+            "name": "Agence principale",
+            "address": "Niamey, Niamey, Niger",
+            "Latitude": 13.506169450470857,
+            "Longitude": 2.125077639371251
+        }
+    ]
+}

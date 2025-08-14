@@ -1,0 +1,28 @@
+{
+    "senegal": [
+        {
+            "agency_name": "BGFI Bank Select Rond point Ngor",
+            "address": "Shell,Route de la Corniche Ouest,Dakar,Senegal",
+            "Latitude": 14.6789808,
+            "Longitude": -17.4594542
+        },
+        {
+            "agency_name": "BGFI Bank KFC",
+            "address": "KFC SENEGAL,Rue de l 'Universite,Dakar,Senegal",
+            "Latitude": 14.6875376,
+            "Longitude": -17.4649716
+        },
+        {
+            "agency_name": "BGFI Bank Mermoz",
+            "address": "Rue MZ 83,Dakar,Senegal",
+            "Latitude": 14.7069578,
+            "Longitude": -17.4733406
+        },
+        {
+            "agency_name": "BGFI Bank Plateau",
+            "address": "BGFI Bank Senegal,Dakar,Senegal",
+            "Latitude": 14.6668965,
+            "Longitude": -17.4401999
+        }
+    ]
+}

@@ -1,0 +1,234 @@
+[
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "PLATEAU SIEGE",
+        "Latitude": 5.3242205,
+        "Longitude": -4.0212127,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "PLATEAU PRINCIPALE",
+        "Latitude": 5.3242205,
+        "Longitude": -4.0212127,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "ABOBO CITÉ UNIVERSITAIRE",
+        "Latitude": 6.5101633,
+        "Longitude": -5.6383598,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "YOPOUGON SIPOREX",
+        "Latitude": 5.3520068,
+        "Longitude": -4.0763086,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "RIVIERA CASINO",
+        "Latitude": 5.3242205,
+        "Longitude": -4.0212127,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "KOUMASSI",
+        "Latitude": 5.2903896,
+        "Longitude": -3.9715894,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "TREICHVILLE MOSQUÉE",
+        "Latitude": 5.3065493,
+        "Longitude": -4.0160904,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "PORT-BOUËT",
+        "Latitude": 5.2589375,
+        "Longitude": -3.9667939,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "COCODY CITÉ ROUGE",
+        "Latitude": 5.3393583,
+        "Longitude": -4.0067717,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "MARCORY",
+        "Latitude": 5.3073689,
+        "Longitude": -3.9901698,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "TREICHVILLE - SOLIBRA",
+        "Latitude": 5.3009313,
+        "Longitude": -3.9982892,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "ADJAMÉ 220 LOGEMENTS",
+        "Latitude": 5.3492833,
+        "Longitude": -4.0171505,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "GRAND BASSAM",
+        "Latitude": 5.2073711,
+        "Longitude": -3.7384844,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "BINGERVILLE",
+        "Latitude": 5.3573663,
+        "Longitude": -3.8914082,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "ABOBO MAIRIE",
+        "Latitude": 5.4210852,
+        "Longitude": -4.0191082,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "YOPOUGON NIANGON",
+        "Latitude": 5.3266594,
+        "Longitude": -4.0941606,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "ATTÉCOUBÉ",
+        "Latitude": 5.3361908,
+        "Longitude": -4.042612,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "ANYAMA",
+        "Latitude": 5.4950326,
+        "Longitude": -4.0535589,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "COCODY VALLON",
+        "Latitude": 5.3394722,
+        "Longitude": -4.0229478,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "ABOBO GARE",
+        "Latitude": 5.4224283,
+        "Longitude": -4.017462,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "RIVIERA CASINO",
+        "Latitude": 5.3394429,
+        "Longitude": -3.9785813,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "ZONE 4",
+        "Latitude": 5.2813482,
+        "Longitude": -3.9785136,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "YAMOUSSOUKRO",
+        "Latitude": 6.8137143,
+        "Longitude": -5.269025,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "BOUAKÉ",
+        "Latitude": 6.5212673,
+        "Longitude": -5.6399762,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "DALOA",
+        "Latitude": 6.8857871,
+        "Longitude": -6.452727,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "SAN PEDRO",
+        "Latitude": 4.7464777,
+        "Longitude": -6.6335288,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "SOUBRE",
+        "Latitude": 5.7830278,
+        "Longitude": -6.607325,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "KORHOGO",
+        "Latitude": 9.4546297,
+        "Longitude": -5.6330889,
+        "geocoded": 1
+    },
+    {
+        "bank": "bda",
+        "country": "civ",
+        "address": "ABENGOUROU",
+        "Latitude": 6.7303171,
+        "Longitude": -3.4875902,
+        "geocoded": 1
+    }
+]

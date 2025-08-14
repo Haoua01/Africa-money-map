@@ -1,0 +1,1482 @@
+{
+    "benin": [
+        {
+            "Name": "Agence principale",
+            "Location": "Rue du Gouverneur G\u00e9n\u00e9ral Ponty",
+            "Opening Hours": "Lundi - Vendredi: 8:00-17:00",
+            "Phone Number": "00 (229) 21 36 81 00 / 21 36 82 00",
+            "Latitude": "6.35382",
+            "Longitude": "2.434289"
+        },
+        {
+            "Name": "Agence Akpakpa",
+            "Location": "Carrefour Sobebra",
+            "Opening Hours": "Lundi - Vendredi: 8:00-17:00",
+            "Phone Number": "00 (229) 62 15 26 28 / 95 57 48 73",
+            "Latitude": "6.365766",
+            "Longitude": "2.453269"
+        },
+        {
+            "Name": "Agence Calavi",
+            "Location": "Route Inter Etat N\u00b02 - Akassato : face \u00e0 l\u2019agence MOOV, non loin de la station d\u2019essence SCB",
+            "Opening Hours": "Lundi - Vendredi: 8:00-17:00",
+            "Phone Number": "00 (229) 21 36 23 40",
+            "Latitude": "6.45484881",
+            "Longitude": "2.356875"
+        },
+        {
+            "Name": "Agence Saint-Michel",
+            "Location": "Axe carrefour CABOMA vers l\u2019\u00e9glise Saint Michel, 3\u00e8 rue \u00e0 droite",
+            "Opening Hours": "Lundi - Vendredi: 8:00-17:00",
+            "Phone Number": "00 (229) 69 59 71 71",
+            "Latitude": "6.363757",
+            "Longitude": "2.430816"
+        },
+        {
+            "Name": "Agence Kouhounou",
+            "Location": ": carrefour stade de l\u2019amiti\u00e9 \u2013 axe du carrefour vers la Mairie de Zogbo, \u00e0 c\u00f4t\u00e9 du pr\u00eat \u00e0 porter \u00ab Vincent de Paul \u00bb",
+            "Opening Hours": "Lundi - Vendredi: 8:00-17:00",
+            "Phone Number": "00 (229) 21 36 83 55",
+            "Latitude": "6.363757",
+            "Longitude": "2.430816"
+        },
+        {
+            "Name": "Agence Miss\u00e8bo",
+            "Location": "Rue du march\u00e9 Miss\u00e8bo",
+            "Opening Hours": "Lundi - Vendredi: 8:00-16:00",
+            "Phone Number": "00 (229) 21 36 81 50",
+            "Latitude": "6.370282",
+            "Longitude": "2.391199"
+        },
+        {
+            "Name": "Guichet TAMA TAMA, transferts rapides d'argent",
+            "Location": "Rue du Gouverneur G\u00e9n\u00e9ral Ponty",
+            "Opening Hours": "Lundi - Vendredi: 8:00-17:00",
+            "Phone Number": "00 (229) 21 36 81 00 / 21 36 82 00",
+            "Latitude": "6.35382",
+            "Longitude": "2.434289"
+        },
+        {
+            "Name": "Agence Sacr\u00e9-C\u0153ur (EX BRS Akpakpa)",
+            "Location": "Akpakpa, Quartier ABOKI CODJI, Pr\u00e8s de la Place LENINE - Cotonou",
+            "Opening Hours": "Lundi - Vendredi: 8:00-17:00",
+            "Phone Number": "00 (229) 61 35 16 86",
+            "Latitude": "6.367185",
+            "Longitude": "2.445935"
+        },
+        {
+            "Name": "Espace Gold (d\u00e9di\u00e9 aux clients VIP)",
+            "Location": "Rue du Gouverneur G\u00e9n\u00e9ral Ponty",
+            "Opening Hours": "Lundi - Vendredi: 8:00-17:00",
+            "Phone Number": "00 (229) 21 36 81 00 / 21 36 82 00",
+            "Latitude": "6.35382",
+            "Longitude": "2.434289"
+        },
+        {
+            "Name": "Agence Porto-Novo",
+            "Location": "Carrefour Catchi",
+            "Opening Hours": "Lundi - Vendredi: 8:00-17:00",
+            "Phone Number": "00 (229) 20 22 22 66 / 00 (229) 67 97 88 4800 (229) 20 22 38 66",
+            "Latitude": "6.484806",
+            "Longitude": "2.620538"
+        },
+        {
+            "Name": "Agence Cocotomey",
+            "Location": "PK17 route de Ouidah - Carrefour Pharmacie Concorde face station d\u2019essence JNP",
+            "Opening Hours": "Lundi - Vendredi: 8:00-17:00",
+            "Phone Number": "00 (229) 21 36 81 55",
+            "Latitude": "6.388081",
+            "Longitude": "2.300604"
+        },
+        {
+            "Name": "Agence Lokossa",
+            "Location": "Quartier Qaqu\u00e9-Zounhou\u00e9 - Face Loterie Nationale",
+            "Opening Hours": "Lundi - Vendredi: 8:00-17:00",
+            "Phone Number": "00 (229) 61 32 38 28",
+            "Latitude": "6.635064",
+            "Longitude": "1.711637"
+        },
+        {
+            "Name": "Agence Parakou",
+            "Location": "Quartier Gah-Face Tribunal de 1\u00e8re instance",
+            "Opening Hours": "Lundi - Vendredi: 8:00-17:00",
+            "Phone Number": "00 (229) 21 36 81 43",
+            "Latitude": "9.341651",
+            "Longitude": "2.626035"
+        },
+        {
+            "Name": "Agence Natitingou",
+            "Location": "Quartier Yokossi - Face Immeuble Quidata",
+            "Opening Hours": "Lundi - Vendredi: 8:00-17:00",
+            "Phone Number": "00 (229) 62 23 13 83",
+            "Latitude": "10.307074",
+            "Longitude": "1.379457"
+        },
+        {
+            "Name": "Agence Hilla-Condji",
+            "Location": "Fronti\u00e8re B\u00e9nin/Togo - Quartier Adjovi",
+            "Opening Hours": "Lundi - Vendredi: 8:00-17:00",
+            "Phone Number": "00 (229) 66 73 33 85",
+            "Latitude": "6.241619",
+            "Longitude": "1.63862"
+        },
+        {
+            "Name": "Agence Tangui\u00e9ta",
+            "Location": "Enceinte de l'H\u00f4pital St Jean de Dieu",
+            "Opening Hours": "Lundi - Vendredi: 8:00-17:00",
+            "Phone Number": "00 (229) 66 30 86 83",
+            "Latitude": "10.623995",
+            "Longitude": "1.267955"
+        },
+        {
+            "Name": "Agence Bohicon",
+            "Location": "Bohicon, Route d\u2019Abomey. Immeuble face aux Sapeurs-pompiers",
+            "Opening Hours": "Lundi - Vendredi: 8:00-17:00",
+            "Phone Number": "00 (229) 21 36 81 44",
+            "Latitude": "7.178987",
+            "Longitude": "2.038549"
+        },
+        {
+            "Name": "Agence Kandi",
+            "Location": "Quartier Sinikoussoub\u00e9ri, face aux locaux de la mairie",
+            "Opening Hours": "Lundi - Vendredi: 8:00-17:00",
+            "Phone Number": "",
+            "Latitude": "6.3703167908293",
+            "Longitude": "2.3912375410301"
+        },
+        {
+            "Name": "GAB Ganhi",
+            "Location": "Agence Ganhi, Avenue du Gouverneur de G\u00e9n\u00e9ral Ponty",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "6.3537815453745",
+            "Longitude": "2.4342940653725"
+        },
+        {
+            "Name": "GAB Akpakpa",
+            "Location": "Agence Orabank Akpakpa, pr\u00e8s de la clinique Boni",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "6.3657521388062",
+            "Longitude": "2.4532546643204"
+        },
+        {
+            "Name": "GAB Sacre coeur",
+            "Location": "Agence Orabank Sacre C\u0153ur, Akpakpa, Quartier ABOKI Codji",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "6.3671904416044",
+            "Longitude": "2.4460425195754"
+        },
+        {
+            "Name": "GAB Agblangandan",
+            "Location": "Quartier Agblangandan",
+            "Opening Hours": "Lundi - Samedi: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": null,
+            "Longitude": null
+        },
+        {
+            "Name": "GAB Livingstone",
+            "Location": "Quartier Haie vive, H\u00f4tel Livingstone",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "6.3568348200495",
+            "Longitude": "2.3939728999399"
+        },
+        {
+            "Name": "GAB Missebo",
+            "Location": "Agence Orabank Miss\u00e8bo, rue du march\u00e9 Miss\u00e8bo",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "6.3639013254511",
+            "Longitude": "2.4345439860064"
+        },
+        {
+            "Name": "GAB St Michel",
+            "Location": "Agence Orabank St Michel, Axe carrefour CABOMA vers l\u2019\u00e9glise Saint Michel",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "6.3635848346138",
+            "Longitude": "2.430668536537"
+        },
+        {
+            "Name": "GAB Kouhounou",
+            "Location": "Agence Orabank Kouhounou, Carrefour Stade de l\u2019Amiti\u00e9",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "6.3843186164623",
+            "Longitude": "2.380648571067"
+        },
+        {
+            "Name": "GAB T\u00f6gbin",
+            "Location": "Carrefour Togbin sur l\u2019axe route des p\u00eaches, pr\u00e8s de la station d\u2019essence P\u00e9trodis",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "6.348592",
+            "Longitude": "2.308169"
+        },
+        {
+            "Name": "GAB Agla",
+            "Location": "Axe Godomey Gare vers Fidjross\u00e8",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "6.365323474395",
+            "Longitude": "2.3666031395918"
+        },
+        {
+            "Name": "GAB Calavi",
+            "Location": "Agence Orabank Calavi, route Inter Etat Cotonou-Calavi",
+            "Opening Hours": "Lundi: 0:00-23:50",
+            "Phone Number": "",
+            "Latitude": "6.454689756205",
+            "Longitude": "2.3570130287382"
+        },
+        {
+            "Name": "GAB Calavi iita",
+            "Location": "Carrefour IITA",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "6.4059169173515",
+            "Longitude": "2.3415280139754"
+        },
+        {
+            "Name": "GAB Erevan calavi",
+            "Location": "Erevan Calavi",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "6.4899059140898",
+            "Longitude": "2.359775865374"
+        },
+        {
+            "Name": "GAB Cocotomey",
+            "Location": "Agence Orabank Cocotomey, PK17 route de Ouidah",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "6.3886353910039",
+            "Longitude": "2.3004733066492"
+        },
+        {
+            "Name": "GAB Porto novo quando",
+            "Location": "Quartier Ouando, Carrefour Cinquantenaire",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "6.5045463253322",
+            "Longitude": "2.610888861672"
+        },
+        {
+            "Name": "GAB Porto novo carrefour catchi",
+            "Location": "Agence Orabank Porto-Novo, Carrefour Catchi",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "6.4847912577633",
+            "Longitude": "2.6205326177667"
+        },
+        {
+            "Name": "GAB Hillacondji",
+            "Location": "Agence Orabank Hillacondji, Fronti\u00e8re B\u00e9nin-Togo",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "6.241599639954",
+            "Longitude": "1.6386280327425"
+        },
+        {
+            "Name": "GAB Lokossa",
+            "Location": "Agence Orabank Lokossa, quatier SAGUE ZOUNHOUE",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "6.6354051503284",
+            "Longitude": "1.7118703942113"
+        },
+        {
+            "Name": "GAB Parakou",
+            "Location": "Agence Orabank Parakou, Carrefour des Banques",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "9.3415337638402",
+            "Longitude": "2.6261162807557"
+        },
+        {
+            "Name": "GAB Natitingou",
+            "Location": "Agence Orabank Natitingou, quartier Yokoss",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "10.307266654764",
+            "Longitude": "1.3790183449809"
+        },
+        {
+            "Name": "GAB Tanguieta",
+            "Location": "Agence Orabank Tangui\u00e9ta",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "10.623932293871",
+            "Longitude": "1.2679390365998"
+        },
+        {
+            "Name": "GAB Bohicon",
+            "Location": "Agence Orabank, quartier HONMEHO",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "7.178989348098",
+            "Longitude": "2.0390837230534"
+        },
+        {
+            "Name": "GAB Kandi",
+            "Location": "Agence Orabank Kandi, Quartier Sinikoussoub\u00e9ri",
+            "Opening Hours": "Lundi - Dimanche: 0:00-23:59",
+            "Phone Number": "",
+            "Latitude": "6.3703167908293",
+            "Longitude": "2.3912375410301"
+        }
+    ],
+    "burkina": [
+        {
+            "Name": "Agence principale",
+            "Location": "1416, Avenue Kwam\u00e9 N\u2019krumah,",
+            "Opening Hours": "Lundi - Vendredi: 7:45-16:15",
+            "Phone Number": "00 (226) 25 49 60 00 \u00e0 0600 (226) 25 30 34 80",
+            "Latitude": "12.3587608",
+            "Longitude": "-1.517331"
+        },
+        {
+            "Name": "Agence Patte d\u2019oie",
+            "Location": "Avenue France-Afrique",
+            "Opening Hours": "Lundi - Vendredi: 8:00-17:00",
+            "Phone Number": "00 (226) 25 49 60 8000 (226) 25 30 34 80",
+            "Latitude": "12.319652",
+            "Longitude": "-1.528203"
+        },
+        {
+            "Name": "Cash point de Sankryaar",
+            "Location": "Immeuble ZANGRE",
+            "Opening Hours": "Lundi - Vendredi: 7:45-16:15",
+            "Phone Number": "00 (226) 25 49 60 81",
+            "Latitude": "12.377976",
+            "Longitude": "-1.528356"
+        },
+        {
+            "Name": "Agence Tampouy",
+            "Location": "Avenue du YATENGA",
+            "Opening Hours": "Lundi - Vendredi: 7:45-16:15",
+            "Phone Number": "00 (226) 25 49 60 82",
+            "Latitude": "12.387534",
+            "Longitude": "-1.562799"
+        },
+        {
+            "Name": "Agence SIAO",
+            "Location": "Avenue Tensoba",
+            "Opening Hours": "Lundi - Vendredi: 7:45-16:15",
+            "Phone Number": "00 (226) 25 49 00 8300 (226) 25 30 34 80",
+            "Latitude": "12.347526",
+            "Longitude": "-1.495938"
+        },
+        {
+            "Name": "Agence de Tanghin",
+            "Location": "Avenue de la Concorde Nationale",
+            "Opening Hours": "Lundi - Vendredi: 7:45-16:15",
+            "Phone Number": "00 (226) 25 49 60 9600 (226) 25 30 34 80",
+            "Latitude": "12.401785",
+            "Longitude": "-1.515849" 
+        },
+        {
+            "Name": "Agence de Gounghin",
+            "Location": "Avenue de la Concorde Nationale",
+            "Opening Hours": "Lundi - Vendredi: 7:45-16:15",
+            "Phone Number": "00 (226) 25 49 60 7400 (226) 25 30 34 80",
+            "Latitude": "12.357563",
+            "Longitude": "-1.546788"
+        },
+        {
+            "Name": "Agence Premium Digitale",
+            "Location": "Avenue Loudun",
+            "Opening Hours": "Lundi - Vendredi: 7:45-16:15",
+            "Phone Number": "00 (226) 25 49 60 3700 (226) 25 30 34 80",
+            "Latitude": "12.362454",
+            "Longitude": "-1.519218"
+        },
+        {
+            "Name": "Agence Bobo Dioulasso",
+            "Location": "Avenue du Gouverneur William Ponty",
+            "Opening Hours": "Lundi - Vendredi: 7:45-16:15",
+            "Phone Number": "00 (226) 20 98 27 77",
+            "Latitude": "11.1751944",
+            "Longitude": "-4.3015833333333"
+        },
+        {
+            "Name": "Agence Tenkodogo",
+            "Location": "",
+            "Opening Hours": "Lundi - Vendredi: 7:45-16:15",
+            "Phone Number": "00 (226) 24 71 00 3300 (226) 24 71 07 12",
+            "Latitude": "11.785678",
+            "Longitude": "-0.369506"
+        },
+        {
+            "Name": "Agence Koudougou",
+            "Location": "Route Nationale N\u00b014",
+            "Opening Hours": "Lundi - Vendredi: 7:45-16:15",
+            "Phone Number": "00 (226) 25 49 30 3100 (226) 25 44 02 34",
+            "Latitude": "12.252404",
+            "Longitude": "-2.354821"
+        },
+        {
+            "Name": "Agence de Dapoya",
+            "Location": "Avenue Dimdolossom",
+            "Opening Hours": "Lundi - Vendredi: 7:45-16:15",
+            "Phone Number": "25 49 60 8625 30 34 80",
+            "Latitude": "12.378702243788295",
+            "Longitude":  "-1.5215244326047277"
+        }
+    ],
+    "civ": [
+        {
+            "Name": "Agence principale",
+            "Location": "Rue des Banques, Angle du Boulevard de la R\u00e9publique, Avenue Joseph Anoma",
+            "Opening Hours": "Lundi - Vendredi: 8:00-15:30",
+            "Phone Number": "00 (225) 27 20 25 55 55",
+            "Latitude": "7.4662962",
+            "Longitude": "-7.792328"
+        },
+        {
+            "Name": "Agence Adjam\u00e9",
+            "Location": "March\u00e9 Gouro",
+            "Opening Hours": "Lundi - Vendredi: 8:00-15:30",
+            "Phone Number": "00 (225) 27 20 25 55 90 / 93",
+            "Latitude": "7.4662962",
+            "Longitude": "-7.792328"
+        },
+        {
+            "Name": "Agence de Marcory VGE",
+            "Location": "Agence Marcory VGE, Sous l\u2019\u00e9changeur du Pont HKB, dans la contre-all\u00e9e d\u2019Orca D\u00e9co",
+            "Opening Hours": "Lundi - Vendredi: 8:00-15:30",
+            "Phone Number": "00 (225) 27 20 25 55 28",
+            "Latitude": "5.296299690472007", 
+            "Longitude": "-3.981519171482574"
+        },
+        {
+            "Name": "Agence de Yopougon",
+            "Location": "Carrefour de la Zone Industrielle",
+            "Opening Hours": "Lundi - Vendredi: 8:00-15:30",
+            "Phone Number": "00 (225) 27 20 25 55 27",
+            "Latitude": "7.4662962",
+            "Longitude": "-7.792328"
+        },
+        {
+            "Name": "Agence de Cocody",
+            "Location": "II Plateaux Vallon, Rue des Jardins",
+            "Opening Hours": "Lundi - Vendredi: 8:00-15:30",
+            "Phone Number": "00 (225) 27 20 25 55 26",
+            "Latitude": "7.4662962",
+            "Longitude": "-7.792328"
+        },
+        {
+            "Name": "Agence de Cocody-Abatta",
+            "Location": "Sise au Centre Commercial du Carrefour Abatta",
+            "Opening Hours": "Lundi - Vendredi: 8:00-15:30",
+            "Phone Number": "00 (225) 27 20 25 55 55",
+            "Latitude": "7.4662962",
+            "Longitude": "-7.792328"
+        },
+        {
+            "Name": "Agence de San Pedro",
+            "Location": "Sise au rond point de la Cit\u00e9",
+            "Opening Hours": "Lundi - Vendredi: 8:00-15:30",
+            "Phone Number": "00 (225) 27 20 25 55 29 / 00 (225) 34 71 14 76",
+            "Latitude": "7.4662962",
+            "Longitude": "-7.792328"
+        },
+        {
+            "Name": "Agence de Bouak\u00e9",
+            "Location": "Sise au Commerce, Rue des banques",
+            "Opening Hours": "Lundi - Vendredi: 8:00-15:30",
+            "Phone Number": "00 (225) 27 20 25 55 62 / 00 (225) 31 63 19 10",
+            "Latitude": "7.4662962",
+            "Longitude": "-7.792328"
+        },
+        {
+            "Name": "Agence de Daloa",
+            "Location": "Sise au Quartier Sloleil I (Route de Man)",
+            "Opening Hours": "Lundi - Vendredi: 8:00-15:30",
+            "Phone Number": "00 (225) 27 20 25 55 55",
+            "Latitude": "7.4662962",
+            "Longitude": "-7.792328"
+        },
+        {
+            "Name": "Agence Gagnoa",
+            "Location": "Sise au quartier commerce- Rue des banques",
+            "Opening Hours": "Lundi - Vendredi: 8:00-15:30",
+            "Phone Number": "00 (225) 27 20 25 55 55",
+            "Latitude": "6.128913746362933", 
+            "Longitude": "-5.944011171323498"
+        },
+        {
+            "Name": "Orabank Premium - Agence Orchid\u00e9es",
+            "Location": "Sise au 2 Plateaux BMW apr\u00e8s TNT",
+            "Opening Hours": "Lundi - Vendredi: 8:30-16:30",
+            "Phone Number": "00 (225) 27 20 25 55 55",
+            "Latitude": "5.360971318666753", 
+            "Longitude": "-4.008395300254153"
+        },
+        {
+            "Name": "Agence de Yopougon complexe",
+            "Location": "En face du complexe sportif Jesse Jackson de Yopougon Selmer",
+            "Opening Hours": "Lundi - Vendredi: 8:00-15:30",
+            "Phone Number": "00 (225) 27 20 25 55 55",
+            "Latitude": "5.341106948188891",
+            "Longitude": "-4.0633886328022735"
+        },
+        {
+            "Name": "Agence Angr\u00e9 CHU",
+            "Location": "Centre commercial Koko Mall, non loin du CHU d\u2019Angr\u00e9",
+            "Opening Hours": "Lundi - Vendredi: 8:00-15:30",
+            "Phone Number": "00 (225) 27 20 25 55 55",
+            "Latitude": "5.399664175470441", 
+            "Longitude": "-3.956122317302931"
+        }
+    ],
+    "guinee": [
+        {
+            "Name": "Agence principale",
+            "Location": "Avenida Pansau Na Isna",
+            "Opening Hours": "Lundi - Vendredi: 8:00-16:00",
+            "Phone Number": "(+245) 667 29 07 / (+245) 580 46 37(+245) 320 71 13",
+            "Latitude": "11.861449568148785",
+            "Longitude": "-15.580626193012717"
+        },
+        {
+            "Name": "Agence de Pra\u00e7a",
+            "Location": "Rue Justino Lopes 13-B",
+            "Opening Hours": "Lundi - Vendredi: 8:00-16:00",
+            "Phone Number": "(+245) 667 29 07 / (+245) 580 46 37(+245) 320 71 13",
+            "Latitude": "11.859140491242814",
+            "Longitude": "-15.58365616206392"
+        },
+        {
+            "Name": "Agence de Bandim",
+            "Location": "Avenida Combatente da Liberdade da Patria",
+            "Opening Hours": "Lundi - Vendredi: 8:00-16:00",
+            "Phone Number": "(+245) 667 29 07 / (+245) 580 46 37(+245) 320 71 13",
+            "Latitude": "11.879357164945615",
+            "Longitude": "-15.638161032609496"
+        },
+        {
+            "Name": "Agence de Gab\u00fa",
+            "Location": "Avenida Principal / Bairro dos Engenheiros",
+            "Opening Hours": "Lundi - Vendredi: 8:00-16:00",
+            "Phone Number": "(+245) 683 29 55 /(+245) 524 36 47(+245) 320 71 13",
+            "Latitude": "12.278343890914014",
+            "Longitude": "-14.224070901920578"
+        },
+        {
+            "Name": "Agence de Bafat\u00e1",
+            "Location": "Avenida Principal / Bairro 4",
+            "Opening Hours": "Lundi - Vendredi: 8:00-16:00",
+            "Phone Number": "(+245) 676 21 10/(+245) 524 39 21(+245) 320 71 13",
+            "Latitude": "12.175632163167302",
+            "Longitude": "-14.653863119113613"
+        },
+        {
+            "Name": "Agence de Buba",
+            "Location": "Bairro de Holanda/ Estrada de C\u00e1tio",
+            "Opening Hours": "Lundi - Vendredi: 8:00-16:00",
+            "Phone Number": "(+245) 96 634 88 48/(+245) 95 627 91 95(+245) 320 71 13",
+            "Latitude": "11.595664605746673",
+            "Longitude": "-14.978764761447696"
+        },
+        {
+            "Name": "Agence de Hafia",
+            "Location": "Avenida Combatente da Liberdade da Patria",
+            "Opening Hours": "Lundi - Vendredi: 8:00-16:00",
+            "Phone Number": "00 (245) 96 634 88 48 / 95 627 91 9500 (245) 320 71 13",
+            "Latitude": "11.885042030786279",
+            "Longitude": "-15.640647414166995"
+        },
+        {
+            "Name": "Agence de Bula",
+            "Location": "Bairro Capugna, frente de posto de sa\u00fade",
+            "Opening Hours": "Lundi - Vendredi: 8:00-16:00",
+            "Phone Number": "00(245) 95 705 59 27 / 96 921 76 23",
+            "Latitude": "12.106323958237274", 
+            "Longitude": "-15.708619935578717"
+        }
+    ],
+    "mali": [
+        {
+            "Name": "Agence principale",
+            "Location": "ACI 2000 Hamdallaye, Av. du Mali, Immeuble SOUTRA",
+            "Opening Hours": "Lundi - Jeudi: 8:00-16:00",
+            "Phone Number": "(+223) 20 70 61 00(+223) 20 22 23 51",
+            "Latitude": "12.6351667",
+            "Longitude": "-8.0181111111111"
+        },
+        {
+            "Name": "Agence de Kalaban",
+            "Location": "Route de l\u2019a\u00e9roport, immeuble SOTRAKA pr\u00e8s march\u00e9 Koko de Kalaban-coura",
+            "Opening Hours": "Lundi - Jeudi: 8:00-16:00",
+            "Phone Number": "(+223) 20 70 61 70 / 71 (+223) 20 28 58 11(+223) 20 28 58 10",
+            "Latitude": "12.578752905824",
+            "Longitude": "-7.987521642526"
+        },
+        {
+            "Name": "Agence Torokorobougou",
+            "Location": "Avenue Sada Diallo, Rue 408, Pr\u00e8s de Fitini Market",
+            "Opening Hours": "Lundi - Jeudi: 8:00-16:00",
+            "Phone Number": "(+223) 20 70 61 91",
+            "Latitude": "12.638283796539547", 
+            "Longitude": "-8.002652890273469"
+        },
+        {
+            "Name": "Agence Yeelen",
+            "Location": "Immeuble Tombouctou Grand March\u00e9 de Bamako, pr\u00e8s Place du Souvenir",
+            "Opening Hours": "Lundi - Jeudi: 8:00-20:00",
+            "Phone Number": "(+223) 20 70 61 85 / 86(+223) 20 22 23 51",
+            "Latitude": "12.6426667",
+            "Longitude": "-7.9976388888889"
+        },
+        {
+            "Name": "Agence de Faladi\u00e9",
+            "Location": "Avenue OUA, Immeuble YARA Falafi\u00e9 Commune VI Bamako",
+            "Opening Hours": "Lundi - Jeudi: 8:00-16:00",
+            "Phone Number": "(+223) 20 70 61 73 / 74",
+            "Latitude": "12.588",
+            "Longitude": "-7.9471944444444"
+        },
+        {
+            "Name": "Agence de Dj\u00e9libougou",
+            "Location": "Route de Koulikoro, Dj\u00e9libougou Immeuble Kodonso",
+            "Opening Hours": "Lundi - Vendredi: 8:00-16:00",
+            "Phone Number": "(+223) 20 70 61 50 / 51",
+            "Latitude": "12.664",
+            "Longitude": "-7.94175"
+        },
+        {
+            "Name": "Agence de Kayes",
+            "Location": "Grand March\u00e9 de Kayes, face Direction R\u00e9gionale de la Sant\u00e9",
+            "Opening Hours": "Lundi - Jeudi: 8:00-16:00",
+            "Phone Number": "(+223) 20 70 61 96 / 97 (+223) 20 10 61 96",
+            "Latitude": "14.4491667",
+            "Longitude": "-11.439388888889"
+        },
+        {
+            "Name": "Agence de Mopti",
+            "Location": "Immeuble Gouro BOCOUM Centre Commercial",
+            "Opening Hours": "Lundi - Jeudi: 8:00-16:00",
+            "Phone Number": "(+223) 20 70 61 80 / 81 (+223) 21 43 12 37/38(+223) 21 43 12 39",
+            "Latitude": "14.4973611",
+            "Longitude": "-4.1984722222222"
+        },
+        {
+            "Name": "Agence de Kita",
+            "Location": "Kita, face \u00e0 la pr\u00e9fecture",
+            "Opening Hours": "Lundi - Jeudi: 8:00-16:00",
+            "Phone Number": "(+223) 20 70 61 78 / 79 (+223) 20 70 62 15",
+            "Latitude": "13.0414444",
+            "Longitude": "-9.4869444444444"
+        },
+        {
+            "Name": "Agence de Koutiala",
+            "Location": "CENTRE COMMERCIAL DE KOUTIALA, TF 182 / Immeuble El Hadj Mohamed Daouda DIORO - EMDD",
+            "Opening Hours": "Lundi - Jeudi: 8:00-16:00",
+            "Phone Number": "(+223) 20 70 61 98",
+            "Latitude": "12.391809345521436",
+            "Longitude": "-5.4651135220094185"
+        }
+    ],
+    "niger": [
+        {
+            "Name": "Agence Principale",
+            "Location": "Niamey, Avenue de l\u2019Amiti\u00e9",
+            "Opening Hours": "Lundi - Vendredi: 8:15-17:15",
+            "Phone Number": "(+227) 20 73 95 47/48/50 OU 97 08 25 25 OU 82 81 00 00(+227) 20 73 95 49",
+            "Latitude": "13.50680989647757", 
+            "Longitude": "2.1182859714016034"
+        },
+        {
+            "Name": "Bureau du Grand March\u00e9",
+            "Location": "Immeuble SOCOGEM, Grand March\u00e9",
+            "Opening Hours": "Lundi - Vendredi: 8:15-17:15",
+            "Phone Number": "(+227) 20 73 95 47/48 OU 97 08 25 25 OU 82 81 00 00(+227) 20 73 95 49",
+            "Latitude": "13.516761653934172",
+            "Longitude": "2.116899894921282"
+        },
+        {
+            "Name": "Agence du Complexe CCOG",
+            "Location": "Avenue de l\u2019Islam, carrefour CCOG",
+            "Opening Hours": "Lundi - Vendredi: 8:15-17:15",
+            "Phone Number": "(+227) 20 73 95 47/48 OU 97 08 25 25 OU 82 81 00 00(+227) 20 73 95 49",
+            "Latitude": "13.521673385509827",
+            "Longitude": "2.135373982767812"
+        },
+        {
+            "Name": "Agence de Dar Es Salam",
+            "Location": "Rue foulani koira",
+            "Opening Hours": "Lundi - Vendredi: 8:15-17:15",
+            "Phone Number": "(+227) 20 73 95 47/48 OU 97 08 25 25 OU 82 81 00 00(+227) 20 73 95 49",
+            "Latitude": "13.550866869599945",
+            "Longitude": "2.106960382750046"
+        },
+        {
+            "Name": "Agence d\u2019Agadez",
+            "Location": "",
+            "Opening Hours": "Lundi - Vendredi: 8:15-17:15",
+            "Phone Number": "(+227) 20 44 06 48 OU 97 08 25 25 OU 82 81 00 00(+227) 20 44 06 49",
+            "Latitude": "16.97059994190711",
+            "Longitude": "7.984120160247087"
+        },
+        {
+            "Name": "Agence de Maradi",
+            "Location": "",
+            "Opening Hours": "Lundi - Vendredi: 8:15-17:15",
+            "Phone Number": "(+227) 20 41 10 06 OU 97 08 25 25 OU 82 81 00 00(+227) 20 41 02 76",
+            "Latitude": "13.500374",
+            "Longitude": "7.103923"
+        },
+        {
+            "Name": "Agence de Tillab\u00e9ri",
+            "Location": "",
+            "Opening Hours": "Lundi - Vendredi: 8:15-17:15",
+            "Phone Number": "(+227) 20 71 10 09(+227) 20 70 10 08",
+            "Latitude": "14.201510209199785",
+            "Longitude": "1.4563012944010414"
+        },
+        {
+            "Name": "Agence de Zinder",
+            "Location": "",
+            "Opening Hours": "Lundi - Vendredi: 8:15-17:15",
+            "Phone Number": "(+227) 20 51 09 87 OU 97 08 25 25 OU 82 81 00 00(+227) 20 51 09 88",
+            "Latitude": "13.804879451557838",
+            "Longitude": "8.985310098095534"
+        },
+        {
+            "Name": "Agence de Tahoua",
+            "Location": "",
+            "Opening Hours": "Lundi: 8:15-17:15",
+            "Phone Number": "",
+            "Latitude": "14.889282865635423", 
+            "Longitude": "5.255432204808257"
+        },
+        {
+            "Name": "Espace PREMIUM",
+            "Location": "Avenue de l\u2019Amiti\u00e9",
+            "Opening Hours": "Lundi - Vendredi: 8:15-17:15",
+            "Phone Number": "+227 20 73 95 47/48/50 ; +227 97 08 25 25 ; +227 82 81 00 00",
+            "Latitude": null,
+            "Longitude": null
+        },
+        {
+            "Name": "Agence de Diffa",
+            "Location": "Quartier r\u00e9sidentiel Diffa Koura, face Grande Mosqu\u00e9e",
+            "Opening Hours": "Lundi - Vendredi: 8:15-17:15",
+            "Phone Number": "(+227) 20 73 13 86",
+            "Latitude": "13.313560417102334", 
+            "Longitude": "12.61591782830126"
+        },
+        {
+            "Name": "Bureau du Petit March\u00e9",
+            "Location": "Ets Houdou Younoussa",
+            "Opening Hours": "Lundi - Vendredi: 8:15-17:00",
+            "Phone Number": "(+227) 20 73 13 86",
+            "Latitude": null,
+            "Longitude": null
+        }
+    ],
+    "senegal": [
+        {
+            "Name": "Agence principale",
+            "Location": "40, avenue Jean Jaur\u00e8s X Carnot",
+            "Opening Hours": "Lundi - Vendredi: 7:45-15:45",
+            "Phone Number": "00 (221) 33 889 80 0000 (221) 33 842 98 80",
+            "Latitude": "14.667413",
+            "Longitude": "-17.439122"
+        },
+        {
+            "Name": "Agence des HLM",
+            "Location": "Ouagou Niaye 2, en face Police HLM 5",
+            "Opening Hours": "Lundi - Vendredi: 8:15-16:15",
+            "Phone Number": "00 (221) 33 889 80 0000 (221) 33 842 98 80",
+            "Latitude": "14.707967",
+            "Longitude": "-17.446961"
+        },
+        {
+            "Name": "Agence de Soprim",
+            "Location": "5, Cit\u00e9 Soprim - Route des Niayes",
+            "Opening Hours": "Lundi - Vendredi: 8:15-16:15",
+            "Phone Number": "00 (221) 33 889 80 0000 (221) 33 835 84 77",
+            "Latitude": "14.7513955",
+            "Longitude": "-17.43692498"
+        },
+        {
+            "Name": "Agence de Thiaroye",
+            "Location": "Km 14 route de Rufisque, \u00e0 c\u00f4t\u00e9 de Nestl\u00e9",
+            "Opening Hours": "Lundi - Vendredi: 8:15-16:15",
+            "Phone Number": "00 (221) 33 889 80 0000 (221) 33 834 37 72",
+            "Latitude": "14.6998939",
+            "Longitude": "-17.4515801"
+        },
+        {
+            "Name": "Agence de Zone Industrielle",
+            "Location": "Km 2, 5 Boulevard du Centenaire de la Commune de Dakar",
+            "Opening Hours": "Lundi - Vendredi: 8:15-16:15",
+            "Phone Number": "00 (221) 33 889 80 0000 (221) 33 823 14 58",
+            "Latitude": "14.6998122",
+            "Longitude": "-17.4515801"
+        },
+        {
+            "Name": "Agence Sacr\u00e9 C\u0153ur 3, VDN",
+            "Location": "10 287, Sacr\u00e9 C\u0153ur 3, VDN",
+            "Opening Hours": "Lundi - Vendredi: 8:15-16:15",
+            "Phone Number": "00 (221) 33 889 80 0000 (221) 33 842 98 80",
+            "Latitude": "14.722298",
+            "Longitude": "-17.471357"
+        },
+        {
+            "Name": "Centre d'Affaires Zone Industrielle",
+            "Location": "Km 2, 5 Boulevard du Centenaire de la Commune de Dakar",
+            "Opening Hours": "Lundi - Vendredi: 8:15-16:15",
+            "Phone Number": "00 (221) 33 889 80 0000 (221) 33 823 14 58",
+            "Latitude": "14.6998122",
+            "Longitude": "-17.4515801"
+        },
+        {
+            "Name": "Agence de Touba",
+            "Location": "Touba Mosqu\u00e9e x 28, Keur Sokhna Mb\u00e8ne Ngabou",
+            "Opening Hours": "Lundi - Vendredi: 8:15-16:15",
+            "Phone Number": "00 (221) 33 889 80 0000 (221) 33 842 98 80",
+            "Latitude": "14.858498",
+            "Longitude": "-15.877897"
+        },
+        {
+            "Name": "Agence de Saint-Louis",
+            "Location": "Sor, Route nationale 1 en face du Pont Faidherbe",
+            "Opening Hours": "Lundi - Vendredi: 8:15-16:15",
+            "Phone Number": "00 (221) 33 889 80 0000 (221) 33 961 51 26",
+            "Latitude": "16.025021",
+            "Longitude": "-16.498393"
+        },
+        {
+            "Name": "Agence de Thi\u00e8s",
+            "Location": "1422 Aiglon, Avenue Leopold Sedar Senghor, Immeuble Pr\u00e9voyance Assurance",
+            "Opening Hours": "Lundi - Vendredi: 8:15-16:15",
+            "Phone Number": "00 (221) 33 889 80 0000 (221) 33 842 98 80",
+            "Latitude": "14.7887202",
+            "Longitude": "-16.9973098"
+        },
+        {
+            "Name": "Agence de Mbour",
+            "Location": "Ch\u00e2teau d'eau Nord, route de l'h\u00f4pital x route de Dakar",
+            "Opening Hours": "Lundi - Vendredi: 8:15-16:15",
+            "Phone Number": "00 (221) 33 889 80 0000 (221) 33 842 98 80",
+            "Latitude": "14.4296",
+            "Longitude": "-16.9752"
+        },
+        {
+            "Name": "Agence de Ziguinchor",
+            "Location": "Quartier escale, Rue du commerce, en face du Port.",
+            "Opening Hours": "Lundi - Vendredi: 8:15-16:15",
+            "Phone Number": "00 (221) 33 889 80 0000 (221) 33 842 98 80",
+            "Latitude": "12.587608",
+            "Longitude": "-16.2698316"
+        },
+        {
+            "Name": "Agence de Kaolack",
+            "Location": "L\u00e9ona, route nationale 1, avenue Diogoye Basile Senghor / Kaolack",
+            "Opening Hours": "Lundi - Vendredi: 8:15-16:15",
+            "Phone Number": "00 (221) 33 889 80 0000 (221) 33 842 98 80",
+            "Latitude": "14.1572449",
+            "Longitude": "-16.1398629"
+        },
+        {
+            "Name": "Agence de Tamba",
+            "Location": "Avenue L\u00e9opold S\u00e9dar SENGHOR, Quartier Pont, Tambacounda",
+            "Opening Hours": "Lundi - Vendredi: 8:15-16:15",
+            "Phone Number": "00 (221) 33 889 80 0000 (221) 33 842 98 80",
+            "Latitude": "13.773458",
+            "Longitude": "-13.66965"
+        },
+        {
+            "Name": "Agence de S\u00e9bikotane",
+            "Location": "Sortie 12 Autoroute de l\u2019Avenir, S\u00e9bikotane",
+            "Opening Hours": "Lundi - Vendredi: 8:15-16:15",
+            "Phone Number": "00 (221) 33 889 80 00",
+            "Latitude": "14.690834522957148", 
+            "Longitude": "-17.434779274907786"
+        },
+        {
+            "Name": "Bureau de Saly Portudal",
+            "Location": "Centre commercial Carrefour Market, Saly Portudal",
+            "Opening Hours": "Lundi - Vendredi: 8:15-16:15",
+            "Phone Number": "00 (221) 33 889 80 00Fax : 00 (221) 33 842 98 80",
+            "Latitude": null,
+            "Longitude": null
+        },
+        {
+            "Name": "Agence de Pikine",
+            "Location": "Pikine Icotaf Texaco, 5364 Immeuble Adjaratou Yaye Codou Badiane",
+            "Opening Hours": "Lundi - Vendredi: 8:15-16:15",
+            "Phone Number": "00 (221) 33 889 80 0000 (221) 33 842 98 80",
+            "Latitude": "14.7603822",
+            "Longitude": "-17.3973858"
+        },
+        {
+            "Name": "HOTEL TERROU BI",
+            "Location": "Corniche Ouest, Boulevard Martin Luther King, Dakar",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.677378",
+            "Longitude": "-17.466389"
+        },
+        {
+            "Name": "CASINO TERROU BI",
+            "Location": "Corniche Ouest, Boulevard Martin Luther King, Dakar",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.67692",
+            "Longitude": "-17.466203"
+        },
+        {
+            "Name": "HOTEL RADISSON DIAMNIADIO",
+            "Location": "Autoroute \u00e0 p\u00e9age, Diamniadio",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.739261",
+            "Longitude": "-17.196688"
+        },
+        {
+            "Name": "AUCHAN MERMOZ",
+            "Location": "Ancienne Piste de l'a\u00e9roport, Dakar",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.711507",
+            "Longitude": "-17.476268"
+        },
+        {
+            "Name": "AUCHAN HOLIDAYS MARKET",
+            "Location": "Route de Saly, Mbour",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.4447964",
+            "Longitude": "-17.005262"
+        },
+        {
+            "Name": "STAR OIL KEUR NDIAYE LO",
+            "Location": "Keur Ndiaye L\u00f4, Rufisque",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.74335",
+            "Longitude": "-17.2437"
+        },
+        {
+            "Name": "EDK OIL TOGLOU",
+            "Location": "Autoroute \u00e0 p\u00e9age, Dakar",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.717472923529",
+            "Longitude": "-17.110780625036"
+        },
+        {
+            "Name": "NIORO",
+            "Location": "Route de la Transgambienne / Rond Point Centre Socio culturel",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "13.744949900488",
+            "Longitude": "-15.774643884645"
+        },
+        {
+            "Name": "GUINGUINEO",
+            "Location": "Guinguin\u00e9o",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.272179",
+            "Longitude": "-15.945573"
+        },
+        {
+            "Name": "ISD (INT SCHOOL OF DAKAR)",
+            "Location": "Mermoz",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.706055680444",
+            "Longitude": "-17.481553134948"
+        },
+        {
+            "Name": "KAOLACK COEUR DE VILLE",
+            "Location": "Rond point c\u0153ur de ville, kaolack",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.4414592",
+            "Longitude": "-17.017016"
+        },
+        {
+            "Name": "SAED SAINT LOUIS",
+            "Location": "Ngall\u00e8le, Route de Rosso",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "16.049639319532",
+            "Longitude": "-16.432203478172"
+        },
+        {
+            "Name": "HOTEL BOMA",
+            "Location": "Route de N'gor, Dakar",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.750530594797",
+            "Longitude": "-17.503521115611"
+        },
+        {
+            "Name": "NDOFFANE",
+            "Location": "Ndoffane, Kaolack",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.4839329",
+            "Longitude": "-16.2722282"
+        },
+        {
+            "Name": "HOTEL ROYAL HORIZON",
+            "Location": "Village de La Somone",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.490999",
+            "Longitude": "-17.0857938"
+        },
+        {
+            "Name": "HOTEL NEPTUNE",
+            "Location": "Saly Portudal",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.437977009973",
+            "Longitude": "-17.004749774433"
+        },
+        {
+            "Name": "TOUBACOUTA",
+            "Location": "Toubacouta, en face de la Mairie",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "13.781110381666",
+            "Longitude": "-16.470168735244"
+        },
+        {
+            "Name": "STATION TOTAL AUTOROUTIERE",
+            "Location": "Autoroute \u00e0 p\u00e9age, Dalifort Dakar",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.745188475419",
+            "Longitude": "-17.419091773205"
+        },
+        {
+            "Name": "STATION ORYX PAI",
+            "Location": "Croisement PAI Gu\u00e9diawaye, Dakar",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.801234084776",
+            "Longitude": "-17.186832758464"
+        },
+        {
+            "Name": "STATION ORYX BAMBILOR",
+            "Location": "Bambilor, en face Mairie",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.80140523244",
+            "Longitude": "-17.186810632624"
+        },
+        {
+            "Name": "CARREFOUR SUPERMARCHE, THIES",
+            "Location": "En face stade Lat Dior, Thi\u00e8s",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.77089282571",
+            "Longitude": "-16.946583463309"
+        },
+        {
+            "Name": "H\u00d4TEL DAYS INN",
+            "Location": "Kermel, Dakar",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.673459878625",
+            "Longitude": "-17.428251525857"
+        },
+        {
+            "Name": "CAP SKIRRING",
+            "Location": "Rond point Cap Skirring",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "12.387939483901",
+            "Longitude": "-16.739039040659"
+        },
+        {
+            "Name": "CASINO TERROU-SALY",
+            "Location": "Saly Portudal",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.676497062788",
+            "Longitude": "-17.466216164326"
+        },
+        {
+            "Name": "STATION TOTAL NGOR",
+            "Location": "Ngor virage, Dakar",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.752270338873",
+            "Longitude": "-17.50084320547"
+        },
+        {
+            "Name": "PETOWAL MINING COMPANY",
+            "Location": "Mako, K\u00e9dougou",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "12.841568115857",
+            "Longitude": "-12.349854447843"
+        },
+        {
+            "Name": "STATION PETROSEN",
+            "Location": "Route nationale 1, Bargny",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.816456559032",
+            "Longitude": "-17.172690631111"
+        },
+        {
+            "Name": "RESIDENCE DU PORT",
+            "Location": "Saly Portudal",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.450401916778",
+            "Longitude": "-17.036755205478"
+        },
+        {
+            "Name": "H\u00d4TEL PALM BEACH",
+            "Location": "Saly Portudal",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.440397555382",
+            "Longitude": "-17.013548726186"
+        },
+        {
+            "Name": "STATION SHELL CITE DOUANE",
+            "Location": "Cit\u00e9 Douane, Golf Dakar",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.771841870536",
+            "Longitude": "-17.416961103615"
+        },
+        {
+            "Name": "HOTEL LAMANTIN BEACH",
+            "Location": "Saly Portudal",
+            "Opening Hours": "Lundi - Dimanche: 8:00-16:00",
+            "Phone Number": "",
+            "Latitude": "14.449115",
+            "Longitude": "-17.035329"
+        }
+    ],
+    "togo": [
+        {
+            "Name": "Agence principale",
+            "Location": "Place de l\u2019ind\u00e9pendance, Angle avenue des N\u00eemes et Nicolas Grunitzky",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 21 36 41",
+            "Latitude": "6.136136",
+            "Longitude": "1.213957"
+        },
+        {
+            "Name": "Agence du Commerce",
+            "Location": "Rue Sylvanus Olympio",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 21 56 3100 (228) 22 21 56 30",
+            "Latitude": "6.123614",
+            "Longitude": "1.22419"
+        },
+        {
+            "Name": "Agence Port - Espace Particuliers",
+            "Location": "Avenue Mobutu, pr\u00e8s de la CEET Port",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 27 71 15",
+            "Latitude": "6.13964",
+            "Longitude": "1.240704"
+        },
+        {
+            "Name": "Agence Plage - Espace Transfert d\u2019argent",
+            "Location": "Rue Sylvanus Olympio",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 20 01 0300 (228) 22 20 48 19",
+            "Latitude": "6.123613",
+            "Longitude": "1.225483"
+        },
+        {
+            "Name": "Agence Tokoin Casablanca",
+            "Location": "Station d\u2019essence CAP TOGO",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 20 48 1800 (228) 22 20 48 18",
+            "Latitude": "6.148831",
+            "Longitude": "1.202017"
+        },
+        {
+            "Name": "Agence Adidogom\u00e9 Assiy\u00e9y\u00e9",
+            "Location": "Face rue du march\u00e9 Assiy\u00e9y\u00e9",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 25 74 7600 (228) 22 25 74 76",
+            "Latitude": "6.201365",
+            "Longitude": "1.148663"
+        },
+        {
+            "Name": "Agence Rond-Point A\u00e9roport",
+            "Location": "Station d\u2019essence CAP TOGO",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 26 56 92/9300 (228) 22 26 56 92",
+            "Latitude": "6.152086",
+            "Longitude": "1.241543"
+        },
+        {
+            "Name": "Agence Agbal\u00e9p\u00e9dogan",
+            "Location": "Avenue de la chance",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 25 66 7500 (228) 22 25 66 76",
+            "Latitude": "6.195462",
+            "Longitude": "1.208539"
+        },
+        {
+            "Name": "Agence K\u00e9gu\u00e9",
+            "Location": "Station d\u2019essence CAP TOGO, face stade K\u00e9gu\u00e9",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 26 58 9000 (228) 22 26 58 90",
+            "Latitude": "6.204101",
+            "Longitude": "1.241107"
+        },
+        {
+            "Name": "Agence rue des chemins de fer",
+            "Location": "Rue ancienne NOPATO",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 20 51 1000 (228) 22 20 51 09",
+            "Latitude": "6.132193",
+            "Longitude": "1.22729"
+        },
+        {
+            "Name": "Agence Baguida",
+            "Location": "A c\u00f4t\u00e9 de la station d\u2019essence MRS",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 27 29 4900 (228) 22 27 29 49",
+            "Latitude": "6.164365",
+            "Longitude": "1.328432"
+        },
+        {
+            "Name": "Agence Terminal du Sahel",
+            "Location": "A Togbl\u00e9kop\u00e9, pr\u00e8s du Terminal \u00e0 c\u00f4t\u00e9 de la Station TOTAL",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 23 38 08 1500 (228) 23 38 08 15",
+            "Latitude": "6.26892",
+            "Longitude": "1.211274"
+        },
+        {
+            "Name": "Agence Adidogom\u00e9",
+            "Location": "Boulevard du 30 Ao\u00fbt, Immeuble Galaxy",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 25 74 7300 (228) 22 25 74 78",
+            "Latitude": "6.182108",
+            "Longitude": "1.180926"
+        },
+        {
+            "Name": "Agence Ago\u00e9 Assiy\u00e9y\u00e9",
+            "Location": "Station Cap Ago\u00e9, A c\u00f4t\u00e9 du nouveau march\u00e9",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 51 35 5500 (228) 22 51 35 56",
+            "Latitude": "6.233581",
+            "Longitude": "1.198369"
+        },
+        {
+            "Name": "Agence Hedzranawo\u00e9",
+            "Location": "Boulevard du Haho, Face entr\u00e9e principale march\u00e9",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 61 76 1600 (228) 22 61 76 17",
+            "Latitude": "6.183038",
+            "Longitude": "1.240329"
+        },
+        {
+            "Name": "Agence Assivito",
+            "Location": "Centre d'Affaires - 11, Avenue du 24 janvier",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 21 62 2100 (228) 22 21 62 25",
+            "Latitude": "6.130396",
+            "Longitude": "1.224442"
+        },
+        {
+            "Name": "Agence Boulevard des Arm\u00e9es",
+            "Location": "1647, Boulevard des Arm\u00e9es",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 22 84 56/ 22 20 41 29/ 22 22 41 29",
+            "Latitude": "6.149959",
+            "Longitude": "1.218524"
+        },
+        {
+            "Name": "Agence Rond-point Port",
+            "Location": "97 rue 4 Port (carrefour rond-point du port)",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 71 56 2100 (228) 22 71 56 23",
+            "Latitude": "6.143389",
+            "Longitude": "1.274558"
+        },
+        {
+            "Name": "Agence Av\u00e9dji",
+            "Location": "Boulevard Faure Essozimna Gnassingb\u00e9, carrefour Limousine",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 50 56 22 / 22 50 56 23",
+            "Latitude": "6.201823",
+            "Longitude": "1.181833"
+        },
+        {
+            "Name": "Agence Adoboukom\u00e9",
+            "Location": "905, Av. Maman N\u2019danida",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 20 02 8000 (228) 22 20 08 86",
+            "Latitude": "6.132725",
+            "Longitude": "1.227638"
+        },
+        {
+            "Name": "Agence Vogan",
+            "Location": "Ancien S3G Vogan \u00e0 150 m du march\u00e9",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 23 30 00 20/3500 (228) 23 30 00 20",
+            "Latitude": "6.339024128134341", 
+            "Longitude": "1.5240415208432894"
+        },
+        {
+            "Name": "Agence Nots\u00e9",
+            "Location": "Face grand march\u00e9 de Nots\u00e9",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 24 42 00 2500 (228) 24 42 01 73",
+            "Latitude": "6.940561846325683", 
+            "Longitude": "1.1760919961944192"
+        },
+        {
+            "Name": "Agence Kpalim\u00e9",
+            "Location": "Quartier Zomayi sur la route Kpalim\u00e9-Kpadap\u00e9",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 24 41 01 3200 (228) 24 41 07 49",
+            "Latitude": "6.901046",
+            "Longitude": "0.63015"
+        },
+        {
+            "Name": "Agence Atakpam\u00e9",
+            "Location": "Ancien immeuble Kalife \u00e0 c\u00f4t\u00e9 du march\u00e9",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 24 40 01 1700 (228) 24 40 08 01",
+            "Latitude": "7.532124",
+            "Longitude": "1.121989"
+        },
+        {
+            "Name": "Agence Ani\u00e9",
+            "Location": "Quartier Kokomba \u00e0 c\u00f4t\u00e9 du bar \" Id\u00e9al\"",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 22 46 50 5100 (228) 22 46 50 51",
+            "Latitude": "7.763169075116623", 
+            "Longitude": "1.2012862973130023"
+        },
+        {
+            "Name": "Agence Badou",
+            "Location": "Rue du Centre Hospitalier",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 24 43 00 2400 (228) 24 49 00 39",
+            "Latitude": "7.5857208",
+            "Longitude": "0.5893997"
+        },
+        {
+            "Name": "Agence Sokod\u00e9",
+            "Location": "Route de Bassar face Affaires sociales",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 25 50 01 0900 (228) 25 50 11 18",
+            "Latitude": "8.987574",
+            "Longitude": "1.135032"
+        },
+        {
+            "Name": "Agence Kara - Espace Particuliers",
+            "Location": "Rue de l\u2019h\u00f4tel Kara",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 26 60 61 0600 (228) 26 60 61 06",
+            "Latitude": "9.549444",
+            "Longitude": "1.186364"
+        },
+        {
+            "Name": "Agence Kant\u00e9",
+            "Location": "A c\u00f4t\u00e9 du ch\u00e2teau d\u2019eau",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 26 67 01 75/7600 (228) 26 67 01 75",
+            "Latitude": "9.9516889",
+            "Longitude": "1.032886"
+        },
+        {
+            "Name": "Agence Mango",
+            "Location": "Carrefour Mairie",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 27 71 71 72/7300 (228) 27 71 71 73",
+            "Latitude": "10.355960040812825", 
+            "Longitude": "0.46800212929799734"
+        },
+        {
+            "Name": "Agence Dapaong",
+            "Location": "Rue Nassabley",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 27 70 80 0200 (228) 27 70 80 02",
+            "Latitude": "10.8770525",
+            "Longitude": "0.1982802"
+        },
+        {
+            "Name": "Agence Cinkass\u00e9",
+            "Location": "A c\u00f4t\u00e9 de la Station TOTAL Cinkass\u00e9",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 27 79 31 1200 (228) 27 79 31 12",
+            "Latitude": "11.1004938",
+            "Longitude": "0.0247287"
+        },
+        {
+            "Name": "Agence Sotouboua",
+            "Location": "Nationale n\u00b01 ; quartier Sond\u00e9 en face du Commissariat de Police",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00 (228) 25 53 50 0000 (228) 25 53 50 00",
+            "Latitude": "8.5606098",
+            "Longitude": "0.9770821"
+        },
+        {
+            "Name": "Agence Ts\u00e9vi\u00e9",
+            "Location": "Nationale n\u00b01 ; quartier : B\u00e9gb\u00e9 \u00e0 c\u00f4t\u00e9 de l\u2019Inspection de l\u2019Enseignement 2nd Degr\u00e9",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "",
+            "Latitude": "6.4341475",
+            "Longitude": "1.2095807"
+        },
+        {
+            "Name": "Agence Assahoun",
+            "Location": "Route de Kpalim\u00e9; face CHP",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "",
+            "Latitude": "6.240244",
+            "Longitude": "1.623398"
+        },
+        {
+            "Name": "Agence Aneho",
+            "Location": "Nationale n\u20222 non loin de la fronti\u00e8re Togo Benin Sanvi Condji",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "",
+            "Latitude": "6.229661523493896", 
+            "Longitude": "1.6033506655856113"
+        },
+        {
+            "Name": "Agence Universit\u00e9 de Lom\u00e9",
+            "Location": "Rue Prof. Koffi KEKEH, entr\u00e9e CHU Campus, face pharmacie Univers Sant\u00e9",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00(228)22 21 36 41 00 / 00(228)22 21 36 42",
+            "Latitude": "6.182879323124122", 
+            "Longitude": "1.214626182698913"
+        },
+        {
+            "Name": "Agence Bassar",
+            "Location": "Angle Route Sokod\u00e9-Bassar et rue du mach\u00e9, en face de la Pr\u00e9fecture de Bassar",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "",
+            "Latitude": "9.257315440245346", 
+            "Longitude": "0.7840248096989555"
+        },
+        {
+            "Name": "Agence Cinkasse",
+            "Location": "A c\u00f4t\u00e9 de station Total Cinkass\u00e9",
+            "Opening Hours": "Lundi - Vendredi: 7:45-17:00",
+            "Phone Number": "00(228)27 79 31 12 / 00(228)27 79 31 12",
+            "Latitude": "11.097015505237142", 
+            "Longitude": "0.023464938372940582"
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "senegal": [
+        {
+            "name": "BDK ZONE INDUSTRIELLE",
+            "address": "Km 2,5 Boulevard de centenaire, Dakar, S\u00e9n\u00e9gal",
+            "Latitude": 14.6913482,
+            "Longitude": -17.4374465
+        },
+        {
+            "name": "BDK ELITE private",
+            "address": "7; avenue L\u00e9opold S\u00e9dar Senghor, Dakar, S\u00e9n\u00e9gal",
+            "Latitude": 14.6663806,
+            "Longitude": -17.4327548
+        },
+        {
+            "name": "BDK VDN",
+            "address": "Mermoz ancienne piste, Dakar, S\u00e9n\u00e9gal",
+            "Latitude": 14.7124735,
+            "Longitude": -17.4768141
+        },
+        {
+            "name": "BDK IND\u00c9PENDANCE PLATEAU",
+            "address": "7; avenue L\u00e9opold S\u00e9dar Senghor, Dakar, S\u00e9n\u00e9gal",
+            "Latitude": 14.6663806,
+            "Longitude": -17.4327548
+        },
+        {
+            "name": "BDK GRAND YOFF",
+            "address": "Cit\u00e9 Keur Khadim ck-7, Dakar, S\u00e9n\u00e9gal",
+            "Latitude": 14.7104095,
+            "Longitude": -17.4667976
+        },
+        {
+            "name": "BDK KEUR MASSAR",
+            "address": "Cit\u00e9 Lingu\u00e8re lot NB, Dakar, S\u00e9n\u00e9gal",
+            "Latitude": 14.766446511796747, 
+            "Longitude": -17.308309476235674
+        },
+        {
+            "name": "BDK PIKINE",
+            "address": "Tally bou mack, March\u00e9 ZINC, Pikine, S\u00e9n\u00e9gal",
+            "Latitude": 14.7569232,
+            "Longitude": -17.3978005
+        },
+        {
+            "name": "BDK PARCELLES",
+            "address": "Cit\u00e9 Soprim, Dakar, S\u00e9n\u00e9gal",
+            "Latitude": 14.726775,
+            "Longitude": -17.4680323
+        },
+        {
+            "name": "BDK HLM",
+            "address": "Rue 13 March\u00e9 HLM, Dakar, S\u00e9n\u00e9gal",
+            "Latitude": 14.7055843,
+            "Longitude": -17.4442943
+        },
+        {
+            "name": "BDK PIKINE NORD",
+            "address": "Pikine Tally bou bess, Pikine, S\u00e9n\u00e9gal",
+            "Latitude": 14.7552433,
+            "Longitude": -17.3933957
+        },
+        {
+            "name": "BDK TOUBA",
+            "address": "Touba Mosqu\u00e9e X 28, Touba, S\u00e9n\u00e9gal",
+            "Latitude": 14.8632694,
+            "Longitude": -15.8753708
+        },
+        {
+            "name": "BDK KAOLACK",
+            "address": "Quartier Leona lot 1x1064, Kaolack, S\u00e9n\u00e9gal",
+            "Latitude": 13.7915002,
+            "Longitude": -15.5564229
+        }
+    ]
+}

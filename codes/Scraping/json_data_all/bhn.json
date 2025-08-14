@@ -1,0 +1,42 @@
+[
+    {
+        "bank": "bhn",
+        "country": "niger",
+        "address": "Place Toumo, Avenue de l'OUA, Niamey, Niger",
+        "Latitude": 13.5115963,
+        "Longitude": 2.1253854,
+        "geocoded": 1
+    },
+    {
+        "bank": "bhn",
+        "country": "niger",
+        "address": "Niamey, Niamey, Niger",
+        "Latitude": 13.5115963,
+        "Longitude": 2.1253854,
+        "geocoded": 1
+    },
+    {
+        "bank": "bhn",
+        "country": "niger",
+        "address": "Niamey, Niamey, Niger",
+        "Latitude": 13.5115963,
+        "Longitude": 2.1253854,
+        "geocoded": 1
+    },
+    {
+        "bank": "bhn",
+        "country": "niger",
+        "address": "Maradi, Maradi, Niger",
+        "Latitude": 13.5009779,
+        "Longitude": 7.103639599999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bhn",
+        "country": "niger",
+        "address": "Tahoua, Tahoua, Niger",
+        "Latitude": 14.8904575,
+        "Longitude": 5.2579968,
+        "geocoded": 1
+    }
+]

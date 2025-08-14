@@ -1,0 +1,123 @@
+{
+    "niger": [
+        {
+            "name": "Agence Principale",
+            "address": "Avenue de la Mairie, Niamey - Niger",
+            "telephone": "(227) 20 73 31 01 / 02",
+            "Latitude": 13.5139327,
+            "Longitude": 2.1092681
+        },
+        {
+            "name": "Agence Grand march\u00e9",
+            "address": "Route du Balafon, Niamey - Niger",
+            "telephone": "(227) 20 73 24 64",
+            "Latitude": 13.5115963,
+            "Longitude": 2.1253854
+        },
+        {
+            "name": "Agence Kalley sud",
+            "address": "Immeuble Bague Daouada, Niamey - Niger",
+            "telephone": "(227) 20 74 34 17",
+            "Latitude": 13.5128494,
+            "Longitude": 2.1253797
+        },
+        {
+            "name": "Agence Boukoki",
+            "address": "Boulevard de de l\u2019Independance, Niamey - Niger",
+            "telephone": "(227) 85 86 92 09",
+            "Latitude": 13.5029889,
+            "Longitude": 2.1351418
+        },
+        {
+            "name": "Agence Plateau",
+            "address": "Avenue Maurice Delens, Niamey - Niger",
+            "telephone": "(227) 20 35 10 36",
+            "Latitude": 13.5269857,
+            "Longitude": 2.0967847
+        },
+        {
+            "name": "Agence Rive droite",
+            "address": "Rue du Gourma, Niamey - Niger",
+            "telephone": "(227) 21 73 22 90",
+            "Latitude": 13.4939244,
+            "Longitude": 2.0757172
+        },
+        {
+            "name": "Agence Wadata",
+            "address": "Ar\u00e8ne de Lutte Traditionelle, Niamey - Niger",
+            "telephone": "(227) 20 74 18 73",
+            "Latitude": 13.5181559,
+            "Longitude": 2.1399605
+        },
+        {
+            "name": "Agence Yantala",
+            "address": "Rond Point Gadafawa, Niamey - Niger",
+            "telephone": "(227) 20 35 03 53",
+            "Latitude": 13.5312263,
+            "Longitude": 2.0814532
+        },
+        {
+            "name": "Agence Agadez",
+            "address": "March\u00e9 des T\u00f4les, Agadez - Niger",
+            "telephone": "(227) 20 44 04 05",
+            "Latitude": 16.9741689,
+            "Longitude": 7.986535
+        },
+        {
+            "name": "Agence Arlit",
+            "address": "Route Zone Industrielelle de la soma\u00efr, Arlit - Niger",
+            "telephone": "(227) 20 45 22 22",
+            "Latitude": 18.7390029,
+            "Longitude": 7.3894772
+        },
+        {
+            "name": "Agence Diffa",
+            "address": "Quartier Administratif, Diffa - Niger",
+            "telephone": "(227) 20 54 03 06",
+            "Latitude": 13.3132472,
+            "Longitude": 12.6158803
+        },
+        {
+            "name": "Agence Dosso",
+            "address": "Quartier Mague koira, Dosso - Niger",
+            "telephone": "(227) 20 65 08 67",
+            "Latitude": 13.0367002,
+            "Longitude": 3.1913448
+        },
+        {
+            "name": "Agence Gaya",
+            "address": "Quartier Plateau, Gaya - Niger",
+            "telephone": "(227) 20 68 04 90",
+            "Latitude": 11.8864375,
+            "Longitude": 3.453512
+        },
+        {
+            "name": "Agence Konni",
+            "address": "Centre Commercial, Konni - Niger",
+            "telephone": "(227) 20 64 07 17",
+            "Latitude": 13.7946714,
+            "Longitude": 5.2527741
+        },
+        {
+            "name": "Agence Maradi",
+            "address": "Quartier Mokoyo, Maradi - Niger",
+            "telephone": "(227) 20 41 02 42",
+            "Latitude": 13.5009779,
+            "Longitude": 7.103639599999999
+        },
+        {
+            "name": "Agence Tahoua",
+            "address": "Quartier zoulank\u00e9, Tahoua - Niger",
+            "telephone": "(227) 20 61 00 91",
+            "Latitude": 14.8999124,
+            "Longitude": 5.2608529
+        },
+        {
+            "name": "Agence Zinder",
+            "address": "La Poste, Zinder - Niger",
+            "telephone": "(227) 20 51 0024",
+            "Latitude": 13.8018124,
+            "Longitude": 8.98527
+        }
+    ]
+}

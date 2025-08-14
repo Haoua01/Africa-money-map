@@ -1,0 +1,14 @@
+{
+    "senegal": [
+        {
+            "Branch": "Siège Sénégal",
+            "Latitude": 14.673092343559818, 
+            "Longitude": -17.43263144413887
+        },
+        {
+            "Branch": "Succursale Dakar",
+            "Latitude": 14.696514527934923, 
+            "Longitude": -17.43706472440525
+        }
+    ]
+}

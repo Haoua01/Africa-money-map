@@ -1,0 +1,34 @@
+{
+    "niger": [
+        {
+            "name": "Agence principale",
+            "address": "Place Toumo, Avenue de l'OUA, Niamey, Niger",
+            "Latitude": 13.5115963,
+            "Longitude": 2.1253854
+        },
+        {
+            "name": "Agence 2",
+            "address": "Niamey, Niamey, Niger",
+            "Latitude": 13.5115963,
+            "Longitude": 2.1253854
+        },
+        {
+            "name": "Agence 3",
+            "address": "Niamey, Niamey, Niger",
+            "Latitude": 13.5115963,
+            "Longitude": 2.1253854
+        },
+        {
+            "name": "Agence de Maradi",
+            "address": "Maradi, Maradi, Niger",
+            "Latitude": 13.5009779,
+            "Longitude": 7.103639599999999
+        },
+        {
+            "name": "Agence de Tahoua",
+            "address": "Tahoua, Tahoua, Niger",
+            "Latitude": 14.8904575,
+            "Longitude": 5.2579968
+        }
+    ]
+}

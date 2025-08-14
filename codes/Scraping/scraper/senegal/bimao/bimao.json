@@ -1,0 +1,19 @@
+{
+    "senegal": [
+        {
+            "agence": "AGENCE DE KAOLACK",
+            "Latitude": 13.963176,
+            "Longitude": -15.788883
+        },
+        {
+            "agence": "AGENCE PRINCIPALE",
+            "Latitude": 14.693425,
+            "Longitude": -17.447938
+        },
+        {
+            "agence": "AGENCE DE ZIGUINCHOR",
+            "Latitude": 12.563493,
+            "Longitude": -16.272461
+        }
+    ]
+}

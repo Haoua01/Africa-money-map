@@ -1,0 +1,962 @@
+[
+    {
+        "bank": "orabank",
+        "country": "benin",
+        "address": "Rue du Gouverneur Général Ponty",
+        "Latitude": 6.35382,
+        "Longitude": 2.434289,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "benin",
+        "address": "Carrefour Sobebra",
+        "Latitude": 6.365766,
+        "Longitude": 2.453269,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "benin",
+        "address": "Route Inter Etat N°2 - Akassato : face à l’agence MOOV, non loin de la station d",
+        "Latitude": 6.45484881,
+        "Longitude": 2.356875,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "benin",
+        "address": "Axe carrefour CABOMA vers l’église Saint Michel, 3è rue à droite",
+        "Latitude": 6.363757,
+        "Longitude": 2.430816,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "benin",
+        "address": ": carrefour stade de l’amitié – axe du carrefour vers la Mairie de Zogbo, à côté",
+        "Latitude": 6.363757,
+        "Longitude": 2.430816,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "benin",
+        "address": "Rue du marché Missèbo",
+        "Latitude": 6.370282,
+        "Longitude": 2.391199,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "benin",
+        "address": "Akpakpa, Quartier ABOKI CODJI, Près de la Place LENINE - Cotonou",
+        "Latitude": 6.367185,
+        "Longitude": 2.445935,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "benin",
+        "address": "Carrefour Catchi",
+        "Latitude": 6.484806,
+        "Longitude": 2.620538,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "benin",
+        "address": "PK17 route de Ouidah - Carrefour Pharmacie Concorde face station d’essence JNP",
+        "Latitude": 6.388081,
+        "Longitude": 2.300604,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "benin",
+        "address": "Quartier Qaqué-Zounhoué - Face Loterie Nationale",
+        "Latitude": 6.635064,
+        "Longitude": 1.711637,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "benin",
+        "address": "Quartier Gah-Face Tribunal de 1ère instance",
+        "Latitude": 9.341651,
+        "Longitude": 2.626035,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "benin",
+        "address": "Quartier Yokossi - Face Immeuble Quidata",
+        "Latitude": 10.307074,
+        "Longitude": 1.379457,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "benin",
+        "address": "Frontière Bénin/Togo - Quartier Adjovi",
+        "Latitude": 6.241619,
+        "Longitude": 1.63862,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "benin",
+        "address": "Enceinte de l'Hôpital St Jean de Dieu",
+        "Latitude": 10.623995,
+        "Longitude": 1.267955,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "benin",
+        "address": "Bohicon, Route d’Abomey. Immeuble face aux Sapeurs-pompiers",
+        "Latitude": 7.178987,
+        "Longitude": 2.038549,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "benin",
+        "address": "Quartier Sinikoussoubéri, face aux locaux de la mairie",
+        "Latitude": 6.3703167908293,
+        "Longitude": 2.3912375410301,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "burkina",
+        "address": "1416, Avenue Kwamé N’krumah,",
+        "Latitude": 12.3587608,
+        "Longitude": -1.517331,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "burkina",
+        "address": "Avenue France-Afrique",
+        "Latitude": 12.319652,
+        "Longitude": -1.528203,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "burkina",
+        "address": "Avenue du YATENGA",
+        "Latitude": 12.387534,
+        "Longitude": -1.562799,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "burkina",
+        "address": "Avenue Tensoba",
+        "Latitude": 12.347526,
+        "Longitude": -1.495938,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "burkina",
+        "address": "Avenue de la Concorde Nationale",
+        "Latitude": 12.401785,
+        "Longitude": -1.515849,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "burkina",
+        "address": "Avenue de la Concorde Nationale",
+        "Latitude": 12.357563,
+        "Longitude": -1.546788,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "burkina",
+        "address": "Avenue Loudun",
+        "Latitude": 12.362454,
+        "Longitude": -1.519218,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "burkina",
+        "address": "Avenue du Gouverneur William Ponty",
+        "Latitude": 11.1751944,
+        "Longitude": -4.3015833333333,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "burkina",
+        "address": "",
+        "Latitude": 11.785678,
+        "Longitude": -0.369506,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "burkina",
+        "address": "Route Nationale N°14",
+        "Latitude": 12.252404,
+        "Longitude": -2.354821,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "burkina",
+        "address": "Avenue Dimdolossom",
+        "Latitude": 12.378702243788295,
+        "Longitude": -1.5215244326047277,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "civ",
+        "address": "Rue des Banques, Angle du Boulevard de la République, Avenue Joseph Anoma",
+        "Latitude": 7.4662962,
+        "Longitude": -7.792328,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "civ",
+        "address": "Marché Gouro",
+        "Latitude": 7.4662962,
+        "Longitude": -7.792328,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "civ",
+        "address": "Agence Marcory VGE, Sous l’échangeur du Pont HKB, dans la contre-allée d’Orca Dé",
+        "Latitude": 5.296299690472007,
+        "Longitude": -3.981519171482574,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "civ",
+        "address": "Carrefour de la Zone Industrielle",
+        "Latitude": 7.4662962,
+        "Longitude": -7.792328,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "civ",
+        "address": "II Plateaux Vallon, Rue des Jardins",
+        "Latitude": 7.4662962,
+        "Longitude": -7.792328,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "civ",
+        "address": "Sise au Centre Commercial du Carrefour Abatta",
+        "Latitude": 7.4662962,
+        "Longitude": -7.792328,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "civ",
+        "address": "Sise au rond point de la Cité",
+        "Latitude": 7.4662962,
+        "Longitude": -7.792328,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "civ",
+        "address": "Sise au Commerce, Rue des banques",
+        "Latitude": 7.4662962,
+        "Longitude": -7.792328,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "civ",
+        "address": "Sise au Quartier Sloleil I (Route de Man)",
+        "Latitude": 7.4662962,
+        "Longitude": -7.792328,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "civ",
+        "address": "Sise au quartier commerce- Rue des banques",
+        "Latitude": 6.128913746362933,
+        "Longitude": -5.944011171323498,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "civ",
+        "address": "En face du complexe sportif Jesse Jackson de Yopougon Selmer",
+        "Latitude": 5.341106948188891,
+        "Longitude": -4.0633886328022735,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "civ",
+        "address": "Centre commercial Koko Mall, non loin du CHU d’Angré",
+        "Latitude": 5.399664175470441,
+        "Longitude": -3.956122317302931,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "guinee",
+        "address": "Avenida Pansau Na Isna",
+        "Latitude": 11.861449568148785,
+        "Longitude": -15.580626193012717,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "guinee",
+        "address": "Rue Justino Lopes 13-B",
+        "Latitude": 11.859140491242814,
+        "Longitude": -15.58365616206392,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "guinee",
+        "address": "Avenida Combatente da Liberdade da Patria",
+        "Latitude": 11.879357164945615,
+        "Longitude": -15.638161032609496,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "guinee",
+        "address": "Avenida Principal / Bairro dos Engenheiros",
+        "Latitude": 12.278343890914014,
+        "Longitude": -14.224070901920578,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "guinee",
+        "address": "Avenida Principal / Bairro 4",
+        "Latitude": 12.175632163167302,
+        "Longitude": -14.653863119113613,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "guinee",
+        "address": "Bairro de Holanda/ Estrada de Cátio",
+        "Latitude": 11.595664605746673,
+        "Longitude": -14.978764761447696,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "guinee",
+        "address": "Avenida Combatente da Liberdade da Patria",
+        "Latitude": 11.885042030786279,
+        "Longitude": -15.640647414166995,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "guinee",
+        "address": "Bairro Capugna, frente de posto de saúde",
+        "Latitude": 12.106323958237274,
+        "Longitude": -15.708619935578717,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "mali",
+        "address": "ACI 2000 Hamdallaye, Av. du Mali, Immeuble SOUTRA",
+        "Latitude": 12.6351667,
+        "Longitude": -8.0181111111111,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "mali",
+        "address": "Route de l’aéroport, immeuble SOTRAKA près marché Koko de Kalaban-coura",
+        "Latitude": 12.578752905824,
+        "Longitude": -7.987521642526,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "mali",
+        "address": "Avenue Sada Diallo, Rue 408, Près de Fitini Market",
+        "Latitude": 12.638283796539547,
+        "Longitude": -8.002652890273469,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "mali",
+        "address": "Immeuble Tombouctou Grand Marché de Bamako, près Place du Souvenir",
+        "Latitude": 12.6426667,
+        "Longitude": -7.9976388888889,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "mali",
+        "address": "Avenue OUA, Immeuble YARA Falafié Commune VI Bamako",
+        "Latitude": 12.588,
+        "Longitude": -7.9471944444444,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "mali",
+        "address": "Route de Koulikoro, Djélibougou Immeuble Kodonso",
+        "Latitude": 12.664,
+        "Longitude": -7.94175,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "mali",
+        "address": "Grand Marché de Kayes, face Direction Régionale de la Santé",
+        "Latitude": 14.4491667,
+        "Longitude": -11.439388888889,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "mali",
+        "address": "Immeuble Gouro BOCOUM Centre Commercial",
+        "Latitude": 14.4973611,
+        "Longitude": -4.1984722222222,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "mali",
+        "address": "Kita, face à la préfecture",
+        "Latitude": 13.0414444,
+        "Longitude": -9.4869444444444,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "mali",
+        "address": "CENTRE COMMERCIAL DE KOUTIALA, TF 182 / Immeuble El Hadj Mohamed Daouda DIORO - ",
+        "Latitude": 12.391809345521436,
+        "Longitude": -5.4651135220094185,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "niger",
+        "address": "Niamey, Avenue de l’Amitié",
+        "Latitude": 13.50680989647757,
+        "Longitude": 2.1182859714016034,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "niger",
+        "address": "Avenue de l’Islam, carrefour CCOG",
+        "Latitude": 13.521673385509827,
+        "Longitude": 2.135373982767812,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "niger",
+        "address": "Rue foulani koira",
+        "Latitude": 13.550866869599945,
+        "Longitude": 2.106960382750046,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "niger",
+        "address": "",
+        "Latitude": 16.97059994190711,
+        "Longitude": 7.984120160247087,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "niger",
+        "address": "",
+        "Latitude": 13.500374,
+        "Longitude": 7.103923,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "niger",
+        "address": "",
+        "Latitude": 14.201510209199785,
+        "Longitude": 1.4563012944010414,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "niger",
+        "address": "",
+        "Latitude": 13.804879451557838,
+        "Longitude": 8.985310098095534,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "niger",
+        "address": "",
+        "Latitude": 14.889282865635423,
+        "Longitude": 5.255432204808257,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "niger",
+        "address": "Quartier résidentiel Diffa Koura, face Grande Mosquée",
+        "Latitude": 13.313560417102334,
+        "Longitude": 12.61591782830126,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "senegal",
+        "address": "40, avenue Jean Jaurès X Carnot",
+        "Latitude": 14.667413,
+        "Longitude": -17.439122,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "senegal",
+        "address": "Ouagou Niaye 2, en face Police HLM 5",
+        "Latitude": 14.707967,
+        "Longitude": -17.446961,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "senegal",
+        "address": "5, Cité Soprim - Route des Niayes",
+        "Latitude": 14.7513955,
+        "Longitude": -17.43692498,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "senegal",
+        "address": "Km 14 route de Rufisque, à côté de Nestlé",
+        "Latitude": 14.6998939,
+        "Longitude": -17.4515801,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "senegal",
+        "address": "Km 2, 5 Boulevard du Centenaire de la Commune de Dakar",
+        "Latitude": 14.6998122,
+        "Longitude": -17.4515801,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "senegal",
+        "address": "10 287, Sacré Cœur 3, VDN",
+        "Latitude": 14.722298,
+        "Longitude": -17.471357,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "senegal",
+        "address": "Touba Mosquée x 28, Keur Sokhna Mbène Ngabou",
+        "Latitude": 14.858498,
+        "Longitude": -15.877897,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "senegal",
+        "address": "Sor, Route nationale 1 en face du Pont Faidherbe",
+        "Latitude": 16.025021,
+        "Longitude": -16.498393,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "senegal",
+        "address": "1422 Aiglon, Avenue Leopold Sedar Senghor, Immeuble Prévoyance Assurance",
+        "Latitude": 14.7887202,
+        "Longitude": -16.9973098,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "senegal",
+        "address": "Château d'eau Nord, route de l'hôpital x route de Dakar",
+        "Latitude": 14.4296,
+        "Longitude": -16.9752,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "senegal",
+        "address": "Quartier escale, Rue du commerce, en face du Port.",
+        "Latitude": 12.587608,
+        "Longitude": -16.2698316,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "senegal",
+        "address": "Léona, route nationale 1, avenue Diogoye Basile Senghor / Kaolack",
+        "Latitude": 14.1572449,
+        "Longitude": -16.1398629,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "senegal",
+        "address": "Avenue Léopold Sédar SENGHOR, Quartier Pont, Tambacounda",
+        "Latitude": 13.773458,
+        "Longitude": -13.66965,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "senegal",
+        "address": "Sortie 12 Autoroute de l’Avenir, Sébikotane",
+        "Latitude": 14.690834522957148,
+        "Longitude": -17.434779274907786,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "senegal",
+        "address": "Pikine Icotaf Texaco, 5364 Immeuble Adjaratou Yaye Codou Badiane",
+        "Latitude": 14.7603822,
+        "Longitude": -17.3973858,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Place de l’indépendance, Angle avenue des Nîmes et Nicolas Grunitzky",
+        "Latitude": 6.136136,
+        "Longitude": 1.213957,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Rue Sylvanus Olympio",
+        "Latitude": 6.123614,
+        "Longitude": 1.22419,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Avenue Mobutu, près de la CEET Port",
+        "Latitude": 6.13964,
+        "Longitude": 1.240704,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Rue Sylvanus Olympio",
+        "Latitude": 6.123613,
+        "Longitude": 1.225483,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Station d’essence CAP TOGO",
+        "Latitude": 6.148831,
+        "Longitude": 1.202017,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Face rue du marché Assiyéyé",
+        "Latitude": 6.201365,
+        "Longitude": 1.148663,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Station d’essence CAP TOGO",
+        "Latitude": 6.152086,
+        "Longitude": 1.241543,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Avenue de la chance",
+        "Latitude": 6.195462,
+        "Longitude": 1.208539,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Station d’essence CAP TOGO, face stade Kégué",
+        "Latitude": 6.204101,
+        "Longitude": 1.241107,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Rue ancienne NOPATO",
+        "Latitude": 6.132193,
+        "Longitude": 1.22729,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "A côté de la station d’essence MRS",
+        "Latitude": 6.164365,
+        "Longitude": 1.328432,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "A Togblékopé, près du Terminal à côté de la Station TOTAL",
+        "Latitude": 6.26892,
+        "Longitude": 1.211274,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Boulevard du 30 Août, Immeuble Galaxy",
+        "Latitude": 6.182108,
+        "Longitude": 1.180926,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Station Cap Agoé, A côté du nouveau marché",
+        "Latitude": 6.233581,
+        "Longitude": 1.198369,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Boulevard du Haho, Face entrée principale marché",
+        "Latitude": 6.183038,
+        "Longitude": 1.240329,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Centre d'Affaires - 11, Avenue du 24 janvier",
+        "Latitude": 6.130396,
+        "Longitude": 1.224442,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "1647, Boulevard des Armées",
+        "Latitude": 6.149959,
+        "Longitude": 1.218524,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "97 rue 4 Port (carrefour rond-point du port)",
+        "Latitude": 6.143389,
+        "Longitude": 1.274558,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Boulevard Faure Essozimna Gnassingbé, carrefour Limousine",
+        "Latitude": 6.201823,
+        "Longitude": 1.181833,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "905, Av. Maman N’danida",
+        "Latitude": 6.132725,
+        "Longitude": 1.227638,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Ancien S3G Vogan à 150 m du marché",
+        "Latitude": 6.339024128134341,
+        "Longitude": 1.5240415208432894,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Face grand marché de Notsé",
+        "Latitude": 6.940561846325683,
+        "Longitude": 1.1760919961944192,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Quartier Zomayi sur la route Kpalimé-Kpadapé",
+        "Latitude": 6.901046,
+        "Longitude": 0.63015,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Ancien immeuble Kalife à côté du marché",
+        "Latitude": 7.532124,
+        "Longitude": 1.121989,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Quartier Kokomba à côté du bar \" Idéal\"",
+        "Latitude": 7.763169075116623,
+        "Longitude": 1.2012862973130023,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Rue du Centre Hospitalier",
+        "Latitude": 7.5857208,
+        "Longitude": 0.5893997,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Route de Bassar face Affaires sociales",
+        "Latitude": 8.987574,
+        "Longitude": 1.135032,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Rue de l’hôtel Kara",
+        "Latitude": 9.549444,
+        "Longitude": 1.186364,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "A côté du château d’eau",
+        "Latitude": 9.9516889,
+        "Longitude": 1.032886,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Carrefour Mairie",
+        "Latitude": 10.355960040812825,
+        "Longitude": 0.46800212929799734,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Rue Nassabley",
+        "Latitude": 10.8770525,
+        "Longitude": 0.1982802,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "A côté de la Station TOTAL Cinkassé",
+        "Latitude": 11.1004938,
+        "Longitude": 0.0247287,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Nationale n°1 ; quartier Sondé en face du Commissariat de Police",
+        "Latitude": 8.5606098,
+        "Longitude": 0.9770821,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Nationale n°1 ; quartier : Bégbé à côté de l’Inspection de l’Enseignement 2nd De",
+        "Latitude": 6.4341475,
+        "Longitude": 1.2095807,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Route de Kpalimé; face CHP",
+        "Latitude": 6.240244,
+        "Longitude": 1.623398,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Nationale n•2 non loin de la frontière Togo Benin Sanvi Condji",
+        "Latitude": 6.229661523493896,
+        "Longitude": 1.6033506655856113,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Rue Prof. Koffi KEKEH, entrée CHU Campus, face pharmacie Univers Santé",
+        "Latitude": 6.182879323124122,
+        "Longitude": 1.214626182698913,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "Angle Route Sokodé-Bassar et rue du maché, en face de la Préfecture de Bassar",
+        "Latitude": 9.257315440245346,
+        "Longitude": 0.7840248096989555,
+        "geocoded": 0
+    },
+    {
+        "bank": "orabank",
+        "country": "togo",
+        "address": "A côté de station Total Cinkassé",
+        "Latitude": 11.097015505237142,
+        "Longitude": 0.023464938372940582,
+        "geocoded": 0
+    }
+]

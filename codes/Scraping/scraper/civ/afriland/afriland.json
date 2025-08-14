@@ -1,0 +1,76 @@
+{
+    "cotedivoire": [
+        {
+            "name": "SIEGE SOCIAL ET AGENCE DU PLATEAU",
+            "address": "Avenue Nogu\u00e8s, immeuble Woodin, Plateau, Cote d'Ivoire",
+            "Latitude": 5.316712300000001,
+            "Longitude": -4.0160119
+        },
+        {
+            "name": "AGENCE PRIMA",
+            "address": "Centre commercial Prima Center, Marcory, Zone 4, Cote d'Ivoire",
+            "Latitude": 5.295272,
+            "Longitude": -3.983574
+        },
+        {
+            "name": "AGENCE DJIBI",
+            "address": "Cit\u00e9 SICOGI Djibi 1, pr\u00e8s de Nefco, Cote d'Ivoire",
+            "Latitude": 5.284608599999999,
+            "Longitude": -3.959787099999999
+        },
+        {
+            "name": "AGENCE DE COCODY Saint Jean",
+            "address": "Centre commercial NGOUAN AKA MATHIAS, Cocody, Cote d'Ivoire",
+            "Latitude": 5.3784123,
+            "Longitude": -3.9219659
+        },
+        {
+            "name": "AGENCE DE TREICHVILLE",
+            "address": "En face du grand March\u00e9 de Treichville, Cote d'Ivoire",
+            "Latitude": 5.3089052,
+            "Longitude": -4.013666
+        },
+        {
+            "name": "CASH POINT DE TREICHVILLE",
+            "address": "En face du march\u00e9 de Belle-ville, Treichville, Cote d'Ivoire",
+            "Latitude": 5.3045838,
+            "Longitude": -3.9974781
+        },
+        {
+            "name": "AGENCE D\u2019 ADJAME",
+            "address": "March\u00e9 Gouro, carrefour Banfora, Adjame, Cote d'Ivoire",
+            "Latitude": 5.347907,
+            "Longitude": -4.0171877
+        },
+        {
+            "name": "AGENCE D\u2019 ABOBO",
+            "address": "En face du Grand march\u00e9 proche du Coll\u00e8ge Moderne d\u2019 Abobo, non loin de la mairie d\u2019Abob",
+            "Latitude": 5.4487461,
+            "Longitude": -4.0615609
+        },
+        {
+            "name": "AGENCE D\u2019 ANONO",
+            "address": "Pr\u00e8s du march\u00e9 d\u2019Anono, Cote d'Ivoire",
+            "Latitude": 5.3432257,
+            "Longitude": -3.9712626
+        },
+        {
+            "name": "AGENCE DE YOPOUGON",
+            "address": "Carrefour Bel Air, Yopougon, Cote d'Ivoire",
+            "Latitude": 5.3466254,
+            "Longitude": -4.063318
+        },
+        {
+            "name": "AGENCE DE KORHOGO",
+            "address": "En face du march\u00e9 pr\u00e8s de la pharmacie du march\u00e9, Korhogo, Cote d'Ivoire",
+            "Latitude": 9.4587738,
+            "Longitude": -5.6323586
+        },
+        {
+            "name": "AGENCE DE SAN PEDRO",
+            "address": "March\u00e9 de Bardot, San Pedro, Cote d'Ivoire",
+            "Latitude": 4.7745031,
+            "Longitude": -6.6517854
+        }
+    ]
+}

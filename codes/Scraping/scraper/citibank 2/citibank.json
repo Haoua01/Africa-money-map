@@ -1,0 +1,16 @@
+{
+    "senegal": [
+        {
+            "Branch": "Siège Sénégal",
+            "Latitude": 14.669312199943272, 
+            "Longitude": -17.43243010525025
+        }
+    ],
+    "cotedivoire": [
+        {
+            "Branch": "Siège Cote d'Ivoire",
+            "Latitude": 5.321972124554438, 
+            "Longitude": -4.016138274893004
+        }
+    ]
+}

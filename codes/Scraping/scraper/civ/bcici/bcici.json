@@ -1,0 +1,202 @@
+{
+    "cotedivoire": [
+        {
+            "name": "PLATEAU SIEGE",
+            "address": "01 BP 1298 Avenue Franchet d'Esp\u00e9rey, Plateau",
+            "Latitude": 5.321947,
+            "Longitude": -4.0187264
+        },
+        {
+            "name": "MARCORY PLAYCE",
+            "address": "BP 1298 Centre commercial Cfao carrefour boulevard VGE, Marcory",
+            "Latitude": 5.2896376,
+            "Longitude": -3.9825723
+        },
+        {
+            "name": "YOPOUGON KENEYA",
+            "address": "BP 1298 Rue principale, Yopougon",
+            "Latitude": 5.317666099999999,
+            "Longitude": -4.0899911
+        },
+        {
+            "name": "YAMOUSSOUKRO",
+            "address": "BP 97 Route d'Abidjan, Yamoussoukro",
+            "Latitude": 6.8063096,
+            "Longitude": -5.2553985
+        },
+        {
+            "name": "VRIDI",
+            "address": "Rue des P\u00e9troliers Zone industrielle, Vridi",
+            "Latitude": 5.2651819,
+            "Longitude": -4.0114883
+        },
+        {
+            "name": "TREICHVILLE MARCHE",
+            "address": "Rue 12, Treichville",
+            "Latitude": 5.304176,
+            "Longitude": -4.0112873
+        },
+        {
+            "name": "SOUBRE",
+            "address": "BP 252 Avenue principale, carrefour Dobois, Soubr\u00e9",
+            "Latitude": 5.7866256,
+            "Longitude": -6.5889494
+        },
+        {
+            "name": "CAP NORD",
+            "address": "Centre commercial Cap Nord cocody Rivi\u00e8ra-Allabra, Cocody",
+            "Latitude": 5.355961799999999,
+            "Longitude": -3.9665628
+        },
+        {
+            "name": "PORT-BOUET",
+            "address": "Avenue de l'Oc\u00e9an, Port-Bouet",
+            "Latitude": 5.254403,
+            "Longitude": -3.9686157
+        },
+        {
+            "name": "MARIE CURIE ZONE 4",
+            "address": "Zone 4 - Rdc immeuble Marie Curie, Marcory",
+            "Latitude": 5.3027149,
+            "Longitude": -3.982740499999999
+        },
+        {
+            "name": "II PLATEAUX LATRILLE",
+            "address": "BP 0722 Face Commisariat Angr\u00e9 Rdc Imm SIL 07, Cocody",
+            "Latitude": 5.3862285,
+            "Longitude": -3.982740499999999
+        },
+        {
+            "name": "Koumassi 7 d\u00e9cembre",
+            "address": "Bd du 7 d\u00e9cembre, Koumassi",
+            "Latitude": 5.2896341,
+            "Longitude": -3.9640602
+        },
+        {
+            "name": "KORHOGO",
+            "address": "BP 66 korhogo Rue Principale, Korhogo",
+            "Latitude": 9.4669337,
+            "Longitude": -5.6142558
+        },
+        {
+            "name": "GAGNOA",
+            "address": "Bp 587 Rue du commerce, Gagnoa",
+            "Latitude": 6.151442299999999,
+            "Longitude": -5.951539899999999
+        },
+        {
+            "name": "DJIBI",
+            "address": "Carrefour Nelson Mandela, Cocody",
+            "Latitude": 5.3602164,
+            "Longitude": -3.9674371
+        },
+        {
+            "name": "PLATEAU RUE DU COMMERCE",
+            "address": "Avenue Nogues R\u00e9sidence Nabil, Plateau",
+            "Latitude": 5.318570100000001,
+            "Longitude": -4.0152411
+        },
+        {
+            "name": "II PLATEAU VALLON",
+            "address": "1298 Rue des Jardins II Plateaux vallons face Super Hayat, Cocody",
+            "Latitude": 5.3580025,
+            "Longitude": -3.9900632
+        },
+        {
+            "name": "PLATEAU CLOZEL",
+            "address": "20/22 Bd Clozel R\u00e9sidence Les Acacias, Plateau",
+            "Latitude": 5.324999,
+            "Longitude": -4.020635899999999
+        },
+        {
+            "name": "CITE DES ARTS",
+            "address": "Cocody Cit\u00e9 des Arts, Cocody",
+            "Latitude": 5.3465773,
+            "Longitude": -4.000185099999999
+        },
+        {
+            "name": "89 BD DE MARSEILLE ABIDJAN",
+            "address": "89 Bd de Marseille, Marcory",
+            "Latitude": 5.2924959,
+            "Longitude": -3.9980347
+        },
+        {
+            "name": "BOUAKE",
+            "address": "BP 583 Bd de la Mairie Quartier de commerce, Bouak\u00e9",
+            "Latitude": 7.690466,
+            "Longitude": -5.0390536
+        },
+        {
+            "name": "TREICHVILLE ARRAS",
+            "address": "Avenue Laurent Pierre Clouzet, Treichville",
+            "Latitude": 5.2920877,
+            "Longitude": -4.013361
+        },
+        {
+            "name": "ADJAME",
+            "address": "Bd Nagui Abrogoua, Adjam\u00e9",
+            "Latitude": 5.3469695,
+            "Longitude": -4.0257492
+        },
+        {
+            "name": "ABOBO",
+            "address": "Quatier Amak\u00e9bou face CI T\u00e9l\u00e9com, Abobo",
+            "Latitude": 5.432887099999999,
+            "Longitude": -4.0388918
+        },
+        {
+            "name": "ROND POINT PALMERAIE",
+            "address": "01 BP 1298 Avenue Franchet d'Esp\u00e9rey, Plateau",
+            "Latitude": 5.321947,
+            "Longitude": -4.0187264
+        },
+        {
+            "name": "ABENGOUROU",
+            "address": "BP 139 Abengourou- Place du march\u00e9, Abengourou",
+            "Latitude": 6.715698199999999,
+            "Longitude": -3.4801349
+        },
+        {
+            "name": "YOPOUGON NIANGON",
+            "address": "Niangon base CIE, carrefour menuisierie, Yopougon",
+            "Latitude": 5.332646599999999,
+            "Longitude": -4.0893321
+        },
+        {
+            "name": "ZONE INDUSTRIELLE YOPOUGON",
+            "address": "Zone indistruelle, Yopougon",
+            "Latitude": 5.3782623,
+            "Longitude": -4.0758102
+        },
+        {
+            "name": "MARCORY REMBLAIS",
+            "address": "Quartier remblais (march\u00e9 marcory), Marcory",
+            "Latitude": 5.3002211,
+            "Longitude": -3.964887
+        },
+        {
+            "name": "GRAND BASSAM",
+            "address": "Quartier cafop II- route de Moossou, Grand-Bassam",
+            "Latitude": 5.227411699999999,
+            "Longitude": -3.7244696
+        },
+        {
+            "name": "RIVIERA GOLF",
+            "address": "Centre commercial SICOGI, Yopougon",
+            "Latitude": 5.317666099999999,
+            "Longitude": -4.0899911
+        },
+        {
+            "name": "SAN PEDRO",
+            "address": "Bp 335 Bd de la R\u00e9publique Quartier cit\u00e9 San Pedro, San-P\u00e9dro",
+            "Latitude": 4.7578686,
+            "Longitude": -6.642433
+        },
+        {
+            "name": "INP-HB YAMOUSSOUKRO",
+            "address": "Yamoussoukro, Yamoussoukro",
+            "Latitude": 6.816274099999999,
+            "Longitude": -5.274362900000001
+        }
+    ]
+}

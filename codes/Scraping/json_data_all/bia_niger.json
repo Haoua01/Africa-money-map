@@ -1,0 +1,138 @@
+[
+    {
+        "bank": "bia",
+        "country": "niger",
+        "address": "Avenue de la Mairie, Niamey - Niger",
+        "Latitude": 13.5139327,
+        "Longitude": 2.1092681,
+        "geocoded": 1
+    },
+    {
+        "bank": "bia",
+        "country": "niger",
+        "address": "Route du Balafon, Niamey - Niger",
+        "Latitude": 13.5115963,
+        "Longitude": 2.1253854,
+        "geocoded": 1
+    },
+    {
+        "bank": "bia",
+        "country": "niger",
+        "address": "Immeuble Bague Daouada, Niamey - Niger",
+        "Latitude": 13.5128494,
+        "Longitude": 2.1253797,
+        "geocoded": 1
+    },
+    {
+        "bank": "bia",
+        "country": "niger",
+        "address": "Boulevard de de l’Independance, Niamey - Niger",
+        "Latitude": 13.5029889,
+        "Longitude": 2.1351418,
+        "geocoded": 1
+    },
+    {
+        "bank": "bia",
+        "country": "niger",
+        "address": "Avenue Maurice Delens, Niamey - Niger",
+        "Latitude": 13.5269857,
+        "Longitude": 2.0967847,
+        "geocoded": 1
+    },
+    {
+        "bank": "bia",
+        "country": "niger",
+        "address": "Rue du Gourma, Niamey - Niger",
+        "Latitude": 13.4939244,
+        "Longitude": 2.0757172,
+        "geocoded": 1
+    },
+    {
+        "bank": "bia",
+        "country": "niger",
+        "address": "Arène de Lutte Traditionelle, Niamey - Niger",
+        "Latitude": 13.5181559,
+        "Longitude": 2.1399605,
+        "geocoded": 1
+    },
+    {
+        "bank": "bia",
+        "country": "niger",
+        "address": "Rond Point Gadafawa, Niamey - Niger",
+        "Latitude": 13.5312263,
+        "Longitude": 2.0814532,
+        "geocoded": 1
+    },
+    {
+        "bank": "bia",
+        "country": "niger",
+        "address": "Marché des Tôles, Agadez - Niger",
+        "Latitude": 16.9741689,
+        "Longitude": 7.986535,
+        "geocoded": 1
+    },
+    {
+        "bank": "bia",
+        "country": "niger",
+        "address": "Route Zone Industrielelle de la somaïr, Arlit - Niger",
+        "Latitude": 18.7390029,
+        "Longitude": 7.3894772,
+        "geocoded": 1
+    },
+    {
+        "bank": "bia",
+        "country": "niger",
+        "address": "Quartier Administratif, Diffa - Niger",
+        "Latitude": 13.3132472,
+        "Longitude": 12.6158803,
+        "geocoded": 1
+    },
+    {
+        "bank": "bia",
+        "country": "niger",
+        "address": "Quartier Mague koira, Dosso - Niger",
+        "Latitude": 13.0367002,
+        "Longitude": 3.1913448,
+        "geocoded": 1
+    },
+    {
+        "bank": "bia",
+        "country": "niger",
+        "address": "Quartier Plateau, Gaya - Niger",
+        "Latitude": 11.8864375,
+        "Longitude": 3.453512,
+        "geocoded": 1
+    },
+    {
+        "bank": "bia",
+        "country": "niger",
+        "address": "Centre Commercial, Konni - Niger",
+        "Latitude": 13.7946714,
+        "Longitude": 5.2527741,
+        "geocoded": 1
+    },
+    {
+        "bank": "bia",
+        "country": "niger",
+        "address": "Quartier Mokoyo, Maradi - Niger",
+        "Latitude": 13.5009779,
+        "Longitude": 7.103639599999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bia",
+        "country": "niger",
+        "address": "Quartier zoulanké, Tahoua - Niger",
+        "Latitude": 14.8999124,
+        "Longitude": 5.2608529,
+        "geocoded": 1
+    },
+    {
+        "bank": "bia",
+        "country": "niger",
+        "address": "La Poste, Zinder - Niger",
+        "Latitude": 13.8018124,
+        "Longitude": 8.98527,
+        "geocoded": 1
+    }
+]

@@ -1,0 +1,130 @@
+[
+    {
+        "bank": "bdu",
+        "country": "civ",
+        "address": "Agence PLATEAUX",
+        "Latitude": 5.324852479750937,
+        "Longitude": -4.0191257975258825,
+        "geocoded": 0
+    },
+    {
+        "bank": "bdu",
+        "country": "civ",
+        "address": "Agence II PLATEAUX",
+        "Latitude": 5.362683286949931,
+        "Longitude": -3.9896869901821876,
+        "geocoded": 0
+    },
+    {
+        "bank": "bdu",
+        "country": "civ",
+        "address": "Agence ADJAME",
+        "Latitude": 5.34677914851563,
+        "Longitude": -4.024592580341903,
+        "geocoded": 0
+    },
+    {
+        "bank": "bdu",
+        "country": "civ",
+        "address": "Agence MARCORY",
+        "Latitude": 5.297202733928087,
+        "Longitude": -3.9858403667567326,
+        "geocoded": 0
+    },
+    {
+        "bank": "bdu",
+        "country": "civ",
+        "address": "Agence PORT BOUET",
+        "Latitude": 5.257562387688046,
+        "Longitude": -3.9634988281152497,
+        "geocoded": 0
+    },
+    {
+        "bank": "bdu",
+        "country": "civ",
+        "address": "Agence TREICHVILLE",
+        "Latitude": 5.310012317729077,
+        "Longitude": -4.013534968601083,
+        "geocoded": 0
+    },
+    {
+        "bank": "bdu",
+        "country": "civ",
+        "address": "Agence KOUMASSI",
+        "Latitude": 5.291096997094106,
+        "Longitude": -3.957779141104362,
+        "geocoded": 0
+    },
+    {
+        "bank": "bdu",
+        "country": "civ",
+        "address": "Agence YOPOUGON",
+        "Latitude": 5.351788854125918,
+        "Longitude": -4.073453653261455,
+        "geocoded": 0
+    },
+    {
+        "bank": "bdu",
+        "country": "civ",
+        "address": "Agence RIVIERA 3",
+        "Latitude": 5.354118253454518,
+        "Longitude": -3.9567703644174532,
+        "geocoded": 0
+    },
+    {
+        "bank": "bdu",
+        "country": "civ",
+        "address": "Agence Angré 8e Tranche",
+        "Latitude": 5.398119859449524,
+        "Longitude": -3.983436587421139,
+        "geocoded": 0
+    },
+    {
+        "bank": "bdu",
+        "country": "civ",
+        "address": "Agence Abatta",
+        "Latitude": 5.373999437710196,
+        "Longitude": -3.923841992577649,
+        "geocoded": 0
+    },
+    {
+        "bank": "bdu",
+        "country": "civ",
+        "address": "Agence Abobo",
+        "Latitude": 5.410228082446992,
+        "Longitude": -4.006451761355604,
+        "geocoded": 0
+    },
+    {
+        "bank": "bdu",
+        "country": "civ",
+        "address": "Agence BOUAKE",
+        "Latitude": 7.681490804710582,
+        "Longitude": -5.029168364417454,
+        "geocoded": 0
+    },
+    {
+        "bank": "bdu",
+        "country": "civ",
+        "address": "Agence DALOA",
+        "Latitude": 6.8776872450008435,
+        "Longitude": -6.4439920660082795,
+        "geocoded": 0
+    },
+    {
+        "bank": "bdu",
+        "country": "civ",
+        "address": "Agence KORHOGO",
+        "Latitude": 9.454933243933265,
+        "Longitude": -5.632476258758255,
+        "geocoded": 0
+    },
+    {
+        "bank": "bdu",
+        "country": "civ",
+        "address": "Agence SAN PEDRO",
+        "Latitude": 4.746392395617917,
+        "Longitude": -6.633786650386411,
+        "geocoded": 0
+    }
+]

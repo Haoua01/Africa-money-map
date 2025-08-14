@@ -1,0 +1,34 @@
+[
+    {
+        "bank": "gtb",
+        "country": "civ",
+        "address": "Adjamé",
+        "Latitude": 5.353380661154641,
+        "Longitude": -4.025443003728952,
+        "geocoded": 0
+    },
+    {
+        "bank": "gtb",
+        "country": "civ",
+        "address": "Koumassi",
+        "Latitude": 5.289515741937486,
+        "Longitude": -3.964791503729018,
+        "geocoded": 0
+    },
+    {
+        "bank": "gtb",
+        "country": "civ",
+        "address": "Angré",
+        "Latitude": 5.402394303608608,
+        "Longitude": -3.968902761901178,
+        "geocoded": 0
+    },
+    {
+        "bank": "gtb",
+        "country": "civ",
+        "address": "Siège Plateau",
+        "Latitude": 5.321094111211873,
+        "Longitude": -4.018008709700984,
+        "geocoded": 0
+    }
+]

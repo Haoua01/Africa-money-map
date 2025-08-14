@@ -1,0 +1,130 @@
+[
+    {
+        "bank": "bridge-bank",
+        "country": "civ",
+        "address": "Agence principale",
+        "Latitude": 5.318976,
+        "Longitude": -4.013154,
+        "geocoded": 0
+    },
+    {
+        "bank": "bridge-bank",
+        "country": "civ",
+        "address": "Agence zone 4, rue du Dr Blanchard",
+        "Latitude": 5.29116934,
+        "Longitude": -3.98134024,
+        "geocoded": 0
+    },
+    {
+        "bank": "bridge-bank",
+        "country": "civ",
+        "address": "Agence Treichville Nanan Yamousso",
+        "Latitude": 5.3088684,
+        "Longitude": -4.0054579,
+        "geocoded": 0
+    },
+    {
+        "bank": "bridge-bank",
+        "country": "civ",
+        "address": "Agence 2 Plateaux, rue des Jardins",
+        "Latitude": 5.359360989626228,
+        "Longitude": -3.9895207630093124,
+        "geocoded": 0
+    },
+    {
+        "bank": "bridge-bank",
+        "country": "civ",
+        "address": "Agence 2 Plateaux, Boulevard Latrille",
+        "Latitude": 5.38814211,
+        "Longitude": -3.99247068,
+        "geocoded": 0
+    },
+    {
+        "bank": "bridge-bank",
+        "country": "civ",
+        "address": "Agence d'Adjamé Saint Michel",
+        "Latitude": 5.34654809,
+        "Longitude": -4.02291762,
+        "geocoded": 0
+    },
+    {
+        "bank": "bridge-bank",
+        "country": "civ",
+        "address": "Agence Cocody Riviera 3, Route du Lycée français",
+        "Latitude": 5.3537794,
+        "Longitude": -3.95737779,
+        "geocoded": 0
+    },
+    {
+        "bank": "bridge-bank",
+        "country": "civ",
+        "address": "Agence Cocody",
+        "Latitude": 5.338089,
+        "Longitude": -4.003533,
+        "geocoded": 0
+    },
+    {
+        "bank": "bridge-bank",
+        "country": "civ",
+        "address": "Agence Riviera Golf",
+        "Latitude": 5.33991667,
+        "Longitude": -3.97719444,
+        "geocoded": 0
+    },
+    {
+        "bank": "bridge-bank",
+        "country": "civ",
+        "address": "Agence Marcory Résidentiel",
+        "Latitude": 5.308045,
+        "Longitude": -3.992371,
+        "geocoded": 0
+    },
+    {
+        "bank": "bridge-bank",
+        "country": "civ",
+        "address": "Agence Treichville, Zone 3",
+        "Latitude": 5.298122,
+        "Longitude": -3.996454,
+        "geocoded": 0
+    },
+    {
+        "bank": "bridge-bank",
+        "country": "civ",
+        "address": "Agence Plateau, Seen Hotel",
+        "Latitude": 5.31916667,
+        "Longitude": -4.01891667,
+        "geocoded": 0
+    },
+    {
+        "bank": "bridge-bank",
+        "country": "civ",
+        "address": "Agence 2 Plateaux, 8ème Tranche",
+        "Latitude": 5.39521785414503,
+        "Longitude": -3.9769895955472743,
+        "geocoded": 0
+    },
+    {
+        "bank": "bridge-bank",
+        "country": "civ",
+        "address": "Agence Abatta",
+        "Latitude": 5.37386369,
+        "Longitude": -3.92593479,
+        "geocoded": 0
+    },
+    {
+        "bank": "bridge-bank",
+        "country": "civ",
+        "address": "Agence de Bouaké",
+        "Latitude": 7.681349483342573,
+        "Longitude": -5.027831619063537,
+        "geocoded": 0
+    },
+    {
+        "bank": "bridge-bank",
+        "country": "civ",
+        "address": "Agence San Pédro",
+        "Latitude": 4.744022,
+        "Longitude": -6.631915,
+        "geocoded": 0
+    }
+]

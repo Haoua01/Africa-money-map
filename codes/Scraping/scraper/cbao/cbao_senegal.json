@@ -1,0 +1,532 @@
+{
+    "senegal": [
+        {
+            "agency_name": "CBAO CENTRE D&#039;AFFAIRES SIEGE",
+            "address": "1 Place de l&#039;ind\u00e9pendance",
+            "Latitude": "14.6693826",
+            "Longitude": "-17.4318692"
+        },
+        {
+            "agency_name": "CBAO CENTRE D&#039;AFFAIRES Z I",
+            "address": "KM 4,5 BLD du Centenaire de la commune de dakar",
+            "Latitude": "14.702852",
+            "Longitude": "-17.436244"
+        },
+        {
+            "agency_name": "CBAO AGENCE VIP",
+            "address": "1 Place de l&#039;ind\u00e9pendance",
+            "Latitude": "14.6693826",
+            "Longitude": "-17.4318692"
+        },
+        {
+            "agency_name": "CBAO BLAISE DIAGNE",
+            "address": "177, Avenue Blaise diagne dakar",
+            "Latitude": "14.6764224",
+            "Longitude": "-17.4435466"
+        },
+        {
+            "agency_name": "CBAO COLOBANE",
+            "address": "Avenue Cheikh Ahmadou Bamba immeuble GIC",
+            "Latitude": "14.6990972",
+            "Longitude": "-17.4469183"
+        },
+        {
+            "agency_name": "CBAO GOREE",
+            "address": "Ile de Gor\u00e9e - Ancienne capitainerie, Ancienne B. Joseph NDIAYE",
+            "Latitude": "14.6679022",
+            "Longitude": "-17.3990524"
+        },
+        {
+            "agency_name": "Agence Ind\u00e9pendance d\u00e9di\u00e9e transfert et Change",
+            "address": "Immeuble SDIH 2 Place de l&#039;Ind\u00e9pendance",
+            "Latitude": "14.6690051",
+            "Longitude": "-17.4319171"
+        },
+        {
+            "agency_name": "CBAO JAURES",
+            "address": "27 Avenue Jean Jaur\u00e8s",
+            "Latitude": "14.6673002",
+            "Longitude": "-17.4389995"
+        },
+        {
+            "agency_name": "CBAO KERMEL",
+            "address": "Plateau, rue Descemet x rue Parent (face march\u00e9 kermel)",
+            "Latitude": "14.6706561",
+            "Longitude": "-17.4282682"
+        },
+        {
+            "agency_name": "CBAO LAMINE GUEYE",
+            "address": "53 Avenue Lamine Gu\u00e8ye - A c\u00f4t\u00e9 du showroom de SAMSUNG",
+            "Latitude": "14.6726289",
+            "Longitude": "-17.4373357"
+        },
+        {
+            "agency_name": "CBAO LEOPOLD SEDAR SENGHOR",
+            "address": "31 Avenue L\u00e9opold S\u00e9dar Senghor",
+            "Latitude": "14.6660261",
+            "Longitude": "-17.4328094"
+        },
+        {
+            "agency_name": "CBAO MALICK SY",
+            "address": "40 Avenue El Hadj Malick Sy",
+            "Latitude": "14.6756382",
+            "Longitude": "-17.4476476"
+        },
+        {
+            "agency_name": "CBAO PEYTAVIN",
+            "address": "97 Avenue Andr\u00e9 Peytavin - BP 4111",
+            "Latitude": "14.6687727",
+            "Longitude": "-17.4405393"
+        },
+        {
+            "agency_name": "CBAO POMPIERS",
+            "address": "Entr\u00e9e de l&#039;Autoroute x Rue Marchand",
+            "Latitude": "14.6812202",
+            "Longitude": "-17.4386478"
+        },
+        {
+            "agency_name": "CBAO SOUMBEDIOUNE",
+            "address": "Rue 15 x Corniche Ouest - P 129 Dakar",
+            "Latitude": "14.6759379",
+            "Longitude": "-17.4536279"
+        },
+        {
+            "agency_name": "CBAO ZONE INDUSTRIELLE 2",
+            "address": "2,7 Boulevard de la commune de dakar",
+            "Latitude": "14.4137931",
+            "Longitude": "-17.2613456"
+        },
+        {
+            "agency_name": "CBAO SAHM",
+            "address": "Avenue Cheikh Anta Diop en facePolice 4e arrondis.",
+            "Latitude": "14.6828493",
+            "Longitude": "-17.4510937"
+        },
+        {
+            "agency_name": "CBAO CASTORS 1",
+            "address": "7 Avenue Bourguiba face SODIDA",
+            "Latitude": "14.72501",
+            "Longitude": "-17.4454208"
+        },
+        {
+            "agency_name": "CBAO CASTORS 2",
+            "address": "Rue 13 X P N\u00b06 Castors ",
+            "Latitude": "14.7227586",
+            "Longitude": "-17.4530135"
+        },
+        {
+            "agency_name": "CBAO CHEIKH ANTA DIOP",
+            "address": "Avenue Cheikh Anta Diop en face Banque de Sang",
+            "Latitude": "14.6962453",
+            "Longitude": "-17.4651039"
+        },
+        {
+            "agency_name": "CBAO CLAIR DE LUNE",
+            "address": "Avenue Cheikh Anta Diop x l\u00e9o frobenuis Mermoz",
+            "Latitude": "14.6988615",
+            "Longitude": "-17.4690025"
+        },
+        {
+            "agency_name": "CBAO HLM",
+            "address": "Ouagou Niayes \u00e0 c\u00f4t\u00e9 de la pharmacie",
+            "Latitude": "14.7072771",
+            "Longitude": "-17.447093"
+        },
+        {
+            "agency_name": "CBAO LES MARISTES",
+            "address": "Maristes II  sur la route  principale Lot S/110",
+            "Latitude": "14.7388913",
+            "Longitude": "-17.4312435"
+        },
+        {
+            "agency_name": "CBAO LIBERTE 3",
+            "address": "Bloc A Jet D&#039;eau rond point jet d&#039;eau  - Sicap Libert\u00e9 3",
+            "Latitude": "14.7117723",
+            "Longitude": "-17.4557021"
+        },
+        {
+            "agency_name": "CBAO NGOR",
+            "address": "Ngor route des almadies en face station shell",
+            "Latitude": "14.7475795",
+            "Longitude": "-17.5081878"
+        },
+        {
+            "agency_name": "CBAO POINT E",
+            "address": "10 Boulevard de l&#039;Est X Rue 2 - Face OUMOU Informatique",
+            "Latitude": "14.694987",
+            "Longitude": "-17.45805928"
+        },
+        {
+            "agency_name": "CBAO PORTE FOIRE",
+            "address": "Ouest Foire - IMMEUBLE ccbm vdn FACE cices",
+            "Latitude": "14.7390759",
+            "Longitude": "-17.4725338"
+        },
+        {
+            "agency_name": "CBAO SIPRES",
+            "address": "2 Voies Libert\u00e9 6 Lot 18 - Immeuble Serigne Fallou mback\u00e9",
+            "Latitude": "14.7306615",
+            "Longitude": "-17.4592724"
+        },
+        {
+            "agency_name": "CBAO VDN",
+            "address": "Libert\u00e9 6 Extension Lot N\u00b0 24 VDN",
+            "Latitude": "14.7262861",
+            "Longitude": "-17.4712577"
+        },
+        {
+            "agency_name": "CBAO YOFF 2",
+            "address": "Route de l&#039;A\u00e9roport  LSS     R\u00e9sidence Galle YANGUE",
+            "Latitude": "14.7550693",
+            "Longitude": "-17.4696313"
+        },
+        {
+            "agency_name": "CBAO YOFF APECSY",
+            "address": "Yoff pr\u00e8s du C.A. BCEAO",
+            "Latitude": "14.7576224",
+            "Longitude": "-17.4689897"
+        },
+        {
+            "agency_name": "CBAO BENE BARAQUE",
+            "address": "Yeumbeul B\u00e8ne Baraque",
+            "Latitude": "14.7881714",
+            "Longitude": "-17.3499586"
+        },
+        {
+            "agency_name": "CBAO GRAND MEDINE",
+            "address": "En face l&#039;\u00e9cole Keur Dior",
+            "Latitude": "14.7586363",
+            "Longitude": "-17.4481414"
+        },
+        {
+            "agency_name": "CBAO GUEDIAWAYE 1",
+            "address": "Immeuble Elhadji Mamadou Mbaye en face sde Gu\u00e9diawaye",
+            "Latitude": "14.7828199",
+            "Longitude": "-17.376013"
+        },
+        {
+            "agency_name": "CBAO KEUR MASSAR",
+            "address": "Rond point Keur Massar 1452 cit\u00e9 Ainoumady",
+            "Latitude": "14.7731549",
+            "Longitude": "-17.3166166"
+        },
+        {
+            "agency_name": "CBAO CAMBERENE",
+            "address": "Route des Parcelles Assainies",
+            "Latitude": "14.4548182",
+            "Longitude": "-12.2106702"
+        },
+        {
+            "agency_name": "CBAO PARCELLES AISSAINIES",
+            "address": "Pacelles assanies unit\u00e9 14 Imm Route des Niayes X  croisement Serigne Fallou",
+            "Latitude": "14.7506143",
+            "Longitude": "-17.4401438"
+        },
+        {
+            "agency_name": "CBAO PIKINE 1",
+            "address": "TALLY Boumak BP 129",
+            "Latitude": "14.7612158",
+            "Longitude": "-17.3939384"
+        },
+        {
+            "agency_name": "CBAO PIKINE 2",
+            "address": "Pikine Tally Boumack X Route des Niayes en face march\u00e9 zinc",
+            "Latitude": "14.7638769",
+            "Longitude": "-17.3913511"
+        },
+        {
+            "agency_name": "CBAO PIKINE ICOTAF",
+            "address": "Pikine Icotaf Parcelles 5295",
+            "Latitude": "14.758999",
+            "Longitude": "-17.387856"
+        },
+        {
+            "agency_name": "CBAO RUFISQUE",
+            "address": "Quartier Medina Zone Urbanisme Rufisque",
+            "Latitude": "14.7198737",
+            "Longitude": "-17.2833559"
+        },
+        {
+            "agency_name": "CBAO THIAROYE",
+            "address": "Route de Rufisque en face poste de thiaroye",
+            "Latitude": "14.7453036",
+            "Longitude": "-17.3787022"
+        },
+        {
+            "agency_name": "CBAO BELAL LY",
+            "address": "Quartier Boucotte Rond Point Balaly ",
+            "Latitude": "12.5862088",
+            "Longitude": "-16.2705455"
+        },
+        {
+            "agency_name": "CBAO BIGNONA",
+            "address": "Route nationale pr\u00e8s du march\u00e9 de bignona",
+            "Latitude": "12.7981049",
+            "Longitude": "-16.2265302"
+        },
+        {
+            "agency_name": "CBAO BOUCOTTE",
+            "address": "Quartier Boucotte ESSO - en face station Total",
+            "Latitude": "12.5654075",
+            "Longitude": "-16.2973798"
+        },
+        {
+            "agency_name": "CBAO CAP SKIRRING",
+            "address": "Place du March\u00e9",
+            "Latitude": "12.5394781",
+            "Longitude": "-16.5696191"
+        },
+        {
+            "agency_name": "CBAO KEDOUGOU",
+            "address": "Quartier Dalaba Rond Point du march\u00e9",
+            "Latitude": "12.5572516",
+            "Longitude": "-12.1788631"
+        },
+        {
+            "agency_name": "CBAO ZIGUINCHOR",
+            "address": "Rue capitaine Jevalier BP 45",
+            "Latitude": "12.5773136",
+            "Longitude": "-16.2777183"
+        },
+        {
+            "agency_name": "CBAO VELINGARA",
+            "address": "Quartier Centre en face du centre de sant\u00e9",
+            "Latitude": "13.1404002",
+            "Longitude": "-14.1182728"
+        },
+        {
+            "agency_name": "CBAO SABADOLA",
+            "address": "Sabadola",
+            "Latitude": "13.214368",
+            "Longitude": "-12.1069367"
+        },
+        {
+            "agency_name": "CBAO TAMBA SALIKEGNE",
+            "address": "Quartier Pont Salikegne",
+            "Latitude": "13.7721031",
+            "Longitude": "-13.6671378"
+        },
+        {
+            "agency_name": "CBAO TAMBACOUNDA",
+            "address": "Route Nationale Boulevard Demba Diop",
+            "Latitude": "13.6748054",
+            "Longitude": "-13.7753844"
+        },
+        {
+            "agency_name": "CBAO DIOURBEL",
+            "address": "Route Nationale Avenue L\u00e9opold S Senghor",
+            "Latitude": "14.6568423",
+            "Longitude": "-16.214715"
+        },
+        {
+            "agency_name": "CBAO KAOLACK",
+            "address": "Rue John F Kennedy n\u00b0 324",
+            "Latitude": "14.135755",
+            "Longitude": "-16.077493"
+        },
+        {
+            "agency_name": "CBAO KAOLACK GOSSAS",
+            "address": "Sahm Route de Gossas",
+            "Latitude": "14.1627372",
+            "Longitude": "-16.0760451"
+        },
+        {
+            "agency_name": "CBAO KAOLACK MEDINA BAYE",
+            "address": "lot N\u00b0 26 M\u00e9dina Mbaye",
+            "Latitude": "14.1573731",
+            "Longitude": "-16.0663909"
+        },
+        {
+            "agency_name": "CBAO TOUBA DAROU MARNANE",
+            "address": "Darou Marnane route de Mback\u00e9 entr\u00e9e autoroute",
+            "Latitude": "14.8284562",
+            "Longitude": "-15.894088"
+        },
+        {
+            "agency_name": "CBAO TOUBA DAROU MOUSTY",
+            "address": "Quartier escale en face du March\u00e9",
+            "Latitude": "15.0415138",
+            "Longitude": "-16.0464203"
+        },
+        {
+            "agency_name": "CBAO TOUBA KHAIRA",
+            "address": "Touba Khaira BP 177",
+            "Latitude": "14.8452295",
+            "Longitude": "-15.8840512"
+        },
+        {
+            "agency_name": "CBAO TOUBA MADIYANA",
+            "address": "Route de darou mousty Touba Madyana",
+            "Latitude": "14.882391",
+            "Longitude": "-15.894916"
+        },
+        {
+            "agency_name": "CBAO TOUBA MBAL",
+            "address": "Quartier Mbal, angle Serigne Fallou",
+            "Latitude": "14.8529842",
+            "Longitude": "-15.8807293"
+        },
+        {
+            "agency_name": "CBAO TOUBA TALLY NDIOUGA",
+            "address": "Touba Darou Khoudos \u00e0 la rue Ndiougua K\u00e9b\u00e9",
+            "Latitude": "14.8575955",
+            "Longitude": "-15.8932948"
+        },
+        {
+            "agency_name": "CBAO KEBEMER",
+            "address": "Station Shell K\u00e9b\u00e9mer Route de Saint louis",
+            "Latitude": "15.3737643",
+            "Longitude": "-16.4495795"
+        },
+        {
+            "agency_name": "CBAO LOUGA 1",
+            "address": "N\u00b0187 rue Keur Serigne Louga",
+            "Latitude": "15.6181451",
+            "Longitude": "-16.2219668"
+        },
+        {
+            "agency_name": "CBAO LOUGA 2",
+            "address": "N\u00b0187 rue Keur Serigne Louga",
+            "Latitude": "15.6211785",
+            "Longitude": "-16.2229806"
+        },
+        {
+            "agency_name": "CBAO MBOUR",
+            "address": "Avenue Demba Diop RN en face sonatel",
+            "Latitude": "14.411335",
+            "Longitude": "-16.967644"
+        },
+        {
+            "agency_name": "CBAO MBOUR GARE ROUTIERE",
+            "address": "Grand Mbour sur la route nationale",
+            "Latitude": "14.4228422",
+            "Longitude": "-16.96553756"
+        },
+        {
+            "agency_name": "CBAO SALY  1",
+            "address": "Saly Portudal apr\u00e8s la caserne des sapeurs pompiers ",
+            "Latitude": "14.4424058",
+            "Longitude": "-17.0156121"
+        },
+        {
+            "agency_name": "CBAO THIES CONCORDE",
+            "address": "Boulevard Jean Colin Concorde ",
+            "Latitude": "14.778042",
+            "Longitude": "-16.9299211"
+        },
+        {
+            "agency_name": "CBAO THIES PROMENADE",
+            "address": "Route Nationale 2 Promenade des Thi\u00e9ssois RN 2",
+            "Latitude": "14.7846387",
+            "Longitude": "-16.9370974"
+        },
+        {
+            "agency_name": "CBAO THIES SOUSSE",
+            "address": "Avenue L\u00e9opold Sedar Senghor",
+            "Latitude": "14.7944934",
+            "Longitude": "-16.9256632"
+        },
+        {
+            "agency_name": "CBAO TIVAOUANE",
+            "address": "Quartier Keur Cheikh Awa Balla Mback\u00e9 - Rte de St Louis",
+            "Latitude": "14.9619156",
+            "Longitude": "-16.8040109"
+        },
+        {
+            "agency_name": "CBAO BAKEL",
+            "address": "Bakel Coura Route Nationale",
+            "Latitude": "14.9046841",
+            "Longitude": "-12.4592469"
+        },
+        {
+            "agency_name": "CBAO DIAWARA",
+            "address": "Quartier wadiga route nationale ",
+            "Latitude": "15.0208983",
+            "Longitude": "-12.5411304"
+        },
+        {
+            "agency_name": "CBAO GALOYA",
+            "address": "Galoya garage sur la route nationale \u00e0 85km de ouross",
+            "Latitude": "16.0752201",
+            "Longitude": "-13.8546464"
+        },
+        {
+            "agency_name": "CBAO KIDIRA",
+            "address": "Lot Sud n\u00b01169 \u00e0 l\u2019est de la RN N\u00b01 et au Nord de la route menant au Mali",
+            "Latitude": "14.4548182",
+            "Longitude": "-12.2106702"
+        },
+        {
+            "agency_name": "CBAO MPAL",
+            "address": "Route nationale MPAL",
+            "Latitude": "15.9169765",
+            "Longitude": "-16.2709472"
+        },
+        {
+            "agency_name": "CBAO NDIOUM",
+            "address": "Quartier Ndiolof\u00e9ne en face Route Nationale 2",
+            "Latitude": "16.510305",
+            "Longitude": "-14.6442636"
+        },
+        {
+            "agency_name": "CBAO OUROSSOGUI",
+            "address": "Route Nationale 1 en face de la gendarmerie",
+            "Latitude": "15.6110706",
+            "Longitude": "-13.3210318"
+        },
+        {
+            "agency_name": "CBAO RICHARD TOLL",
+            "address": "Route nationale - BP 70\u00a0 Richard Toll- S\u00e9n\u00e9gal",
+            "Latitude": "16.4666393",
+            "Longitude": "-15.7010962"
+        },
+        {
+            "agency_name": "CBAO SAINT LOUIS",
+            "address": "Rue Khalifa Ababacar Sy X Rue Potin",
+            "Latitude": "16.0271735",
+            "Longitude": "-16.5048054"
+        },
+        {
+            "agency_name": "CBAO SAINT LOUIS SOR",
+            "address": "Station Shell Saint Louis Gare Routi\u00e9re",
+            "Latitude": "16.0280885",
+            "Longitude": "-16.5011457"
+        },
+        {
+            "agency_name": "CBAO SAINT LOUIS UGB",
+            "address": "Quartier sanar en face universit\u00e9 Gaston Berger ",
+            "Latitude": "16.0320138",
+            "Longitude": "-16.523284"
+        },
+        {
+            "agency_name": "CBAO THILOGNE",
+            "address": "Thilogne sur la route Nationale \u00e0 50 Km de ourossogui",
+            "Latitude": "15.9646721",
+            "Longitude": "-13.5923239"
+        },
+        {
+            "agency_name": "CBAO WAOUNDE",
+            "address": "Quartier hlm pr\u00e9s du poste tranfo senelec",
+            "Latitude": "15.2646615",
+            "Longitude": "-12.8678424"
+        },
+        {
+            "agency_name": "CBAO KEUR GORGUI",
+            "address": "Rond point cit\u00e9 Keur Gorgui derriere si\u00e8ge Sonatel",
+            "Latitude": "14.7118041",
+            "Longitude": "-17.4694388"
+        },
+        {
+            "agency_name": "CBAO RUFISQUE OUEST",
+            "address": "lot. 70, route des Emetteurs. Rufisque Ouest",
+            "Latitude": "14.7358947",
+            "Longitude": "-17.2876044"
+        },
+        {
+            "agency_name": "CBAO KOLDA",
+            "address": "CBAO KOLDA sis, lot n\u00b032 E, route du camp militaire Moussa Molo, derri\u00e8re le Tribunal",
+            "Latitude": "13.1437666",
+            "Longitude": "-14.106102"
+        }
+    ]
+}

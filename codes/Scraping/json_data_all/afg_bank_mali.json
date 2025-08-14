@@ -1,0 +1,98 @@
+[
+    {
+        "bank": "afg_bank",
+        "country": "mali",
+        "address": "RN6 non loin du rond-point de Wara, Bamako, Mali",
+        "Latitude": 12.6096653,
+        "Longitude": -7.9097224,
+        "geocoded": 1
+    },
+    {
+        "bank": "afg_bank",
+        "country": "mali",
+        "address": "Hamdalaye ACI 2000, rue 286 IMM M1, Bamako, Mali",
+        "Latitude": 12.6299491,
+        "Longitude": -8.027427399999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "afg_bank",
+        "country": "mali",
+        "address": "Zone Industrielle Route de Sotuba, immeuble Baniamey en face de Malilait SA, Bam",
+        "Latitude": 12.6503113,
+        "Longitude": -7.9646282,
+        "geocoded": 1
+    },
+    {
+        "bank": "afg_bank",
+        "country": "mali",
+        "address": "Grand march\u00e9, En face de l\u2019ancienne Poste Nationale, Bamako, Mali",
+        "Latitude": 12.6391699,
+        "Longitude": -8.0025475,
+        "geocoded": 1
+    },
+    {
+        "bank": "afg_bank",
+        "country": "mali",
+        "address": "March\u00e9 Dabanani, Rue Caron, Bamako, Mali",
+        "Latitude": 12.642966,
+        "Longitude": -7.9958904,
+        "geocoded": 1
+    },
+    {
+        "bank": "afg_bank",
+        "country": "mali",
+        "address": "Quartier Libert\u00e9, Immeuble Boubacar Doucour\u00e9, Kayes, Mali",
+        "Latitude": 14.4393538,
+        "Longitude": -11.4467369,
+        "geocoded": 1
+    },
+    {
+        "bank": "afg_bank",
+        "country": "mali",
+        "address": "AGENCE PRESTIGE, Avenue du Mali Immeuble Soya Bathily en face de Huawey, Bamako,",
+        "Latitude": 12.5731283,
+        "Longitude": -8.0007532,
+        "geocoded": 1
+    },
+    {
+        "bank": "afg_bank",
+        "country": "mali",
+        "address": "Avenue de L\u2019OUA, Bamako, Mali",
+        "Latitude": 12.603926,
+        "Longitude": -7.9456706,
+        "geocoded": 1
+    },
+    {
+        "bank": "afg_bank",
+        "country": "mali",
+        "address": "Station Shell M\u00e9dine march\u00e9, pr\u00e8s du stade Omnisport, Bamako, Mali",
+        "Latitude": 12.6391699,
+        "Longitude": -8.0025475,
+        "geocoded": 1
+    },
+    {
+        "bank": "afg_bank",
+        "country": "mali",
+        "address": "Route de Koulikoro, station Total Dj\u00e9libougou, Bamako, Mali",
+        "Latitude": 12.6392316,
+        "Longitude": -8.0028892,
+        "geocoded": 1
+    },
+    {
+        "bank": "afg_bank",
+        "country": "mali",
+        "address": "Route de Missabougou, Station Total Missagougou, Bamako, Mali",
+        "Latitude": 12.61677,
+        "Longitude": -7.919559,
+        "geocoded": 1
+    },
+    {
+        "bank": "afg_bank",
+        "country": "mali",
+        "address": "Secteur 1, RN5, Station Total Sebenicoro, Bamako, Mali",
+        "Latitude": 12.5302245,
+        "Longitude": -8.030154399999999,
+        "geocoded": 1
+    }
+]

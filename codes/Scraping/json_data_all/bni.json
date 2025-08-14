@@ -1,0 +1,290 @@
+[
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "ABENGOUROU",
+        "Latitude": 6.730453,
+        "Longitude": -3.487329,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "ABOBO",
+        "Latitude": 5.423586,
+        "Longitude": -4.015669,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "ADJAME BANFORA",
+        "Latitude": 5.348504,
+        "Longitude": -4.024789,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "ADJAME ST-MICHEL",
+        "Latitude": 5.34898,
+        "Longitude": -4.023106,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "ANYAMA",
+        "Latitude": 5.500326,
+        "Longitude": -4.051922,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "COCOCY ANGRE CHU",
+        "Latitude": 5.398677,
+        "Longitude": -3.956594,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "COCODY 9\u00e8me TRANCHE",
+        "Latitude": 5.383731,
+        "Longitude": -3.973258,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "COCODY DANGA",
+        "Latitude": 5.33774,
+        "Longitude": -4.005023,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "COCODY II PLATEAUX AGBAN",
+        "Latitude": 5.368401,
+        "Longitude": -4.000335,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "COCODY II PLATEAUX LATRILLE",
+        "Latitude": 5.37764,
+        "Longitude": -3.997371,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "COCODY RIVIERA M'POUTO",
+        "Latitude": 5.328371,
+        "Longitude": -3.948175,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "COCODY RIVIERA PALMERAIE",
+        "Latitude": 5.369861,
+        "Longitude": -3.958836,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "KOUMASSI MAIRIE",
+        "Latitude": 5.290571,
+        "Longitude": -3.969805,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "MARCORY ZONE 4",
+        "Latitude": 5.291463,
+        "Longitude": -3.982505,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "PLATEAU ALLIANCE",
+        "Latitude": 5.325895,
+        "Longitude": -4.017922,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "PLATEAU REPUBLIQUE",
+        "Latitude": 5.318434,
+        "Longitude": -4.019727,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "RIVIERA ABATTA",
+        "Latitude": 5.345541,
+        "Longitude": -3.979014,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "TREICHVILLE MARCH\u00c9",
+        "Latitude": 5.309464,
+        "Longitude": -4.014052,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "YOPOUGON KENEYA",
+        "Latitude": 5.347487,
+        "Longitude": -4.073131,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "YOPOUGON MAROC",
+        "Latitude": 5.330211,
+        "Longitude": -4.103809,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "ABOISSO EHANIA",
+        "Latitude": 5.285542,
+        "Longitude": -3.053246,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "BONOUA",
+        "Latitude": 5.26862,
+        "Longitude": -3.597406,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "BOUAKE COMMERCE",
+        "Latitude": 7.682638,
+        "Longitude": -5.028895,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "BOUAKE MARCHE DE GROS",
+        "Latitude": 7.69794,
+        "Longitude": -5.022602,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "BOUNDIALI",
+        "Latitude": 9.522925,
+        "Longitude": -6.484987,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "DALOA",
+        "Latitude": 6.884599,
+        "Longitude": -6.459477,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "FERKESSEDOUGOU",
+        "Latitude": 9.592457,
+        "Longitude": -5.197731,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "GAGNOA",
+        "Latitude": 6.130674,
+        "Longitude": -5.945839,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "GRAND-LAHOU IROBO",
+        "Latitude": 5.29737,
+        "Longitude": -4.795898,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "KORHOGO",
+        "Latitude": 9.457337,
+        "Longitude": -5.631852,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "KORHOGO TONGON",
+        "Latitude": 9.901097,
+        "Longitude": -5.730662,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "MAN",
+        "Latitude": 7.412676,
+        "Longitude": -7.545198,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "MEAGUI",
+        "Latitude": 5.410757,
+        "Longitude": -6.558391,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "SAN-PEDRO CITE",
+        "Latitude": 4.747751,
+        "Longitude": -6.63474,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "SAN-PEDRO IBOKE",
+        "Latitude": 4.682345,
+        "Longitude": -7.407181,
+        "geocoded": 0
+    },
+    {
+        "bank": "bni",
+        "country": "civ",
+        "address": "YAMOUSSOUKRO",
+        "Latitude": 6.821579,
+        "Longitude": -5.279204,
+        "geocoded": 0
+    }
+]

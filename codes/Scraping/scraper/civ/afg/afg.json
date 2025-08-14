@@ -1,0 +1,29 @@
+{
+    "cotedivoire": [
+        {
+            "name": "Siège Biétry",
+            "Latitude": 5.274082578586596, 
+            "Longitude": -3.9751656304919143
+        },
+        {
+            "name": "Plateau",
+            "Latitude": 5.323258980839078, 
+            "Longitude": -4.0197404614009455
+        },
+        {
+            "name": "Yopougon Complexe",
+            "Latitude": 5.341271239686803, 
+            "Longitude": -4.0633438307130625
+        },
+        {
+            "name": "Treichville",
+            "Latitude": 5.3095521195240085, 
+            "Longitude": -4.013772930713088
+        },
+        {
+            "name": "2 Plateaux",
+            "Latitude": 5.361941818586547, 
+            "Longitude": -3.9896630962075954
+        }
+    ]
+}

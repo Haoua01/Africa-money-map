@@ -1,0 +1,114 @@
+[
+    {
+        "bank": "bin",
+        "country": "niger",
+        "address": "Niamey-Bas, Immeuble BIN, rue de Gawèye –NB 31, Niamey",
+        "Latitude": 13.5115963,
+        "Longitude": 2.1253854,
+        "geocoded": 1
+    },
+    {
+        "bank": "bin",
+        "country": "niger",
+        "address": "Calao, Niamey",
+        "Latitude": 13.5115963,
+        "Longitude": 2.1253854,
+        "geocoded": 1
+    },
+    {
+        "bank": "bin",
+        "country": "niger",
+        "address": "Face Rimbo, Niamey",
+        "Latitude": 13.5115963,
+        "Longitude": 2.1253854,
+        "geocoded": 1
+    },
+    {
+        "bank": "bin",
+        "country": "niger",
+        "address": "Marché Rue du Kalley, Niamey",
+        "Latitude": 13.5115963,
+        "Longitude": 2.1253854,
+        "geocoded": 1
+    },
+    {
+        "bank": "bin",
+        "country": "niger",
+        "address": "Avenue de l’Entente, Niamey",
+        "Latitude": 13.507643,
+        "Longitude": 2.1355532,
+        "geocoded": 1
+    },
+    {
+        "bank": "bin",
+        "country": "niger",
+        "address": "Boulevard Mahamadou Bouhari, Niamey",
+        "Latitude": 13.5115963,
+        "Longitude": 2.1253854,
+        "geocoded": 1
+    },
+    {
+        "bank": "bin",
+        "country": "niger",
+        "address": "Poste balafon, Niamey",
+        "Latitude": 13.5174536,
+        "Longitude": 2.1226869,
+        "geocoded": 1
+    },
+    {
+        "bank": "bin",
+        "country": "niger",
+        "address": "Quartier Sabon Gari, Maradi",
+        "Latitude": 13.5009779,
+        "Longitude": 7.103639599999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bin",
+        "country": "niger",
+        "address": "Gare Centrale, Tessaoua",
+        "Latitude": 13.7558622,
+        "Longitude": 7.986535,
+        "geocoded": 1
+    },
+    {
+        "bank": "bin",
+        "country": "niger",
+        "address": "Pharmacie Centrale, Dakoro",
+        "Latitude": 14.5089177,
+        "Longitude": 6.7654595,
+        "geocoded": 1
+    },
+    {
+        "bank": "bin",
+        "country": "niger",
+        "address": "Rue du commissariat central, Zinder",
+        "Latitude": 13.8018124,
+        "Longitude": 8.98527,
+        "geocoded": 1
+    },
+    {
+        "bank": "bin",
+        "country": "niger",
+        "address": "Marché toles, Agadez",
+        "Latitude": 16.9741689,
+        "Longitude": 7.986535,
+        "geocoded": 1
+    },
+    {
+        "bank": "bin",
+        "country": "niger",
+        "address": "Maboya Amaré, Tahoua",
+        "Latitude": 14.8986694,
+        "Longitude": 5.278662799999999,
+        "geocoded": 1
+    },
+    {
+        "bank": "bin",
+        "country": "niger",
+        "address": "Quartier Afnori, Diffa",
+        "Latitude": 13.3132472,
+        "Longitude": 12.6158803,
+        "geocoded": 1
+    }
+]

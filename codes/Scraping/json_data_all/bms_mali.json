@@ -1,0 +1,322 @@
+[
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "ACI 2000, Bamako",
+        "Latitude": 12.6322277,
+        "Longitude": -8.0288827,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Baco Djikoroni, Carrefour de Kalaban coro, Bamako",
+        "Latitude": 12.583751,
+        "Longitude": -8.023244,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Bougouni Farada, Imm. Fassery COULIBALY, Sikasso",
+        "Latitude": 15.791757697986972,
+        "Longitude": -3.892488103717382,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Centre Commercial, Imm. Nimagala, Bamako",
+        "Latitude": 12.642056,
+        "Longitude": -7.995861,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Daoudabougou, Carrefour Daoudabougou, Imm. TANDIA, Bamako",
+        "Latitude": 12.609132,
+        "Longitude": -7.97537,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Route de Koulikoro, Imm. SODOUF, Bamako",
+        "Latitude": 12.664363,
+        "Longitude": -7.940716,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Route de Koulikoro, Bamako",
+        "Latitude": 12.664363,
+        "Longitude": -7.938361,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Faladi\u00e8, Tour de l'Afrique, Bamako",
+        "Latitude": 12.588048,
+        "Longitude": -7.942821,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Faladi\u00e8, Tour de l'Afrique, Bamako",
+        "Latitude": 12.57975,
+        "Longitude": -7.937028,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Gao Djoulabougou,  Imm. Baba GUINDO, Centre Commercial, Gao",
+        "Latitude": 16.256372611776552,
+        "Longitude": 0.24935759940763802,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Kati Coco, Kati",
+        "Latitude": 12.854146497582663,
+        "Longitude": -7.4960037287173815,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Kayes, Rond Point Harlem, Imm. N'DIAYE, Kayes",
+        "Latitude": 14.439500866197122,
+        "Longitude": -11.390657049029882,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Kidal, Centre Commercial, Kidal",
+        "Latitude": 18.406165754744492,
+        "Longitude": 1.457853693157638,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Koro, Centre Commercia, Mopti",
+        "Latitude": 14.370334774759325,
+        "Longitude": -4.0792556818423815,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Koulikoro Gare, Koulikoro",
+        "Latitude": 12.854146497582663,
+        "Longitude": -7.4960037287173815,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Mopti, Centre Commercial, Mopti",
+        "Latitude": 14.4554592231174,
+        "Longitude": -3.947419744342382,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Niono, Centre Commercial, Imm. YATTASSAYE, Segou",
+        "Latitude": 13.453236031602195,
+        "Longitude": -6.0567947443423815,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "S\u00e9b\u00e9ninkoro, RN 5, pr\u00e8s du Commissariat de Police  9\u00e8me Arrondissement, Bamako",
+        "Latitude": 12.580757,
+        "Longitude": -8.072192,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "S\u00e9gou, Centre Commercial, Imm. KONANDJI, Segou",
+        "Latitude": 13.453236031602195,
+        "Longitude": -6.1446853693423815,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Sikasso Mancourani Natien, Sikassosik",
+        "Latitude": 16.003080382131813,
+        "Longitude": -3.980378728717382,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Tombouctou Bangoum\u00e9, Centre Commercial, Tombouctou",
+        "Latitude": 16.67779945388204,
+        "Longitude": -2.826814275592362,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Halles de Bamako, Bamako",
+        "Latitude": 12.537974534563102,
+        "Longitude": -7.5893875177798815,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Quartier du Fleuve, Imm. Dette Publique, Bamako",
+        "Latitude": 12.633355,
+        "Longitude": -7.999965,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Missira, Bamako",
+        "Latitude": 12.653828,
+        "Longitude": -7.980455,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Hamdallaye, Route de Lafiabougou, Bamako",
+        "Latitude": 12.644237,
+        "Longitude": -8.015885,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Avenue Kasse Keita, en face de Malitel, Bamako",
+        "Latitude": 12.646960272666949,
+        "Longitude": -8.003217062391993,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Quartier du Fleuve, derri\u00e8re CHU Odonto Stomatologie, Bamako",
+        "Latitude": 12.636528,
+        "Longitude": -8.002472,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Hamdallaye ACI 2000, Imm BMS S.A, Bamako",
+        "Latitude": 12.580868279140367,
+        "Longitude": -8.072785955279882,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Grand march\u00e9, Rue Karamoko DIABY, CENTRE COMMERCIAL immeuble espoir, Bamako",
+        "Latitude": 12.645667,
+        "Longitude": -7.997278,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Bandiagara, Mopti",
+        "Latitude": 14.242587380144888,
+        "Longitude": -4.4308181818423815,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Bankass, Hamdallaye Centre Commercial, Mopti",
+        "Latitude": 14.242587380144888,
+        "Longitude": -4.2110916193423815,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Douentza, Mopti",
+        "Latitude": 14.199988810661008,
+        "Longitude": -4.2550369318423815,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Kalaban Coura, Bamako",
+        "Latitude": 12.571938,
+        "Longitude": -7.981951,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Kolokani, Kati",
+        "Latitude": 12.854146497582663,
+        "Longitude": -7.4960037287173815,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Koury, Fronti\u00e8re Mali-Burkina, Sikasso",
+        "Latitude": 15.495535823431428,
+        "Longitude": -4.2001052912173815,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Koutiala Hamdallaye, Imm. Asama KONE, Sikasso",
+        "Latitude": 15.876313399278125,
+        "Longitude": -4.2879959162173815,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Commune de BAYA, face \u00e0 la Gendarmerie, Sikasso",
+        "Latitude": 15.495535823431428,
+        "Longitude": -4.2001052912173815,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "S\u00e9var\u00e9, Centre Commercial, Imm. Kountam Banguetaba, Mopti",
+        "Latitude": 14.4554592231174,
+        "Longitude": -3.815583806842382,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Tominian, Rond Point du March\u00e9, Segou",
+        "Latitude": 13.367741890739778,
+        "Longitude": -6.1007400568423815,
+        "geocoded": 0
+    },
+    {
+        "bank": "bms",
+        "country": "mali",
+        "address": "Z\u00e9goua, fronti\u00e8re Mali-RCI, Sikasso",
+        "Latitude": 15.495535823431428,
+        "Longitude": -4.2001052912173815,
+        "geocoded": 0
+    }
+]

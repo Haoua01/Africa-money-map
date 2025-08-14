@@ -1,0 +1,64 @@
+{
+    "Togo": [
+        {
+            "agence": "NSIA - Agence rue du commerce - Avenue Sylvanus Olympio (ex Rue du Commerce) Lomé - Togo",
+            "Latitude": 6.1242692,
+            "Longitude": 1.2261057
+        },
+        {
+            "agence": "NSIA - Agence Atikpodji - 367 Rue Lac Atikpodji Lomé - Togo",
+            "Latitude": 6.1296024,
+            "Longitude": 1.2326092
+        },
+        {
+            "agence": "NSIA - Agence Akodessewa - Rue 64 BE-HEDJI (Station Cerveau MAWOUENA) Akodésséwa Lomé - Togo",
+            "Latitude": 6.180450599999999,
+            "Longitude": 1.2400133
+        },
+        {
+            "agence": "NSIA - Agence Hedzranawoe - Rue 107, Boulevard HAHO (Face marché HEDZRANAWOE) Lomé - Togo",
+            "Latitude": 6.181600299999999,
+            "Longitude": 1.2404605
+        },
+        {
+            "agence": "NSIA - Agence Adidogome - Route Kpalimé-ADIDOGOME Adidogomé - BP 3925 Lomé - Togo",
+            "Latitude": 6.9097671,
+            "Longitude": 0.6298922
+        },
+        {
+            "agence": "NSIA - Agence AGOE - Route d'Atakpamé face station Total AGOE Lomé - Togo",
+            "Latitude": 6.129557699999999,
+            "Longitude": 1.2196502
+        },
+        {
+            "agence": "NSIA - Agence Avepozo - Route d'Aného, en face de la pharmacie VERSEAU Lomé - Togo",
+            "Latitude": 6.1668203,
+            "Longitude": 1.3344925
+        },
+        {
+            "agence": "NSIA - Point banque agbalepedo - 2495 Avenue de la Chance (en face du siège de la LONATO) Agbalépédo Lomé - Togo",
+            "Latitude": 6.1892751,
+            "Longitude": 1.2079945
+        },
+        {
+            "agence": "NSIA - Point banque aéroport - Hall arrivé de l'aérogare GNASSINGBE EYADEMA Lomé - Togo",
+            "Latitude": 6.129557699999999,
+            "Longitude": 1.2196502
+        },
+        {
+            "agence": "NSIA - Point banque LCT - Zone portuaire dans l'immeuble de LCT Lomé - Togo",
+            "Latitude": 6.129557699999999,
+            "Longitude": 1.2196502
+        },
+        {
+            "agence": "NSIA - Agence KARA - Carrefour BCEAO Police-Mairie Kara - Togo",
+            "Latitude": 9.5519965,
+            "Longitude": 1.1876988
+        },
+        {
+            "agence": "NSIA - Agence CINKASSE - Route Nationale N°1(Station SUN, PETRO AFRICA) Cinkassé - Togo",
+            "Latitude": 11.1059574,
+            "Longitude": 0.014598
+        }
+    ]
+}

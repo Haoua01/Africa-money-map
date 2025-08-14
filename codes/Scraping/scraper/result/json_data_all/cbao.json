@@ -1,0 +1,762 @@
+[
+    {
+        "bank": "cbao",
+        "country": "benin",
+        "address": "CBAO, succursale du Bénin",
+        "Latitude": 6.3633188,
+        "Longitude": 2.4249252,
+        "geocoded": 1
+    },
+    {
+        "bank": "cbao",
+        "country": "niger",
+        "address": "CBAO, succursale du Niger",
+        "Latitude": 13.5115963,
+        "Longitude": 2.1253854,
+        "geocoded": 1
+    },
+    {
+        "bank": "cbao",
+        "country": "burkina",
+        "address": "agence 0, CBAO, succursale du Burkina Faso",
+        "Latitude": 12.3714277,
+        "Longitude": -1.5196603,
+        "geocoded": 1
+    },
+    {
+        "bank": "cbao",
+        "country": "burkina",
+        "address": "agence 1, CBAO, succursale du Burkina Faso",
+        "Latitude": 12.3761205,
+        "Longitude": -1.4937236,
+        "geocoded": 1
+    },
+    {
+        "bank": "cbao",
+        "country": "burkina",
+        "address": "agence 2, CBAO, succursale du Burkina Faso",
+        "Latitude": 12.3714277,
+        "Longitude": -1.5196603,
+        "geocoded": 1
+    },
+    {
+        "bank": "cbao",
+        "country": "burkina",
+        "address": "agence 3, CBAO, succursale du Burkina Faso",
+        "Latitude": 12.3702198,
+        "Longitude": -1.5249082,
+        "geocoded": 1
+    },
+    {
+        "bank": "cbao",
+        "country": "burkina",
+        "address": "agence 4, CBAO, succursale du Burkina Faso",
+        "Latitude": 11.1649219,
+        "Longitude": -4.3051542,
+        "geocoded": 1
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "1 Place de l&#039;indépendance",
+        "Latitude": 14.6693826,
+        "Longitude": -17.4318692,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "KM 4,5 BLD du Centenaire de la commune de dakar",
+        "Latitude": 14.702852,
+        "Longitude": -17.436244,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "1 Place de l&#039;indépendance",
+        "Latitude": 14.6693826,
+        "Longitude": -17.4318692,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "177, Avenue Blaise diagne dakar",
+        "Latitude": 14.6764224,
+        "Longitude": -17.4435466,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Avenue Cheikh Ahmadou Bamba immeuble GIC",
+        "Latitude": 14.6990972,
+        "Longitude": -17.4469183,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Ile de Gorée - Ancienne capitainerie, Ancienne B. Joseph NDIAYE",
+        "Latitude": 14.6679022,
+        "Longitude": -17.3990524,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Immeuble SDIH 2 Place de l&#039;Indépendance",
+        "Latitude": 14.6690051,
+        "Longitude": -17.4319171,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "27 Avenue Jean Jaurès",
+        "Latitude": 14.6673002,
+        "Longitude": -17.4389995,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Plateau, rue Descemet x rue Parent (face marché kermel)",
+        "Latitude": 14.6706561,
+        "Longitude": -17.4282682,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "53 Avenue Lamine Guèye - A côté du showroom de SAMSUNG",
+        "Latitude": 14.6726289,
+        "Longitude": -17.4373357,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "31 Avenue Léopold Sédar Senghor",
+        "Latitude": 14.6660261,
+        "Longitude": -17.4328094,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "40 Avenue El Hadj Malick Sy",
+        "Latitude": 14.6756382,
+        "Longitude": -17.4476476,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "97 Avenue André Peytavin - BP 4111",
+        "Latitude": 14.6687727,
+        "Longitude": -17.4405393,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Entrée de l&#039;Autoroute x Rue Marchand",
+        "Latitude": 14.6812202,
+        "Longitude": -17.4386478,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Rue 15 x Corniche Ouest - P 129 Dakar",
+        "Latitude": 14.6759379,
+        "Longitude": -17.4536279,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "2,7 Boulevard de la commune de dakar",
+        "Latitude": 14.4137931,
+        "Longitude": -17.2613456,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Avenue Cheikh Anta Diop en facePolice 4e arrondis.",
+        "Latitude": 14.6828493,
+        "Longitude": -17.4510937,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "7 Avenue Bourguiba face SODIDA",
+        "Latitude": 14.72501,
+        "Longitude": -17.4454208,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Rue 13 X P N°6 Castors ",
+        "Latitude": 14.7227586,
+        "Longitude": -17.4530135,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Avenue Cheikh Anta Diop en face Banque de Sang",
+        "Latitude": 14.6962453,
+        "Longitude": -17.4651039,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Avenue Cheikh Anta Diop x léo frobenuis Mermoz",
+        "Latitude": 14.6988615,
+        "Longitude": -17.4690025,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Ouagou Niayes à côté de la pharmacie",
+        "Latitude": 14.7072771,
+        "Longitude": -17.447093,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Maristes II  sur la route  principale Lot S/110",
+        "Latitude": 14.7388913,
+        "Longitude": -17.4312435,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Bloc A Jet D&#039;eau rond point jet d&#039;eau  - Sicap Liberté 3",
+        "Latitude": 14.7117723,
+        "Longitude": -17.4557021,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Ngor route des almadies en face station shell",
+        "Latitude": 14.7475795,
+        "Longitude": -17.5081878,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "10 Boulevard de l&#039;Est X Rue 2 - Face OUMOU Informatique",
+        "Latitude": 14.694987,
+        "Longitude": -17.45805928,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Ouest Foire - IMMEUBLE ccbm vdn FACE cices",
+        "Latitude": 14.7390759,
+        "Longitude": -17.4725338,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "2 Voies Liberté 6 Lot 18 - Immeuble Serigne Fallou mbacké",
+        "Latitude": 14.7306615,
+        "Longitude": -17.4592724,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Liberté 6 Extension Lot N° 24 VDN",
+        "Latitude": 14.7262861,
+        "Longitude": -17.4712577,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Route de l&#039;Aéroport  LSS     Résidence Galle YANGUE",
+        "Latitude": 14.7550693,
+        "Longitude": -17.4696313,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Yoff près du C.A. BCEAO",
+        "Latitude": 14.7576224,
+        "Longitude": -17.4689897,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Yeumbeul Bène Baraque",
+        "Latitude": 14.7881714,
+        "Longitude": -17.3499586,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "En face l&#039;école Keur Dior",
+        "Latitude": 14.7586363,
+        "Longitude": -17.4481414,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Immeuble Elhadji Mamadou Mbaye en face sde Guédiawaye",
+        "Latitude": 14.7828199,
+        "Longitude": -17.376013,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Rond point Keur Massar 1452 cité Ainoumady",
+        "Latitude": 14.7731549,
+        "Longitude": -17.3166166,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Route des Parcelles Assainies",
+        "Latitude": 14.4548182,
+        "Longitude": -12.2106702,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Pacelles assanies unité 14 Imm Route des Niayes X  croisement Serigne Fallou",
+        "Latitude": 14.7506143,
+        "Longitude": -17.4401438,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "TALLY Boumak BP 129",
+        "Latitude": 14.7612158,
+        "Longitude": -17.3939384,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Pikine Tally Boumack X Route des Niayes en face marché zinc",
+        "Latitude": 14.7638769,
+        "Longitude": -17.3913511,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Pikine Icotaf Parcelles 5295",
+        "Latitude": 14.758999,
+        "Longitude": -17.387856,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Quartier Medina Zone Urbanisme Rufisque",
+        "Latitude": 14.7198737,
+        "Longitude": -17.2833559,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Route de Rufisque en face poste de thiaroye",
+        "Latitude": 14.7453036,
+        "Longitude": -17.3787022,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Quartier Boucotte Rond Point Balaly ",
+        "Latitude": 12.5862088,
+        "Longitude": -16.2705455,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Route nationale près du marché de bignona",
+        "Latitude": 12.7981049,
+        "Longitude": -16.2265302,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Quartier Boucotte ESSO - en face station Total",
+        "Latitude": 12.5654075,
+        "Longitude": -16.2973798,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Place du Marché",
+        "Latitude": 12.5394781,
+        "Longitude": -16.5696191,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Quartier Dalaba Rond Point du marché",
+        "Latitude": 12.5572516,
+        "Longitude": -12.1788631,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Rue capitaine Jevalier BP 45",
+        "Latitude": 12.5773136,
+        "Longitude": -16.2777183,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Quartier Centre en face du centre de santé",
+        "Latitude": 13.1404002,
+        "Longitude": -14.1182728,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Sabadola",
+        "Latitude": 13.214368,
+        "Longitude": -12.1069367,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Quartier Pont Salikegne",
+        "Latitude": 13.7721031,
+        "Longitude": -13.6671378,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Route Nationale Boulevard Demba Diop",
+        "Latitude": 13.6748054,
+        "Longitude": -13.7753844,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Route Nationale Avenue Léopold S Senghor",
+        "Latitude": 14.6568423,
+        "Longitude": -16.214715,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Rue John F Kennedy n° 324",
+        "Latitude": 14.135755,
+        "Longitude": -16.077493,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Sahm Route de Gossas",
+        "Latitude": 14.1627372,
+        "Longitude": -16.0760451,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "lot N° 26 Médina Mbaye",
+        "Latitude": 14.1573731,
+        "Longitude": -16.0663909,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Darou Marnane route de Mbacké entrée autoroute",
+        "Latitude": 14.8284562,
+        "Longitude": -15.894088,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Quartier escale en face du Marché",
+        "Latitude": 15.0415138,
+        "Longitude": -16.0464203,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Touba Khaira BP 177",
+        "Latitude": 14.8452295,
+        "Longitude": -15.8840512,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Route de darou mousty Touba Madyana",
+        "Latitude": 14.882391,
+        "Longitude": -15.894916,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Quartier Mbal, angle Serigne Fallou",
+        "Latitude": 14.8529842,
+        "Longitude": -15.8807293,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Touba Darou Khoudos à la rue Ndiougua Kébé",
+        "Latitude": 14.8575955,
+        "Longitude": -15.8932948,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Station Shell Kébémer Route de Saint louis",
+        "Latitude": 15.3737643,
+        "Longitude": -16.4495795,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "N°187 rue Keur Serigne Louga",
+        "Latitude": 15.6181451,
+        "Longitude": -16.2219668,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "N°187 rue Keur Serigne Louga",
+        "Latitude": 15.6211785,
+        "Longitude": -16.2229806,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Avenue Demba Diop RN en face sonatel",
+        "Latitude": 14.411335,
+        "Longitude": -16.967644,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Grand Mbour sur la route nationale",
+        "Latitude": 14.4228422,
+        "Longitude": -16.96553756,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Saly Portudal après la caserne des sapeurs pompiers ",
+        "Latitude": 14.4424058,
+        "Longitude": -17.0156121,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Boulevard Jean Colin Concorde ",
+        "Latitude": 14.778042,
+        "Longitude": -16.9299211,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Route Nationale 2 Promenade des Thiéssois RN 2",
+        "Latitude": 14.7846387,
+        "Longitude": -16.9370974,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Avenue Léopold Sedar Senghor",
+        "Latitude": 14.7944934,
+        "Longitude": -16.9256632,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Quartier Keur Cheikh Awa Balla Mbacké - Rte de St Louis",
+        "Latitude": 14.9619156,
+        "Longitude": -16.8040109,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Bakel Coura Route Nationale",
+        "Latitude": 14.9046841,
+        "Longitude": -12.4592469,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Quartier wadiga route nationale ",
+        "Latitude": 15.0208983,
+        "Longitude": -12.5411304,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Galoya garage sur la route nationale à 85km de ouross",
+        "Latitude": 16.0752201,
+        "Longitude": -13.8546464,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Lot Sud n°1169 à l’est de la RN N°1 et au Nord de la route menant au Mali",
+        "Latitude": 14.4548182,
+        "Longitude": -12.2106702,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Route nationale MPAL",
+        "Latitude": 15.9169765,
+        "Longitude": -16.2709472,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Quartier Ndioloféne en face Route Nationale 2",
+        "Latitude": 16.510305,
+        "Longitude": -14.6442636,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Route Nationale 1 en face de la gendarmerie",
+        "Latitude": 15.6110706,
+        "Longitude": -13.3210318,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Route nationale - BP 70  Richard Toll- Sénégal",
+        "Latitude": 16.4666393,
+        "Longitude": -15.7010962,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Rue Khalifa Ababacar Sy X Rue Potin",
+        "Latitude": 16.0271735,
+        "Longitude": -16.5048054,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Station Shell Saint Louis Gare Routiére",
+        "Latitude": 16.0280885,
+        "Longitude": -16.5011457,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Quartier sanar en face université Gaston Berger ",
+        "Latitude": 16.0320138,
+        "Longitude": -16.523284,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Thilogne sur la route Nationale à 50 Km de ourossogui",
+        "Latitude": 15.9646721,
+        "Longitude": -13.5923239,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Quartier hlm prés du poste tranfo senelec",
+        "Latitude": 15.2646615,
+        "Longitude": -12.8678424,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "Rond point cité Keur Gorgui derriere siège Sonatel",
+        "Latitude": 14.7118041,
+        "Longitude": -17.4694388,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "lot. 70, route des Emetteurs. Rufisque Ouest",
+        "Latitude": 14.7358947,
+        "Longitude": -17.2876044,
+        "geocoded": 0
+    },
+    {
+        "bank": "cbao",
+        "country": "senegal",
+        "address": "CBAO KOLDA sis, lot n°32 E, route du camp militaire Moussa Molo, derrière le Tri",
+        "Latitude": 13.1437666,
+        "Longitude": -14.106102,
+        "geocoded": 0
+    }
+]
