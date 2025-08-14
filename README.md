@@ -39,26 +39,26 @@ We examined bank branch accessibility using geospatial data and socio-economic i
 
 
 ### Section 3.2 Data on bank branches
-    * Codes: 
+    - Codes: 
         * Bank scraping and geocoding: codes/Scraping/scraper
         * Combining data and shape file generation: codes/Scraping/combine_json.py and codes/Scraping/shapefile_generator.py
-    * Data: data/Scraping_data
+    - Data: data/Scraping_data
 ### Section 4.1 Indicator 1: a Floating Catchment Area (FCA) model
-    * Codes: 
+    - Codes: 
         * Distance matrix generation: codes/ORS/ors_time_distance_matrix.py
         * Index of access: codes/FCA
-    * Data: data/Indicators/FCA
+    - Data: data/Indicators/FCA
 ### Section 4.2 Indicator 2: a fully isochrones approach
-    * Codes:
+    - Codes:
         * Isochrone generation: codes/ORS/ors_isochrones.py
-    * Intermediate operations are performed directly in QGIS
-    * Data: data/Indicators/Fully_isochrone
+    - Intermediate operations are performed directly in QGIS
+    - Data: data/Indicators/Fully_isochrone
 ### Section 4.3 Indicator 3: a hybrid index of bank branch access 
-    * Operations are performed in QGIS 
-    * Data: data/Indicators/Hybrid
+    - Operations are performed in QGIS 
+    - Data: data/Indicators/Hybrid
 ### Section 5 Assessing the determinants of bank branch access
-    * R script: codes/regression/regression.qmd
-    * Data: data/LSMS_data/regression.csv
+    - R script: codes/regression/regression.qmd
+    - Data: data/LSMS_data/regression.csv
 
 
 
