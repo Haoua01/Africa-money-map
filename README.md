@@ -29,7 +29,7 @@ We examined bank branch accessibility using geospatial data and socio-economic i
 * Lower education levels and higher shares of agricultural/self-employed workers correlate with lower access.
 * Data gaps in granular socio-economic indicators limit causal analysis.
 
-## 2. Workflow
+## 2. Codes and data
 
 ### Prerequisites
 * Python 3.9+
