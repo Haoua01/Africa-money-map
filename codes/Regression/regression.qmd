@@ -1,0 +1,361 @@
+---
+title: "Determinants of bank branch outreach"
+author: "Haoua"
+date: "2025-08-11"
+format: 
+  pdf: 
+    number-sections: true  # Number the sections
+editor: visual
+
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| echo: false
+#install.packages("tidyr")
+library(readr)
+library(dplyr)
+library(tidyr)
+library(stargazer)
+library(ggplot2)
+library(kableExtra)
+#install.packages("gt")
+library(gt)
+#install.packages("car")
+library(car)
+#install.packages("AER")
+library(ivreg)
+library(tibble)
+#install.packages("OneR")
+#install.packages("stringr")
+library(OneR)
+library(stringr)
+#install.packages("psych")
+#library(psych)
+library(kableExtra)
+#install.packages("ggplot2")
+#install.packages("reshape2")
+library(ggplot2)
+library(reshape2)
+#install.packages("performance")
+library(performance)
+#install.packages("ISLR")
+library(ISLR)
+#install.packages("corrplot")
+library(corrplot)
+library(sandwich)
+library(lmtest)
+```
+
+```{r}
+df <- read_csv('/Users/haouabenaliabbo/Desktop/M2 IREN/ALTERNANCE/Bounie/UEMOA isochrones/data_regression.csv')
+```
+
+```{r}
+spec(df)
+```
+
+```{r}
+df <- df %>%
+  rename(
+    density = Density,
+    age = j_age,
+    religion = j_religion,
+    agriculture = j_prop_agr,
+    trade = j_prop_tra,
+    industry = j_prop_ind,
+    no_formal_education = j_prop_noe,
+    undergraduate = j_prop_und,
+    postgraduate = j_prop_pos,
+    livestock = j_pr_lives,
+    married = j_prop_mar,
+    employed_12m = j_pr_empl1,
+    self_employed = j_pr_selfe,
+    male = j_prop_mal,
+    frontier = j_frontier,
+    Total_bran = branches_Total_bran
+  )
+```
+
+```{r}
+# Assuming 'data' is your data frame and 'ADM0_EN' is the column for countries
+dummy_data <- model.matrix(~ ADM0_EN - 1, data = df)
+
+# Convert the matrix to a data frame and add it back to the original data
+data <- cbind(df, dummy_data)
+
+```
+
+```{r}
+dummy_vars <- c("ADM0_ENBenin", "`ADM0_ENBurkina Faso`", "`ADM0_ENIvory Coast`", "ADM0_ENMali",  "ADM0_ENNiger",  "ADM0_ENSenegal",  "ADM0_ENTogo")
+meaning_dummy_vars <- c("Benin", "Burkina Faso",
+                        "`Ivory Coast", "Mali", "Niger", 
+                        "Senegal", "Togo")
+```
+
+```{r}
+
+# Variables for Saving and Credits (Section 6)
+
+
+data$isBranch <- ifelse(data$Total_bran > 0, 1, 0)
+data$log_bran <- log2(data$Total_bran+1)
+
+# Define the target variable
+target <- "Total_bran"
+
+
+other_vars <- c("density", "frontier")
+meaning_other <- c("Density (hab/km2)", "Frontier")
+
+id_vars <- c("age", "male")
+meaning_id <- c("Average adult age", "Average adult male population")
+
+marital_status_vars <- c("married")
+meaning_marital_status <- c("Married")
+
+#religion_vars <- c("religion_1", "religion_2")
+#meaning_religion <- c("Muslim", "Christian")
+
+#education_vars <- c("educ_scol_1", "educ_scol_2", "educ_scol_3", "educ_scol_4", "educ_scol_5", "educ_scol_6", "educ_scol_7", "educ_scol_8")
+#meaning_current_education <- c("Preschool", "Primary", "Sec. 1 Gen.", "Sec. 1 Tech.", "Sec. 2 Gen.", "Sec. 2 Tech.", "Post-sec.", "Higher")
+
+highest_education_vars <- c("no_formal_education")
+meaning_highest_education <- c("Formal Education: None")
+
+#employment_7days_vars <- c("activ7j_5")
+#meaning_7days <- c("Employment: Inactive (7 days)")
+
+employment_12_months_vars <- c("employed_12m")
+meaning_12m <- c("Employed (12 months)")
+
+branch_of_activity_vars <- c("agriculture", "livestock", "trade")
+meaning_branch_activity <- c("Branch: Agriculture", "Branch: Livestock/Fish", "Branch: Trade")
+
+csp_vars <- c("self_employed")
+meaning_csp <- c("Self-employed")
+
+
+saving_credits_vars <- c(
+  other_vars,
+  id_vars,
+  marital_status_vars,
+  #religion_vars,
+  #education_vars,
+  highest_education_vars,
+  #employment_7days_vars,
+  #employment_12_months_vars,
+  branch_of_activity_vars,
+  csp_vars
+)
+
+
+# Meaning of the predictors 
+predictor_meaning_saving_credits <- all_meanings <- c(
+  meaning_other,
+  meaning_id,
+  meaning_marital_status,
+  #meaning_religion,
+  #meaning_current_education,
+  meaning_highest_education,
+  #meaning_7days,
+  #meaning_12m,
+  meaning_branch_activity,
+  meaning_csp
+)
+
+
+
+# Ensure both vectors have the same length
+if(length(saving_credits_vars) != length(predictor_meaning_saving_credits)) {
+  stop("Length of saving_credits_vars and predictor_meaning_saving_credits must be the same")
+}
+
+
+# Create a data frame for Descriptive Statistics using sapply
+desc_stats_saving_credits <- data.frame(
+  Variable = saving_credits_vars,
+  Meaning = predictor_meaning_saving_credits,
+  Mean = sapply(data[, saving_credits_vars], mean, na.rm = TRUE),
+  SD = sapply(data[, saving_credits_vars], sd, na.rm = TRUE),
+  Min = sapply(data[, saving_credits_vars], min, na.rm = TRUE),
+  Max = sapply(data[, saving_credits_vars], max, na.rm = TRUE)
+)
+
+
+# Display the table using gt for nice formatting
+desc_stats_saving_credits %>%
+  gt() %>%
+  tab_header(
+    title = "Descriptive Statistics"
+  ) %>%
+  cols_label(
+    Variable = "Predictor",
+    Meaning = "Meaning of Predictor",
+    Mean = "Mean",
+    SD = "Std. Deviation",
+    Min = "Min",
+    Max = "Max"
+  ) %>%
+  fmt_number(
+    columns = vars(Mean, SD, Min, Max),
+    decimals = 1
+  ) %>%
+  cols_align(
+    align = "left",
+    columns = everything()
+  ) %>%
+  tab_options(
+    table.width = pct(100)
+  )
+
+```
+
+```{r}
+head(data)
+```
+
+```{r}
+ggplot(data, aes(x = isBranch)) +
+  geom_histogram(binwidth = 0.1, fill = "blue", color = "black", alpha = 0.7) +
+  labs(title = "Distribution of log_bran", x = "log_bran", y = "Frequency") +
+  theme_minimal()
+```
+
+```{r}
+# Create the dataset with selected variables
+selected_data <- data[, c(saving_credits_vars)]
+
+# Calculate the correlation matrix (remove non-numeric columns like the target if needed)
+cor_matrix <- cor(selected_data, use = "complete.obs")
+
+# Melt the correlation matrix into a long format for ggplot
+cor_matrix_melted <- melt(cor_matrix)
+
+# Plot the correlation matrix as a heatmap
+ggplot(cor_matrix_melted, aes(Var1, Var2, fill = value)) + 
+  geom_tile() + 
+  scale_fill_gradient2(low = "blue", high = "red", mid = "white", midpoint = 0, 
+                       limit = c(-1, 1), name="Correlation") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.text.y = element_text(angle = 45, hjust = 1)) +
+  labs(title = "Correlation Matrix", x = "", y = "") +
+  coord_fixed()
+```
+
+```{r}
+predictors <- c(saving_credits_vars, dummy_vars)
+formula <- as.formula(paste(target, "~", paste(predictors, collapse = " + ")))
+est1 <- lm(formula, data = data)
+summary(est1)
+```
+
+```{r}
+var_names <- coef_table1$Variable
+var_meanings <- c("(Intercept)", predictor_meaning_saving_credits)
+
+# Replace variable names with meanings
+coef_table1$Label <- var_meanings[match(var_names, c("(Intercept)", saving_credits_vars))]
+
+# Prepare plot data (with readable labels)
+coef_plot_data <- coef_table1 %>%
+  rename(
+    Estimate = Estimate,
+    Std_Error = `Std. Error`
+  ) %>%
+  mutate(
+    Lower = Estimate - 1.96 * Std_Error,
+    Upper = Estimate + 1.96 * Std_Error
+  ) %>%
+  filter(Variable != "(Intercept)")  # Remove intercept if not wanted
+
+# Plot using the human-readable labels
+ggplot(coef_plot_data, aes(x = Estimate, y = reorder(Label, Estimate))) +
+  geom_point(size = 3) +
+  geom_errorbarh(aes(xmin = Lower, xmax = Upper), height = 0.2) +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "black") +
+  labs(
+    title = "OLS Coefficient Plot - Total Branch",
+    x = "Estimate (95% CI)",
+    y = "Predictors"
+  ) +
+  theme_minimal()
+```
+
+```{r}
+formula <- as.formula(paste(target, "~", paste(saving_credits_vars, collapse = " + ")))
+est1 <- lm(formula, data = data)
+
+# Get the summary of the regression model
+ols_summary1 <- summary(est1)
+
+# Extract the coefficients matrix
+coef_matrix1 <- ols_summary1$coefficients
+
+# Convert the coefficients matrix to a data frame
+coef_table1 <- as.data.frame(coef_matrix1)
+
+# Convert row names to a column for better formatting
+coef_table1 <- tibble::rownames_to_column(coef_table1, var = "Variable")
+
+
+
+# Display using gt with color highlights for significant variables
+gt(coef_table1) %>%
+  tab_header(title = "OLS Regression Results - isBranch") %>%
+  cols_label(
+    Variable = "Predictor",
+    #Meaning = "Meaning of Predictor",  # Add a column for the meaning of each predictor
+    Estimate = "Estimate",
+    #`Std. Error` = "Standard Error",
+    `t value` = "t-value",
+    `Pr(>|t|)` = "p-value"
+  ) %>%
+  fmt_number(
+    columns = c(Estimate, `Std. Error`, `t value`),
+    decimals = 2
+  ) %>%
+    fmt_number(
+    columns = c(`Pr(>|t|)`),
+    decimals = 3
+  ) %>%
+  cols_align(
+    align = "left",
+    columns = c(Variable)
+  ) 
+
+```
+
+```{r}
+# Cluster standard errors by spatial unit (e.g., municipality)
+clustered_se <- vcovCL(est1, cluster = ~ ADM1_FR)
+
+# Summary with clustered standard errors
+coeftest(est1, vcov = clustered_se)
+```
+
+```{r}
+# Load necessary libraries
+library(sandwich)
+library(lmtest)
+
+# Create a combined identifier for hierarchical clustering (region and country)
+data$region_country <- paste(data$ADM2_FR, data$ADM1_FR, sep = "_")
+
+# Cluster standard errors by the combined region and country variable
+clustered_se <- vcovCL(est1, cluster = ~region_country)
+
+# Display the results with clustered standard errors
+coeftest(est1, vcov = clustered_se)
+
+```
+
+```{r}
+formula2 <- as.formula(paste("isBranch", "~", paste(saving_credits_vars, collapse = " + ")))
+est2 <- glm(formula2, data = data)
+summary(est2)
+```
