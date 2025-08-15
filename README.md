@@ -57,8 +57,12 @@ We examined bank branch accessibility using geospatial data and socio-economic i
     - Operations are performed in QGIS 
     - Data: data/Indicators/Hybrid
 ### Section 5 Assessing the determinants of bank branch access
-    - R script: codes/regression/regression.qmd
-    - Data: data/LSMS_data/regression.csv
+    - Codes: 
+          * citypopulation codes: codes/Regression/citypopulation
+          * R script for regression: codes/Regression/regression.qmd
+    - Data: 
+          * citypopulation data: data/Regression/citypopulation
+          * Regression: data/LSMS_data/Regression.csv
 
 
 
