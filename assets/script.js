@@ -53,9 +53,9 @@ document.addEventListener("DOMContentLoaded", async function () {
     // Fetch GeoJSON data
     // Fetch UEMOA and CEMAC borders
     const uemoaData = await fetch(uemoaBordersFile).then(response => response.json());
-    const cemacData = await fetch(cemacBordersFile).then(response => response.json());
-    const ghanaData = await fetch(ghanaBordersFile).then(response => response.json());
-    const nigeriaData = await fetch(nigeriaBordersFile).then(response => response.json());
+    // const cemacData = await fetch(cemacBordersFile).then(response => response.json());
+    // const ghanaData = await fetch(ghanaBordersFile).then(response => response.json());
+    // const nigeriaData = await fetch(nigeriaBordersFile).then(response => response.json());
     fetch(geoJsonFile)
         .then(response => response.json())
         .then(geoJsonData => {
@@ -357,7 +357,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 })
                 .catch(error => console.error('Error loading UEMOA borders:', error));
     
-            // Load CEMAC borders
+            /*
             fetch(cemacBordersFile)
                 .then(response => response.json())
                 .then(data => {
@@ -368,6 +368,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     }).addTo(map);
                 })
                 .catch(error => console.error('Error loading CEMAC borders:', error));
+                */
         }
 
 
