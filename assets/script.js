@@ -15,11 +15,11 @@ document.addEventListener("DOMContentLoaded", async function () {
 		fullscreenElement: false // Dom element to render in full screen, false by default, fallback to map._container
 	}).addTo(map);
 
-    const geoJsonFile = "web_data/communes_all_pop_v2.geojson"; 
+    const geoJsonFile = "data/Indicators/Hybrid/hybrid_scores.geojson"; 
     const uemoaBordersFile = "web_data/uemoa_borders.geojson"; 
-    const cemacBordersFile = "web_data/cemac_borders.geojson"; 
-    const ghanaBordersFile = "web_data/ghana_borders.geojson";
-    const nigeriaBordersFile = "web_data/nigeria_borders.geojson";
+    //const cemacBordersFile = "web_data/cemac_borders.geojson"; 
+    //const ghanaBordersFile = "web_data/ghana_borders.geojson";
+    //const nigeriaBordersFile = "web_data/nigeria_borders.geojson";
 
     // Create a loading spinner
     const loadingSpinner = document.createElement("div");
@@ -78,10 +78,10 @@ document.addEventListener("DOMContentLoaded", async function () {
                 "Niger": { lat: 17.6, lng: 8, zoom: 6 },
                 "Senegal": { lat: 14.5, lng: -14, zoom: 7 },
                 "Togo": { lat: 8.2, lng: 1.3, zoom: 7 },
-                "Ghana": { lat: 7.5, lng: -0.5, zoom: 7 },
-                "Cameroon": { lat: 6.5, lng: 13, zoom: 6 },
-                "Chad": { lat: 15.5, lng: 18, zoom: 5 }, 
-                "Nigeria": { lat: 9.1, lng: 8.5, zoom: 6 },
+                //"Ghana": { lat: 7.5, lng: -0.5, zoom: 7 },
+                //"Cameroon": { lat: 6.5, lng: 13, zoom: 6 },
+                //"Chad": { lat: 15.5, lng: 18, zoom: 5 }, 
+                //"Nigeria": { lat: 9.1, lng: 8.5, zoom: 6 },
             };
 
             // Country Dropdown
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
                     // Load map data
                     loadMapData(geoJsonData, coun, "", "", "", selectedEquipment);
-                    updateStats(filteredCountryData,filteredCountryData, coun);
+                    // updateStats(filteredCountryData,filteredCountryData, coun);
                 });
 
                 countryDropdown.appendChild(listItem);
@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         document.getElementById("regionDropdown").textContent = reg;
                         document.getElementById("departmentDropdown").textContent = "";
                         document.getElementById("communeDropdown").textContent = "";
-                        updateStats(filteredCountryData, filteredRegionData, country);
+                        // updateStats(filteredCountryData, filteredRegionData, country);
                         loadMapData(geoJsonData, country, reg, "", "", selectedEquipment);
                     });
                     regionDropdown.appendChild(regionItem);
@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         document.getElementById("departmentDropdown").textContent = dep;
                         document.getElementById("regionDropdown").textContent = region;
                         document.getElementById("communeDropdown").textContent = "";
-                        updateStats(filteredCountryData, filteredDepartmentData, country);
+                        // updateStats(filteredCountryData, filteredDepartmentData, country);
                         loadMapData(geoJsonData, country, region, dep, "", selectedEquipment);
                     });
                     departmentDropdown.appendChild(departmentItem);
@@ -216,7 +216,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         document.getElementById("communeDropdown").textContent = comm;
                         document.getElementById("departmentDropdown").textContent = department;
                         document.getElementById("regionDropdown").textContent = region;
-                        updateStats(filteredCountryData, filteredCommuneData, country);
+                        // updateStats(filteredCountryData, filteredCommuneData, country);
                         loadMapData(geoJsonData, country, region, department, comm, selectedEquipment);
                     });
                     communeDropdown.appendChild(communeItem);
