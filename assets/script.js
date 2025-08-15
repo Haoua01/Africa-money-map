@@ -383,6 +383,25 @@ document.addEventListener("DOMContentLoaded", async function () {
         if (['Cameroon', 'Chad', 'Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'].includes(country)) {
             legend = L.control({ position: "bottomright" });
     
+            const grades = [1, 0.5, 0.2, 0.1, 0.01];
+    
+            legend.onAdd = function () {
+                const div = L.DomUtil.create("div", "legend");
+    
+                div.innerHTML += "<strong>Bank Branch Score Access</strong><br>";
+                for (let i = 0; i < grades.length; i++) {
+                    div.innerHTML += `<i style="background:${getColor(grades[i], country)}"></i> ${
+                        grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "-0"}<br>`;
+                }
+    
+                return div;
+            };
+    
+            legend.addTo(map);  // Add the new legend
+        } 
+        else if (['Cameroon', 'Chad'].includes(country)) {
+            legend = L.control({ position: "bottomright" });
+    
             const grades = [1, 0.5, 0.1, 0.01, 0.001];
     
             legend.onAdd = function () {
@@ -424,9 +443,9 @@ document.addEventListener("DOMContentLoaded", async function () {
         // Color mapping based on country
         if (['Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'].includes(country)) {
             return value > 0.5 ? "#08519c" :  // Darkest
-            value > 0.1 ? "#3182bd" :
-            value > 0.01 ? "#6baed6" :
-            value > 0.001 ? "#bdd7e7" :  // Lightest
+            value > 0.2 ? "#3182bd" :
+            value > 0.1 ? "#6baed6" :
+            value > 0.01 ? "#bdd7e7" :  // Lightest
             "#eff3ff";  // Lightest
      
         } else if (['Ghana', 'Nigeria'].includes(country)) {
