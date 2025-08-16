@@ -67,7 +67,7 @@ We examined bank branch accessibility using geospatial data and socio-economic i
 ### Section 4.2 Indicator 2: a fully isochrones approach
 - Codes:
     * Isochrone generation: [codes/ORS/ors_isochrones.py](https://github.com/Haoua01/Africa-money-map/blob/main/codes/ORS/ors_isochrones.py)
-- Intermediate operations are performed directly in QGIS
+    * Other operations are performed directly in QGIS
 - Data: [data/Indicators/Fully_isochrone](https://github.com/Haoua01/Africa-money-map/tree/main/data/Indicators/Fully_isochrone)
 
 ---
