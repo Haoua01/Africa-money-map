@@ -62,7 +62,7 @@ We examined bank branch accessibility using geospatial data and socio-economic i
           * R script for regression: codes/Regression/regression.qmd
     - Data: 
           * citypopulation data: data/Regression/citypopulation
-          * Regression: data/LSMS_data/Regression.csv
+          * Regression: data/Regression/data_regression.csv
 
 
 
