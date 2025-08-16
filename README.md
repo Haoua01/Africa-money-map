@@ -38,58 +38,49 @@ We examined bank branch accessibility using geospatial data and socio-economic i
   
 ---
 
-### Section 3.2 Data on bank branches
-- **Codes**:
-  * [Bank scraping and geocoding](https://github.com/Haoua01/Africa-money-map/tree/main/codes/Scraping/scraper)
-  * [Combine data](https://github.com/Haoua01/Africa-money-map/blob/main/codes/Scraping/combine_json.py) and [Shapefile generator](https://github.com/Haoua01/Africa-money-map/blob/main/codes/Scraping/shapefile_generator.py)
-- **Data**:
-  * [Scraping data](https://github.com/Haoua01/Africa-money-map/tree/main/data/Scraping_data)
+### Section 3.2 Data on bank branches
+- Codes: 
+    * Bank scraping and geocoding: [codes/Scraping/scraper](https://github.com/Haoua01/Africa-money-map/tree/main/codes/Scraping/scraper)
+    * Combining data and shape file generation: [codes/Scraping/combine_json.py](https://github.com/Haoua01/Africa-money-map/blob/main/codes/Scraping/combine_json.py) and [codes/Scraping/shapefile_generator.py](https://github.com/Haoua01/Africa-money-map/blob/main/codes/Scraping/shapefile_generator.py)
+- Data: [data/Scraping_data](https://github.com/Haoua01/Africa-money-map/tree/main/data/Scraping_data)
 
 ---
 
-### Section 3.3 Socio‑economic data
-- **Codes**:
-  * Household data cleaning is performed in QGIS
-  * [Citypopulation codes](https://github.com/Haoua01/Africa-money-map/tree/main/codes/Regression/citypopulation)
-- **Data**:
-  * [Citypopulation data](https://github.com/Haoua01/Africa-money-map/tree/main/data/Regression/citypopulation)
-  * [Regression data (CSV)](https://github.com/Haoua01/Africa-money-map/blob/main/data/Regression/data_regression.csv)
+### Section 3.3 Socio-economic data
+- Codes: 
+    * Household data cleaning is performed in QGIS 
+    * citypopulation codes: [codes/Regression/citypopulation](https://github.com/Haoua01/Africa-money-map/tree/main/codes/Regression/citypopulation)
+- Data: 
+    * citypopulation data: [data/Regression/citypopulation](https://github.com/Haoua01/Africa-money-map/tree/main/data/Regression/citypopulation)
+    * Regression: [data/Regression/data_regression.csv](https://github.com/Haoua01/Africa-money-map/blob/main/data/Regression/data_regression.csv)
 
 ---
 
-### Section 4.1 Indicator 1: Floating Catchment Area (FCA) model
-- **Codes**:
-  * [ORS distance matrix generation](https://github.com/Haoua01/Africa-money-map/blob/main/codes/ORS/ors_time_distance_matrix.py)
-  * [Index of access code](https://github.com/Haoua01/Africa-money-map/tree/main/codes/FCA)
-- **Data**:
-  * [FCA data](https://github.com/Haoua01/Africa-money-map/tree/main/data/Indicators/FCA)
+### Section 4.1 Indicator 1: a Floating Catchment Area (FCA) model
+- Codes: 
+    * Distance matrix generation: [codes/ORS/ors_time_distance_matrix.py](https://github.com/Haoua01/Africa-money-map/blob/main/codes/ORS/ors_time_distance_matrix.py)
+    * Index of access: [codes/FCA](https://github.com/Haoua01/Africa-money-map/tree/main/codes/FCA)
+- Data: [data/Indicators/FCA](https://github.com/Haoua01/Africa-money-map/tree/main/data/Indicators/FCA)
 
 ---
 
-### Section 4.2 Indicator 2: Fully isochrones approach
-- **Codes**:
-  * [Isochrone generation](https://github.com/Haoua01/Africa-money-map/blob/main/codes/ORS/ors_isochrones.py)
-- **Operations**: Intermediate workflows are executed directly in QGIS  
-- **Data**:
-  * [Fully isochrone data](https://github.com/Haoua01/Africa-money-map/tree/main/data/Indicators/Fully_isochrone)
+### Section 4.2 Indicator 2: a fully isochrones approach
+- Codes:
+    * Isochrone generation: [codes/ORS/ors_isochrones.py](https://github.com/Haoua01/Africa-money-map/blob/main/codes/ORS/ors_isochrones.py)
+- Intermediate operations are performed directly in QGIS
+- Data: [data/Indicators/Fully_isochrone](https://github.com/Haoua01/Africa-money-map/tree/main/data/Indicators/Fully_isochrone)
 
 ---
 
-### Section 4.3 Indicator 3: Hybrid index of bank branch access
-- **Operations**: Conducted in QGIS  
-- **Data**:
-  * [Hybrid indicator data](https://github.com/Haoua01/Africa-money-map/tree/main/data/Indicators/Hybrid)
+### Section 4.3 Indicator 3: a hybrid index of bank branch access 
+- Operations are performed in QGIS 
+- Data: [data/Indicators/Hybrid](https://github.com/Haoua01/Africa-money-map/tree/main/data/Indicators/Hybrid)
 
 ---
 
-### Section 5 Assessing the determinants of bank branch access
-- **Codes and results**:
-  * [Citypopulation codes](https://github.com/Haoua01/Africa-money-map/tree/main/codes/Regression/citypopulation)
-  * [Regression analysis (Quarto `.qmd`)](https://github.com/Haoua01/Africa-money-map/blob/main/codes/Regression/regression.qmd)
-- **Data**:
-  * [Citypopulation data](https://github.com/Haoua01/Africa-money-map/tree/main/data/Regression/citypopulation)
-  * [Regression dataset (CSV)](https://github.com/Haoua01/Africa-money-map/blob/main/data/Regression/data_regression.csv)
-
+### Section 5 Assessing the determinants of bank branch access
+- Codes and results:
+    * Quarto document: [codes/Regression/regression.qmd](https://github.com/Haoua01/Africa-money-map/blob/main/codes/Regression/regression.qmd)
 
 
 
