@@ -1,4 +1,4 @@
-# Africa-money-map
+# Africa money map
 
 This repository contains the datasets, code, and workflows used in this master’s thesis :
 "Access to bank branches in West Africa: measurements and determinants".
