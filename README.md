@@ -94,4 +94,4 @@ We examined bank branch accessibility using geospatial data and socio-economic i
 
 ---
 
-***This master thesis is a part of the project Africa Money Map, aiming at mapping the locations of financial services, focusing on bank branches, mobile money outlets, and microfinance agencies. The project is conducted by David Bounie, professor of economics at Télécom Paris, Institut Polytechnique de Paris, and Haoua Ben Ali Abbo, master student at Université Paris-Dauphine. The project is funded by Institut Louis Bachelier.*** 
+***This master thesis is a part of the project Africa Money Map, aiming at mapping the locations of financial services in Subsaharan Africa. The project is conducted by Haoua Ben Ali Abbo, master student at Université Paris-Dauphine and David Bounie, professor of economics at Télécom Paris, Institut Polytechnique de Paris. The project is funded by Institut Louis Bachelier.*** 
