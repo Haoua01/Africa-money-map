@@ -21,7 +21,7 @@ We examined bank branch accessibility using geospatial data and socio-economic i
     * Combines FCA methodology with isochrone coverage.
     * Produces a single meaningful score for comparison.
     * Best balance between precision and interpretability.
-    * 56‰ of municipalities with a score < 0.1.
+    * 56‰ of municipalities with a score < 0.1 (population needs to travel for more than 60min before reaching the closest bank branch).
 
 
 ### Key Findings:
