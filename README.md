@@ -34,7 +34,9 @@ We examined bank branch accessibility using geospatial data and socio-economic i
 * Python 3.9+
 * Docker 
 * QGIS 
-* Cloning of https://github.com/GIScience/openrouteservice.git 
+* Cloning of https://github.com/GIScience/openrouteservice.git
+  
+---
 
 ### Section 3.2 Data on bank branches
 - **Codes**:
