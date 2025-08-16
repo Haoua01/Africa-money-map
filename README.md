@@ -91,4 +91,7 @@ We examined bank branch accessibility using geospatial data and socio-economic i
 ## 4. Acknowledgments
 * OpenRouteService / HeiGIT – Distance matrices and isochrone generation
 * The World Bank Living Standards Measurement Study (LSMS) - Regression analysis 
-* This master thesis is a part of the project Africa Money Map, aiming at mapping the locations of financial services, focusing on bank branches, mobile money outlets, and microfinance agencies. The project is conducted by David Bounie, professor of economics at Télécom Paris, Institut Polytechnique de Paris, and Haoua Ben Ali Abbo, master student at Université Paris-Dauphine. The project is funded by Institut Louis Bachelier. 
+
+---
+
+***This master thesis is a part of the project Africa Money Map, aiming at mapping the locations of financial services, focusing on bank branches, mobile money outlets, and microfinance agencies. The project is conducted by David Bounie, professor of economics at Télécom Paris, Institut Polytechnique de Paris, and Haoua Ben Ali Abbo, master student at Université Paris-Dauphine. The project is funded by Institut Louis Bachelier.*** 
