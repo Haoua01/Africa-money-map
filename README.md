@@ -15,7 +15,7 @@ We examined bank branch accessibility using geospatial data and socio-economic i
     * Simple but limited: ~70% of municipalities score < 0.1 due to sparse coverage.
 2. Isochrone-based Coverage
     * Travel-time polygons (15, 30, 45, 60 minutes) around branches, independent of boundaries.
-    * Measures % of municipal area covered by at least one branch.
+    * Measures % of municipal area covered by at least one branch within non overlapping time travel ranges (0-15min, 15-30min, 30-45min, 45-60min).
     * Intuitive but fragmented when comparing municipalities.
 3. Hybrid Approach (Preferred)
     * Combines FCA methodology with isochrone coverage.
