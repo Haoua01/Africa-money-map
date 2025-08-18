@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
                     // Load map data
                     loadMapData(geoJsonData, coun, "", "", "", selectedEquipment);
-                    // updateStats(filteredCountryData,filteredCountryData, coun);
+                    updateStats(filteredCountryData,filteredCountryData, coun);
                 });
 
                 countryDropdown.appendChild(listItem);
@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         document.getElementById("regionDropdown").textContent = reg;
                         document.getElementById("departmentDropdown").textContent = "";
                         document.getElementById("communeDropdown").textContent = "";
-                        // updateStats(filteredCountryData, filteredRegionData, country);
+                        updateStats(filteredCountryData, filteredRegionData, country);
                         loadMapData(geoJsonData, country, reg, "", "", selectedEquipment);
                         zoomToFilteredArea(geoJsonData, country, reg, "", "");
                     });
@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         document.getElementById("departmentDropdown").textContent = dep;
                         document.getElementById("regionDropdown").textContent = region;
                         document.getElementById("communeDropdown").textContent = "";
-                        // updateStats(filteredCountryData, filteredDepartmentData, country);
+                        updateStats(filteredCountryData, filteredDepartmentData, country);
                         loadMapData(geoJsonData, country, region, dep, "", selectedEquipment);
                         zoomToFilteredArea(geoJsonData, country, region, dep, "");
                     });
@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         document.getElementById("communeDropdown").textContent = comm;
                         document.getElementById("departmentDropdown").textContent = department;
                         document.getElementById("regionDropdown").textContent = region;
-                        // updateStats(filteredCountryData, filteredCommuneData, country);
+                        updateStats(filteredCountryData, filteredCommuneData, country);
                         loadMapData(geoJsonData, country, region, department, comm, selectedEquipment);
                         zoomToFilteredArea(geoJsonData, country, region, department, comm);
 
@@ -378,7 +378,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     fillColor: fillColor, 
                     weight: 0.3,  // Default border weight
                     opacity: 0.3, // Border opacity
-                    color: (feature.properties.ADM0_EN !== undefined) ? "#333333" : "transparent", // Darker border for country boundaries
+                    color: (feature.properties.ADM0_EN !== undefined) ? "#abababff" : "transparent", // Darker border for country boundaries #abababff
                     fillOpacity: 0.9  // Make sure the polygons are opaque enough
                 };
             }
@@ -485,11 +485,11 @@ document.addEventListener("DOMContentLoaded", async function () {
     function getColor(value, country) {
         // Color mapping based on country
         if (['Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'].includes(country)) {
-            return value > 0.5 ? "#08519c" :  // Darkest
-            value > 0.2 ? "#3182bd" :
-            value > 0.1 ? "#6baed6" :
-            value > 0.01 ? "#bdd7e7" :  // Lightest
-            "#eff3ff";  // Lightest
+            return value > 0.5 ? "#67000d" :  // Darkest
+            value > 0.2 ? "#d32020" :
+            value > 0.1 ? "#fb7050" :
+            value > 0.01 ? "#fcbea5" :  // Lightest
+            "#fff5f0";  // Lightest
      
         } else if (['Ghana', 'Nigeria'].includes(country)) {
             return value > 0.5 ? "#880e4f" :  // Darkest
