@@ -142,6 +142,44 @@ document.addEventListener("DOMContentLoaded", async function () {
                 countryDropdown.appendChild(listItem);
             });
 
+            // Function to zoom to the bounds of filtered areas
+            function zoomToFilteredArea(geoJsonData, country, region, department, commune) {
+                // Filter features based on current selection
+                const filteredFeatures = geoJsonData.features.filter(feature => {
+                    return (!country || feature.properties.ADM0_EN === country) && 
+                           (!region || feature.properties.ADM1_FR === region) &&
+                           (!department || feature.properties.ADM2_FR === department) &&
+                           (!commune || feature.properties.ADM3_FR === commune);
+                });
+
+                if (filteredFeatures.length === 0) {
+                    console.warn('No features found for the selected filters');
+                    return;
+                }
+
+                // Create a temporary GeoJSON layer to calculate bounds
+                const tempLayer = L.geoJSON({
+                    type: "FeatureCollection",
+                    features: filteredFeatures
+                });
+
+                // Get the bounds and fit the map to them
+                const bounds = tempLayer.getBounds();
+                
+                if (bounds.isValid()) {
+                    // Add some padding to the bounds for better visual appearance
+                    const paddingOptions = {
+                        padding: [20, 20], // 20 pixels padding on all sides
+                        maxZoom: commune ? 12 : department ? 10 : region ? 8 : 7 // Different max zoom levels based on selection
+                    };
+                    
+                    map.fitBounds(bounds, paddingOptions);
+                } else {
+                    console.warn('Invalid bounds calculated for filtered features');
+                }
+            }
+
+
             // Populate region dropdown based on the selected country
             function populateRegionDropdown(filteredCountryData, country) {
                 const regions = [...new Set(geoJsonData.features.filter(f => f.properties.ADM0_EN === country).map(f => f.properties.ADM1_FR))];
@@ -163,6 +201,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         document.getElementById("communeDropdown").textContent = "";
                         // updateStats(filteredCountryData, filteredRegionData, country);
                         loadMapData(geoJsonData, country, reg, "", "", selectedEquipment);
+                        zoomToFilteredArea(geoJsonData, country, reg, "", "");
                     });
                     regionDropdown.appendChild(regionItem);
                 });
@@ -191,6 +230,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         document.getElementById("communeDropdown").textContent = "";
                         // updateStats(filteredCountryData, filteredDepartmentData, country);
                         loadMapData(geoJsonData, country, region, dep, "", selectedEquipment);
+                        zoomToFilteredArea(geoJsonData, country, region, dep, "");
                     });
                     departmentDropdown.appendChild(departmentItem);
                 });
@@ -218,6 +258,8 @@ document.addEventListener("DOMContentLoaded", async function () {
                         document.getElementById("regionDropdown").textContent = region;
                         // updateStats(filteredCountryData, filteredCommuneData, country);
                         loadMapData(geoJsonData, country, region, department, comm, selectedEquipment);
+                        zoomToFilteredArea(geoJsonData, country, region, department, comm);
+
                     });
                     communeDropdown.appendChild(communeItem);
                 });
