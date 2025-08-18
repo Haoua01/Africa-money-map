@@ -38,12 +38,10 @@ header {
 
 
 
-
-
 /* SIDEBAR */
 
 .sidebar {
-    width: 300px;
+    width: 200px;
     background: #f7f7f7;
     color: #636363;
     /* padding: 20px; */
@@ -130,6 +128,20 @@ header {
     background-color: #08519c;
     color: white;
 }
+/* Remove outline and tap highlight for Leaflet path elements */
+.leaflet-container .leaflet-overlay-pane svg path,
+.leaflet-container .leaflet-overlay-pane svg polygon,
+.leaflet-container .leaflet-overlay-pane svg rect {
+    outline: none !important;
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+/* Remove focus outline for all interactive elements in Leaflet */
+.leaflet-interactive {
+    outline: none !important;
+}
+
+
 
 label {
     font-size: 1.125rem;
@@ -395,6 +407,68 @@ label {
     align-items: center;
 }
 
+.toggle-container {
+  position: absolute;
+  display: flex;
+  top: 5px;
+  right: 5px;
+  z-index: 1000;
+  background: white;
+  padding: 2px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px; /* optional spacing between switch and text */
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+
 /* Animation for the spinner */
 @keyframes spin {
     0% { transform: rotate(0deg); }
@@ -404,10 +478,21 @@ label {
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
+
     /* Adjust sidebar width */
     .sidebar {
-        width: 200px;
+        width: 50%; /* Make sidebar narrower on smaller screens */
+        height: 50vh;
     }
+
+    .dropdown {
+        width: 20%; /* Make dropdowns full width */
+        margin-left: 0; /* Remove left margin */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    /* Adjust dropdown font size */
+
 
     /* Stack the main content vertically */
     .main-content {
@@ -419,8 +504,13 @@ label {
         font-size: 24px;
     }
 
-    /* Adjust map and summary content */
-    #map-content, #summary-content {
+    #map-content {
+    width: 100%;
+    height: 50vh; /* Set the height to 50% of the viewport height */
+    }
+
+    /* Adjust summary content */
+    #summary-content {
         flex-direction: column;
     }
 
@@ -448,42 +538,87 @@ label {
         font-size: 18px;
     }
 
+    label {
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-left: 10px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: grid;
+        width: 100%;
+        grid-template-areas: "dropdown";
+        align-items: center;
+        min-width: 5ch;
+        max-width: 10ch;
+        border: 1px solid var(--select-border);
+        border-radius: 0.5em;
+        padding: 0.2em 0.5em;
+        cursor: pointer;
+        line-height: 0.5;
+        background-color: #ffffff;
+        background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
     /* Sidebar button font size */
     .sidebar-btn {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     /* Dropdown font size */
     .dropdown-toggle {
-        font-size: 1rem;
+        font-size: 12px;
+        padding: 2px; /* Reduce padding for smaller screens */
+    }
+
+    .dropdown-item {
+        font-size: 12px;
+        padding: 5px 5px; /* Reduce padding to save space */
     }
 
     .stat-box {
-        font-size: 14px; /* Adjust font size for smaller screens */
-        padding: 10px 5px; /* Reduce padding to save space */
+        font-size: 12px; /* Adjust font size for smaller screens */
+        padding: 5px 5px; /* Reduce padding to save space */
+        width: 50%
     }
     /* Adjust sidebar width */
     .sidebar {
-        width: 150px; /* Smaller sidebar */
+        height: 100%;
+        width: 20%; /* Smaller sidebar */
     }
     /* Adjust main content font size */
     .main-content {
-        font-size: 14px; /* Smaller font size */
-        padding: 10px; /* Add some padding */
+        font-size: 12px; /* Smaller font size */
+        padding: 5px; /* Add some padding */
     }
     /* Adjust map content font size */
     #map-content {
-        font-size: 14px; /* Smaller font size */
-        padding: 10px; /* Add some padding */
+        font-size: 12px; /* Smaller font size */
+        padding: 5px; /* Add some padding */
     }
     /* Adjust map height to take more space */
     #map {
-        height: 70vh; /* Make map larger, use 70% of the vertical screen */
+        height: 100%;
+        width: 100%; /* Make map take full width */
     }
 
     /* Reset button font size */
     #resetButton {
+        background-color: #fc9272;
+        color: white;
+        border: none;
+        padding: 2px 5px;
         font-size: 12px;
+        cursor: pointer;
+        line-height: 1.5;
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-top: 10px;
     }
 
     /* Main content font size */
@@ -493,11 +628,11 @@ label {
 
     /* Adjust map content heading */
     #map-content h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .stat-box span {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: bold;
         margin-bottom: 0px;
         line-height: 16px;
@@ -508,7 +643,7 @@ label {
 @media (max-width: 320px) {
     /* Adjust sidebar width */
     .sidebar {
-        width: 80px; /* Even smaller sidebar */
+        width: 100px; /* Even smaller sidebar */
     }
 
     /* Adjust the map content to take more space */

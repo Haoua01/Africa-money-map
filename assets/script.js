@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 	}).addTo(map);
 
     const geoJsonFile = "data/Indicators/Hybrid/hybrid_scores.geojson"; 
+    const isochroneFile = "data/Indicators/Fully_isochrone/isochrone_map.geojson";
     const uemoaBordersFile = "web_data/uemoa_borders.geojson"; 
     //const cemacBordersFile = "web_data/cemac_borders.geojson"; 
     //const ghanaBordersFile = "web_data/ghana_borders.geojson";
@@ -53,6 +54,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     // Fetch GeoJSON data
     // Fetch UEMOA and CEMAC borders
     const uemoaData = await fetch(uemoaBordersFile).then(response => response.json());
+    const isochroneData = await fetch(isochroneFile).then(response => response.json());
     // const cemacData = await fetch(cemacBordersFile).then(response => response.json());
     // const ghanaData = await fetch(ghanaBordersFile).then(response => response.json());
     // const nigeriaData = await fetch(nigeriaBordersFile).then(response => response.json());
@@ -122,11 +124,12 @@ document.addEventListener("DOMContentLoaded", async function () {
                     populateRegionDropdown(filteredCountryData, coun);
                     
 
-                    // Set map view to the selected country
+                    
                     if (countryCenters[coun]) {
                         const { lat, lng, zoom } = countryCenters[coun];
                         map.setView([lat, lng], zoom);
                     }
+                    
 
 
                     document.getElementById("num-municipalities").innerHTML = '';
@@ -330,13 +333,14 @@ document.addEventListener("DOMContentLoaded", async function () {
         return this.div;
     };
 
-    // Updated hover info: show commune name and score from "ISIBF_base"
+    /*
     info.update = function (props) {
         this.div.innerHTML = props
             ? `<h6>${props.ADM3_FR}</h6><br>Score: ${props.ISIBF_base}`
             : "Hover over";
     };
     info.addTo(map);
+    */
 
     let isDefaultView = true; 
 
@@ -358,16 +362,62 @@ document.addEventListener("DOMContentLoaded", async function () {
     
         const geoJsonLayer = L.geoJSON({ type: "FeatureCollection", features: filteredData }, {
             onEachFeature: function (feature, layer) {
+                layer.bindTooltip(
+                `<h6>${feature.properties.ADM3_FR}</h6><br>Score: ${feature.properties[selectedEquipment] || 0}`,
+                {
+                    permanent: false, // Only show on hover
+                    direction: 'bottom', // Position below the mouse
+                    sticky: false, // Follow the mouse
+                    opacity: 0.9,
+                    className: 'custom-tooltip' // Optional: for custom styling
+                });
                 layer.on({
                     mouseover: function (e) {
-                        e.target.setStyle({ weight: 3, color: "white", fillOpacity: 1 });
-                        info.update(feature.properties);
+                        e.target.setStyle({ weight: 2, color: "white", fillOpacity: 1 });
+                        //info.update(feature.properties);
+                        e.target.setStyle({
+                            weight: 2,
+                            color: "black", // Black border on click
+                            fillOpacity: 2
+                        });
                     },
                     mouseout: function (e) {
                         geoJsonLayer.resetStyle(e.target);
-                        info.update();
+                       //info.update();
+                    },
+                    click: function (e) {
+                        // Highlight the clicked feature
+                        e.target.setStyle({ weight: 2, color: "black", fillOpacity: 2 });
+
+                        // Filter the data for the clicked feature (commune)
+                        const clickedFeature = e.target.feature;
+                        const country = clickedFeature.properties.ADM0_EN;
+                        const region = clickedFeature.properties.ADM1_FR;
+                        const department = clickedFeature.properties.ADM2_FR;
+                        const commune = clickedFeature.properties.ADM3_FR;
+
+                        // Filter the data for the clicked commune
+                        const filteredCommuneData = geoJsonData.features.filter(f =>
+                            f.properties.ADM0_EN === country &&
+                            f.properties.ADM1_FR === region &&
+                            f.properties.ADM2_FR === department &&
+                            f.properties.ADM3_FR === commune
+                        );
+
+                        // Filter the data for the entire country
+                        const filteredCountryData = geoJsonData.features.filter(f =>
+                            f.properties.ADM0_EN === country
+                        );
+
+                        // Call updateStats with the filtered data
+                        updateStats(filteredCountryData, filteredCommuneData, country);
+                        document.getElementById("countryDropdown").textContent = country;
+                        document.getElementById("regionDropdown").textContent = region;
+                        document.getElementById("departmentDropdown").textContent = department;
+                        document.getElementById("communeDropdown").textContent = commune;
                     }
-                });
+
+            });
             },
             style: function (feature) {
                 const score = feature.properties[selectedEquipment] || 0;
@@ -560,9 +610,16 @@ document.addEventListener("DOMContentLoaded", async function () {
             const populationPercentage = totalCountryPopulation > 0 ? ((totalPopulation / totalCountryPopulation) * 100).toFixed(1) : 0;
             const areaPercentage = totalCountryArea > 0 ? ((totalArea / totalCountryArea) * 100).toFixed(1) : 0;
             const branchPercentage = totalCountryBranches > 0 ? ((totalBranches / totalCountryBranches) * 100).toFixed(1) : 0;
-    
+            
+            // If only one commune is selected, display its name
+            if (filteredData.length === 1) {
+                const communeName = filteredData[0].properties.ADM3_FR;
+                document.getElementById("num-municipalities").innerHTML = `<span>${communeName}</span>`;
+            } else {
+                // Otherwise, display the number of communes
+                document.getElementById("num-municipalities").innerHTML = `<span>${totalCommunes}</span>${municipalityLabel}`;
+            }
             // Update the statistics in the HTML
-            document.getElementById("num-municipalities").innerHTML = `<span>${totalCommunes}</span>${municipalityLabel}`;
             document.getElementById("total-bran").innerHTML = `<span>${branchPercentage}%</span>Bank Branches`;
             document.getElementById("percent-pop").innerHTML = `<span>${populationPercentage}%</span>Population`;
             document.getElementById("percent-area").innerHTML = `<span>${areaPercentage}%</span>Area`;
