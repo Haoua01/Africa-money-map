@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", async function () {
-    const map = L.map("map").setView([14.5, 3.5], 5);
+    let defaultZoom = 5;
+    let smallScreenZoom = 4; 
+    let currentZoom = window.innerWidth <= 480 ? smallScreenZoom : defaultZoom;
+    const map = L.map("map").setView([14.5, -1], currentZoom);
+
 
     L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
         attribution: "&copy; OpenStreetMap contributors &copy; CartoDB",
@@ -18,6 +22,27 @@ document.addEventListener("DOMContentLoaded", async function () {
     const geoJsonFile = "data/Indicators/Hybrid/hybrid_scores.geojson"; 
     const isochroneFile = "data/Indicators/Fully_isochrone/isochrone_map.geojson";
     const uemoaBordersFile = "web_data/uemoa_borders.geojson"; 
+
+    const beninBordersFile = "data/UEMOA/adm_shapefiles/borders/benin_borders.geojson";
+    const burkinaBordersFile = "data/UEMOA/adm_shapefiles/borders/burkina_borders.geojson";
+    const civBordersFile = "data/UEMOA/adm_shapefiles/borders/civ_borders.geojson";
+    const guineeBordersFile = "data/UEMOA/adm_shapefiles/borders/guinee_borders.geojson";
+    const maliBordersFile = "data/UEMOA/adm_shapefiles/borders/mali_borders.geojson";
+    const nigerBordersFile = "data/UEMOA/adm_shapefiles/borders/niger_borders.geojson";
+    const senegalBordersFile = "data/UEMOA/adm_shapefiles/borders/senegal_borders.geojson";
+    const togoBordersFile = "data/UEMOA/adm_shapefiles/borders/togo_borders.geojson";
+
+
+    const countryBorders = {
+        "Benin": beninBordersFile,
+        "Burkina Faso": burkinaBordersFile,
+        "Ivory Coast": civBordersFile,
+        "Guinea-Bissau": guineeBordersFile,
+        "Mali": maliBordersFile,
+        "Niger": nigerBordersFile,
+        "Senegal": senegalBordersFile,
+        "Togo": togoBordersFile
+    };
     //const cemacBordersFile = "web_data/cemac_borders.geojson"; 
     //const ghanaBordersFile = "web_data/ghana_borders.geojson";
     //const nigeriaBordersFile = "web_data/nigeria_borders.geojson";
@@ -54,7 +79,9 @@ document.addEventListener("DOMContentLoaded", async function () {
     // Fetch GeoJSON data
     // Fetch UEMOA and CEMAC borders
     const uemoaData = await fetch(uemoaBordersFile).then(response => response.json());
+
     const isochroneData = await fetch(isochroneFile).then(response => response.json());
+    
     // const cemacData = await fetch(cemacBordersFile).then(response => response.json());
     // const ghanaData = await fetch(ghanaBordersFile).then(response => response.json());
     // const nigeriaData = await fetch(nigeriaBordersFile).then(response => response.json());
@@ -72,19 +99,21 @@ document.addEventListener("DOMContentLoaded", async function () {
             countries.sort((a, b) => a.localeCompare(b));
 
             const countryCenters = {
-                "Benin": { lat: 9.3, lng: 2.5, zoom: 7 },
-                "Burkina Faso": { lat: 12.4, lng: -1.5, zoom: 7 },
-                "Ivory Coast": { lat: 7.5, lng: -5.5, zoom: 7 },
-                "Guinea-Bissau": { lat: 11.5, lng: -15.7, zoom: 8 },
-                "Mali": { lat: 12.6, lng: -8, zoom: 5 },
-                "Niger": { lat: 17.6, lng: 8, zoom: 6 },
-                "Senegal": { lat: 14.5, lng: -14, zoom: 7 },
-                "Togo": { lat: 8.2, lng: 1.3, zoom: 7 },
-                //"Ghana": { lat: 7.5, lng: -0.5, zoom: 7 },
-                //"Cameroon": { lat: 6.5, lng: 13, zoom: 6 },
-                //"Chad": { lat: 15.5, lng: 18, zoom: 5 }, 
-                //"Nigeria": { lat: 9.1, lng: 8.5, zoom: 6 },
+                "Benin": { lat: 9.3, lng: 2.5, latSmall: 7.3, lngSmall: 2.5, zoom: 7, smallScreenZoom: 6 },
+                "Burkina Faso": { lat: 12.4, lng: -1.5, latSmall: 11.4, lngSmall: -1.5, zoom: 7, smallScreenZoom: 6 },
+                "Ivory Coast": { lat: 7.5, lng: -5.5, latSmall: 5.5, lngSmall: -5.5, zoom: 7, smallScreenZoom: 6 },
+                "Guinea-Bissau": { lat: 11.5, lng: -15.7, latSmall: 10.5, lngSmall: -15.2, zoom: 8, smallScreenZoom: 7 },
+                "Mali": {lat: 12.6, lng: -8, latSmall: 12.6, lngSmall: -4, zoom: 5, smallScreenZoom: 5 },
+                "Niger": { lat: 17.6, lng: 8, latSmall: 13.6, lngSmall: 8, zoom: 6, smallScreenZoom: 5 },
+                "Senegal": { lat: 14.5, lng: -14, latSmall: 12.5, lngSmall: -15, zoom: 7, smallScreenZoom: 6 },
+                "Togo": { lat: 8.2, lng: 1.3, latSmall: 6.8, lngSmall: 1.3, zoom: 7, smallScreenZoom: 6 },
+                //"Ghana": { latSmall: 7.5, lngSmall: -0.5, zoom: 7 },
+                //"Cameroon": { latSmall: 6.5, lngSmall: 13, zoom: 6 },
+                //"Chad": { latSmall: 15.5, lngSmall: 18, zoom: 5 },
+                //"Nigeria": { latSmall: 9.1, lngSmall: 8.5, zoom: 6 },
             };
+
+
 
             // Country Dropdown
             const countryDropdown = document.getElementById("country-select");
@@ -94,6 +123,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
             countries.forEach(coun => {
                 isDefaultView = false;
+                updateBorders(coun);
                 // Filter GeoJSON data based on the selected commune, department, or region
                 const filteredCountryData = geoJsonData.features.filter(feature => {
                     return (!coun || feature.properties.ADM0_EN === coun)
@@ -126,8 +156,13 @@ document.addEventListener("DOMContentLoaded", async function () {
 
                     
                     if (countryCenters[coun]) {
-                        const { lat, lng, zoom } = countryCenters[coun];
-                        map.setView([lat, lng], zoom);
+                        const { lat, lng, latSmall, lngSmall, zoom, smallScreenZoom } = countryCenters[coun];
+                        if (window.innerWidth <= 480) {
+                            map.setView([latSmall, lngSmall], smallScreenZoom);
+                        } else {
+                            map.setView([lat, lng], zoom);
+                        }
+
                     }
                     
 
@@ -272,6 +307,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             document.getElementById("resetButton").addEventListener("click", function() {
                 isDefaultView = true;
                 loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
+                document.querySelector('#map-content h1').textContent = 'Spatial Access to Bank Branches';
                 document.getElementById("countryDropdown").textContent = "Default";
                 document.getElementById("communeDropdown").textContent = "Default";
                 document.getElementById("departmentDropdown").textContent = "Default";
@@ -280,7 +316,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                 selectedCommune = "";
                 selectedDepartment = "";
                 selectedRegion = "";
-                map.setView([14.5, 3.5], 5);
 
                 document.getElementById("num-municipalities").innerHTML = '';
                 document.getElementById("total-bran").innerHTML = '';
@@ -290,6 +325,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
             loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
             
+            /*
             // Add UEMOA and CEMAC borders
             L.geoJSON(uemoaData, {
                 style: function () {
@@ -314,6 +350,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for Nigeria
                 }
             }).addTo(map)
+            */
         })
             
         .catch(error => {
@@ -342,8 +379,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     info.addTo(map);
     */
 
-    let isDefaultView = true; 
-
     
     function loadMapData(geoJsonData, country, region, department, commune, selectedEquipment) {
         map.eachLayer(layer => {
@@ -359,33 +394,72 @@ document.addEventListener("DOMContentLoaded", async function () {
                    (!department || feature.properties.ADM2_FR === department) &&
                    (!region || feature.properties.ADM1_FR === region);
         });
+
+        // Listen for changes in the country dropdown
+        document.querySelectorAll('#country-select a').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                const country = this.textContent;
+                // Update the h1 text
+                document.querySelector('#map-content h1').textContent = `Spatial Access to Bank Branches in ${country}`;
+                // Update the dropdown button text (optional)
+                document.getElementById('countryDropdown').textContent = country;
+            });
+
+            // Listen for changes in the region dropdown
+            document.querySelectorAll('#region-select a').forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const region = this.textContent;
+                    // Update the h1 text
+                    document.querySelector('#map-content h1').textContent = `Spatial Access to Bank Branches in ${region}, ${country}`;
+                    // Update the dropdown button text (optional)
+                    document.getElementById('regionDropdown').textContent = region;
+                });
+
+                // Listen for changes in the department dropdown
+                document.querySelectorAll('#department-select a').forEach(item => {
+                    item.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const department = this.textContent;
+                        // Update the h1 text
+                        document.querySelector('#map-content h1').textContent = `Spatial Access to Bank Branches in ${department}, ${region}, ${country}`;
+                        // Update the dropdown button text (optional)
+                        document.getElementById('departmentDropdown').textContent = department;
+                    });
+                });
+            });
+        });
+
+
     
         const geoJsonLayer = L.geoJSON({ type: "FeatureCollection", features: filteredData }, {
             onEachFeature: function (feature, layer) {
-                layer.bindTooltip(
-                `<h6>${feature.properties.ADM3_FR}</h6><br>Score: ${feature.properties[selectedEquipment] || 0}`,
-                {
-                    permanent: false, // Only show on hover
-                    direction: 'bottom', // Position below the mouse
-                    sticky: false, // Follow the mouse
-                    opacity: 0.9,
-                    className: 'custom-tooltip' // Optional: for custom styling
-                });
+
                 layer.on({
-                    mouseover: function (e) {
-                        e.target.setStyle({ weight: 2, color: "white", fillOpacity: 1 });
-                        //info.update(feature.properties);
-                        e.target.setStyle({
-                            weight: 2,
-                            color: "black", // Black border on click
-                            fillOpacity: 2
-                        });
+                    mouseover: function(e) {
+                        // Highlight polygon
+                        e.target.setStyle({ weight: 1.5, color: "black", fillOpacity: 2 });
+                        // Create tooltip at mouse position
+                        tooltip = L.tooltip({
+                            permanent: false,
+                            direction: 'top',
+                            className: 'custom-tooltip',
+                            opacity: 0.9,
+                        })
                     },
-                    mouseout: function (e) {
+                    mouseout: function(e) {
+                        // Reset style
                         geoJsonLayer.resetStyle(e.target);
-                       //info.update();
+
+                        // Remove tooltip
+                        if (tooltip) {
+                            map.removeLayer(tooltip);
+                            tooltip = null;
+                        }
                     },
                     click: function (e) {
+                        
                         // Highlight the clicked feature
                         e.target.setStyle({ weight: 2, color: "black", fillOpacity: 2 });
 
@@ -395,6 +469,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         const region = clickedFeature.properties.ADM1_FR;
                         const department = clickedFeature.properties.ADM2_FR;
                         const commune = clickedFeature.properties.ADM3_FR;
+                        document.querySelector('#map-content h1').textContent = `Spatial Access to Bank Branches in ${country}`;
 
                         // Filter the data for the clicked commune
                         const filteredCommuneData = geoJsonData.features.filter(f =>
@@ -437,6 +512,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         updateLegend(country);
 
         if (isDefaultView) {
+            
             // Load UEMOA borders
             fetch(uemoaBordersFile)
                 .then(response => response.json())
@@ -461,12 +537,30 @@ document.addEventListener("DOMContentLoaded", async function () {
                 })
                 .catch(error => console.error('Error loading CEMAC borders:', error));
                 */
+        } else {
+            updateBorders(country);
         }
-
 
     }
 
+    function updateBorders(country) {
+
+        if (countryBorders[country]) {
+            fetch(countryBorders[country])
+                .then(response => response.json())
+                .then(data => {
+                    L.geoJSON(data, {
+                        style: function () {
+                            return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style
+                        }
+                    }).addTo(map);
+                })
+                .catch(error => console.error('Error loading country borders:', error));
+        }
+    }
+
     let legend;  // Declare legend outside of the event listener
+
 
     function updateLegend(country) {
         if (legend) {
@@ -614,16 +708,18 @@ document.addEventListener("DOMContentLoaded", async function () {
             // If only one commune is selected, display its name
             if (filteredData.length === 1) {
                 const communeName = filteredData[0].properties.ADM3_FR;
-                document.getElementById("num-municipalities").innerHTML = `<span>${communeName}</span>`;
+                const communeScore = (filteredData[0].properties.ISIBF_base || 0).toFixed(2);
+                console.log(`Score for ${communeName}: ${communeScore}`);
+                document.getElementById("num-municipalities").innerHTML = `<span>${communeName}</span><span>Score: ${communeScore}</span>`;
             } else {
                 // Otherwise, display the number of communes
                 document.getElementById("num-municipalities").innerHTML = `<span>${totalCommunes}</span>${municipalityLabel}`;
             }
             // Update the statistics in the HTML
-            document.getElementById("total-bran").innerHTML = `<span>${branchPercentage}%</span>Bank Branches`;
-            document.getElementById("percent-pop").innerHTML = `<span>${populationPercentage}%</span>Population`;
-            document.getElementById("percent-area").innerHTML = `<span>${areaPercentage}%</span>Area`;
-        
+            document.getElementById("total-bran").innerHTML = `<span>${branchPercentage}%</span>of total bank branches`;
+            document.getElementById("percent-pop").innerHTML = `<span>${populationPercentage}%</span>of total population`;
+            document.getElementById("percent-area").innerHTML = `<span>${areaPercentage}%</span>of total area`;
+
         } else {
             // If the country is not in the UEMOA group, don't update stats
             console.log(`No stats update for ${country}.`);
