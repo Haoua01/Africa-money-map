@@ -52,6 +52,7 @@
             </div>
              -->
 
+
             <label for="country-select">Country:</label>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="countryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -95,7 +96,7 @@
         <main class="main-content">
             <div id="map-content">
                 <h1>
-                    Overview: Spatial Access to Financial Services
+                    Spatial Access to Bank Branches
                 </h1>
                 <div class="stats-container">
                     <div class="stat-box" id="num-municipalities"></div>
@@ -103,13 +104,19 @@
                     <div class="stat-box" id="percent-pop"></div>
                     <div class="stat-box" id="percent-area"></div>
                 </div>
-                <div id="map"></div>
+                <div id="map">
+                    <div class="toggle-container">
+                    <label class="switch">
+                        <input type="checkbox" id="isochrone-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <label for="isochrone-toggle">Show Isochrones</label>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
     <script src="assets/script.js"></script>
-
-    <!-- Add this to the bottom of your HTML file (before </body>) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-fullscreen/2.0.0/leaflet.fullscreen.min.js"></script>
 
     
