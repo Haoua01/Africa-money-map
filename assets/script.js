@@ -122,7 +122,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             document.getElementById("region-select").innerHTML = "";
 
             countries.forEach(coun => {
-                isDefaultView = false;
                 updateBorders(coun);
                 // Filter GeoJSON data based on the selected commune, department, or region
                 const filteredCountryData = geoJsonData.features.filter(feature => {
@@ -305,7 +304,17 @@ document.addEventListener("DOMContentLoaded", async function () {
 
             // Reset button event
             document.getElementById("resetButton").addEventListener("click", function() {
-                isDefaultView = true;
+                fetch(uemoaBordersFile)
+                .then(response => response.json())
+                .then(data => {
+                    L.geoJSON(data, {
+                        style: function () {
+                            return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for UEMOA
+                        }
+                    }).addTo(map);
+                })
+                .catch(error => console.error('Error loading UEMOA borders:', error));
+    
                 loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
                 document.querySelector('#map-content h1').textContent = 'Spatial Access to Bank Branches';
                 document.getElementById("countryDropdown").textContent = "Default";
@@ -510,36 +519,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         }).addTo(map);
 
         updateLegend(country);
-
-        if (isDefaultView) {
-            
-            // Load UEMOA borders
-            fetch(uemoaBordersFile)
-                .then(response => response.json())
-                .then(data => {
-                    L.geoJSON(data, {
-                        style: function () {
-                            return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for UEMOA
-                        }
-                    }).addTo(map);
-                })
-                .catch(error => console.error('Error loading UEMOA borders:', error));
-    
-            /*
-            fetch(cemacBordersFile)
-                .then(response => response.json())
-                .then(data => {
-                    L.geoJSON(data, {
-                        style: function () {
-                            return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for CEMAC
-                        }
-                    }).addTo(map);
-                })
-                .catch(error => console.error('Error loading CEMAC borders:', error));
-                */
-        } else {
-            updateBorders(country);
-        }
+        updateBorders(country);
 
     }
 
