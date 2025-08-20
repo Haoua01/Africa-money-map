@@ -3,6 +3,8 @@
 This repository contains the datasets, code, and workflows used in this master’s thesis :
 "Access to bank branches in West Africa: measurements and determinants".
 The study develops and compares three spatial accessibility models to measure access to bank branches in West Africa, using a self-constructed geolocated dataset on bank branches.
+The best indicators are displayed in an interactive dashboard on [www.africamoneymap.fr](https://africamoneymap.fr/).  
+
 
 ## 1. Research Overview
 We focus on the 8 countries of the West African Monetary Union: Benin, Burkina Faso, Ivory Coast, Guinea-Bissau, Mali, Niger, Senegal and Togo. 
