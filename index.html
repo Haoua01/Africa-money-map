@@ -23,6 +23,7 @@
 
         <link rel="stylesheet" href="assets/Control.FullScreen.css" />
         <script src="assets/Control.FullScreen.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
 
 
 
@@ -38,6 +39,8 @@
         <!-- Sidebar -->
         <aside class="sidebar">
             <button class="sidebar-btn" id="map-btn">Map</button>
+            <button class="sidebar-btn" id="conclusion-btn">Methodology</button>
+
             
             <!--
             <label for="department-select">Equipment type for Map:</label>
@@ -56,7 +59,7 @@
             <label for="country-select">Country:</label>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="countryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    Select country
+                    Default
                 </button>
                 <ul class="dropdown-menu w-100" id="country-select"></ul>
             </div>
@@ -96,7 +99,7 @@
         <main class="main-content">
             <div id="map-content">
                 <h1>
-                    Spatial Access to Bank Branches
+                    Spatial Accessibility to Bank Branches
                 </h1>
                 <div class="stats-container">
                     <div class="stat-box" id="num-municipalities"></div>
@@ -113,6 +116,44 @@
                     <label for="isochrone-toggle">Show Isochrones</label>
                     </div>
                 </div>
+            </div>
+            <div id="conclusion-content"  style="display: none;">
+                    <h1>Methodology</h1>
+                        <div class="conclusion-container">
+
+                            <section class="description">
+                                <h3>Project Overview</h3>
+                                <p>
+                                    This project analyzes banking accessibility across the eight countries of the West African Monetary Union (WAMU): Benin, Burkina Faso, Ivory Coast, Guinea-Bissau, Mali, Niger, Senegal, and Togo. As financial inclusion remains a critical development challenge in Sub-Saharan Africa, understanding the spatial distribution of bank branches at a granular level is essential for identifying service gaps and informing policy decisions.
+                                </p>
+                                <p>
+                                    The study focuses on measuring actual geographic access to banking services across 2,186 municipalities. By developing spatial indicators that account for travel time and distance, we provide the first highly granular assessment of banking accessibility in the sub-region.
+                                </p>
+                            </section>
+
+                            <section class="methodology">
+                                <h3>Data Source</h3>
+                                <p>
+                                    Bank branch locations were systematically collected from official sources and bank websites across all eight WAMU countries. This represents a <strong>unique comprehensive cross-country register of geolocated bank branches</strong> in the sub-region.
+                                </p>
+                                <p>
+                                    The dataset contains <strong>2,524 geolocated bank branches</strong>, with coordinates obtained through direct web scraping (1,654 branches) of banks' websites and address geocoding using Google Maps API (970 branches). Data validation was performed using official statistics from the Central Bank of West African States (BCEAO), with quality control implemented through QGIS to correct geographic outliers and ensure spatial accuracy.
+                                </p>
+                            </section>
+
+                            <section class="data">
+                                <h3>Access Indicators</h3>
+                                <p>
+                                    Two spatial accessibility indicators were developed to measure banking access across the region:
+                                </p>
+                                <ul>
+                                    <li><strong>Isochrone Coverage Map</strong>: Shifts focus from municipalities to bank branches themselves, generating travel time zones (15, 30, 45, and 60 minutes) around each branch using road network data. Isochrone generation was performed using OpenRouteService (ORS) with Docker containerization.The indicator calculates the percentage of each municipality's area covered within these time frames.</li>
+                                <li><strong>Accessibility Map</strong>: Integrates the isochrone coverage data into a weighted accessibility score that accounts for distance decay effects. Areas closer to bank branches receive higher weights, producing a single comparative score for each municipality.
+                                    The index is calculated as: $$Access_{i}=\sum_{j \in \{Isochrones \ in \ i\}} \frac{Area_{j}}{\alpha^{t_{j}}}$$ where \(Area_{j}\) is the percentage of area covered by isochrone \(j\) in municipality \(i\), \(t_{j}\) is the maximum travel time, and \(\alpha=1.01\) is the distance decay parameter. Final scores are later min-max normalized followng this formula: $$Score_{i}=\frac{Access_{i}-Access_{min}}{Access_{max}-Access_{min}}$$</li>
+                                </ul>
+                                                                    
+                            </section>
+                    </div>
             </div>
         </main>
     </div>
