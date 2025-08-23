@@ -584,6 +584,11 @@ document.addEventListener("DOMContentLoaded", async function () {
                 document.getElementById("total-bran").innerHTML = '';
                 document.getElementById("percent-pop").innerHTML = '';
                 document.getElementById("percent-area").innerHTML = '';
+
+                // toggleswitch reset
+                if (toggleSwitch) {
+                    toggleSwitch.checked = false;
+                }
             });
 
             // Load initial map data
