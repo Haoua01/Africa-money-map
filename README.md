@@ -92,7 +92,7 @@ We examined bank branch accessibility using geospatial data and socio-economic i
 
 
 ## 4. Acknowledgments
-* OpenRouteService / HeiGIT – Distance matrices and isochrone generation
+* Openrouteservice (ORS) – Distance matrices and isochrone generation
 * The World Bank Living Standards Measurement Study (LSMS) - Regression analysis 
 
 ---
