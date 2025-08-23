@@ -692,8 +692,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             item.addEventListener('click', function(e) {
                 e.preventDefault();
                 const country = this.textContent;
-                // Update the h1 text
-                document.querySelector('#map-content h1').textContent = `Spatial Accessibility to Bank Branches in ${country}`;
                 // Update the dropdown button text (optional)
                 document.getElementById('countryDropdown').textContent = country;
             });
@@ -703,8 +701,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                 item.addEventListener('click', function(e) {
                     e.preventDefault();
                     const region = this.textContent;
-                    // Update the h1 text
-                    document.querySelector('#map-content h1').textContent = `Spatial Accessibility to Bank Branches in ${region} - ${country}`;
                     // Update the dropdown button text (optional)
                     document.getElementById('regionDropdown').textContent = region;
                 });
@@ -714,8 +710,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                     item.addEventListener('click', function(e) {
                         e.preventDefault();
                         const department = this.textContent;
-                        // Update the h1 text
-                        document.querySelector('#map-content h1').textContent = `Spatial Accessibility to Bank Branches in ${department} - ${region}, ${country}`;
                         // Update the dropdown button text (optional)
                         document.getElementById('departmentDropdown').textContent = department;
                     });
@@ -731,14 +725,20 @@ document.addEventListener("DOMContentLoaded", async function () {
                 layer.on({
                     mouseover: function(e) {
                         // Highlight polygon
-                        e.target.setStyle({ weight: 1.5, color: "black", fillOpacity: 2 });
-                        // Create tooltip at mouse position
+                        e.target.setStyle({ weight: 1.5, color: "black", fillOpacity: 0.7 });
+
+                        // Create tooltip with ADM3_FR
                         tooltip = L.tooltip({
                             permanent: false,
                             direction: 'top',
                             className: 'custom-tooltip',
-                            opacity: 0.9,
+                            opacity: 0.9
                         })
+                        .setContent(e.target.feature.properties.ADM3_FR + ' : ' + e.target.feature.properties.ISIBF_base.toFixed(2)) // <-- show the name
+                        .setLatLng(e.latlng);
+
+                        // Add tooltip to map
+                        tooltip.addTo(map);
                     },
                     mouseout: function(e) {
                         // Reset style
