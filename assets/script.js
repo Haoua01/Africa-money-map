@@ -142,10 +142,14 @@ document.addEventListener("DOMContentLoaded", async function () {
                         // Show isochrone layer for all countries
                         console.log('Loading isochrone data for all countries');
                         loadIsochrone(geoJsonData, isochroneData, "", "", "", "", selectedEquipment);
+                        document.querySelector('#map-content h1').textContent = `Area Covered By At Least One Bank Branch`;
+
                     } else {
                         // Show regular map data for all countries
                         console.log('Loading map data for all countries');
                         loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
+                        document.querySelector('#map-content h1').textContent = `Spatial Accessibility to Bank Branches`;
+
                     }
                     
                     // Add UEMOA borders for default mode
@@ -162,8 +166,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     
                     return;
                 }
-
-                // Handle country-specific mode (existing logic)
+                
                 const countryData = geoJsonData.features.filter(feature => {
                     return feature.properties.ADM0_EN === selectedCountry;
                 });
@@ -184,10 +187,27 @@ document.addEventListener("DOMContentLoaded", async function () {
                         (!selectedCommune || feature.properties.ADM3_FR === selectedCommune);
                 });
 
+                toggleCommuneDropdown(selectedCountry);
 
+
+                // Handle country-specific mode (existing logic)
                 if (toggleSwitch.checked) {
+                    console.log('Loading isochrone data');
                     // Show isochrone layer
                     console.log('Loading isochrone data');
+                    // Update title based on current selections
+                    let titleText = `Area Covered By At Least One Bank Branch`;
+                    if (selectedCommune) {
+                        titleText += ` in ${selectedCommune} - ${selectedDepartment}, ${selectedRegion}, ${selectedCountry}`;
+                    } else if (selectedDepartment) {
+                        titleText += ` in ${selectedDepartment} - ${selectedRegion}, ${selectedCountry}`;
+                    } else if (selectedRegion) {
+                        titleText += ` in ${selectedRegion} - ${selectedCountry}`;
+                    } else {
+                        titleText += ` in ${selectedCountry}`;
+                    }
+                    document.querySelector('#map-content h1').textContent = titleText;
+
                     document.getElementById("num-municipalities").innerHTML = '';
                     document.getElementById("total-bran").innerHTML = '';
                     document.getElementById("percent-pop").innerHTML = '';
@@ -197,6 +217,19 @@ document.addEventListener("DOMContentLoaded", async function () {
                 } else {
                     // Show regular map data
                     console.log('Loading map data');
+                    
+                    let titleText = `Spatial Accessibility to Bank Branches`;
+                    if (selectedCommune) {
+                        titleText += ` in ${selectedCommune} - ${selectedDepartment}, ${selectedRegion}, ${selectedCountry}`;
+                    } else if (selectedDepartment) {
+                        titleText += ` in ${selectedDepartment} - ${selectedRegion}, ${selectedCountry}`;
+                    } else if (selectedRegion) {
+                        titleText += ` in ${selectedRegion} - ${selectedCountry}`;
+                    } else {
+                        titleText += ` in ${selectedCountry}`;
+                    }
+                    document.querySelector('#map-content h1').textContent = titleText;
+                    
                     document.getElementById("num-municipalities").innerHTML = '';
                     document.getElementById("total-bran").innerHTML = '';
                     document.getElementById("percent-pop").innerHTML = '';
@@ -281,14 +314,14 @@ document.addEventListener("DOMContentLoaded", async function () {
             countries.sort((a, b) => a.localeCompare(b));
 
             const countryCenters = {
-                "Benin": { lat: 9.3, lng: 2.5, latSmall: 7.3, lngSmall: 2.5, zoom: 7, smallScreenZoom: 6 },
-                "Burkina Faso": { lat: 12.4, lng: -1.5, latSmall: 11.4, lngSmall: -1.5, zoom: 7, smallScreenZoom: 6 },
-                "Ivory Coast": { lat: 7.5, lng: -5.5, latSmall: 5.5, lngSmall: -5.5, zoom: 7, smallScreenZoom: 6 },
-                "Guinea-Bissau": { lat: 11.5, lng: -15.7, latSmall: 10.5, lngSmall: -15.2, zoom: 8, smallScreenZoom: 7 },
-                "Mali": {lat: 12.6, lng: -8, latSmall: 12.6, lngSmall: -4, zoom: 5, smallScreenZoom: 5 },
-                "Niger": { lat: 17.6, lng: 8, latSmall: 13.6, lngSmall: 8, zoom: 6, smallScreenZoom: 5 },
-                "Senegal": { lat: 14.5, lng: -14, latSmall: 12.5, lngSmall: -15, zoom: 7, smallScreenZoom: 6 },
-                "Togo": { lat: 8.2, lng: 1.3, latSmall: 6.8, lngSmall: 1.3, zoom: 7, smallScreenZoom: 6 },
+                "Benin": { lat: 9.3, lng: 2.5, latSmall: 9.3, lngSmall: 2.5, zoom: 7, smallScreenZoom: 6 },
+                "Burkina Faso": { lat: 12.4, lng: -1.5, latSmall: 12.4, lngSmall: -1.5, zoom: 7, smallScreenZoom: 5 },
+                "Ivory Coast": { lat: 7.5, lng: -5.5, latSmall: 7.5, lngSmall: -5.5, zoom: 7, smallScreenZoom: 6 },
+                "Guinea-Bissau": { lat: 11.5, lng: -15.7, latSmall: 11.5, lngSmall: -15.2, zoom: 8, smallScreenZoom: 7 },
+                "Mali": {lat: 12.6, lng: -8, latSmall: 14.6, lngSmall: -6, zoom: 5, smallScreenZoom: 4 },
+                "Niger": { lat: 17.6, lng: 8, latSmall: 13.6, lngSmall: 8, zoom: 6, smallScreenZoom: 4 },
+                "Senegal": { lat: 14.5, lng: -14, latSmall: 14.5, lngSmall: -14.5, zoom: 7, smallScreenZoom: 6 },
+                "Togo": { lat: 8.2, lng: 1.3, latSmall: 8.2, lngSmall: 0.9, zoom: 7, smallScreenZoom: 6 },
                 //"Ghana": { latSmall: 7.5, lngSmall: -0.5, zoom: 7 },
                 //"Cameroon": { latSmall: 6.5, lngSmall: 13, zoom: 6 },
                 //"Chad": { latSmall: 15.5, lngSmall: 18, zoom: 5 },
@@ -575,7 +608,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 map.setView([14.5, -1], defaultZoom);
 
                 loadMapData(geoJsonData, "", "", "", "", selectedEquipment);
-                document.querySelector('#map-content h1').textContent = 'Spatial Access to Bank Branches';
+                document.querySelector('#map-content h1').textContent = 'Spatial Accessibility to Bank Branches';
                 document.getElementById("countryDropdown").textContent = "Default";
                 document.getElementById("communeDropdown").textContent = "Default";
                 document.getElementById("departmentDropdown").textContent = "Default";
@@ -698,7 +731,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 e.preventDefault();
                 const country = this.textContent;
                 // Update the h1 text
-                document.querySelector('#map-content h1').textContent = `Spatial Access to Bank Branches in ${country}`;
+                document.querySelector('#map-content h1').textContent = `Spatial Accessibility to Bank Branches in ${country}`;
                 // Update the dropdown button text (optional)
                 document.getElementById('countryDropdown').textContent = country;
             });
@@ -709,7 +742,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     e.preventDefault();
                     const region = this.textContent;
                     // Update the h1 text
-                    document.querySelector('#map-content h1').textContent = `Spatial Access to Bank Branches in ${region}, ${country}`;
+                    document.querySelector('#map-content h1').textContent = `Spatial Accessibility to Bank Branches in ${region} - ${country}`;
                     // Update the dropdown button text (optional)
                     document.getElementById('regionDropdown').textContent = region;
                 });
@@ -720,7 +753,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         e.preventDefault();
                         const department = this.textContent;
                         // Update the h1 text
-                        document.querySelector('#map-content h1').textContent = `Spatial Access to Bank Branches in ${department}, ${region}, ${country}`;
+                        document.querySelector('#map-content h1').textContent = `Spatial Accessibility to Bank Branches in ${department} - ${region}, ${country}`;
                         // Update the dropdown button text (optional)
                         document.getElementById('departmentDropdown').textContent = department;
                     });
@@ -766,7 +799,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         const region = clickedFeature.properties.ADM1_FR;
                         const department = clickedFeature.properties.ADM2_FR;
                         const commune = clickedFeature.properties.ADM3_FR;
-                        document.querySelector('#map-content h1').textContent = `Spatial Access to Bank Branches in ${country}`;
+                        document.querySelector('#map-content h1').textContent = `Spatial Accessibility to Bank Branches in ${commune} - ${department}, ${region}, ${country}`;
 
                         // Filter the data for the clicked commune
                         const filteredCommuneData = geoJsonData.features.filter(f =>
@@ -807,7 +840,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             }
         }).addTo(map);
 
-        updateLegend(country);
+        updateLegend();
         updateBorders(country);
 
     }
@@ -833,27 +866,26 @@ document.addEventListener("DOMContentLoaded", async function () {
         if (legend) {
             legend.remove();  // Remove previous legend before adding a new one
         }
-    
-        if (['Cameroon', 'Chad', 'Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'].includes(country)) {
-            legend = L.control({ position: "bottomright" });
-    
-            const grades = [1, 0.5, 0.2, 0.1, 0.01];
-    
-            legend.onAdd = function () {
-                const div = L.DomUtil.create("div", "legend");
-    
-                div.innerHTML += "<strong>Bank Branch Score Access</strong><br>";
-                for (let i = 0; i < grades.length; i++) {
-                    div.innerHTML += `<i style="background:${getColor(grades[i], country)}"></i> ${
-                        grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "-0"}<br>`;
-                }
-    
-                return div;
-            };
-    
-            legend.addTo(map);  // Add the new legend
-        } 
-        else if (['Cameroon', 'Chad'].includes(country)) {
+
+        legend = L.control({ position: "bottomright" });
+
+        const grades = [1, 0.5, 0.2, 0.1, 0.01];
+
+        legend.onAdd = function () {
+            const div = L.DomUtil.create("div", "legend");
+
+            div.innerHTML += "<strong>Scores of access</strong><br>";
+            for (let i = 0; i < grades.length; i++) {
+                div.innerHTML += `<i style="background:${getColor(grades[i], country)}"></i> ${
+                    grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "-0"}<br>`;
+            }
+
+            return div;
+        };
+
+        legend.addTo(map);  // Add the new legend
+        /*
+         if (['Cameroon', 'Chad'].includes(country)) {
             legend = L.control({ position: "bottomright" });
     
             const grades = [1, 0.5, 0.1, 0.01, 0.001];
@@ -861,7 +893,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             legend.onAdd = function () {
                 const div = L.DomUtil.create("div", "legend");
     
-                div.innerHTML += "<strong>Bank Branch Score Access</strong><br>";
+                div.innerHTML += "<strong>Score</strong><br>";
                 for (let i = 0; i < grades.length; i++) {
                     div.innerHTML += `<i style="background:${getColor(grades[i], country)}"></i> ${
                         grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "-0"}<br>`;
@@ -879,7 +911,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             legend.onAdd = function () {
                 const div = L.DomUtil.create("div", "legend");
     
-                div.innerHTML += "<strong>Bank Branch Score Access</strong><br>";
+                div.innerHTML += "<strong>Score</strong><br>";
                 for (let i = 0; i < grades.length; i++) {
                     div.innerHTML += `<i style="background:${getColor(grades[i], country)}"></i> ${
                         grades[i]}${grades[i + 1] ? `–${grades[i + 1]}` : "-0"}<br>`;
@@ -889,12 +921,18 @@ document.addEventListener("DOMContentLoaded", async function () {
             };
             legend.addTo(map);  // Add the new legend
         }
+            */
     } 
 
 
 
-    function getColor(value, country) {
-        // Color mapping based on country
+    function getColor(value) {
+        return value > 0.5 ? "#67000d" :  // Darkest
+            value > 0.2 ? "#d32020" :
+            value > 0.1 ? "#fb7050" :
+            value > 0.01 ? "#fcbea5" :  // Lightest
+            "#fff5f0";  // Lightest
+        /*
         if (['Benin', 'Burkina Faso', 'Ivory Coast', 'Guinea-Bissau', 'Mali', 'Niger', 'Senegal', 'Togo'].includes(country)) {
             return value > 0.5 ? "#67000d" :  // Darkest
             value > 0.2 ? "#d32020" :
@@ -919,6 +957,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         } else {
             return "#ffffff"; // Default color if no country matches
         }
+        */
     }
 
     document.getElementById("map-btn").addEventListener("click", function() {
@@ -1023,6 +1062,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     
     function loadIsochrone(geoJsonData, isochroneData, country, region, department, commune, selectedEquipment) {
         changeColorLayer(geoJsonData, country, region, department, commune, selectedEquipment);
+
     
         // Filter GeoJSON data based on the selected commune, department, or region
         const filteredData = isochroneData.features.filter(feature => {
@@ -1038,7 +1078,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 e.preventDefault();
                 const country = this.textContent;
                 // Update the h1 text
-                document.querySelector('#map-content h1').textContent = `Spatial Access to Bank Branches in ${country}`;
+                document.querySelector('#map-content h1').textContent = `Area Covered By At Least One Bank Branch in ${country}`;
                 // Update the dropdown button text (optional)
                 document.getElementById('countryDropdown').textContent = country;
             });
@@ -1049,7 +1089,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     e.preventDefault();
                     const region = this.textContent;
                     // Update the h1 text
-                    document.querySelector('#map-content h1').textContent = `Spatial Access to Bank Branches in ${region}, ${country}`;
+                    document.querySelector('#map-content h1').textContent = `Area Covered By At Least One Bank Branch in ${region} - ${country}`;
                     // Update the dropdown button text (optional)
                     document.getElementById('regionDropdown').textContent = region;
                 });
@@ -1060,16 +1100,30 @@ document.addEventListener("DOMContentLoaded", async function () {
                         e.preventDefault();
                         const department = this.textContent;
                         // Update the h1 text
-                        document.querySelector('#map-content h1').textContent = `Spatial Access to Bank Branches in ${department}, ${region}, ${country}`;
+                        document.querySelector('#map-content h1').textContent = `Area Covered By At Least One Bank Branch in ${department} - ${region}, ${country}`;
                         // Update the dropdown button text (optional)
                         document.getElementById('departmentDropdown').textContent = department;
                     });
                 });
+
+                // Listen for changes in the commune dropdown
+                document.querySelectorAll('#commune-select a').forEach(item => {
+                    item.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const commune = this.textContent;
+                        // Update the h1 text
+                        document.querySelector('#map-content h1').textContent = `Area Covered By At Least One Bank Branch in ${commune} - ${department}, ${region}, ${country}`;
+                        // Update the dropdown button text (optional)
+                        document.getElementById('communeDropdown').textContent = commune;
+                    });
+                });
+
             });
         });
 
 
-    
+
+        
         const geoJsonLayer = L.geoJSON({ type: "FeatureCollection", features: filteredData }, {
             onEachFeature: function (feature, layer) {
 
@@ -1106,7 +1160,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                         const region = clickedFeature.properties.ADM1_FR;
                         const department = clickedFeature.properties.ADM2_FR;
                         const commune = clickedFeature.properties.ADM3_FR;
-                        document.querySelector('#map-content h1').textContent = `Spatial Access to Bank Branches in ${country}`;
+                        document.querySelector('#map-content h1').textContent = `Area Covered By At Least One Bank Branch in ${commune} - ${department}, ${region}, ${country}`;
 
                         // Filter the data for the clicked commune
                         const filteredCommuneData = geoJsonData.features.filter(f =>
@@ -1147,7 +1201,8 @@ document.addEventListener("DOMContentLoaded", async function () {
         }).addTo(map);
 
 
-        updateLegendIsochrone(country);
+
+        updateLegendIsochrone();
         updateBorders(country);
 
 
@@ -1162,12 +1217,12 @@ document.addEventListener("DOMContentLoaded", async function () {
         
         legend.onAdd = function () {
             const div = L.DomUtil.create("div", "legend");
-            div.innerHTML += "<strong>Travel Time to Bank Branch</strong><br>";
-            div.innerHTML += `<i style="background:${getIsochroneColor(15)}"></i> 0-15 minutes<br>`;
-            div.innerHTML += `<i style="background:${getIsochroneColor(30)}"></i> 15-30 minutes<br>`;
-            div.innerHTML += `<i style="background:${getIsochroneColor(45)}"></i> 30-45 minutes<br>`;
-            div.innerHTML += `<i style="background:${getIsochroneColor(60)}"></i> 45-60 minutes<br>`;
-            div.innerHTML += `<i style="background:#6d6b6ab7"></i> >60 minutes<br>`;
+            div.innerHTML += "<strong>Time Travels</strong><br>";
+            div.innerHTML += `<i style="background:${getIsochroneColor(15)}"></i> 0-15 min<br>`;
+            div.innerHTML += `<i style="background:${getIsochroneColor(30)}"></i> 15-30 min<br>`;
+            div.innerHTML += `<i style="background:${getIsochroneColor(45)}"></i> 30-45 min<br>`;
+            div.innerHTML += `<i style="background:${getIsochroneColor(60)}"></i> 45-60 min<br>`;
+            div.innerHTML += `<i style="background:#6d6b6ab7"></i> >60 min<br>`;
             return div;
         };
         
@@ -1222,10 +1277,10 @@ document.addEventListener("DOMContentLoaded", async function () {
             const isochrone60 = ((totalIsochrone60 / totalAdminArea) * 100).toFixed(1);
 
             // Update the HTML elements
-            document.getElementById("num-municipalities").innerHTML = `<span>${isochrone15}%</span> coverage within 0-15min`;
-            document.getElementById("total-bran").innerHTML = `<span>${isochrone30}%</span> coverage within 15-30min`;
-            document.getElementById("percent-pop").innerHTML = `<span>${isochrone45}%</span> coverage within 30-45min`;
-            document.getElementById("percent-area").innerHTML = `<span>${isochrone60}%</span> coverage within 45-60min`;
+            document.getElementById("num-municipalities").innerHTML = `<span>${isochrone15}%</span>within 0-15min`;
+            document.getElementById("total-bran").innerHTML = `<span>${isochrone30}%</span>within 15-30min`;
+            document.getElementById("percent-pop").innerHTML = `<span>${isochrone45}%</span>within 30-45min`;
+            document.getElementById("percent-area").innerHTML = `<span>${isochrone60}%</span>within 45-60min`;
         } else {
             // If the country is not in the UEMOA group, don't update stats
             console.log(`No stats update for ${country}.`);
@@ -1268,7 +1323,32 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 
 
+    document.getElementById("map-btn").addEventListener("click", function() {
+            showContent("map-content");
+            loadMapData(geoJsonData, "", "", "", "", "ISIBF_base");
+            fetch(uemoaBordersFile)
+                .then(response => response.json())
+                .then(data => {
+                    L.geoJSON(data, {
+                        style: function () {
+                            return { color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }; // Border style for UEMOA
+                        }
+                    }).addTo(map);
+                })
+                .catch(error => console.error('Error loading UEMOA borders:', error));
+        });
 
+
+    document.getElementById("conclusion-btn").addEventListener("click", function() {
+        showContent("conclusion-content");
+    });
+
+    function showContent(contentId) {
+        document.getElementById("map-content").style.display = "none";
+        document.getElementById("conclusion-content").style.display = "none";
+        document.getElementById(contentId).style.display = "flex";
+        currentPage = contentId;
+    }
 });
 
 

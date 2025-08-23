@@ -191,6 +191,7 @@ label {
 
 .main-content h1 {
     font-size: 36px;
+    font-weight: bold;
     margin-top: 0.5em;
     margin-bottom: 0px;
     margin-left: 1em;
@@ -217,8 +218,25 @@ label {
     margin-left: 1em;
 }
 
+#conclusion-content {
+    max-width: 100vw;
+    max-height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px 0px 0px 0px;
+}
 
-
+#conclusion-content h1 {
+    font-size: 36px;
+    margin-top: 0.5em;
+    margin-bottom: 0px;
+    margin-left: 1em;
+}
 
 /* SUMMARY TAB */
 
@@ -256,7 +274,9 @@ label {
 
 .stats-container {
     width: 100%;
+    max-height: 25%;
     display: flex;
+    flex-wrap: wrap;  
     justify-content: space-around;
     background: white;
     padding: 15px;
@@ -264,6 +284,7 @@ label {
     margin-right: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
+    gap: 8px;
 }
 
 .stat-box {
@@ -414,6 +435,7 @@ label {
   right: 5px;
   z-index: 1000;
   background: white;
+  color: #555;
   padding: 2px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -468,6 +490,52 @@ input:checked + .slider:before {
   transform: translateX(20px);
 }
 
+/* CONCLUSION */
+    .conclusion-container {
+        padding: 0px 100px 30px 0px;
+        line-height: 1.6;  /* Improves readability */
+    }
+
+    .conclusion-container h3 {
+        margin-top: 1em;
+        margin-bottom: 0px;
+        margin-left: 2em;
+        font-weight: bold;
+        
+    }
+
+    .conclusion-container p {
+        margin-top: 0.7em;
+        margin-bottom: 0px;
+        margin-left: 4em;
+    }
+
+    .conclusion-container ul {
+        margin-top: 0.7em;
+        margin-bottom: 0px;
+        margin-left: 4em;
+    }
+
+    #conclusion-content h1 {
+        font-size: 36px;
+        margin-top: 0.5em;
+        margin-bottom: 0px;
+        margin-left: 1em;
+    }
+
+    #conclusion-content {
+        max-width: 100vw;
+        max-height: 100vh;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+
 
 /* Animation for the spinner */
 @keyframes spin {
@@ -477,62 +545,8 @@ input:checked + .slider:before {
 
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
+@media (max-width: 620px) {
 
-    /* Adjust sidebar width */
-    .sidebar {
-        width: 50%; /* Make sidebar narrower on smaller screens */
-        height: 50vh;
-    }
-
-    .dropdown {
-        width: 20%; /* Make dropdowns full width */
-        margin-left: 0; /* Remove left margin */
-        margin-right: 0; /* Remove right margin */
-    }
-
-    /* Adjust dropdown font size */
-
-
-    /* Stack the main content vertically */
-    .main-content {
-        flex-direction: column;
-    }
-
-    /* Adjust font size for better readability */
-    .main-content h1 {
-        font-size: 24px;
-    }
-
-    #map-content {
-    width: 100%;
-    height: 50vh; /* Set the height to 50% of the viewport height */
-    }
-
-    /* Adjust summary content */
-    #summary-content {
-        flex-direction: column;
-    }
-
-    /* Adjust stats container */
-    .stats-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .stat-box {
-        width: 80%; /* Make stat boxes more flexible on small screens */
-        margin-bottom: 10px;
-    }
-
-    /* Modify figure container for responsiveness 
-    #fig-container {
-        grid-template-columns: 1fr; Stack figures vertically 
-        margin-left: 10px;
-    }*/
-}
-
-@media (max-width: 480px) {
     /* Adjust header font size */
     header {
         font-size: 18px;
@@ -567,25 +581,39 @@ input:checked + .slider:before {
 
     /* Sidebar button font size */
     .sidebar-btn {
-        font-size: 12px;
+        font-size: 10px;
+
     }
 
     /* Dropdown font size */
     .dropdown-toggle {
-        font-size: 12px;
+        font-size: 10px;
         padding: 2px; /* Reduce padding for smaller screens */
     }
 
     .dropdown-item {
-        font-size: 12px;
+        font-size: 10px;
         padding: 5px 5px; /* Reduce padding to save space */
     }
 
+
     .stat-box {
-        font-size: 12px; /* Adjust font size for smaller screens */
-        padding: 5px 5px; /* Reduce padding to save space */
-        width: 50%
+        font-size: 10px; /* Adjust font size for smaller screens */
+        padding: 2px 5px; /* Reduce padding to save space */
+        flex: 1 1 calc(50% - 15px);
+        width: 45%; /* Two boxes per row */
+        height: auto;
     }
+
+
+    .stat-box span {
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        line-height: 1.2;
+    }
+
+    
     /* Adjust sidebar width */
     .sidebar {
         height: 100%;
@@ -628,69 +656,88 @@ input:checked + .slider:before {
 
     /* Adjust map content heading */
     #map-content h1 {
-        font-size: 22px;
-    }
-
-    .stat-box span {
-        font-size: 14px;
-        font-weight: bold;
-        margin-bottom: 0px;
-        line-height: 16px;
-    }
-}
-
-/* For very small screens (mobile devices in portrait) */
-@media (max-width: 320px) {
-    /* Adjust sidebar width */
-    .sidebar {
-        width: 100px; /* Even smaller sidebar */
-    }
-
-    /* Adjust the map content to take more space */
-    #map-content {
-        padding: 0;
-        margin: 0;
-        height: 80vh; /* Make map larger, use 80% of the vertical screen */
-    }
-
-    /* Ensure the main content still has some space */
-    .main-content {
-        padding: 5px;
-        margin: 0;
-    }
-
-    /* Adjust main content heading font size */
-    .main-content h1 {
-        font-size: 18px; /* Smaller font size */
-    }
-
-    /* Adjust map content heading */
-    #map-content h1 {
-        font-size: 20px; /* Smaller font size */
-    }
-    
-    /* Adjust layout for the statistics container to take less space */
-    .stats-container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 5px; /* Reduce padding */
-        margin: 0; /* Remove margin */
-        width: 100%; /* Ensure it takes full width */
-        height: auto; /* Allow it to adjust based on content */
-    }
-
-    /* Make stat-boxes more compact */
-    .stat-box {
-        width: 25%; /* Ensure they don't exceed container width */
-        margin-bottom: 5px; /* Space out the boxes */
-    }
-
-    .stat-box span {
         font-size: 16px;
         font-weight: bold;
-        margin-bottom: 0px;
-        line-height: 16px;
+        
     }
-    
+
+    .legend {
+        line-height: 12px;
+        font-size: 8px;
+        color: #555;
+        padding: 2px 5px;
+        background: white;
+        background: rgba(255,255,255,0.8);
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        border-radius: 5px;
+    }
+
+    .legend i {
+        width: 10px;
+        height: 10px;
+        float: left;
+        margin-right: 8px;
+        opacity: 0.7;
+    }
+
+    .toggle-container {
+        z-index: 1000;
+        line-height: 12px;
+        color: #555;
+        padding: 2px 5px;
+        background: white;
+        background: rgba(255,255,255,0.8);
+        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        border-radius: 5px;
+        gap: 2px; /* optional spacing between switch and text */
+    }
+
+    /* CONCLUSION */
+    .conclusion-container {
+        padding: 0px 20px 5px 0px;
+        line-height: 1.6;  /* Improves readability */
+    }
+
+    .conclusion-container h3 {
+        margin-top: 1em;
+        margin-bottom: 0px;
+        margin-left: 2em;
+        font-weight: bold;
+        font-size: 14px;
+
+    }
+
+    .conclusion-container p {
+        margin-top: 0.7em;
+        margin-bottom: 0px;
+        margin-left: 1em;
+    }
+
+    .conclusion-container ul {
+        margin-top: 0.7em;
+        margin-bottom: 0px;
+        margin-left: 1em;
+    }
+
+    #conclusion-content h1 {
+        font-size: 16px;
+        margin-top: 0.5em;
+        margin-bottom: 0px;
+        margin-left: 1em;
+    }
+
+    #conclusion-content {
+        max-width: 100vw;
+        max-height: 100vh;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px 0px 0px 0px;
+    }
+
+
 }
