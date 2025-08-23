@@ -1027,8 +1027,8 @@ document.addEventListener("DOMContentLoaded", async function () {
             document.getElementById("percent-area").innerHTML = `<span>${areaPercentage}%</span>of total area`;
             */
             document.getElementById("total-bran").innerHTML = `<span>${totalBranches}</span>Bank Branches`;
-            document.getElementById("percent-pop").innerHTML = `<span>${totalPopulation.toLocaleString('en-US')}</span>Population (${rgphDate})`;
-            document.getElementById("percent-area").innerHTML = `<span>${totalAreaKm2.toLocaleString('en-US', { maximumFractionDigits: 0 })}</span>Area (km²)`;
+            document.getElementById("percent-pop").innerHTML = `<span>${totalPopulation.toLocaleString('fr-FR')}</span>Population (${rgphDate})`;
+            document.getElementById("percent-area").innerHTML = `<span>${totalAreaKm2.toLocaleString('fr-FR', { maximumFractionDigits: 0 })}</span>Area (km²)`;
 
 
         } else {
