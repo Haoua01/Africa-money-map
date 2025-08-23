@@ -999,7 +999,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             const totalPopulation = filteredData.reduce((sum, feature) => sum + (Number(feature.properties.Population) || 0), 0);
 
             const totalArea = filteredData.reduce((sum, feature) => sum + (feature.properties.Area || 0), 0);
-            const totalAreaKm2 = (totalArea / 1000000).toFixed(0); // Convert to km²
+            const totalAreaKm2 = (totalArea / 1000000); // Convert to km²
 
             // Calculate total population and area for the entire country
             const totalCountryPopulation = filteredDataCountry.reduce((sum, feature) => sum + (Number(feature.properties.Population) || 0), 0);
@@ -1027,8 +1027,8 @@ document.addEventListener("DOMContentLoaded", async function () {
             document.getElementById("percent-area").innerHTML = `<span>${areaPercentage}%</span>of total area`;
             */
             document.getElementById("total-bran").innerHTML = `<span>${totalBranches}</span>Bank Branches`;
-            document.getElementById("percent-pop").innerHTML = `<span>${totalPopulation}</span>Population (${rgphDate})`;
-            document.getElementById("percent-area").innerHTML = `<span>${totalAreaKm2}</span>Area (km²)`;
+            document.getElementById("percent-pop").innerHTML = `<span>${totalPopulation.toLocaleString('en-US')}</span>Population (${rgphDate})`;
+            document.getElementById("percent-area").innerHTML = `<span>${totalAreaKm2.toLocaleString('en-US', { maximumFractionDigits: 0 })}</span>Area (km²)`;
 
 
         } else {
