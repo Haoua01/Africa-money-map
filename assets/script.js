@@ -193,20 +193,25 @@ document.addEventListener("DOMContentLoaded", async function () {
                 // Handle country-specific mode (existing logic)
                 if (toggleSwitch.checked) {
                     console.log('Loading isochrone data');
-                    // Show isochrone layer
-                    console.log('Loading isochrone data');
                     // Update title based on current selections
                     let titleText = `Area Covered By At Least One Bank Branch`;
+                    let locationText = "";
+
                     if (selectedCommune) {
-                        titleText += ` in ${selectedCommune} - ${selectedDepartment}, ${selectedRegion}, ${selectedCountry}`;
+                        locationText = `${selectedCommune} - ${selectedDepartment}, ${selectedRegion}, ${selectedCountry}`;
                     } else if (selectedDepartment) {
-                        titleText += ` in ${selectedDepartment} - ${selectedRegion}, ${selectedCountry}`;
+                        locationText = `${selectedDepartment} - ${selectedRegion}, ${selectedCountry}`;
                     } else if (selectedRegion) {
-                        titleText += ` in ${selectedRegion} - ${selectedCountry}`;
+                        locationText = `${selectedRegion} - ${selectedCountry}`;
                     } else {
-                        titleText += ` in ${selectedCountry}`;
+                        locationText = `${selectedCountry}`;
                     }
-                    document.querySelector('#map-content h1').textContent = titleText;
+
+                    document.querySelector('#map-content h1').innerHTML = `
+                        <span class="title-main">${titleText}</span><br>
+                        ${locationText}
+                    `;
+
 
                     document.getElementById("num-municipalities").innerHTML = '';
                     document.getElementById("total-bran").innerHTML = '';
@@ -219,16 +224,22 @@ document.addEventListener("DOMContentLoaded", async function () {
                     console.log('Loading map data');
                     
                     let titleText = `Spatial Accessibility to Bank Branches`;
+                    let locationText = "";
+
                     if (selectedCommune) {
-                        titleText += ` in ${selectedCommune} - ${selectedDepartment}, ${selectedRegion}, ${selectedCountry}`;
+                        locationText = `${selectedCommune} - ${selectedDepartment}, ${selectedRegion}, ${selectedCountry}`;
                     } else if (selectedDepartment) {
-                        titleText += ` in ${selectedDepartment} - ${selectedRegion}, ${selectedCountry}`;
+                        locationText = `${selectedDepartment} - ${selectedRegion}, ${selectedCountry}`;
                     } else if (selectedRegion) {
-                        titleText += ` in ${selectedRegion} - ${selectedCountry}`;
+                        locationText = `${selectedRegion} - ${selectedCountry}`;
                     } else {
-                        titleText += ` in ${selectedCountry}`;
+                        locationText = `${selectedCountry}`;
                     }
-                    document.querySelector('#map-content h1').textContent = titleText;
+
+                    document.querySelector('#map-content h1').innerHTML = `
+                        <span class="title-main">${titleText}</span><br>
+                        ${locationText}
+                    `;
                     
                     document.getElementById("num-municipalities").innerHTML = '';
                     document.getElementById("total-bran").innerHTML = '';
@@ -259,55 +270,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                 
             });
 
-            // When region changes, reset department and commune
-            function onRegionChange(newRegion, regionName) {
-                selectedRegion = newRegion;
-                selectedDepartment = null; // Reset department
-                selectedCommune = null;    // Reset commune
-                
-                // Update region dropdown button text
-                document.getElementById('regionDropdown').textContent = regionName || 'Default';
-                
-                // Reset department dropdown
-                document.getElementById('departmentDropdown').textContent = 'Default';
-                document.getElementById('department-select').innerHTML = '<li><a class="dropdown-item" href="#" onclick="onDepartmentChange(null, \'Default\')">Default</a></li>';
-                
-                // Reset commune dropdown
-                document.getElementById('communeDropdown').textContent = 'Default';
-                document.getElementById('commune-select').innerHTML = '<li><a class="dropdown-item" href="#" onclick="onCommuneChange(null, \'Default\')">Default</a></li>';
-            
-                // Update the map
-                updateMapDisplay();
-            }
-
-            // When department changes, reset commune
-            function onDepartmentChange(newDepartment, departmentName) {
-                selectedDepartment = newDepartment;
-                selectedCommune = null; // Reset commune when department changes
-                
-                // Update department dropdown button text
-                document.getElementById('departmentDropdown').textContent = departmentName || 'Default';
-                
-                // Reset commune dropdown
-                document.getElementById('communeDropdown').textContent = 'Default';
-                document.getElementById('commune-select').innerHTML = '<li><a class="dropdown-item" href="#" onclick="onCommuneChange(null, \'Default\')">Default</a></li>';
-                
-
-                
-                // Update the map
-                updateMapDisplay();
-            }
-
-            // When commune changes, just update the selection
-            function onCommuneChange(newCommune, communeName) {
-                selectedCommune = newCommune;
-                
-                // Update commune dropdown button text
-                document.getElementById('communeDropdown').textContent = communeName || 'Default';
-                
-                // Update the map
-                updateMapDisplay();
-            }
 
             // Extract unique countries from the GeoJSON data
             const countries = [...new Set(geoJsonData.features.map(f => f.properties.ADM0_EN))];
@@ -799,7 +761,23 @@ document.addEventListener("DOMContentLoaded", async function () {
                         const region = clickedFeature.properties.ADM1_FR;
                         const department = clickedFeature.properties.ADM2_FR;
                         const commune = clickedFeature.properties.ADM3_FR;
-                        document.querySelector('#map-content h1').textContent = `Spatial Accessibility to Bank Branches in ${commune} - ${department}, ${region}, ${country}`;
+                        
+                        let titleText = `Spatial Accessibility to Bank Branches`;
+                        let locationText = "";
+
+                        if (commune) {
+                            locationText = `${commune} - ${department}, ${region}, ${country}`;
+                        } else if (department) {
+                            locationText = `${department} - ${region}, ${country}`;
+                        } else if (region) {
+                            locationText = `${region} - ${country}`;
+                        } else {
+                            locationText = `${country}`;
+                        }
+
+                        document.querySelector('#map-content h1').innerHTML = `
+                            <span class="title-main">${titleText}</span><br>
+                            ${locationText}`;
 
                         // Filter the data for the clicked commune
                         const filteredCommuneData = geoJsonData.features.filter(f =>
@@ -1077,8 +1055,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             item.addEventListener('click', function(e) {
                 e.preventDefault();
                 const country = this.textContent;
-                // Update the h1 text
-                document.querySelector('#map-content h1').textContent = `Area Covered By At Least One Bank Branch in ${country}`;
                 // Update the dropdown button text (optional)
                 document.getElementById('countryDropdown').textContent = country;
             });
@@ -1088,8 +1064,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                 item.addEventListener('click', function(e) {
                     e.preventDefault();
                     const region = this.textContent;
-                    // Update the h1 text
-                    document.querySelector('#map-content h1').textContent = `Area Covered By At Least One Bank Branch in ${region} - ${country}`;
                     // Update the dropdown button text (optional)
                     document.getElementById('regionDropdown').textContent = region;
                 });
@@ -1099,8 +1073,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                     item.addEventListener('click', function(e) {
                         e.preventDefault();
                         const department = this.textContent;
-                        // Update the h1 text
-                        document.querySelector('#map-content h1').textContent = `Area Covered By At Least One Bank Branch in ${department} - ${region}, ${country}`;
                         // Update the dropdown button text (optional)
                         document.getElementById('departmentDropdown').textContent = department;
                     });
@@ -1111,8 +1083,6 @@ document.addEventListener("DOMContentLoaded", async function () {
                     item.addEventListener('click', function(e) {
                         e.preventDefault();
                         const commune = this.textContent;
-                        // Update the h1 text
-                        document.querySelector('#map-content h1').textContent = `Area Covered By At Least One Bank Branch in ${commune} - ${department}, ${region}, ${country}`;
                         // Update the dropdown button text (optional)
                         document.getElementById('communeDropdown').textContent = commune;
                     });

@@ -189,14 +189,13 @@ label {
     padding: 0px 0px 0px 0px;
 }
 
-.main-content h1 {
-    font-size: 36px;
+
+.title-main {
+    font-size: 30px;
     font-weight: bold;
     margin-top: 0.5em;
     margin-bottom: 0px;
-    margin-left: 1em;
 }
-
 
 #map-content {
     max-width: 100vw;
@@ -212,7 +211,7 @@ label {
 }
 
 #map-content h1 {
-    font-size: 36px;
+    font-size: 30px;
     margin-top: 0.5em;
     margin-bottom: 0px;
     margin-left: 1em;
