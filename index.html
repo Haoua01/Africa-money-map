@@ -38,7 +38,8 @@
     <div class="container">
         <!-- Sidebar -->
         <aside class="sidebar">
-            <button class="sidebar-btn" id="map-btn">Map</button>
+            <button class="sidebar-btn" id="map-btn">ISO Map</button>
+            <button class="sidebar-btn" id="map-fca-btn">FCA Map</button>
             <button class="sidebar-btn" id="conclusion-btn">Methodology</button>
 
             
@@ -99,7 +100,7 @@
         <main class="main-content">
             <div id="map-content">
                 <h1>
-                    Spatial Accessibility to Bank Branches
+                    Spatial Accessibility to Bank Branches (Isochrone Coverage Map)
                 </h1>
                 <div class="stats-container">
                     <div class="stat-box" id="num-municipalities"></div>
@@ -114,6 +115,25 @@
                         <span class="slider round"></span>
                     </label>
                     <label for="isochrone-toggle">Show Isochrones</label>
+                    </div>
+                </div>
+            </div>
+            <div id="map-fca-content" style="display: none;">
+                <h1>
+                    Spatial Accessibility to Bank Branches (Floating Catchment Area Model)
+                </h1>
+                <div class="stats-container">
+                    <div class="stat-box" id="num-municipalities-fca"></div>
+                    <div class="stat-box" id="total-bran-fca"></div>
+                    <div class="stat-box" id="percent-pop-fca"></div>
+                    <div class="stat-box" id="percent-area-fca"></div>
+                </div>
+                <div id="map-fca">
+                    <div class="toggle-container">
+                    <label class="switch">
+                        <input type="checkbox" id="isochrone-toggle-fca">
+                        <span class="slider round"></span>
+                    </label>
                     </div>
                 </div>
             </div>
