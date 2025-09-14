@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     loadingSpinner.className = "loading-spinner"; // Set class for styling
     loadingSpinner.innerHTML = `
         <div class="spinner"></div>
-        <span>Loading...</span>
+        <span>Please wait for map to load...</span>
     `;
     document.body.appendChild(loadingSpinner);
     
