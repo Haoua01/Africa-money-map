@@ -24,9 +24,6 @@
         <link rel="stylesheet" href="assets/Control.FullScreen.css" />
         <script src="assets/Control.FullScreen.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
-
-
-
     </head>
     
 <body>
@@ -34,70 +31,91 @@
         Africa Money Map
     </header>
 
-
     <div class="container">
         <!-- Sidebar -->
         <aside class="sidebar">
-            <button class="sidebar-btn" id="map-btn">Map</button>
-            <!-- <button class="sidebar-btn" id="map-fca-btn">FCA Map</button> -->
+            <button class="sidebar-btn" id="map-btn">Iso Map</button>
+            <button class="sidebar-btn" id="map-fca-btn">FCA Map</button>
             <button class="sidebar-btn" id="conclusion-btn">Methodology</button>
 
-            
-            <!--
-            <label for="department-select">Equipment type for Map:</label>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="equipmentDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    Select equipment
-                </button>
-                <ul class="dropdown-menu" id="equipment-select">
-                    <li><a class="dropdown-item" href="#" data-value="nearest_ATM">ATM</a></li>
-                    <li><a class="dropdown-item" href="#" data-value="isibf_base">Bank Branch</a></li>
-                </ul>
-            </div>
-             -->
+            <!-- ── Dropdowns for the main Map ── -->
+            <div id="map-filters">
+                <label for="country-select">Country:</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="countryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Default
+                    </button>
+                    <ul class="dropdown-menu w-100" id="country-select"></ul>
+                </div>
 
+                <label for="region-select">ADM1:</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="regionDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Default
+                    </button>
+                    <ul class="dropdown-menu w-100" id="region-select"></ul>
+                </div>
 
-            <label for="country-select">Country:</label>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="countryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    Default
-                </button>
-                <ul class="dropdown-menu w-100" id="country-select"></ul>
-            </div>
+                <label for="department-select">ADM2:</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="departmentDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Default
+                    </button>
+                    <ul class="dropdown-menu w-100" id="department-select"></ul>
+                </div>
 
+                <label for="commune-select">ADM3:</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="communeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Default
+                    </button>
+                    <ul class="dropdown-menu w-100" id="commune-select"></ul>
+                </div>
 
-            <label for="region-select">ADM1:</label>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="regionDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    Default
-                </button>
-                <ul class="dropdown-menu w-100" id="region-select"></ul>
-            </div>
-
-            <label for="department-select">ADM2:</label>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="departmentDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    Default
-                </button>
-                <ul class="dropdown-menu w-100" id="department-select"></ul>
+                <button id="resetButton">Reset</button>
             </div>
 
+            <!-- ── Dropdowns for the FCA Map ── -->
+            <div id="fca-filters" style="display:none;">
+                <label for="country-select-fca">Country:</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="countryDropdownFCA" data-bs-toggle="dropdown" aria-expanded="false">
+                        Default
+                    </button>
+                    <ul class="dropdown-menu w-100" id="country-select-fca"></ul>
+                </div>
 
-            <label for="commune-select">ADM3:</label>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="communeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    Default
-                </button>
-                <ul class="dropdown-menu w-100" id="commune-select"></ul>
+                <label for="region-select-fca">ADM1:</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="regionDropdownFCA" data-bs-toggle="dropdown" aria-expanded="false">
+                        Default
+                    </button>
+                    <ul class="dropdown-menu w-100" id="region-select-fca"></ul>
+                </div>
+
+                <label for="department-select-fca">ADM2:</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="departmentDropdownFCA" data-bs-toggle="dropdown" aria-expanded="false">
+                        Default
+                    </button>
+                    <ul class="dropdown-menu w-100" id="department-select-fca"></ul>
+                </div>
+
+                <label for="commune-select-fca">ADM3:</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="communeDropdownFCA" data-bs-toggle="dropdown" aria-expanded="false">
+                        Default
+                    </button>
+                    <ul class="dropdown-menu w-100" id="commune-select-fca"></ul>
+                </div>
+
+                <button id="resetButtonFCA">Reset</button>
             </div>
-            
-
-            <button id="resetButton">Reset</button>
-            
         </aside>
 
         <!-- Main Content -->
         <main class="main-content">
+            <!-- ── Main Map ── -->
             <div id="map-content">
                 <h1>
                     Spatial Accessibility to Bank Branches (Isochrone Coverage Map)
@@ -110,14 +128,16 @@
                 </div>
                 <div id="map">
                     <div class="toggle-container">
-                    <label class="switch">
-                        <input type="checkbox" id="isochrone-toggle">
-                        <span class="slider round"></span>
-                    </label>
-                    <label for="isochrone-toggle">Show Isochrones</label>
+                        <label class="switch">
+                            <input type="checkbox" id="isochrone-toggle">
+                            <span class="slider round"></span>
+                        </label>
+                        <label for="isochrone-toggle">Show Isochrones</label>
                     </div>
                 </div>
             </div>
+
+            <!-- ── FCA Map ── -->
             <div id="map-fca-content" style="display: none;">
                 <h1>
                     Spatial Accessibility to Bank Branches (Floating Catchment Area Model)
@@ -128,61 +148,55 @@
                     <div class="stat-box" id="percent-pop-fca"></div>
                     <div class="stat-box" id="percent-area-fca"></div>
                 </div>
-                <div id="map-fca">
-                    <div class="toggle-container">
-                    <label class="switch">
-                        <input type="checkbox" id="isochrone-toggle-fca">
-                        <span class="slider round"></span>
-                    </label>
-                    </div>
-                </div>
+                <div id="map-fca"></div>
             </div>
-            <div id="conclusion-content"  style="display: none;">
-                    <h1>Methodology</h1>
-                        <div class="conclusion-container">
 
-                            <section class="description">
-                                <h3>Project Overview</h3>
-                                <p>
-                                    This project analyzes banking accessibility across the eight countries of the West African Monetary Union (WAMU): Benin, Burkina Faso, Ivory Coast, Guinea-Bissau, Mali, Niger, Senegal, and Togo. As financial inclusion remains a critical development challenge in Sub-Saharan Africa, understanding the spatial distribution of bank branches at a granular level is essential for identifying service gaps and informing policy decisions.
-                                </p>
-                                <p>
-                                    The study focuses on measuring actual geographic access to banking services across 2,186 municipalities. By developing spatial indicators that account for travel time and distance, we provide the first highly granular assessment of banking accessibility in the sub-region.
-                                </p>
-                            </section>
+            <!-- ── Methodology ── -->
+            <div id="conclusion-content" style="display: none;">
+                <h1>Methodology</h1>
+                <div class="conclusion-container">
+                    <section class="description">
+                        <h3>Project Overview</h3>
+                        <p>
+                            This project analyzes banking accessibility across the eight countries of the West African Monetary Union (WAMU): Benin, Burkina Faso, Ivory Coast, Guinea-Bissau, Mali, Niger, Senegal, and Togo. As financial inclusion remains a critical development challenge in Sub-Saharan Africa, understanding the spatial distribution of bank branches at a granular level is essential for identifying service gaps and informing policy decisions.
+                        </p>
+                        <p>
+                            The study focuses on measuring actual geographic access to banking services across 2,186 municipalities. By developing spatial indicators that account for travel time and distance, we provide the first highly granular assessment of banking accessibility in the sub-region.
+                        </p>
+                    </section>
 
-                            <section class="methodology">
-                                <h3>Data Source</h3>
-                                <p>
-                                    Bank branch locations were systematically collected from official sources and bank websites across all eight WAMU countries. This represents a <strong>unique comprehensive cross-country register of geolocated bank branches</strong> in the sub-region.
-                                </p>
-                                <p>
-                                    The dataset contains <strong>2,524 geolocated bank branches</strong>, with coordinates obtained through direct web scraping (1,654 branches) of banks' websites and address geocoding using Google Maps API (970 branches). Data validation was performed using official statistics from the Central Bank of West African States (BCEAO), with quality control implemented through QGIS to correct geographic outliers and ensure spatial accuracy.
-                                </p>
-                            </section>
+                    <section class="methodology">
+                        <h3>Data Source</h3>
+                        <p>
+                            Bank branch locations were systematically collected from official sources and bank websites across all eight WAMU countries. This represents a <strong>unique comprehensive cross-country register of geolocated bank branches</strong> in the sub-region.
+                        </p>
+                        <p>
+                            The dataset contains <strong>2,524 geolocated bank branches</strong>, with coordinates obtained through direct web scraping (1,654 branches) of banks' websites and address geocoding using Google Maps API (970 branches). Data validation was performed using official statistics from the Central Bank of West African States (BCEAO), with quality control implemented through QGIS to correct geographic outliers and ensure spatial accuracy.
+                        </p>
+                    </section>
 
-                            <section class="data">
-                                <h3>Access Indicators</h3>
-                                <p>
-                                    Two spatial accessibility indicators were developed to measure banking access across the region:
-                                </p>
-                                <ul>
-                                    <li><strong>Isochrone Coverage Map</strong>: Shifts focus from municipalities to bank branches themselves, generating travel time zones (15, 30, 45, and 60 minutes) around each branch using road network data. Isochrone generation was performed using OpenRouteService (ORS) with Docker containerization.The indicator calculates the percentage of each municipality's area covered within these time frames.</li>
-                                <li><strong>Accessibility Map</strong>: Integrates the isochrone coverage data into a weighted accessibility score that accounts for distance decay effects. Areas closer to bank branches receive higher weights, producing a single comparative score for each municipality.
-                                    The index is calculated as: $$Access_{i}=\sum_{j \in \{Isochrones \ in \ i\}} \frac{Area_{j}}{\alpha^{t_{j}}}$$ where \(Area_{j}\) is the percentage of area covered by isochrone \(j\) in municipality \(i\), \(t_{j}\) is the maximum travel time, and \(\alpha=1.01\) is the distance decay parameter. Final scores are later min-max normalized followng this formula: $$Score_{i}=\frac{Access_{i}-Access_{min}}{Access_{max}-Access_{min}}$$</li>
-                                </ul>
-                                                                    
-                            </section>
-                    </div>
+                    <section class="data">
+                        <h3>Access Indicators</h3>
+                        <p>
+                            Two spatial accessibility indicators were developed to measure banking access across the region:
+                        </p>
+                        <ul>
+                            <li><strong>Iso Map (1/2) - Isochrone Coverage Map</strong>: Shifts focus from municipalities to bank branches themselves, generating travel time zones (15, 30, 45, and 60 minutes) around each branch using road network data. Isochrone generation was performed using OpenRouteService (ORS) with Docker containerization. The indicator calculates the percentage of each municipality's area covered within these time frames.</li>
+                            <li><strong>Iso Map (2/2) - Accessibility Map</strong>: Integrates the isochrone coverage data into a weighted accessibility score that accounts for distance decay effects. Areas closer to bank branches receive higher weights, producing a single comparative score for each municipality.
+                                The index is calculated as: $$Access_{i}=\sum_{j \in \{Isochrones \ in \ i\}} \frac{Area_{j}}{\alpha^{t_{j}}}$$ where \(Area_{j}\) is the percentage of area covered by isochrone \(j\) in municipality \(i\), \(t_{j}\) is the maximum travel time, and \(\alpha=1.01\) is the distance decay parameter. Final scores are later min-max normalized following this formula: $$Score_{i}=\frac{Access_{i}-Access_{min}}{Access_{max}-Access_{min}}$$</li>
+                            <li><strong>Floating Catchment Area (FCA) Map</strong>: We computed geographic distances between the centroids of municipalities in order to define a dictionary of neighbors within a threshold fixed at 50km. Having defined this dictionary, we computed a score of access for each municipality following Bounie et al. (2024):
+                                $$Access_i = \sum_{j,\ d_{i,j} < \gamma} \frac{\log_2(B_j + 1)}{\alpha^{d_{i,j}}}$$
+                                where \(\gamma = 50\text{km}\) is the threshold, \(d_{i,j}\) is the distance between two close municipalities, \(B_j\) is the number of bank branches in municipality \(j\), and \(\alpha > 1\) is a hyper-parameter that introduces a distance decay: when the distance between municipalities increases, the neighbor's contribution to the score decreases. In other words, within a catchment area:
+                                $$Access_i = \underbrace{\log_2(B_i + 1)}_{\text{own contribution}} + \underbrace{\sum_{j \neq i,\ d_{i,j} < \gamma} \frac{\log_2(B_j + 1)}{\alpha^{d_{i,j}}}}_{\text{neighbors' contribution}}$$
+                                where the <em>own contribution</em> is the log-transformed score of the municipality of reference if considered alone.</li>
+                            </ul>
+                    </section>
+                </div>
             </div>
         </main>
     </div>
+
     <script src="assets/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-fullscreen/2.0.0/leaflet.fullscreen.min.js"></script>
-
-    
 </body>
 </html>
-
-
-
