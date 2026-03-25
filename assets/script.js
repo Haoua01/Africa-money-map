@@ -45,6 +45,11 @@ document.addEventListener("DOMContentLoaded", async function () {
     const nigerBordersFile    = "data/UEMOA/adm_shapefiles/borders/niger_borders.geojson";
     const senegalBordersFile  = "data/UEMOA/adm_shapefiles/borders/senegal_borders.geojson";
     const togoBordersFile     = "data/UEMOA/adm_shapefiles/borders/togo_borders.geojson";
+    const ghanaBordersFile    = "web_data/ghana_borders.geojson";
+    const nigeriaBordersFile  = "web_data/nigeria_borders.geojson";
+    const cameroonBordersFile = "web_data/cameroun_borders.geojson";
+    const chadBordersFile     = "web_data/tchad_borders.geojson";
+
 
     const countryBorders = {
         "Benin":        beninBordersFile,
@@ -54,7 +59,11 @@ document.addEventListener("DOMContentLoaded", async function () {
         "Mali":         maliBordersFile,
         "Niger":        nigerBordersFile,
         "Senegal":      senegalBordersFile,
-        "Togo":         togoBordersFile
+        "Togo":         togoBordersFile,
+        "Ghana":        ghanaBordersFile,
+        "Nigeria":      nigeriaBordersFile,
+        "Cameroon":     cameroonBordersFile,
+        "Chad":         chadBordersFile
     };
 
     // Loading spinner
@@ -495,7 +504,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     const rgph = {
         "Benin": 2013, "Burkina Faso": 2019, "Mali": 2009, "Niger": 2012,
         "Ivory Coast": 2021, "Guinea-Bissau": 2009, "Senegal": 2023, "Togo": 2022,
-        "Ghana": 2013, "Cameroon": 2013, "Chad": 2013, "Nigeria": 2013
+        "Ghana": 2021, "Cameroon": 2005, "Chad": 2009, "Nigeria": 2022
     };
 
     // ── updateStats ───────────────────────────────────────────────
@@ -682,13 +691,19 @@ document.addEventListener("DOMContentLoaded", async function () {
             const ghanaFileFCA    = "web_data/ghana_borders.geojson";
             const nigeriaFileFCA  = "web_data/nigeria_borders.geojson";
 
+
+
+
             const [fcaResponse, uemoaRes, cemacRes, ghanaRes, nigeriaRes] = await Promise.all([
                 fetch(FCAFile),
                 fetch(uemoaFileFCA),
                 fetch(cemacFileFCA),
                 fetch(ghanaFileFCA),
-                fetch(nigeriaFileFCA)
+                fetch(nigeriaFileFCA),
             ]);
+
+
+       
 
             const geoJsonDataFCA = await fcaResponse.json();
             const uemoaData      = await uemoaRes.json();
@@ -696,15 +711,20 @@ document.addEventListener("DOMContentLoaded", async function () {
             const ghanaData      = await ghanaRes.json();
             const nigeriaData    = await nigeriaRes.json();
 
+            
+
             if (document.body.contains(fcaSpinner)) document.body.removeChild(fcaSpinner);
 
             console.log('FCA data loaded successfully');
+
             setupFCAMapFunctionality(geoJsonDataFCA, uemoaData, cemacData, ghanaData, nigeriaData);
 
         } catch (error) {
             console.error('Error loading FCA map:', error);
         }
     }
+
+
 
     // ── Info Control for FCA ──────────────────────────────────────
     const infoFCA = L.control();
@@ -714,7 +734,19 @@ document.addEventListener("DOMContentLoaded", async function () {
         return this.div;
     };
 
-    function setupFCAMapFunctionality(geoJsonDataFCA, uemoaData, cemacData, ghanaData, nigeriaData) {
+    // ── updateBorders ─────────────────────────────────────────────
+    function updateBordersFCA(country) {
+        if (countryBorders[country]) {
+            fetch(countryBorders[country])
+                .then(r => r.json())
+                .then(data => {
+                    currentBorderLayer = L.geoJSON(data, { style: () => ({ color: "#000", weight: 1, fillOpacity: 0, zIndex: 10 }) }).addTo(mapFCA);
+                })
+                .catch(err => console.error('Error loading country borders:', err));
+        }
+    }
+
+    function setupFCAMapFunctionality(geoJsonDataFCA, uemoaData, cemacData, ghanaData, nigeriaData, cameroonData, chadData) {
         let legendFCA = null;
         let selectedEquipmentFCA = "ISIBF_base";
         let selectedCommuneFCA   = "";
@@ -769,6 +801,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         document.getElementById("region-select-fca").innerHTML     = "";
 
         countriesFCA.forEach(coun => {
+            updateBordersFCA(coun);
             const filteredCountryData = geoJsonDataFCA.features.filter(f => f.properties.ADM0_EN === coun);
             const listItem = document.createElement("li");
             listItem.innerHTML = `<a class="dropdown-item" href="#" data-value="${coun}">${coun}</a>`;
@@ -968,6 +1001,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             }).addTo(mapFCA);
 
             updateLegendFCA(country);
+            updateBordersFCA(country);
         }
 
         // ── FCA Legend ────────────────────────────────────────────
