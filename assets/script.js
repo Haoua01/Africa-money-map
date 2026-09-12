@@ -19,8 +19,9 @@ document.addEventListener("DOMContentLoaded", async function () {
     let currentBorderLayer = null;
     const toggleSwitch = document.getElementById('isochrone-toggle');
 
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-        attribution: "&copy; OpenStreetMap contributors &copy; CartoDB &copy; Openrouteservice",
+    L.tileLayer("https://tile.jawg.io/jawg-light/{z}/{x}/{y}{r}.png?access-token=xij7Z23tcHpKBmY9koREFikvy8u3GEZESw07s3q2xY3H1nNPbOFJvlFistpBHO7D", {
+        attribution: '<a href="https://jawg.io" target="_blank">&copy; Jawg</a> - <a href="https://www.openstreetmap.org" target="_blank">&copy; OpenStreetMap</a> contributors',
+        maxZoom: 22
     }).addTo(map);
 
     L.control.fullscreen({
